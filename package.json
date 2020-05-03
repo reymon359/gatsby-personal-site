@@ -12,9 +12,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "lint2": "eslint 'src/**/*.{ts,tsx}'",
     "lint": "eslint --ignore-path .gitignore . --ext .ts,.tsx,.js,.jsx",
-    "lint-fix": "eslint --fix --ignore-path .gitignore . --ext .ts,.tsx,.js,.jsx"
+    "lint:fix": "eslint --fix --ignore-path .gitignore . --ext .ts,.tsx,.js,.jsx"
   },
   "dependencies": {
     "gatsby": "^2.21.0",
