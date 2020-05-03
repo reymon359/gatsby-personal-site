@@ -12,8 +12,9 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "lint": "eslint 'src/**/*.{ts,tsx}'",
-    "lint2": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx"
+    "lint2": "eslint 'src/**/*.{ts,tsx}'",
+    "lint": "eslint --ignore-path .gitignore . --ext .ts,.tsx,.js,.jsx",
+    "lint-fix": "eslint --fix --ignore-path .gitignore . --ext .ts,.tsx,.js,.jsx"
   },
   "dependencies": {
     "gatsby": "^2.21.0",
@@ -41,10 +42,10 @@
     "prettier": "2.0.5"
   },
   "keywords": [
-    "gatsby", "typescript"
+    "gatsby",
+    "typescript"
   ],
   "license": "none yet",
- 
   "repository": {
     "type": "git",
     "url": "https://github.com/reymon359/gatsby-personal-site"
