@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-personal-site",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A Gatsby Typescript project for my personal site",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ramon Morcillo @reymon359",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -41,15 +41,15 @@
     "prettier": "2.0.5"
   },
   "keywords": [
-    "gatsby"
+    "gatsby", "typescript"
   ],
-  "license": "MIT",
+  "license": "none yet",
  
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/reymon359/gatsby-personal-site"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/reymon359/gatsby-personal-site/issues"
   }
 }
