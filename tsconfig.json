@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "jsx": "preserve",
+    "lib": ["dom", "esnext", "es2015", "es2017", "es2020"],
+    "strict": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": false,
+    "preserveConstEnums": true
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "public", ".cache"]
+}
+
+/* https://dev.to/speshov/how-to-setup-gatsbyjs-starter-with-typescript-eslint-prettier-4jh3
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "jsx": "preserve",
+    "lib": ["dom", "esnext"],
+    "strict": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": false
+  },
+  "exclude": ["node_modules", "public", ".cache"]
+}
+*/
+
+// https://github.com/resir014/gatsby-starter-typescript-plus/blob/master/tsconfig.json
+// {
+//   "compilerOptions": {
+//     "module": "commonjs",
+//     "target": "esnext",
+//     "jsx": "preserve",
+//     "lib": ["dom", "es2015", "es2017"],
+//     "strict": true,
+//     "noEmit": true,
+//     "isolatedModules": true,
+//     "esModuleInterop": true,
+//     "skipLibCheck": true,
+//     "noUnusedLocals": true,
+//     "noUnusedParameters": true,
+//     "removeComments": false,
+//     "preserveConstEnums": true
+//   },
+//   "include": [./src/**/*"]
+// }
