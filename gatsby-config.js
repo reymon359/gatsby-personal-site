@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Personal Site`,
     description: `A Gatsby Typescript project for my personal site`,
-    author: `@gatsbyjs`
+    author: `@reymon359`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -32,4 +32,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ]
-}
+};
