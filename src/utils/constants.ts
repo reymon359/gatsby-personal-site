@@ -12,10 +12,10 @@ export const META = {
   },
   profile: {
     title: 'Ramon Morcillo | Profile',
-    description: 'Profile desc.'
+    description: 'Profile desc. TODO'
   },
   works: {
     title: 'Ramon Morcillo | Works',
-    description: 'Works desc.'
+    description: 'Works desc. TODO'
   }
 };

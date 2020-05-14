@@ -1,9 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
-import reset from 'styled-reset';
 import { colors, fonts, media } from './constants';
 
 export const GlobalStyle = createGlobalStyle`
-  ${reset}
 
   @font-face {
     font-family: stack-mono;
