@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import Logo from '../Logo';
+import Logo from './Logo';
 // import Footer from '../Footer';
 // import Menu from '../Menu';
 // import ToggleMenu from '../ToggleMenu';
@@ -80,7 +80,7 @@ class Navigation extends Component {
     return (
       <Wrapper>
         <Header>
-          {/* <Logo /> */}
+          <Logo />
           {/* <ToggleMenu open={open} onClick={this.toggleMenu} /> */}
         </Header>
         <Shoable open={open}>
