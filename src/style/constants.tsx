@@ -2,7 +2,7 @@ import { css } from 'styled-components';
 
 // #011638
 export const colors = {
-  blue900: '#011638',
+  blue900: '#1e2733',
   gray500: '#94989E',
   gray700: '#656a73',
   yellow500: '#EBC86E',

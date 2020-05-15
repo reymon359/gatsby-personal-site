@@ -51,7 +51,9 @@ export const Header = styled.header`
     align-items: flex-end;
     width: 100%;
     min-height: 7rem;
-    background-image: linear-gradient(to bottom,rgba(30,39,51,0.0) 0%,rgba(30,39,51,1) 50%);
+    background-image: linear-gradient(to bottom,
+    ${colors.blue900 + '00'} 0%,
+    ${colors.blue900} 50%);
     ${getOuterSpace('padding')};
   `}
 `;
