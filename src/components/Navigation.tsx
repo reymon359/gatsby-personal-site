@@ -56,6 +56,7 @@ export const Header = styled.header`
   `}
 `;
 
+// TODO: Transform to a functional component
 class Navigation extends Component {
   constructor() {
     super();
