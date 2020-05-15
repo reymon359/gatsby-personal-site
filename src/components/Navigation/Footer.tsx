@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { colors, fonts, media, getOuterSpace } from '../style/constants';
+import { colors, fonts, media, getOuterSpace } from '../../style/constants';
 
 export const FooterContainer = styled.footer`
   width: 100%;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
-import { media, getOuterSpace } from '../style/constants';
+import { media, getOuterSpace } from '../../style/constants';
 
 const CircleContainer = styled.div`
   position: fixed;
