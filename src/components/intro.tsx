@@ -50,7 +50,7 @@ type IntroProps = {
 const Intro: React.FC<IntroProps> = props => (
   <Wrapper {...props}>
     <Title>
-      Hi, my name is Ramon Morcillo, a software based in Madrid, Spain
+      Hi, I am Ramon Morcillo, a software engineer based in Madrid, Spain
     </Title>
   </Wrapper>
 );
