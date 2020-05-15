@@ -1,6 +1,5 @@
 import React from 'react';
-import EmailMe from '../EmailMe';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import styled, { css } from 'styled-components';
 import { colors, fonts, media, getOuterSpace } from '../../style/constants';
 
@@ -162,7 +161,11 @@ const Menu = () => (
       <NavItem>
         <NavLink to="/profile">Profile</NavLink>
       </NavItem>
-      <NavItem highlight>{/* <EmailMe text="Contact" /> */}</NavItem>
+      <NavItem highlight>
+        <a rel="noopener" href="mailto:hey@ramonmorcillo.com">
+          Contact
+        </a>
+      </NavItem>
     </Nav>
   </Wrapper>
 );
