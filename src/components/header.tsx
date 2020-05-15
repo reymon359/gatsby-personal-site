@@ -1,9 +1,9 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
-interface HeaderProps {
+type HeaderProps = {
   siteTitle: string;
-}
+};
 
 const Header: React.FC<HeaderProps> = ({ siteTitle }) => (
   <header

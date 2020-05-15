@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Logo from './Logo';
 import Footer from './Footer';
-// import Menu from '../Menu';
+import Menu from './Menu';
 // import ToggleMenu from '../ToggleMenu';
 import styled, { css } from 'styled-components';
 import { colors, media, getOuterSpace } from '../../style/constants';
@@ -88,7 +88,7 @@ class Navigation extends Component {
         </Header>
         <Shoable open={open}>
           <div>
-            {/* <Menu /> */}
+            <Menu />
             <Footer />
           </div>
         </Shoable>
