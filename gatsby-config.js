@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Ramon Morcillo Site`,
-    description: `Hi, I am Ramon Morcillo, a software engineer based in Madrid, Spain`,
+    title: `ramonmorcillo.com`,
+    description: `My personal site made with Gatsby.js`,
     siteUrl: 'https://ramonmorcillo.com',
     author: {
       name: 'Ramon Morcillo',
+      intro: `Hi, I am Ramon Morcillo, a software engineer based in Madrid, Spain`,
       url: 'https://ramonmorcillo.com',
       email: 'hey@ramonmorcillo.com'
     },
@@ -38,7 +39,16 @@ module.exports = {
         icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
       }
     },
-    `gatsby-plugin-typescript`
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-typescript`,
+    `gatsby-transformer-sharp`,
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
+    'gatsby-transformer-json',
+    'gatsby-plugin-react-svg',
+    'gatsby-plugin-styled-components'
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
