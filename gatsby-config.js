@@ -1,8 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Personal Site`,
-    description: `A Gatsby Typescript project for my personal site`,
-    author: `@reymon359`
+    title: `Ramon Morcillo Site`,
+    description: `Hi, I am Ramon Morcillo, a software engineer based in Madrid, Spain`,
+    siteUrl: 'https://ramonmorcillo.com',
+    author: {
+      name: 'Ramon Morcillo',
+      url: 'https://ramonmorcillo.com',
+      email: 'hey@ramonmorcillo.com'
+    },
+    social: {
+      twitter: 'https://twitter.com/reymon359',
+      github: 'https://github.com/reymon359',
+      codepen: 'https://codepen.io/reymon359',
+      linkedin: 'https://www.linkedin.com/in/ramon-morcillo/'
+    }
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
