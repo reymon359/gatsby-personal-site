@@ -26,6 +26,7 @@ export const GlobalStyle = createGlobalStyle`
     color: #fff;
     font-family: ${fonts.sansSerif};
     backface-visibility: hidden;
+    margin: 0;
   }
 
   h1, h2, h3, h4, h5, h6 {
