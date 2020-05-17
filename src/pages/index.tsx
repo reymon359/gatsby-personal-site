@@ -1,7 +1,7 @@
 import React from 'react';
 import Intro from '../components/Intro';
 import Head from '../components/Head';
-import { META } from '../utils/constants';
+import {META} from '../utils/constants';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
 

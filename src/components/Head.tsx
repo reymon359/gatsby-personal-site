@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import {Helmet} from 'react-helmet';
 
 type HeadProps = {
   title: string;
@@ -7,7 +7,7 @@ type HeadProps = {
   image: string;
 };
 
-const Head: React.FC<HeadProps> = ({ title, description, image }) => (
+const Head: React.FC<HeadProps> = ({title, description, image}) => (
   <Helmet>
     <html lang="en" amp />
     <title>{title}</title>

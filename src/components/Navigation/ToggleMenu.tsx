@@ -1,6 +1,6 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
-import { media } from '../../style/constants';
+import styled, {css} from 'styled-components';
+import {media} from '../../style/constants';
 
 export const Wrapper = styled.div`
   display: none;

@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components';
-import { media, colors } from './constants';
+import styled, {css} from 'styled-components';
+import {media, colors} from './constants';
 
 export const ContentWrapper = styled.div`
   max-width: 68rem;

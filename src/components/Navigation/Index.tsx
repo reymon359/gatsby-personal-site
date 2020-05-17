@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Logo from './Logo';
 import Footer from './Footer';
 import Menu from './Menu';
 import ToggleMenu from './ToggleMenu';
-import styled, { css } from 'styled-components';
-import { colors, media, getOuterSpace } from '../../style/constants';
+import styled, {css} from 'styled-components';
+import {colors, media, getOuterSpace} from '../../style/constants';
 
 export const Wrapper = styled.div`
   ${media.md`
@@ -62,24 +62,24 @@ export const Header = styled.header`
 class Navigation extends Component {
   constructor() {
     super();
-    this.state = { open: false };
+    this.state = {open: false};
     this.toggleMenu = this.toggleMenu.bind(this);
   }
 
   toggleMenu() {
-    this.setState({ open: !this.state.open });
+    this.setState({open: !this.state.open});
   }
 
   componentDidUpdate(prevProps) {
-    const { location } = this.props;
+    const {location} = this.props;
 
     if (location.pathname !== prevProps.location.pathname) {
-      this.setState({ open: false });
+      this.setState({open: false});
     }
   }
 
   render() {
-    const { open } = this.state;
+    const {open} = this.state;
     return (
       <Wrapper>
         <Header>

@@ -1,11 +1,11 @@
-import { Link } from 'gatsby';
+import {Link} from 'gatsby';
 import React from 'react';
 
 type HeaderProps = {
   siteTitle: string;
 };
 
-const Header: React.FC<HeaderProps> = ({ siteTitle }) => (
+const Header: React.FC<HeaderProps> = ({siteTitle}) => (
   <header
     style={{
       background: `rebeccapurple`,
@@ -19,7 +19,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{margin: 0}}>
         <Link
           to="/"
           style={{
