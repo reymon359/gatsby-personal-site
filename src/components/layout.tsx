@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from './Navigation';
-import {GlobalStyle} from '../style/global';
+import {GlobalStyle} from '../styles/global';
 
 type LayoutProps = {
   children: React.ReactNode;

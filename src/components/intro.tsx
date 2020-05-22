@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
-import {colors, media, getOuterSpace} from '../style/constants';
+import {colors, media, getOuterSpace} from '../styles/constants';
 
 export const Wrapper = styled.div`
   font-size: 1.7rem;

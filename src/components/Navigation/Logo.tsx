@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
-import {media, getOuterSpace} from '../../style/constants';
+import {media, getOuterSpace} from '../../styles/constants';
 
 const CircleContainer = styled.div`
   position: fixed;
@@ -13,7 +13,7 @@ const CircleContainer = styled.div`
     position: static;
     padding: 0;
   `}
-  
+
   > div {
     position: relative;
   }
