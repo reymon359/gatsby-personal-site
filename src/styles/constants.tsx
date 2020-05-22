@@ -14,16 +14,6 @@ export const fonts = {
   mono: "'Roboto Mono', stack-mono, monospace"
 };
 
-export const spaces = {
-  p500: '5rem',
-  p400: '4rem',
-  p300: '3rem',
-  p200: '2rem',
-  p100: '1rem',
-  p50: '.5rem',
-  p25: '.25rem'
-};
-
 export const mq = {
   xs: '22em',
   sm: '40em',
@@ -71,18 +61,28 @@ export const media = {
   `
 };
 
-const rule = (d, v) => `${d}: ${v};`;
+export const spaces = {
+  p500: '5rem',
+  p400: '4rem',
+  p300: '3rem',
+  p200: '2rem',
+  p100: '1rem',
+  p50: '.5rem',
+  p25: '.25rem'
+};
 
-export const getOuterSpace = p =>
+const rule = (property: string, value: string) => `${property}: ${value};`;
+
+export const getOuterSpace = (property: string) =>
   css`
-    ${rule(p, spaces.p500)}
+    ${rule(property, spaces.p500)}
     ${media.lg`
-      ${rule(p, spaces.p300)}
+      ${rule(property, spaces.p300)}
     `}
     ${media.md`
-      ${rule(p, spaces.p300)}
+      ${rule(property, spaces.p300)}
     `}
     ${media.sm`
-      ${rule(p, spaces.p200)}
+      ${rule(property, spaces.p200)}
     `}
   `;
