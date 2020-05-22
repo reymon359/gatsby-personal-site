@@ -33,34 +33,40 @@ export const mq = {
 };
 
 export const media = {
-  xs: (...a) => css`
+  xs: (...args: string[]) => css`
     @media (max-width: ${mq.xs}) {
-      ${css(...a)}
+      // @ts-ignore
+      ${css(...args)}
     }
   `,
-  sm: (...a) => css`
+  sm: (...args: string[]) => css`
     @media (max-width: ${mq.sm}) {
-      ${css(...a)}
+      // @ts-ignore
+      ${css(...args)}
     }
   `,
-  md: (...a) => css`
+  md: (...args: string[]) => css`
     @media (max-width: ${mq.md}) {
-      ${css(...a)}
+      // @ts-ignore
+      ${css(...args)}
     }
   `,
-  lg: (...a) => css`
+  lg: (...args: string[]) => css`
     @media (max-width: ${mq.lg}) {
-      ${css(...a)}
+      // @ts-ignore
+      ${css(...args)}
     }
   `,
-  xl: (...a) => css`
+  xl: (...args: string[]) => css`
     @media (max-width: ${mq.xl}) {
-      ${css(...a)}
+      // @ts-ignore
+      ${css(...args)}
     }
   `,
-  hover: (...a) => css`
+  hover: (...args: string[]) => css`
     @media not all and (hover: none) {
-      ${css(...a)}
+      // @ts-ignore
+      ${css(...args)}
     }
   `
 };
