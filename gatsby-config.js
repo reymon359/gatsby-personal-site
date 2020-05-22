@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/camelcase */
+'use strict';
+
 module.exports = {
   siteMetadata: {
     title: `ramonmorcillo.com`,
