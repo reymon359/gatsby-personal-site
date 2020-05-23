@@ -5,9 +5,9 @@ export const META = {
   },
   index: {
     title: 'Ramon Morcillo | Sofware Engineer',
-    description: `Ramon Morcillo, Sofware Engineer. Extremely motivated to constantly develop 
-      my skills and grow professionally. I am always looking to work with 
-      professional-quality software by applying software engineering best practices. 
+    description: `Ramon Morcillo, Sofware Engineer. Extremely motivated to constantly develop
+      my skills and grow professionally. I am always looking to work with
+      professional-quality software by applying software engineering best practices.
       I am open to new challenges and opportunities so do not hesitate on contacting me.`
   },
   profile: {
