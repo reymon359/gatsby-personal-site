@@ -4,7 +4,7 @@ import styled, {css} from 'styled-components';
 import {addRemToProperty} from '../../styles/shared';
 import {colors, fonts, media} from '../../styles/theme';
 
-export const Wrapper = styled.nav`
+const MenuWrapper = styled.nav`
   position: fixed;
   bottom: 0;
   left: 0;
@@ -45,7 +45,7 @@ export const Wrapper = styled.nav`
       }
 
       &:hover {
-        color: #fff;
+        color: ${colors.white}!important;
 
         &::before {
           transform: translate(0, -50%);
@@ -61,7 +61,7 @@ export const Wrapper = styled.nav`
   `}
 `;
 
-export const Nav = styled.ul`
+const Nav = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
@@ -69,7 +69,11 @@ export const Nav = styled.ul`
   max-width: 14rem;
 `;
 
-export const NavItem = styled.li`
+type NavItemProps = {
+  highlight?: boolean;
+};
+
+const NavItem = styled.li<NavItemProps>`
   list-style: none;
   padding: 0.5rem 0;
   line-height: 1em;
@@ -99,11 +103,11 @@ export const NavItem = styled.li`
   }
 `;
 
-export const NavLink = styled(Link).attrs({
+const NavLink = styled(Link).attrs({
   activeClassName: 'active'
 })`
   &.active {
-    color: #fff;
+    color: ${colors.white};
 
     &::before {
       transform: translate(0, -50%);
@@ -113,7 +117,7 @@ export const NavLink = styled(Link).attrs({
 `;
 
 const Menu = () => (
-  <Wrapper>
+  <MenuWrapper>
     <Nav>
       <NavItem>
         <a
@@ -168,7 +172,7 @@ const Menu = () => (
         </a>
       </NavItem>
     </Nav>
-  </Wrapper>
+  </MenuWrapper>
 );
 
 export default Menu;
