@@ -150,10 +150,7 @@ const styles = () => `
 
 html, body {
   height: 100%;
-  font-size: 16px;
-  ${media.xl`
-    font-size: 14px;
-  `}
+  font-size: 14px;
 }
 
 body {
