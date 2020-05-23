@@ -3,7 +3,11 @@ import styled, {css} from 'styled-components';
 import {colors, media} from '../styles/theme';
 import {addRemToProperty} from '../styles/shared';
 
-export const Wrapper = styled.div`
+type TitleContainerProps = {
+  fixed: boolean;
+};
+
+const TitleContainer = styled.div<TitleContainerProps>`
   font-size: 1.7rem;
   max-width: 36rem;
   line-height: 1.3em;
@@ -37,7 +41,7 @@ export const Wrapper = styled.div`
         `}
 `;
 
-export const Title = styled.h1`
+const Title = styled.h1`
   margin: 0px;
   font-family: inherit;
   font-size: inherit;
@@ -52,11 +56,11 @@ type IntroProps = {
 };
 
 const Intro: React.FC<IntroProps> = props => (
-  <Wrapper {...props}>
+  <TitleContainer {...props}>
     <Title>
       Hi, I am Ramon Morcillo, a software engineer based in Madrid, Spain
     </Title>
-  </Wrapper>
+  </TitleContainer>
 );
 
 export default Intro;
