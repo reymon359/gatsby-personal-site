@@ -3,11 +3,11 @@ import styled, {css} from 'styled-components';
 import {colors, media} from '../styles/theme';
 import {addRemToProperty} from '../styles/shared';
 
-type TitleContainerProps = {
+type TitleWrapperProps = {
   fixed: boolean;
 };
 
-const TitleContainer = styled.div<TitleContainerProps>`
+const TitleWrapper = styled.div<TitleWrapperProps>`
   font-size: 1.7rem;
   max-width: 36rem;
   line-height: 1.3em;
@@ -56,11 +56,11 @@ type IntroProps = {
 };
 
 const Intro: React.FC<IntroProps> = props => (
-  <TitleContainer {...props}>
+  <TitleWrapper {...props}>
     <Title>
       Hi, I am Ramon Morcillo, a software engineer based in Madrid, Spain
     </Title>
-  </TitleContainer>
+  </TitleWrapper>
 );
 
 export default Intro;

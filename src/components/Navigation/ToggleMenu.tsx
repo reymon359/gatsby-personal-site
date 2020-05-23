@@ -2,12 +2,12 @@ import React from 'react';
 import styled, {css} from 'styled-components';
 import {media, colors} from '../../styles/theme';
 
-type ToggleMenuContainerProps = {
+type ToggleMenuWrapperProps = {
   open: boolean;
   onClick: any;
 };
 
-const ToggleMenuContainer = styled.div<ToggleMenuContainerProps>`
+const ToggleMenuWrapper = styled.div<ToggleMenuWrapperProps>`
   display: none;
   height: 15px;
   width: 1.75rem;
@@ -71,11 +71,11 @@ type ToggleMenuProps = {
 };
 
 const ToggleMenu: React.FC<ToggleMenuProps> = ({open, onClick}) => (
-  <ToggleMenuContainer open={open} onClick={onClick}>
+  <ToggleMenuWrapper open={open} onClick={onClick}>
     <span />
     <span />
     <span />
-  </ToggleMenuContainer>
+  </ToggleMenuWrapper>
 );
 
 export default ToggleMenu;

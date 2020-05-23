@@ -22,7 +22,7 @@ const CircleBackground = styled.div`
   will-change: transform;
 `;
 
-const CircleContainer = styled.div`
+const CircleWrapper = styled.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -72,14 +72,14 @@ const Circle = () => (
 );
 
 const Logo = () => (
-  <CircleContainer>
+  <CircleWrapper>
     <RelativeWrapper>
       <Link to="/">
         <Circle />
       </Link>
       <CircleBackground />
     </RelativeWrapper>
-  </CircleContainer>
+  </CircleWrapper>
 );
 
 export default Logo;

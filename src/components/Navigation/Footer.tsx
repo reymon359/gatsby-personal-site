@@ -3,7 +3,7 @@ import styled, {css} from 'styled-components';
 import {addRemToProperty} from '../../styles/shared';
 import {colors, fonts, media} from '../../styles/theme';
 
-const FooterContainer = styled.footer`
+const FooterWrapper = styled.footer`
   width: 100%;
   position: fixed;
   top: 50%;
@@ -47,7 +47,7 @@ const Item = styled.div<ItemProps>`
 `;
 
 const Footer = () => (
-  <FooterContainer>
+  <FooterWrapper>
     <Item position="left">
       Made with 💚 &&nbsp;
       <a
@@ -61,7 +61,7 @@ const Footer = () => (
     <Item position="right">
       <span>Ramón Morcillo - {new Date().getFullYear()}</span>
     </Item>
-  </FooterContainer>
+  </FooterWrapper>
 );
 
 export default Footer;
