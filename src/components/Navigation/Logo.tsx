@@ -1,8 +1,26 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
-import {media} from '../../styles/theme';
+import {media, colors} from '../../styles/theme';
 import {addRemToProperty} from '../../styles/shared';
+
+const RelativeWrapper = styled.div`
+  position: relative;
+`;
+
+const CircleBackground = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: ${colors.white + '10'};
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  pointer-events: none;
+  opacity: 1;
+  will-change: transform;
+`;
 
 const CircleContainer = styled.div`
   position: fixed;
@@ -14,10 +32,6 @@ const CircleContainer = styled.div`
     position: static;
     padding: 0;
   `}
-
-  > div {
-    position: relative;
-  }
 
   a,
   svg {
@@ -36,50 +50,35 @@ const CircleContainer = styled.div`
     height: auto;
   }
 
-  .circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    background: rgba(255, 255, 255, 0.05);
-    height: 100%;
-    width: 100%;
-    border-radius: 100%;
-    pointer-events: none;
-    opacity: 1;
-    will-change: transform;
-  }
-
-  a:hover + .circle {
+  a:hover + ${CircleBackground} {
     opacity: 0;
     transform: translate(-50%, -50%) scale(7.5);
     transition: transform 1s cubic-bezier(0.45, 0, 0.1, 1), opacity 0.8s ease;
   }
 `;
 
-const CircleSvg = () => (
+const Circle = () => (
   <svg
     width="22"
     height="22"
     viewBox="0 0 22 22"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <title>Oval</title>
     <path
       d="M11 21.5C5.201 21.5.5 16.799.5 11S5.201.5 11 .5 21.5 5.201 21.5 11 16.799 21.5 11 21.5zm0-1a9.5 9.5 0 1 0 0-19 9.5 9.5 0 0 0 0 19z"
-      fill="#FFF"
+      fill={colors.white}
     />
   </svg>
 );
 
 const Logo = () => (
   <CircleContainer>
-    <div>
+    <RelativeWrapper>
       <Link to="/">
-        <CircleSvg />
+        <Circle />
       </Link>
-      <div className="circle" />
-    </div>
+      <CircleBackground />
+    </RelativeWrapper>
   </CircleContainer>
 );
 
