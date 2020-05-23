@@ -13,7 +13,11 @@ export const FooterContainer = styled.footer`
   `}
 `;
 
-export const Item = styled.div`
+type ItemProps = {
+  position: string;
+};
+
+export const Item = styled.div<ItemProps>`
   position: absolute;
   font-family: ${fonts.mono};
   color: ${colors.gray500};
