@@ -9,7 +9,7 @@ type LayoutProps = {
 const Layout: React.FC<LayoutProps> = ({children}) => (
   <>
     <GlobalStyle />
-    {children}
+    <main role="main">{children}</main>
     <Navigation location={location}></Navigation>
   </>
 );
