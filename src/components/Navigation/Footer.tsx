@@ -3,7 +3,7 @@ import styled, {css} from 'styled-components';
 import {addRemToProperty} from '../../styles/shared';
 import {colors, fonts, media} from '../../styles/theme';
 
-export const FooterContainer = styled.footer`
+const FooterContainer = styled.footer`
   width: 100%;
   position: fixed;
   top: 50%;
@@ -17,7 +17,7 @@ type ItemProps = {
   position: string;
 };
 
-export const Item = styled.div<ItemProps>`
+const Item = styled.div<ItemProps>`
   position: absolute;
   font-family: ${fonts.mono};
   color: ${colors.gray500};
@@ -28,7 +28,7 @@ export const Item = styled.div<ItemProps>`
       ? css`
           transform: rotate(-90deg) translateX(-50%);
           transform-origin: left;
-          ${addRemToProperty('left')}
+          ${addRemToProperty(`left`)}
         `
       : css`
           transform: rotate(90deg) translateX(50%);
