@@ -1,14 +1,14 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
-import {media, getOuterSpace} from '../../styles/constants';
+import {media, addRemToProperty} from '../../styles/constants';
 
 const CircleContainer = styled.div`
   position: fixed;
   top: 0;
   left: 0;
   max-width: 18rem;
-  ${getOuterSpace('padding')}
+  ${addRemToProperty('padding')}
   ${media.md`
     position: static;
     padding: 0;

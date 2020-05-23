@@ -4,7 +4,7 @@ import Footer from './Footer';
 import Menu from './Menu';
 import ToggleMenu from './ToggleMenu';
 import styled, {css} from 'styled-components';
-import {colors, media, getOuterSpace} from '../../styles/constants';
+import {colors, media, addRemToProperty} from '../../styles/constants';
 
 export const Wrapper = styled.div`
   ${media.md`
@@ -54,7 +54,7 @@ export const Header = styled.header`
     background-image: linear-gradient(to bottom,
     ${colors.blue900 + '00'} 0%,
     ${colors.blue900} 50%);
-    ${getOuterSpace('padding')};
+    ${addRemToProperty('padding')};
   `}
 `;
 

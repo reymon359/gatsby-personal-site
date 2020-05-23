@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'gatsby';
 import styled, {css} from 'styled-components';
-import {colors, fonts, media, getOuterSpace} from '../../styles/constants';
+import {colors, fonts, media, addRemToProperty} from '../../styles/constants';
 
 export const Wrapper = styled.nav`
   position: fixed;
@@ -13,7 +13,7 @@ export const Wrapper = styled.nav`
   align-items: flex-end;
   justify-content: space-between;
   pointer-events: none;
-  ${getOuterSpace('padding')};
+  ${addRemToProperty('padding')};
 
   ul:last-child li {
     text-align: right;

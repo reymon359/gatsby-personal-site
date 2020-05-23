@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
-import {colors, fonts, media, getOuterSpace} from '../../styles/constants';
+import {colors, fonts, media, addRemToProperty} from '../../styles/constants';
 
 export const FooterContainer = styled.footer`
   width: 100%;
@@ -23,12 +23,12 @@ export const Item = styled.div`
       ? css`
           transform: rotate(-90deg) translateX(-50%);
           transform-origin: left;
-          ${getOuterSpace('left')}
+          ${addRemToProperty('left')}
         `
       : css`
           transform: rotate(90deg) translateX(50%);
           transform-origin: right;
-          ${getOuterSpace('right')}
+          ${addRemToProperty('right')}
         `}
 
   ${media.md`

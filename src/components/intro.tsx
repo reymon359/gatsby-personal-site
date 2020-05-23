@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
-import {colors, media, getOuterSpace} from '../styles/constants';
+import {colors, media, addRemToProperty} from '../styles/constants';
 
 export const Wrapper = styled.div`
   font-size: 1.7rem;
@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
   ${props =>
     props.fixed
       ? css`
-          ${getOuterSpace('padding')};
+          ${addRemToProperty('padding')};
           position: absolute;
           top: 0;
           right: 0;

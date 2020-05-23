@@ -14,53 +14,6 @@ export const fonts = {
   mono: "'Roboto Mono', stack-mono, monospace"
 };
 
-export const mq = {
-  xs: '22em',
-  sm: '40em',
-  md: '54em',
-  lg: '78em',
-  xl: '125em'
-};
-
-export const media = {
-  xs: (...args: string[]) => css`
-    @media (max-width: ${mq.xs}) {
-      // @ts-ignore
-      ${css(...args)}
-    }
-  `,
-  sm: (...args: string[]) => css`
-    @media (max-width: ${mq.sm}) {
-      // @ts-ignore
-      ${css(...args)}
-    }
-  `,
-  md: (...args: string[]) => css`
-    @media (max-width: ${mq.md}) {
-      // @ts-ignore
-      ${css(...args)}
-    }
-  `,
-  lg: (...args: string[]) => css`
-    @media (max-width: ${mq.lg}) {
-      // @ts-ignore
-      ${css(...args)}
-    }
-  `,
-  xl: (...args: string[]) => css`
-    @media (max-width: ${mq.xl}) {
-      // @ts-ignore
-      ${css(...args)}
-    }
-  `,
-  hover: (...args: string[]) => css`
-    @media not all and (hover: none) {
-      // @ts-ignore
-      ${css(...args)}
-    }
-  `
-};
-
 export const spaces = {
   p500: '5rem',
   p400: '4rem',
@@ -71,18 +24,72 @@ export const spaces = {
   p25: '.25rem'
 };
 
+export const mq = {
+  xs: '22em',
+  sm: '40em',
+  md: '54em',
+  lg: '78em',
+  xl: '125em'
+};
+
+export const media = {
+  xs: (...args: TemplateStringsArray[]) => css`
+    @media (max-width: ${mq.xs}) {
+      // @ts-ignore
+      ${css(...args)}
+    }
+  `,
+  sm: (...args: TemplateStringsArray[]) => css`
+    @media (max-width: ${mq.sm}) {
+      // @ts-ignore
+      ${css(...args)}
+    }
+  `,
+  md: (...args: TemplateStringsArray[]) => css`
+    @media (max-width: ${mq.md}) {
+      // @ts-ignore
+      ${css(...args)}
+    }
+  `,
+  lg: (...args: TemplateStringsArray[]) => css`
+    @media (max-width: ${mq.lg}) {
+      // @ts-ignore
+      ${css(...args)}
+    }
+  `,
+  xl: (...args: TemplateStringsArray[]) => css`
+    @media (max-width: ${mq.xl}) {
+      // @ts-ignore
+      ${css(...args)}
+    }
+  `,
+  hover: (...args: TemplateStringsArray[]) => css`
+    @media not all and (hover: none) {
+      // @ts-ignore
+      ${css(...args)}
+    }
+  `
+};
+
 const rule = (property: string, value: string) => `${property}: ${value};`;
 
-export const getOuterSpace = (property: string) =>
+export const addRemToProperty = (property: string) =>
   css`
-    ${rule(property, spaces.p500)}
+    ${rule(property, '5rem')}
     ${media.lg`
-      ${rule(property, spaces.p300)}
+      ${rule(property, '3rem')}
     `}
     ${media.md`
+      ${rule(property, '3rem')}
+    `}
+    ${media.sm`
+      ${rule(property, '2rem')}
+    `}
+  `;
+
+/* ${media.md`
       ${rule(property, spaces.p300)}
     `}
     ${media.sm`
       ${rule(property, spaces.p200)}
-    `}
-  `;
+    `} */
