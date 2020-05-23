@@ -71,9 +71,14 @@ export const media = {
   `
 };
 
-const rule = (property: string, value: string) => `${property}: ${value};`;
+const rule = (
+  property: TemplateStringsArray,
+  value: string
+): TemplateStringsArray =>
+  // @ts-ignore
+  `${property}: ${value};`;
 
-export const addRemToProperty = (property: string) =>
+export const addRemToProperty = (property: TemplateStringsArray) =>
   css`
     ${rule(property, '5rem')}
     ${media.lg`
@@ -86,10 +91,3 @@ export const addRemToProperty = (property: string) =>
       ${rule(property, '2rem')}
     `}
   `;
-
-/* ${media.md`
-      ${rule(property, spaces.p300)}
-    `}
-    ${media.sm`
-      ${rule(property, spaces.p200)}
-    `} */
