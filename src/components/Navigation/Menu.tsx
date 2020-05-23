@@ -115,7 +115,7 @@ const NavLink = styled(Link).attrs({
     }
   }
 `;
-
+// TODO: Query navitem socials from config
 const Menu = () => (
   <MenuWrapper>
     <Nav>
