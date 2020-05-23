@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
-import {colors, media, addRemToProperty} from '../styles/constants';
+import {colors, media} from '../styles/theme';
+import {addRemToProperty} from '../styles/shared';
 
 export const Wrapper = styled.div`
   font-size: 1.7rem;

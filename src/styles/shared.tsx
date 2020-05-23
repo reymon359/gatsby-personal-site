@@ -1,5 +1,5 @@
 import styled, {css} from 'styled-components';
-import {media, colors} from './constants';
+import {media, colors} from './theme';
 
 export const ContentWrapper = styled.div`
   max-width: 68rem;
@@ -9,13 +9,13 @@ export const ContentWrapper = styled.div`
     margin: 8rem auto 3rem;
     width: calc(100% - 11rem * 2);
   `}
-  
+
   ${media.md`
     width: 100%;
     margin: 4rem auto 0;
     padding: 0 3rem 6rem;
   `}
-  
+
   ${media.sm`
     margin: 2rem auto 0;
     padding: 0 2rem 6rem;
@@ -36,7 +36,7 @@ export const Loader = styled.div`
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #1b242f;
+  background: ${colors.grayBlue};
   z-index: 2;
   ${props =>
     props.isLoaded
@@ -51,3 +51,24 @@ export const Loader = styled.div`
   transition: .6s cubic-bezier(.45, 0, .07, 1) transform, .6s cubic-bezier(.45, 0, .07, 1) opacity;
   will-change: transform;
 `;
+
+const rule = (
+  property: TemplateStringsArray,
+  value: string
+): TemplateStringsArray =>
+  // @ts-ignore
+  `${property}: ${value};`;
+
+export const addRemToProperty = (property: TemplateStringsArray) =>
+  css`
+    ${rule(property, '5rem')}
+    ${media.lg`
+      ${rule(property, '3rem')}
+    `}
+    ${media.md`
+      ${rule(property, '3rem')}
+    `}
+    ${media.sm`
+      ${rule(property, '2rem')}
+    `}
+  `;

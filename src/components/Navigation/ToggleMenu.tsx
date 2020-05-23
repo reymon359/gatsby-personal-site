@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
-import {media} from '../../styles/constants';
+import {media, colors} from '../../styles/theme';
 
 export const Wrapper = styled.div`
   display: none;
@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
   span {
     display: inline-block;
     height: 1px;
-    background: #fff;
+    background: ${colors.white};
   }
 
   ${props =>

@@ -4,7 +4,8 @@ import Footer from './Footer';
 import Menu from './Menu';
 import ToggleMenu from './ToggleMenu';
 import styled, {css} from 'styled-components';
-import {colors, media, addRemToProperty} from '../../styles/constants';
+import {colors, media} from '../../styles/theme';
+import {addRemToProperty} from '../../styles/shared';
 
 export const Wrapper = styled.div`
   ${media.md`

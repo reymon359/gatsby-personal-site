@@ -1,7 +1,8 @@
 import React from 'react';
 import {Link} from 'gatsby';
 import styled, {css} from 'styled-components';
-import {colors, fonts, media, addRemToProperty} from '../../styles/constants';
+import {addRemToProperty} from '../../styles/shared';
+import {colors, fonts, media} from '../../styles/theme';
 
 export const Wrapper = styled.nav`
   position: fixed;
