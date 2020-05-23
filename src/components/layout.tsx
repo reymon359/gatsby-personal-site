@@ -7,11 +7,11 @@ type LayoutProps = {
 };
 
 const Layout: React.FC<LayoutProps> = ({children}) => (
-  <main>
+  <>
     <GlobalStyle />
     {children}
     <Navigation location={location}></Navigation>
-  </main>
+  </>
 );
 
 export default Layout;
