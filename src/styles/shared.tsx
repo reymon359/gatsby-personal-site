@@ -52,14 +52,11 @@ export const Loader = styled.div`
   will-change: transform;
 `;
 
-const rule = (
-  property: TemplateStringsArray,
-  value: string
-): TemplateStringsArray =>
+const rule = (property: string, value: string): TemplateStringsArray =>
   // @ts-ignore
   `${property}: ${value};`;
 
-export const addRemToProperty = (property: TemplateStringsArray) =>
+export const addRemToProperty = (property: string) =>
   css`
     ${rule(property, '5rem')}
     ${media.lg`
