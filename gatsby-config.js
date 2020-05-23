@@ -1,6 +1,10 @@
 /* eslint-disable @typescript-eslint/camelcase */
 'use strict';
 
+require('dotenv').config({
+  path: `.env`
+});
+
 module.exports = {
   siteMetadata: {
     title: `ramonmorcillo.com`,

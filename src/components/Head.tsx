@@ -37,6 +37,7 @@ const Head: React.FC<HeadProps> = ({
           siteMetadata {
             title
             description
+            googleSiteVerification
             author {
               name
             }
