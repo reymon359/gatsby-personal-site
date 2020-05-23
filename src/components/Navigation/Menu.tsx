@@ -161,10 +161,10 @@ const Menu = () => (
         <NavLink to="/">Index</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink to="/works">Works</NavLink>
+        <NavLink to="/tags">Tags</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink to="/profile">Profile</NavLink>
+        <NavLink to="/about">About</NavLink>
       </NavItem>
       <NavItem highlight>
         <a rel="noopener" href="mailto:hey@ramonmorcillo.com">

@@ -3,7 +3,8 @@ import Navigation from './Navigation';
 import {GlobalStyle} from '../styles/theme';
 
 type LayoutProps = {
-  children: React.ReactNode;
+  readonly title?: string;
+  readonly children: React.ReactNode;
 };
 
 const Layout: React.FC<LayoutProps> = ({children}) => (
