@@ -32,33 +32,41 @@ export const spaces = {
   p25: '.25rem'
 };
 
+export const mq = {
+  xs: '22em',
+  sm: '40em',
+  md: '54em',
+  lg: '78em',
+  xl: '125em'
+};
+
 export const media = {
   xs: (...args: TemplateStringsArray[]) => css`
-    @media (max-width: '22em') {
+    @media (max-width: ${mq.xs}) {
       // @ts-ignore
       ${css(...args)}
     }
   `,
   sm: (...args: TemplateStringsArray[]) => css`
-    @media (max-width: '40em') {
+    @media (max-width: ${mq.sm}) {
       // @ts-ignore
       ${css(...args)}
     }
   `,
   md: (...args: TemplateStringsArray[]) => css`
-    @media (max-width: '54em') {
+    @media (max-width: ${mq.md}) {
       // @ts-ignore
       ${css(...args)}
     }
   `,
   lg: (...args: TemplateStringsArray[]) => css`
-    @media (max-width: '78em') {
+    @media (max-width: ${mq.lg}) {
       // @ts-ignore
       ${css(...args)}
     }
   `,
   xl: (...args: TemplateStringsArray[]) => css`
-    @media (max-width: '125em') {
+    @media (max-width: ${mq.xl}) {
       // @ts-ignore
       ${css(...args)}
     }
@@ -70,7 +78,6 @@ export const media = {
     }
   `
 };
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v4.0 | 20180602
    License: none (public domain)
