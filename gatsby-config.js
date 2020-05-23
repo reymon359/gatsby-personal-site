@@ -6,6 +6,7 @@ module.exports = {
     title: `ramonmorcillo.com`,
     description: `My personal site made with Gatsby.js`,
     siteUrl: `https://ramonmorcillo.com`,
+    googleSiteVerification: process.env.GOOGLE_SITE_VERIFICATION,
     author: {
       name: `Ramon Morcillo`,
       intro: `Hi, I am Ramon Morcillo, a software engineer based in Madrid, Spain`,
