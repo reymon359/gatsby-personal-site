@@ -52,10 +52,11 @@ const ToggleMenuWrapper = styled.div<ToggleMenuWrapperProps>`
 
             &:nth-child(2) {
               width: 60%;
+              margin-right: 20%;
             }
 
             &:nth-child(3) {
-              width: 80%;
+              width: 100%;
             }
           }
         `}
