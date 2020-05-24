@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react';
+import React, {useState} from 'react';
 import Logo from './Logo';
 import Footer from './Footer';
 import Menu from './Menu';
