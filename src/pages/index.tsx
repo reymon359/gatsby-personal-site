@@ -1,24 +1,104 @@
 import React from 'react';
+import {Link, graphql} from 'gatsby';
 import Intro from '../components/Intro';
 import Head from '../components/Head';
-import {META} from '../utils/constants';
 import Layout from '../components/Layout';
-import SEO from '../components/seo';
+import Bio from '../components/bio';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <section>
-      {/* TODO: refactor this part of code, all config in one site like gatsby
-      config and get it with query */}
+interface IndexProps {
+  readonly data: PageQueryData;
+}
+
+const Index: React.FC<IndexProps> = ({data}) => {
+  console.log(data);
+
+  const siteTitle = data.site.siteMetadata.title;
+  const posts = data.allMarkdownRemark.edges;
+
+  return (
+    <Layout title={siteTitle}>
       <Head
-        title={META.index.title}
-        description={META.index.description}
-        image={META.common.image}
+        title="Home"
+        keywords={[
+          `blog`,
+          `gatsby`,
+          `typescript`,
+          `javascript`,
+          `portfolio`,
+          `react`
+        ]}
       />
-      <Intro fixed={true} />
-    </section>
-  </Layout>
-);
+      <section>
+        <Intro fixed={true} />
+      </section>
+      <Bio />
+      <article>
+        <div className={`page-content`}>
+          {posts.map(({node}) => {
+            const title = node.frontmatter.title || node.fields.slug;
+            return (
+              <div key={node.fields.slug}>
+                <h3>
+                  <Link to={node.fields.slug}>{title}</Link>
+                </h3>
+                <small>{node.frontmatter.date}</small>
+                <p dangerouslySetInnerHTML={{__html: node.excerpt}} />
+              </div>
+            );
+          })}
+        </div>
+      </article>
+    </Layout>
+  );
+};
 
-export default IndexPage;
+interface PageQueryData {
+  site: {
+    siteMetadata: {
+      title: string;
+    };
+  };
+  allMarkdownRemark: {
+    edges: {
+      node: {
+        excerpt: string;
+        fields: {
+          slug: string;
+        };
+        frontmatter: {
+          date: string;
+          title: string;
+        };
+      };
+    }[];
+  };
+}
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(
+      filter: {frontmatter: {published: {ne: false}}}
+      sort: {fields: [frontmatter___date], order: DESC}
+    ) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+          }
+        }
+      }
+    }
+  }
+`;
+
+export default Index;
