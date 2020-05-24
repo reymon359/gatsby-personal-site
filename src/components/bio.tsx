@@ -1,12 +1,14 @@
 import React from 'react';
 import {StaticQuery, graphql} from 'gatsby';
+import {string} from 'prop-types';
 
 type StaticQueryData = {
   site: {
     siteMetadata: {
       description: string;
       social: {
-        twitter: string;
+        name: string;
+        socialUrl: string;
       };
     };
   };
@@ -20,7 +22,8 @@ const Bio: React.FC = () => (
           siteMetadata {
             description
             social {
-              twitter
+              name
+              socialUrl
             }
           }
         }
@@ -34,7 +37,6 @@ const Bio: React.FC = () => (
           <p>
             By Ramón Morcillo
             <br />
-            <a href={social.twitter}>Twitter</a>
           </p>
         </div>
       );

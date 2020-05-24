@@ -18,12 +18,15 @@ module.exports = {
       url: `https://ramonmorcillo.com`,
       email: `hey@ramonmorcillo.com`
     },
-    social: {
-      twitter: `https://twitter.com/reymon359`,
-      github: `https://github.com/reymon359`,
-      codepen: `https://codepen.io/reymon359`,
-      linkedin: `https://www.linkedin.com/in/ramon-morcillo/`
-    }
+    social: [
+      {name: `GitHub`, socialUrl: `https://github.com/reymon359`},
+      {
+        name: `Linkedin`,
+        socialUrl: `https://www.linkedin.com/in/ramon-morcillo/`
+      },
+      {name: `Codepen`, socialUrl: `https://codepen.io/reymon359`},
+      {name: `Twitter`, socialUrl: `https://twitter.com/reymon359`}
+    ]
   },
   plugins: [
     {

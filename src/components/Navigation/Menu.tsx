@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'gatsby';
+import {useStaticQuery, graphql, Link} from 'gatsby';
 import styled, {css} from 'styled-components';
 import {addRemToProperty} from '../../styles/shared';
 import {colors, fonts, media} from '../../styles/theme';
@@ -116,66 +116,71 @@ const NavLink = styled(Link).attrs({
   }
 `;
 // TODO: Query navitem socials from config
-const Menu = () => (
-  <MenuWrapper>
-    <Nav>
-      <NavItem>
-        <a
-          href="https://www.linkedin.com/in/ramon-morcillo/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Linkedin
-        </a>
-      </NavItem>
-      <NavItem>
-        <a
-          href="https://github.com/reymon359"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Github
-        </a>
-      </NavItem>
-      <NavItem>
-        <a
-          href="https://codepen.io/reymon359"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Codepen
-        </a>
-      </NavItem>
-      <NavItem>
-        <a
-          href="https://twitter.com/reymon359"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </NavItem>
-    </Nav>
-    <Nav>
-      <NavItem>
-        <NavLink to="/">Index</NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink to="/blog">Blog</NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink to="/tags">Tags</NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink to="/about">About</NavLink>
-      </NavItem>
-      <NavItem highlight>
-        <a rel="noopener" href="mailto:hey@ramonmorcillo.com">
-          Contact
-        </a>
-      </NavItem>
-    </Nav>
-  </MenuWrapper>
-);
 
+interface SocialLink {
+  name: string;
+  socialUrl: string;
+}
+
+interface StaticQueryData {
+  site: {
+    siteMetadata: {
+      social: SocialLink[];
+    };
+  };
+}
+
+const Menu: React.FC = () => {
+  const {site}: StaticQueryData = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            social {
+              name
+              socialUrl
+            }
+          }
+        }
+      }
+    `
+  );
+
+  return (
+    <MenuWrapper>
+      <Nav>
+        {site.siteMetadata.social.map((socialLink: SocialLink) => (
+          <NavItem key={socialLink.name}>
+            <a
+              href={socialLink.socialUrl}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              {socialLink.name}
+            </a>
+          </NavItem>
+        ))}
+      </Nav>
+      <Nav>
+        <NavItem>
+          <NavLink to="/">Index</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/blog">Blog</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/tags">Tags</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/about">About</NavLink>
+        </NavItem>
+        <NavItem highlight>
+          <a rel="noopener" href="mailto:hey@ramonmorcillo.com">
+            Contact
+          </a>
+        </NavItem>
+      </Nav>
+    </MenuWrapper>
+  );
+};
 export default Menu;
