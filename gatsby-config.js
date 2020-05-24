@@ -10,7 +10,7 @@ module.exports = {
     title: `ramonmorcillo.com`,
     description: `My personal site made with Gatsby.js`,
     siteUrl: `https://ramonmorcillo.com`,
-    image: `content/assets/images/ramon-morcillo-meta-image.jpg`,
+    image: `static/images/ramon-morcillo-meta-image.jpg`,
     googleSiteVerification: process.env.GOOGLE_SITE_VERIFICATION,
     author: {
       name: `Ramon Morcillo`,
@@ -85,7 +85,7 @@ module.exports = {
         backgroundColor: `#663399`,
         themeColor: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
+        icon: `static/images/gatsby-icon.png` // This path is relative to the root of the site.
       }
     },
     {
