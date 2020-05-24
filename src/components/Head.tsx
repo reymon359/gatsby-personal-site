@@ -7,6 +7,7 @@ type StaticQueryData = {
     siteMetadata: {
       title: string;
       description: string;
+      image: string;
       googleSiteVerification: string;
       author: {
         name: string;
@@ -37,6 +38,7 @@ const Head: React.FC<HeadProps> = ({
           siteMetadata {
             title
             description
+            image
             googleSiteVerification
             author {
               name
@@ -47,6 +49,8 @@ const Head: React.FC<HeadProps> = ({
     `}
     render={(data: StaticQueryData): React.ReactElement | null => {
       const metaDescription = description || data.site.siteMetadata.description;
+      const metaImage = image || data.site.siteMetadata.image;
+      console.log(metaImage);
       lang = lang || 'en';
       keywords = keywords || [];
       return (
@@ -71,7 +75,7 @@ const Head: React.FC<HeadProps> = ({
             },
             {
               property: `og:image`,
-              content: image
+              content: metaImage
             },
             {
               property: `og:type`,
@@ -95,7 +99,7 @@ const Head: React.FC<HeadProps> = ({
             },
             {
               name: `twitter:image`,
-              content: image
+              content: metaImage
             },
             {
               name: `google-site-verification`,
