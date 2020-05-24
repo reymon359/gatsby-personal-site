@@ -31,7 +31,7 @@ const Shoable = styled.div<ShoableProps>`
     ${props =>
       props.open
         ? css`
-            max-height: 200px;
+            max-height: 300px;
           `
         : css`
             max-height: 0;
