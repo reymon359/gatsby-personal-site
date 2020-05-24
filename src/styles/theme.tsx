@@ -155,7 +155,7 @@ html, body {
 
 body {
   background: ${colors.blue900};
-  color: #fff;
+  color: ${colors.white};
   font-family: ${fonts.sansSerif};
   backface-visibility: hidden;
   margin: 0;
@@ -172,7 +172,7 @@ a {
   transition: color ease-in .2s;
 
   &:hover {
-    color: #fff;
+    color:  ${colors.white};
   }
 }
 
