@@ -2,7 +2,7 @@ import React from 'react';
 import {Link, graphql} from 'gatsby';
 import Head from '../components/Head';
 import Layout from '../components/Layout';
-import Bio from '../components/bio';
+import Bio from '../components/Bio';
 
 interface BlogProps {
   readonly data: PageQueryData;
