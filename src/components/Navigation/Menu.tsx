@@ -106,6 +106,7 @@ const NavItem = styled.li<NavItemProps>`
 const NavLink = styled(Link).attrs({
   activeClassName: 'active'
 })`
+  text-transform: capitalize;
   &.active {
     color: ${colors.white};
 
@@ -115,8 +116,6 @@ const NavLink = styled(Link).attrs({
     }
   }
 `;
-// TODO: Query navitem socials from config
-
 interface SocialLink {
   name: string;
   socialUrl: string;
@@ -131,6 +130,7 @@ interface StaticQueryData {
 }
 
 const Menu: React.FC = () => {
+  const pages = [`blog`, `tags`, `about`];
   const {site}: StaticQueryData = useStaticQuery(
     graphql`
       query {
@@ -165,15 +165,11 @@ const Menu: React.FC = () => {
         <NavItem>
           <NavLink to="/">Index</NavLink>
         </NavItem>
-        <NavItem>
-          <NavLink to="/blog">Blog</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink to="/tags">Tags</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink to="/about">About</NavLink>
-        </NavItem>
+        {pages.map(page => (
+          <NavItem key={page}>
+            <NavLink to={`/${page}`}>{page}</NavLink>
+          </NavItem>
+        ))}
         <NavItem highlight>
           <a rel="noopener" href="mailto:hey@ramonmorcillo.com">
             Contact
