@@ -1,9 +1,8 @@
 import React from 'react';
-import {Link, graphql} from 'gatsby';
+import {graphql} from 'gatsby';
 import Intro from '../components/Intro';
 import Head from '../components/Head';
 import Layout from '../components/Layout';
-import Bio from '../components/bio';
 
 interface IndexProps {
   readonly data: PageQueryData;
@@ -11,7 +10,6 @@ interface IndexProps {
 
 const Index: React.FC<IndexProps> = ({data}) => {
   const siteTitle = data.site.siteMetadata.title;
-  const posts = data.allMarkdownRemark.edges;
 
   return (
     <Layout title={siteTitle}>
@@ -29,23 +27,6 @@ const Index: React.FC<IndexProps> = ({data}) => {
       <section>
         <Intro fixed={true} />
       </section>
-      <Bio />
-      <article>
-        <div className={`page-content`}>
-          {posts.map(({node}) => {
-            const title = node.frontmatter.title || node.fields.slug;
-            return (
-              <div key={node.fields.slug}>
-                <h3>
-                  <Link to={node.fields.slug}>{title}</Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
-                <p dangerouslySetInnerHTML={{__html: node.excerpt}} />
-              </div>
-            );
-          })}
-        </div>
-      </article>
     </Layout>
   );
 };
@@ -56,20 +37,6 @@ interface PageQueryData {
       title: string;
     };
   };
-  allMarkdownRemark: {
-    edges: {
-      node: {
-        excerpt: string;
-        fields: {
-          slug: string;
-        };
-        frontmatter: {
-          date: string;
-          title: string;
-        };
-      };
-    }[];
-  };
 }
 
 export const pageQuery = graphql`
@@ -77,23 +44,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-      }
-    }
-    allMarkdownRemark(
-      filter: {frontmatter: {published: {ne: false}}}
-      sort: {fields: [frontmatter___date], order: DESC}
-    ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-          }
-        }
       }
     }
   }

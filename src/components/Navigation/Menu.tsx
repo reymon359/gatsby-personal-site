@@ -161,6 +161,9 @@ const Menu = () => (
         <NavLink to="/">Index</NavLink>
       </NavItem>
       <NavItem>
+        <NavLink to="/blog">Blog</NavLink>
+      </NavItem>
+      <NavItem>
         <NavLink to="/tags">Tags</NavLink>
       </NavItem>
       <NavItem>
