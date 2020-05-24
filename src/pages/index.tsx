@@ -10,8 +10,6 @@ interface IndexProps {
 }
 
 const Index: React.FC<IndexProps> = ({data}) => {
-  console.log(data);
-
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.edges;
 
