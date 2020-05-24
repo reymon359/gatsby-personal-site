@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, useState} from 'react';
 import Logo from './Logo';
 import Footer from './Footer';
 import Menu from './Menu';
@@ -7,7 +7,7 @@ import styled, {css} from 'styled-components';
 import {colors, media} from '../../styles/theme';
 import {addRemToProperty} from '../../styles/shared';
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div`
   ${media.md`
     position: fixed;
     bottom: 0;
@@ -18,7 +18,11 @@ export const Wrapper = styled.div`
   `}
 `;
 
-export const Shoable = styled.div`
+type ShoableProps = {
+  open: boolean;
+};
+
+const Shoable = styled.div<ShoableProps>`
   ${media.md`
     background: ${colors.blue900};
     overflow: hidden;
@@ -59,43 +63,23 @@ export const Header = styled.header`
   `}
 `;
 
-// TODO: Transform to a functional component
-class Navigation extends Component {
-  constructor() {
-    super();
-    this.state = {open: false};
-    this.toggleMenu = this.toggleMenu.bind(this);
-  }
+const Navigation = () => {
+  const [open, setOpen] = useState(false);
 
-  toggleMenu() {
-    this.setState({open: !this.state.open});
-  }
-
-  componentDidUpdate(prevProps) {
-    const {location} = this.props;
-
-    if (location.pathname !== prevProps.location.pathname) {
-      this.setState({open: false});
-    }
-  }
-
-  render() {
-    const {open} = this.state;
-    return (
-      <Wrapper>
-        <Header>
-          <Logo />
-          <ToggleMenu open={open} onClick={this.toggleMenu} />
-        </Header>
-        <Shoable open={open}>
-          <div>
-            <Menu />
-            <Footer />
-          </div>
-        </Shoable>
-      </Wrapper>
-    );
-  }
-}
+  return (
+    <Wrapper>
+      <Header>
+        <Logo />
+        <ToggleMenu open={open} onClick={() => setOpen(!open)} />
+      </Header>
+      <Shoable open={open}>
+        <div>
+          <Menu />
+          <Footer />
+        </div>
+      </Shoable>
+    </Wrapper>
+  );
+};
 
 export default Navigation;
