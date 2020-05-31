@@ -7,9 +7,9 @@ export const colors = {
   yellow500: '#EBC86E',
   yellow700: '#6b6349',
   grayBlue: '#1b242f',
-  white: '#ffffff'
+  white: '#ffffff',
+  black: '#000000'
 
-  // black: '#000000',
   // background: '#fffff8',
   // contrast: '#111',
   // contrastLightest: '#dad9d9',
