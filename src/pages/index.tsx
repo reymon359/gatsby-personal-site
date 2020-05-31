@@ -3,16 +3,18 @@ import {graphql} from 'gatsby';
 import Intro from '../components/Intro';
 import Head from '../components/Head';
 import Layout from '../components/Layout';
+import Stars from '../components/Stars';
 
 interface IndexProps {
   readonly data: PageQueryData;
 }
 
 const Index: React.FC<IndexProps> = ({data}) => {
-  const siteTitle = data.site.siteMetadata.title;
+  const siteTitle: string = data.site.siteMetadata.title;
 
   return (
     <Layout title={siteTitle}>
+      <Stars />
       <Head
         title="Home"
         keywords={[
