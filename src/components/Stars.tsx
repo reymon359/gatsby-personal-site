@@ -14,19 +14,19 @@ const StarsContainer = styled.div`
     radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent);
 `;
 
-const StarsBackground = styled.canvas`
+const Background = styled.canvas`
   position: fixed;
   width: 100%;
   height: 100%;
 `;
 
+const canvas: HTMLCanvasElement = Background,
+  context = Background.getContext('2d');
+
 const STAR_COUNT = (window.innerWidth + window.innerHeight) / 8,
   STAR_SIZE = 3,
   STAR_MIN_SCALE = 0.2,
   OVERFLOW_THRESHOLD = 50;
-
-const canvas = StarsBackground,
-  context = StarsBackground.getContext('2d');
 
 let scale = 1, // device pixel ratio
   width: number,
@@ -45,16 +45,6 @@ let pointerX: number | null, pointerY: number | null;
 const velocity = {x: 0, y: 0, tx: 0, ty: 0, z: 0.0005};
 
 let touchInput = false;
-
-generateStars();
-resizeCanvas();
-step();
-
-window.onresize = resizeCanvas;
-canvas.onmousemove = onMouseMove;
-canvas.ontouchmove = onTouchMove;
-canvas.ontouchend = onMouseLeave;
-document.onmouseleave = onMouseLeave;
 
 const generateStars = () => {
   for (let i = 0; i < STAR_COUNT; i++) {
@@ -125,23 +115,7 @@ const resizeCanvas = () => {
   canvas.width = width;
   canvas.height = height;
 
-  // Old way just in case
-  // stars.forEach(starPlace);
-
-  // const starPlace = (star: Star) => {
-  //   star.x = Math.random() * width;
-  //   star.y = Math.random() * height;
-  // };
   placeStars();
-};
-
-const step = () => {
-  context.clearRect(0, 0, width, height);
-
-  update();
-  render();
-
-  requestAnimationFrame(step);
 };
 
 const update = () => {
@@ -195,6 +169,15 @@ const render = () => {
   });
 };
 
+const step = () => {
+  context.clearRect(0, 0, width, height);
+
+  update();
+  render();
+
+  requestAnimationFrame(step);
+};
+
 const movePointer = (x: number, y: number) => {
   if (typeof pointerX === 'number' && typeof pointerY === 'number') {
     const ox = x - pointerX,
@@ -227,10 +210,22 @@ const onMouseLeave = () => {
   pointerY = null;
 };
 
-const Stars: React.FC = () => (
-  <StarsContainer>
-    <StarsBackground />
-  </StarsContainer>
-);
+const Stars: React.FC = () => {
+  generateStars();
+  resizeCanvas();
+  step();
+
+  window.onresize = resizeCanvas;
+  canvas.onmousemove = onMouseMove;
+  canvas.ontouchmove = onTouchMove;
+  canvas.ontouchend = onMouseLeave;
+  document.onmouseleave = onMouseLeave;
+
+  return (
+    <StarsContainer>
+      <Background />
+    </StarsContainer>
+  );
+};
 
 export default Stars;
