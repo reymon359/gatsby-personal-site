@@ -19,7 +19,6 @@ const Background = styled.canvas`
   width: 100%;
   height: 100%;
 `;
-
 const canvas: HTMLCanvasElement = Background,
   context = Background.getContext('2d');
 
@@ -209,6 +208,25 @@ const onMouseLeave = () => {
   pointerX = null;
   pointerY = null;
 };
+
+// TODO: keep generating stars when mouse moves but with a limit and then when it stops mooving if there are too many stars generate less
+// TODO: refactor code below and add a accelerate function for when scrolling or zooming on phone
+
+window.onscroll = function (e) {
+  console.log('scroll');
+  // let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
+  velocity.z += 0.01;
+};
+function onScroll(event) {
+  console.log('scroll');
+  // let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
+  velocity.z += 0.01;
+}
+window.addEventListener('wheel', function () {
+  console.log('scroll');
+  // let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
+  velocity.z += 0.001;
+});
 
 const Stars: React.FC = () => {
   generateStars();
