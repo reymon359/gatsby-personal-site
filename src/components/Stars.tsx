@@ -14,15 +14,14 @@ const StarsContainer = styled.div`
     radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent);
 `;
 
-const Background = styled.canvas`
-  position: fixed;
-  width: 100%;
-  height: 100%;
-`;
+// const StyledCanvas = styled.canvas`
+//   position: fixed;
+//   width: 100%;
+//   height: 100%;
+// `;
 
-const canvas: HTMLCanvasElement = (Background as unknown) as HTMLCanvasElement;
-//@ts-ignore
-const context: CanvasRenderingContext2D = canvas.getContext('2d');
+// const canvas: HTMLCanvasElement = (StyledCanvas as unknown) as HTMLCanvasElement;
+// const context: CanvasRenderingContext2D = canvas.getContext('2d');
 
 const STAR_COUNT = (window.innerWidth + window.innerHeight) / 8,
   STAR_SIZE = 3,
@@ -41,11 +40,11 @@ type Star = {
 
 const stars: Star[] = [];
 
+let touchInput = false;
+
 let pointerX: number | null, pointerY: number | null;
 
 const velocity = {x: 0, y: 0, tx: 0, ty: 0, z: 0.0005};
-
-let touchInput = false;
 
 const generateStars = () => {
   for (let i = 0; i < STAR_COUNT; i++) {
@@ -101,82 +100,11 @@ const recycleStar = (star: Star) => {
 };
 
 const placeStars = () => {
+  console.log('placestars');
   stars.forEach((star: Star) => {
     star.x = Math.random() * width;
     star.y = Math.random() * height;
   });
-};
-
-const resizeCanvas = () => {
-  scale = window.devicePixelRatio || 1;
-
-  width = window.innerWidth * scale;
-  height = window.innerHeight * scale;
-
-  canvas.width = width;
-  canvas.height = height;
-
-  placeStars();
-};
-
-const update = () => {
-  velocity.tx *= 0.96;
-  velocity.ty *= 0.96;
-
-  velocity.x += (velocity.tx - velocity.x) * 0.8;
-  velocity.y += (velocity.ty - velocity.y) * 0.8;
-
-  stars.forEach(star => {
-    star.x += velocity.x * star.z;
-    star.y += velocity.y * star.z;
-
-    star.x += (star.x - width / 2) * velocity.z * star.z;
-    star.y += (star.y - height / 2) * velocity.z * star.z;
-    star.z += velocity.z;
-
-    // recycle when out of bounds
-    if (
-      star.x < -OVERFLOW_THRESHOLD ||
-      star.x > width + OVERFLOW_THRESHOLD ||
-      star.y < -OVERFLOW_THRESHOLD ||
-      star.y > height + OVERFLOW_THRESHOLD
-    ) {
-      recycleStar(star);
-    }
-  });
-};
-
-const render = () => {
-  stars.forEach(star => {
-    context.beginPath();
-    context.lineCap = 'round';
-    context.lineWidth = STAR_SIZE * star.z * scale;
-    context.strokeStyle =
-      'rgba(255,255,255,' + (0.5 + 0.5 * Math.random()) + ')';
-
-    context.beginPath();
-    context.moveTo(star.x, star.y);
-
-    let tailX = velocity.x * 2,
-      tailY = velocity.y * 2;
-
-    // stroke() wont work on an invisible line
-    if (Math.abs(tailX) < 0.1) tailX = 0.5;
-    if (Math.abs(tailY) < 0.1) tailY = 0.5;
-
-    context.lineTo(star.x + tailX, star.y + tailY);
-
-    context.stroke();
-  });
-};
-
-const step = () => {
-  context.clearRect(0, 0, width, height);
-
-  update();
-  render();
-
-  requestAnimationFrame(step);
 };
 
 const movePointer = (x: number, y: number) => {
@@ -192,43 +120,19 @@ const movePointer = (x: number, y: number) => {
   pointerY = y;
 };
 
-const onMouseMove = (event: MouseEvent) => {
-  touchInput = false;
+const resizeCanvas = (canvas: any) => {
+  console.log('resizecanvas');
 
-  movePointer(event.clientX, event.clientY);
+  scale = window.devicePixelRatio || 1;
+
+  width = window.innerWidth * scale;
+  height = window.innerHeight * scale;
+
+  canvas.width = width;
+  canvas.height = height;
+
+  placeStars();
 };
-
-const onTouchMove = (event: TouchEvent) => {
-  touchInput = true;
-
-  movePointer(event.touches[0].clientX, event.touches[0].clientY);
-
-  event.preventDefault();
-};
-
-const onMouseLeave = () => {
-  pointerX = null;
-  pointerY = null;
-};
-
-// TODO: keep generating stars when mouse moves but with a limit and then when it stops mooving if there are too many stars generate less
-// TODO: refactor code below and add a accelerate function for when scrolling or zooming on phone
-
-// window.onscroll = function (e) {
-//   console.log('scroll');
-//   // let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
-//   velocity.z += 0.01;
-// };
-// function onScroll(event) {
-//   console.log('scroll');
-//   // let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
-//   velocity.z += 0.01;
-// }
-// window.addEventListener('wheel', function () {
-//   console.log('scroll');
-//   // let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
-//   velocity.z += 0.001;
-// });
 
 const Stars: React.FC = () => {
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
@@ -236,22 +140,153 @@ const Stars: React.FC = () => {
     null
   );
 
-  React.useEffect(() => {}, [context]);
+  React.useEffect(() => {
+    // let mouseDown: boolean = false;
+    // let start: Coordinates = {x: 0, y: 0};
+    // let end: Coordinates = {x: 0, y: 0};
+    // let canvasOffsetLeft: number = 0;
+    // let canvasOffsetTop: number = 0;
 
-  generateStars();
-  resizeCanvas();
-  step();
+    function handleMouseMove(event: MouseEvent) {
+      touchInput = true;
+      movePointer(event.clientX, event.clientY);
+    }
 
-  window.onresize = resizeCanvas;
-  canvas.onmousemove = onMouseMove;
-  canvas.ontouchmove = onTouchMove;
-  canvas.ontouchend = onMouseLeave;
-  document.onmouseleave = onMouseLeave;
+    function handleTouchMove(event: TouchEvent) {
+      touchInput = true;
+      movePointer(event.touches[0].clientX, event.touches[0].clientY);
+      event.preventDefault();
+    }
+
+    function handleMouseLeave(event: MouseEvent) {
+      // touchInput = false;
+      pointerX = null;
+      pointerY = null;
+    }
+
+    function handleTouchLeave(event: TouchEvent) {
+      // touchInput = false;
+      pointerX = null;
+      pointerY = null;
+    }
+
+    // function handleMouseDown(event: MouseEvent) {
+    //   touchInput = true;
+    // }
+
+    // function handleMouseUp(event: MouseEvent) {
+    //   touchInput = false;
+    // }
+
+    if (canvasRef.current) {
+      const renderCtx = canvasRef.current.getContext('2d');
+
+      if (renderCtx) {
+        // canvas.onmousemove = onMouseMove;
+        // canvas.ontouchmove = onTouchMove;
+        // canvas.ontouchend = onMouseLeave;
+        // document.onmouseleave = onMouseLeave;
+
+        // window.onresize = resizeCanvas(canvasRef.current);
+
+        window.onresize = (resizeCanvas(canvasRef.current) as unknown) as ((
+          this: GlobalEventHandlers,
+          ev: UIEvent
+        ) => any) &
+          ((this: Window, ev: UIEvent) => any);
+        canvasRef.current.addEventListener('mousemove', handleMouseMove);
+        canvasRef.current.addEventListener('touchmove', handleTouchMove);
+        canvasRef.current.addEventListener('touchend', handleTouchLeave);
+        document.onmouseleave = handleMouseLeave;
+
+        // canvasRef.current.addEventListener('mouseup', handleMouseUp);
+        // canvasRef.current.addEventListener('mousedown', handleMouseDown);
+
+        // canvasOffsetLeft = canvasRef.current.offsetLeft;
+        // canvasOffsetTop = canvasRef.current.offsetTop;
+
+        setContext(renderCtx);
+      }
+    }
+
+    if (context) {
+      const renderStars = () => {
+        stars.forEach(star => {
+          context.beginPath();
+          context.lineCap = 'round';
+          context.lineWidth = STAR_SIZE * star.z * scale;
+          context.strokeStyle =
+            'rgba(255,255,255,' + (0.5 + 0.5 * Math.random()) + ')';
+
+          context.beginPath();
+          context.moveTo(star.x, star.y);
+
+          let tailX = velocity.x * 2,
+            tailY = velocity.y * 2;
+
+          // stroke() wont work on an invisible line
+          if (Math.abs(tailX) < 0.1) tailX = 0.5;
+          if (Math.abs(tailY) < 0.1) tailY = 0.5;
+
+          context.lineTo(star.x + tailX, star.y + tailY);
+
+          context.stroke();
+        });
+      };
+
+      const update = () => {
+        velocity.tx *= 0.96;
+        velocity.ty *= 0.96;
+
+        velocity.x += (velocity.tx - velocity.x) * 0.8;
+        velocity.y += (velocity.ty - velocity.y) * 0.8;
+
+        stars.forEach(star => {
+          star.x += velocity.x * star.z;
+          star.y += velocity.y * star.z;
+
+          star.x += (star.x - width / 2) * velocity.z * star.z;
+          star.y += (star.y - height / 2) * velocity.z * star.z;
+          star.z += velocity.z;
+
+          // recycle when out of bounds
+          if (
+            star.x < -OVERFLOW_THRESHOLD ||
+            star.x > width + OVERFLOW_THRESHOLD ||
+            star.y < -OVERFLOW_THRESHOLD ||
+            star.y > height + OVERFLOW_THRESHOLD
+          ) {
+            recycleStar(star);
+          }
+        });
+      };
+
+      const step = () => {
+        context.clearRect(0, 0, width, height);
+
+        update();
+        renderStars();
+
+        requestAnimationFrame(step);
+      };
+
+      generateStars();
+      resizeCanvas(canvasRef.current);
+      step();
+    }
+  }, [context]);
 
   return (
     <StarsContainer>
-      {/* <canvas></canvas> */}
-      <Background />
+      <canvas
+        id="canvas"
+        ref={canvasRef}
+        style={{
+          position: 'fixed',
+          width: '100%',
+          height: '100%'
+        }}
+      ></canvas>
     </StarsContainer>
   );
 };
