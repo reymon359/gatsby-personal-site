@@ -19,8 +19,10 @@ const Background = styled.canvas`
   width: 100%;
   height: 100%;
 `;
-const canvas: HTMLCanvasElement = Background,
-  context = Background.getContext('2d');
+
+const canvas: HTMLCanvasElement = (Background as unknown) as HTMLCanvasElement;
+//@ts-ignore
+const context: CanvasRenderingContext2D = canvas.getContext('2d');
 
 const STAR_COUNT = (window.innerWidth + window.innerHeight) / 8,
   STAR_SIZE = 3,
@@ -212,23 +214,30 @@ const onMouseLeave = () => {
 // TODO: keep generating stars when mouse moves but with a limit and then when it stops mooving if there are too many stars generate less
 // TODO: refactor code below and add a accelerate function for when scrolling or zooming on phone
 
-window.onscroll = function (e) {
-  console.log('scroll');
-  // let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
-  velocity.z += 0.01;
-};
-function onScroll(event) {
-  console.log('scroll');
-  // let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
-  velocity.z += 0.01;
-}
-window.addEventListener('wheel', function () {
-  console.log('scroll');
-  // let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
-  velocity.z += 0.001;
-});
+// window.onscroll = function (e) {
+//   console.log('scroll');
+//   // let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
+//   velocity.z += 0.01;
+// };
+// function onScroll(event) {
+//   console.log('scroll');
+//   // let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
+//   velocity.z += 0.01;
+// }
+// window.addEventListener('wheel', function () {
+//   console.log('scroll');
+//   // let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
+//   velocity.z += 0.001;
+// });
 
 const Stars: React.FC = () => {
+  const canvasRef = React.useRef<HTMLCanvasElement>(null);
+  const [context, setContext] = React.useState<CanvasRenderingContext2D | null>(
+    null
+  );
+
+  React.useEffect(() => {}, [context]);
+
   generateStars();
   resizeCanvas();
   step();
@@ -241,6 +250,7 @@ const Stars: React.FC = () => {
 
   return (
     <StarsContainer>
+      {/* <canvas></canvas> */}
       <Background />
     </StarsContainer>
   );
