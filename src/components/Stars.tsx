@@ -170,6 +170,9 @@ const Stars: React.FC = () => {
       pointerY = null;
     }
 
+    function handleResize(event: Event) {
+      resizeCanvas(canvasRef.current);
+    }
     // function handleMouseDown(event: MouseEvent) {
     //   touchInput = true;
     // }
@@ -187,13 +190,7 @@ const Stars: React.FC = () => {
         // canvas.ontouchend = onMouseLeave;
         // document.onmouseleave = onMouseLeave;
 
-        // window.onresize = resizeCanvas(canvasRef.current);
-
-        window.onresize = (resizeCanvas(canvasRef.current) as unknown) as ((
-          this: GlobalEventHandlers,
-          ev: UIEvent
-        ) => any) &
-          ((this: Window, ev: UIEvent) => any);
+        window.addEventListener('resize', handleResize);
         canvasRef.current.addEventListener('mousemove', handleMouseMove);
         canvasRef.current.addEventListener('touchmove', handleTouchMove);
         canvasRef.current.addEventListener('touchend', handleTouchLeave);
