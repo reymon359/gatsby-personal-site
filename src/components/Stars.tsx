@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 
 const StarsContainer = styled.div`
@@ -13,14 +13,10 @@ const StarsContainer = styled.div`
     radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent);
 `;
 
-const STAR_COUNT = (window.innerWidth + window.innerHeight) / 8,
-  STAR_SIZE = 3,
-  STAR_MIN_SCALE = 0.2,
-  OVERFLOW_THRESHOLD = 50;
-
-let scale = 1, // device pixel ratio
-  width: number,
-  height: number;
+type Coordinates = {
+  x: number | null;
+  y: number | null;
+};
 
 type Star = {
   x: number;
@@ -28,20 +24,32 @@ type Star = {
   z: number;
 };
 
-const stars: Star[] = [];
+const Stars: React.FC = () => {
+const starsNumber = (window.innerWidth + window.innerHeight) / 8;
+const starSize = 3;
+const starMinScale = 0.2;
+const overflowThreshold = 50;
 
-let touchInput = false;
+let scale = 1; // device/pixel ratio
+let windowWidth: number;
+let windowHeight: number;
+
+const stars: Star[] = [];
+let cursorInsideCanvas = false;
+
+// let pointer: Coordinates;
+// const [pointer: Coordinates, setPoiner]= useState({x:null,y:null});
 
 let pointerX: number | null, pointerY: number | null;
 
 const velocity = {x: 0, y: 0, tx: 0, ty: 0, z: 0.0005};
 
 const generateStars = () => {
-  for (let i = 0; i < STAR_COUNT; i++) {
+  for (let i = 0; i < starsNumber; i++) {
     stars.push({
       x: 0,
       y: 0,
-      z: STAR_MIN_SCALE + Math.random() * (1 - STAR_MIN_SCALE)
+      z: starMinScale + Math.random() * (1 - starMinScale)
     });
   }
 };
@@ -68,32 +76,32 @@ const recycleStar = (star: Star) => {
     }
   }
 
-  star.z = STAR_MIN_SCALE + Math.random() * (1 - STAR_MIN_SCALE);
+  star.z = starMinScale + Math.random() * (1 - starMinScale);
 
   if (direction === 'z') {
     star.z = 0.1;
-    star.x = Math.random() * width;
-    star.y = Math.random() * height;
+    star.x = Math.random() * windowWidth;
+    star.y = Math.random() * windowHeight;
   } else if (direction === 'l') {
-    star.x = -OVERFLOW_THRESHOLD;
-    star.y = height * Math.random();
+    star.x = -overflowThreshold;
+    star.y = windowHeight * Math.random();
   } else if (direction === 'r') {
-    star.x = width + OVERFLOW_THRESHOLD;
-    star.y = height * Math.random();
+    star.x = windowWidth + overflowThreshold;
+    star.y = windowHeight * Math.random();
   } else if (direction === 't') {
-    star.x = width * Math.random();
-    star.y = -OVERFLOW_THRESHOLD;
+    star.x = windowWidth * Math.random();
+    star.y = -overflowThreshold;
   } else if (direction === 'b') {
-    star.x = width * Math.random();
-    star.y = height + OVERFLOW_THRESHOLD;
+    star.x = windowWidth * Math.random();
+    star.y = windowHeight + overflowThreshold;
   }
 };
 
 const placeStars = () => {
   console.log('placestars');
   stars.forEach((star: Star) => {
-    star.x = Math.random() * width;
-    star.y = Math.random() * height;
+    star.x = Math.random() * windowWidth;
+    star.y = Math.random() * windowHeight;
   });
 };
 
@@ -102,8 +110,8 @@ const movePointer = (x: number, y: number) => {
     const ox = x - pointerX,
       oy = y - pointerY;
 
-    velocity.tx = velocity.tx + (ox / 8) * scale * (touchInput ? 1 : -1);
-    velocity.ty = velocity.ty + (oy / 8) * scale * (touchInput ? 1 : -1);
+    velocity.tx = velocity.tx + (ox / 8) * scale * (cursorInsideCanvas ? 1 : -1);
+    velocity.ty = velocity.ty + (oy / 8) * scale * (cursorInsideCanvas ? 1 : -1);
   }
 
   pointerX = x;
@@ -115,16 +123,16 @@ const resizeCanvas = (canvas: any) => {
 
   scale = window.devicePixelRatio || 1;
 
-  width = window.innerWidth * scale;
-  height = window.innerHeight * scale;
+  windowWidth = window.innerWidth * scale;
+  windowHeight = window.innerHeight * scale;
 
-  canvas.width = width;
-  canvas.height = height;
+  canvas.width = windowWidth;
+  canvas.height = windowHeight;
 
   placeStars();
 };
 
-const Stars: React.FC = () => {
+
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
   const [context, setContext] = React.useState<CanvasRenderingContext2D | null>(
     null
@@ -137,38 +145,38 @@ const Stars: React.FC = () => {
     // let canvasOffsetLeft: number = 0;
     // let canvasOffsetTop: number = 0;
 
-    function handleMouseMove(event: MouseEvent) {
-      touchInput = true;
+    const handleMouseMove = (event: MouseEvent)=> {
+      cursorInsideCanvas = true;
       movePointer(event.clientX, event.clientY);
     }
 
-    function handleTouchMove(event: TouchEvent) {
-      touchInput = true;
+    const handleTouchMove = (event: TouchEvent)=> {
+      cursorInsideCanvas = true;
       movePointer(event.touches[0].clientX, event.touches[0].clientY);
       event.preventDefault();
     }
 
-    function handleMouseLeave(event: MouseEvent) {
-      // touchInput = false;
+    const handleMouseLeave = (event: MouseEvent)=> {
+      cursorInsideCanvas = false;
       pointerX = null;
       pointerY = null;
     }
 
-    function handleTouchLeave(event: TouchEvent) {
-      // touchInput = false;
+    const handleTouchLeave = (event: TouchEvent)=> {
+      cursorInsideCanvas = false;
       pointerX = null;
       pointerY = null;
     }
 
-    function handleResize(event: Event) {
+    const handleResize = (event: Event)=> {
       resizeCanvas(canvasRef.current);
     }
-    // function handleMouseDown(event: MouseEvent) {
-    //   touchInput = true;
+    // const handleMouseDown = (event: MouseEvent)=> {
+    //   cursorInsideCanvas = true;
     // }
 
-    // function handleMouseUp(event: MouseEvent) {
-    //   touchInput = false;
+    // const handleMouseUp = (event: MouseEvent)=> {
+    //   cursorInsideCanvas = false;
     // }
 
     if (canvasRef.current) {
@@ -201,7 +209,7 @@ const Stars: React.FC = () => {
         stars.forEach(star => {
           context.beginPath();
           context.lineCap = 'round';
-          context.lineWidth = STAR_SIZE * star.z * scale;
+          context.lineWidth = starSize * star.z * scale;
           context.strokeStyle =
             'rgba(255,255,255,' + (0.5 + 0.5 * Math.random()) + ')';
 
@@ -232,16 +240,16 @@ const Stars: React.FC = () => {
           star.x += velocity.x * star.z;
           star.y += velocity.y * star.z;
 
-          star.x += (star.x - width / 2) * velocity.z * star.z;
-          star.y += (star.y - height / 2) * velocity.z * star.z;
+          star.x += (star.x - windowWidth / 2) * velocity.z * star.z;
+          star.y += (star.y - windowHeight / 2) * velocity.z * star.z;
           star.z += velocity.z;
 
           // recycle when out of bounds
           if (
-            star.x < -OVERFLOW_THRESHOLD ||
-            star.x > width + OVERFLOW_THRESHOLD ||
-            star.y < -OVERFLOW_THRESHOLD ||
-            star.y > height + OVERFLOW_THRESHOLD
+            star.x < -overflowThreshold ||
+            star.x > windowWidth + overflowThreshold ||
+            star.y < -overflowThreshold ||
+            star.y > windowHeight + overflowThreshold
           ) {
             recycleStar(star);
           }
@@ -249,7 +257,7 @@ const Stars: React.FC = () => {
       };
 
       const step = () => {
-        context.clearRect(0, 0, width, height);
+        context.clearRect(0, 0, windowWidth, windowHeight);
 
         update();
         renderStars();
@@ -262,7 +270,8 @@ const Stars: React.FC = () => {
       step();
     }
 
-    return function cleanup() {
+    const cleanup = () => {
+      console.log(velocity);
       console.log('cleanup');
       stars.length = 0;
       if (canvasRef.current) {
@@ -273,6 +282,7 @@ const Stars: React.FC = () => {
         document.removeEventListener('mouseleave', handleMouseLeave);
       }
     }
+    return cleanup;
   }, [context]);
 
   return (
