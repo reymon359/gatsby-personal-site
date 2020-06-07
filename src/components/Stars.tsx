@@ -38,9 +38,10 @@ const stars: Star[] = [];
 let cursorInsideCanvas = false;
 
 // let pointer: Coordinates;
-// const [pointer: Coordinates, setPoiner]= useState({x:null,y:null});
-
-let pointerX: number | null, pointerY: number | null;
+const [pointer, setPointer]= useState<Coordinates>({x:null,y:null});
+// const [mousePosition: Coordinates, setMousePosition]= useState({x:null,y:null});
+  // setPoiner({x:,y:});
+// let pointer.x: number | null, pointer.y: number | null;
 
 const velocity = {x: 0, y: 0, tx: 0, ty: 0, z: 0.0005};
 
@@ -105,17 +106,17 @@ const placeStars = () => {
   });
 };
 
-const movePointer = (x: number, y: number) => {
-  if (typeof pointerX === 'number' && typeof pointerY === 'number') {
-    const ox = x - pointerX,
-      oy = y - pointerY;
+const movePointer = (userPositionX: number, userPositionY: number) => {
+  if (typeof pointer.x === 'number' && typeof pointer.y === 'number') {
+    const ox = userPositionX - pointer.x,
+      oy = userPositionY - pointer.y;
 
     velocity.tx = velocity.tx + (ox / 8) * scale * (cursorInsideCanvas ? 1 : -1);
     velocity.ty = velocity.ty + (oy / 8) * scale * (cursorInsideCanvas ? 1 : -1);
   }
-
-  pointerX = x;
-  pointerY = y;
+  pointer.x = userPositionX;
+  pointer.y = userPositionY;
+  //  setPointer({x:userPositionX, y:userPositionY});
 };
 
 const resizeCanvas = (canvas: any) => {
@@ -156,19 +157,17 @@ const resizeCanvas = (canvas: any) => {
       event.preventDefault();
     }
 
-    const handleMouseLeave = (event: MouseEvent)=> {
+    const handleMouseLeave = ()=> {
       cursorInsideCanvas = false;
-      pointerX = null;
-      pointerY = null;
+      setPointer({x:null,y:null});
     }
 
-    const handleTouchLeave = (event: TouchEvent)=> {
+    const handleTouchLeave = ()=> {
       cursorInsideCanvas = false;
-      pointerX = null;
-      pointerY = null;
+      setPointer({x:null,y:null});
     }
 
-    const handleResize = (event: Event)=> {
+    const handleResize = ()=> {
       resizeCanvas(canvasRef.current);
     }
     // const handleMouseDown = (event: MouseEvent)=> {
