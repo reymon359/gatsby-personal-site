@@ -44,7 +44,7 @@ const MenuWrapper = styled.nav`
       }
 
       &:hover {
-        color: ${(props) => props.theme.colors.white}!important;
+        color: ${(props) => props.theme.colors.lightest}!important;
 
         &::before {
           transform: translate(0, -50%);
@@ -107,7 +107,7 @@ const NavLink = styled(Link).attrs({
 })`
   text-transform: capitalize;
   &.active {
-    color: ${(props) => props.theme.colors.white};
+    color: ${(props) => props.theme.colors.lightest};
 
     &::before {
       transform: translate(0, -50%);

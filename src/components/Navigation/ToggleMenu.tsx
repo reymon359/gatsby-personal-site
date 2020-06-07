@@ -21,7 +21,7 @@ const ToggleMenuWrapper = styled.div<ToggleMenuWrapperProps>`
   span {
     display: inline-block;
     height: 1px;
-    background: ${(props) => props.theme.colors.white};
+    background: ${(props) => props.theme.colors.lightest};
   }
 
   ${props =>

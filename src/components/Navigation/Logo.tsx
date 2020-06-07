@@ -12,7 +12,7 @@ const CircleBackground = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  background: ${(props) => props.theme.colors.white + '10'};
+  background: ${(props) => props.theme.colors.lightest + '10'};
   height: 100%;
   width: 100%;
   border-radius: 100%;
