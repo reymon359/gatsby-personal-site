@@ -6,7 +6,7 @@ require('dotenv').config({
 });
 
 module.exports = {
-  pathPrefix: "/gatsby-personal-site",
+  pathPrefix: '/gatsby-personal-site',
   siteMetadata: {
     title: `ramonmorcillo.com`,
     description: `My personal site made with Gatsby.js`,
@@ -90,7 +90,7 @@ module.exports = {
         themeColor: `#663399`,
         display: `standalone`,
         icon: `static/images/gatsby-icon.png`, // This path is relative to the root of the site.
-        crossOrigin: `use-credentials`,
+        crossOrigin: `use-credentials`
       }
     },
     {

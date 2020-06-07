@@ -25,8 +25,9 @@ type Star = {
 };
 
 const Stars: React.FC = () => {
-
-  const starsNumber = ( typeof window !== 'undefined') && ((window.innerWidth + window.innerHeight) / 8);
+  const starsNumber =
+    typeof window !== 'undefined' &&
+    (window.innerWidth + window.innerHeight) / 8;
   const starSize = 3;
   const starMinScale = 0.2;
   const overflowThreshold = 50;
@@ -37,8 +38,7 @@ const Stars: React.FC = () => {
 
   const stars: Star[] = [];
   let cursorInsideCanvas = false;
-
-  const [pointer, setPointer] = useState<Coordinates>({x: null, y: null});
+  let pointer: Coordinates = {x: null, y: null};
 
   const velocity = {x: 0, y: 0, tx: 0, ty: 0, z: 0.0005};
 
@@ -77,9 +77,9 @@ const Stars: React.FC = () => {
     star.z = starMinScale + Math.random() * (1 - starMinScale);
 
     if (direction === 'z') {
-      star.z = 0.1;
       star.x = Math.random() * windowWidth;
       star.y = Math.random() * windowHeight;
+      star.z = 0.1;
     } else if (direction === 'l') {
       star.x = -overflowThreshold;
       star.y = windowHeight * Math.random();
@@ -113,9 +113,7 @@ const Stars: React.FC = () => {
       velocity.ty =
         velocity.ty + (oy / 8) * scale * (cursorInsideCanvas ? 1 : -1);
     }
-    pointer.x = userPositionX;
-    pointer.y = userPositionY;
-    //  setPointer({x:userPositionX, y:userPositionY});
+    pointer = {x:userPositionX, y:userPositionY }
   };
 
   const resizeCanvas = (canvas: any) => {
@@ -151,16 +149,12 @@ const Stars: React.FC = () => {
 
     const handleMouseLeave = () => {
       cursorInsideCanvas = false;
-      // setPointer({x: null, y: null});
-      pointer.x = null;
-      pointer.y = null;
+      pointer = {x: null, y: null};
     };
 
     const handleTouchLeave = () => {
       cursorInsideCanvas = false;
-      // setPointer({x: null, y: null});
-      pointer.x = null;
-      pointer.y = null;
+      pointer = {x: null, y: null};
     };
 
     const handleResize = () => {
