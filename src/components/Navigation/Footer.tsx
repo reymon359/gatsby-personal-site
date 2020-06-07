@@ -6,7 +6,7 @@ const FooterWrapper = styled.footer`
   width: 100%;
   position: fixed;
   top: 50%;
-  ${(props) => props.theme.media.md`
+  ${props => props.theme.media.md`
     position: static;
     padding-top: 1.5rem;
   `}
@@ -18,8 +18,8 @@ type ItemProps = {
 
 const Item = styled.div<ItemProps>`
   position: absolute;
-  font-family: ${(props) => props.theme.fonts.mono};
-  color: ${(props) => props.theme.colors.mediumDart};
+  font-family: ${props => props.theme.fonts.mono};
+  color: ${props => props.theme.colors.mediumDart};
   font-size: 0.85rem;
   line-height: 1em;
   ${props =>
@@ -35,7 +35,7 @@ const Item = styled.div<ItemProps>`
           ${addRemToProperty('right')}
         `}
 
-  ${(props) => props.theme.media.md`
+  ${props => props.theme.media.md`
     position: static;
     transform: rotate(0) translateX(0);
     transform-origin: 0;

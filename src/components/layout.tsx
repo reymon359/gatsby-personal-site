@@ -11,9 +11,9 @@ type LayoutProps = {
 const Layout: React.FC<LayoutProps> = ({children}) => (
   <>
     <ThemeProvider theme={theme}>
-    <GlobalStyle />
-    <main role="main">{children}</main>
-    <Navigation />
+      <GlobalStyle />
+      <main role="main">{children}</main>
+      <Navigation />
     </ThemeProvider>
   </>
 );

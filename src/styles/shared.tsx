@@ -38,7 +38,7 @@ export const Loader = styled.div`
   width: 100%;
   background: ${theme.colors.primaryDark};
   z-index: 2;
-  ${(props) =>
+  ${props =>
     props.isLoaded
       ? css`
           transform: scale(1.05);

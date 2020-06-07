@@ -12,7 +12,7 @@ const CircleBackground = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  background: ${(props) => props.theme.colors.lightest + '10'};
+  background: ${props => props.theme.colors.lightest + '10'};
   height: 100%;
   width: 100%;
   border-radius: 100%;
@@ -27,7 +27,7 @@ const CircleWrapper = styled.div`
   left: 0;
   max-width: 18rem;
   ${addRemToProperty('padding')}
-  ${(props) => props.theme.media.md`
+  ${props => props.theme.media.md`
     position: static;
     padding: 0;
   `}
@@ -39,7 +39,7 @@ const CircleWrapper = styled.div`
 
   a {
     width: 1.65rem;
-    ${(props) => props.theme.media.lg`
+    ${props => props.theme.media.lg`
       width: 1.45rem;
     `}
   }
@@ -60,7 +60,7 @@ type CircleProps = {
   readonly width?: number;
   readonly height?: number;
 };
-const Circle: React.FC<CircleProps> = ({ fill, width, height }) => (
+const Circle: React.FC<CircleProps> = ({fill, width, height}) => (
   <svg
     width={width}
     height={height}
@@ -76,16 +76,16 @@ const Circle: React.FC<CircleProps> = ({ fill, width, height }) => (
 
 const Logo = () => {
   const themeContext = useContext(ThemeContext);
-  return(
+  return (
     <CircleWrapper>
       <RelativeWrapper>
         <Link to="/">
-          <Circle  fill={themeContext.colors.lightest} width={22} height={22}/>
+          <Circle fill={themeContext.colors.lightest} width={22} height={22} />
         </Link>
         <CircleBackground />
       </RelativeWrapper>
     </CircleWrapper>
   );
-}
+};
 
 export default Logo;

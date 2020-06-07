@@ -1,4 +1,4 @@
-import { css } from 'styled-components';
+import {css} from 'styled-components';
 
 export const theme = {
   colors: {
@@ -33,7 +33,7 @@ export const theme = {
     dark: '#666666',
     darker: '#444444',
     darkest: '#333333',
-    black: '#000000',
+    black: '#000000'
 
     // border: 'rgba(0,0,0,.1)',
     // boxShadowsmall: '0 1px 2px 0 rgba(0, 0, 0, 0.1)',
@@ -45,13 +45,13 @@ export const theme = {
       '"Roboto", stack-sans, "Open Sans", "Lato", "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
     code:
       '"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace',
-    mono: "'Roboto Mono', stack-mono, monospace",
+    mono: "'Roboto Mono', stack-mono, monospace"
   },
   fontWeights: {
     thin: 200,
     regular: 400,
     bold: 600,
-    extrabold: 800,
+    extrabold: 800
   },
   fontSizes: {
     small: '.7rem',
@@ -62,12 +62,12 @@ export const theme = {
     xLarge: '2rem',
     xxLarge: '36px',
     xxxLarge: '48px',
-    xxxxLarge: '72px',
+    xxxxLarge: '72px'
   },
   buttons: {
-    primary: { color: '#ffffff', bg: '#0284fe', light: '#cce6ff' },
-    secondary: { color: '#ffffff', bg: '#fe7c02', light: '#ffe5cc' },
-    terciary: { color: '#ffffff', bg: '#666666', light: '#eeeeee' },
+    primary: {color: '#ffffff', bg: '#0284fe', light: '#cce6ff'},
+    secondary: {color: '#ffffff', bg: '#fe7c02', light: '#ffe5cc'},
+    terciary: {color: '#ffffff', bg: '#666666', light: '#eeeeee'}
   },
   spaces: {
     p500: '5rem',
@@ -83,7 +83,7 @@ export const theme = {
     sm: '40em',
     md: '54em',
     lg: '78em',
-    xl: '125em',
+    xl: '125em'
   },
   media: {
     xs: (...args: TemplateStringsArray[]) => css`
@@ -121,6 +121,6 @@ export const theme = {
         // @ts-ignore
         ${css(...args)}
       }
-    `,
-  },
+    `
+  }
 };

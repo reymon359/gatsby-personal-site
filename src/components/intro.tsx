@@ -10,14 +10,14 @@ const TitleWrapper = styled.div<TitleWrapperProps>`
   font-size: 1.7rem;
   max-width: 36rem;
   line-height: 1.3em;
-  ${(props) => props.theme.media.md`
+  ${props => props.theme.media.md`
     max-width: 32rem;
   `}
-  ${(props) => props.theme.media.sm`
+  ${props => props.theme.media.sm`
     max-width: 100%;
     font-size: 1.5rem;
   `}
-  ${(props) => props.theme.media.xs`
+  ${props => props.theme.media.xs`
     font-size: 1.35rem;
   `}
 
@@ -29,7 +29,7 @@ const TitleWrapper = styled.div<TitleWrapperProps>`
           top: 0;
           right: 0;
           text-align: right;
-          ${(props) => props.theme.media.md`
+          ${props => props.theme.media.md`
         text-align: left;
         left: 0;
         right: auto;
@@ -45,7 +45,7 @@ const Title = styled.h1`
   font-family: inherit;
   font-size: inherit;
   span {
-    color: ${(props) => props.theme.colors.secondary};
+    color: ${props => props.theme.colors.secondary};
     text-decoration: line-through;
   }
 `;

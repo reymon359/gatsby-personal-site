@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import { theme } from './theme';
+import {createGlobalStyle} from 'styled-components';
+import {theme} from './theme';
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v4.0 | 20180602

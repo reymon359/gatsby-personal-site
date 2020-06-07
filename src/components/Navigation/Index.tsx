@@ -7,7 +7,7 @@ import styled, {css} from 'styled-components';
 import {addRemToProperty} from '../../styles/shared';
 
 const Wrapper = styled.div`
-  ${(props) => props.theme.media.md`
+  ${props => props.theme.media.md`
     position: fixed;
     bottom: 0;
     left: 0;
@@ -22,8 +22,8 @@ type ShoableProps = {
 };
 
 const Shoable = styled.div<ShoableProps>`
-  ${(props) => props.theme.media.md`
-    background: ${(props) => props.theme.colors.primaryDark};
+  ${props => props.theme.media.md`
+    background: ${props => props.theme.colors.primaryDark};
     overflow: hidden;
     transition: max-height .6s cubic-bezier(0.45, 0, .1, 1);
     will-change: max-height;
@@ -41,7 +41,7 @@ const Shoable = styled.div<ShoableProps>`
     }
   `}
 
-  ${(props) => props.theme.media.sm`
+  ${props => props.theme.media.sm`
     > div {
       padding: 0 2rem 2rem;
     }
@@ -49,15 +49,15 @@ const Shoable = styled.div<ShoableProps>`
 `;
 
 export const Header = styled.header`
-  ${(props) => props.theme.media.md`
+  ${props => props.theme.media.md`
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
     min-height: 7rem;
     background-image: linear-gradient(to bottom,
-    ${(props) => props.theme.colors.primaryDark + '00'} 0%,
-    ${(props) => props.theme.colors.primaryDark} 50%);
+    ${props => props.theme.colors.primaryDark + '00'} 0%,
+    ${props => props.theme.colors.primaryDark} 50%);
     ${addRemToProperty('padding')};
   `}
 `;

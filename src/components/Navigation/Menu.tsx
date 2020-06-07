@@ -27,7 +27,7 @@ const MenuWrapper = styled.nav`
         position: absolute;
         left: -1.1rem;
         top: 50%;
-        background: ${(props) => props.theme.colors.secondary};
+        background: ${props => props.theme.colors.secondary};
         border-radius: 100%;
         content: '';
         display: block;
@@ -44,7 +44,7 @@ const MenuWrapper = styled.nav`
       }
 
       &:hover {
-        color: ${(props) => props.theme.colors.lightest}!important;
+        color: ${props => props.theme.colors.lightest}!important;
 
         &::before {
           transform: translate(0, -50%);
@@ -54,7 +54,7 @@ const MenuWrapper = styled.nav`
     }
   }
 
-  ${(props) => props.theme.media.md`
+  ${props => props.theme.media.md`
     position: static;
     padding: 0;
   `}
@@ -83,21 +83,21 @@ const NavItem = styled.li<NavItemProps>`
 
   a {
     font-size: 0.9rem;
-    font-family: ${(props) => props.theme.fonts.mono};
+    font-family: ${props => props.theme.fonts.mono};
     pointer-events: all;
     transition: color 0.1s ease;
     line-height: 1em;
     ${props =>
       props.highlight
         ? css`
-            color: ${(props) => props.theme.colors.secondary};
+            color: ${props => props.theme.colors.secondary};
 
             &:hover::before {
               display: none !important;
             }
           `
         : css`
-            color: ${(props) => props.theme.colors.mediumDart};
+            color: ${props => props.theme.colors.mediumDart};
           `}
   }
 `;
@@ -107,7 +107,7 @@ const NavLink = styled(Link).attrs({
 })`
   text-transform: capitalize;
   &.active {
-    color: ${(props) => props.theme.colors.lightest};
+    color: ${props => props.theme.colors.lightest};
 
     &::before {
       transform: translate(0, -50%);

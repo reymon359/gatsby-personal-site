@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const StarsContainer = styled.div`
   width: 100%;
   height: 100vh;
-  background-color: ${(props) => props.theme.colors.black};
+  background-color: ${props => props.theme.colors.black};
   background-image: radial-gradient(
       circle at top right,
       rgba(121, 68, 154, 0.13),
@@ -25,114 +25,111 @@ type Star = {
 };
 
 const Stars: React.FC = () => {
-const starsNumber = (window.innerWidth + window.innerHeight) / 8;
-const starSize = 3;
-const starMinScale = 0.2;
-const overflowThreshold = 50;
+  const starsNumber = (window.innerWidth + window.innerHeight) / 8;
+  const starSize = 3;
+  const starMinScale = 0.2;
+  const overflowThreshold = 50;
 
-let scale = 1; // device/pixel ratio
-let windowWidth: number;
-let windowHeight: number;
+  let scale = 1; // device/pixel ratio
+  let windowWidth: number;
+  let windowHeight: number;
 
-const stars: Star[] = [];
-let cursorInsideCanvas = false;
+  const stars: Star[] = [];
+  let cursorInsideCanvas = false;
 
-// let pointer: Coordinates;
-const [pointer, setPointer]= useState<Coordinates>({x:null,y:null});
-// const [mousePosition: Coordinates, setMousePosition]= useState({x:null,y:null});
-  // setPoiner({x:,y:});
-// let pointer.x: number | null, pointer.y: number | null;
+  const [pointer, setPointer] = useState<Coordinates>({x: null, y: null});
 
-const velocity = {x: 0, y: 0, tx: 0, ty: 0, z: 0.0005};
+  const velocity = {x: 0, y: 0, tx: 0, ty: 0, z: 0.0005};
 
-const generateStars = () => {
-  for (let i = 0; i < starsNumber; i++) {
-    stars.push({
-      x: 0,
-      y: 0,
-      z: starMinScale + Math.random() * (1 - starMinScale)
+  const generateStars = () => {
+    for (let i = 0; i < starsNumber; i++) {
+      stars.push({
+        x: 0,
+        y: 0,
+        z: starMinScale + Math.random() * (1 - starMinScale)
+      });
+    }
+  };
+
+  const recycleStar = (star: Star) => {
+    let direction = 'z';
+
+    const vx = Math.abs(velocity.x),
+      vy = Math.abs(velocity.y);
+
+    if (vx > 1 || vy > 1) {
+      let axis;
+
+      if (vx > vy) {
+        axis = Math.random() < vx / (vx + vy) ? 'h' : 'v';
+      } else {
+        axis = Math.random() < vy / (vx + vy) ? 'v' : 'h';
+      }
+
+      if (axis === 'h') {
+        direction = velocity.x > 0 ? 'l' : 'r';
+      } else {
+        direction = velocity.y > 0 ? 't' : 'b';
+      }
+    }
+
+    star.z = starMinScale + Math.random() * (1 - starMinScale);
+
+    if (direction === 'z') {
+      star.z = 0.1;
+      star.x = Math.random() * windowWidth;
+      star.y = Math.random() * windowHeight;
+    } else if (direction === 'l') {
+      star.x = -overflowThreshold;
+      star.y = windowHeight * Math.random();
+    } else if (direction === 'r') {
+      star.x = windowWidth + overflowThreshold;
+      star.y = windowHeight * Math.random();
+    } else if (direction === 't') {
+      star.x = windowWidth * Math.random();
+      star.y = -overflowThreshold;
+    } else if (direction === 'b') {
+      star.x = windowWidth * Math.random();
+      star.y = windowHeight + overflowThreshold;
+    }
+  };
+
+  const placeStars = () => {
+    console.log('placestars');
+    stars.forEach((star: Star) => {
+      star.x = Math.random() * windowWidth;
+      star.y = Math.random() * windowHeight;
     });
-  }
-};
+  };
 
-const recycleStar = (star: Star) => {
-  let direction = 'z';
+  const movePointer = (userPositionX: number, userPositionY: number) => {
+    if (typeof pointer.x === 'number' && typeof pointer.y === 'number') {
+      const ox = userPositionX - pointer.x,
+        oy = userPositionY - pointer.y;
 
-  const vx = Math.abs(velocity.x),
-    vy = Math.abs(velocity.y);
-
-  if (vx > 1 || vy > 1) {
-    let axis;
-
-    if (vx > vy) {
-      axis = Math.random() < vx / (vx + vy) ? 'h' : 'v';
-    } else {
-      axis = Math.random() < vy / (vx + vy) ? 'v' : 'h';
+      velocity.tx =
+        velocity.tx + (ox / 8) * scale * (cursorInsideCanvas ? 1 : -1);
+      velocity.ty =
+        velocity.ty + (oy / 8) * scale * (cursorInsideCanvas ? 1 : -1);
     }
+    pointer.x = userPositionX;
+    pointer.y = userPositionY;
+    //  setPointer({x:userPositionX, y:userPositionY});
+  };
 
-    if (axis === 'h') {
-      direction = velocity.x > 0 ? 'l' : 'r';
-    } else {
-      direction = velocity.y > 0 ? 't' : 'b';
-    }
-  }
+  const resizeCanvas = (canvas: any) => {
+    console.log('resizecanvas');
 
-  star.z = starMinScale + Math.random() * (1 - starMinScale);
+    scale = window.devicePixelRatio || 1;
 
-  if (direction === 'z') {
-    star.z = 0.1;
-    star.x = Math.random() * windowWidth;
-    star.y = Math.random() * windowHeight;
-  } else if (direction === 'l') {
-    star.x = -overflowThreshold;
-    star.y = windowHeight * Math.random();
-  } else if (direction === 'r') {
-    star.x = windowWidth + overflowThreshold;
-    star.y = windowHeight * Math.random();
-  } else if (direction === 't') {
-    star.x = windowWidth * Math.random();
-    star.y = -overflowThreshold;
-  } else if (direction === 'b') {
-    star.x = windowWidth * Math.random();
-    star.y = windowHeight + overflowThreshold;
-  }
-};
+    windowWidth = window.innerWidth * scale;
+    windowHeight = window.innerHeight * scale;
 
-const placeStars = () => {
-  console.log('placestars');
-  stars.forEach((star: Star) => {
-    star.x = Math.random() * windowWidth;
-    star.y = Math.random() * windowHeight;
-  });
-};
+    canvas.width = windowWidth;
+    canvas.height = windowHeight;
 
-const movePointer = (userPositionX: number, userPositionY: number) => {
-  if (typeof pointer.x === 'number' && typeof pointer.y === 'number') {
-    const ox = userPositionX - pointer.x,
-      oy = userPositionY - pointer.y;
-
-    velocity.tx = velocity.tx + (ox / 8) * scale * (cursorInsideCanvas ? 1 : -1);
-    velocity.ty = velocity.ty + (oy / 8) * scale * (cursorInsideCanvas ? 1 : -1);
-  }
-  pointer.x = userPositionX;
-  pointer.y = userPositionY;
-  //  setPointer({x:userPositionX, y:userPositionY});
-};
-
-const resizeCanvas = (canvas: any) => {
-  console.log('resizecanvas');
-
-  scale = window.devicePixelRatio || 1;
-
-  windowWidth = window.innerWidth * scale;
-  windowHeight = window.innerHeight * scale;
-
-  canvas.width = windowWidth;
-  canvas.height = windowHeight;
-
-  placeStars();
-};
-
+    placeStars();
+  };
 
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
   const [context, setContext] = React.useState<CanvasRenderingContext2D | null>(
@@ -140,36 +137,30 @@ const resizeCanvas = (canvas: any) => {
   );
 
   React.useEffect(() => {
-    // let mouseDown: boolean = false;
-    // let start: Coordinates = {x: 0, y: 0};
-    // let end: Coordinates = {x: 0, y: 0};
-    // let canvasOffsetLeft: number = 0;
-    // let canvasOffsetTop: number = 0;
-
-    const handleMouseMove = (event: MouseEvent)=> {
+    const handleMouseMove = (event: MouseEvent) => {
       cursorInsideCanvas = true;
       movePointer(event.clientX, event.clientY);
-    }
+    };
 
-    const handleTouchMove = (event: TouchEvent)=> {
+    const handleTouchMove = (event: TouchEvent) => {
       cursorInsideCanvas = true;
       movePointer(event.touches[0].clientX, event.touches[0].clientY);
       event.preventDefault();
-    }
+    };
 
-    const handleMouseLeave = ()=> {
+    const handleMouseLeave = () => {
       cursorInsideCanvas = false;
-      setPointer({x:null,y:null});
-    }
+      setPointer({x: null, y: null});
+    };
 
-    const handleTouchLeave = ()=> {
+    const handleTouchLeave = () => {
       cursorInsideCanvas = false;
-      setPointer({x:null,y:null});
-    }
+      setPointer({x: null, y: null});
+    };
 
-    const handleResize = ()=> {
+    const handleResize = () => {
       resizeCanvas(canvasRef.current);
-    }
+    };
     // const handleMouseDown = (event: MouseEvent)=> {
     //   cursorInsideCanvas = true;
     // }
@@ -280,7 +271,7 @@ const resizeCanvas = (canvas: any) => {
         canvasRef.current.removeEventListener('touchend', handleTouchLeave);
         document.removeEventListener('mouseleave', handleMouseLeave);
       }
-    }
+    };
     return cleanup;
   }, [context]);
 
