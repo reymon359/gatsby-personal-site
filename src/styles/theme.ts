@@ -2,24 +2,19 @@ import { css } from 'styled-components';
 
 export const theme = {
   colors: {
-    blue900: '#1e2733',
-    gray500: '#94989E',
-    gray700: '#656a73',
-    yellow500: '#EBC86E',
-    yellow700: '#6b6349',
-    grayBlue: '#1b242f',
-    white: '#ffffff',
+    // blue900: '#1e2733', --> primaryDark
+    // gray500: '#94989e', --> mediumDark
+    // gray700: '#656a73', --> dark
+    // yellow500: '#EBC86E', --> secondary
+    // yellow700: '#6b6349', --> secondaryDark
 
     // Palette
-    primary: '#3f51b5',
-    primaryLight: '#92a3fe',
-    primaryDark: '#08176c',
+    primary: '#255799',
+    primaryLight: '#5b98e8',
+    primaryDark: '#1e2733',
     secondary: '#ebc86e',
     secondaryLight: '#f6dea5',
     secondaryDark: '#6b6349',
-
-    terciary: '#9266c8',
-    terciaryLight: '#d3bfec',
 
     info: '#0284fe',
     warning: '#d6ae3e',

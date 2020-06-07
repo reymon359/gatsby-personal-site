@@ -27,7 +27,7 @@ const MenuWrapper = styled.nav`
         position: absolute;
         left: -1.1rem;
         top: 50%;
-        background: ${(props) => props.theme.colors.yellow500};
+        background: ${(props) => props.theme.colors.secondary};
         border-radius: 100%;
         content: '';
         display: block;
@@ -90,14 +90,14 @@ const NavItem = styled.li<NavItemProps>`
     ${props =>
       props.highlight
         ? css`
-            color: ${(props) => props.theme.colors.yellow500};
+            color: ${(props) => props.theme.colors.secondary};
 
             &:hover::before {
               display: none !important;
             }
           `
         : css`
-            color: ${(props) => props.theme.colors.gray500};
+            color: ${(props) => props.theme.colors.mediumDart};
           `}
   }
 `;

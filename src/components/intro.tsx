@@ -45,7 +45,7 @@ const Title = styled.h1`
   font-family: inherit;
   font-size: inherit;
   span {
-    color: ${(props) => props.theme.colors.yellow500};
+    color: ${(props) => props.theme.colors.secondary};
     text-decoration: line-through;
   }
 `;

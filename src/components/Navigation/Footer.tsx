@@ -19,7 +19,7 @@ type ItemProps = {
 const Item = styled.div<ItemProps>`
   position: absolute;
   font-family: ${(props) => props.theme.fonts.mono};
-  color: ${(props) => props.theme.colors.gray500};
+  color: ${(props) => props.theme.colors.mediumDart};
   font-size: 0.85rem;
   line-height: 1em;
   ${props =>

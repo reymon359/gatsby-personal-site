@@ -24,7 +24,7 @@ export const ContentWrapper = styled.div`
 
 export const ListItem = styled.li`
   font-size: 1rem;
-  color: ${theme.colors.gray500};
+  color: ${theme.colors.mediumDart};
   padding: 0.3rem 0;
   line-height: 1.6em;
 `;
@@ -36,7 +36,7 @@ export const Loader = styled.div`
   bottom: 0;
   left: 0;
   width: 100%;
-  background: ${theme.colors.grayBlue};
+  background: ${theme.colors.primaryDark};
   z-index: 2;
   ${(props) =>
     props.isLoaded
