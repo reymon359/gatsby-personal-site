@@ -13,15 +13,6 @@ const StarsContainer = styled.div`
     radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent);
 `;
 
-// const StyledCanvas = styled.canvas`
-//   position: fixed;
-//   width: 100%;
-//   height: 100%;
-// `;
-
-// const canvas: HTMLCanvasElement = (StyledCanvas as unknown) as HTMLCanvasElement;
-// const context: CanvasRenderingContext2D = canvas.getContext('2d');
-
 const STAR_COUNT = (window.innerWidth + window.innerHeight) / 8,
   STAR_SIZE = 3,
   STAR_MIN_SCALE = 0.2,
@@ -193,7 +184,7 @@ const Stars: React.FC = () => {
         canvasRef.current.addEventListener('mousemove', handleMouseMove);
         canvasRef.current.addEventListener('touchmove', handleTouchMove);
         canvasRef.current.addEventListener('touchend', handleTouchLeave);
-        document.onmouseleave = handleMouseLeave;
+        document.addEventListener('mouseleave', handleMouseLeave);
 
         // canvasRef.current.addEventListener('mouseup', handleMouseUp);
         // canvasRef.current.addEventListener('mousedown', handleMouseDown);
@@ -270,6 +261,18 @@ const Stars: React.FC = () => {
       resizeCanvas(canvasRef.current);
       step();
     }
+
+    return function cleanup() {
+      console.log('cleanup');
+      stars.length = 0;
+      if (canvasRef.current) {
+        window.removeEventListener('resize', handleResize);
+        canvasRef.current.removeEventListener('mousemove', handleMouseMove);
+        canvasRef.current.removeEventListener('touchmove', handleTouchMove);
+        canvasRef.current.removeEventListener('touchend', handleTouchLeave);
+        document.removeEventListener('mouseleave', handleMouseLeave);
+      }
+    }
   }, [context]);
 
   return (
@@ -282,7 +285,7 @@ const Stars: React.FC = () => {
           width: '100%',
           height: '100%'
         }}
-      ></canvas>
+      />
     </StarsContainer>
   );
 };
