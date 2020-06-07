@@ -6,6 +6,7 @@ require('dotenv').config({
 });
 
 module.exports = {
+  pathPrefix: "/gatsby-personal-site",
   siteMetadata: {
     title: `ramonmorcillo.com`,
     description: `My personal site made with Gatsby.js`,

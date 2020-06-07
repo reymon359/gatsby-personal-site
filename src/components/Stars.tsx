@@ -25,7 +25,8 @@ type Star = {
 };
 
 const Stars: React.FC = () => {
-  const starsNumber = (window.innerWidth + window.innerHeight) / 8;
+
+  const starsNumber = ( typeof window !== 'undefined') && ((window.innerWidth + window.innerHeight) / 8);
   const starSize = 3;
   const starMinScale = 0.2;
   const overflowThreshold = 50;
@@ -150,12 +151,16 @@ const Stars: React.FC = () => {
 
     const handleMouseLeave = () => {
       cursorInsideCanvas = false;
-      setPointer({x: null, y: null});
+      // setPointer({x: null, y: null});
+      pointer.x = null;
+      pointer.y = null;
     };
 
     const handleTouchLeave = () => {
       cursorInsideCanvas = false;
-      setPointer({x: null, y: null});
+      // setPointer({x: null, y: null});
+      pointer.x = null;
+      pointer.y = null;
     };
 
     const handleResize = () => {
