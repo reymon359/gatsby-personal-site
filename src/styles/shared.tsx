@@ -1,22 +1,22 @@
 import styled, {css} from 'styled-components';
-import {media, colors} from './theme';
+import {theme} from './theme';
 
 export const ContentWrapper = styled.div`
   max-width: 68rem;
   width: calc(100% - 9.25rem * 2);
   margin: 11rem auto 5rem;
-  ${media.lg`
+  ${theme.media.lg`
     margin: 8rem auto 3rem;
     width: calc(100% - 11rem * 2);
   `}
 
-  ${media.md`
+  ${theme.media.md`
     width: 100%;
     margin: 4rem auto 0;
     padding: 0 3rem 6rem;
   `}
 
-  ${media.sm`
+  ${theme.media.sm`
     margin: 2rem auto 0;
     padding: 0 2rem 6rem;
   `}
@@ -24,7 +24,7 @@ export const ContentWrapper = styled.div`
 
 export const ListItem = styled.li`
   font-size: 1rem;
-  color: ${colors.gray500};
+  color: ${theme.colors.gray500};
   padding: 0.3rem 0;
   line-height: 1.6em;
 `;
@@ -36,9 +36,9 @@ export const Loader = styled.div`
   bottom: 0;
   left: 0;
   width: 100%;
-  background: ${colors.grayBlue};
+  background: ${theme.colors.grayBlue};
   z-index: 2;
-  ${props =>
+  ${(props) =>
     props.isLoaded
       ? css`
           transform: scale(1.05);
@@ -59,13 +59,13 @@ const rule = (property: string, value: string): TemplateStringsArray =>
 export const addRemToProperty = (property: string) =>
   css`
     ${rule(property, '5rem')}
-    ${media.lg`
+    ${theme.media.lg`
       ${rule(property, '3rem')}
     `}
-    ${media.md`
+    ${theme.media.md`
       ${rule(property, '3rem')}
     `}
-    ${media.sm`
+    ${theme.media.sm`
       ${rule(property, '2rem')}
     `}
   `;
