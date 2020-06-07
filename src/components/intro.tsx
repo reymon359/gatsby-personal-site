@@ -1,6 +1,5 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
-import {colors, media} from '../styles/theme';
 import {addRemToProperty} from '../styles/shared';
 
 type TitleWrapperProps = {
@@ -11,14 +10,14 @@ const TitleWrapper = styled.div<TitleWrapperProps>`
   font-size: 1.7rem;
   max-width: 36rem;
   line-height: 1.3em;
-  ${media.md`
+  ${(props) => props.theme.media.md`
     max-width: 32rem;
   `}
-  ${media.sm`
+  ${(props) => props.theme.media.sm`
     max-width: 100%;
     font-size: 1.5rem;
   `}
-  ${media.xs`
+  ${(props) => props.theme.media.xs`
     font-size: 1.35rem;
   `}
 
@@ -30,7 +29,7 @@ const TitleWrapper = styled.div<TitleWrapperProps>`
           top: 0;
           right: 0;
           text-align: right;
-          ${media.md`
+          ${(props) => props.theme.media.md`
         text-align: left;
         left: 0;
         right: auto;
@@ -46,7 +45,7 @@ const Title = styled.h1`
   font-family: inherit;
   font-size: inherit;
   span {
-    color: ${colors.yellow500};
+    color: ${(props) => props.theme.colors.yellow500};
     text-decoration: line-through;
   }
 `;

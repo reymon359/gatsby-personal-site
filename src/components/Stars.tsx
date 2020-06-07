@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import {colors} from '../styles/theme';
 
 const StarsContainer = styled.div`
   width: 100%;
   height: 100vh;
-  background-color: ${colors.black};
+  background-color: ${(props) => props.theme.colors.black};
   background-image: radial-gradient(
       circle at top right,
       rgba(121, 68, 154, 0.13),

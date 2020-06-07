@@ -50,7 +50,6 @@ const Head: React.FC<HeadProps> = ({
     render={(data: StaticQueryData): React.ReactElement | null => {
       const metaDescription = description || data.site.siteMetadata.description;
       const metaImage = image || data.site.siteMetadata.image;
-      console.log(metaImage);
       lang = lang || 'en';
       keywords = keywords || [];
       return (
