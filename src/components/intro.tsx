@@ -22,8 +22,8 @@ const TitleWrapper = styled.div<TitleWrapperProps>`
   `}
 
   ${props =>
-    props.fixed
-      ? css`
+  props.fixed
+    ? css`
           ${addRemToProperty('padding')};
           position: absolute;
           top: 0;
@@ -35,12 +35,18 @@ const TitleWrapper = styled.div<TitleWrapperProps>`
         right: auto;
       `}
         `
-      : css`
+    : css`
           text-align: left;
         `}
 `;
 
 const Title = styled.h1`
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   margin: 0px;
   font-family: inherit;
   font-size: inherit;
