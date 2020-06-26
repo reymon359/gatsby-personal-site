@@ -191,19 +191,13 @@ const Stars: React.FC = () => {
         }
       }
 
-      event.target.style.border = "3px solid red";
+      event.target.style.border = "3px solid yellow";
 
       if (evCache.length == 2) {
         const currentPointersDistance = Math.abs(evCache[0].clientX - evCache[1].clientX);
 
-        if (prevPointersDistance > 0) {
-          if (currentPointersDistance > prevPointersDistance) {
-            accelerate(true)
-          }
-          if (currentPointersDistance < prevPointersDistance) {
-            accelerate(false)
-          }
-        }
+        accelerate(prevPointersDistance > 0 && currentPointersDistance > prevPointersDistance)
+
         prevPointersDistance = currentPointersDistance;
       }
     };
