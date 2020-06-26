@@ -1,43 +1,30 @@
 import React from 'react';
 import styled from 'styled-components';
-// '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+
+const getRandom = (max = 10, min = 1) =>
+  Math.floor(Math.random() * max) + min;
+
+const getRandomColor = () =>'#' + ('00000'+(Math.random()*(1<<24)|0).toString(16)).slice(-6);
+
+const getBackground = () => {
+  let background = [];
+  for (let i = 0; i < getRandom(); i++) {
+    background.push(`
+      radial-gradient(
+        circle at ${getRandom(100)}% ${getRandom(100)}%,
+        ${getRandomColor() + '0d'},
+        transparent ${getRandom(100, 60)}%
+      )
+  `);
+  }
+  return background.join(',');
+};
+
 const StarsContainer = styled.div`
   width: 100%;
   height: 100vh;
   background-color: ${props => props.theme.colors.black};
-  
-  background-image: radial-gradient(
-      circle at ${Math.random() * 100}% ${Math.random() * 100}%,
-      ${'#'+(Math.random()*0xFFFFFF<<0).toString(16)+'14'},
-
-      rgba(121,68,154,0.13),
-      transparent
-    ),
-        //radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent);
-    radial-gradient(circle at ${Math.random() * 100}% ${Math.random() * 100}%,  ${'#'+(Math.random()*0xFFFFFF<<0).toString(16)+'14'}, transparent);
-    
-//    
-//  background: radial-gradient(circle, red, transparent);
-//  animation: colorSpin 60s linear infinite;
-//
-//
-//@keyframes colorSpin {
-//  25% {
-//    transform: translateY(-75%);
-//  }
-//  50% {
-//    transform: translate(-75%, -75%);
-//  }
-//  75% {
-//    transform: translate(-75%, 0);
-//  }
-//  100% {
-//    filter: hue-rotate(360deg);
-//  }
-  /*75 is obtained as 100[1- (100/(height or width written in .gradDynamic:after)). i.e. 75 = 100[1-100/400] */
-}
-
-  
+  background-image: ${getBackground()};
 `;
 
 type Coordinates = {
