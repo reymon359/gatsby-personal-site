@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const StarsContainer = styled.div`
@@ -96,7 +96,6 @@ const Stars: React.FC = () => {
   };
 
   const placeStars = () => {
-    console.log('placestars');
     stars.forEach((star: Star) => {
       star.x = Math.random() * windowWidth;
       star.y = Math.random() * windowHeight;
@@ -117,8 +116,6 @@ const Stars: React.FC = () => {
   };
 
   const resizeCanvas = (canvas: any) => {
-    console.log('resizecanvas');
-
     scale = window.devicePixelRatio || 1;
 
     windowWidth = window.innerWidth * scale;
