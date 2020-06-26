@@ -39,10 +39,10 @@ const Stars: React.FC = () => {
   const stars: Star[] = [];
   let cursorInsideCanvas = false;
   let pointer: Coordinates = {x: null, y: null};
+  let pointerActive = true;
 
-  const normalVelocity = 0.0002;
-  const maxVelocity = 0.005;
-  const minVelocity = -0.005;
+  const normalVelocity = 0.0005;
+  const maxVelocity = 0.1;
   const velocity = {x: 0, y: 0, tx: 0, ty: 0, z: normalVelocity};
 
   const generateStars = () => {
@@ -106,6 +106,7 @@ const Stars: React.FC = () => {
   };
 
   const movePointer = (userPositionX: number, userPositionY: number) => {
+    if(!pointerActive) return;
     if (typeof pointer.x === 'number' && typeof pointer.y === 'number') {
       const ox = userPositionX - pointer.x,
         oy = userPositionY - pointer.y;
@@ -131,17 +132,9 @@ const Stars: React.FC = () => {
     placeStars();
   };
 
-  const accelerate = (increase: number) => {
-    console.log('accelerating: ', increase);
-
-    if (increase > 0 && velocity.z <= maxVelocity) {
-      velocity.z += increase;
-    }
-    if (increase < 0 && velocity.z >= minVelocity) {
-      velocity.z -= increase;
-    }
-    console.log('velocity.z: ', velocity.z);
-
+  const accelerate = (acceleration: boolean) => {
+    pointerActive = !acceleration;
+    velocity.z = acceleration? maxVelocity : normalVelocity;
   };
 
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
@@ -174,6 +167,10 @@ const Stars: React.FC = () => {
     const handleResize = () => {
       resizeCanvas(canvasRef.current);
     };
+
+    const handleWheel = (event: WheelEvent) => {
+      accelerate(event.deltaY < 0);
+    };
     // const handleMouseDown = (event: MouseEvent)=> {
     //   cursorInsideCanvas = true;
     // }
@@ -190,7 +187,7 @@ const Stars: React.FC = () => {
         // canvas.ontouchmove = onTouchMove;
         // canvas.ontouchend = onMouseLeave;
         // document.onmouseleave = onMouseLeave;
-
+        window.addEventListener('wheel', handleWheel);
         window.addEventListener('resize', handleResize);
         canvasRef.current.addEventListener('mousemove', handleMouseMove);
         canvasRef.current.addEventListener('touchmove', handleTouchMove);
@@ -274,8 +271,6 @@ const Stars: React.FC = () => {
     }
 
     const cleanup = () => {
-      console.log(velocity);
-      console.log('cleanup');
       stars.length = 0;
       if (canvasRef.current) {
         window.removeEventListener('resize', handleResize);
