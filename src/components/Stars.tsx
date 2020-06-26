@@ -238,11 +238,9 @@ const Stars: React.FC = () => {
         velocity.y += (velocity.ty - velocity.y) * 0.8;
 
         stars.forEach(star => {
-          star.x += velocity.x * star.z;
-          star.y += velocity.y * star.z;
 
-          star.x += (star.x - windowWidth / 2) * velocity.z * star.z;
-          star.y += (star.y - windowHeight / 2) * velocity.z * star.z;
+          star.x += (velocity.x * star.z )+ (star.x - windowWidth / 2) * velocity.z * star.z;
+          star.y += (velocity.y * star.z)+ (star.y - windowHeight / 2) * velocity.z * star.z;
           star.z += velocity.z;
 
           // recycle when out of bounds
