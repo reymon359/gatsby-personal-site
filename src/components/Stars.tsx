@@ -47,7 +47,7 @@ const Stars: React.FC = () => {
 
 
   let evCache: PointerEvent[]= [] ;
-  let prevDiff = -1;
+  let prevPointersDistance = -1;
 
   const generateStars = () => {
     for (let i = 0; i < starsNumber; i++) {
@@ -191,30 +191,32 @@ const Stars: React.FC = () => {
         }
       }
 
-      if (evCache.length == 2) {
-        var curDiff = Math.abs(evCache[0].clientX - evCache[1].clientX);
+      event.target.style.border = "3px solid red";
 
-        if (prevDiff > 0) {
-          if (curDiff > prevDiff) {
+      if (evCache.length == 2) {
+        const currentPointersDistance = Math.abs(evCache[0].clientX - evCache[1].clientX);
+
+        if (prevPointersDistance > 0) {
+          if (currentPointersDistance > prevPointersDistance) {
             accelerate(true)
           }
-          if (curDiff < prevDiff) {
+          if (currentPointersDistance < prevPointersDistance) {
             accelerate(false)
           }
         }
-
-        prevDiff = curDiff;
+        prevPointersDistance = currentPointersDistance;
       }
     };
 
     const handlePointerUp = (event: PointerEvent) => {
       remove_event(event);
       if (evCache.length < 2) {
-        prevDiff = -1;
+        prevPointersDistance = -1;
       }
     };
 
     const remove_event = (event: PointerEvent) => {
+      // evCache.filter(evCached => evCached.pointerId !== event.pointerId);
       for (var i = 0; i < evCache.length; i++) {
         if (evCache[i].pointerId == event.pointerId) {
           evCache.splice(i, 1);
