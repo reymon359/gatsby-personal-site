@@ -133,6 +133,7 @@ const Stars: React.FC = () => {
   };
 
   const accelerate = (acceleration: boolean) => {
+    pointer = {x: null, y: null};
     pointerActive = !acceleration;
     velocity.z = acceleration? maxVelocity : normalVelocity;
   };
@@ -273,6 +274,7 @@ const Stars: React.FC = () => {
     const cleanup = () => {
       stars.length = 0;
       if (canvasRef.current) {
+        window.removeEventListener('wheel', handleWheel);
         window.removeEventListener('resize', handleResize);
         canvasRef.current.removeEventListener('mousemove', handleMouseMove);
         canvasRef.current.removeEventListener('touchmove', handleTouchMove);
