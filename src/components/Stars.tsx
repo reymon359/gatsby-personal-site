@@ -40,14 +40,11 @@ const Stars: React.FC = () => {
   let cursorInsideCanvas = false;
   let pointer: Coordinates = {x: null, y: null};
   let pointerActive = true;
-
-  const normalVelocity = 0.0005;
-  const maxVelocity = 0.1;
-  const velocity = {x: 0, y: 0, tx: 0, ty: 0, z: normalVelocity};
-
-
   let evCache: PointerEvent[] = [];
   let prevPointersDistance = -1;
+
+  const normalVelocity = 0.0005;
+  const velocity = {x: 0, y: 0, tx: 0, ty: 0, z: normalVelocity};
 
   const generateStars = () => {
     for (let i = 0; i < starsNumber; i++) {
@@ -141,7 +138,7 @@ const Stars: React.FC = () => {
 
     pointer = {x: null, y: null};
     pointerActive = !acceleration;
-    velocity.z = acceleration ? maxVelocity : normalVelocity;
+    velocity.z = acceleration ? 0.1 : normalVelocity;
   };
 
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
@@ -182,14 +179,14 @@ const Stars: React.FC = () => {
     const handlePointerDown = (event: PointerEvent) => {
       evCache.push(event);
     };
+
     const handlePointerMove = (event: PointerEvent) => {
       for (let i = 0; i < evCache.length; i++) {
-        if (event.pointerId == evCache[i].pointerId) {
+        if (event.pointerId === evCache[i].pointerId) {
           evCache[i] = event;
           break;
         }
       }
-      event.target.style.border = '3px solid red';
       if (evCache.length == 2) {
         const currentPointersDistance = Math.abs(evCache[0].clientX - evCache[1].clientX);
         accelerate(prevPointersDistance > 0 && currentPointersDistance > prevPointersDistance);
@@ -241,15 +238,14 @@ const Stars: React.FC = () => {
           context.beginPath();
           context.moveTo(star.x, star.y);
 
-          let tailX = velocity.x * 2,
-            tailY = velocity.y * 2;
+          let tailX = velocity.x * 2;
+          let tailY = velocity.y * 2;
 
           // stroke() wont work on an invisible line
           if (Math.abs(tailX) < 0.1) tailX = 0.5;
           if (Math.abs(tailY) < 0.1) tailY = 0.5;
 
           context.lineTo(star.x + tailX, star.y + tailY);
-
           context.stroke();
         });
       };
@@ -281,10 +277,8 @@ const Stars: React.FC = () => {
 
       const step = () => {
         context.clearRect(0, 0, windowWidth, windowHeight);
-
         update();
         renderStars();
-
         requestAnimationFrame(step);
       };
 
