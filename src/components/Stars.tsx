@@ -40,7 +40,10 @@ const Stars: React.FC = () => {
   let cursorInsideCanvas = false;
   let pointer: Coordinates = {x: null, y: null};
 
-  const velocity = {x: 0, y: 0, tx: 0, ty: 0, z: 0.0002};
+  const normalVelocity = 0.0002;
+  const maxVelocity = 0.005;
+  const minVelocity = -0.005;
+  const velocity = {x: 0, y: 0, tx: 0, ty: 0, z: normalVelocity};
 
   const generateStars = () => {
     for (let i = 0; i < starsNumber; i++) {
@@ -112,6 +115,7 @@ const Stars: React.FC = () => {
       velocity.ty =
         velocity.ty - (oy / 8 * scale) * (cursorInsideCanvas ? 1 : -1);
     }
+
     pointer = {x: userPositionX, y: userPositionY};
   };
 
@@ -125,6 +129,19 @@ const Stars: React.FC = () => {
     canvas.height = windowHeight;
 
     placeStars();
+  };
+
+  const accelerate = (increase: number) => {
+    console.log('accelerating: ', increase);
+
+    if (increase > 0 && velocity.z <= maxVelocity) {
+      velocity.z += increase;
+    }
+    if (increase < 0 && velocity.z >= minVelocity) {
+      velocity.z -= increase;
+    }
+    console.log('velocity.z: ', velocity.z);
+
   };
 
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
