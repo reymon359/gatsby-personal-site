@@ -6,7 +6,6 @@ const StarsContainer = styled.div`
   width: 100%;
   height: 100vh;
   background-color: ${props => props.theme.colors.black};
-  background-image: ${getRandomBackground()};
 `;
 
 type Coordinates = {
@@ -299,7 +298,7 @@ const Stars: React.FC = () => {
   }, [context]);
 
   return (
-    <StarsContainer>
+    <StarsContainer style={{backgroundImage: getRandomBackground()}}>
       <canvas
         id="canvas"
         ref={canvasRef}
