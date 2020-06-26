@@ -45,6 +45,10 @@ const Stars: React.FC = () => {
   const maxVelocity = 0.1;
   const velocity = {x: 0, y: 0, tx: 0, ty: 0, z: normalVelocity};
 
+
+  let evCache: PointerEvent[]= [] ;
+  let prevDiff = -1;
+
   const generateStars = () => {
     for (let i = 0; i < starsNumber; i++) {
       stars.push({
@@ -106,7 +110,7 @@ const Stars: React.FC = () => {
   };
 
   const movePointer = (userPositionX: number, userPositionY: number) => {
-    if(!pointerActive) return;
+    if (!pointerActive) return;
     if (typeof pointer.x === 'number' && typeof pointer.y === 'number') {
       const ox = userPositionX - pointer.x,
         oy = userPositionY - pointer.y;
@@ -133,9 +137,11 @@ const Stars: React.FC = () => {
   };
 
   const accelerate = (acceleration: boolean) => {
+    console.log('accelerates');
+
     pointer = {x: null, y: null};
     pointerActive = !acceleration;
-    velocity.z = acceleration? maxVelocity : normalVelocity;
+    velocity.z = acceleration ? maxVelocity : normalVelocity;
   };
 
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
@@ -172,34 +178,69 @@ const Stars: React.FC = () => {
     const handleWheel = (event: WheelEvent) => {
       accelerate(event.deltaY < 0);
     };
-    // const handleMouseDown = (event: MouseEvent)=> {
-    //   cursorInsideCanvas = true;
-    // }
 
-    // const handleMouseUp = (event: MouseEvent)=> {
-    //   cursorInsideCanvas = false;
-    // }
+
+    const handlePointerDown = (event: PointerEvent) => {
+      evCache.push(event);
+    };
+    const handlePointerMove = (event: PointerEvent) => {
+      for (var i = 0; i < evCache.length; i++) {
+        if (event.pointerId == evCache[i].pointerId) {
+          evCache[i] = event;
+          break;
+        }
+      }
+
+      if (evCache.length == 2) {
+        var curDiff = Math.abs(evCache[0].clientX - evCache[1].clientX);
+
+        if (prevDiff > 0) {
+          if (curDiff > prevDiff) {
+            accelerate(true)
+          }
+          if (curDiff < prevDiff) {
+            accelerate(false)
+          }
+        }
+
+        prevDiff = curDiff;
+      }
+    };
+
+    const handlePointerUp = (event: PointerEvent) => {
+      remove_event(event);
+      if (evCache.length < 2) {
+        prevDiff = -1;
+      }
+    };
+
+    const remove_event = (event: PointerEvent) => {
+      for (var i = 0; i < evCache.length; i++) {
+        if (evCache[i].pointerId == event.pointerId) {
+          evCache.splice(i, 1);
+          break;
+        }
+      }
+    };
 
     if (canvasRef.current) {
       const renderCtx = canvasRef.current.getContext('2d');
 
       if (renderCtx) {
-        // canvas.onmousemove = onMouseMove;
-        // canvas.ontouchmove = onTouchMove;
-        // canvas.ontouchend = onMouseLeave;
-        // document.onmouseleave = onMouseLeave;
+        const canvas = canvasRef.current;
+        canvas.addEventListener('pointerdown', handlePointerDown);
+        canvas.addEventListener('pointermove', handlePointerMove);
+        canvas.addEventListener('pointerup', handlePointerUp);
+        canvas.addEventListener('pointercancel', handlePointerUp);
+        canvas.addEventListener('pointerout', handlePointerUp);
+        canvas.addEventListener('pointerleave', handlePointerUp);
+
         window.addEventListener('wheel', handleWheel);
         window.addEventListener('resize', handleResize);
-        canvasRef.current.addEventListener('mousemove', handleMouseMove);
-        canvasRef.current.addEventListener('touchmove', handleTouchMove);
-        canvasRef.current.addEventListener('touchend', handleTouchLeave);
+        canvas.addEventListener('mousemove', handleMouseMove);
+        canvas.addEventListener('touchmove', handleTouchMove);
+        canvas.addEventListener('touchend', handleTouchLeave);
         document.addEventListener('mouseleave', handleMouseLeave);
-
-        // canvasRef.current.addEventListener('mouseup', handleMouseUp);
-        // canvasRef.current.addEventListener('mousedown', handleMouseDown);
-
-        // canvasOffsetLeft = canvasRef.current.offsetLeft;
-        // canvasOffsetTop = canvasRef.current.offsetTop;
 
         setContext(renderCtx);
       }
@@ -272,11 +313,12 @@ const Stars: React.FC = () => {
     const cleanup = () => {
       stars.length = 0;
       if (canvasRef.current) {
+        const canvas = canvasRef.current;
+        canvas.removeEventListener('mousemove', handleMouseMove);
+        canvas.removeEventListener('touchmove', handleTouchMove);
+        canvas.removeEventListener('touchend', handleTouchLeave);
         window.removeEventListener('wheel', handleWheel);
         window.removeEventListener('resize', handleResize);
-        canvasRef.current.removeEventListener('mousemove', handleMouseMove);
-        canvasRef.current.removeEventListener('touchmove', handleTouchMove);
-        canvasRef.current.removeEventListener('touchend', handleTouchLeave);
         document.removeEventListener('mouseleave', handleMouseLeave);
       }
     };
