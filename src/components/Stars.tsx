@@ -46,7 +46,7 @@ const Stars: React.FC = () => {
   const velocity = {x: 0, y: 0, tx: 0, ty: 0, z: normalVelocity};
 
 
-  let evCache: PointerEvent[]= [] ;
+  let evCache: PointerEvent[] = [];
   let prevPointersDistance = -1;
 
   const generateStars = () => {
@@ -179,44 +179,31 @@ const Stars: React.FC = () => {
       accelerate(event.deltaY < 0);
     };
 
-
     const handlePointerDown = (event: PointerEvent) => {
       evCache.push(event);
     };
     const handlePointerMove = (event: PointerEvent) => {
-      for (var i = 0; i < evCache.length; i++) {
+      for (let i = 0; i < evCache.length; i++) {
         if (event.pointerId == evCache[i].pointerId) {
           evCache[i] = event;
           break;
         }
       }
-
-      event.target.style.border = "3px solid yellow";
-
+      event.target.style.border = '3px solid red';
       if (evCache.length == 2) {
         const currentPointersDistance = Math.abs(evCache[0].clientX - evCache[1].clientX);
-
-        accelerate(prevPointersDistance > 0 && currentPointersDistance > prevPointersDistance)
-
+        accelerate(prevPointersDistance > 0 && currentPointersDistance > prevPointersDistance);
         prevPointersDistance = currentPointersDistance;
       }
     };
 
     const handlePointerUp = (event: PointerEvent) => {
       removeEvent(event);
-      if (evCache.length < 2) {
-        prevPointersDistance = -1;
-      }
+      if (evCache.length < 2) prevPointersDistance = -1;
     };
 
     const removeEvent = (event: PointerEvent) => {
-      // evCache.filter(evCached => evCached.pointerId !== event.pointerId);
-      for (var i = 0; i < evCache.length; i++) {
-        if (evCache[i].pointerId == event.pointerId) {
-          evCache.splice(i, 1);
-          break;
-        }
-      }
+      evCache = evCache.filter(evCached => evCached.pointerId !== event.pointerId);
     };
 
     if (canvasRef.current) {
@@ -276,8 +263,8 @@ const Stars: React.FC = () => {
 
         stars.forEach(star => {
 
-          star.x += (velocity.x * star.z )+ (star.x - windowWidth / 2) * velocity.z * star.z;
-          star.y += (velocity.y * star.z)+ (star.y - windowHeight / 2) * velocity.z * star.z;
+          star.x += (velocity.x * star.z) + (star.x - windowWidth / 2) * velocity.z * star.z;
+          star.y += (velocity.y * star.z) + (star.y - windowHeight / 2) * velocity.z * star.z;
           star.z += velocity.z;
 
           // recycle when out of bounds
