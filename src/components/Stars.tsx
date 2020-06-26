@@ -203,13 +203,13 @@ const Stars: React.FC = () => {
     };
 
     const handlePointerUp = (event: PointerEvent) => {
-      remove_event(event);
+      removeEvent(event);
       if (evCache.length < 2) {
         prevPointersDistance = -1;
       }
     };
 
-    const remove_event = (event: PointerEvent) => {
+    const removeEvent = (event: PointerEvent) => {
       // evCache.filter(evCached => evCached.pointerId !== event.pointerId);
       for (var i = 0; i < evCache.length; i++) {
         if (evCache[i].pointerId == event.pointerId) {
