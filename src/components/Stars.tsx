@@ -40,7 +40,7 @@ const Stars: React.FC = () => {
   let cursorInsideCanvas = false;
   let pointer: Coordinates = {x: null, y: null};
 
-  const velocity = {x: 0, y: 0, tx: 0, ty: 0, z: 0.0005};
+  const velocity = {x: 0, y: 0, tx: 0, ty: 0, z: 0.0002};
 
   const generateStars = () => {
     for (let i = 0; i < starsNumber; i++) {
@@ -108,11 +108,11 @@ const Stars: React.FC = () => {
         oy = userPositionY - pointer.y;
 
       velocity.tx =
-        velocity.tx + (ox / 8) * scale * (cursorInsideCanvas ? 1 : -1);
+        velocity.tx - (ox / 8 * scale) * (cursorInsideCanvas ? 1 : -1);
       velocity.ty =
-        velocity.ty + (oy / 8) * scale * (cursorInsideCanvas ? 1 : -1);
+        velocity.ty - (oy / 8 * scale) * (cursorInsideCanvas ? 1 : -1);
     }
-    pointer = {x:userPositionX, y:userPositionY }
+    pointer = {x: userPositionX, y: userPositionY};
   };
 
   const resizeCanvas = (canvas: any) => {
