@@ -22,7 +22,7 @@ const MenuWrapper = styled.nav`
       transition: color 0.4s ease;
       will-change: color;
       position: relative;
-
+      
       &::before {
         position: absolute;
         left: -1.1rem;
@@ -44,7 +44,7 @@ const MenuWrapper = styled.nav`
       }
 
       &:hover {
-        color: ${props => props.theme.colors.lightest}!important;
+        color: ${props => props.theme.colors.lightest};
 
         &::before {
           transform: translate(0, -50%);

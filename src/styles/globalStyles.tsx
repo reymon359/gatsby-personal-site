@@ -81,12 +81,13 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   cursor: pointer;
-  color: inherit;
-  text-decoration: none;
+  text-decoration: nsone;
   transition: color ease-in .2s;
+  color:  ${theme.colors.medium};
 
   &:hover {
     color:  ${theme.colors.lightest};
+    font-weight: ${theme.fontWeights.bold};
   }
 }
 
