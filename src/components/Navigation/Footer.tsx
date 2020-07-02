@@ -1,13 +1,12 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
 import {addRemToProperty} from '../../styles/shared';
-import {colors, fonts, media} from '../../styles/theme';
 
 const FooterWrapper = styled.footer`
   width: 100%;
   position: fixed;
   top: 50%;
-  ${media.md`
+  ${props => props.theme.media.md`
     position: static;
     padding-top: 1.5rem;
   `}
@@ -19,8 +18,8 @@ type ItemProps = {
 
 const Item = styled.div<ItemProps>`
   position: absolute;
-  font-family: ${fonts.mono};
-  color: ${colors.gray500};
+  font-family: ${props => props.theme.fonts.mono};
+  color: ${props => props.theme.colors.mediumDart};
   font-size: 0.85rem;
   line-height: 1em;
   ${props =>
@@ -36,7 +35,7 @@ const Item = styled.div<ItemProps>`
           ${addRemToProperty('right')}
         `}
 
-  ${media.md`
+  ${props => props.theme.media.md`
     position: static;
     transform: rotate(0) translateX(0);
     transform-origin: 0;

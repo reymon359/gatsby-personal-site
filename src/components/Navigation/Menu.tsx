@@ -2,7 +2,6 @@ import React from 'react';
 import {useStaticQuery, graphql, Link} from 'gatsby';
 import styled, {css} from 'styled-components';
 import {addRemToProperty} from '../../styles/shared';
-import {colors, fonts, media} from '../../styles/theme';
 
 const MenuWrapper = styled.nav`
   position: fixed;
@@ -28,7 +27,7 @@ const MenuWrapper = styled.nav`
         position: absolute;
         left: -1.1rem;
         top: 50%;
-        background: ${colors.yellow500};
+        background: ${props => props.theme.colors.secondary};
         border-radius: 100%;
         content: '';
         display: block;
@@ -45,7 +44,7 @@ const MenuWrapper = styled.nav`
       }
 
       &:hover {
-        color: ${colors.white}!important;
+        color: ${props => props.theme.colors.lightest}!important;
 
         &::before {
           transform: translate(0, -50%);
@@ -55,7 +54,7 @@ const MenuWrapper = styled.nav`
     }
   }
 
-  ${media.md`
+  ${props => props.theme.media.md`
     position: static;
     padding: 0;
   `}
@@ -84,21 +83,21 @@ const NavItem = styled.li<NavItemProps>`
 
   a {
     font-size: 0.9rem;
-    font-family: ${fonts.mono};
+    font-family: ${props => props.theme.fonts.mono};
     pointer-events: all;
     transition: color 0.1s ease;
     line-height: 1em;
     ${props =>
       props.highlight
         ? css`
-            color: ${colors.yellow500};
+            color: ${props => props.theme.colors.secondary};
 
             &:hover::before {
               display: none !important;
             }
           `
         : css`
-            color: ${colors.gray500};
+            color: ${props => props.theme.colors.mediumDart};
           `}
   }
 `;
@@ -108,7 +107,7 @@ const NavLink = styled(Link).attrs({
 })`
   text-transform: capitalize;
   &.active {
-    color: ${colors.white};
+    color: ${props => props.theme.colors.lightest};
 
     &::before {
       transform: translate(0, -50%);

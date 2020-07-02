@@ -1,6 +1,5 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
-import {media, colors} from '../../styles/theme';
 
 type ToggleMenuWrapperProps = {
   open: boolean;
@@ -22,7 +21,7 @@ const ToggleMenuWrapper = styled.div<ToggleMenuWrapperProps>`
   span {
     display: inline-block;
     height: 1px;
-    background: ${colors.white};
+    background: ${props => props.theme.colors.lightest};
   }
 
   ${props =>
@@ -61,7 +60,7 @@ const ToggleMenuWrapper = styled.div<ToggleMenuWrapperProps>`
           }
         `}
 
-  ${media.md`
+  ${props => props.theme.media.md`
     display: flex;
   `}
 `;

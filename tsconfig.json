@@ -3,7 +3,7 @@
     "module": "commonjs",
     "target": "esnext",
     "jsx": "preserve",
-    "lib": ["dom", "esnext", "es2015", "es2017", "es2020"],
+    "lib": ["dom", "esnext", "es2020"],
     "strict": true,
     "noEmit": true,
     "isolatedModules": true,
@@ -13,6 +13,9 @@
     "noUnusedParameters": true,
     "removeComments": false,
     "preserveConstEnums": true
+  },
+  "rules": {
+    "quotemark": [true, "single"]
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules", "public", ".cache"]
