@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigation from './Navigation';
+import NavigationContainer from './NavigationContainer';
 import {ThemeProvider} from 'styled-components';
 import {theme, GlobalStyle} from '../styles/';
 
@@ -13,7 +13,7 @@ const Layout: React.FC<LayoutProps> = ({children}) => (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <main role="main">{children}</main>
-      <Navigation />
+      <NavigationContainer />
     </ThemeProvider>
   </>
 );
