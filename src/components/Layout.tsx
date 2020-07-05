@@ -1,5 +1,5 @@
 import React from 'react';
-import NavigationContainer from './NavigationContainer';
+import {NavigationContainer} from './Navigation';
 import {ThemeProvider} from 'styled-components';
 import {theme, GlobalStyle} from '../styles/';
 
