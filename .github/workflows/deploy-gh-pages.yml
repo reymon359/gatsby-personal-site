@@ -25,7 +25,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Add env vars
-          run: |
+      - run: |
             echo "::set-env name=GOOGLE_ANALYTICS_TRACKING_ID::${{ secrets.GOOGLE_ANALYTICS_TRACKING_ID }}"
             echo "::set-env name=GOOGLE_SITE_VERIFICATION::${{ secrets.GOOGLE_SITE_VERIFICATION }}"
 
