@@ -2,7 +2,7 @@ import React from 'react';
 import {graphql} from 'gatsby';
 
 import Layout from '../components/Layout';
-import Head from '../components/head';
+import Head from '../components/Head';
 
 interface Props {
   readonly data: PageQueryData;

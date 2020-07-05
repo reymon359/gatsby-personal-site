@@ -3,7 +3,7 @@ import {Link, graphql} from 'gatsby';
 import styled from 'styled-components';
 
 import Layout from '../components/Layout';
-import Head from '../components/head';
+import Head from '../components/Head';
 
 interface Props {
   readonly data: PageQueryData;
