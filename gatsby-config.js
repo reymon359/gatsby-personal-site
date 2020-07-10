@@ -15,7 +15,7 @@ module.exports = {
     googleSiteVerification: process.env.GOOGLE_SITE_VERIFICATION,
     author: {
       name: `Ramon Morcillo`,
-      intro: `Hi, I am Ramon Morcillo, a Software Engineer based in Madrid, Spain`,
+      intro: `Hi, I am Ramón Morcillo, a Software Engineer based in Madrid, Spain`,
       url: `https://ramonmorcillo.com`,
       email: `hey@ramonmorcillo.com`
     },
