@@ -23,7 +23,7 @@ type ShoableProps = {
 
 const Shoable = styled.div<ShoableProps>`
   ${props => props.theme.media.md`
-    background: ${(props: any) => props.theme.colors.primaryDark};
+    // background: ${(props: any) => props.theme.colors.primaryDark};
     overflow: hidden;
     transition: max-height .6s cubic-bezier(0.45, 0, .1, 1);
     will-change: max-height;
@@ -44,14 +44,14 @@ const Shoable = styled.div<ShoableProps>`
 
 const Header = styled.header`
   ${props => props.theme.media.md`
-    display: flex;s
+    display: flex;
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
     min-height: 7rem;
-    background-image: linear-gradient(to bottom,
-    ${(props: any) => props.theme.colors.primaryDark + '00'} 0%,
-    ${(props: any) => props.theme.colors.primaryDark} 50%);
+    // background-image: linear-gradient(to bottom,
+    // ${(props: any) => props.theme.colors.darkest + '00'} 0%,
+    // ${(props: any) => props.theme.colors.darkest} 50%);
     ${addRemToProperty('padding')};
   `}
 `;
