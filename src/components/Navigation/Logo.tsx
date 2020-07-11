@@ -22,7 +22,7 @@ const CircleBackground = styled.div`
 `;
 
 const CircleWrapper = styled.div`
-  pointer-events: all; 
+  pointer-events: all;
   position: fixed;
   top: 0;
   left: 0;

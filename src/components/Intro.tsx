@@ -23,8 +23,8 @@ const TitleWrapper = styled.div<TitleWrapperProps>`
   `}
 
   ${props =>
-  props.fixed
-    ? css`
+    props.fixed
+      ? css`
           ${addRemToProperty('padding')};
           position: absolute;
           top: 0;
@@ -36,7 +36,7 @@ const TitleWrapper = styled.div<TitleWrapperProps>`
         right: auto;
       `}
         `
-    : css`
+      : css`
           text-align: left;
         `}
 `;

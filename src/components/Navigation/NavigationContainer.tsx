@@ -7,7 +7,7 @@ import styled, {css} from 'styled-components';
 import {addRemToProperty} from '../../styles/shared';
 
 const Wrapper = styled.div`
-   pointer-events: none; 
+  pointer-events: none;
   ${props => props.theme.media.md`
     position: fixed;
     bottom: 0;
@@ -29,7 +29,14 @@ const Shoable = styled.div<ShoableProps>`
     transition: max-height .6s cubic-bezier(0.45, 0, .1, 1);
     will-change: max-height;
     
-    ${(props: any) => props.open ? css`max-height: 300px;` : css`max-height: 0;`}
+    ${(props: any) =>
+      props.open
+        ? css`
+            max-height: 300px;
+          `
+        : css`
+            max-height: 0;
+          `}
 
       > div {
         padding: 0 3rem 3rem;
@@ -63,17 +70,15 @@ export const NavigationContainer = () => {
   return (
     <Wrapper>
       <Header>
-        <Logo/>
-        <ToggleMenu open={open} onClick={() => setOpen(!open)}/>
+        <Logo />
+        <ToggleMenu open={open} onClick={() => setOpen(!open)} />
       </Header>
       <Shoable open={open}>
         <div>
-          <Menu/>
-          <Footer/>
+          <Menu />
+          <Footer />
         </div>
       </Shoable>
     </Wrapper>
   );
 };
-
-

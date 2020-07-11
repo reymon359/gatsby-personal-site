@@ -22,7 +22,7 @@ const MenuWrapper = styled.nav`
       transition: color 0.4s ease;
       will-change: color;
       position: relative;
-      
+
       &::before {
         position: absolute;
         left: -1.1rem;

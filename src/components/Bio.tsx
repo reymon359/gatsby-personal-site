@@ -1,6 +1,5 @@
 import React from 'react';
 import {StaticQuery, graphql} from 'gatsby';
-import {string} from 'prop-types';
 
 type StaticQueryData = {
   site: {
@@ -30,7 +29,7 @@ const Bio: React.FC = () => (
       }
     `}
     render={(data: StaticQueryData): React.ReactElement | null => {
-      const {description, social} = data.site.siteMetadata;
+      const {description} = data.site.siteMetadata;
       return (
         <div>
           <h1>{description}</h1>
