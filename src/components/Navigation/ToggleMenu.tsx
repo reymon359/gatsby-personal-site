@@ -7,6 +7,7 @@ type ToggleMenuWrapperProps = {
 };
 
 const ToggleMenuWrapper = styled.div<ToggleMenuWrapperProps>`
+  pointer-events: all; 
   display: none;
   height: 15px;
   width: 1.75rem;

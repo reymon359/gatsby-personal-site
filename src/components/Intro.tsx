@@ -7,6 +7,7 @@ type TitleWrapperProps = {
 };
 
 const TitleWrapper = styled.div<TitleWrapperProps>`
+  pointer-events: none; 
   font-size: 1.7rem;
   max-width: 36rem;
   line-height: 1.3em;
