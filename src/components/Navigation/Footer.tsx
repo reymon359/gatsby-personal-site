@@ -43,22 +43,29 @@ const Item = styled.div<ItemProps>`
     text-align: center;
     font-size: .8rem;
   `}
+  
+  small {
+    font-size: 70%!important;
+  }
 `;
 
 const Footer = () => (
   <FooterWrapper>
+
     <Item position="left">
-      Made with 💚 &&nbsp;
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.gatsbyjs.org/"
-      >
-        Gatsby
-      </a>
+      <span>Ramón Morcillo - {new Date().getFullYear()}</span>
     </Item>
     <Item position="right">
-      <span>Ramón Morcillo - {new Date().getFullYear()}</span>
+      Made with 💚 & time <small style={{
+      fontSize: '70%'
+    }}>(a lot of it)</small>
+      {/*<a*/}
+      {/*  target="_blank"*/}
+      {/*  rel="noopener noreferrer"*/}
+      {/*  href="https://www.gatsbyjs.org/"*/}
+      {/*>*/}
+      {/*  Gatsby*/}
+      {/*</a>*/}
     </Item>
   </FooterWrapper>
 );
