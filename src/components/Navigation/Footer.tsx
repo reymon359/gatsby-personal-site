@@ -45,20 +45,24 @@ const Item = styled.div<ItemProps>`
   `}
   
   small {
-    font-size: 70%!important;
+    font-size: 70% !important;
   }
 `;
 
 const Footer = () => (
   <FooterWrapper>
-
     <Item position="left">
       <span>Ramón Morcillo - {new Date().getFullYear()}</span>
     </Item>
     <Item position="right">
-      Made with 💚 & time <small style={{
-      fontSize: '70%'
-    }}>(a lot of it)</small>
+      Made with 💚 & time{' '}
+      <small
+        style={{
+          fontSize: '70%'
+        }}
+      >
+        (a lot of it)
+      </small>
       {/*<a*/}
       {/*  target="_blank"*/}
       {/*  rel="noopener noreferrer"*/}
