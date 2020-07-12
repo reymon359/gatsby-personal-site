@@ -1,8 +1,9 @@
 import React from 'react';
 import {Link, graphql} from 'gatsby';
-import Head from '../components/Head';
 import Layout from '../components/Layout';
-import Bio from '../components/Bio';
+import Stars from '../components/Stars';
+import Head from '../components/Head';
+import Content from '../components/Content';
 
 interface BlogProps {
   readonly data: PageQueryData;
@@ -25,23 +26,26 @@ const Blog: React.FC<BlogProps> = ({data}) => {
           `react`
         ]}
       />
-      <Bio />
-      <article>
-        <div className={`page-content`}>
-          {posts.map(({node}) => {
-            const title = node.frontmatter.title || node.fields.slug;
-            return (
-              <div key={node.fields.slug}>
-                <h3>
-                  <Link to={node.fields.slug}>{title}</Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
-                <p dangerouslySetInnerHTML={{__html: node.excerpt}} />
-              </div>
-            );
-          })}
-        </div>
-      </article>
+      {/*todo: stars param to stop them*/}
+      <Stars />
+      <Content>
+        <article>
+          <div className={`page-content`}>
+            {posts.map(({node}) => {
+              const title = node.frontmatter.title || node.fields.slug;
+              return (
+                <div key={node.fields.slug}>
+                  <h3>
+                    <Link to={node.fields.slug}>{title}</Link>
+                  </h3>
+                  <small>{node.frontmatter.date}</small>
+                  <p dangerouslySetInnerHTML={{__html: node.excerpt}} />
+                </div>
+              );
+            })}
+          </div>
+        </article>
+      </Content>
     </Layout>
   );
 };
