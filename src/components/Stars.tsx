@@ -19,7 +19,12 @@ type Star = {
   z: number;
 };
 
-const Stars: React.FC = () => {
+interface StarsProps {
+  readonly normalVelocity?: number;
+  readonly addEventListeners?: boolean;
+}
+
+const Stars: React.FC<StarsProps> = (StarsConfig: StarsProps) => {
   const starsNumber =
     typeof window !== 'undefined' &&
     (window.innerWidth + window.innerHeight) / 8;
@@ -38,8 +43,10 @@ const Stars: React.FC = () => {
   let evCache: PointerEvent[] = [];
   let prevPointersDistance = -1;
 
-  const normalVelocity = 0.0005;
+  const {normalVelocity = 0.0005} = StarsConfig;
   const velocity = {x: 0, y: 0, tx: 0, ty: 0, z: normalVelocity};
+  const {addEventListeners = true} = StarsConfig;
+  console.log('pfwefwe', addEventListeners, normalVelocity);
 
   const generateStars = () => {
     for (let i = 0; i < starsNumber; i++) {
@@ -210,20 +217,21 @@ const Stars: React.FC = () => {
 
       if (renderCtx) {
         const canvas = canvasRef.current;
-        canvas.addEventListener('pointerdown', handlePointerDown);
-        canvas.addEventListener('pointermove', handlePointerMove);
-        canvas.addEventListener('pointerup', handlePointerUp);
-        canvas.addEventListener('pointercancel', handlePointerUp);
-        canvas.addEventListener('pointerout', handlePointerUp);
-        canvas.addEventListener('pointerleave', handlePointerUp);
+        if (addEventListeners) {
+          canvas.addEventListener('pointerdown', handlePointerDown);
+          canvas.addEventListener('pointermove', handlePointerMove);
+          canvas.addEventListener('pointerup', handlePointerUp);
+          canvas.addEventListener('pointercancel', handlePointerUp);
+          canvas.addEventListener('pointerout', handlePointerUp);
+          canvas.addEventListener('pointerleave', handlePointerUp);
 
-        window.addEventListener('wheel', handleWheel);
-        window.addEventListener('resize', handleResize);
-        canvas.addEventListener('mousemove', handleMouseMove);
-        canvas.addEventListener('touchmove', handleTouchMove);
-        canvas.addEventListener('touchend', handleTouchLeave);
-        document.addEventListener('mouseleave', handleMouseLeave);
-
+          window.addEventListener('wheel', handleWheel);
+          window.addEventListener('resize', handleResize);
+          canvas.addEventListener('mousemove', handleMouseMove);
+          canvas.addEventListener('touchmove', handleTouchMove);
+          canvas.addEventListener('touchend', handleTouchLeave);
+          document.addEventListener('mouseleave', handleMouseLeave);
+        }
         setContext(renderCtx);
       }
     }

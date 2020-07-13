@@ -27,7 +27,7 @@ const Blog: React.FC<BlogProps> = ({data}) => {
         ]}
       />
       {/*todo: stars param to stop them*/}
-      <Stars />
+      {/*<Stars normalVelocity={0.0001} addEventListeners={false}/>*/}
       <Content>
         <article>
           <div className={`page-content`}>
