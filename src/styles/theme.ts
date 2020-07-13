@@ -11,7 +11,7 @@ export const theme = {
     // Palette
     primary: '#255799',
     primaryLight: '#5b98e8',
-    primaryDark: '#1e2733',
+    primaryDark: '#090f17',
     secondary: '#ebc86e',
     secondaryLight: '#f6dea5',
     secondaryDark: '#6b6349',
