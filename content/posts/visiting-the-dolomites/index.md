@@ -1,24 +1,16 @@
 ---
+title = 'Visiting the Dolomites'
+description = 'Travel through the Dolomites, the Italian Alps.'
+date = '2019-08-29'
 author = 'Ramón Morcillo'
 categories = ['Travel']
 tags = ['Trip', 'Italy', 'Mountain']
-date = '2019-08-29'
-description = 'Travel through the Dolomites, the Italian Alps.'
+published = true
 featured = '2019/dolomites.jpg'
-featuredalt = 'Dolomites'
-featuredpath = 'inktitle = ''title = 'Visiting the Dolomites'
 type = 'post'
-draft = 'false'
+draft = false
+---
 
----
----
-title: Hello World
-date: '2019-05-25'
-published: true
-layout: post
-tags: ['markdown', 'hello', 'world']
-category: example
----
 ## What are the Dolomites?
 
 When I told people that I was going to or had been in the Dolomites they had no idea what they were, the truth is that **I didn't even know it** until, a couple of years ago, my mother mentioned that she would like to visit them.
