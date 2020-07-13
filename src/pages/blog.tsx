@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link, graphql} from 'gatsby';
 import Layout from '../components/Layout';
-import Stars from '../components/Stars';
 import Head from '../components/Head';
 import Content from '../components/Content';
 
