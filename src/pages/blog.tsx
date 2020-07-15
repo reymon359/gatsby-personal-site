@@ -29,13 +29,18 @@ const Blog: React.FC<BlogProps> = ({data}) => {
       />
       <Stars
         normalVelocity={0.0001}
-        containerOpacity={0.2}
+        containerOpacity={0.15}
         addEventListeners={false}
       />
       <Content>
         <article>
           <div className={`page-content`}>
-            <PostsList posts={posts} />
+            <h1>Things I do and write about to be useful to others</h1>
+            <p>Search</p>
+            <p>Tags</p>
+            {/*<Search/>*/}
+            {/*<Tags/>  redirect to tags with the tag selected*/}
+            <PostsList posts={posts}/>
           </div>
         </article>
       </Content>
