@@ -40,7 +40,7 @@ const Blog: React.FC<BlogProps> = ({data}) => {
             <p>Tags</p>
             {/*<Search/>*/}
             {/*<Tags/>  redirect to tags with the tag selected*/}
-            <PostsList posts={posts}/>
+            <PostsList posts={posts} />
           </div>
         </article>
       </Content>
