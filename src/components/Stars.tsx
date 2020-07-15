@@ -21,10 +21,12 @@ type Star = {
 
 interface StarsProps {
   readonly normalVelocity?: number;
+  readonly containerOpacity?: number;
   readonly addEventListeners?: boolean;
 }
 
 const Stars: React.FC<StarsProps> = (StarsConfig: StarsProps) => {
+  const {containerOpacity = 1} = StarsConfig;
   const starsNumber =
     typeof window !== 'undefined' &&
     (window.innerWidth + window.innerHeight) / 8;
@@ -46,7 +48,6 @@ const Stars: React.FC<StarsProps> = (StarsConfig: StarsProps) => {
   const {normalVelocity = 0.0005} = StarsConfig;
   const velocity = {x: 0, y: 0, tx: 0, ty: 0, z: normalVelocity};
   const {addEventListeners = true} = StarsConfig;
-  console.log('pfwefwe', addEventListeners, normalVelocity);
 
   const generateStars = () => {
     for (let i = 0; i < starsNumber; i++) {
@@ -321,6 +322,7 @@ const Stars: React.FC<StarsProps> = (StarsConfig: StarsProps) => {
         id="canvas"
         ref={canvasRef}
         style={{
+          opacity: containerOpacity,
           position: 'fixed',
           width: '100%',
           height: '100%'

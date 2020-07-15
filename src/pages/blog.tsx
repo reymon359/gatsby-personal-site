@@ -3,6 +3,7 @@ import {Link, graphql} from 'gatsby';
 import Layout from '../components/Layout';
 import Head from '../components/Head';
 import Content from '../components/Content';
+import Stars from '../components/Stars';
 
 interface BlogProps {
   readonly data: PageQueryData;
@@ -25,8 +26,11 @@ const Blog: React.FC<BlogProps> = ({data}) => {
           `react`
         ]}
       />
-      {/*todo: stars param to stop them*/}
-      {/*<Stars normalVelocity={0.0001} addEventListeners={false}/>*/}
+      <Stars
+        normalVelocity={0.0001}
+        containerOpacity={0.2}
+        addEventListeners={false}
+      />
       <Content>
         <article>
           <div className={`page-content`}>
