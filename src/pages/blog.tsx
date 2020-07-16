@@ -33,16 +33,14 @@ const Blog: React.FC<BlogProps> = ({data}) => {
         addEventListeners={false}
       />
       <Content>
-        <article>
-          <div className={`page-content`}>
-            <h1>Things I do and write about to be useful to others</h1>
-            <p>Search</p>
-            <p>Tags</p>
-            {/*<Search/>*/}
-            {/*<Tags/>  redirect to tags with the tag selected*/}
-            <PostsList posts={posts} />
-          </div>
-        </article>
+        <div className={`page-content`}>
+          <h1>Things I do and write about to be useful to others</h1>
+          <p>Search</p>
+          <p>Tags</p>
+          {/*<Search/>*/}
+          {/*<Tags/>  redirect to tags with the tag selected*/}
+          <PostsList posts={posts} />
+        </div>
       </Content>
     </Layout>
   );
@@ -88,8 +86,9 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "YYYY")
             title
+            tags
           }
         }
       }

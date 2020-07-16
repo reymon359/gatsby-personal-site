@@ -2,7 +2,6 @@ import React from 'react';
 import {Link} from 'gatsby';
 import styled, {css} from 'styled-components';
 
-
 type WrapperProps = {
   hasLink?: boolean;
 };
@@ -18,7 +17,7 @@ const Wrapper = styled.article<WrapperProps>`
 
   > header {
     transform: translateX(0);
-    transition: transform .5s cubic-bezier(.5, .1, 0, 1.15);
+    transition: transform 0.5s cubic-bezier(0.5, 0.1, 0, 1.15);
     backface-visibility: hidden;
     will-change: transform;
   }
@@ -37,15 +36,17 @@ const Wrapper = styled.article<WrapperProps>`
     line-height: 0;
   }
 
-  ${props => props.hasLink && css`
-    ${props => props.theme.media.hover`
+  ${props =>
+    props.hasLink &&
+    css`
+      ${props => props.theme.media.hover`
       &:hover {
         > header {
           transform: translateX(-.75rem);
         }
       }
     `}
-  `}
+    `}
 `;
 
 const WorkTitle = styled.h3`
@@ -55,9 +56,9 @@ const WorkTitle = styled.h3`
 `;
 
 const WorkInfos = styled.div`
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   font-family: ${props => props.theme.mono};
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: ${props => props.theme.mediumDark};
 `;
 
@@ -71,10 +72,9 @@ const WorkYear = styled.span`
     height: 1px;
     width: 1rem;
     background: ${props => props.theme.secondary};
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
 `;
-
 
 interface Node {
   excerpt: string;
@@ -84,6 +84,7 @@ interface Node {
   frontmatter: {
     date: string;
     title: string;
+    tags: string[];
   };
 }
 
@@ -93,34 +94,21 @@ interface PostsListItemProps {
 
 export const PostsListItem: React.FC<PostsListItemProps> = ({node}) => {
   const title = node.frontmatter.title || node.fields.slug;
+  const tags = node.frontmatter.tags;
 
   return (
-    // <>
-    //
-    //
-    //     return (
-    //       <div key={node.fields.slug}>
-    //         <h3>
-    //           <Link to={node.fields.slug}>{title}</Link>
-    //         </h3>
-    //         <small>{node.frontmatter.date}</small>
-    //         <p dangerouslySetInnerHTML={{__html: node.excerpt}}/>
-    //       </div>
-    //     );
-    //   })}
-    // </>
-    <Wrapper hasLink={node.fields.slug !== null}>
-      <header>
-        <WorkTitle>{title}</WorkTitle>
+    <Link to={node.fields.slug}>
+      <Wrapper hasLink={node.fields.slug !== null}>
+        <header>
+          <WorkTitle>{title}</WorkTitle>
+          <WorkInfos>
+            {tags && <span> {tags.map(tag => tag).join(', ')}</span>}
+          </WorkInfos>
+        </header>
         <WorkInfos>
-          {/*<span>{node.frontmatter.title}</span>*/}
-          {/*{collaborators && <span> w/ {collaborators.map(c => c).join(', ')}</span>}*/}
+          <WorkYear>{node.frontmatter.date}</WorkYear>
         </WorkInfos>
-      </header>
-      <WorkInfos>
-        <WorkYear>{node.frontmatter.date}</WorkYear>
-      </WorkInfos>
-      {/*{url && <a href={url} target="_blank" rel="noopener noreferrer">More Info</a>}*/}
-    </Wrapper>
+      </Wrapper>
+    </Link>
   );
 };
