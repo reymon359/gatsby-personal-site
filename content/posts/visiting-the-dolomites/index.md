@@ -1,14 +1,14 @@
 ---
-title = 'Visiting the Dolomites'
-description = 'Travel through the Dolomites, the Italian Alps.'
-date = '2019-08-29'
-author = 'Ramón Morcillo'
-categories = ['travel']
-tags = ['trip', 'italy', 'nature']
-published = true
-featured = '2019/dolomites.jpg'
-type = 'post'
-draft = false
+title: 'Visiting the Dolomites'
+description: 'Travel through the Dolomites, the Italian Alps.'
+date: '2019-08-29'
+author: 'Ramón Morcillo'
+categories: ['travel']
+tags: ['trip', 'italy', 'nature']
+published: true
+featured: '2019/dolomites.jpg'
+type: 'post'
+draft: false
 ---
 
 ## What are the Dolomites?

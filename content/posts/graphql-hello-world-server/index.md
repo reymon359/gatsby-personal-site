@@ -1,14 +1,14 @@
 ---
-title = 'Getting started with GraphQL and Node.js'
-description = 'Hello World Client Server project to explain how GraphQL Works.'
-date = '2020-04-14'
-author = 'Ramón Morcillo'
-categories = ['software']
-tags = ['tutorial', 'node.js', 'graphql']
-published = true
-featured = './gia-oris-_uM5_nG2ssc-unsplash.jpg'
-type = 'post'
-draft = false
+title: 'Getting started with GraphQL and Node.js'
+description: 'Hello World Client Server project to explain how GraphQL Works.'
+date: '2020-04-14'
+author: 'Ramón Morcillo'
+categories: ['software']
+tags: ['tutorial', 'node.js', 'graphql']
+published: true
+featured: './gia-oris-_uM5_nG2ssc-unsplash.jpg'
+type: 'post'
+draft: false
 ---
 
 
