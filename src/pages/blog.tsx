@@ -33,14 +33,13 @@ const Blog: React.FC<BlogProps> = ({data}) => {
         addEventListeners={false}
       />
       <Content>
-        <div className={`page-content`}>
-          <h1>Things I do and write about to be useful to others</h1>
-          <p>Search</p>
-          <p>Tags</p>
-          {/*<Search/>*/}
-          {/*<Tags/>  redirect to tags with the tag selected*/}
-          <PostsList posts={posts} />
-        </div>
+        <h1>Blog</h1>
+        <h4>Things I do and write about to be useful to others</h4>
+        {/*<Search posts={simplifiedPosts} {...props} />*/}
+        <p>Tags</p>
+        {/*<Search/>*/}
+        {/*<Tags/>  redirect to tags with the tag selected*/}
+        <PostsList posts={posts} />
       </Content>
     </Layout>
   );
@@ -62,6 +61,7 @@ interface PageQueryData {
         frontmatter: {
           date: string;
           title: string;
+          tags: string[];
         };
       };
     }[];

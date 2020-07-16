@@ -22,6 +22,7 @@ interface Post {
     frontmatter: {
       date: string;
       title: string;
+      tags: string[];
     };
   };
 }
