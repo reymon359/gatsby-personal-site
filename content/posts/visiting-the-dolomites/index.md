@@ -9,6 +9,7 @@ published: true
 featured: '2019/dolomites.jpg'
 type: 'post'
 draft: false
+thumbnail: '2019/dolomites.jpg'
 ---
 
 ## What are the Dolomites?
