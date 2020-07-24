@@ -5,12 +5,13 @@ export const ContentContainer = styled.div`
   max-width: 68rem;
   width: calc(100% - 9.25rem * 2);
   margin: 11rem auto 5rem;
-     position: fixed;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
    ${props => props.theme.media.lg`
     width: 1.45rem;
     margin: 8rem auto 3rem;
