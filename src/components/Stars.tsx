@@ -1,12 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, {useContext} from 'react';
+import {ThemeContext} from 'styled-components';
 import {getRandomBackground} from '../utils';
-
-const StarsContainer = styled.div`
-  width: 100%;
-  height: 100vh;
-  background-color: ${props => props.theme.colors.black};
-`;
 
 type Coordinates = {
   x: number | null;
@@ -196,7 +190,7 @@ const Stars: React.FC<StarsProps> = (StarsConfig: StarsProps) => {
         );
         accelerate(
           prevPointersDistance > 0 &&
-            currentPointersDistance > prevPointersDistance
+          currentPointersDistance > prevPointersDistance
         );
         prevPointersDistance = currentPointersDistance;
       }
@@ -316,19 +310,21 @@ const Stars: React.FC<StarsProps> = (StarsConfig: StarsProps) => {
     return cleanup;
   }, [context]);
 
+  const themeContext = useContext(ThemeContext);
+
   return (
-    <StarsContainer style={{backgroundImage: getRandomBackground()}}>
-      <canvas
-        id="canvas"
-        ref={canvasRef}
-        style={{
-          opacity: containerOpacity,
-          position: 'fixed',
-          width: '100%',
-          height: '100%'
-        }}
-      />
-    </StarsContainer>
+    <canvas
+      id="canvas"
+      ref={canvasRef}
+      style={{
+        backgroundColor: themeContext.colors.black,
+        backgroundImage: getRandomBackground(),
+        opacity: containerOpacity,
+        position: 'fixed',
+        width: '100%',
+        height: '100%'
+      }}
+    />
   );
 };
 
