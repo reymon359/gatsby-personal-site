@@ -5,6 +5,22 @@ import Layout from '../components/Layout';
 import Stars from '../components/Stars';
 import Content from '../components/Content';
 import {PostsList} from '../components/postsList';
+import styled from 'styled-components';
+import {addRemToProperty} from '../styles';
+
+const Title =  styled.h1`
+  font-size: ${props => props.theme.fontSizes.xLarge};
+  font-weight: ${props => props.theme.fontWeights.regular};
+`;
+const Description =  styled.p`
+  font-size: ${props => props.theme.fontSizes.normal};
+  font-weight: ${props => props.theme.fontWeights.thin};
+`;
+
+const SectionTitle = styled.h2`
+  font-size: ${props => props.theme.fontSizes.la};
+  font-weight: ${props => props.theme.fontWeights.regular};
+`;
 
 interface WorksProps {
   readonly data: PageQueryData;
@@ -48,11 +64,12 @@ const Works: React.FC<WorksProps> = ({data}) => {
         addEventListeners={false}
       />
       <Content>
-        <h1>Work</h1>
-        <h4>Things I do and write about</h4>
+        <Title>Works</Title>
+        <description>Things I do and write about</description>
         {/*<Search/>*/}
         {/*<Tags/>  redirect to tags with the tag selected*/}
-        <h4>Latest posts</h4>
+        <SectionTitle>Latest posts</SectionTitle>
+        <button>All posts</button>
         <PostsList posts={posts} />
         <h4>Projects</h4>
         <p>List of projects</p>
