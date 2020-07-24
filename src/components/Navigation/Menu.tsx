@@ -129,7 +129,7 @@ interface StaticQueryData {
 }
 
 const Menu: React.FC = () => {
-  const pages = [`blog`, `tags`, `about`];
+  const pages = [`works`, `about`];
   const {site}: StaticQueryData = useStaticQuery(
     graphql`
       query {
