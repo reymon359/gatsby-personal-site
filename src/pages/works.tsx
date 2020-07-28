@@ -103,7 +103,7 @@ const Works: React.FC<WorksProps> = ({data}) => {
         <Section>
           <SectionHeader>
             <SectionTitle>Latest posts</SectionTitle>
-            <MoreLink>All posts</MoreLink>
+            <MoreLink to='/blog'>All posts</MoreLink>
           </SectionHeader>
           <SectionBody>
             <PostsList posts={posts}/>
