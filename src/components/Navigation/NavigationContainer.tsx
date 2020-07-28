@@ -65,10 +65,12 @@ const Header = styled.header<HeaderProps>`
 `;
 
 interface NavigationContainerProps {
-  readonly transparent: boolean;
+  readonly location: Location;
 }
 
-export const NavigationContainer: React.FC<NavigationContainerProps> = ({transparent = false}) => {
+export const NavigationContainer: React.FC<NavigationContainerProps> = ({location}) => {
+  const transparent = location !== undefined && location.pathname === '/';
+
   const [open, setOpen] = useState(false);
 
   return (
