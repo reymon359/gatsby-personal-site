@@ -18,7 +18,7 @@ const Description = styled.p`
 `;
 
 const Section = styled.div`
-  margin: 0.2rem 0;
+  padding: 1rem 0;
 `;
 const SectionHeader = styled.div`
   display: flex;
@@ -29,28 +29,28 @@ const SectionTitle = styled.h2`
   font-weight: ${props => props.theme.fontWeights.regular};
 `;
 const MoreLink = styled(Link)`
-  color: ${(props) => props.theme.colors.light};
-  background-color: ${(props) => props.theme.colors.light + '40'};
+  color: ${props => props.theme.colors.light};
+  background-color: ${props => props.theme.colors.light + '40'};
   font-size: ${props => props.theme.fontSizes.normal};
   font-weight: ${props => props.theme.fontWeights.bold};
   border-radius: 5px;
   box-sizing: border-box;
   text-decoration: none;
   display: block;
-  padding: .4rem .6rem;
+  padding: 0.4rem 0.6rem;
   border-bottom: 0;
   white-space: nowrap;
   line-height: 1;
-  margin: .2rem 0 .2rem 1rem;
+  margin: 0.2rem 0 0.2rem 1rem;
   transition: 0.4s ease;
-  
+
   &:hover {
     color: ${props => props.theme.colors.darkest};
-    background-color: ${(props) => props.theme.colors.light};
+    background-color: ${props => props.theme.colors.light};
   }
 `;
 const SectionBody = styled.div`
-
+  padding: 0.2rem 0;
 `;
 
 interface WorksProps {
@@ -103,15 +103,21 @@ const Works: React.FC<WorksProps> = ({data}) => {
         <Section>
           <SectionHeader>
             <SectionTitle>Latest posts</SectionTitle>
-            <MoreLink to='/blog'>All posts</MoreLink>
+            <MoreLink to="/blog">All posts</MoreLink>
           </SectionHeader>
           <SectionBody>
-            <PostsList posts={posts}/>
+            <PostsList posts={posts} />
           </SectionBody>
         </Section>
-        <h4>Projects</h4>
-        <p>List of projects</p>
-        <PostsList posts={posts}/>
+        <Section>
+          <SectionHeader>
+            <SectionTitle>Latest projects</SectionTitle>
+            <MoreLink to="/blog">All projects</MoreLink>
+          </SectionHeader>
+          <SectionBody>
+            <PostsList posts={posts} />
+          </SectionBody>
+        </Section>
       </Content>
     </Layout>
   );
@@ -143,33 +149,33 @@ interface PageQueryData {
 }
 
 export const pageQuery = graphql`
-    query {
-        site {
-            siteMetadata {
-                title
-            }
-        }
-        allMarkdownRemark(
-            filter: {frontmatter: {published: {ne: false}}}
-            sort: {fields: [frontmatter___date], order: DESC}
-        ) {
-            edges {
-                node {
-                    id
-                    excerpt
-                    fields {
-                        slug
-                    }
-                    frontmatter {
-                        date(formatString: "MMM DD, YYYY")
-                        title
-                        thumbnail
-                        tags
-                    }
-                }
-            }
-        }
+  query {
+    site {
+      siteMetadata {
+        title
+      }
     }
+    allMarkdownRemark(
+      filter: {frontmatter: {published: {ne: false}}}
+      sort: {fields: [frontmatter___date], order: DESC}
+    ) {
+      edges {
+        node {
+          id
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMM DD, YYYY")
+            title
+            thumbnail
+            tags
+          }
+        }
+      }
+    }
+  }
 `;
 
 export default Works;
