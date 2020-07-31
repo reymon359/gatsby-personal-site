@@ -4,7 +4,7 @@ import {PostsListItem} from './PostsListItem';
 
 const PostsListContainer = styled.section`
   max-width: 80%;
-  margin: 8rem auto 0;
+  margin: 1.5rem auto 0;
   ${props => props.theme.media.lg`
     max-width: 100%;
   `}
