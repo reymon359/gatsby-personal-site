@@ -17,4 +17,5 @@
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ramonmorcillo.com/gatsby-personal-site/works/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
