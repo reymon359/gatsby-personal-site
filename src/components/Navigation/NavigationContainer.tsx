@@ -93,7 +93,7 @@ export const NavigationContainer: React.FC<NavigationContainerProps> = ({
       </Header>
       <Shoable open={open} transparent={transparent}>
         <div>
-          <Menu />
+          <Menu pointerEvents={!transparent} />
           <Footer />
         </div>
       </Shoable>

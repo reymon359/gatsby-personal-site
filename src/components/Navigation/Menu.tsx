@@ -2,8 +2,11 @@ import React from 'react';
 import {useStaticQuery, graphql, Link} from 'gatsby';
 import styled, {css} from 'styled-components';
 import {addRemToProperty} from '../../styles/shared';
+type MenuWrapperProps = {
+  pointerEvents: boolean;
+};
 
-const MenuWrapper = styled.nav`
+const MenuWrapper = styled.nav<MenuWrapperProps>`
   position: fixed;
   bottom: 0;
   left: 0;
@@ -12,7 +15,7 @@ const MenuWrapper = styled.nav`
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  pointer-events: none;
+  pointer-events: ${props => (props.pointerEvents ? 'none' : 'all')};
   ${addRemToProperty('padding')};
 
   ul:last-child li {
@@ -115,6 +118,7 @@ const NavLink = styled(Link).attrs({
     }
   }
 `;
+
 interface SocialLink {
   name: string;
   socialUrl: string;
@@ -128,7 +132,12 @@ interface StaticQueryData {
   };
 }
 
-const Menu: React.FC = () => {
+interface MenuProps {
+  readonly pointerEvents: boolean;
+}
+
+export const Menu: React.FC<MenuProps> = ({pointerEvents}) => {
+  console.log(pointerEvents);
   const pages = [`works`, `about`];
   const {site}: StaticQueryData = useStaticQuery(
     graphql`
@@ -146,7 +155,7 @@ const Menu: React.FC = () => {
   );
 
   return (
-    <MenuWrapper>
+    <MenuWrapper pointerEvents={pointerEvents}>
       <Nav>
         {site.siteMetadata.social.map((socialLink: SocialLink) => (
           <NavItem key={socialLink.name}>
