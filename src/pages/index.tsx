@@ -10,7 +10,7 @@ interface IndexProps {
   readonly location: Location;
 }
 
-const Index: React.FC<IndexProps> = ({data,location}) => {
+const Index: React.FC<IndexProps> = ({data, location}) => {
   const siteTitle: string = data.site.siteMetadata.title;
   return (
     <Layout title={siteTitle} location={location}>

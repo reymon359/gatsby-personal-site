@@ -25,14 +25,20 @@ type ShoableProps = {
 
 const Shoable = styled.div<ShoableProps>`
   ${props => props.theme.media.md`
-    background: ${(props: any) => props.transparent ? 'none' : props.theme.colors.primaryDark};
+    background: ${(props: any) =>
+      props.transparent ? 'none' : props.theme.colors.primaryDark};
     overflow: hidden;
     transition: max-height .6s cubic-bezier(0.45, 0, .1, 1);
     will-change: max-height;
     
-    ${(props: any) => props.open
-  ? css`max-height: 300px;`
-  : css`max-height: 0;`}
+    ${(props: any) =>
+      props.open
+        ? css`
+            max-height: 300px;
+          `
+        : css`
+            max-height: 0;
+          `}
 
       > div {
         padding: 0 3rem 3rem;
@@ -57,10 +63,14 @@ const Header = styled.header<HeaderProps>`
     min-height: 7rem;
     ${addRemToProperty('padding')};
   `}
-   ${(props: any) => !props.transparent &&
-  css`background-image: linear-gradient(to bottom,
-    ${(props: any) => props.theme.colors.primaryDark + '00'} 0%,
-    ${(props: any) => props.theme.colors.primaryDark} 50%);
+  ${(props: any) =>
+    !props.transparent &&
+    css`
+      background-image: linear-gradient(
+        to bottom,
+        ${(props: any) => props.theme.colors.primaryDark + '00'} 0%,
+        ${(props: any) => props.theme.colors.primaryDark} 50%
+      );
     `}
 `;
 
@@ -68,7 +78,9 @@ interface NavigationContainerProps {
   readonly location: Location;
 }
 
-export const NavigationContainer: React.FC<NavigationContainerProps> = ({location}) => {
+export const NavigationContainer: React.FC<NavigationContainerProps> = ({
+  location
+}) => {
   const transparent = location !== undefined && location.pathname === '/';
 
   const [open, setOpen] = useState(false);
@@ -76,13 +88,13 @@ export const NavigationContainer: React.FC<NavigationContainerProps> = ({locatio
   return (
     <Wrapper>
       <Header transparent={transparent}>
-        <Logo/>
-        <ToggleMenu open={open} onClick={() => setOpen(!open)}/>
+        <Logo />
+        <ToggleMenu open={open} onClick={() => setOpen(!open)} />
       </Header>
       <Shoable open={open} transparent={transparent}>
         <div>
-          <Menu/>
-          <Footer/>
+          <Menu />
+          <Footer />
         </div>
       </Shoable>
     </Wrapper>

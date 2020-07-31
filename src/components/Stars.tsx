@@ -190,7 +190,7 @@ const Stars: React.FC<StarsProps> = (StarsConfig: StarsProps) => {
         );
         accelerate(
           prevPointersDistance > 0 &&
-          currentPointersDistance > prevPointersDistance
+            currentPointersDistance > prevPointersDistance
         );
         prevPointersDistance = currentPointersDistance;
       }

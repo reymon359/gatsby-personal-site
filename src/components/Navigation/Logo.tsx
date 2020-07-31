@@ -33,7 +33,7 @@ const CircleWrapper = styled.div`
   `}
 
   a,
-  svg {  
+  svg {
     pointer-events: all;
     display: block;
   }
