@@ -6,15 +6,15 @@ import {theme, GlobalStyle} from '../styles/';
 type LayoutProps = {
   readonly title?: string;
   readonly children: React.ReactNode;
-  readonly location?: Location;
+  readonly location?: Location | any;
 };
 
-const Layout: React.FC<LayoutProps> = ({children}) => (
+const Layout: React.FC<LayoutProps> = ({children, location}) => (
   <>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <main role="main">{children}</main>
-      <NavigationContainer location={location} />
+      <NavigationContainer location={location || {}} />
     </ThemeProvider>
   </>
 );

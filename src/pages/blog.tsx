@@ -6,14 +6,11 @@ import Content from '../components/Content';
 import Stars from '../components/Stars';
 import {PostsList} from '../components/postsList';
 
-
 interface BlogProps {
   readonly data: PageQueryData;
   readonly location: Location;
   readonly navigate: void;
 }
-
-
 
 interface Post {
   node: {
@@ -34,7 +31,6 @@ interface Post {
 const Blog: React.FC<BlogProps> = ({data}) => {
   const siteTitle = data.site.siteMetadata.title;
   const posts: Post[] = data.allMarkdownRemark.edges;
-
 
   return (
     <Layout title={siteTitle}>
