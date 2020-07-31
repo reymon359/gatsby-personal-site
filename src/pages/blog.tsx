@@ -41,7 +41,6 @@ interface Post {
 }
 
 const Blog: React.FC<BlogProps> = ({data, location, navigate}) => {
-  console.log(navigate);
   const siteTitle = data.site.siteMetadata.title;
   const posts: Post[] = data.allMarkdownRemark.edges;
   const simplifiedPosts: SimplifiedPost[] = useMemo(
