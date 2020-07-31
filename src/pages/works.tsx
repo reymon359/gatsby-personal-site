@@ -7,6 +7,9 @@ import Content from '../components/Content';
 import {PostsList} from '../components/postsList';
 import styled from 'styled-components';
 
+const Header = styled.div`
+  padding-left: 1rem;
+`;
 const Title = styled.h1`
   font-size: ${props => props.theme.fontSizes.xLarge};
   font-weight: ${props => props.theme.fontWeights.regular};
@@ -21,6 +24,7 @@ const Section = styled.div`
   padding: 1rem 0;
 `;
 const SectionHeader = styled.div`
+  padding-left: 1rem;
   display: flex;
   align-items: center;
 `;
@@ -96,17 +100,19 @@ const Works: React.FC<WorksProps> = ({data}) => {
         addEventListeners={false}
       />
       <Content>
-        <Title>Works</Title>
-        <Description>Things I do and write about</Description>
-        {/*<Search/>*/}
-        {/*<Tags/>  redirect to tags with the tag selected*/}
+        <Header>
+          <Title>Works</Title>
+          <Description>Things I do and write about</Description>
+          {/*<Search/>*/}
+          {/*<Tags/>  redirect to tags with the tag selected*/}
+        </Header>
         <Section>
           <SectionHeader>
             <SectionTitle>Latest posts</SectionTitle>
             <MoreLink to="/blog">All posts</MoreLink>
           </SectionHeader>
           <SectionBody>
-            <PostsList posts={posts} />
+            <PostsList posts={posts}/>
           </SectionBody>
         </Section>
         <Section>
@@ -115,7 +121,7 @@ const Works: React.FC<WorksProps> = ({data}) => {
             <MoreLink to="/blog">All projects</MoreLink>
           </SectionHeader>
           <SectionBody>
-            <PostsList posts={posts} />
+            <PostsList posts={posts}/>
           </SectionBody>
         </Section>
       </Content>
@@ -149,33 +155,33 @@ interface PageQueryData {
 }
 
 export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(
-      filter: {frontmatter: {published: {ne: false}}}
-      sort: {fields: [frontmatter___date], order: DESC}
-    ) {
-      edges {
-        node {
-          id
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMM DD, YYYY")
-            title
-            thumbnail
-            tags
-          }
+    query {
+        site {
+            siteMetadata {
+                title
+            }
         }
-      }
+        allMarkdownRemark(
+            filter: {frontmatter: {published: {ne: false}}}
+            sort: {fields: [frontmatter___date], order: DESC}
+        ) {
+            edges {
+                node {
+                    id
+                    excerpt
+                    fields {
+                        slug
+                    }
+                    frontmatter {
+                        date(formatString: "MMM DD, YYYY")
+                        title
+                        thumbnail
+                        tags
+                    }
+                }
+            }
+        }
     }
-  }
 `;
 
 export default Works;
