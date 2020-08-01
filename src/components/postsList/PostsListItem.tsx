@@ -8,6 +8,8 @@ type ItemContainerProps = {
 
 const ItemContainer = styled.article<ItemContainerProps>`
   padding: 1rem;
+  border-radius: 5px;
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -35,20 +37,19 @@ const ItemContainer = styled.article<ItemContainerProps>`
   }
 
   // ${props =>
-  //   props.hasLink &&
-  //   css`
-  //     ${props => props.theme.media.hover`
-  //     &:hover {
-  //       > header {
-  //         transform: translateX(-.75rem);
-  //       }
-  //     }
+    //   props.hasLink &&
+    //   css`
+    //     ${props => props.theme.media.hover`
+    //     &:hover {
+    //       > header {
+    //         transform: translateX(-.75rem);
+    //       }
+    //     }
     `}
     `}
 `;
 
-const ItemHeader = styled.div`
-`;
+const ItemHeader = styled.div``;
 const ItemTitle = styled.h3`
   font-size: 1.1rem;
   color: #fff;
