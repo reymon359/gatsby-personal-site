@@ -7,7 +7,7 @@ import styled, {css} from 'styled-components';
 import {addRemToProperty} from '../../styles/shared';
 
 const Wrapper = styled.div`
-  pointer-events: none;
+  //pointer-events: none;
   ${props => props.theme.media.md`
     position: fixed;
     bottom: 0;
