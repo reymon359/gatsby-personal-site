@@ -5,7 +5,7 @@ description: 'How to safely update project dependencies in an automated way usin
 date: '2020-07-24'
 author: 'Ramón Morcillo'
 categories: ['Software']
-tags: ['Continuous Integration', 'Tutorial','GitHub Actions', 'GitHub', 'automation']
+tags: ['Continuous Integration', 'Tutorial','GitHub Actions', 'GitHub', 'Automation']
 published: true
 featured: './github_actions_and_renovate_logos.png'
 thumbnail: './github_actions_and_renovate_logos.png'

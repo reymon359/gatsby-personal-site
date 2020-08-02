@@ -1,32 +1,34 @@
 import React from 'react';
 import {Link} from 'gatsby';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 
 type ItemContainerProps = {
   hasLink?: boolean;
 };
 
 const ItemContainer = styled.article<ItemContainerProps>`
+  transition: 0.2s ease;
   padding: 1rem;
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
-
   justify-content: space-between;
-  align-items: flex-end;
   position: relative;
+
+  ${props => props.theme.media.md`
+     flex-direction:  column-reverse;
+  `}
 
   &:hover {
     background-color: ${props => props.theme.colors.light + '40'};
   }
 `;
 
-const ItemHeader = styled.div``;
-const ItemDate = styled.p`
-  padding-bottom: 0.2rem;
-  color: ${props => props.theme.colors.mediumLight};
-  font-size: ${props => props.theme.fontSizes.normal};
-  font-weight: ${props => props.theme.fontWeights.regular};
+const ItemHeader = styled.div`
+  max-width: 70%;
+  ${props => props.theme.media.md`
+    max-width: 100%;
+  `}
 `;
 
 const ItemTitle = styled.h3`
@@ -35,12 +37,13 @@ const ItemTitle = styled.h3`
   font-weight: ${props => props.theme.fontWeights.bold};
 `;
 const ItemTags = styled.div`
-  padding: 0.2rem 0;
+  padding: 0.4rem 0;
   display: flex;
   flex-wrap: wrap;
   margin-left: -0.3rem;
 `;
-const Tag = styled.div`
+
+const Tag = styled(Link)`
   padding: 0.4rem 0.6rem;
   color: ${props => props.theme.colors.light};
   background-color: ${props => props.theme.colors.light + '40'};
@@ -52,26 +55,23 @@ const Tag = styled.div`
   border-bottom: 0;
   white-space: nowrap;
   line-height: 1;
-`;
-const ItemInfo = styled.div`
-  margin-top: 0.5rem;
-  font-family: ${props => props.theme.mono};
-  font-size: 0.9rem;
-  color: ${props => props.theme.colors.mediumDark};
-`;
+  transition: 0.2s ease;
 
-const ItemYear = styled.span`
-  color: #fff;
-
-  &::before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    height: 1px;
-    width: 1rem;
-    background: ${props => props.theme.secondary};
-    margin-right: 0.5rem;
+  &:hover {
+    color: ${props => props.theme.colors.darkest};
+    background-color: ${props => props.theme.colors.light};
   }
+`;
+const ItemDate = styled.div`
+  max-width: 30%;
+  padding-bottom: 0.4rem;
+  color: ${props => props.theme.colors.mediumLight};
+  font-size: ${props => props.theme.fontSizes.normal};
+  font-weight: ${props => props.theme.fontWeights.regular};
+
+  ${props => props.theme.media.md`
+    max-width: 100%;
+  `}
 `;
 
 interface Node {
@@ -82,6 +82,7 @@ interface Node {
   frontmatter: {
     date: string;
     title: string;
+    description: string;
     tags: string[];
   };
 }
@@ -98,18 +99,17 @@ export const PostsListItem: React.FC<PostsListItemProps> = ({node}) => {
     <Link to={node.fields.slug}>
       <ItemContainer hasLink={node.fields.slug !== null}>
         <ItemHeader>
-          <ItemDate>{node.frontmatter.date}</ItemDate>
           <ItemTitle>{title}</ItemTitle>
           <ItemTags>
-            {tags && tags.map(tag => <Tag key={tag}>{tag}</Tag>)}
+            {tags &&
+              tags.sort().map(tag => (
+                <Tag to={`/tags/${tag}/`} key={tag}>
+                  {tag}
+                </Tag>
+              ))}
           </ItemTags>
-          <ItemInfo>
-            {tags && <span> {tags.map(tag => tag).join(', ')}</span>}
-          </ItemInfo>
         </ItemHeader>
-        <ItemInfo>
-          <ItemYear>{node.frontmatter.date}</ItemYear>
-        </ItemInfo>
+        <ItemDate>{node.frontmatter.date}</ItemDate>
       </ItemContainer>
     </Link>
   );
