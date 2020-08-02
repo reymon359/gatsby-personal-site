@@ -146,7 +146,6 @@ interface PageQueryData {
         frontmatter: {
           date: string;
           title: string;
-          description: string;
           thumbnail: string;
           tags: string[];
         };
@@ -176,7 +175,6 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMM DD, YYYY")
             title
-            description
             thumbnail
             tags
           }
