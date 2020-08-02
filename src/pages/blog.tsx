@@ -1,15 +1,35 @@
 import React from 'react';
-import {graphql} from 'gatsby';
-import Layout from '../components/Layout';
+import {graphql, Link} from 'gatsby';
 import Head from '../components/Head';
-import Content from '../components/Content';
+import Layout from '../components/Layout';
 import Stars from '../components/Stars';
+import Content from '../components/Content';
 import {PostsList} from '../components/postsList';
+import styled from 'styled-components';
+
+const Header = styled.div`
+  padding-left: 1rem;
+`;
+const Title = styled.h1`
+  font-size: ${props => props.theme.fontSizes.xLarge};
+  font-weight: ${props => props.theme.fontWeights.regular};
+`;
+const Description = styled.p`
+  font-size: ${props => props.theme.fontSizes.mediumLarge};
+  font-weight: ${props => props.theme.fontWeights.thin};
+  padding: 1rem 0 2rem 0;
+`;
+
+const Section = styled.div`
+  padding: 1rem 0;
+`;
+
+const SectionBody = styled.div`
+  padding: 0.2rem 0;
+`;
 
 interface BlogProps {
   readonly data: PageQueryData;
-  readonly location: Location;
-  readonly navigate: void;
 }
 
 interface Post {
@@ -31,6 +51,7 @@ interface Post {
 const Blog: React.FC<BlogProps> = ({data}) => {
   const siteTitle = data.site.siteMetadata.title;
   const posts: Post[] = data.allMarkdownRemark.edges;
+  // const tags =[... new Set([].concat(...posts.map(post => post.node.frontmatter.tags)))]
 
   return (
     <Layout title={siteTitle}>
@@ -51,17 +72,15 @@ const Blog: React.FC<BlogProps> = ({data}) => {
         addEventListeners={false}
       />
       <Content>
-        <h1>Blog</h1>
-        <h4>Things I do and write about to be useful to others</h4>
-        {/*<Search*/}
-        {/*  posts={simplifiedPosts}*/}
-        {/*  location={location}*/}
-        {/*  navigate={navigate}*/}
-        {/*/>*/}
-        <p>Tags</p>
-        {/*<Search/>*/}
-        {/*<Tags/>  redirect to tags with the tag selected*/}
-        <PostsList posts={posts} />
+        <Header>
+          <Title>Blog</Title>
+          <Description>Stuff I write about</Description>
+        </Header>
+        <Section>
+          <SectionBody>
+            <PostsList posts={posts} />
+          </SectionBody>
+        </Section>
       </Content>
     </Layout>
   );
@@ -111,7 +130,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "YYYY")
+            date(formatString: "MMM DD, YYYY")
             title
             thumbnail
             tags

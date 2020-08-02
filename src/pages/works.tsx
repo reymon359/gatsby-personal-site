@@ -102,9 +102,7 @@ const Works: React.FC<WorksProps> = ({data}) => {
       <Content>
         <Header>
           <Title>Works</Title>
-          <Description>Things I do and write about</Description>
-          {/*<Search/>*/}
-          {/*<Tags/>  redirect to tags with the tag selected*/}
+          <Description>Stuff I do and write about</Description>
         </Header>
         <Section>
           <SectionHeader>
@@ -164,6 +162,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       filter: {frontmatter: {published: {ne: false}}}
       sort: {fields: [frontmatter___date], order: DESC}
+      limit: 3
     ) {
       edges {
         node {
