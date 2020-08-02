@@ -27,7 +27,7 @@ const ItemHeader = styled.div`
   `}
 `;
 
-const ItemTitle = styled.h3`
+const ItemTitle = styled(Link)`
   color: ${props => props.theme.colors.lightest};
   font-size: ${props => props.theme.fontSizes.medium};
   font-weight: ${props => props.theme.fontWeights.bold};
@@ -58,12 +58,16 @@ const Tag = styled(Link)`
     background-color: ${props => props.theme.colors.light};
   }
 `;
-const ItemDate = styled.div`
+const ItemDate = styled(Link)`
   max-width: 30%;
   padding-bottom: 0.4rem;
   color: ${props => props.theme.colors.mediumLight};
   font-size: ${props => props.theme.fontSizes.normal};
   font-weight: ${props => props.theme.fontWeights.regular};
+
+  &:hover {
+    font-weight: ${props => props.theme.fontWeights.regular};
+  }
 
   ${props => props.theme.media.md`
     max-width: 100%;
@@ -91,21 +95,19 @@ export const PostsListItem: React.FC<PostsListItemProps> = ({node}) => {
   const tags = node.frontmatter.tags;
 
   return (
-    <Link to={node.fields.slug}>
-      <ItemContainer>
-        <ItemHeader>
-          <ItemTitle>{title}</ItemTitle>
-          <ItemTags>
-            {tags &&
-              tags.sort().map(tag => (
-                <Tag to={`/tags/${tag}/`} key={tag}>
-                  {tag}
-                </Tag>
-              ))}
-          </ItemTags>
-        </ItemHeader>
-        <ItemDate>{node.frontmatter.date}</ItemDate>
-      </ItemContainer>
-    </Link>
+    <ItemContainer>
+      <ItemHeader>
+        <ItemTitle to={node.fields.slug}>{title}</ItemTitle>
+        <ItemTags>
+          {tags &&
+            tags.sort().map(tag => (
+              <Tag to={`/tags/${tag}/`} key={tag}>
+                {tag}
+              </Tag>
+            ))}
+        </ItemTags>
+      </ItemHeader>
+      <ItemDate to={node.fields.slug}>{node.frontmatter.date}</ItemDate>
+    </ItemContainer>
   );
 };
