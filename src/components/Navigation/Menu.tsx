@@ -2,11 +2,8 @@ import React from 'react';
 import {useStaticQuery, graphql, Link} from 'gatsby';
 import styled, {css} from 'styled-components';
 import {addRemToProperty} from '../../styles/shared';
-type MenuWrapperProps = {
-  pointerEvents: boolean;
-};
 
-const MenuWrapper = styled.nav<MenuWrapperProps>`
+const MenuWrapper = styled.nav`
   position: fixed;
   bottom: 0;
   left: 0;
@@ -15,7 +12,6 @@ const MenuWrapper = styled.nav<MenuWrapperProps>`
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  pointer-events: ${props => (props.pointerEvents ? 'none' : 'all')};
   ${addRemToProperty('padding')};
 
   ul:last-child li {
@@ -132,12 +128,7 @@ interface StaticQueryData {
   };
 }
 
-interface MenuProps {
-  readonly pointerEvents: boolean;
-}
-
-export const Menu: React.FC<MenuProps> = ({pointerEvents}) => {
-  console.log(pointerEvents);
+export const Menu: React.FC = () => {
   const pages = [`works`, `about`];
   const {site}: StaticQueryData = useStaticQuery(
     graphql`
@@ -155,7 +146,7 @@ export const Menu: React.FC<MenuProps> = ({pointerEvents}) => {
   );
 
   return (
-    <MenuWrapper pointerEvents={pointerEvents}>
+    <MenuWrapper>
       <Nav>
         {site.siteMetadata.social.map((socialLink: SocialLink) => (
           <NavItem key={socialLink.name}>

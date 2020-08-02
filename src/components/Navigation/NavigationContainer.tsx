@@ -6,8 +6,11 @@ import ToggleMenu from './ToggleMenu';
 import styled, {css} from 'styled-components';
 import {addRemToProperty} from '../../styles/shared';
 
-const Wrapper = styled.div`
-  //pointer-events: none;
+type WrapperProps = {
+  enablePointerEvents: boolean;
+};
+const Wrapper = styled.div<WrapperProps>`
+  pointer-events: ${props => (props.enablePointerEvents ? 'none' : 'all')};
   ${props => props.theme.media.md`
     position: fixed;
     bottom: 0;
@@ -86,14 +89,14 @@ export const NavigationContainer: React.FC<NavigationContainerProps> = ({
   const [open, setOpen] = useState(false);
 
   return (
-    <Wrapper>
+    <Wrapper enablePointerEvents={transparent}>
       <Header transparent={transparent}>
         <Logo />
         <ToggleMenu open={open} onClick={() => setOpen(!open)} />
       </Header>
       <Shoable open={open} transparent={transparent}>
         <div>
-          <Menu pointerEvents={!transparent} />
+          <Menu />
           <Footer />
         </div>
       </Shoable>
