@@ -112,7 +112,7 @@ const Works: React.FC<WorksProps> = ({data}) => {
             <MoreLink to="/blog">All posts</MoreLink>
           </SectionHeader>
           <SectionBody>
-            <PostsList posts={posts}/>
+            <PostsList posts={posts} />
           </SectionBody>
         </Section>
         <Section>
@@ -121,7 +121,7 @@ const Works: React.FC<WorksProps> = ({data}) => {
             <MoreLink to="/blog">All projects</MoreLink>
           </SectionHeader>
           <SectionBody>
-            <PostsList posts={posts}/>
+            <PostsList posts={posts} />
           </SectionBody>
         </Section>
       </Content>
@@ -146,6 +146,7 @@ interface PageQueryData {
         frontmatter: {
           date: string;
           title: string;
+          description: string;
           thumbnail: string;
           tags: string[];
         };
@@ -155,33 +156,34 @@ interface PageQueryData {
 }
 
 export const pageQuery = graphql`
-    query {
-        site {
-            siteMetadata {
-                title
-            }
-        }
-        allMarkdownRemark(
-            filter: {frontmatter: {published: {ne: false}}}
-            sort: {fields: [frontmatter___date], order: DESC}
-        ) {
-            edges {
-                node {
-                    id
-                    excerpt
-                    fields {
-                        slug
-                    }
-                    frontmatter {
-                        date(formatString: "MMM DD, YYYY")
-                        title
-                        thumbnail
-                        tags
-                    }
-                }
-            }
-        }
+  query {
+    site {
+      siteMetadata {
+        title
+      }
     }
+    allMarkdownRemark(
+      filter: {frontmatter: {published: {ne: false}}}
+      sort: {fields: [frontmatter___date], order: DESC}
+    ) {
+      edges {
+        node {
+          id
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMM DD, YYYY")
+            title
+            description
+            thumbnail
+            tags
+          }
+        }
+      }
+    }
+  }
 `;
 
 export default Works;
