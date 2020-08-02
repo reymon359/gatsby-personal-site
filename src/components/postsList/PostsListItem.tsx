@@ -2,11 +2,7 @@ import React from 'react';
 import {Link} from 'gatsby';
 import styled from 'styled-components';
 
-type ItemContainerProps = {
-  hasLink?: boolean;
-};
-
-const ItemContainer = styled.article<ItemContainerProps>`
+const ItemContainer = styled.article`
   transition: 0.2s ease;
   padding: 1rem;
   border-radius: 5px;
@@ -96,7 +92,7 @@ export const PostsListItem: React.FC<PostsListItemProps> = ({node}) => {
 
   return (
     <Link to={node.fields.slug}>
-      <ItemContainer hasLink={node.fields.slug !== null}>
+      <ItemContainer>
         <ItemHeader>
           <ItemTitle>{title}</ItemTitle>
           <ItemTags>
