@@ -9,53 +9,50 @@ type ItemContainerProps = {
 const ItemContainer = styled.article<ItemContainerProps>`
   padding: 1rem;
   border-radius: 5px;
-  
   display: flex;
   flex-wrap: wrap;
+
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
 
- 
-
-  //&:last-child {
-  //  border-bottom: 0;
-  //}
-  
-   &:hover {
-      background-color: ${props => props.theme.colors.light + '40'};
-    }
-  
-  > a {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    font-size: 0;
-    line-height: 0;
+  &:hover {
+    background-color: ${props => props.theme.colors.light + '40'};
   }
-
-  // ${props =>
-    //   props.hasLink &&
-    //   css`
-    //     ${props => props.theme.media.hover`
-    //     &:hover {
-    //       > header {
-    //         transform: translateX(-.75rem);
-    //       }
-    //     }
-    `}
-    `}
 `;
 
 const ItemHeader = styled.div``;
-const ItemTitle = styled.h3`
-  font-size: 1.1rem;
-  color: #fff;
-  font-weight: 400;
+const ItemDate = styled.p`
+  padding-bottom: 0.2rem;
+  color: ${props => props.theme.colors.mediumLight};
+  font-size: ${props => props.theme.fontSizes.normal};
+  font-weight: ${props => props.theme.fontWeights.regular};
 `;
 
+const ItemTitle = styled.h3`
+  color: ${props => props.theme.colors.lightest};
+  font-size: ${props => props.theme.fontSizes.medium};
+  font-weight: ${props => props.theme.fontWeights.bold};
+`;
+const ItemTags = styled.div`
+  padding: 0.2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.3rem;
+`;
+const Tag = styled.div`
+  padding: 0.4rem 0.6rem;
+  color: ${props => props.theme.colors.light};
+  background-color: ${props => props.theme.colors.light + '40'};
+  font-weight: ${props => props.theme.fontWeights.bold};
+  font-size: ${props => props.theme.fontSizes.small};
+  border-radius: 3rem;
+  margin: 0.2rem;
+  text-decoration: none;
+  border-bottom: 0;
+  white-space: nowrap;
+  line-height: 1;
+`;
 const ItemInfo = styled.div`
   margin-top: 0.5rem;
   font-family: ${props => props.theme.mono};
@@ -101,7 +98,11 @@ export const PostsListItem: React.FC<PostsListItemProps> = ({node}) => {
     <Link to={node.fields.slug}>
       <ItemContainer hasLink={node.fields.slug !== null}>
         <ItemHeader>
+          <ItemDate>{node.frontmatter.date}</ItemDate>
           <ItemTitle>{title}</ItemTitle>
+          <ItemTags>
+            {tags && tags.map(tag => <Tag key={tag}>{tag}</Tag>)}
+          </ItemTags>
           <ItemInfo>
             {tags && <span> {tags.map(tag => tag).join(', ')}</span>}
           </ItemInfo>
