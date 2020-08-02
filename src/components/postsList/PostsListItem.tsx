@@ -33,7 +33,7 @@ const ItemTitle = styled(Link)`
   font-weight: ${props => props.theme.fontWeights.bold};
 `;
 const ItemTags = styled.div`
-  padding: 0.4rem 0;
+  padding: 0.6rem 0 0 0;
   display: flex;
   flex-wrap: wrap;
   margin-left: -0.3rem;
