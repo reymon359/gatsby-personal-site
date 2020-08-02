@@ -78,23 +78,21 @@ const Header = styled.header<HeaderProps>`
 `;
 
 interface NavigationContainerProps {
-  readonly location: Location;
+  readonly transparentNavigation: boolean;
 }
 
 export const NavigationContainer: React.FC<NavigationContainerProps> = ({
-  location
+  transparentNavigation
 }) => {
-  const transparent = location !== undefined && location.pathname === '/';
-
   const [open, setOpen] = useState(false);
 
   return (
-    <Wrapper enablePointerEvents={transparent}>
-      <Header transparent={transparent}>
+    <Wrapper enablePointerEvents={transparentNavigation}>
+      <Header transparent={transparentNavigation}>
         <Logo />
         <ToggleMenu open={open} onClick={() => setOpen(!open)} />
       </Header>
-      <Shoable open={open} transparent={transparent}>
+      <Shoable open={open} transparent={transparentNavigation}>
         <div>
           <Menu />
           <Footer />

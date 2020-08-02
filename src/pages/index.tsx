@@ -7,13 +7,12 @@ import Stars from '../components/Stars';
 
 interface IndexProps {
   readonly data: PageQueryData;
-  readonly location: Location;
 }
 
-const Index: React.FC<IndexProps> = ({data, location}) => {
+const Index: React.FC<IndexProps> = ({data}) => {
   const siteTitle: string = data.site.siteMetadata.title;
   return (
-    <Layout title={siteTitle} location={location}>
+    <Layout title={siteTitle} transparentNavigation={true}>
       <Stars />
       <Head
         title="Home"
