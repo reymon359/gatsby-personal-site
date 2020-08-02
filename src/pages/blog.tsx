@@ -42,7 +42,6 @@ interface Post {
     frontmatter: {
       date: string;
       title: string;
-      thumbnail: string;
       tags: string[];
     };
   };
@@ -103,7 +102,6 @@ interface PageQueryData {
         frontmatter: {
           date: string;
           title: string;
-          thumbnail: string;
           tags: string[];
         };
       };
@@ -132,7 +130,6 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMM DD, YYYY")
             title
-            thumbnail
             tags
           }
         }
