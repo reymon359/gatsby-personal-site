@@ -12,7 +12,6 @@ const MenuWrapper = styled.nav`
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  pointer-events: none;
   ${addRemToProperty('padding')};
 
   ul:last-child li {
@@ -115,6 +114,7 @@ const NavLink = styled(Link).attrs({
     }
   }
 `;
+
 interface SocialLink {
   name: string;
   socialUrl: string;
@@ -128,8 +128,8 @@ interface StaticQueryData {
   };
 }
 
-const Menu: React.FC = () => {
-  const pages = [`blog`, `tags`, `about`];
+export const Menu: React.FC = () => {
+  const pages = [`works`, `about`];
   const {site}: StaticQueryData = useStaticQuery(
     graphql`
       query {

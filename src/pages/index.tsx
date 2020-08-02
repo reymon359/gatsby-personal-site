@@ -11,9 +11,8 @@ interface IndexProps {
 
 const Index: React.FC<IndexProps> = ({data}) => {
   const siteTitle: string = data.site.siteMetadata.title;
-
   return (
-    <Layout title={siteTitle}>
+    <Layout title={siteTitle} transparentNavigation={true}>
       <Stars />
       <Head
         title="Home"

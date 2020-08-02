@@ -1,12 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, {useContext} from 'react';
+import {ThemeContext} from 'styled-components';
 import {getRandomBackground} from '../utils';
-
-const StarsContainer = styled.div`
-  width: 100%;
-  height: 100vh;
-  background-color: ${props => props.theme.colors.black};
-`;
 
 type Coordinates = {
   x: number | null;
@@ -19,7 +13,14 @@ type Star = {
   z: number;
 };
 
-const Stars: React.FC = () => {
+interface StarsProps {
+  readonly normalVelocity?: number;
+  readonly containerOpacity?: number;
+  readonly addEventListeners?: boolean;
+}
+
+const Stars: React.FC<StarsProps> = (StarsConfig: StarsProps) => {
+  const {containerOpacity = 1} = StarsConfig;
   const starsNumber =
     typeof window !== 'undefined' &&
     (window.innerWidth + window.innerHeight) / 8;
@@ -38,8 +39,9 @@ const Stars: React.FC = () => {
   let evCache: PointerEvent[] = [];
   let prevPointersDistance = -1;
 
-  const normalVelocity = 0.0005;
+  const {normalVelocity = 0.0005} = StarsConfig;
   const velocity = {x: 0, y: 0, tx: 0, ty: 0, z: normalVelocity};
+  const {addEventListeners = true} = StarsConfig;
 
   const generateStars = () => {
     for (let i = 0; i < starsNumber; i++) {
@@ -210,20 +212,21 @@ const Stars: React.FC = () => {
 
       if (renderCtx) {
         const canvas = canvasRef.current;
-        canvas.addEventListener('pointerdown', handlePointerDown);
-        canvas.addEventListener('pointermove', handlePointerMove);
-        canvas.addEventListener('pointerup', handlePointerUp);
-        canvas.addEventListener('pointercancel', handlePointerUp);
-        canvas.addEventListener('pointerout', handlePointerUp);
-        canvas.addEventListener('pointerleave', handlePointerUp);
+        if (addEventListeners) {
+          canvas.addEventListener('pointerdown', handlePointerDown);
+          canvas.addEventListener('pointermove', handlePointerMove);
+          canvas.addEventListener('pointerup', handlePointerUp);
+          canvas.addEventListener('pointercancel', handlePointerUp);
+          canvas.addEventListener('pointerout', handlePointerUp);
+          canvas.addEventListener('pointerleave', handlePointerUp);
 
-        window.addEventListener('wheel', handleWheel);
-        window.addEventListener('resize', handleResize);
-        canvas.addEventListener('mousemove', handleMouseMove);
-        canvas.addEventListener('touchmove', handleTouchMove);
-        canvas.addEventListener('touchend', handleTouchLeave);
-        document.addEventListener('mouseleave', handleMouseLeave);
-
+          window.addEventListener('wheel', handleWheel);
+          window.addEventListener('resize', handleResize);
+          canvas.addEventListener('mousemove', handleMouseMove);
+          canvas.addEventListener('touchmove', handleTouchMove);
+          canvas.addEventListener('touchend', handleTouchLeave);
+          document.addEventListener('mouseleave', handleMouseLeave);
+        }
         setContext(renderCtx);
       }
     }
@@ -307,18 +310,21 @@ const Stars: React.FC = () => {
     return cleanup;
   }, [context]);
 
+  const themeContext = useContext(ThemeContext);
+
   return (
-    <StarsContainer style={{backgroundImage: getRandomBackground()}}>
-      <canvas
-        id="canvas"
-        ref={canvasRef}
-        style={{
-          position: 'fixed',
-          width: '100%',
-          height: '100%'
-        }}
-      />
-    </StarsContainer>
+    <canvas
+      id="canvas"
+      ref={canvasRef}
+      style={{
+        backgroundColor: themeContext.colors.black,
+        backgroundImage: getRandomBackground(),
+        opacity: containerOpacity,
+        position: 'fixed',
+        width: '100%',
+        height: '100%'
+      }}
+    />
   );
 };
 

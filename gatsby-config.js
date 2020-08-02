@@ -12,7 +12,9 @@ module.exports = {
     description: `My personal site made with Gatsby.js`,
     siteUrl: `https://ramonmorcillo.com`,
     image: `static/images/ramon-morcillo-meta-image.jpg`,
-    googleSiteVerification: process.env.GOOGLE_SITE_VERIFICATION,
+    googleSiteVerification:
+      process.env.GOOGLE_SITE_VERIFICATION ||
+      'Add the Google Site Verification',
     author: {
       name: `Ramon Morcillo`,
       intro: `Hi, I am Ramón Morcillo, a Software Engineer based in Madrid, Spain`,
@@ -96,7 +98,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID
+        trackingId:
+          process.env.GOOGLE_ANALYTICS_TRACKING_ID ||
+          'Add the Google Analytics Tracking ID'
       }
     },
     `gatsby-plugin-react-helmet`,

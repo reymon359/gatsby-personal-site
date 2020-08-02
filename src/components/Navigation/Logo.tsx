@@ -22,7 +22,6 @@ const CircleBackground = styled.div`
 `;
 
 const CircleWrapper = styled.div`
-  pointer-events: all;
   position: fixed;
   top: 0;
   left: 0;
@@ -35,6 +34,7 @@ const CircleWrapper = styled.div`
 
   a,
   svg {
+    pointer-events: all;
     display: block;
   }
 
