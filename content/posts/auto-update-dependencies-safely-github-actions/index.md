@@ -7,7 +7,7 @@ author: 'Ramón Morcillo'
 categories: ['Software']
 tags: ['Continuous Integration', 'Tutorial','GitHub Actions', 'GitHub', 'Automation']
 published: true
-featured: './github_actions_and_renovate_logos.png'
+featuredImage:'./gia-oris-_uM5_nG2ssc-unsplash.jpg'
 thumbnail: './github_actions_and_renovate_logos.png'
 type: 'post'
 draft: false

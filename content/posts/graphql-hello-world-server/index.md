@@ -7,7 +7,7 @@ author: 'Ramón Morcillo'
 categories: ['Software']
 tags: ['Tutorial', 'Node.js', 'GraphQL']
 published: true
-featured: './gia-oris-_uM5_nG2ssc-unsplash.jpg'
+featuredImage:'./gia-oris-_uM5_nG2ssc-unsplash.jpg'
 thumbnail: './gia-oris-_uM5_nG2ssc-unsplash.jpg'
 type: 'post'
 draft: false

@@ -71,12 +71,14 @@ interface Post {
     frontmatter: {
       date: string;
       title: string;
+      featuredImage: any;
       tags: string[];
     };
   };
 }
 
 const Works: React.FC<WorksProps> = ({data}) => {
+  console.log(data);
   const siteTitle = data.site.siteMetadata.title;
   const posts: Post[] = data.allMarkdownRemark.edges;
 
@@ -143,6 +145,7 @@ interface PageQueryData {
         frontmatter: {
           date: string;
           title: string;
+          featuredImage: any;
           tags: string[];
         };
       };
@@ -172,6 +175,13 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMM DD, YYYY")
             title
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             tags
           }
         }

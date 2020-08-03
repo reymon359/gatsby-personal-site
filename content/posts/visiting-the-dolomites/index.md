@@ -6,10 +6,10 @@ author: 'Ramón Morcillo'
 categories: ['travel']
 tags: ['trip', 'italy', 'nature']
 published: true
-featured: '2019/dolomites.jpg'
+featuredImage:'./gia-oris-_uM5_nG2ssc-unsplash.jpg'
 type: 'post'
 draft: false
-thumbnail: '2019/dolomites.jpg'
+thumbnail: './gia-oris-_uM5_nG2ssc-unsplash.jpg'
 ---
 
 ## What are the Dolomites?

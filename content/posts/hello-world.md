@@ -5,6 +5,8 @@ published: true
 layout: post
 tags: ['markdown', 'hello', 'world']
 category: example
+featuredImage:'./gia-oris-_uM5_nG2ssc-unsplash.jpg'
+thumbnail: './gia-oris-_uM5_nG2ssc-unsplash.jpg'
 ---
 
 Hello, this is an exciting post with three main points:

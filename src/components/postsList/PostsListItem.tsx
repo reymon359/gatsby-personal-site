@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'gatsby';
 import styled from 'styled-components';
+import {Tooltip} from 'react-tippy';
+import Img from 'gatsby-image';
 
 const ItemContainer = styled.article`
   transition: 0.2s ease;
@@ -82,6 +84,7 @@ interface Node {
   frontmatter: {
     date: string;
     title: string;
+    featuredImage: any;
     tags: string[];
   };
 }
@@ -95,19 +98,37 @@ export const PostsListItem: React.FC<PostsListItemProps> = ({node}) => {
   const tags = node.frontmatter.tags;
 
   return (
-    <ItemContainer>
-      <ItemHeader>
-        <ItemTitle to={node.fields.slug}>{title}</ItemTitle>
-        <ItemTags>
-          {tags &&
-            tags.sort().map(tag => (
-              <Tag to={`/tags/${tag}/`} key={tag}>
-                {tag}
-              </Tag>
-            ))}
-        </ItemTags>
-      </ItemHeader>
-      <ItemDate to={node.fields.slug}>{node.frontmatter.date}</ItemDate>
-    </ItemContainer>
+    <Tooltip
+      // options
+      title="Welcome to React"
+      position="bottom"
+      followCursor={true}
+      html={
+        <div style={{width: '200px'}}>
+          <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
+          {/*<img*/}
+          {/*  src={node.frontmatter.featuredImage.childImageSharp.fluid}*/}
+          {/*  alt={title}*/}
+          {/*  width="500"*/}
+          {/*  height="600"*/}
+          {/*></img>*/}
+        </div>
+      }
+    >
+      <ItemContainer>
+        <ItemHeader>
+          <ItemTitle to={node.fields.slug}>{title}</ItemTitle>
+          <ItemTags>
+            {tags &&
+              tags.sort().map(tag => (
+                <Tag to={`/tags/${tag}/`} key={tag}>
+                  {tag}
+                </Tag>
+              ))}
+          </ItemTags>
+        </ItemHeader>
+        <ItemDate to={node.fields.slug}>{node.frontmatter.date}</ItemDate>
+      </ItemContainer>{' '}
+    </Tooltip>
   );
 };
