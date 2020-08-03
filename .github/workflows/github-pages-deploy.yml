@@ -3,7 +3,7 @@ name: Deploy to github pages
 on:
   push:
     branches:
-      - master
+#      - master
 
 jobs:
   deploy:
@@ -24,7 +24,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-    
+
 
       - run: npm ci
       - run: |
