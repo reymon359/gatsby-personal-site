@@ -94,7 +94,6 @@ interface PostsListItemProps {
 }
 
 export const PostsListItem: React.FC<PostsListItemProps> = ({node}) => {
-  console.log(node);
   const title = node.frontmatter.title || node.fields.slug;
   const tags = node.frontmatter.tags;
   const featuredImgFluid = node.frontmatter.featuredImage.childImageSharp.fluid;
