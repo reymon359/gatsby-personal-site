@@ -4,6 +4,9 @@ import styled from 'styled-components';
 
 import Layout from '../components/Layout';
 import Head from '../components/Head';
+import Stars from '../components/Stars';
+import Content from '../components/Content';
+import {PostsList} from '../components/postsList';
 
 interface Props {
   readonly data: PageQueryData;
@@ -31,32 +34,50 @@ const PostTemplate: React.FC<Props> = ({data, pageContext}) => {
 
   return (
     <Layout title={siteTitle}>
-      <Head title={post.frontmatter.title} description={post.excerpt} />
-      <article>
-        <header>
-          <h1>{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
-        </header>
-        <div className={`page-content`}>
-          <div dangerouslySetInnerHTML={{__html: post.html}} />
-          <StyledUl>
-            {previous && (
-              <li>
-                <Link to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
-                </Link>
-              </li>
-            )}
-            {next && (
-              <li>
-                <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
-                </Link>
-              </li>
-            )}
-          </StyledUl>
-        </div>
-      </article>
+      <Head
+        title={post.frontmatter.title}
+        description={post.excerpt}
+        keywords={[
+          `blog`,
+          `gatsby`,
+          `typescript`,
+          `javascript`,
+          `portfolio`,
+          `react`
+        ]}
+      />
+      <Stars
+        normalVelocity={0.0001}
+        containerOpacity={0.3}
+        addEventListeners={false}
+      />
+      <Content>
+        <article>
+          <header>
+            <h1>{post.frontmatter.title}</h1>
+            <p>{post.frontmatter.date}</p>
+          </header>
+          <div className={`page-content`}>
+            <div dangerouslySetInnerHTML={{__html: post.html}}/>
+            <StyledUl>
+              {previous && (
+                <li>
+                  <Link to={previous.fields.slug} rel="prev">
+                    ← {previous.frontmatter.title}
+                  </Link>
+                </li>
+              )}
+              {next && (
+                <li>
+                  <Link to={next.fields.slug} rel="next">
+                    {next.frontmatter.title} →
+                  </Link>
+                </li>
+              )}
+            </StyledUl>
+          </div>
+        </article>
+      </Content>
     </Layout>
   );
 };
@@ -79,22 +100,22 @@ interface PageQueryData {
 }
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
+    query BlogPostBySlug($slug: String!) {
+        site {
+            siteMetadata {
+                title
+            }
+        }
+        markdownRemark(fields: {slug: {eq: $slug}}) {
+            id
+            excerpt(pruneLength: 2500)
+            html
+            frontmatter {
+                title
+                date(formatString: "MMMM DD, YYYY")
+            }
+        }
     }
-    markdownRemark(fields: {slug: {eq: $slug}}) {
-      id
-      excerpt(pruneLength: 2500)
-      html
-      frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
-      }
-    }
-  }
 `;
 
 export default PostTemplate;
