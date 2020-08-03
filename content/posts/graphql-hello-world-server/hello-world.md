@@ -5,7 +5,7 @@ published: true
 layout: post
 tags: ['markdown', 'hello', 'world']
 category: example
-featuredImage: './graphql-hello-world-server/gia-oris-_uM5_nG2ssc-unsplash.jpg'
+featuredImage: './gia-oris-_uM5_nG2ssc-unsplash.jpg'
 ---
 
 Hello, this is an exciting post with three main points:

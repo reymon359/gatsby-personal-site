@@ -16,6 +16,7 @@ interface Post {
       date: string;
       title: string;
       tags: string[];
+      featuredImage: any;
     };
   };
 }

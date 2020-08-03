@@ -43,6 +43,7 @@ interface Post {
       date: string;
       title: string;
       tags: string[];
+      featuredImage: any;
     };
   };
 }
@@ -103,6 +104,7 @@ interface PageQueryData {
           date: string;
           title: string;
           tags: string[];
+          featuredImage: any;
         };
       };
     }[];
@@ -131,6 +133,13 @@ export const pageQuery = graphql`
             date(formatString: "MMM DD, YYYY")
             title
             tags
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
