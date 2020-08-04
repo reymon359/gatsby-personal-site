@@ -13,9 +13,6 @@ type: 'post'
 draft: false
 ---
 
-![GitHub Actions and Renovate logos](./github_actions_and_renovate_logos.png)
-# Using GitHub Actions and Renovate App to safely update dependencies automatically
-
 In Software Development **keeping up to date with technology updates** is crucial not only for developers who have to be always learning and renewing their set of skills but also for the projects they work on and have to be maintained.
 
 When you start a project from the ground you normally set it up with the libraries' latest stable versions. Then time goes by, and the size of the project grows, new features are added, new libraries too, and **the version of the libraries and packages usually remains the same and almost never gets updated**. And yes, why would you update them if the project works perfectly with the current ones?

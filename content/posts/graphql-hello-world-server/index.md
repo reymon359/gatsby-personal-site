@@ -13,11 +13,6 @@ type: 'post'
 draft: false
 ---
 
-
-![Photo by Gia Oris on Unsplash](./gia-oris-_uM5_nG2ssc-unsplash.jpg)
-
-# Getting started with GraphQL and Node.js
-
 The main purpose of this server-client [Node.js](https://nodejs.org/en/) project is to help other people **understand how GraphQL exposes the data from the Server and the Client fetches it**. I have tried to make it as simple as possible- if you want to dive into the code of the project you can find it [here](https://github.com/reymon359/graphql-hello-world-server).
 
 Now, straight to the point: [GraphQL](https://graphql.org/) is a **query language for [APIs](https://en.wikipedia.org/wiki/Application_programming_interface)** developed and [open-sourced by Facebook](https://engineering.fb.com/core-data/graphql-a-data-query-language/) to speed up the request process.
@@ -26,20 +21,20 @@ While [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) has 
 
 ## Table of Contents
 
-- [Getting started](#getting-started)
-- [Define the Schema](#define-the-schema)
-- [Add Resolver function](#add-resolver-function)
-- [Set up the Server](#set-up-the-server)
-- [Set up the Client](#set-up-the-client)
-- [Fetching data from the server](#fetching-data-from-the-server)
-- [Displaying the data](#displaying-the-data)
-- [Conclusion](#conclusion)
-- [Useful resources](#useful-resources)
-  - [Docs 📚](#docs-%f0%9f%93%9a)
-  - [Learn 📝](#learn-%f0%9f%93%9d)
-  - [Tools 🔧](#tools-%f0%9f%94%a7)
-  - [IDEs 💻](#ides-%f0%9f%92%bb)
-  - [Extras 🍍](#extras-%f0%9f%8d%8d)
+- [Getting started](#Getting-started)
+- [Define the Schema](#Define-the-schema)
+- [Add Resolver function](#Add-resolver-function)
+- [Set up the Server](#Set-up-the-server)
+- [Set up the Client](#Set-up-the-client)
+- [Fetching data from the server](#Fetching-data-from-the-server)
+- [Displaying the data](#Displaying-the-data)
+- [Conclusion](#Conclusion)
+- [Useful resources](#Useful-resources)
+  - [Docs 📚](#Docs-)
+  - [Learn 📝](#Learn-)
+  - [Tools 🔧](#Tools-)
+  - [IDEs 💻](#Ides-)
+  - [Extras 🍍](#Extras-)
 
 ## Getting started
 
