@@ -58,9 +58,26 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-highlight-code`,
+            options: {
+              terminal: 'carbon',
+              theme: 'vs-code'
+            }
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1280
+              maxWidth: 1280,
+              classPrefix: 'language-',
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: true,
+              noInlineHighlight: true,
+              prompt: {
+                user: 'root',
+                host: 'localhost',
+                global: true
+              }
             }
           },
           {

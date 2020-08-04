@@ -27,6 +27,7 @@
     }
   },
   "dependencies": {
+    "@deckdeckgo/highlight-code": "^1.1.2",
     "babel-plugin-styled-components": "^1.10.7",
     "classnames": "^2.2.6",
     "dotenv": "^8.2.0",
@@ -44,13 +45,14 @@
     "gatsby-plugin-typescript": "^2.4.13",
     "gatsby-remark-autolink-headers": "^2.3.10",
     "gatsby-remark-copy-linked-files": "^2.3.10",
+    "gatsby-remark-highlight-code": "^1.4.5",
     "gatsby-remark-images": "^3.3.17",
     "gatsby-remark-prismjs": "^3.5.9",
     "gatsby-remark-responsive-iframe": "^2.4.10",
     "gatsby-remark-smartypants": "^2.3.9",
     "gatsby-source-filesystem": "^2.3.18",
     "gatsby-transformer-json": "^2.4.10",
-    "gatsby-transformer-remark": "^2.8.23",
+    "gatsby-transformer-remark": "^2.8.27",
     "gatsby-transformer-sharp": "^2.5.10",
     "prism-themes": "^1.4.0",
     "prismjs": "^1.20.0",

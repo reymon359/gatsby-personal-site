@@ -63,7 +63,7 @@ Also, [in this repository is the resulting project](https://github.com/reymon359
 
 So let's begin running
 
-```sh
+```bash
 npx create-react-app my-app
 cd my-app
 npm start
@@ -71,13 +71,13 @@ npm start
 
 If you use npm 5.1 or earlier, you can't use `npx`. Instead, install `create-react-app` globally:
 
-```sh
+```bash
 npm install -g create-react-app
 ```
 
 And then run:
 
-```sh
+```bash
 create-react-app my-app
 ```
 
@@ -89,7 +89,7 @@ _[GitHub Actions](https://github.com/features/actions) is a Github Feature that 
 
 In our root folder, we will create a new folder and name it `.github` and inside of it a `workflows` one. This is how your project should look after these steps:
 
-```text
+```
 📁 my-app
 ├── 📁 .github
 │   └── 📁 workflows
