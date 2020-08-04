@@ -28,12 +28,13 @@ const StyledUl = styled('ul')`
 
 const Header = styled.div`
   padding-left: 1rem;
+  margin-bottom: 1.5rem;
 `;
 const Title = styled.h1`
   font-size: ${props => props.theme.fontSizes.xLarge};
   font-weight: ${props => props.theme.fontWeights.regular};
 `;
-const Description = styled.p`
+const Description = styled.div`
   font-size: ${props => props.theme.fontSizes.mediumLarge};
   font-weight: ${props => props.theme.fontWeights.thin};
   letter-spacing: 0.1rem;
@@ -117,7 +118,8 @@ const PostTemplate: React.FC<Props> = ({data, pageContext}) => {
           </Header>
 
           <div>
-            <div dangerouslySetInnerHTML={{__html: post.html}} />
+            <div style={{paddingLeft: '1rem',  lineHeight: 1.6}}
+            dangerouslySetInnerHTML={{__html: post.html}} />
             <StyledUl>
               {previous && (
                 <li>
