@@ -37,22 +37,13 @@ const Description = styled.p`
   letter-spacing: 0.1rem;
   padding: 1rem 0;
 `;
-const SubHeader = styled.div`
-  display: flex;
-`;
-const Date = styled.div`
-  font-size: ${props => props.theme.fontSizes.mediumLarge};
-  font-weight: ${props => props.theme.fontWeights.thin};
-  padding: 1rem 0 2rem 0;
-  width: 20%;
-`;
 
 const ItemTags = styled.div`
   padding: 0.6rem 0 0 0;
   display: flex;
   flex-wrap: wrap;
   margin-left: -0.3rem;
-  width: 80%;
+  align-content: center;
 `;
 
 const Tag = styled(Link)`
@@ -75,7 +66,11 @@ const Tag = styled(Link)`
     background-color: ${props => props.theme.colors.light};
   }
 `;
-
+const Date = styled.div`
+  font-size: ${props => props.theme.fontSizes.normal};
+  font-weight: ${props => props.theme.fontWeights.thin};
+  padding: 1rem 0 2rem 0;
+`;
 const PostTemplate: React.FC<Props> = ({data, pageContext}) => {
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata.title;
@@ -105,17 +100,15 @@ const PostTemplate: React.FC<Props> = ({data, pageContext}) => {
           <Header>
             <Title>{post.frontmatter.title}</Title>
             <Description>{post.frontmatter.description}</Description>
-            <SubHeader>
-              <Date>{post.frontmatter.date}</Date>
-              <ItemTags>
-                {post.frontmatter.tags &&
-                  post.frontmatter.tags.sort().map(tag => (
-                    <Tag to={`/tags/${tag}/`} key={tag}>
-                      {tag}
-                    </Tag>
-                  ))}
-              </ItemTags>
-            </SubHeader>
+            <ItemTags>
+              {post.frontmatter.tags &&
+                post.frontmatter.tags.sort().map(tag => (
+                  <Tag to={`/tags/${tag}/`} key={tag}>
+                    {tag}
+                  </Tag>
+                ))}
+            </ItemTags>
+            <Date>{post.frontmatter.date}</Date>
             <div style={{width: '100%', height: 'auto'}}>
               <Img fluid={featuredImgFluid} />
             </div>
