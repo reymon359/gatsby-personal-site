@@ -19,6 +19,10 @@ const Wrapper = styled.div<WrapperProps>`
     width: 100%;
     z-index: 10;
   `}
+  @media only screen and (min-width:  54em)  {
+     pointer-events: none;
+  }
+     
 `;
 
 type ShoableProps = {
