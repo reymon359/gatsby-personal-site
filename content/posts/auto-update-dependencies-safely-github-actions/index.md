@@ -46,13 +46,13 @@ The point of using [GitHub Actions](https://github.com/features/actions) is to s
 
 ## Table of Contents
 
-- [Getting Started](#getting-started)
-- [Set up Github Actions Workflow](#set-up-github-actions-workflow)
-- [Add Renovate](#add-renovate)
-- [Conclusion](#conclusion)
-- [Useful Resources](#useful-resources)
+- [Getting Started](#Getting-Started)
+- [Set up GitHub Actions Workflow](#Set-up-GitHub-Actions-Workflow)
+- [Add Renovate](#Add-Renovate)
+- [Conclusion](#Conclusion)
+- [Useful Resources](#Useful-Resources)
 
-## Getting Started
+## Getting started
 
 Although **this approach can be applied to any project** we will use a [React](https://reactjs.org) project made with [Create React App](https://github.com/facebook/create-react-app) as it will give us a basic project with everything ready to work on. By the way, if you do not have Node.js installed [here](https://nodejs.org/en/download/) is the link to do so.
 
