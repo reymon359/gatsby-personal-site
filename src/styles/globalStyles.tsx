@@ -83,11 +83,11 @@ a {
   cursor: pointer;
   text-decoration: none;
   transition: color ease-in .2s;
-  color:  ${theme.colors.medium};
+  font-weight: ${theme.fontWeights.bold};
+  color: ${theme.colors.mediumDark};
 
   &:hover {
-    color:  ${theme.colors.lightest};
-    font-weight: ${theme.fontWeights.bold};
+    color: ${theme.colors.lightest};
   }
 }
 
