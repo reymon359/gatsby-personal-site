@@ -118,8 +118,10 @@ const PostTemplate: React.FC<Props> = ({data, pageContext}) => {
           </Header>
 
           <div>
-            <div style={{paddingLeft: '1rem',  lineHeight: 1.6}}
-            dangerouslySetInnerHTML={{__html: post.html}} />
+            <div
+              style={{paddingLeft: '1rem', lineHeight: 1.6}}
+              dangerouslySetInnerHTML={{__html: post.html}}
+            />
             <StyledUl>
               {previous && (
                 <li>
