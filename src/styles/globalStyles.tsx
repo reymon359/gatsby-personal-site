@@ -151,6 +151,13 @@ code {
     font-size: ${theme.fontSizes.normal}!important;
 }
 
+img[src$=".gif"] {
+  margin: auto;
+  max-width: 600px;
+  width: 100%;
+  horizontal-align: middle;
+}
+
 ::selection {
   color: ${theme.colors.secondary};
   background: transparent;
