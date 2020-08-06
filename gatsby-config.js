@@ -65,7 +65,8 @@ module.exports = {
               inlineCodeMarker: null,
               aliases: {},
               showLineNumbers: true,
-              noInlineHighlight: true
+              noInlineHighlight: true,
+              backgroundColor: 'none'
             }
           },
           {
