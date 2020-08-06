@@ -14,7 +14,7 @@ const Title = styled.h1`
   font-size: ${props => props.theme.fontSizes.xLarge};
   font-weight: ${props => props.theme.fontWeights.regular};
 `;
-const Description = styled.p`
+const Description = styled.div`
   font-size: ${props => props.theme.fontSizes.mediumLarge};
   font-weight: ${props => props.theme.fontWeights.thin};
   padding: 1rem 0 2rem 0;
