@@ -79,6 +79,41 @@ h1, h2, h3, h4, h5, h6 {
   line-height: inherit;
 }
 
+h2 {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0;
+}
+
+h3 {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-top: .7rem;
+  margin-bottom: .7rem;
+}
+
+p {
+  font-size: ${theme.fontSizes.medium};
+  margin: 1.5rem 0;
+  vertical-align: baseline;
+}
+
+ul, ol {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+ul {
+  list-style-type: circle;
+  margin-left: 1rem;
+}
+ol {
+  list-style-type: decimal;
+}
+li{
+  padding: 0.2rem ;
+}
 a {
   cursor: pointer;
   text-decoration: none;
@@ -102,6 +137,18 @@ button:focus {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-kerning: auto;
+}
+
+blockquote{
+  box-shadow: inset 3px 0 0 0 ${theme.colors.lighter};
+  padding-left: 23px;
+  font-style: italic;
+}
+code {
+    background: ${theme.colors.darker};
+    color: ${theme.colors.lighter};
+    box-shadow: none;
+    font-size: ${theme.fontSizes.normal}!important;
 }
 
 ::selection {
