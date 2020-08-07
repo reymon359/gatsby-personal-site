@@ -1,6 +1,6 @@
 import React from 'react';
 import {useStaticQuery, graphql, Link} from 'gatsby';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import {addRemToProperty} from '../../styles/shared';
 
 const MenuWrapper = styled.nav`
@@ -26,7 +26,7 @@ const MenuWrapper = styled.nav`
         position: absolute;
         left: -1.1rem;
         top: 50%;
-        background: ${props => props.theme.colors.secondary};
+        background: ${props => props.theme.colors.lightest};
         border-radius: 100%;
         content: '';
         display: block;
@@ -67,11 +67,7 @@ const Nav = styled.ul`
   max-width: 14rem;
 `;
 
-type NavItemProps = {
-  highlight?: boolean;
-};
-
-const NavItem = styled.li<NavItemProps>`
+const NavItem = styled.li`
   list-style: none;
   padding: 0.5rem 0;
   line-height: 1em;
@@ -81,33 +77,35 @@ const NavItem = styled.li<NavItemProps>`
   }
 
   a {
-    font-size: 0.9rem;
-    font-family: ${props => props.theme.fonts.mono};
+    font-size: ${props => props.theme.fontSizes.normal};
+    font-family: ${props => props.theme.fonts.primary};
+    color: ${props => props.theme.colors.medium};
+    font-weight: ${props => props.theme.fontWeights.regular};
     pointer-events: all;
     transition: color 0.1s ease;
     line-height: 1em;
-    ${props =>
-      props.highlight
-        ? css`
-            color: ${props => props.theme.colors.secondary};
 
-            &:hover::before {
-              display: none !important;
-            }
-          `
-        : css`
-            color: ${props => props.theme.colors.mediumDart};
-          `}
+    &:hover {
+      color: ${props => props.theme.colors.lightest};
+      font-weight: ${props => props.theme.fontWeights.bold};
+    }
   }
 `;
 
 const NavLink = styled(Link).attrs({
   activeClassName: 'active'
 })`
+  font-weight: ${props => props.theme.fontWeights.normal};
+
   text-transform: capitalize;
+  &:hover {
+    color: ${props => props.theme.colors.lightest};
+    font-weight: ${props => props.theme.fontWeights.bold};
+  }
+
   &.active {
     color: ${props => props.theme.colors.lightest};
-
+    font-weight: ${props => props.theme.fontWeights.bold};
     &::before {
       transform: translate(0, -50%);
       opacity: 1;
@@ -169,7 +167,7 @@ export const Menu: React.FC = () => {
             <NavLink to={`/${page}`}>{page}</NavLink>
           </NavItem>
         ))}
-        <NavItem highlight>
+        <NavItem>
           <a rel="noopener" href="mailto:hey@ramonmorcillo.com">
             Contact
           </a>
