@@ -6,8 +6,6 @@ import Layout from '../components/Layout';
 import Head from '../components/Head';
 import Stars from '../components/Stars';
 import Content from '../components/Content';
-import {defineCustomElements as deckDeckGoHighlightElement} from '@deckdeckgo/highlight-code/dist/loader';
-deckDeckGoHighlightElement();
 
 interface Props {
   readonly data: PageQueryData;
