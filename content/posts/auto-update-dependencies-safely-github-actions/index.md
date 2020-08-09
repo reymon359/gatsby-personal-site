@@ -101,10 +101,10 @@ Workflows are composed of jobs that contain a set of steps and to explain them i
 In the `.github/workflows` directory, add a `.yml` or `.yaml` file and name it `main.yml`. I chose that name to keep things simple, but you can give it any other name like `build-test.yml` or `continuous-integration-workflow.yml`.
 
 ```text
-📁my-app
-├── 📁.github
-│   └── 📁workflows
-│       └── 📄main.yml
+📁 my-app
+├── 📁 .github
+│   └── 📁 workflows
+│       └── 📄 main.yml
 ├── ...
 ...
 ```
