@@ -19,6 +19,11 @@ interface Props {
 
 const StyledUl = styled('ul')`
   list-style-type: none;
+  text-align: center;
+  padding-bottom: 4rem;
+  ${props => props.theme.media.md`
+      padding-bottom: 10rem;
+  `}
 
   li::before {
     content: '' !important;
@@ -122,6 +127,7 @@ const PostTemplate: React.FC<Props> = ({data, pageContext}) => {
               style={{paddingLeft: '1rem', lineHeight: 1.6}}
               dangerouslySetInnerHTML={{__html: post.html}}
             />
+            <h2>Other posts</h2>
             <StyledUl>
               {previous && (
                 <li>
