@@ -6,6 +6,7 @@ import Layout from '../components/Layout';
 import Head from '../components/Head';
 import Stars from '../components/Stars';
 import Content from '../components/Content';
+import {Header, Title, Description, ItemTags, Tag} from '../styles';
 
 interface Props {
   readonly data: PageQueryData;
@@ -29,49 +30,6 @@ const StyledUl = styled('ul')`
   }
 `;
 
-const Header = styled.div`
-  padding-left: 1rem;
-  margin-bottom: 1.5rem;
-`;
-const Title = styled.h1`
-  font-size: ${props => props.theme.fontSizes.xLarge};
-  font-weight: ${props => props.theme.fontWeights.regular};
-`;
-const Description = styled.div`
-  font-size: ${props => props.theme.fontSizes.mediumLarge};
-  font-weight: ${props => props.theme.fontWeights.thin};
-  letter-spacing: 0.1rem;
-  padding: 1rem 0;
-`;
-
-const ItemTags = styled.div`
-  padding: 0.6rem 0 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -0.3rem;
-  align-content: center;
-`;
-
-const Tag = styled(Link)`
-  padding: 0.4rem 0.6rem;
-  height: 1.5rem;
-  color: ${props => props.theme.colors.light};
-  background-color: ${props => props.theme.colors.light + '40'};
-  font-weight: ${props => props.theme.fontWeights.bold};
-  font-size: ${props => props.theme.fontSizes.small};
-  border-radius: 3rem;
-  margin: 0.2rem;
-  text-decoration: none;
-  border-bottom: 0;
-  white-space: nowrap;
-  line-height: 1;
-  transition: 0.2s ease;
-
-  &:hover {
-    color: ${props => props.theme.colors.darkest};
-    background-color: ${props => props.theme.colors.light};
-  }
-`;
 const Date = styled.div`
   font-size: ${props => props.theme.fontSizes.normal};
   font-weight: ${props => props.theme.fontWeights.thin};

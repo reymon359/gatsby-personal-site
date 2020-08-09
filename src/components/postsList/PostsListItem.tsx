@@ -3,6 +3,7 @@ import {Link} from 'gatsby';
 import styled from 'styled-components';
 import {Tooltip} from 'react-tippy';
 import Img from 'gatsby-image';
+import {ItemTags, Tag} from '../../styles';
 
 const ItemContainer = styled.article`
   transition: 0.2s ease;
@@ -34,32 +35,7 @@ const ItemTitle = styled(Link)`
   font-size: ${props => props.theme.fontSizes.medium};
   font-weight: ${props => props.theme.fontWeights.bold};
 `;
-const ItemTags = styled.div`
-  padding: 0.6rem 0 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -0.3rem;
-`;
 
-const Tag = styled(Link)`
-  padding: 0.4rem 0.6rem;
-  color: ${props => props.theme.colors.light};
-  background-color: ${props => props.theme.colors.light + '40'};
-  font-weight: ${props => props.theme.fontWeights.bold};
-  font-size: ${props => props.theme.fontSizes.small};
-  border-radius: 3rem;
-  margin: 0.2rem;
-  text-decoration: none;
-  border-bottom: 0;
-  white-space: nowrap;
-  line-height: 1;
-  transition: 0.2s ease;
-
-  &:hover {
-    color: ${props => props.theme.colors.darkest};
-    background-color: ${props => props.theme.colors.light};
-  }
-`;
 const ItemDate = styled(Link)`
   max-width: 30%;
   padding-bottom: 0.4rem;

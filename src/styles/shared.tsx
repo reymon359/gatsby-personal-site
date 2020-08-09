@@ -1,5 +1,6 @@
 import styled, {css} from 'styled-components';
 import {theme} from './theme';
+import {Link} from 'gatsby';
 
 export const ContentWrapper = styled.div`
   max-width: 68rem;
@@ -29,30 +30,6 @@ export const ListItem = styled.li`
   line-height: 1.6em;
 `;
 
-export const Loader = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: ${theme.colors.primaryDark};
-  z-index: 2;
-  ${props =>
-    // @ts-ignore
-    props.isLoaded
-      ? css`
-          transform: scale(1.05);
-          opacity: 0;
-        `
-      : css`
-          transform: scale(1);
-          opacity: 1;
-        `}
-  transition: .6s cubic-bezier(.45, 0, .07, 1) transform, .6s cubic-bezier(.45, 0, .07, 1) opacity;
-  will-change: transform;
-`;
-
 const rule = (property: string, value: string): TemplateStringsArray =>
   // @ts-ignore
   `${property}: ${value};`;
@@ -70,3 +47,47 @@ export const addRemToProperty = (property: string) =>
       ${rule(property, '2rem')}
     `}
   `;
+
+export const Header = styled.div`
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+`;
+export const Title = styled.h1`
+  font-size: ${props => props.theme.fontSizes.xLarge};
+  font-weight: ${props => props.theme.fontWeights.regular};
+`;
+export const Description = styled.div`
+  font-size: ${props => props.theme.fontSizes.mediumLarge};
+  font-weight: ${props => props.theme.fontWeights.thin};
+  letter-spacing: 0.1rem;
+  padding: 1rem 0;
+`;
+
+export const ItemTags = styled.div`
+  padding: 0.6rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.3rem;
+  align-content: center;
+`;
+
+export const Tag = styled(Link)`
+  padding: 0.4rem 0.6rem;
+  height: 1.5rem;
+  color: ${props => props.theme.colors.light};
+  background-color: ${props => props.theme.colors.light + '40'};
+  font-weight: ${props => props.theme.fontWeights.bold};
+  font-size: ${props => props.theme.fontSizes.small};
+  border-radius: 3rem;
+  margin: 0.2rem;
+  text-decoration: none;
+  border-bottom: 0;
+  white-space: nowrap;
+  line-height: 1;
+  transition: 0.2s ease;
+
+  &:hover {
+    color: ${props => props.theme.colors.darkest};
+    background-color: ${props => props.theme.colors.light};
+  }
+`;
