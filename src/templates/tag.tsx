@@ -1,9 +1,11 @@
 import React from 'react';
-import {Link, graphql} from 'gatsby';
-
+import {graphql} from 'gatsby';
 import Layout from '../components/Layout';
 import Head from '../components/Head';
-
+import Stars from '../components/Stars';
+import Content from '../components/Content';
+import {PostsList} from '../components/postsList';
+import {Header, Title, Section, SectionBody} from '../styles';
 interface Props {
   readonly data: PageQueryData;
   readonly pageContext: {
@@ -11,36 +13,56 @@ interface Props {
   };
 }
 
+interface Post {
+  node: {
+    id: string;
+    excerpt: string;
+    fields: {
+      slug: string;
+    };
+    frontmatter: {
+      date: string;
+      title: string;
+      tags: string[];
+      featuredImage: any;
+    };
+  };
+}
 const TagTemplate: React.FC<Props> = ({data, pageContext}) => {
   const {tag} = pageContext;
   const siteTitle = data.site.siteMetadata.title;
-  const posts = data.allMarkdownRemark.edges;
+  const posts: Post[] = data.allMarkdownRemark.edges;
 
   return (
     <Layout title={siteTitle}>
       <Head
         title={`Posts tagged "${tag}"`}
-        keywords={[`blog`, `gatsby`, `javascript`, `react`, tag]}
+        keywords={[
+          `blog`,
+          `gatsby`,
+          `typescript`,
+          `javascript`,
+          `portfolio`,
+          `react`
+        ]}
       />
-      <article>
-        <header>
-          <h1>Posts tagged {tag}</h1>
-        </header>
-        <div className={`page-content`}>
-          {posts.map(({node}) => {
-            const title = node.frontmatter.title || node.fields.slug;
-            return (
-              <div key={node.fields.slug}>
-                <h3>
-                  <Link to={node.fields.slug}>{title}</Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
-                <p dangerouslySetInnerHTML={{__html: node.excerpt}} />
-              </div>
-            );
-          })}
-        </div>
-      </article>
+      <Stars
+        normalVelocity={0.0001}
+        containerOpacity={0.3}
+        addEventListeners={false}
+      />
+      <Content>
+        <article>
+          <Header>
+            <Title>Stuff tagged {tag}</Title>
+          </Header>
+          <Section>
+            <SectionBody>
+              <PostsList posts={posts} />
+            </SectionBody>
+          </Section>
+        </article>
+      </Content>
     </Layout>
   );
 };
@@ -52,9 +74,9 @@ interface PageQueryData {
     };
   };
   allMarkdownRemark: {
-    totalCount: number;
     edges: {
       node: {
+        id: string;
         excerpt: string;
         fields: {
           slug: string;
@@ -62,6 +84,8 @@ interface PageQueryData {
         frontmatter: {
           date: string;
           title: string;
+          tags: string[];
+          featuredImage: any;
         };
       };
     }[];
@@ -78,17 +102,27 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       limit: 1000
       filter: {frontmatter: {tags: {in: [$tag]}}}
+      sort: {fields: [frontmatter___date], order: DESC}
     ) {
       totalCount
       edges {
         node {
-          excerpt(pruneLength: 2500)
+          id
+          excerpt
           fields {
             slug
           }
           frontmatter {
-            date
+            date(formatString: "MMM DD, YYYY")
             title
+            tags
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

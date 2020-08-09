@@ -1,8 +1,11 @@
 import React from 'react';
-import {Link, graphql} from 'gatsby';
+import {graphql} from 'gatsby';
 
 import Layout from '../components/Layout';
 import Head from '../components/Head';
+import Stars from '../components/Stars';
+import Content from '../components/Content';
+import {Description, Header, ItemTags, Tag, Title} from '../styles';
 
 interface Props {
   readonly data: PageQueryData;
@@ -16,30 +19,43 @@ const Tags: React.FC<Props> = ({data}) => {
     <Layout title={siteTitle}>
       <Head
         title="All tags"
-        keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+        keywords={[
+          `blog`,
+          `gatsby`,
+          `typescript`,
+          `javascript`,
+          `portfolio`,
+          `react`
+        ]}
       />
-      <article>
-        <h1>All tags</h1>
-        <div className={`page-content`}>
-          {group &&
-            group.map(
-              tag =>
-                tag && (
-                  <div key={tag.fieldValue}>
-                    <h3>
-                      <Link to={`/tags/${tag.fieldValue}/`}>
-                        {tag.fieldValue}
-                      </Link>
-                    </h3>
-                    <small>
-                      {tag.totalCount} post
-                      {tag.totalCount === 1 ? '' : 's'}
-                    </small>
-                  </div>
-                )
-            )}
-        </div>
-      </article>
+      <Stars
+        normalVelocity={0.0001}
+        containerOpacity={0.3}
+        addEventListeners={false}
+      />
+      <Content>
+        <Header>
+          <Title>All tags</Title>
+          <Description>Stuff tags</Description>
+        </Header>
+        <article>
+          <ItemTags>
+            {group &&
+              group.map(
+                tag =>
+                  tag && (
+                    <Tag key={tag.fieldValue} to={`/tags/${tag.fieldValue}/`}>
+                      {tag.fieldValue} -&nbsp;
+                      <small>
+                        {tag.totalCount} post
+                        {tag.totalCount === 1 ? '' : 's'}
+                      </small>
+                    </Tag>
+                  )
+              )}
+          </ItemTags>
+        </article>
+      </Content>
     </Layout>
   );
 };

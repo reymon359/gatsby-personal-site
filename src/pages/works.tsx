@@ -6,23 +6,8 @@ import Stars from '../components/Stars';
 import Content from '../components/Content';
 import {PostsList} from '../components/postsList';
 import styled from 'styled-components';
+import {Header, Title, Description, Section, SectionBody} from '../styles';
 
-const Header = styled.div`
-  padding-left: 1rem;
-`;
-const Title = styled.h1`
-  font-size: ${props => props.theme.fontSizes.xLarge};
-  font-weight: ${props => props.theme.fontWeights.regular};
-`;
-const Description = styled.div`
-  font-size: ${props => props.theme.fontSizes.mediumLarge};
-  font-weight: ${props => props.theme.fontWeights.thin};
-  padding: 1rem 0 2rem 0;
-`;
-
-const Section = styled.div`
-  padding: 1rem 0;
-`;
 const SectionHeader = styled.div`
   padding-left: 1rem;
   display: flex;
@@ -52,9 +37,6 @@ const MoreLink = styled(Link)`
     color: ${props => props.theme.colors.darkest};
     background-color: ${props => props.theme.colors.light};
   }
-`;
-const SectionBody = styled.div`
-  padding: 0.2rem 0;
 `;
 
 interface WorksProps {
