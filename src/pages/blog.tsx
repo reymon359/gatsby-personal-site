@@ -5,16 +5,7 @@ import Layout from '../components/Layout';
 import Stars from '../components/Stars';
 import Content from '../components/Content';
 import {PostsList} from '../components/postsList';
-import styled from 'styled-components';
-import {Header, Title, Description} from '../styles';
-
-const Section = styled.div`
-  padding: 1rem 0;
-`;
-
-const SectionBody = styled.div`
-  padding: 0.2rem 0;
-`;
+import {Header, Title, Description, Section, SectionBody} from '../styles';
 
 interface BlogProps {
   readonly data: PageQueryData;

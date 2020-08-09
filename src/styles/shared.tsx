@@ -63,6 +63,13 @@ export const Description = styled.div`
   padding: 1rem 0;
 `;
 
+export const Section = styled.div`
+  padding: 1rem 0;
+`;
+
+export const SectionBody = styled.div`
+  padding: 0.2rem 0;
+`;
 export const ItemTags = styled.div`
   padding: 0.6rem 0 0 0;
   display: flex;
