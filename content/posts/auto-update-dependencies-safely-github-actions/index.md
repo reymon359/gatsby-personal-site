@@ -13,9 +13,6 @@ type: 'post'
 draft: false
 ---
 
-![GitHub Actions and Renovate logos](./github_actions_and_renovate_logos.png)
-# Using GitHub Actions and Renovate App to safely update dependencies automatically
-
 In Software Development **keeping up to date with technology updates** is crucial not only for developers who have to be always learning and renewing their set of skills but also for the projects they work on and have to be maintained.
 
 When you start a project from the ground you normally set it up with the libraries' latest stable versions. Then time goes by, and the size of the project grows, new features are added, new libraries too, and **the version of the libraries and packages usually remains the same and almost never gets updated**. And yes, why would you update them if the project works perfectly with the current ones?
@@ -49,13 +46,13 @@ The point of using [GitHub Actions](https://github.com/features/actions) is to s
 
 ## Table of Contents
 
-- [Getting Started](#getting-started)
-- [Set up Github Actions Workflow](#set-up-github-actions-workflow)
-- [Add Renovate](#add-renovate)
-- [Conclusion](#conclusion)
-- [Useful Resources](#useful-resources)
+- [Getting Started](#Getting-Started)
+- [Set up GitHub Actions Workflow](#Set-up-GitHub-Actions-Workflow)
+- [Add Renovate](#Add-Renovate)
+- [Conclusion](#Conclusion)
+- [Useful Resources](#Useful-Resources)
 
-## Getting Started
+## Getting started
 
 Although **this approach can be applied to any project** we will use a [React](https://reactjs.org) project made with [Create React App](https://github.com/facebook/create-react-app) as it will give us a basic project with everything ready to work on. By the way, if you do not have Node.js installed [here](https://nodejs.org/en/download/) is the link to do so.
 
@@ -63,7 +60,7 @@ Also, [in this repository is the resulting project](https://github.com/reymon359
 
 So let's begin running
 
-```sh
+```bash
 npx create-react-app my-app
 cd my-app
 npm start
@@ -71,13 +68,13 @@ npm start
 
 If you use npm 5.1 or earlier, you can't use `npx`. Instead, install `create-react-app` globally:
 
-```sh
+```bash
 npm install -g create-react-app
 ```
 
 And then run:
 
-```sh
+```bash
 create-react-app my-app
 ```
 
@@ -89,7 +86,7 @@ _[GitHub Actions](https://github.com/features/actions) is a Github Feature that 
 
 In our root folder, we will create a new folder and name it `.github` and inside of it a `workflows` one. This is how your project should look after these steps:
 
-```text
+```
 📁 my-app
 ├── 📁 .github
 │   └── 📁 workflows
