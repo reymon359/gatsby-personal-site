@@ -1,7 +1,7 @@
 ---
 id: 'full-stack-social-site'
 title: 'Full Stack Social Site'
-description: 'Master's final thesis Project. Open Source Client-Server social site app.'
+description: "Master's final thesis Open Source Project about a Client-Server social site app"
 date: '2020-06-01'
 author: 'Ramón Morcillo'
 categories: ['Software']
