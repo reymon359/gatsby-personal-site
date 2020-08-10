@@ -5,7 +5,7 @@ description: 'Keeping your project dependencies updated the right way'
 date: '2020-07-24'
 author: 'Ramón Morcillo'
 categories: ['Software']
-tags: ['Post', 'Continuous Integration', 'Tutorial','GitHub Actions', 'GitHub', 'Automation']
+tags: ['Continuous Integration', 'Tutorial', 'GitHub', 'Maintainability']
 published: true
 featuredImage: './github_actions_and_renovate_logos.png'
 thumbnail: './github_actions_and_renovate_logos.png'

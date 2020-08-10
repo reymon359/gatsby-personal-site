@@ -5,7 +5,7 @@ description: 'An always up to date React Template.'
 date: '2020-05-01'
 author: 'Ramón Morcillo'
 categories: ['Software']
-tags: ['Project', 'React', 'TypeScript', 'Continuous Integration', 'GitHub Actions', 'GitHub', 'Automation']
+tags: [ 'React', 'TypeScript', 'Continuous Integration', 'GitHub' ]
 published: true
 featuredImage: './up-to-date-react-template.png'
 thumbnail: './up-to-date-react-template.png'
