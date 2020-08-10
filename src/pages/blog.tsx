@@ -4,32 +4,20 @@ import Head from '../components/Head';
 import Layout from '../components/Layout';
 import Stars from '../components/Stars';
 import Content from '../components/Content';
-import {PostsList} from '../components/postsList';
+import {ContentListContainer} from '../components/ContentList';
 import {Header, Title, Description, Section, SectionBody} from '../styles';
+import {Work} from '../interfaces';
 
 interface BlogProps {
   readonly data: PageQueryData;
 }
 
-interface Post {
-  node: {
-    id: string;
-    excerpt: string;
-    fields: {
-      slug: string;
-    };
-    frontmatter: {
-      date: string;
-      title: string;
-      tags: string[];
-      featuredImage: any;
-    };
-  };
-}
-
 const Blog: React.FC<BlogProps> = ({data}) => {
   const siteTitle = data.site.siteMetadata.title;
-  const posts: Post[] = data.allMarkdownRemark.edges;
+  const posts: Work[] = data.allMarkdownRemark.edges.filter(
+    work => work.node.frontmatter.type === 'post'
+  );
+
   // const tags =[... new Set([].concat(...posts.map(post => post.node.frontmatter.tags)))]
 
   return (
@@ -57,7 +45,7 @@ const Blog: React.FC<BlogProps> = ({data}) => {
         </Header>
         <Section>
           <SectionBody>
-            <PostsList posts={posts} />
+            <ContentListContainer content={posts} />
           </SectionBody>
         </Section>
       </Content>
@@ -82,7 +70,10 @@ interface PageQueryData {
         frontmatter: {
           date: string;
           title: string;
+          description: string;
           tags: string[];
+          type: string;
+          url: string;
           featuredImage: any;
         };
       };
@@ -111,7 +102,10 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMM DD, YYYY")
             title
+            description
             tags
+            type
+            url
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 800) {
