@@ -13,7 +13,9 @@ interface Props {
 
 const Tags: React.FC<Props> = ({data}) => {
   const siteTitle = data.site.siteMetadata.title;
-  const group = data.allMarkdownRemark && data.allMarkdownRemark.group.sort( (a, b)=>  b.totalCount - a.totalCount );
+  const group =
+    data.allMarkdownRemark &&
+    data.allMarkdownRemark.group.sort((a, b) => b.totalCount - a.totalCount);
 
   return (
     <Layout title={siteTitle}>
@@ -46,10 +48,7 @@ const Tags: React.FC<Props> = ({data}) => {
                   tag && (
                     <Tag key={tag.fieldValue} to={`/tags/${tag.fieldValue}/`}>
                       {tag.fieldValue} -&nbsp;
-                      <small>
-                        {tag.totalCount} post
-                        {tag.totalCount === 1 ? '' : 's'}
-                      </small>
+                      <small>{tag.totalCount}</small>
                     </Tag>
                   )
               )}
