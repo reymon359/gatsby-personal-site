@@ -4,7 +4,7 @@ import {ContentListItem} from './ContentListItem';
 import {Work} from '../../interfaces';
 
 const ContentListWrapper = styled.section`
-  margin: 1.5rem auto 0;
+  margin: 0 auto;
 `;
 
 interface ContentListProps {
