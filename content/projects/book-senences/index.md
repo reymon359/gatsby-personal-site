@@ -7,8 +7,8 @@ author: 'Ramón Morcillo'
 categories: ['Personal']
 tags: ['Books', 'Personal', 'Collection', ' Reading']
 published: true
-featuredImage: './book_sentences.png'
-thumbnail: './book_sentences.png'
+featuredImage: './book-sentences.png'
+thumbnail: './book-sentences.png'
 type: 'project'
 draft: false
 url: 'https://github.com/reymon359/book-sentences'

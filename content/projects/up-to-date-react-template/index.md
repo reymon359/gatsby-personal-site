@@ -1,7 +1,7 @@
 ---
 id: 'up-to-date-react-template'
 title: 'Up to date React Template'
-description: 'An always up to date React Template.'
+description: "An always up to date React Template."
 date: '2020-05-01'
 author: 'Ramón Morcillo'
 categories: ['Software']
