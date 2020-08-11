@@ -107,7 +107,7 @@ export const ContentListItem: React.FC<ContentListItemProps> = ({
       followCursor={true}
       html={
         <div style={{width: '20rem'}}>
-          <Img fluid={featuredImgFluid} />
+          <Img style={{borderRadius: '10px'}} fluid={featuredImgFluid} />
         </div>
       }
     >
