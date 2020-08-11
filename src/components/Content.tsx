@@ -5,6 +5,7 @@ export const ContentContainer = styled.div`
   max-width: 68rem;
   width: calc(100% - 9.25rem * 2);
   margin: 11rem auto 5rem;
+  position: absolute;
   height: 100%;
   top: 0;
   left: 0;
@@ -17,12 +18,12 @@ export const ContentContainer = styled.div`
     width: calc(100% - 11rem * 2);
   `}
   
-  ${props => props.theme.media.md`
+   ${props => props.theme.media.md`
     width: 100%;
     margin: 4rem auto 0;
     padding: 0 3rem 6rem;
     :last-child {
-        margin-bottom: 5rem;
+      margin-bottom: calc(100vh - 10rem);
     }
   `}
   
@@ -30,7 +31,7 @@ export const ContentContainer = styled.div`
     margin: 2rem auto 0;
     padding: 0 2rem 6rem;
     :last-child {
-        margin-bottom: 5rem;
+      margin-bottom: calc(100vh - 10rem);
     }
   `}
 `;
