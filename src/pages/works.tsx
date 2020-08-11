@@ -128,7 +128,7 @@ interface PageQueryData {
 }
 
 export const pageQuery = graphql`
-  query {
+  query WorksPage {
     site {
       siteMetadata {
         title
