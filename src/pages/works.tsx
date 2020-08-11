@@ -51,8 +51,6 @@ const Works: React.FC<WorksProps> = ({data}) => {
   const projects = works.filter(
     work => work.node.frontmatter.type === 'project'
   );
-  console.log(works);
-  console.log(projects);
   return (
     <Layout title={siteTitle}>
       <Head
