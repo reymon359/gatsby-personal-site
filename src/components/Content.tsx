@@ -23,7 +23,7 @@ export const ContentContainer = styled.div`
     margin: 4rem auto 0;
     padding: 0 3rem 6rem;
     :last-child {
-      margin-bottom: 100vh;
+      margin-bottom: 80vh;
     }
   `}
   
