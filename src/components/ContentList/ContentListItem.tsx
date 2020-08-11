@@ -136,7 +136,11 @@ export const ContentListItem: React.FC<ContentListItemProps> = ({
               ))}
           </ItemTags>
         </ItemHeader>
-        <ItemDate to={workLink}>{node.frontmatter.date}</ItemDate>
+        <ItemDate to={workLink}>
+          {workType === 'post'
+            ? node.frontmatter.date
+            : node.frontmatter.date.split(',')[1]}
+        </ItemDate>
       </ItemContainer>
     </Tooltip>
   );
