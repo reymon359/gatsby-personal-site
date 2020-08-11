@@ -36,7 +36,8 @@ const ItemTitle = styled(Link)`
   font-weight: ${props => props.theme.fontWeights.bold};
 `;
 
-const ItemDescription = styled.div`
+const ItemDescription = styled(Link)`
+  display: block;
   padding: 0.5rem 0;
   color: ${props => props.theme.colors.medium};
   font-size: ${props => props.theme.fontSizes.normal};
@@ -100,7 +101,8 @@ export const ContentListItem: React.FC<ContentListItemProps> = ({
   const tags = node.frontmatter.tags;
   const workType = node.frontmatter.type;
   const featuredImgFluid = node.frontmatter.featuredImage.childImageSharp.fluid;
-
+  const workLink =
+    workType === 'post' ? node.fields.slug : node.frontmatter.url;
   return (
     <Tooltip
       position="top"
@@ -113,8 +115,10 @@ export const ContentListItem: React.FC<ContentListItemProps> = ({
     >
       <ItemContainer>
         <ItemHeader>
-          <ItemTitle to={node.fields.slug}>{title}</ItemTitle>
-          <ItemDescription>{node.frontmatter.description}</ItemDescription>
+          <ItemTitle to={workLink}>{title}</ItemTitle>
+          <ItemDescription to={workLink}>
+            {node.frontmatter.description}
+          </ItemDescription>
           <ItemTags>
             {type && (
               <TypeTag
@@ -132,7 +136,7 @@ export const ContentListItem: React.FC<ContentListItemProps> = ({
               ))}
           </ItemTags>
         </ItemHeader>
-        <ItemDate to={node.fields.slug}>{node.frontmatter.date}</ItemDate>
+        <ItemDate to={workLink}>{node.frontmatter.date}</ItemDate>
       </ItemContainer>
     </Tooltip>
   );
