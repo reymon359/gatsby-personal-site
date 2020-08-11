@@ -5,7 +5,6 @@ export const ContentContainer = styled.div`
   max-width: 68rem;
   width: calc(100% - 9.25rem * 2);
   margin: 11rem auto 5rem;
-  position: absolute;
   height: 100%;
   top: 0;
   left: 0;
@@ -23,7 +22,7 @@ export const ContentContainer = styled.div`
     margin: 4rem auto 0;
     padding: 0 3rem 6rem;
     :last-child {
-      margin-bottom: 80vh;
+        margin-bottom: 5rem;
     }
   `}
   
@@ -31,7 +30,7 @@ export const ContentContainer = styled.div`
     margin: 2rem auto 0;
     padding: 0 2rem 6rem;
     :last-child {
-      margin-bottom: 100vh;
+        margin-bottom: 5rem;
     }
   `}
 `;
