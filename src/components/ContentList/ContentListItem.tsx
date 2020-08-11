@@ -99,42 +99,41 @@ export const ContentListItem: React.FC<ContentListItemProps> = ({
   const title = node.frontmatter.title || node.fields.slug;
   const tags = node.frontmatter.tags;
   const workType = node.frontmatter.type;
-  console.log(node.frontmatter);
-  // const featuredImgFluid = node.frontmatter.featuredImage.childImageSharp.fluid;
+  const featuredImgFluid = node.frontmatter.featuredImage.childImageSharp.fluid;
 
   return (
-    // <Tooltip
-    //   position="top"
-    //   followCursor={true}
-    //   html={
-    //     <div style={{width: '20rem'}}>
-    //       <Img fluid={featuredImgFluid} />
-    //     </div>
-    //   }
-    // >
-    <ItemContainer>
-      <ItemHeader>
-        <ItemTitle to={node.fields.slug}>{title}</ItemTitle>
-        <ItemDescription>{node.frontmatter.description}</ItemDescription>
-        <ItemTags>
-          {type && (
-            <TypeTag
-              to={`/${workType === 'project' ? 'projects' : 'blog'}`}
-              key={workType}
-            >
-              {workType}
-            </TypeTag>
-          )}
-          {tags &&
-            tags.sort().map(tag => (
-              <Tag to={`/tags/${tag}/`} key={tag}>
-                {tag}
-              </Tag>
-            ))}
-        </ItemTags>
-      </ItemHeader>
-      <ItemDate to={node.fields.slug}>{node.frontmatter.date}</ItemDate>
-    </ItemContainer>
-    // </Tooltip>
+    <Tooltip
+      position="top"
+      followCursor={true}
+      html={
+        <div style={{width: '20rem'}}>
+          <Img fluid={featuredImgFluid} />
+        </div>
+      }
+    >
+      <ItemContainer>
+        <ItemHeader>
+          <ItemTitle to={node.fields.slug}>{title}</ItemTitle>
+          <ItemDescription>{node.frontmatter.description}</ItemDescription>
+          <ItemTags>
+            {type && (
+              <TypeTag
+                to={`/${workType === 'project' ? 'projects' : 'blog'}`}
+                key={workType}
+              >
+                {workType}
+              </TypeTag>
+            )}
+            {tags &&
+              tags.sort().map(tag => (
+                <Tag to={`/tags/${tag}/`} key={tag}>
+                  {tag}
+                </Tag>
+              ))}
+          </ItemTags>
+        </ItemHeader>
+        <ItemDate to={node.fields.slug}>{node.frontmatter.date}</ItemDate>
+      </ItemContainer>
+    </Tooltip>
   );
 };
