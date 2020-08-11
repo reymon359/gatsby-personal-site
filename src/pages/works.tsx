@@ -47,10 +47,12 @@ interface WorksProps {
 const Works: React.FC<WorksProps> = ({data}) => {
   const siteTitle = data.site.siteMetadata.title;
   const works: Work[] = data.allMarkdownRemark.edges;
-  const posts = works.filter(work => work.node.frontmatter.type === 'post');
-  const projects = works.filter(
-    work => work.node.frontmatter.type === 'project'
-  );
+  const posts = works
+    .filter(work => work.node.frontmatter.type === 'post')
+    .slice(0, 3);
+  const projects = works
+    .filter(work => work.node.frontmatter.type === 'project')
+    .slice(0, 3);
   return (
     <Layout title={siteTitle}>
       <Head
@@ -86,7 +88,7 @@ const Works: React.FC<WorksProps> = ({data}) => {
         <Section>
           <SectionHeader>
             <SectionTitle>Latest projects</SectionTitle>
-            <MoreLink to="/blog">All projects</MoreLink>
+            <MoreLink to="/projects">All projects</MoreLink>
           </SectionHeader>
           <SectionBody>
             <ContentListContainer content={projects} />
