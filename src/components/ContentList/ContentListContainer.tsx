@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {ContentListItem} from './ContentListItem';
-import {Work} from '../../interfaces';
+import {Work} from '../../types';
 
 const ContentListWrapper = styled.section`
   margin: 0 auto;

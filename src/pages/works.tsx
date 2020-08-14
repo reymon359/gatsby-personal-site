@@ -7,7 +7,7 @@ import Content from '../components/Content';
 import {ContentListContainer} from '../components/ContentList';
 import styled from 'styled-components';
 import {Header, Title, Description, Section, SectionBody} from '../styles';
-import {Work} from '../interfaces';
+import {Work} from '../types';
 
 const SectionHeader = styled.div`
   padding-left: 1rem;

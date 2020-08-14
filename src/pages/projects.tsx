@@ -6,7 +6,7 @@ import Stars from '../components/Stars';
 import Content from '../components/Content';
 import {ContentListContainer} from '../components/ContentList';
 import {Header, Title, Description, Section, SectionBody} from '../styles';
-import {Work} from '../interfaces';
+import {Work} from '../types';
 
 interface ProjectsProps {
   readonly data: PageQueryData;
