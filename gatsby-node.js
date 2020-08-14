@@ -57,9 +57,9 @@ exports.createPages = ({graphql, actions}) => {
 
     // Iterate through each post, putting all found tags into `tags`
     let tags = [];
-    posts.forEach(post => {
-      if (post.node.frontmatter.tags) {
-        tags = tags.concat(post.node.frontmatter.tags);
+    works.forEach(work => {
+      if (work.node.frontmatter.tags) {
+        tags = tags.concat(work.node.frontmatter.tags);
       }
     });
     const uniqTags = [...new Set(tags)];
