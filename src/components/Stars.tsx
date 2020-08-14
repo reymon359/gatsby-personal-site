@@ -41,6 +41,7 @@ const Stars: React.FC<StarsProps> = (StarsConfig: StarsProps) => {
 
   const {normalVelocity = 0.0005} = StarsConfig;
   const velocity = {x: 0, y: 0, tx: 0, ty: 0, z: normalVelocity};
+  const maxVelocity = 0.05;
   const {addEventListeners = true} = StarsConfig;
 
   const generateStars = () => {
@@ -131,11 +132,9 @@ const Stars: React.FC<StarsProps> = (StarsConfig: StarsProps) => {
   };
 
   const accelerate = (acceleration: boolean) => {
-    console.log('accelerates');
-
     pointer = {x: null, y: null};
     pointerActive = !acceleration;
-    velocity.z = acceleration ? 0.1 : normalVelocity;
+    velocity.z = acceleration ? maxVelocity : normalVelocity;
   };
 
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
