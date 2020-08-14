@@ -307,7 +307,7 @@ const Stars: React.FC<StarsProps> = (StarsConfig: StarsProps) => {
       }
     };
     return cleanup;
-  }, [context]);
+  });
 
   const themeContext = useContext(ThemeContext);
 
