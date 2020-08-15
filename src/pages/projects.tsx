@@ -17,7 +17,6 @@ const Projects: React.FC<ProjectsProps> = ({data}) => {
   const projects: Work[] = data.allMarkdownRemark.edges.filter(
     work => work.node.frontmatter.type === 'project'
   );
-  console.log(projects);
   return (
     <Layout title={siteTitle}>
       <Head
