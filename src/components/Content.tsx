@@ -22,18 +22,15 @@ export const ContentContainer = styled.div`
     width: 100%;
     margin: 4rem auto 0;
     padding: 0 3rem 6rem;
-    :last-child {
-      margin-bottom: calc(100vh - 10rem);
-    }
   `}
   
   ${props => props.theme.media.sm`
     margin: 2rem auto 0;
     padding: 0 2rem 6rem;
-    :last-child {
-      margin-bottom: calc(100vh - 10rem);
-    }
   `}
+`;
+const ContentBottom = styled.div`
+  height: 10rem;
 `;
 
 type ContentProps = {
@@ -41,7 +38,10 @@ type ContentProps = {
 };
 
 const Content: React.FC<ContentProps> = ({children}) => (
-  <ContentContainer>{children}</ContentContainer>
+  <ContentContainer>
+    {children}
+    <ContentBottom />
+  </ContentContainer>
 );
 
 export default Content;
