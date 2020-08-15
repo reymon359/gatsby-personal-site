@@ -17,6 +17,7 @@ exports.createPages = ({graphql, actions}) => {
               frontmatter {
                 tags
                 title
+                type
               }
             }
           }
@@ -33,7 +34,11 @@ exports.createPages = ({graphql, actions}) => {
     const tagTemplate = path.resolve('./src/templates/tag.tsx');
 
     // Create post pages
-    const posts = result.data.allMarkdownRemark.edges;
+    const works = result.data.allMarkdownRemark.edges;
+    const posts = works.filter(work => work.node.frontmatter.type === 'post');
+    const projects = works.filter(
+      work => work.node.frontmatter.type === 'project'
+    );
     posts.forEach((post, index) => {
       const previous =
         index === posts.length - 1 ? null : posts[index + 1].node;
@@ -52,9 +57,9 @@ exports.createPages = ({graphql, actions}) => {
 
     // Iterate through each post, putting all found tags into `tags`
     let tags = [];
-    posts.forEach(post => {
-      if (post.node.frontmatter.tags) {
-        tags = tags.concat(post.node.frontmatter.tags);
+    works.forEach(work => {
+      if (work.node.frontmatter.tags) {
+        tags = tags.concat(work.node.frontmatter.tags);
       }
     });
     const uniqTags = [...new Set(tags)];

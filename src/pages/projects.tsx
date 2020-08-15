@@ -8,22 +8,19 @@ import {ContentListContainer} from '../components/ContentList';
 import {Header, Title, Description, Section, SectionBody} from '../styles';
 import {Work} from '../types';
 
-interface BlogProps {
+interface ProjectsProps {
   readonly data: PageQueryData;
 }
 
-const Blog: React.FC<BlogProps> = ({data}) => {
+const Projects: React.FC<ProjectsProps> = ({data}) => {
   const siteTitle = data.site.siteMetadata.title;
-  const posts: Work[] = data.allMarkdownRemark.edges.filter(
-    work => work.node.frontmatter.type === 'post'
+  const projects: Work[] = data.allMarkdownRemark.edges.filter(
+    work => work.node.frontmatter.type === 'project'
   );
-
-  // const tags =[... new Set([].concat(...posts.map(post => post.node.frontmatter.tags)))]
-
   return (
     <Layout title={siteTitle}>
       <Head
-        title="Blog"
+        title="Projects"
         keywords={[
           `blog`,
           `gatsby`,
@@ -40,12 +37,12 @@ const Blog: React.FC<BlogProps> = ({data}) => {
       />
       <Content>
         <Header>
-          <Title>Blog</Title>
-          <Description>Stuff I write about</Description>
+          <Title>Projects</Title>
+          <Description>Stuff I have done</Description>
         </Header>
         <Section>
           <SectionBody>
-            <ContentListContainer content={posts} />
+            <ContentListContainer content={projects} />
           </SectionBody>
         </Section>
       </Content>
@@ -120,4 +117,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default Blog;
+export default Projects;

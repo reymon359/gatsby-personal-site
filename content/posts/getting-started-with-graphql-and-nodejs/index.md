@@ -5,12 +5,12 @@ description: 'Hello World Client Server project to explain how GraphQL Works.'
 date: '2020-04-14'
 author: 'Ramón Morcillo'
 categories: ['Software']
-tags: ['Tutorial', 'Node.js', 'GraphQL']
+tags: ['Tutorial', 'Node.js', 'GraphQL', 'Apollo']
 published: true
 featuredImage: './gia-oris-_uM5_nG2ssc-unsplash.jpg'
 thumbnail: './gia-oris-_uM5_nG2ssc-unsplash.jpg'
 type: 'post'
-draft: false
+url: 'none'
 ---
 
 The main purpose of this server-client [Node.js](https://nodejs.org/en/) project is to help other people **understand how GraphQL exposes the data from the Server and the Client fetches it**. I have tried to make it as simple as possible- if you want to dive into the code of the project you can find it [here](https://github.com/reymon359/graphql-hello-world-server).

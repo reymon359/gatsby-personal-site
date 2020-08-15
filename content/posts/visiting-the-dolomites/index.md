@@ -3,13 +3,13 @@ title: 'Visiting the Dolomites'
 description: 'Travel through the Dolomites, the Italian Alps.'
 date: '2019-08-29'
 author: 'Ramón Morcillo'
-categories: ['travel']
-tags: ['trip', 'italy', 'nature']
+categories: ['Adventures']
+tags: ['Trip', 'Italy', 'Nature']
 published: true
 featuredImage: './gia-oris-_uM5_nG2ssc-unsplash.jpg'
 type: 'post'
-draft: false
 thumbnail: './gia-oris-_uM5_nG2ssc-unsplash.jpg'
+url: 'none'
 ---
 
 ## What are the Dolomites?

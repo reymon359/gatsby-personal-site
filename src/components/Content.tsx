@@ -18,7 +18,7 @@ export const ContentContainer = styled.div`
     width: calc(100% - 11rem * 2);
   `}
   
-  ${props => props.theme.media.md`
+   ${props => props.theme.media.md`
     width: 100%;
     margin: 4rem auto 0;
     padding: 0 3rem 6rem;
@@ -29,13 +29,19 @@ export const ContentContainer = styled.div`
     padding: 0 2rem 6rem;
   `}
 `;
+const ContentBottom = styled.div`
+  height: 10rem;
+`;
 
 type ContentProps = {
   readonly children: React.ReactNode;
 };
 
 const Content: React.FC<ContentProps> = ({children}) => (
-  <ContentContainer>{children}</ContentContainer>
+  <ContentContainer>
+    {children}
+    <ContentBottom />
+  </ContentContainer>
 );
 
 export default Content;

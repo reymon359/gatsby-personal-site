@@ -36,8 +36,17 @@ const ItemTitle = styled(Link)`
   font-weight: ${props => props.theme.fontWeights.bold};
 `;
 
+const ItemDescription = styled(Link)`
+  display: block;
+  padding: 0.5rem 0;
+  color: ${props => props.theme.colors.medium};
+  font-size: ${props => props.theme.fontSizes.normal};
+  font-weight: ${props => props.theme.fontWeights.regular};
+`;
+
 const ItemDate = styled(Link)`
   max-width: 30%;
+  padding-top: 1rem;
   padding-bottom: 0.4rem;
   color: ${props => props.theme.colors.mediumLight};
   font-size: ${props => props.theme.fontSizes.normal};
@@ -48,8 +57,19 @@ const ItemDate = styled(Link)`
   }
 
   ${props => props.theme.media.md`
+    padding-top: 0;
     max-width: 100%;
   `}
+`;
+
+const TypeTag = styled(Tag)`
+  color: ${props => props.theme.colors.darkest};
+  background-color: ${props => props.theme.colors.light};
+  text-transform: capitalize;
+  &:hover {
+    color: ${props => props.theme.colors.darkest};
+    background-color: ${props => props.theme.colors.light};
+  }
 `;
 
 interface Node {
@@ -60,34 +80,54 @@ interface Node {
   frontmatter: {
     date: string;
     title: string;
+    description: string;
     featuredImage: any;
     tags: string[];
+    type: string;
+    url: string;
   };
 }
 
-interface PostsListItemProps {
+interface ContentListItemProps {
+  readonly type?: boolean;
   readonly node: Node;
 }
 
-export const PostsListItem: React.FC<PostsListItemProps> = ({node}) => {
+export const ContentListItem: React.FC<ContentListItemProps> = ({
+  type = false,
+  node
+}) => {
   const title = node.frontmatter.title || node.fields.slug;
   const tags = node.frontmatter.tags;
+  const workType = node.frontmatter.type;
   const featuredImgFluid = node.frontmatter.featuredImage.childImageSharp.fluid;
-
+  const workLink =
+    workType === 'post' ? node.fields.slug : node.frontmatter.url;
   return (
     <Tooltip
       position="top"
       followCursor={true}
       html={
         <div style={{width: '20rem'}}>
-          <Img fluid={featuredImgFluid} />
+          <Img style={{borderRadius: '10px'}} fluid={featuredImgFluid} />
         </div>
       }
     >
       <ItemContainer>
         <ItemHeader>
-          <ItemTitle to={node.fields.slug}>{title}</ItemTitle>
+          <ItemTitle to={workLink}>{title}</ItemTitle>
+          <ItemDescription to={workLink}>
+            {node.frontmatter.description}
+          </ItemDescription>
           <ItemTags>
+            {type && (
+              <TypeTag
+                to={`/${workType === 'project' ? 'projects' : 'blog'}`}
+                key={workType}
+              >
+                {workType}
+              </TypeTag>
+            )}
             {tags &&
               tags.sort().map(tag => (
                 <Tag to={`/tags/${tag}/`} key={tag}>
@@ -96,7 +136,11 @@ export const PostsListItem: React.FC<PostsListItemProps> = ({node}) => {
               ))}
           </ItemTags>
         </ItemHeader>
-        <ItemDate to={node.fields.slug}>{node.frontmatter.date}</ItemDate>
+        <ItemDate to={workLink}>
+          {workType === 'post'
+            ? node.frontmatter.date
+            : node.frontmatter.date.split(',')[1]}
+        </ItemDate>
       </ItemContainer>
     </Tooltip>
   );

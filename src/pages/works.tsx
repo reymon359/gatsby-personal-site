@@ -4,9 +4,10 @@ import Head from '../components/Head';
 import Layout from '../components/Layout';
 import Stars from '../components/Stars';
 import Content from '../components/Content';
-import {PostsList} from '../components/postsList';
+import {ContentListContainer} from '../components/ContentList';
 import styled from 'styled-components';
 import {Header, Title, Description, Section, SectionBody} from '../styles';
+import {Work} from '../types';
 
 const SectionHeader = styled.div`
   padding-left: 1rem;
@@ -43,26 +44,15 @@ interface WorksProps {
   readonly data: PageQueryData;
 }
 
-interface Post {
-  node: {
-    id: string;
-    excerpt: string;
-    fields: {
-      slug: string;
-    };
-    frontmatter: {
-      date: string;
-      title: string;
-      tags: string[];
-      featuredImage: any;
-    };
-  };
-}
-
 const Works: React.FC<WorksProps> = ({data}) => {
   const siteTitle = data.site.siteMetadata.title;
-  const posts: Post[] = data.allMarkdownRemark.edges;
-
+  const works: Work[] = data.allMarkdownRemark.edges;
+  const posts = works
+    .filter(work => work.node.frontmatter.type === 'post')
+    .slice(0, 3);
+  const projects = works
+    .filter(work => work.node.frontmatter.type === 'project')
+    .slice(0, 3);
   return (
     <Layout title={siteTitle}>
       <Head
@@ -92,16 +82,16 @@ const Works: React.FC<WorksProps> = ({data}) => {
             <MoreLink to="/blog">All posts</MoreLink>
           </SectionHeader>
           <SectionBody>
-            <PostsList posts={posts} />
+            <ContentListContainer content={posts} />
           </SectionBody>
         </Section>
         <Section>
           <SectionHeader>
             <SectionTitle>Latest projects</SectionTitle>
-            <MoreLink to="/blog">All projects</MoreLink>
+            <MoreLink to="/projects">All projects</MoreLink>
           </SectionHeader>
           <SectionBody>
-            <PostsList posts={posts} />
+            <ContentListContainer content={projects} />
           </SectionBody>
         </Section>
       </Content>
@@ -126,7 +116,10 @@ interface PageQueryData {
         frontmatter: {
           date: string;
           title: string;
+          description: string;
           tags: string[];
+          type: string;
+          url: string;
           featuredImage: any;
         };
       };
@@ -135,7 +128,7 @@ interface PageQueryData {
 }
 
 export const pageQuery = graphql`
-  query {
+  query WorksPage {
     site {
       siteMetadata {
         title
@@ -144,7 +137,6 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       filter: {frontmatter: {published: {ne: false}}}
       sort: {fields: [frontmatter___date], order: DESC}
-      limit: 3
     ) {
       edges {
         node {
@@ -156,7 +148,10 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMM DD, YYYY")
             title
+            description
             tags
+            type
+            url
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 800) {
