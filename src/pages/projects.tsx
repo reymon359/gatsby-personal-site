@@ -14,10 +14,10 @@ interface ProjectsProps {
 
 const Projects: React.FC<ProjectsProps> = ({data}) => {
   const siteTitle = data.site.siteMetadata.title;
-  const posts: Work[] = data.allMarkdownRemark.edges.filter(
+  const projects: Work[] = data.allMarkdownRemark.edges.filter(
     work => work.node.frontmatter.type === 'project'
   );
-
+  console.log(projects);
   return (
     <Layout title={siteTitle}>
       <Head
@@ -43,7 +43,7 @@ const Projects: React.FC<ProjectsProps> = ({data}) => {
         </Header>
         <Section>
           <SectionBody>
-            <ContentListContainer content={posts} />
+            <ContentListContainer content={projects} />
           </SectionBody>
         </Section>
       </Content>
