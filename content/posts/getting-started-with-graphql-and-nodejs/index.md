@@ -5,7 +5,7 @@ description: 'Hello World Client Server project to explain how GraphQL Works.'
 date: '2020-04-14'
 author: 'Ramón Morcillo'
 categories: ['Software']
-tags: ['Tutorial', 'Node.js', 'GraphQL']
+tags: ['Tutorial', 'Node.js', 'GraphQL', 'Apollo']
 published: true
 featuredImage: './gia-oris-_uM5_nG2ssc-unsplash.jpg'
 thumbnail: './gia-oris-_uM5_nG2ssc-unsplash.jpg'
