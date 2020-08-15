@@ -10,6 +10,5 @@ published: true
 featuredImage: './full-stack-social-site.png'
 thumbnail: './full-stack-social-site.png'
 type: 'project'
-draft: false
 url: 'https://github.com/reymon359/full-stack-social-site'
 ---

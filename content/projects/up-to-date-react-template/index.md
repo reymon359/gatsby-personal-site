@@ -10,6 +10,5 @@ published: true
 featuredImage: './up-to-date-react-template.png'
 thumbnail: './up-to-date-react-template.png'
 type: 'project'
-draft: false
 url: 'https://github.com/reymon359/up-to-date-react-template'
 ---

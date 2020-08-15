@@ -8,7 +8,6 @@ tags: ['Trip', 'Italy', 'Nature']
 published: true
 featuredImage: './gia-oris-_uM5_nG2ssc-unsplash.jpg'
 type: 'post'
-draft: false
 thumbnail: './gia-oris-_uM5_nG2ssc-unsplash.jpg'
 url: 'none'
 ---

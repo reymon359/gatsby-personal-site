@@ -10,7 +10,6 @@ published: true
 featuredImage: './github_actions_and_renovate_logos.png'
 thumbnail: './github_actions_and_renovate_logos.png'
 type: 'post'
-draft: false
 url: 'none'
 ---
 

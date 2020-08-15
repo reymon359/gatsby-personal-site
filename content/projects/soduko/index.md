@@ -10,6 +10,5 @@ published: true
 featuredImage: './soduko.jpg'
 thumbnail: './soduko.jpg'
 type: 'project'
-draft: true
 url: 'https://reymon359.github.io/ionic-soduko/'
 ---

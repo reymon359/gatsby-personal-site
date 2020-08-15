@@ -10,6 +10,5 @@ published: false
 featuredImage: './my-life.png'
 thumbnail: './my-life.png'
 type: 'project'
-draft: true
 url: 'https://github.com/users/reymon359/projects/1'
 ---

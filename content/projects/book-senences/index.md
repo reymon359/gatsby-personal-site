@@ -10,6 +10,5 @@ published: true
 featuredImage: './book-sentences.png'
 thumbnail: './book-sentences.png'
 type: 'project'
-draft: false
 url: 'https://github.com/reymon359/book-sentences'
 ---

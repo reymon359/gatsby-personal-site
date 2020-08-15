@@ -10,6 +10,5 @@ published: true
 featuredImage: './fitbot.jpg'
 thumbnail: './fitbot.jpg'
 type: 'project'
-draft: false
 url: 'https://www.youtube.com/watch?v=3aYygh8xItA'
 ---

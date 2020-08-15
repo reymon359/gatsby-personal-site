@@ -10,6 +10,5 @@ published: true
 featuredImage: './my-place.jpg'
 thumbnail: './my-place.jpg'
 type: 'project'
-draft: false
 url: 'https://myplace.ramonmorcillo.com/'
 ---

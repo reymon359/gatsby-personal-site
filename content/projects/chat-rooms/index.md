@@ -10,6 +10,5 @@ published: true
 featuredImage: './chat-rooms.jpg'
 thumbnail: './chat-rooms.jpg'
 type: 'project'
-draft: true
 url: 'https://reymon359-chat-rooms.herokuapp.com/'
 ---

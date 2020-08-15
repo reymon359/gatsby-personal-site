@@ -10,6 +10,5 @@ published: true
 featuredImage: './space-pizza.jpg'
 thumbnail: './space-pizza.jpg'
 type: 'project'
-draft: true
 url: 'https://www.youtube.com/watch?v=5ss2MxXbMi0'
 ---
