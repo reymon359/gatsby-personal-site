@@ -5,7 +5,7 @@ description: "Master's final thesis Open Source Project about a Client-Server so
 date: '2020-06-01'
 author: 'Ramón Morcillo'
 categories: ['Software']
-tags: ['React', 'GraphQL', 'TypeScript', ' Apollo']
+tags: ['React', 'GraphQL', 'TypeScript', 'Apollo']
 published: true
 featuredImage: './full-stack-social-site.png'
 thumbnail: './full-stack-social-site.png'
