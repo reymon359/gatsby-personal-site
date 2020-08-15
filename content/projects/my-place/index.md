@@ -7,8 +7,8 @@ author: 'Ramón Morcillo'
 categories: ['Software']
 tags: [ 'JavaScript', 'Personal', 'Learning' ]
 published: true
-featuredImage: './my-place.png'
-thumbnail: './my-place.png'
+featuredImage: './my-place.jpg'
+thumbnail: './my-place.jpg'
 type: 'project'
 draft: false
 url: 'https://myplace.ramonmorcillo.com/'
