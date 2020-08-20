@@ -6,9 +6,9 @@ author: 'Ramón Morcillo'
 categories: ['Adventures']
 tags: ['Trip', 'Italy', 'Nature']
 published: true
-featuredImage: './gia-oris-_uM5_nG2ssc-unsplash.jpg'
+featuredImage: './20190830_dolomites-2019_passo-pordoi_001.jpg'
 type: 'post'
-thumbnail: './gia-oris-_uM5_nG2ssc-unsplash.jpg'
+thumbnail: './20190830_dolomites-2019_passo-pordoi_001.jpg'
 url: 'none'
 ---
 
@@ -18,9 +18,7 @@ When I told people that I was going to or had been in the Dolomites they had no 
 
 In short, the Dolomites is a mountain range that is **part of the Alps**. It is located in **northern Italy** in the provinces of Belluno, Bolzano, Trento, Udine and Pordenone. Although it has many mountains that exceed 3000 m. the highest is the **Marmolada** with **3,342 m**. Finally add that they were declared a **World Heritage Site by UNESCO in 2009**.
 
-{{< fancybox path="https://lh3.googleusercontent.com/" file="FrtS9KPeZX30OEmnliUkxSyjzXiDpAIAY9JrEaeXwdvEQiKUry7xrf2qWy17dlKdRa1GpvQ4GBW1GEdOZO99pDehohJs5gPXJpzCiCopRAx3-HQws_k7azrXk-KbJzWjDsy-QwsM2NyJxaJnCeFfoE4nqz15qpKwDU9M0Sd9CjRf5V8-t2xaAuu1ChLIHK_18T9EdamM3UygxoPdlV-9nnw6CDl-NPDEyrOB157N1kJsdYwxeHPRT62bO9JQxIyWhuEdxYDnlDw0vtx683oBGZMu4ImdNE6-kCKrfeXDAVN1worm4EdoPPMnwoWlAV1EFTnfPT6wW8WLwH4dwUPaSZVU1dc6HmThve7J-7YoKDu6WKKyS3N3TDgPI_Wjqbk9pfDXoQGRfAbJdzubxASetpTcnh86VNHfcRMiFw152mmg2pcdVRzmyBs2o-7bFEx_XJd2fPSBTrX7yhlzknW5vgVaBY7SOR6SLnans6GwEpdmIDQ3V39-ef48wh_Tut_WGABJf3CiuZj7JT2P7QC7-MIM_cRAIF6edh9TPxMcfOE5bnV-LR22tzcsqcgkEKyibzCUMkZQcC7fwAdzfaWdSc3NiCp8PGKfOZbWDrcWUTMl6MyedJLB2YDr2PyJenHTEyArrgiZAgxV38NcGFX1Mpo1NHTb9xIczS0Qfu2zxoUludsYzgpIuDU=w959-h720-no" caption="Dolomites map" gallery="Dolomites Gallery" >}}
-
-[See the map in depth](https://photos.google.com/share/AF1QipPZH-j8AA-QANuV4jkiqw1rbJvqPrbgM76eXKn9EKb_Meu2mdHtyyuDtBff2BlWgg/photo/AF1QipPL_NpIKBGqeN5YGL9shc74JEhRzpzYgyrX2f_d?key=d0VLY2NYRHIwVl9LQV90Wlo0Nm9kNEwwRGNzSk53)
+![Dolomites map](./20190828_dolomites-2019_map_001.jpg)
 
 ## Table of Contents
 - [Our Route](#our-route)
@@ -36,7 +34,7 @@ In short, the Dolomites is a mountain range that is **part of the Alps**. It is 
 
 We left Alicante about 11:00 in the morning and arrive in **Milan** (Malpensa Airport) about **13:00**. Upon arrival we picked up the car that we had previously rented to move during the trip. Although most of the towns and cities are well connected by train and bus, we decided to **rent a car** for having the option to visit places where the buses did not arrive and for the **freedom** that it entails.
 
-We rented the car at **[Autoeurope](https://www.autoeurope.es/)**, a website that I had previously used and that had given me good results. Basically it is a price comparison and car rental companies in which after selecting the days and the point of collection and return shows you a table with the different car models, prices and valuations of each company. In our case we rent a **Golf** for **5 days** for about **120 euros**.
+We rented the car at **[Autoeurope](https://www.autoeurope.es/)**, a website that I had previously used on a trip to Croatia and that had given me good results. Basically it is a price comparison and car rental companies in which after selecting the days and the point of collection and return shows you a table with the different car models, prices and valuations of each company. In our case we rent a **Golf** for **5 days** for about **120 euros**.
 
 Once with the car we headed towards **Trento** on the highway. If you plan to drive in Italy you should know that the speed limits are:
 
@@ -47,13 +45,13 @@ Once with the car we headed towards **Trento** on the highway. If you plan to dr
 
 When we arrived in Trento we headed to the hotel which was about 10 minutes by car from the center, on the side of a mountain.
 
-{{< fancybox path="https://lh3.googleusercontent.com/" file="GfCStMFqiSzUrJJkpOyH-QXdAmhJ3LepM53RBuIjwUJv_sHTUOu2QPz80d9Cnk4vqzeHkpLBaUfqwhRYCvp54eE9-0asQtZHc2vIJNyrOhIUGojSrZ-SujZkIJwObwGRL7E9ZKNE2ix0xSpRuQ9QpzPga66oEmOKkMPqJmEO2gI3oPZF1cmK-120RELmL2V3oM98-uMT0IGo-kMIgSzZSjHJAqc8YSeOOKX83Lat62rHNLNTA2ogEDg4iaoqIWmOBgVJjv9uLxh8zpm0nutV-oBg2I7LRljSz6vx_JOaK4MJuK3rBcGufqWdsxojLctaozY8SCOZ9H8IZ13THoLhrarfEXz29dZF8_4CTH6ndstvpkuR1SGUxza87Lr70EA6K0z1_w3nFX7ggbOoVvmO3BS-dgY0L2-vUSCtNRYupP-qUAv-HsCPpC9c8my6rFz7wCcz4iw74spti5lRyZMo-XimxusbQK0uoekC5ralTDCmMrfYePtURzUMAcA4yf07FVKWF-qmEMyR3qWMF4KSnxpnqc9iXXhzEO_vpdchtaTQuwl-cqGHEWT6HUTPQvRh46ZsIj8KPvIoD5GeB9dZL-kP5V4nP8VX2vmKsQHfVt5b0-IDVp_A7UaH6f440qdwegeuGfaeDMhJhfd_vSrkHEGfbcvp1khohYxgEhyV2o0penedNWIWEJU=w1921-h695-no" caption="Views from the room" gallery="Dolomites Gallery" >}}
+![Hotel Views](./20190828_dolomites-2019_trento-hotel-views_001.jpg)
 
 After leaving our luggage, we went down to the center of Trento and parked in one of the **many public car parks** (free after 8) and we turned around.
 
 The city center was not very big but it was full of life and had many charming squares, especially the main one, *Piazza Duomo*.
 
-{{< fancybox path="https://lh3.googleusercontent.com/" file="DAqnTqVkvnLb4jvy6qeyLQlzmIXJXnleoX2sg_3vUlez0aEPoMlZ2fgxg6m4gMoMklpAL_EG5OX5j88lMe_wWcV_2UzERQMqzM6CfdnM3eOuYnonE9dZ6wsbzl8L4fnHaJh3FGavkLdBeOeKqflxEXCwgeEos52UOrYoI5z4Tnihdc2aa2vEUcH4YjIM24uFlwCGEmz9LvYvEVTsi_PJ1THyYFDPfg9Btqxmr2d9gcRqzh-slTNH8cIQYOPyn3NuDHKE4Yhbq1BUpF96zO8cMdn-7JnmKP4sK-My8JxmLe73JPJqRWumel_M6M0iw_D_4NoQlTF9uxtQ-5J7gCDU0MQn7f2WL5HVrSUjRQm6IBpn5T9ksIPcohm_-7TsZ7vAskodi_8YWJ-hl98ZEY93NW5k_YVee6UJT-Zzhgnam7aBUZx8S6NUFHpMN2z0HJ0B3NIee_Uh6cofdd7eXSIRdC-e_Kvhrw8kn-Zgh8LJBBSXgUVKc9LZLeI-fkh-2dOqSzHYSbcdo5KYA01hpzaEVex_6mlyS9HPboa32wWbsPtq2SStAYWbagm7mq-ZB1mnv0h_HlyO8OaUEPUuzcg5loVJVfFPBoy6J2c1X7Yd4adLHOuJMOBvdjieIrVYJStRthPow4cyp5KEUTTn96kNe4Gab3eiGkrtO7CAD12i2hwttHErXo5fpaVcxnvi-DoY84I6uR97ORvSuJhX3vsR6tJF-x9-s8EzWRpCeZ0pKJdWsp2o=w1123-h842-no" caption="Piazza Duomo" gallery="Dolomites Gallery" >}}
+![Piazza Duomo](./20190827_dolomites-2019_trento_001.jpg)
 
 ### Second day: Lago di Carezza
 
@@ -61,7 +59,7 @@ On the second day we took a final tour of Trento in the morning and bought some 
 
 > The speck is a ham with a distinctive juniper flavor originating in the historical region of Tyrol, which is cured with salt and smoked. [Source: Wikipedia](https://es.wikipedia.org/wiki/Speck)
 
-{{< fancybox path="https://lh3.googleusercontent.com/" file="zob4HGm61zEyHUyPrXcuBdy7nDfpKz9bcH5SQfxcAOiglPVsVvWOhyyXpL8X_zcfsuHBTOpxHk_yyzExEU9uKWeLM7KZXYORNy1qaj-RTVu3IRSiJyCHRVJ7kckY6eBiFNHvcC4eDQZAb--KgAtuY8Fdafz_IMpxXJzxNJjA3JM0myMk9aIEWlUblxteFcl8vUYCEKTnXitmUHHgv_SyulLqMbTtIRTK7z5nezQPfAAakhuJAyrVAqZp7gm0JruADFsBvBwjUIZIJLcBN9oC3kjn-GEuRZF6Kn57vf6FfLFCBBbeyCErW0seDI5dGb4cHL23yKqSvR_J933gr5m9ZPz0nBUxw69-6mqiafNEovCL7PwX2joxzpKD0yu_sqccOSl_NxWgZ7PR0ypYXkVECEzx749ZQogCqPpVsPhWal5qo3-3zkMwEgplWN4yDdg4t-bSXhQ_cqyTuNLPUiKyYJwHsSy9NpFqZnChp1Rcmq45nA7q4qGgpsJSJyzmHk1WJlPshdLbT4BTLagVnX7A54DhM-_o0tdGWKqyYrYdFQub2U2TcZfWl9-NTRvZyt42n8S0d-bUeYHIXJvOyLOzuerVnCis3r66xEDq8xppyIYDkO2AmFfuu5dxNhnWoXnrPMl4qeh92InziOa2A1jKQe3r1v4mUnCtk2CCpBqPv9BmW5QEgnVWc14eTshpTvBsv-BoMYz57OWuNC5S_LhnUPdzOStHA-9M1fSNPtA6fXrwlsVV=w1123-h842-no" caption="Mercato Giornaliero" gallery="Dolomites Gallery" >}}
+![Mercato Giornaliero](./20190828_dolomites-2019_mercato-giornaliero_001.jpg)
 
 Our next objective was the *[Lago di Carezza](https://goo.gl/maps/ZiktEE5wbXXhT9Cf8)*. Although the fastest way was to get to **Bolzano** and then turn off, we decided to go on another slightly longer route, passing through *Pozza di Fassa*, since the Bolzano road we would take on the last day.
 
@@ -71,15 +69,15 @@ Our next objective was the *[Lago di Carezza](https://goo.gl/maps/ZiktEE5wbXXhT9
 
 The lake was beautiful, **the blue-green hues of the water** is what most caught my attention. If you have any idea of approaching the shore, you should know that the lake is **fenced around a perimeter**. Which, although it does not allow you to get too close or bathe, prevents people from littering or destroying the area around it.
 
-{{< fancybox path="https://lh3.googleusercontent.com/" file="9V2MCEn7aKGYhEHqr3vHFYmy1lXWkZNK2SDJ4EuMO9QC1U4gkTM4eby2ij2kLGAmd2_IW7uPYRfziVcAPNWGjIOVP3FjJeo3sVHsmi3HlFmrfwF21cRd8UMDWDM7DDNhLAVdAXPX-lDtNubOYEje3VZYwtAI7K1VgNVPmh0V1XzVsTfHq4Dos13DcQXGxUS1fJB4JEULdqSbbdIs902Rtthe5CbbAvu5XuOFHJuzMR8GslGXc28HHLtUIwP5xG84t-J6ySFTPGiEY1aGmrhqPcDDJ7sXdM_eUuznfjM2KTIFb1yFr-USVj_KYpUSb3f0NnKHB2DzQIavVbpIGozKQwUMfOoSJ5dNOPO5O1vfjmtR-jin1CuE12ClR3JFrqHRpGYCA4-rhTFnDX6ON1EpHapC2tJnKZ6Ew6XkO_RF4BtU3IWPZcFFq7iPtJvZiAnP4AcHSXcg3xA4teOtah9sajj-pgGbsTEaikLfIe0qdRgEVG0RAblqxuc-ogW6dugchrBi46R5TCN_N0nP2K6-v6dqnFo6UDzBkA1On3R2URlgVdG371baKjUIe2DgNvlaJAFeJKaPNPpdUL4YtWXrbxoP8GDc-0YCqnJsz7jjcL7CBxB-1oLvqJI9hE2l1UQ6AZCdYbfQiiwVXTnjj14rOQNtnsC8-W2ETVAh4WN18Jx0Bd67UlT7Z_oi-76-i8ZKYTWwnpfmtZfCb-pvMAfqX63qCCuO8GyfRecOb2zfZnbWO-k4=w959-h565-no" caption="Lago di Carezza" gallery="Dolomites Gallery" >}}
+![Lago di Carezza](./20190828_dolomites-2019_lago-di-carezza_001.jpg)
 
 We end up going along a **trail that surrounds it** along which you can see the lake from different points of view and not very long to travel (half an hour).
 
-{{< fancybox path="https://lh3.googleusercontent.com/" file="3Sp7M2fVnrN5cKjy2sMuv3GzHpH86xo4TdFSMN_HRCww2Z0iArn0oDYJBLVZuo04D8dP6pNH5OCiyJcHURVrw4o9puaewQwzlosXPd_dKQFZ3roEGoMaBiOXarT6YVMFlGcGCVj1gTRYUxXRZvvLVgryV4LGj25TH36lHnJyfsUGsOQrCtn7xoDfJByOGpXZKFiVI4wxTp2Wdx7IJpOjcd0XMmLp-aZH5--CZzytDWuB7OzApdj33kotCC7n_-RurAIzWZuonPAw93LzrTIlkVM6ulb4VlpcNWuuv0cEAxXijE8t4I2aWiOUucuOoNqw0KpAVBeKJSGezseyZuTitmHgG7ao5cxPHTNE1xVTXd62U8dBbJQ1vX1h65qfTF_T3_TubeT_FwXOnEKPzyBx9sBQNIG9LQngRKXVcMlgzNOUtw29aemhLFcj6wiQsqzOy4k1jL361BtbN7yur0RFuIr-UozI8z9PQDeDFzZwVkHOVZAnhQjV_ksqCqqMZ_nH2bSbYn2gMcOSW_-7ZiAn4dXTV880KXPBsMchqkDpQCorzoxcvW1PMiWSRU7mYqr7Z2CxTz3ZI6tSSBlN3gPZfNOYAnnykuTqe_jUSVZgF6M7WkJuS3NMYEAU9S1xtIfOo5dhA3jh0ap8oFPN0KuTWyySnNn6hREaolvAwG-YiDAzuxMJB7Sv3XQFjuXqG12Wvshn8AY7Iq4ckAD9T3DAnk0cBdfVst04guxr6SC_SCMbXf2o=s830-no" caption="Trail around the Lago di Carezza" gallery="Dolomites Gallery" >}}
+![Trail around the Lago di Carezza](./20190828_dolomites-2019_trail-lago-di-carezza_001.jpg)
 
 Later we arrived in **Canazei** where we stayed in an apartment the rest of the nights. Canazei is a large municipality located in the northern part of the ***Val di Fassa***. It is also a place for snow tourism and base station for excursions and climbs to *Sella*, *Marmolada* and *Sassolungo*.
 
-{{< fancybox path="https://lh3.googleusercontent.com/" file="WkkfDZxVHfaTQzebIIMmJHhbRoldee-nEVD6CvbII5WwBgCz2ghQob00zwgKP-sN8X8_f7rT98G7iI5vnHozjsYS-KBTbv-RCKH-wlx8IeyyUa-sbAzr-0oCs7nQgSKdpchKiiz6Ky_hyc-ovH7PbdTRpXCpi38bVf7CgU56Qw2zbw82x_nUfGeOj3_ANgD_0mS_5Y5GjG5t6CzLkVNA-z-XLhO25qff-vacwFXVLPWJZ9RzKWMh5Wxqqvgq_aIWfipFgqM9M42ql2H-6_6jDIginFTdP5-pGxGxAqhWojNV47_2iK_QYq0ujfAz3bKopz0flKFnSopxlzYZxCoCg2AlsJ1emv_IaxyQ4gZB0DoyfyFdlCGXenXNmR3LV1J95W1-eXGUBmW921cD17vT9mlHpey49KFhlgqOvrXC0E2S-tzL7-T4nSRveiXSo6YPr3walq7ExOVs1ngOop78lm8jCRkzIzAS4a6F3UD0MYZ_at1tJvKCBVcCdvyKE4uPauCFaTNjKIzPzF8nz0pU3tqYMBofnCxdftpMAsalbelBgxxaM2HnK7Z0R62X2bUX4CrqUBNS3nUxZiBlGh6KwSe8JR6VmKnezHDibOe2Q2w2TLVPyOXg8YE5yxK_secGlruREVPAzExlQHoTUTuduRl-2XT-FdERKR5OklnlnqdKRObGa7O71hExmOuKLer3Us4LyGgWGx5Xuu5hj8GOWzdcgz0ZtSRY5vuyrupnPmUOJPlT=w1123-h842-no" caption="La Marmolada (right) and other peaks seen from Canazei" gallery="Dolomites Gallery" >}}
+![La Marmolada (right) and other peaks seen from Canazei](./20190828_dolomites-2019_marmolada-from-canazei_001.jpg)
 
 ### Third day: Cortina d'Ampezzo
 
@@ -91,7 +89,8 @@ On the third day we decided to go to **Cortina d'Ampezzo** not only for seeing t
 
 On the way we took the route that passes through ***Passo Pordoi*** and on the way back we took the route through ***Passo di Giau***. Both routes lasted about 1 hour and 30 minutes each.
 
-{{< fancybox path="https://lh3.googleusercontent.com/" file="vPKRc8UTc2chQpuA-sLOoe4P3I_iDkxcrI3U8KCNaw909bwjKq-yrv2c3IGLsuvGRJ48lPanB7Y6O2kUSNWY7aXDo0W4uMPHQ8_VHB2oGuhdFIq8MCzlVrtklMFm8YYaqll3ky3yaUjcTPhoHbgwTSJ3CtJlhmrGAdW21QEe2BT38Cx43QjrqLOdnXRjVdzhwapk3nG22K55c5be5sMn_nr7PiiE3LiF9aaUxDNiYQcbF4tJXcj0lNLP3cCZWUaITg_UFBiEiEiYDfrxgwEXU0Do3QQVrpcB6wzM-b--KlJHRIyohS53jkNbE9vZb8C5jBQABOtgoKXI2xl1A38lX3XbBKBQb4Hl3KarT14D2vPvOZe4prdl6PvLZ0ezIFD509SNZYy8R7VX_CuDgCV1D_0Dpxj-9IRy8lCi8Ll4MkgTKXi_MXMBV5Y8viUZhJiXQSezyDmIjdjx1CWiWQ5gTsveEmPfRV2hUduS1e59f7MR78sc4RI_lawKHeyApHhfMaGwwCzdamtFGcY_8g70fzxb_g5b06Ab8ABy5D83ifsvW58BoQPuSolWB0YEqiGv5t4Eyj0ec2vx1HILHfi-n0A0pERcbZTplSpv1KQ4Zq9H3lbNbohRf4BCgWs9cTHNjkncP5ZG5DgcTZu6KVehhutPEqtO3E8TxyeZ3TdiBvULkHpzJXx6xWEdMelW1cKnpX8CsKMyz-b4JnrKSmVKIY_zzajfCTXy36XRO4VX_RaZOTMU=w1797-h843-no" caption="Views from Passo Pordoi" gallery="Dolomites Gallery" >}}
+
+![Views from Passo Pordoi](./20190830_dolomites-2019_passo-pordoi_001.jpg)
 
 If you decide to rent a car to enjoy the views you will be reassured to know that **the vast majority of roads in the Dolomites are well paved and fit two cars** although they are not delimited by a continuous line in the middle.
 
