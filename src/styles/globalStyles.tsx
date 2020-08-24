@@ -100,20 +100,28 @@ p {
   vertical-align: baseline;
 }
 
+strong {
+  font-weight: ${theme.fontWeights.bold};
+}
+
 ul, ol {
   font-size: 1.2rem;
   padding: 1rem;
 }
+
 ul {
   list-style-type: circle;
   margin-left: 1rem;
 }
+
 ol {
   list-style-type: decimal;
 }
+
 li{
   padding: 0.2rem ;
 }
+
 a {
   cursor: pointer;
   text-decoration: none;
