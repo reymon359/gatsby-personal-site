@@ -1,10 +1,10 @@
 ---
 title: 'Visiting the Dolomites'
-description: 'Travel through the Dolomites, the Italian Alps.'
+description: 'Trip through the Dolomites, the Italian Alps.'
 date: '2019-08-29'
 author: 'Ramón Morcillo'
 categories: ['Adventures']
-tags: ['Trip', 'Italy', 'Nature']
+tags: ['Adventures', 'Trip', 'Italy', 'Nature']
 published: true
 featuredImage: './20190830_dolomites-2019_passo-pordoi_001.jpg'
 type: 'post'
@@ -12,25 +12,20 @@ thumbnail: './20190830_dolomites-2019_passo-pordoi_001.jpg'
 url: 'none'
 ---
 
-## What are the Dolomites?
+When I told people that I was going to spend some days visiting the Dolomites they had no idea what they were, and, the truth is that neither did I until, a couple of years ago, my mother mentioned that she would like to visit them.
 
-When I told people that I was going to or had been in the Dolomites they had no idea what they were, the truth is that **I didn't even know it** until, a couple of years ago, my mother mentioned that she would like to visit them.
-
-In short, the Dolomites is a mountain range that is **part of the Alps**. It is located in **northern Italy** in the provinces of Belluno, Bolzano, Trento, Udine and Pordenone. Although it has many mountains that exceed 3000 m. the highest is the **Marmolada** with **3,342 m**. Finally add that they were declared a **World Heritage Site by UNESCO in 2009**.
+In short, the Dolomites is a mountain range that is part of [the Alps](https://en.wikipedia.org/wiki/Alps). It is located in **northern Italy** in the provinces of Belluno, Bolzano, Trento, Udine, and Pordenone. Although it has many mountains that exceed 3000 m. the highest is the **Marmolada** with **3,342 m**. **They were declared a World Heritage Site by UNESCO in 2009**.
 
 ![Dolomites map](./20190828_dolomites-2019_map_001.jpg)
 
 ## Table of Contents
-- [Our Route](#our-route)
-  - [First day: Trento](#first-day-trento)
-  - [Second day: Lago di Carezza](#second-day-lago-di-carezza)
-  - [Third day: Cortina d'Ampezzo](#third-day-cortina-dampezzo)
-  - [Fourth day: Bolzano and Lago di Garda](#fourth-day-bolzano-and-lago-di-garda)
-- [Conclusion](#conclusion)
+- [First day: Trento](#First-day-Trento)
+- [Second day: Lago di Carezza](#Second-day-Lago-di-Carezza)
+- [Third day: Cortina d'Ampezzo](#Third-day-Cortina-dAmpezzo)
+- [Fourth day: Bolzano and Lago di Garda](#Fourth-day-Bolzano-and-Lago-di-Garda)
+- [Conclusion](#Conclusion)
 
-## Our Route
-
-### First day: Trento
+## First day: Trento
 
 We left Alicante about 11:00 in the morning and arrive in **Milan** (Malpensa Airport) about **13:00**. Upon arrival we picked up the car that we had previously rented to move during the trip. Although most of the towns and cities are well connected by train and bus, we decided to **rent a car** for having the option to visit places where the buses did not arrive and for the **freedom** that it entails.
 
@@ -53,7 +48,7 @@ The city center was not very big but it was full of life and had many charming s
 
 ![Piazza Duomo](./20190827_dolomites-2019_trento_001.jpg)
 
-### Second day: Lago di Carezza
+## Second day: Lago di Carezza
 
 On the second day we took a final tour of Trento in the morning and bought some products of the local cuisine at the *[Mercato Giornaliero](https://goo.gl/maps/mN917WdRzk1FuETP9)*. We took several types of cheese and sausages from the area such as the *Speck*.
 
@@ -79,7 +74,7 @@ Later we arrived in **Canazei** where we stayed in an apartment the rest of the 
 
 ![La Marmolada (right) and other peaks seen from Canazei](./20190828_dolomites-2019_marmolada-from-canazei_001.jpg)
 
-### Third day: Cortina d'Ampezzo
+## Third day: Cortina d'Ampezzo
 
 On the third day we decided to go to **Cortina d'Ampezzo** not only for seeing the city itself, but for the **route through the Dolomites with spectacular views**. In order to see the maximum we went and returned by different paths.
 
@@ -106,7 +101,7 @@ On the way back we passed by *Fedaia Lake* from where we could see the **Marmola
 
 ![Marmolada Glacier](./20190829_dolomites-2019_marmolada-glacier_001.jpg)
 
-### Fourth day: Bolzano and Lago di Garda
+## Fourth day: Bolzano and Lago di Garda
 
 The last day we got up early and went early to **Bolzano** a city west of Canazei and north of Trento. It is a **bilingual city** where **both Italian and German are spoken**. The most remarkable street was ***Via dei Portici***, one of the main streets where shops were located on the sides under porticos.
 
