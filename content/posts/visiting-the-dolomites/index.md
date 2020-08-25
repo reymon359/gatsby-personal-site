@@ -27,36 +27,37 @@ In short, the Dolomites is a mountain range that is part of [the Alps](https://e
 
 ## First day: Trento
 
-We left Alicante about 11:00 in the morning and arrive in **Milan** (Malpensa Airport) about **13:00**. Upon arrival we picked up the car that we had previously rented to move during the trip. Although most of the towns and cities are well connected by train and bus, we decided to **rent a car** for having the option to visit places where the buses did not arrive and for the **freedom** that it entails.
+We left Alicante about 11:00 in the morning and arrive in Milan (Malpensa Airport) at about 13:00. Upon arrival, we picked up a car we had previously rented because although most of the region is well-connected by train and bus, we wanted to **visit places freely and at our pace**.
 
-We rented the car at **[Autoeurope](https://www.autoeurope.es/)**, a website that I had previously used on a trip to Croatia and that had given me good results. Basically it is a price comparison and car rental companies in which after selecting the days and the point of collection and return shows you a table with the different car models, prices and valuations of each company. In our case we rent a **Golf** for **5 days** for about **120 euros**.
+We rented the car at Autoeurope, a website that I had previously used on a trip to Croatia, and I had a great experience with it. There you can compare and choose from a variety of car rental companies. We (4 people) ended up renting a Golf for 5 days for 120 euros more or less.
 
-Once with the car we headed towards **Trento** on the highway. If you plan to drive in Italy you should know that the speed limits are:
+We then headed towards Trento on the highway. In Italy the speed limits are:
 
 * **130 km/h** on the highways.
 * **110 km/h** on the main roads.
 * **90 km/h** on secondary roads
 * **50 km/h** in urban areas.
 
-When we arrived in Trento we headed to the hotel which was about 10 minutes by car from the center, on the side of a mountain.
+When we arrived at Trento we drove to the hotel which was about 10 minutes by car from the center, on the side of a mountain.
 
 ![Hotel Views](./20190827_dolomites-2019_trento-hotel-views_001.jpg)
 
-After leaving our luggage, we went down to the center of Trento and parked in one of the **many public car parks** (free after 8) and we turned around.
+After leaving our luggage, we went down to Trento and parked in one of the **many public car parks** (free after 8) to have a look at the city.
 
-The city center was not very big but it was full of life and had many charming squares, especially the main one, *Piazza Duomo*.
+Despite the city was not very big it was full of life and had many charming squares, especially the main one, the _Piazza Duomo_.
 
 ![Piazza Duomo](./20190827_dolomites-2019_trento_001.jpg)
 
 ## Second day: Lago di Carezza
 
-On the second day we took a final tour of Trento in the morning and bought some products of the local cuisine at the *[Mercato Giornaliero](https://goo.gl/maps/mN917WdRzk1FuETP9)*. We took several types of cheese and sausages from the area such as the *Speck*.
+On the second day, we had our last walk at Trento in the morning and bought some local Italian products at the _[Mercato Giornaliero](https://goo.gl/maps/mN917WdRzk1FuETP9)_. We mainly got cheeses and sausages from the area such as the _Speck_ and some fruits.
 
-> The speck is a ham with a distinctive juniper flavor originating in the historical region of Tyrol, which is cured with salt and smoked. [Source: Wikipedia](https://es.wikipedia.org/wiki/Speck)
+> The speck is a ham with a distinctive juniper flavor originating in the historical region of Tyrol, which is cured with salt and smoked. 
+> — [Wikipedia](https://es.wikipedia.org/wiki/Speck)
 
 ![Mercato Giornaliero](./20190828_dolomites-2019_mercato-giornaliero_001.jpg)
 
-Our next objective was the *[Lago di Carezza](https://goo.gl/maps/ZiktEE5wbXXhT9Cf8)*. Although the fastest way was to get to **Bolzano** and then turn off, we decided to go on another slightly longer route, passing through *Pozza di Fassa*, since the Bolzano road we would take on the last day.
+Our next objective was the _[Lago di Carezza](https://goo.gl/maps/ZiktEE5wbXXhT9Cf8)_. The fastest way to get there was heading up to Bolzano and then turn right. We planned to visit Bolzano the last day, so we took a slightly longer route passing through _Pozza di Fassa_.
 
 <div style="text-align:center">
 <iframe src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d353153.69068352063!2d11.103147546985761!3d46.24996521522647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x478276cac9ce9ddb%3A0x27c6a299139ff547!2sTrento%2C%20Province%20of%20Trento%2C%20Italy!3m2!1d46.074779299999996!2d11.1217486!4m5!1s0x477869237b61dcd9%3A0x99d972828b60eebd!2sPozza%20di%20Fassa%2C%2038036%20Province%20of%20Trento%2C%20Italy!3m2!1d46.4306894!2d11.6857172!4m5!1s0x47786fbe51650425%3A0x26e4d13e4445202f!2sLago%20di%20Carezza!3m2!1d46.4104889!2d11.5758269!5e0!3m2!1sen!2ses!4v1567698533267!5m2!1sen!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
