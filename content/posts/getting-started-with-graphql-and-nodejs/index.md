@@ -199,7 +199,7 @@ Now if we run `node server/server.js` we will finally have our GrapqhQL server u
 
 You can go and check it on [http://localhost:9000/](http://localhost:9000/)
 
-```cmd
+```bash
 ~/graphql-hello-world-server
 > node server/server.js
 Server running at http://localhost:9000/
