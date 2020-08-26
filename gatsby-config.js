@@ -71,6 +71,7 @@ module.exports = {
               classPrefix: 'language-',
               inlineCodeMarker: null,
               aliases: {},
+              showCaptions: [`alt`],
               showLineNumbers: true,
               noInlineHighlight: true,
               backgroundColor: 'none'

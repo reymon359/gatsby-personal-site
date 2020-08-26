@@ -160,6 +160,13 @@ img[src$=".gif"] {
   horizontal-align: middle;
 }
 
+figcaption {
+  text-align: center;
+  font-size: ${theme.fontSizes.normal};
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+
 ::selection {
   color: ${theme.colors.secondary};
   background: transparent;
