@@ -100,20 +100,28 @@ p {
   vertical-align: baseline;
 }
 
+strong {
+  font-weight: ${theme.fontWeights.bold};
+}
+
 ul, ol {
   font-size: 1.2rem;
   padding: 1rem;
 }
+
 ul {
   list-style-type: circle;
   margin-left: 1rem;
 }
+
 ol {
   list-style-type: decimal;
 }
+
 li{
   padding: 0.2rem ;
 }
+
 a {
   cursor: pointer;
   text-decoration: none;
@@ -144,12 +152,6 @@ blockquote{
   padding-left: 23px;
   font-style: italic;
 }
-code {
-    background: ${theme.colors.darker};
-    color: ${theme.colors.lighter};
-    box-shadow: none;
-    font-size: ${theme.fontSizes.normal}!important;
-}
 
 img[src$=".gif"] {
   margin: auto;
@@ -158,10 +160,22 @@ img[src$=".gif"] {
   horizontal-align: middle;
 }
 
+figcaption {
+  text-align: center;
+  font-size: ${theme.fontSizes.normal};
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+
+em {
+  font-style: italic;
+}
+
 ::selection {
   color: ${theme.colors.secondary};
   background: transparent;
 }
+
 `;
 
 export const GlobalStyle = createGlobalStyle`
