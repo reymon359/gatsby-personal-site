@@ -18,7 +18,7 @@ type ItemProps = {
 
 const Item = styled.div<ItemProps>`
   position: absolute;
-  font-family: ${props => props.theme.fonts.primary};
+  font-family: ${props => props.theme.fontFamilies.primary};
   letter-spacing: 0.1rem;
   color: ${props => props.theme.colors.lightest};
   font-size: 0.85rem;

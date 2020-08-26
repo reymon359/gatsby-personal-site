@@ -78,7 +78,7 @@ const NavItem = styled.li`
 
   a {
     font-size: ${props => props.theme.fontSizes.normal};
-    font-family: ${props => props.theme.fonts.primary};
+    font-family: ${props => props.theme.fontFamilies.primary};
     color: ${props => props.theme.colors.medium};
     font-weight: ${props => props.theme.fontWeights.regular};
     pointer-events: all;

@@ -40,7 +40,7 @@ export const theme = {
     // boxShadowmedium: '0 1px 2px 0 rgba(0, 0, 0, 0.6)',
     // boxShadowlarge: '0 1px 2px 0 rgba(0, 0, 0, 0.6)',
   },
-  fonts: {
+  fontFamilies: {
     primary:
       '"Roboto", stack-sans, "Open Sans", "Lato", "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
     code:
