@@ -57,9 +57,11 @@ const Shoable = styled.div<ShoableProps>`
     }
   `}
 `;
+
 type HeaderProps = {
   transparent: boolean;
 };
+
 const Header = styled.header<HeaderProps>`
   ${props => props.theme.media.md`
     display: flex;
@@ -80,6 +82,30 @@ const Header = styled.header<HeaderProps>`
     `}
 `;
 
+interface HelpMessageProps {
+  open: boolean;
+  transparent: boolean;
+}
+// Todo: transition disapear in some seconds
+const HelpMessage = styled.div<HelpMessageProps>`
+  transition: all 2s;
+  color: ${props => props.theme.colors.light};
+  font-size: ${props => props.theme.fontSizes.normal};
+  font-weight: ${props => props.theme.fontWeights.normal};
+  font-family: ${props => props.theme.fontFamilies.code};
+  letter-spacing: 0.05rem;
+  text-align: center;
+
+  ${props => props.theme.media.sm`
+  margin-bottom: -0.3rem;
+      max-width: 70%;
+  `}
+  ${props => props.open && `opacity: 0;`}
+  ${props => !props.transparent && `display: none;`}
+`
+
+
+
 interface NavigationContainerProps {
   readonly transparentNavigation: boolean;
 }
@@ -93,6 +119,9 @@ export const NavigationContainer: React.FC<NavigationContainerProps> = ({
     <Wrapper enablePointerEvents={transparentNavigation}>
       <Header transparent={transparentNavigation}>
         <Logo />
+        <HelpMessage open={open} transparent={transparentNavigation}>
+        Swipe around the screen or zoom it
+        </HelpMessage>
         <ToggleMenu open={open} onClick={() => setOpen(!open)} />
       </Header>
       <Shoable open={open} transparent={transparentNavigation}>
