@@ -152,12 +152,6 @@ blockquote{
   padding-left: 23px;
   font-style: italic;
 }
-code {
-    background: ${theme.colors.darker};
-    color: ${theme.colors.lighter};
-    box-shadow: none;
-    font-size: ${theme.fontSizes.normal}!important;
-}
 
 img[src$=".gif"] {
   margin: auto;
