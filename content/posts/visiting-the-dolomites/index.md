@@ -78,22 +78,21 @@ Later we arrived at Canazei where we would stay the rest of the trip nights. Can
 
 On the third day, we went to _Cortina d’Ampezzo_ not just for seeing the city itself, but for the route with spectacular views through the Dolomites to get to it. In order to see as much as we could, we went and returned by different paths.
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m44!1m12!1m3!1d87912.80256197359!2d11.885745942173774!3d46.48286366915306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m29!3e0!4m5!1s0x47786a694ab62bc3%3A0xcb8e3fb552a4e7e4!2sCanazei%2C%20Province%20of%20Trento%2C%20Italy!3m2!1d46.4767783!2d11.770364899999999!4m5!1s0x47784034607e7663%3A0x81157a992b3a2fc!2sPasso%20Pordoi!3m2!1d46.487834!2d11.8140476!4m5!1s0x47783435d247033f%3A0xdd3c30437b92e42b!2s32043%20Cortina%20d&#39;Ampezzo%2C%20Province%20of%20Belluno%2C%20Italy!3m2!1d46.5404711!2d12.1356524!4m3!3m2!1d46.4830945!2d12.05416!4m5!1s0x47786a694ab62bc3%3A0xcb8e3fb552a4e7e4!2sCanazei%2C%20Province%20of%20Trento%2C%20Italy!3m2!1d46.4767783!2d11.770364899999999!5e0!3m2!1sen!2ses!4v1567547513219!5m2!1sen!2ses&maptype=satellite" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+On the go, we took passed through _Passo Pordoi_, and _Passo Falzarego_ on the way back we took the route through _Passo di Giau_ and the _Fedaia Lake_. Both routes lasted about 1 hour and 30 minutes each.
 
-On the go, we took passed through _Passo Pordoi_, and on the way back we took the route through _Passo di Giau_. Both routes lasted about 1 hour and 30 minutes each.
-
+<iframe src="https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d175825.81720935728!2d11.815877312487777!3d46.48279964344123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e0!4m5!1s0x47786a694ab62bc3%3A0xcb8e3fb552a4e7e4!2sCanazei%2C%20Trentino%2C%20Italy!3m2!1d46.4767783!2d11.770364899999999!4m5!1s0x47784034607e7663%3A0x81157a992b3a2fc!2sPasso%20Pordoi%2C%2032020%20Province%20of%20Belluno%2C%20Italy!3m2!1d46.487834!2d11.8140476!4m5!1s0x477837f5f673e5eb%3A0xe5210d91f732fe92!2sFalzarego%20Pass%2C%20Cortina%20d&#39;Ampezzo%2C%20Province%20of%20Belluno%2C%20Italy!3m2!1d46.5191252!2d12.0089186!4m5!1s0x47783435d247033f%3A0xdd3c30437b92e42b!2sCortina%20d&#39;Ampezzo%2C%2032043%20Province%20of%20Belluno%2C%20Italy!3m2!1d46.5404711!2d12.1356524!4m5!1s0x477849c8ddb4726f%3A0x6e338788d85b33c1!2sGiau%20Pass%2C%2032046%20San%20Vito%20di%20Cadore%2C%20Province%20of%20Belluno%2C%20Italy!3m2!1d46.4830556!2d12.0541667!4m5!1s0x47784148229089d9%3A0x42b5e7b17c12fccb!2sFedaia%20Lake%2C%20Canazei%2C%20Trentino%2C%20Italy!3m2!1d46.459097299999996!2d11.8702524!4m5!1s0x47786a694ab62bc3%3A0xcb8e3fb552a4e7e4!2sCanazei%2C%20Trentino%2C%20Italy!3m2!1d46.4767783!2d11.770364899999999!5e0!3m2!1sen!2ses!4v1598433772339!5m2!1sen!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 ![Views from Passo Pordoi](./20190830_dolomites-2019_passo-pordoi_001.jpg)
 
-If you decide to rent a car to enjoy the views you will be reassured to know that **the vast majority of roads in the Dolomites are well paved and fit two cars** although they are not delimited by a continuous line in the middle.
+If you end up renting a car to enjoy the views you will be reassured to know that the vast majority of the roads are well paved and fit two cars although many of them are not delimited by a continuous line in the middle, so **drive carefully and not too fast**.
 
 ![Views from Passo Falzarego](./20190829_dolomites-2019_passo-falzarego_001.jpg)
 
-Cortina d'Ampezzo is larger than Canazei and is a winter sports complex known for its ski slopes, landscapes, accommodations, shops. It is very frequented by the international jet-set.
+Cortina d'Ampezzo is larger than Canazei and is a well-known place for winter sports given its ski slopes, landscapes, accommodations, shops. It is very frequented by the international jet-set.
 
 ![Cortina d'Ampezzo main street](./20190829_dolomites-2019_cortina-dampezzo_001.jpg)
 
-On the way back we passed by *Fedaia Lake* from where we could see the **Marmolada Glacier**.
+On the way back we passed by *Fedaia Lake* from where we could see the **Marmolada Glacier**. Here are some pictures of both.
 
 ![Fedaia lake](./20190829_dolomites-2019_fedaia-lake_001.jpg)
 
@@ -101,17 +100,18 @@ On the way back we passed by *Fedaia Lake* from where we could see the **Marmola
 
 ## Fourth day: Bolzano and Lago di Garda
 
-The last day we got up early and went early to **Bolzano** a city west of Canazei and north of Trento. It is a **bilingual city** where **both Italian and German are spoken**. The most remarkable street was ***Via dei Portici***, one of the main streets where shops were located on the sides under porticos.
+The last day we got up early and headed to Bolzano a city on the west of Canazei and north of Trento. One thing that caught my attention is that It is a **bilingual city where both Italian and German languages are spoken**. The most remarkable street is _Via dei Portici_, one of the main streets where shops are located under porticos on both sides.
 
 ![Bolzano. Via dei Portici](./20190830_dolomites-2019_bolzano-via-dei-portici_001.jpg)
 
-After Bolzano and on the way to Milan Airport, we stop in a couple of villages on the shores of ***Lago di Garda***, **the largest lake in Italy**. First we were in ***Riva del Garda*** and later ***Peschiera del Garda***.
+After leaving Bolzano and on the way to Milan's Airport, we stopped in a couple of villages on the shores of _Lago di Garda_, the **largest lake in Italy**. First, in _Riva del Garda_ and later _Peschiera del Garda_.
 
 ![View of Lake Garda from Riva di Garda](./20190830_dolomites-2019_riva-di-garda_001.jpg)
 
-Both *Riva del Garda* and *Peschiera del Garda* are cities whose *main activity is Tourism*. In Peschiera del Garda was more remarkable than in Riva given the large number of restaurants and shops of tourists on the shore of the lake.
+Both Riva del Garda and Peschiera del Garda are cities whose **main activity is Tourism**. In Peschiera del Garda this fact was more remarkable than in Riva given numerous restaurants and tourists' shops all around the city.
 
 ![View of Lake Garda from Peschiera di Garda](./20190830_dolomites-2019_peschiera-di-garda_001.jpg)
 
 ## Conclusion
-After having been in other cities and more popular areas of the country years ago this trip has discovered me **an Italy very different from what I was used to** that did not expect at all. The Dolomites is an incredible area that if you have the opportunity to go you should not miss it, but **if you can afford to rent a car to tour it do not hesitate** because otherwise you will probably miss part of the landscapes described above.
+
+After having been in other cities and more popular areas of Italy in the past **this trip was very different and more nature connected** from what I was used to seeing in those areas. The Dolomites are an incredible area that if you have the opportunity to visit you should not miss it, and remember to rent a car if you can afford it to move around them because otherwise, you will probably miss part of the landscapes described above.
