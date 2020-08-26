@@ -167,10 +167,15 @@ figcaption {
   margin: 0.5rem 0;
 }
 
+em {
+  font-style: italic;
+}
+
 ::selection {
   color: ${theme.colors.secondary};
   background: transparent;
 }
+
 `;
 
 export const GlobalStyle = createGlobalStyle`
