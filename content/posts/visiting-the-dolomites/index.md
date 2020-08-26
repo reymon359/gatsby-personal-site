@@ -59,31 +59,28 @@ On the second day, we had our last walk at Trento in the morning and bought some
 
 Our next objective was the _[Lago di Carezza](https://goo.gl/maps/ZiktEE5wbXXhT9Cf8)_. The fastest way to get there was heading up to Bolzano and then turn right. We planned to visit Bolzano the last day, so we took a slightly longer route passing through _Pozza di Fassa_.
 
-<div style="text-align:center">
-<iframe src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d353153.69068352063!2d11.103147546985761!3d46.24996521522647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x478276cac9ce9ddb%3A0x27c6a299139ff547!2sTrento%2C%20Province%20of%20Trento%2C%20Italy!3m2!1d46.074779299999996!2d11.1217486!4m5!1s0x477869237b61dcd9%3A0x99d972828b60eebd!2sPozza%20di%20Fassa%2C%2038036%20Province%20of%20Trento%2C%20Italy!3m2!1d46.4306894!2d11.6857172!4m5!1s0x47786fbe51650425%3A0x26e4d13e4445202f!2sLago%20di%20Carezza!3m2!1d46.4104889!2d11.5758269!5e0!3m2!1sen!2ses!4v1567698533267!5m2!1sen!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d353153.69068352063!2d11.103147546985761!3d46.24996521522647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x478276cac9ce9ddb%3A0x27c6a299139ff547!2sTrento%2C%20Province%20of%20Trento%2C%20Italy!3m2!1d46.074779299999996!2d11.1217486!4m5!1s0x477869237b61dcd9%3A0x99d972828b60eebd!2sPozza%20di%20Fassa%2C%2038036%20Province%20of%20Trento%2C%20Italy!3m2!1d46.4306894!2d11.6857172!4m5!1s0x47786fbe51650425%3A0x26e4d13e4445202f!2sLago%20di%20Carezza!3m2!1d46.4104889!2d11.5758269!5e0!3m2!1sen!2ses!4v1567698533267!5m2!1sen!2ses" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
 
-The lake was beautiful, **the blue-green hues of the water** is what most caught my attention. If you have any idea of approaching the shore, you should know that the lake is **fenced around a perimeter**. Which, although it does not allow you to get too close or bathe, prevents people from littering or destroying the area around it.
+The lake was stunning, **the water's blue and green colors** are what most caught my attention. In case you are wondering about swimming in it, you will have to find another lake because this one is fenced around to prevent people from littering or destroying it.
 
 ![Lago di Carezza](./20190828_dolomites-2019_lago-di-carezza_001.jpg)
 
-We end up going along a **trail that surrounds it** along which you can see the lake from different points of view and not very long to travel (half an hour).
+We ended up going along a beautiful trail that surrounds it for about half an hour and from which you can see the lake from different points of view.
+
 
 ![Trail around the Lago di Carezza](./20190828_dolomites-2019_trail-lago-di-carezza_001.jpg)
 
-Later we arrived in **Canazei** where we stayed in an apartment the rest of the nights. Canazei is a large municipality located in the northern part of the ***Val di Fassa***. It is also a place for snow tourism and base station for excursions and climbs to *Sella*, *Marmolada* and *Sassolungo*.
+Later we arrived at Canazei where we would stay the rest of the trip nights. Canazei is a large municipality located in the northern part of the _Val di Fassa_. It is also known as a place for snow tourism and base station for trails and climbs to the _Sella_, _Marmolada_, and _Sassolungo_.
 
 ![La Marmolada (right) and other peaks seen from Canazei](./20190828_dolomites-2019_marmolada-from-canazei_001.jpg)
 
 ## Third day: Cortina d'Ampezzo
 
-On the third day we decided to go to **Cortina d'Ampezzo** not only for seeing the city itself, but for the **route through the Dolomites with spectacular views**. In order to see the maximum we went and returned by different paths.
+On the third day, we went to _Cortina d’Ampezzo_ not just for seeing the city itself, but for the route with spectacular views through the Dolomites to get to it. In order to see as much as we could, we went and returned by different paths.
 
-<div style="text-align:center">
-<iframe src="https://www.google.com/maps/embed?pb=!1m44!1m12!1m3!1d87912.80256197359!2d11.885745942173774!3d46.48286366915306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m29!3e0!4m5!1s0x47786a694ab62bc3%3A0xcb8e3fb552a4e7e4!2sCanazei%2C%20Province%20of%20Trento%2C%20Italy!3m2!1d46.4767783!2d11.770364899999999!4m5!1s0x47784034607e7663%3A0x81157a992b3a2fc!2sPasso%20Pordoi!3m2!1d46.487834!2d11.8140476!4m5!1s0x47783435d247033f%3A0xdd3c30437b92e42b!2s32043%20Cortina%20d&#39;Ampezzo%2C%20Province%20of%20Belluno%2C%20Italy!3m2!1d46.5404711!2d12.1356524!4m3!3m2!1d46.4830945!2d12.05416!4m5!1s0x47786a694ab62bc3%3A0xcb8e3fb552a4e7e4!2sCanazei%2C%20Province%20of%20Trento%2C%20Italy!3m2!1d46.4767783!2d11.770364899999999!5e0!3m2!1sen!2ses!4v1567547513219!5m2!1sen!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m44!1m12!1m3!1d87912.80256197359!2d11.885745942173774!3d46.48286366915306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m29!3e0!4m5!1s0x47786a694ab62bc3%3A0xcb8e3fb552a4e7e4!2sCanazei%2C%20Province%20of%20Trento%2C%20Italy!3m2!1d46.4767783!2d11.770364899999999!4m5!1s0x47784034607e7663%3A0x81157a992b3a2fc!2sPasso%20Pordoi!3m2!1d46.487834!2d11.8140476!4m5!1s0x47783435d247033f%3A0xdd3c30437b92e42b!2s32043%20Cortina%20d&#39;Ampezzo%2C%20Province%20of%20Belluno%2C%20Italy!3m2!1d46.5404711!2d12.1356524!4m3!3m2!1d46.4830945!2d12.05416!4m5!1s0x47786a694ab62bc3%3A0xcb8e3fb552a4e7e4!2sCanazei%2C%20Province%20of%20Trento%2C%20Italy!3m2!1d46.4767783!2d11.770364899999999!5e0!3m2!1sen!2ses!4v1567547513219!5m2!1sen!2ses&maptype=satellite" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
-On the way we took the route that passes through ***Passo Pordoi*** and on the way back we took the route through ***Passo di Giau***. Both routes lasted about 1 hour and 30 minutes each.
+On the go, we took passed through _Passo Pordoi_, and on the way back we took the route through _Passo di Giau_. Both routes lasted about 1 hour and 30 minutes each.
 
 
 ![Views from Passo Pordoi](./20190830_dolomites-2019_passo-pordoi_001.jpg)
