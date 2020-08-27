@@ -5,6 +5,7 @@ import Menu from './Menu';
 import ToggleMenu from './ToggleMenu';
 import styled, {css} from 'styled-components';
 import {addRemToProperty} from '../../styles/shared';
+import {useDeviceDetect} from '../../hooks';
 
 type WrapperProps = {
   enablePointerEvents: boolean;
@@ -83,44 +84,57 @@ const Header = styled.header<HeaderProps>`
 `;
 
 interface HelpMessageProps {
-  open: boolean;
   transparent: boolean;
 }
-// Todo: transition disapear in some seconds
+
 const HelpMessage = styled.div<HelpMessageProps>`
-  transition: all 2s;
   color: ${props => props.theme.colors.light};
   font-size: ${props => props.theme.fontSizes.normal};
   font-weight: ${props => props.theme.fontWeights.normal};
   font-family: ${props => props.theme.fontFamilies.code};
   letter-spacing: 0.05rem;
   text-align: center;
-
+  opacity: 0;
   ${props => props.theme.media.sm`
-  margin-bottom: -0.3rem;
-      max-width: 70%;
+    margin-bottom: -0.3rem;
+    max-width: 70%;
   `}
-  ${props => props.open && `opacity: 0;`}
   ${props => !props.transparent && `display: none;`}
-`
+  animation: fade 10s;
 
-
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+`;
 
 interface NavigationContainerProps {
   readonly transparentNavigation: boolean;
 }
 
 export const NavigationContainer: React.FC<NavigationContainerProps> = ({
-  transparentNavigation
+  transparentNavigation = false
 }) => {
   const [open, setOpen] = useState(false);
+  const {isMobile} = useDeviceDetect();
+
+  const helpMessageText = isMobile
+    ? 'Swipe around the screen or zoom it'
+    : 'Move around the screen or scroll it';
 
   return (
     <Wrapper enablePointerEvents={transparentNavigation}>
       <Header transparent={transparentNavigation}>
         <Logo />
-        <HelpMessage open={open} transparent={transparentNavigation}>
-        Swipe around the screen or zoom it
+        <HelpMessage transparent={transparentNavigation}>
+          {helpMessageText}
         </HelpMessage>
         <ToggleMenu open={open} onClick={() => setOpen(!open)} />
       </Header>
