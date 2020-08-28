@@ -1,6 +1,7 @@
 import React from 'react';
 import {useDeviceDetect} from '../../hooks';
 import styled from 'styled-components';
+import {components} from '../../data';
 
 interface HelpMessageContainerProps {
   transparent: boolean;
@@ -14,6 +15,11 @@ const HelpMessageContainer = styled.div<HelpMessageContainerProps>`
   letter-spacing: 0.05rem;
   text-align: center;
   opacity: 0;
+  display: none;
+  ${props => props.theme.media.md`
+    display: block;
+  `}
+
   ${props => props.theme.media.sm`
     margin-bottom: -0.3rem;
     max-width: 70%;
@@ -40,10 +46,13 @@ interface HelpMessageProps {
 
 const HelpMessage: React.FC<HelpMessageProps> = ({transparent = false}) => {
   const {isMobile} = useDeviceDetect();
+  const {
+    navigation: {
+      helpMessage: {mobile, desktop}
+    }
+  } = components;
 
-  const helpMessageText = isMobile
-    ? 'Swipe around the screen or zoom it'
-    : 'Move around the screen or scroll it';
+  const helpMessageText = isMobile ? mobile : desktop;
 
   return (
     <HelpMessageContainer transparent={transparent}>

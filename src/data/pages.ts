@@ -1,4 +1,4 @@
-module.exports = {
+export const pages = {
   about: {
     mainContent: 'Hi there Pere'
   },
