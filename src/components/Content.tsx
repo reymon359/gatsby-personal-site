@@ -7,12 +7,10 @@ export const ContentContainer = styled.div`
   margin: 11rem auto 5rem;
   position: absolute;
   height: 100%;
-  // ToDo: check if this is necessary. 
-  // check widths and heights
-  //top: 0;
-  //left: 0;
-  //right: 0;
-  //bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
   ${props => props.theme.media.lg`
     width: 1.45rem;
