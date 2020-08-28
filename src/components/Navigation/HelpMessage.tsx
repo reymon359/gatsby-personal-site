@@ -15,10 +15,11 @@ const HelpMessageContainer = styled.div<HelpMessageContainerProps>`
   letter-spacing: 0.05rem;
   text-align: center;
   opacity: 0;
-  display: none;
-  ${props => props.theme.media.md`
-    display: block;
-  `}
+  // Todo: Hide help message on big screen 
+  // display: none;
+  // ${props => !props.transparent && props.theme.media.md`
+  //   opacity: block;
+  // `}
 
   ${props => props.theme.media.sm`
     margin-bottom: -0.3rem;
