@@ -17,7 +17,7 @@ module.exports = {
       'Add the Google Site Verification',
     author: {
       name: `Ramon Morcillo`,
-      intro: `Hi, I am Ramón Morcillo, a Software Engineer based in Madrid, Spain`,
+      intro: `Hi, I am Ramón Morcillo, a Software Engineer from Spain`,
       url: `https://ramonmorcillo.com`,
       email: `hey@ramonmorcillo.com`
     },
@@ -58,13 +58,6 @@ module.exports = {
       options: {
         path: `${__dirname}/static/images`,
         name: `images`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `./src/data/`,
-        name: `data`
       }
     },
     {
