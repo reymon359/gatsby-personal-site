@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
 import {addRemToProperty} from '../styles/shared';
+import {components} from '../data';
 
 type TitleWrapperProps = {
   fixed: boolean;
@@ -61,12 +62,16 @@ type IntroProps = {
   fixed: boolean;
 };
 
-const Intro: React.FC<IntroProps> = props => (
-  <TitleWrapper {...props}>
-    <Title>
-      Hi, I am Ramón Morcillo, a Software Engineer based in Madrid, Spain
-    </Title>
-  </TitleWrapper>
-);
+const Intro: React.FC<IntroProps> = props => {
+  const {
+    intro: {title}
+  } = components;
+
+  return (
+    <TitleWrapper {...props}>
+      <Title>{title}</Title>
+    </TitleWrapper>
+  );
+};
 
 export default Intro;
