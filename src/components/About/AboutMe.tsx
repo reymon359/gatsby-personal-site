@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Content = styled.main`
   margin-top: 1rem;
   line-height: 1.8em;
-  color: ${props => props.theme.media.mediumDark};
+  color: ${props => props.theme.colors.lighter};
   ${props => props.theme.media.max.sm`
     margin-top: 1rem;
   `}
@@ -14,11 +14,11 @@ export const Content = styled.main`
   }
 
   a {
-    color: #fff;
-    border-bottom: 1px dotted ${props => props.theme.media.mediumDark};
+    color: ${props => props.theme.colors.lightest};
+    border-bottom: 1px dotted ${props => props.theme.colors.mediumDark};
 
     &:hover {
-      border-bottom-color: ${props => props.theme.media.secondary};
+      border-bottom-color: ${props => props.theme.colors.lightest};
     }
   }
 `;
@@ -27,61 +27,61 @@ export const AboutMe: React.FC = () => {
   return (
     <Content>
       <p>
-        Over the last years, I have been working as a Full Stack on both backend
-        and frontend development, lately I am working and improving at
-        technologies like GraphQL or TypeScript.{' '}
+        Over the last years, I have been working on both backend and frontend
+        development and lately, I am working and improving at technologies like
+        GraphQL or TypeScript.&nbsp;
         <a
           href="../../../files/ramon-morcillo-resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
           Here is my resume
-        </a>{' '}
-        in case you want to have a look.
+        </a>
+        &nbsp;in case you want to have a look.
       </p>
 
       <p>
-        I built this website with{' '}
+        I built this website with&nbsp;
         <a
           href="https://www.gatsbyjs.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
           Gatsby
-        </a>{' '}
-        and{' '}
+        </a>
+        &nbsp;and&nbsp;
         <a
           href="https://www.typescriptlang.org/"
           target="_blank"
           rel="noopener noreferrer"
         >
           TypeScript
-        </a>{' '}
-        among other technologies and use it as a place to share what I learn and
-        do.
+        </a>
+        &nbsp; among other technologies and use it as a place to share what I
+        learn and do.
       </p>
 
       <p>
-        I deeply enjoy{' '}
+        I deeply enjoy&nbsp;
         <a
           href="https://github.com/reymon359"
           target="_blank"
           rel="noopener noreferrer"
         >
-          learning, reading, building
-        </a>{' '}
-        and trying new things.
+          learning, reading, building,
+        </a>
+        &nbsp; and trying new things.
       </p>
       <p>
-        Sometimes{' '}
+        Sometimes&nbsp;
         <a
           href="https://twitter.com/reymon359"
           target="_blank"
           rel="noopener noreferrer"
         >
           I tweet
-        </a>{' '}
-        and share photos on{' '}
+        </a>
+        &nbsp; and share photos on&nbsp;
         <a
           href="https://www.instagram.com/ramon.mor/"
           target="_blank"

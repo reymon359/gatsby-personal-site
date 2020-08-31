@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const StyledPicture = styled.picture`
   grid-area: 1 / 4 / last-line / end;
-  background: ${props => props.theme.primaryDark};
   position: relative;
   overflow: hidden;
 
