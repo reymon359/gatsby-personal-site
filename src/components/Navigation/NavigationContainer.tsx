@@ -96,7 +96,7 @@ export const NavigationContainer: React.FC<NavigationContainerProps> = ({
     <Wrapper enablePointerEvents={transparentNavigation}>
       <Header transparent={transparentNavigation}>
         <Logo />
-        <HelpMessage transparent={transparentNavigation} />
+        <HelpMessage show={transparentNavigation} />
         <ToggleMenu open={open} onClick={() => setOpen(!open)} />
       </Header>
       <Shoable open={open} transparent={transparentNavigation}>

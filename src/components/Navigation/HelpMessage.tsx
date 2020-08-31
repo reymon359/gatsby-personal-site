@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import {components} from '../../data';
 
 interface HelpMessageContainerProps {
-  transparent: boolean;
+  show: boolean;
 }
 
 const HelpMessageContainer = styled.div<HelpMessageContainerProps>`
@@ -14,19 +14,21 @@ const HelpMessageContainer = styled.div<HelpMessageContainerProps>`
   font-family: ${props => props.theme.fontFamilies.code};
   letter-spacing: 0.05rem;
   text-align: center;
-  opacity: 0;
+  //opacity: 1;
   // Todo: Hide help message on big screen 
   // display: none;
-  // ${props => !props.transparent && props.theme.media.md`
-  //   opacity: block;
-  // `}
+       margin-bottom: -1rem;
+
+   ${props => props.theme.media.md`
+   margin-bottom: 0rem;
+   `}
 
   ${props => props.theme.media.sm`
     margin-bottom: -0.3rem;
     max-width: 70%;
   `}
-  ${props => !props.transparent && `display: none;`}
-  animation: fade 10s;
+ ${props => !props.show && `display: none;`}
+//  animation: fade 10s;
 
   @keyframes fade {
     0% {
@@ -36,16 +38,16 @@ const HelpMessageContainer = styled.div<HelpMessageContainerProps>`
       opacity: 1;
     }
     100% {
-      opacity: 0;
+      opacity: 1;
     }
   }
 `;
 
 interface HelpMessageProps {
-  readonly transparent: boolean;
+  readonly show: boolean;
 }
 
-const HelpMessage: React.FC<HelpMessageProps> = ({transparent = false}) => {
+const HelpMessage: React.FC<HelpMessageProps> = ({show = false}) => {
   const {isMobile} = useDeviceDetect();
   const {
     navigation: {
@@ -56,9 +58,7 @@ const HelpMessage: React.FC<HelpMessageProps> = ({transparent = false}) => {
   const helpMessageText = isMobile ? mobile : desktop;
 
   return (
-    <HelpMessageContainer transparent={transparent}>
-      {helpMessageText}
-    </HelpMessageContainer>
+    <HelpMessageContainer show={show}>{helpMessageText}</HelpMessageContainer>
   );
 };
 
