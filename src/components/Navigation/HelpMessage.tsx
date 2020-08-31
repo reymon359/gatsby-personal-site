@@ -15,15 +15,12 @@ const HelpMessageContainer = styled.div<HelpMessageContainerProps>`
   letter-spacing: 0.05rem;
   text-align: center;
   opacity: 0;
- // padding-top: 1rem;
-       position: relative;
 
  ${props => props.theme.media.min.md`
     position: absolute;
     bottom: 2rem;
     left: 35%;
    `}
-    
 
    ${props => props.theme.media.max.md`
    margin-bottom: 0;
@@ -34,8 +31,8 @@ const HelpMessageContainer = styled.div<HelpMessageContainerProps>`
     margin-bottom: -0.3rem;
     max-width: 70%;
   `}
- ${props => !props.show && `display: none;`}
-  animation: fade 100s;
+  ${props => !props.show && `display: none;`}
+  animation: fade 10s;
 
   @keyframes fade {
     0% {
