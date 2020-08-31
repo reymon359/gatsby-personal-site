@@ -80,7 +80,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1rem; width: 600px; height: 400px; margin: auto;`
+              wrapperStyle: `margin-bottom: 1rem; max-width: 600px; height: 400px; margin: auto;`
             }
           },
           {
