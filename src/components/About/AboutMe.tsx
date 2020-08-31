@@ -5,7 +5,7 @@ export const Content = styled.main`
   margin-top: 1rem;
   line-height: 1.8em;
   color: ${props => props.theme.media.mediumDark};
-  ${props => props.theme.media.sm`
+  ${props => props.theme.media.max.sm`
     margin-top: 1rem;
   `}
 

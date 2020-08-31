@@ -53,7 +53,7 @@ const MenuWrapper = styled.nav`
     }
   }
 
-  ${props => props.theme.media.md`
+  ${props => props.theme.media.max.md`
     position: static;
     padding: 0;
   `}

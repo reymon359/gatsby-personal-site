@@ -11,12 +11,12 @@ const StyledPicture = styled.picture`
     content: '';
     padding-top: 150%;
     display: block;
-    ${props => props.theme.media.sm`
+    ${props => props.theme.media.max.sm`
       padding-top: 100%;
     `}
   }
 
-  ${props => props.theme.media.sm`
+  ${props => props.theme.media.max.sm`
     grid-area: 1 / 1 / 1 / 1;
     &:before {
       padding-top: 100%;
@@ -37,7 +37,7 @@ const StyledImage = styled.img`
   opacity: 0.5;
   display: block;
   object-fit: cover;
-  ${props => props.theme.media.sm`
+  ${props => props.theme.media.max.sm`
       opacity: 0.7;
     `}
 `;

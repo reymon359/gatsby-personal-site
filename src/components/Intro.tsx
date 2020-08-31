@@ -11,14 +11,14 @@ const TitleWrapper = styled.div<TitleWrapperProps>`
   font-size: ${props => props.theme.fontSizes.large};
   max-width: 36rem;
   line-height: 1.3em;
-  ${props => props.theme.media.md`
+  ${props => props.theme.media.max.md`
     max-width: 32rem;
   `}
-  ${props => props.theme.media.sm`
+  ${props => props.theme.media.max.sm`
     max-width: 100%;
     font-size: 1.5rem;
   `}
-  ${props => props.theme.media.xs`
+  ${props => props.theme.media.max.xs`
     font-size: 1.35rem;
   `}
 
@@ -30,7 +30,7 @@ const TitleWrapper = styled.div<TitleWrapperProps>`
           top: 0;
           right: 0;
           text-align: right;
-          ${props => props.theme.media.md`
+          ${props => props.theme.media.max.md`
         text-align: left;
         left: 0;
         right: auto;

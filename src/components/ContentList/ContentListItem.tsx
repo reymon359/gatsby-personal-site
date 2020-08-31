@@ -14,7 +14,7 @@ const ItemContainer = styled.article`
   justify-content: space-between;
   position: relative;
 
-  ${props => props.theme.media.md`
+  ${props => props.theme.media.max.md`
      flex-direction:  column-reverse;
   `}
 
@@ -25,7 +25,7 @@ const ItemContainer = styled.article`
 
 const ItemHeader = styled.div`
   max-width: 70%;
-  ${props => props.theme.media.md`
+  ${props => props.theme.media.max.md`
     max-width: 100%;
   `}
 `;
@@ -56,7 +56,7 @@ const ItemDate = styled(Link)`
     font-weight: ${props => props.theme.fontWeights.regular};
   }
 
-  ${props => props.theme.media.md`
+  ${props => props.theme.media.max.md`
     padding-top: 0;
     max-width: 100%;
   `}

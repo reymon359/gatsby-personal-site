@@ -61,7 +61,7 @@ const ToggleMenuWrapper = styled.div<ToggleMenuWrapperProps>`
           }
         `}
 
-  ${props => props.theme.media.md`
+  ${props => props.theme.media.max.md`
     display: flex;
   `}
 `;

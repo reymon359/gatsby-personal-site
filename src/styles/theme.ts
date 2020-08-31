@@ -86,41 +86,81 @@ export const theme = {
     xl: '125em'
   },
   media: {
-    xs: (...args: TemplateStringsArray[]) => css`
-      @media (max-width: ${theme.mq.xs}) {
-        ${//@ts-ignore
-        css(...args)}
-      }
-    `,
-    sm: (...args: TemplateStringsArray[]) => css`
-      @media (max-width: ${theme.mq.sm}) {
-        ${//@ts-ignore
-        css(...args)}
-      }
-    `,
-    md: (...args: TemplateStringsArray[]) => css`
-      @media (max-width: ${theme.mq.md}) {
-        ${//@ts-ignore
-        css(...args)}
-      }
-    `,
-    lg: (...args: TemplateStringsArray[]) => css`
-      @media (max-width: ${theme.mq.lg}) {
-        ${//@ts-ignore
-        css(...args)}
-      }
-    `,
-    xl: (...args: TemplateStringsArray[]) => css`
-      @media (max-width: ${theme.mq.xl}) {
-        ${//@ts-ignore
-        css(...args)}
-      }
-    `,
-    hover: (...args: TemplateStringsArray[]) => css`
-      @media not all and (hover: none) {
-        ${//@ts-ignore
-        css(...args)}
-      }
-    `
+    max: {
+      xs: (...args: TemplateStringsArray[]) => css`
+        @media (max-width: ${theme.mq.xs}) {
+          ${//@ts-ignore
+          css(...args)}
+        }
+      `,
+      sm: (...args: TemplateStringsArray[]) => css`
+        @media (max-width: ${theme.mq.sm}) {
+          ${//@ts-ignore
+          css(...args)}
+        }
+      `,
+      md: (...args: TemplateStringsArray[]) => css`
+        @media (max-width: ${theme.mq.md}) {
+          ${//@ts-ignore
+          css(...args)}
+        }
+      `,
+      lg: (...args: TemplateStringsArray[]) => css`
+        @media (max-width: ${theme.mq.lg}) {
+          ${//@ts-ignore
+          css(...args)}
+        }
+      `,
+      xl: (...args: TemplateStringsArray[]) => css`
+        @media (max-width: ${theme.mq.xl}) {
+          ${//@ts-ignore
+          css(...args)}
+        }
+      `,
+      hover: (...args: TemplateStringsArray[]) => css`
+        @media not all and (hover: none) {
+          ${//@ts-ignore
+          css(...args)}
+        }
+      `
+    },
+    min: {
+      xs: (...args: TemplateStringsArray[]) => css`
+        @media (min-width: ${theme.mq.xs}) {
+          ${//@ts-ignore
+          css(...args)}
+        }
+      `,
+      sm: (...args: TemplateStringsArray[]) => css`
+        @media (min-width: ${theme.mq.sm}) {
+          ${//@ts-ignore
+          css(...args)}
+        }
+      `,
+      md: (...args: TemplateStringsArray[]) => css`
+        @media (min-width: ${theme.mq.md}) {
+          ${//@ts-ignore
+          css(...args)}
+        }
+      `,
+      lg: (...args: TemplateStringsArray[]) => css`
+        @media (min-width: ${theme.mq.lg}) {
+          ${//@ts-ignore
+          css(...args)}
+        }
+      `,
+      xl: (...args: TemplateStringsArray[]) => css`
+        @media (min-width: ${theme.mq.xl}) {
+          ${//@ts-ignore
+          css(...args)}
+        }
+      `,
+      hover: (...args: TemplateStringsArray[]) => css`
+        @media not all and (hover: none) {
+          ${//@ts-ignore
+          css(...args)}
+        }
+      `
+    }
   }
 };

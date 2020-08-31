@@ -27,7 +27,7 @@ const CircleWrapper = styled.div`
   left: 0;
   max-width: 18rem;
   ${addRemToProperty('padding')}
-  ${props => props.theme.media.md`
+  ${props => props.theme.media.max.md`
     position: static;
     padding: 0;
   `}
@@ -40,7 +40,7 @@ const CircleWrapper = styled.div`
 
   a {
     width: 1.65rem;
-    ${props => props.theme.media.lg`
+    ${props => props.theme.media.max.lg`
       width: 1.45rem;
     `}
   }

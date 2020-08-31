@@ -6,18 +6,18 @@ export const ContentWrapper = styled.div`
   max-width: 68rem;
   width: calc(100% - 9.25rem * 2);
   margin: 11rem auto 5rem;
-  ${theme.media.lg`
+  ${theme.media.max.lg`
     margin: 8rem auto 3rem;
     width: calc(100% - 11rem * 2);
   `}
 
-  ${theme.media.md`
+  ${theme.media.max.md`
     width: 100%;
     margin: 4rem auto 0;
     padding: 0 3rem 6rem;
   `}
 
-  ${theme.media.sm`
+  ${theme.media.max.sm`
     margin: 2rem auto 0;
     padding: 0 2rem 6rem;
   `}
@@ -37,13 +37,13 @@ const rule = (property: string, value: string): TemplateStringsArray =>
 export const addRemToProperty = (property: string) =>
   css`
     ${rule(property, '5rem')}
-    ${theme.media.lg`
+    ${theme.media.max.lg`
       ${rule(property, '3rem')}
     `}
-    ${theme.media.md`
+    ${theme.media.max.md`
       ${rule(property, '3rem')}
     `}
-    ${theme.media.sm`
+    ${theme.media.max.sm`
       ${rule(property, '2rem')}
     `}
   `;
