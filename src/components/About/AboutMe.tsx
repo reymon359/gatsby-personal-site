@@ -20,7 +20,7 @@ export const AboutMe: React.FC = () => {
       <p>
         Over the last years, I have been working on both backend and frontend
         development and lately, I am working and improving at technologies like
-        GraphQL or TypeScript.&nbsp;
+        GraphQL and TypeScript.&nbsp;
         <a
           href="../../../files/ramon-morcillo-resume.pdf"
           target="_blank"
@@ -80,7 +80,10 @@ export const AboutMe: React.FC = () => {
         >
           Instagram
         </a>
-        .
+        . You can contact me through them or send me an email to&nbsp;
+        <a rel="noopener" href="mailto:hey@ramonmorcillo.com">
+          hey@ramonmorcillo.com
+        </a>
       </p>
     </Content>
   );
