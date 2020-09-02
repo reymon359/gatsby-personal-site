@@ -21,6 +21,7 @@ const MenuWrapper = styled.nav`
       transition: color 0.4s ease;
       will-change: color;
       position: relative;
+      border-bottom: none;
 
       &::before {
         position: absolute;
@@ -84,10 +85,12 @@ const NavItem = styled.li`
     pointer-events: all;
     transition: color 0.1s ease;
     line-height: 1em;
+    border-bottom: none;
 
     &:hover {
       color: ${props => props.theme.colors.lightest};
       font-weight: ${props => props.theme.fontWeights.bold};
+      border-bottom: none;
     }
   }
 `;

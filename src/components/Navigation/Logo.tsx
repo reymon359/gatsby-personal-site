@@ -40,6 +40,10 @@ const CircleWrapper = styled.div`
 
   a {
     width: 1.65rem;
+    border-bottom: none;
+    &:hover {
+      border-bottom: none;
+    }
     ${props => props.theme.media.max.lg`
       width: 1.45rem;
     `}

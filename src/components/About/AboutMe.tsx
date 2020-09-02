@@ -12,15 +12,6 @@ export const Content = styled.main`
   p {
     margin: 1.5rem 0;
   }
-
-  a {
-    color: ${props => props.theme.colors.lightest};
-    border-bottom: 1px dotted ${props => props.theme.colors.mediumDark};
-
-    &:hover {
-      border-bottom-color: ${props => props.theme.colors.lightest};
-    }
-  }
 `;
 
 export const AboutMe: React.FC = () => {
