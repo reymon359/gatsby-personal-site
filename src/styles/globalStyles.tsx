@@ -127,10 +127,11 @@ a {
   text-decoration: none;
   transition: color ease-in .2s;
   font-weight: ${theme.fontWeights.bold};
-  color: ${theme.colors.mediumDark};
+  color: ${theme.colors.lightest};
+  border-bottom: 1px dashed ${theme.colors.lightest};
 
   &:hover {
-    color: ${theme.colors.lightest};
+    border-bottom: 1px solid ${theme.colors.lightest};
   }
 }
 
@@ -175,6 +176,14 @@ em {
   color: ${theme.colors.secondary};
   background: transparent;
 }
+
+.autolink-headers, .gatsby-resp-image-link {
+  border-bottom: none;
+  &:hover {
+    border-bottom: none;
+  }
+}
+
 
 `;
 

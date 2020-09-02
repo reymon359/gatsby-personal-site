@@ -12,7 +12,7 @@ type WrapperProps = {
 };
 const Wrapper = styled.div<WrapperProps>`
   pointer-events: ${props => (props.enablePointerEvents ? 'none' : 'all')};
-  ${props => props.theme.media.md`
+  ${props => props.theme.media.max.md`
     position: fixed;
     bottom: 0;
     left: 0;
@@ -31,7 +31,7 @@ type ShoableProps = {
 };
 
 const Shoable = styled.div<ShoableProps>`
-  ${props => props.theme.media.md`
+  ${props => props.theme.media.max.md`
     background: ${(props: any) =>
       props.transparent ? 'none' : props.theme.colors.primaryDark};
     overflow: hidden;
@@ -52,7 +52,7 @@ const Shoable = styled.div<ShoableProps>`
       }
   `}
 
-  ${props => props.theme.media.sm`
+  ${props => props.theme.media.max.sm`
     > div {
       padding: 0 2rem 2rem;
     }
@@ -64,7 +64,7 @@ type HeaderProps = {
 };
 
 const Header = styled.header<HeaderProps>`
-  ${props => props.theme.media.md`
+  ${props => props.theme.media.max.md`
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -96,7 +96,7 @@ export const NavigationContainer: React.FC<NavigationContainerProps> = ({
     <Wrapper enablePointerEvents={transparentNavigation}>
       <Header transparent={transparentNavigation}>
         <Logo />
-        <HelpMessage transparent={transparentNavigation} />
+        <HelpMessage show={transparentNavigation} />
         <ToggleMenu open={open} onClick={() => setOpen(!open)} />
       </Header>
       <Shoable open={open} transparent={transparentNavigation}>

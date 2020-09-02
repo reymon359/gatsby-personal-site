@@ -20,7 +20,7 @@ const StyledUl = styled('ul')`
   list-style-type: none;
   text-align: center;
   padding-bottom: 4rem;
-  ${props => props.theme.media.md`
+  ${props => props.theme.media.max.md`
       padding-bottom: 10rem;
   `}
 

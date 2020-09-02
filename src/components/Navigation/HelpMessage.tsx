@@ -1,9 +1,10 @@
 import React from 'react';
 import {useDeviceDetect} from '../../hooks';
 import styled from 'styled-components';
+import {components} from '../../data';
 
 interface HelpMessageContainerProps {
-  transparent: boolean;
+  show: boolean;
 }
 
 const HelpMessageContainer = styled.div<HelpMessageContainerProps>`
@@ -14,11 +15,23 @@ const HelpMessageContainer = styled.div<HelpMessageContainerProps>`
   letter-spacing: 0.05rem;
   text-align: center;
   opacity: 0;
-  ${props => props.theme.media.sm`
+
+ ${props => props.theme.media.min.md`
+    position: absolute;
+    bottom: 2rem;
+    left: 35%;
+   `}
+
+   ${props => props.theme.media.max.md`
+   margin-bottom: 0;
+   padding-top: 0;
+   `}
+
+  ${props => props.theme.media.max.sm`
     margin-bottom: -0.3rem;
     max-width: 70%;
   `}
-  ${props => !props.transparent && `display: none;`}
+  ${props => !props.show && `display: none;`}
   animation: fade 10s;
 
   @keyframes fade {
@@ -35,20 +48,21 @@ const HelpMessageContainer = styled.div<HelpMessageContainerProps>`
 `;
 
 interface HelpMessageProps {
-  readonly transparent: boolean;
+  readonly show: boolean;
 }
 
-const HelpMessage: React.FC<HelpMessageProps> = ({transparent = false}) => {
+const HelpMessage: React.FC<HelpMessageProps> = ({show = false}) => {
   const {isMobile} = useDeviceDetect();
+  const {
+    navigation: {
+      helpMessage: {mobile, desktop}
+    }
+  } = components;
 
-  const helpMessageText = isMobile
-    ? 'Swipe around the screen or zoom it'
-    : 'Move around the screen or scroll it';
+  const helpMessageText = isMobile ? mobile : desktop;
 
   return (
-    <HelpMessageContainer transparent={transparent}>
-      {helpMessageText}
-    </HelpMessageContainer>
+    <HelpMessageContainer show={show}>{helpMessageText}</HelpMessageContainer>
   );
 };
 

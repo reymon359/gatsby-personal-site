@@ -6,7 +6,7 @@ const FooterWrapper = styled.footer`
   width: 100%;
   position: fixed;
   top: 50%;
-  ${props => props.theme.media.md`
+  ${props => props.theme.media.max.md`
     position: static;
     padding-top: 1.5rem;
   `}
@@ -36,7 +36,7 @@ const Item = styled.div<ItemProps>`
           ${addRemToProperty('right')}
         `}
 
-  ${props => props.theme.media.md`
+  ${props => props.theme.media.max.md`
     position: static;
     transform: rotate(0) translateX(0);
     transform-origin: 0;

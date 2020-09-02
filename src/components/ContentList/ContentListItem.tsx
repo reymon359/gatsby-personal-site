@@ -14,7 +14,7 @@ const ItemContainer = styled.article`
   justify-content: space-between;
   position: relative;
 
-  ${props => props.theme.media.md`
+  ${props => props.theme.media.max.md`
      flex-direction:  column-reverse;
   `}
 
@@ -25,7 +25,7 @@ const ItemContainer = styled.article`
 
 const ItemHeader = styled.div`
   max-width: 70%;
-  ${props => props.theme.media.md`
+  ${props => props.theme.media.max.md`
     max-width: 100%;
   `}
 `;
@@ -34,14 +34,22 @@ const ItemTitle = styled(Link)`
   color: ${props => props.theme.colors.lightest};
   font-size: ${props => props.theme.fontSizes.medium};
   font-weight: ${props => props.theme.fontWeights.bold};
+  border-bottom: none;
+  &:hover {
+    border-bottom: none;
+  }
 `;
 
 const ItemDescription = styled(Link)`
-  display: block;
-  padding: 0.5rem 0;
   color: ${props => props.theme.colors.medium};
   font-size: ${props => props.theme.fontSizes.normal};
   font-weight: ${props => props.theme.fontWeights.regular};
+  border-bottom: none;
+  display: block;
+  padding: 0.5rem 0;
+  &:hover {
+    border-bottom: none;
+  }
 `;
 
 const ItemDate = styled(Link)`
@@ -51,12 +59,14 @@ const ItemDate = styled(Link)`
   color: ${props => props.theme.colors.mediumLight};
   font-size: ${props => props.theme.fontSizes.normal};
   font-weight: ${props => props.theme.fontWeights.regular};
+  border-bottom: none;
 
   &:hover {
     font-weight: ${props => props.theme.fontWeights.regular};
+    border-bottom: none;
   }
 
-  ${props => props.theme.media.md`
+  ${props => props.theme.media.max.md`
     padding-top: 0;
     max-width: 100%;
   `}
