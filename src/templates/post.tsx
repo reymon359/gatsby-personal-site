@@ -18,32 +18,39 @@ interface Props {
 
 const OtherPostsLinks = styled.ul`
   list-style-type: none;
-  text-align: center;
   margin-left: 0;
   padding-bottom: 4rem;
-      display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   ${props => props.theme.media.max.md`
       padding-bottom: 10rem;
   `}
-  
-  li{
+
+  li {
+    text-align: left;
     padding: 1rem;
     width: 50%;
     ${props => props.theme.media.max.md`
       width: 100%;
+      text-align: center;
   `}
   }
-  
+
   li::before {
     content: '' !important;
     padding-right: 0 !important;
   }
-  
+
+  li:nth-child(2) {
+    text-align: right;
+    ${props => props.theme.media.max.md`
+      text-align: center;
+  `}
+  }
+
   a {
     border-bottom: none;
   }
-
 `;
 
 const Date = styled.div`
