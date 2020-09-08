@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const Content = styled.main`
+const Content = styled.main`
   margin-top: 1rem;
   line-height: 1.8em;
   color: ${props => props.theme.colors.lighter};
