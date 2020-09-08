@@ -19,8 +19,7 @@ export const AboutMe: React.FC = () => {
     <Content>
       <p>
         Over the last years, I have been working on both backend and frontend
-        development and lately, I am working and improving at technologies like
-        GraphQL and TypeScript.&nbsp;
+        development.&nbsp;
         <a
           href="../../../files/ramon-morcillo-resume.pdf"
           target="_blank"
