@@ -1,0 +1,1 @@
+export {useFruitFavicon} from './useFruitFavicon';

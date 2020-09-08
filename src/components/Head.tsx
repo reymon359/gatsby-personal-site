@@ -1,6 +1,7 @@
 import React from 'react';
 import {Helmet} from 'react-helmet';
 import {StaticQuery, graphql} from 'gatsby';
+import {useFruitFavicon} from '../hooks/useFruitFavicon';
 
 type StaticQueryData = {
   site: {
@@ -52,6 +53,8 @@ const Head: React.FC<HeadProps> = ({
       const metaImage = image || data.site.siteMetadata.image;
       lang = lang || 'en';
       keywords = keywords || [];
+      useFruitFavicon();
+
       return (
         <Helmet
           htmlAttributes={{
@@ -112,7 +115,7 @@ const Head: React.FC<HeadProps> = ({
                 }
               : []
           )}
-        />
+        ></Helmet>
       );
     }}
   />
