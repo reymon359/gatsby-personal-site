@@ -32,7 +32,7 @@ const NotFound: React.FC<NotFoundProps> = ({data}) => {
         containerOpacity={0.3}
         addEventListeners={false}
       />
-      <Content>
+      <Content fullHeight={false}>
         <NotFoundContainer />
       </Content>
     </Layout>

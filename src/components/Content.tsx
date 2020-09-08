@@ -1,16 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const ContentContainer = styled.div`
+type WrapperProps = {
+  fullHeight: boolean;
+};
+
+export const Wrapper = styled.div<WrapperProps>`
   max-width: 68rem;
   width: calc(100% - 9.25rem * 2);
   margin: 11rem auto 5rem;
   position: absolute;
-  height: 100%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  height: ${props => (props.fullHeight ? '100%' : 'auto')};
 
   ${props => props.theme.media.max.lg`
     width: 1.45rem;
@@ -29,19 +33,21 @@ export const ContentContainer = styled.div`
     padding: 0 2rem 6rem;
   `}
 `;
-const ContentBottom = styled.div`
+
+const BottomHeight = styled.div`
   height: 10rem;
 `;
 
 type ContentProps = {
   readonly children: React.ReactNode;
+  readonly fullHeight?: boolean;
 };
 
-const Content: React.FC<ContentProps> = ({children}) => (
-  <ContentContainer>
+const Content: React.FC<ContentProps> = ({children, fullHeight = true}) => (
+  <Wrapper fullHeight={fullHeight}>
     {children}
-    <ContentBottom />
-  </ContentContainer>
+    <BottomHeight />
+  </Wrapper>
 );
 
 export default Content;
