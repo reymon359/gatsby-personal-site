@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {Link} from 'gatsby';
 
 export const Wrapper = styled.div`
+  padding-top: 4rem;
   text-align: center;
   display: flex;
   justify-content: center;
