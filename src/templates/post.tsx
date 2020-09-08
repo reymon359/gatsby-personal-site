@@ -16,18 +16,34 @@ interface Props {
   };
 }
 
-const StyledUl = styled('ul')`
+const OtherPostsLinks = styled.ul`
   list-style-type: none;
   text-align: center;
+  margin-left: 0;
   padding-bottom: 4rem;
+      display: flex;
+    flex-wrap: wrap;
   ${props => props.theme.media.max.md`
       padding-bottom: 10rem;
   `}
-
+  
+  li{
+    padding: 1rem;
+    width: 50%;
+    ${props => props.theme.media.max.md`
+      width: 100%;
+  `}
+  }
+  
   li::before {
     content: '' !important;
     padding-right: 0 !important;
   }
+  
+  a {
+    border-bottom: none;
+  }
+
 `;
 
 const Date = styled.div`
@@ -84,7 +100,7 @@ const PostTemplate: React.FC<Props> = ({data, pageContext}) => {
               dangerouslySetInnerHTML={{__html: post.html}}
             />
             <h2>Other posts</h2>
-            <StyledUl>
+            <OtherPostsLinks>
               {previous && (
                 <li>
                   <Link to={previous.fields.slug} rel="prev">
@@ -99,7 +115,7 @@ const PostTemplate: React.FC<Props> = ({data, pageContext}) => {
                   </Link>
                 </li>
               )}
-            </StyledUl>
+            </OtherPostsLinks>
           </div>
         </article>
       </Content>
