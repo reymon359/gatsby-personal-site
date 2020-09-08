@@ -51,7 +51,7 @@ export const theme = {
     thin: 200,
     regular: 400,
     bold: 600,
-    extrabold: 800
+    extraBold: 800
   },
   fontSizes: {
     small: '.7rem',
