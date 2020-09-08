@@ -115,10 +115,10 @@ module.exports = {
         name: `Ramon Morcillo`,
         shortName: `ramonmorcillo.com`,
         startUrl: `/`,
-        backgroundColor: `#663399`,
-        themeColor: `#663399`,
+        backgroundColor: `#255799`,
+        themeColor: `#255799`,
         display: `standalone`,
-        icon: `static/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `static/images/favicon/orange.png`, // This path is relative to the root of the site.
         crossOrigin: `use-credentials`
       }
     },
