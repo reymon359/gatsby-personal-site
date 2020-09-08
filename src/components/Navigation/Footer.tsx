@@ -64,13 +64,6 @@ const Footer = () => (
       >
         (a lot of it)
       </small>
-      {/*<a*/}
-      {/*  target="_blank"*/}
-      {/*  rel="noopener noreferrer"*/}
-      {/*  href="https://www.gatsbyjs.org/"*/}
-      {/*>*/}
-      {/*  Gatsby*/}
-      {/*</a>*/}
     </Item>
   </FooterWrapper>
 );
