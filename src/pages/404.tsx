@@ -32,7 +32,6 @@ const NotFound: React.FC<NotFoundProps> = ({data}) => {
         containerOpacity={0.3}
         addEventListeners={false}
       />
-
       <Content>
         <NotFoundContainer />
       </Content>
