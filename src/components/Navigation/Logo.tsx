@@ -65,7 +65,7 @@ type CircleProps = {
   readonly width?: number;
   readonly height?: number;
 };
-const Circle: React.FC<CircleProps> = ({fill, width, height}) => (
+const Circle: React.FC<CircleProps> = ({fill, width = 22, height = 22}) => (
   <svg
     width={width}
     height={height}
@@ -85,7 +85,7 @@ const Logo = () => {
     <CircleWrapper>
       <RelativeWrapper>
         <Link to="/">
-          <Circle fill={themeContext.colors.lightest} width={22} height={22} />
+          <Circle fill={themeContext.colors.lightest} />
         </Link>
         <CircleBackground />
       </RelativeWrapper>
