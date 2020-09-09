@@ -32,12 +32,15 @@ export const Text = styled.p`
   font-size: ${props => props.theme.fontSizes.mediumLarge};
   line-height: 1.8rem;
 `;
+interface NotFoundProps {
+  readonly notFoundImageSrc?: string;
+}
 
-export const NotFound: React.FC = () => {
+export const NotFound: React.FC<NotFoundProps> = ({notFoundImageSrc}) => {
   return (
     <Wrapper>
       <Content>
-        <Image src={'../../../images/sup_seal.gif'} />
+        <Image src={notFoundImageSrc} />
         <Title>Hi there!</Title>
         <Text>
           I think you are a bit lost, no worries, let me show you&nbsp;
