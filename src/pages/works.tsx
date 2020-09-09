@@ -37,6 +37,7 @@ const MoreLink = styled(Link)`
   &:hover {
     color: ${props => props.theme.colors.darkest};
     background-color: ${props => props.theme.colors.light};
+    border-bottom: none;
   }
 `;
 
