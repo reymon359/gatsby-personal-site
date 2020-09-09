@@ -103,7 +103,7 @@ interface ContentListItemProps {
   readonly node: Node;
 }
 
-export const ContentListItem: React.FC<ContentListItemProps> = ({
+export const ContentList: React.FC<ContentListItemProps> = ({
   type = false,
   node
 }) => {

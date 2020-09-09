@@ -1,11 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
-import {ContentListItem} from './ContentListItem';
+import {ContentList} from './ContentList';
 import {Work} from '../../types';
 
-const ContentListWrapper = styled.section`
-  margin: 0 auto;
-`;
+
 
 interface ContentListProps {
   readonly type?: boolean;
@@ -17,10 +14,10 @@ export const ContentListContainer: React.FC<ContentListProps> = ({
   content
 }) => {
   return (
-    <ContentListWrapper>
+    <>
       {content.map(({node}) => (
-        <ContentListItem key={node.fields.slug} type={type} node={node} />
+        <ContentList key={node.fields.slug} type={type} node={node} />
       ))}
-    </ContentListWrapper>
+    </>
   );
 };
