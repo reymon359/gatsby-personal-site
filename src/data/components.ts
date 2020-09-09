@@ -7,5 +7,8 @@ export const components = {
   },
   intro: {
     title: `Hi, I am Ramón Morcillo, a Software Engineer from Spain`
+  },
+  notFound: {
+    notFoundImageSrc: `../../../images/sup_seal.gif`
   }
 };
