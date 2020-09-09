@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
-import {addRemToProperty} from '../styles/shared';
-import {components} from '../data';
+import {addRemToProperty} from '../../styles';
 
 type TitleWrapperProps = {
   fixed: boolean;
@@ -24,8 +23,8 @@ const TitleWrapper = styled.div<TitleWrapperProps>`
   `}
 
   ${props =>
-    props.fixed
-      ? css`
+  props.fixed
+    ? css`
           ${addRemToProperty('padding')};
           position: absolute;
           top: 0;
@@ -37,7 +36,7 @@ const TitleWrapper = styled.div<TitleWrapperProps>`
         right: auto;
       `}
         `
-      : css`
+    : css`
           text-align: left;
         `}
 `;
@@ -60,15 +59,13 @@ const Title = styled.h1`
 
 type IntroProps = {
   fixed: boolean;
+  title: string
 };
 
-const Intro: React.FC<IntroProps> = props => {
-  const {
-    intro: {title}
-  } = components;
+const Intro: React.FC<IntroProps> = ({fixed, title}) => {
 
   return (
-    <TitleWrapper {...props}>
+    <TitleWrapper fixed={fixed}>
       <Title>{title}</Title>
     </TitleWrapper>
   );

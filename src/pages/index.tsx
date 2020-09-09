@@ -1,6 +1,6 @@
 import React from 'react';
 import {graphql} from 'gatsby';
-import Intro from '../components/Intro';
+import {IntroContainer} from '../components/Intro';
 import Head from '../components/Head';
 import Layout from '../components/Layout';
 import Stars from '../components/Stars';
@@ -26,7 +26,7 @@ const Index: React.FC<IndexProps> = ({data}) => {
         ]}
       />
       <section>
-        <Intro fixed={true} />
+        <IntroContainer fixed={true} />
       </section>
     </Layout>
   );
