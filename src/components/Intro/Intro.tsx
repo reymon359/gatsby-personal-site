@@ -23,8 +23,8 @@ const TitleWrapper = styled.div<TitleWrapperProps>`
   `}
 
   ${props =>
-  props.fixed
-    ? css`
+    props.fixed
+      ? css`
           ${addRemToProperty('padding')};
           position: absolute;
           top: 0;
@@ -36,7 +36,7 @@ const TitleWrapper = styled.div<TitleWrapperProps>`
         right: auto;
       `}
         `
-    : css`
+      : css`
           text-align: left;
         `}
 `;
@@ -59,11 +59,10 @@ const Title = styled.h1`
 
 type IntroProps = {
   fixed: boolean;
-  title: string
+  title: string;
 };
 
 const Intro: React.FC<IntroProps> = ({fixed, title}) => {
-
   return (
     <TitleWrapper fixed={fixed}>
       <Title>{title}</Title>

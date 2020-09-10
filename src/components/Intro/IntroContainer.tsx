@@ -6,10 +6,12 @@ type IntroContainerProps = {
   fixed: boolean;
 };
 
-export const IntroContainer: React.FC<IntroContainerProps> = ({fixed = true}) => {
+export const IntroContainer: React.FC<IntroContainerProps> = ({
+  fixed = true
+}) => {
   const {
     intro: {title}
   } = components;
 
-  return (<Intro fixed={fixed} title={title} />);
+  return <Intro fixed={fixed} title={title} />;
 };
