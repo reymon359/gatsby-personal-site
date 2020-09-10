@@ -2,7 +2,7 @@
   "name": "gatsby-personal-site",
   "private": true,
   "description": "A Gatsby Typescript project for my personal site",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Ramon Morcillo @reymon359",
   "scripts": {
     "build": "gatsby build",
