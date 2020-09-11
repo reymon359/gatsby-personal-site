@@ -16,7 +16,7 @@ const HelpMessageContainer = styled.div<HelpMessageContainerProps>`
   text-align: center;
   opacity: 0;
 
- ${props => props.theme.media.min.md`
+ ${props => props.show && props.theme.media.min.md`
     position: relative;
     top: 90vh;
     display: flex;
