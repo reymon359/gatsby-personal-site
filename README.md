@@ -41,7 +41,7 @@ A personal site made with the static site generator <a href="https://www.gatsbyj
 <!-- Screenshot or video (with link) -->
 <p align="center">
   <a href="https://www.ramonmorcillo.com">
-    <img alt="site screenshot" src="./static/images/site_screenshot.png" />
+    <img alt="site screenshot" src="./static/images/site_demo.gif" />
   </a>
 </p>
 
