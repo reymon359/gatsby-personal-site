@@ -11,17 +11,21 @@
 </h1>
 
 <!-- Badges (with link) -->
+<p align="center">
 [![Build](https://github.com/reymon359/gatsby-personal-site/workflows/Build/badge.svg)](https://github.com/reymon359/gatsby-personal-site/actions?query=workflow%3ABuild) 
 [![License: MIT](https://img.shields.io/github/license/reymon359/gatsby-personal-site?color=blue&logo=github)](https://github.com/reymon359/gatsby-personal-site/blob/master/LICENSE) 
 [![Last commit](https://img.shields.io/github/last-commit/reymon359/gatsby-personal-site?logo=github)](https://github.com/reymon359/gatsby-personal-site/commits/master) 
+</p>
 
 <!-- Small description -->
-A personal site to made with the static site generator [Gatsby](https://www.gatsbyjs.com/)
+<p align="center">
+A personal site made with the static site generator [Gatsby](https://www.gatsbyjs.com/)
+</p>
 
 <!-- Screenshot or video (with link) -->
 <p align="center">
   <a href="https://www.ramonmorcillo.com">
-    <img alt="site_screenshot.png" />
+    <img alt="site screenshot" src="./static/images/favicon/site_screenshot.png" />
   </a>
 </p>
 
@@ -106,3 +110,5 @@ Have a look at the [Create React App docs about how to configure it](https://cre
 ## Credits
 - jeff
 - michel
+
+Readme template made with link to readme template
