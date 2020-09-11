@@ -11,15 +11,24 @@
 </h1>
 
 <!-- Badges (with link) -->
+
 <p align="center">
-[![Build](https://github.com/reymon359/gatsby-personal-site/workflows/Build/badge.svg)](https://github.com/reymon359/gatsby-personal-site/actions?query=workflow%3ABuild) 
-[![License: MIT](https://img.shields.io/github/license/reymon359/gatsby-personal-site?color=blue&logo=github)](https://github.com/reymon359/gatsby-personal-site/blob/master/LICENSE) 
-[![Last commit](https://img.shields.io/github/last-commit/reymon359/gatsby-personal-site?logo=github)](https://github.com/reymon359/gatsby-personal-site/commits/master) 
+  <a href="https://github.com/reymon359/gatsby-personal-site/actions?query=workflow%3ABuild">
+    <img alt="Build" src="https://github.com/reymon359/gatsby-personal-site/workflows/Build/badge.svg" />
+  </a>
+   <a href="https://github.com/reymon359/gatsby-personal-site/blob/master/LICENSE">
+      <img alt="License: MIT" src="https://img.shields.io/github/license/reymon359/gatsby-personal-site?color=blue&logo=github" />
+    </a>
+  <a href="https://github.com/reymon359/gatsby-personal-site/commits/master">
+      <img alt="Last commit" src="https://img.shields.io/github/last-commit/reymon359/gatsby-personal-site?logo=github" />
+    </a>
 </p>
+
 
 <!-- Small description -->
 <p align="center">
-A personal site made with the static site generator [Gatsby](https://www.gatsbyjs.com/)
+A personal site made with the static site generator <a href="https://www.gatsbyjs.com/">Gatsby</a>
+
 </p>
 
 <!-- Screenshot or video (with link) -->
@@ -30,7 +39,7 @@ A personal site made with the static site generator [Gatsby](https://www.gatsbyj
 </p>
 
 <!-- Long description -->
-Built from the [Gatsby's default starter](https://github.com/gatsbyjs/gatsby-starter-default) more description
+This site is meant to be a place to add and share my works about the things I learn and what I'm interested in. It was built from the [Gatsby's default starter](https://github.com/gatsbyjs/gatsby-starter-default) 
 
 <!-- Technologies -->
 ## Built With these Technologies
