@@ -17,9 +17,11 @@ const HelpMessageContainer = styled.div<HelpMessageContainerProps>`
   opacity: 0;
 
  ${props => props.theme.media.min.md`
-    position: absolute;
-    bottom: 2rem;
-    left: 35%;
+    position: relative;
+    top: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    `}
 
    ${props => props.theme.media.max.md`
