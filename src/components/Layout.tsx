@@ -9,7 +9,10 @@ type LayoutProps = {
   readonly transparentNavigation?: boolean;
 };
 
-const Layout: React.FC<LayoutProps> = ({children, transparentNavigation}) => (
+const Layout: React.FC<LayoutProps> = ({
+  children,
+  transparentNavigation = false
+}) => (
   <>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
