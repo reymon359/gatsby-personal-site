@@ -48,7 +48,14 @@ export const AboutMe: React.FC = () => {
           TypeScript
         </a>
         &nbsp; among other technologies and use it as a place to share what I
-        learn and do.
+        learn and do.&nbsp;
+        <a
+          href="https://github.com/reymon359/gatsby-personal-site"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Here is the source.
+        </a>
       </p>
 
       <p>
