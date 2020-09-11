@@ -38,7 +38,7 @@ const Projects: React.FC<ProjectsProps> = ({data}) => {
       <Content>
         <Header>
           <Title>Projects</Title>
-          <Description>Stuff I have done</Description>
+          <Description>What I do or have done</Description>
         </Header>
         <Section>
           <SectionBody>

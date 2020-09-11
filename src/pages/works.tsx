@@ -75,7 +75,7 @@ const Works: React.FC<WorksProps> = ({data}) => {
       <Content>
         <Header>
           <Title>Works</Title>
-          <Description>Stuff I do and write about</Description>
+          <Description>What I do and write about</Description>
         </Header>
         <Section>
           <SectionHeader>

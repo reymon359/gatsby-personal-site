@@ -38,7 +38,7 @@ const Tags: React.FC<Props> = ({data}) => {
       <Content>
         <Header>
           <Title>All tags</Title>
-          <Description>Stuff tags</Description>
+          <Description>Tags from the works</Description>
         </Header>
         <article>
           <ItemTags>

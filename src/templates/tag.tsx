@@ -40,7 +40,7 @@ const TagTemplate: React.FC<Props> = ({data, pageContext}) => {
       <Content>
         <article>
           <Header>
-            <Title>Stuff tagged {tag}</Title>
+            <Title>Works tagged {tag}</Title>
           </Header>
           <Section>
             <SectionBody>

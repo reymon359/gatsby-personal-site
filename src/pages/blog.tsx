@@ -41,7 +41,7 @@ const Blog: React.FC<BlogProps> = ({data}) => {
       <Content>
         <Header>
           <Title>Blog</Title>
-          <Description>Stuff I write about</Description>
+          <Description>What I write about</Description>
         </Header>
         <Section>
           <SectionBody>
