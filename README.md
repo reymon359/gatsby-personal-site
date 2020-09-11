@@ -28,13 +28,12 @@
 <!-- Small description -->
 <p align="center">
 A personal site made with the static site generator <a href="https://www.gatsbyjs.com/">Gatsby</a>
-
 </p>
 
 <!-- Screenshot or video (with link) -->
 <p align="center">
   <a href="https://www.ramonmorcillo.com">
-    <img alt="site screenshot" src="./static/images/favicon/site_screenshot.png" />
+    <img alt="site screenshot" src="./static/images/site_screenshot.png" />
   </a>
 </p>
 
