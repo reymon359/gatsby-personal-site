@@ -1,99 +1,108 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+<!-- Logo (with link) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  <a href="https://github.com/reymon359/gatsby-personal-site">
+    <img alt="gatsby-personal-site" src="./static/images/favicon/orange.png" width="100" />
   </a>
 </p>
+
+<!-- Title -->
 <h1 align="center">
-  Gatsby's default starter
+  Gatsby Personal Site
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+<!-- Badges (with link) -->
+[![Build](https://github.com/reymon359/gatsby-personal-site/workflows/Build/badge.svg)](https://github.com/reymon359/gatsby-personal-site/actions?query=workflow%3ABuild) 
+[![License: MIT](https://img.shields.io/github/license/reymon359/gatsby-personal-site?color=blue&logo=github)](https://github.com/reymon359/gatsby-personal-site/blob/master/LICENSE) 
+[![Last commit](https://img.shields.io/github/last-commit/reymon359/gatsby-personal-site?logo=github)](https://github.com/reymon359/gatsby-personal-site/commits/master) 
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+<!-- Small description -->
+A personal site to made with the static site generator [Gatsby](https://www.gatsbyjs.com/)
 
-## 🚀 Quick start
+<!-- Screenshot or video (with link) -->
+<p align="center">
+  <a href="https://www.ramonmorcillo.com">
+    <img alt="site_screenshot.png" />
+  </a>
+</p>
 
-1.  **Create a Gatsby site.**
+<!-- Long description -->
+Built from the [Gatsby's default starter](https://github.com/gatsbyjs/gatsby-starter-default) more description
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+<!-- Technologies -->
+## Built With these Technologies
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+- **[Gatsby](https://www.gatsbyjs.com/):** React-based open source framework for creating websites and apps.
+- **[React](https://reactjs.org/):** Javascript library for building User Interfaces.
+- **[TypeScript](https://www.typescriptlang.org/):** Microsoft's open-source Type-safe language that compiles to JavaScript.
+- **[Styled-Components](https://styled-components.com):** CSS in JS Library for the styles.
+- **[GraphQL](https://graphql.org/):** The query language used to access the data with Gatsby.
+- **[Commitlint](https://github.com/conventional-changelog/commitlint):** To enforce [conventional commit format](https://www.conventionalcommits.org/).
+- **[GitHub Actions](https://github.com/features/actions):** GitHub's Continuous Integration & Delivery tool.
+- **[Renovate](https://renovate.whitesourcesoftware.com/):** Free, open-source app to automate the update of dependencies.
 
-1.  **Start developing.**
+<!-- Project Setup -->
+## Setup the project
 
-    Navigate into your new site’s directory and start it up.
+Just run `npm install`
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+To update the Github Actions badge on the `README.md` replace `reymon359`
 
-1.  **Open the source code and start editing!**
+```md
+![](https://github.com/reymon359/up-to-date-react-template/workflows/Build,%20Format%20and%20Test/badge.svg)
+```
 
-    Your site is now running at `http://localhost:8000`!
+With your GitHub username (and repository name in case you have renamed it).
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+```md
+![](https://github.com/<USERNAME>/<REPOSITORY>/workflows/Build,%20Format%20and%20Test/badge.svg)
+```
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+<!-- Available Scripts -->
+## Available Scripts
 
-## 🧐 What's inside?
+In the project directory, you can run:
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+### `npm run start`
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+### `npm run format`
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+formats document files according to the rules of the `.prettierrc` file.<br />
+See more information about prettier configuration [here](https://prettier.io/docs/en/configuration.html).
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+### `npm run test`
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+### `npm run build`
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+### `npm run deploy`
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+Builds the app for production and deploys it to [GitHub Pages](https://pages.github.com/) <br />
+Have a look at the [Create React App docs about how to configure it](https://create-react-app.dev/docs/deployment/#github-pages).
 
-12. **`README.md`**: A text file containing useful reference information about your project.
 
-## 🎓 Learning Gatsby
+<!-- Authors -->
+## Authors
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+- **Ramón Morcillo** - _Initial work_ - [reymon359](https://github.com/reymon359)
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+<!-- Credits -->
+## Credits
+- jeff
+- michel
