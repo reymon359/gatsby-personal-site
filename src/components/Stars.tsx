@@ -1,3 +1,13 @@
+/*
+
+This component is inspired by the work Rymd https://lab.hakim.se/rymd/ from
+Hakim El Hattab https://github.com/hakimel. I decided to learn and improve
+my skills at TypeScript and React and created a react component from it.
+Then I added a few features like some customizable params, the scroll-zoom effect
+or the random background color.
+
+*/
+
 import React, {useContext} from 'react';
 import {ThemeContext} from 'styled-components';
 import {getRandomBackground} from '../utils';
