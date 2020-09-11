@@ -1,3 +1,8 @@
+<!-- 
+This README.md file was generated from an open source template. 
+Have a look at it! https://gist.github.com/reymon359/a0880e5b3bfcbac54f58b52b3ade2e02
+-->
+
 <!-- Logo (with link) -->
 <p align="center">
   <a href="https://github.com/reymon359/gatsby-personal-site">
@@ -98,4 +103,3 @@ Run ESLint on the project to report wrong patterns on the code, and the second o
 
 - [Jeff Rafter](https://github.com/jeffrafter) and his post about [Building a Static Gatsby-based Website with TypeScript](https://jeffrafter.com/gatsby-with-typescript/) helped me a lot with the setup at the beginning of the project.
 - [Michele Mazzuco](https://github.com/michelemazzucco) and his [site](https://www.michelemazzucco.it/) which inspired me to style this one.
-
