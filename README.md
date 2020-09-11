@@ -47,19 +47,7 @@ Built from the [Gatsby's default starter](https://github.com/gatsbyjs/gatsby-sta
 <!-- Project Setup -->
 ## Setup the project
 
-Just run `npm install`
-
-To update the Github Actions badge on the `README.md` replace `reymon359`
-
-```md
-![](https://github.com/reymon359/up-to-date-react-template/workflows/Build,%20Format%20and%20Test/badge.svg)
-```
-
-With your GitHub username (and repository name in case you have renamed it).
-
-```md
-![](https://github.com/<USERNAME>/<REPOSITORY>/workflows/Build,%20Format%20and%20Test/badge.svg)
-```
+Download it and run `npm install`
 
 <!-- Available Scripts -->
 ## Available Scripts
@@ -69,46 +57,38 @@ In the project directory, you can run:
 ### `npm run start`
 
 Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
 ### `npm run format`
 
 formats document files according to the rules of the `.prettierrc` file.<br />
 See more information about prettier configuration [here](https://prettier.io/docs/en/configuration.html).
 
-### `npm run test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds the app for production. The build is minified and 
+the filenames include the hashes.<br />
+The app is ready to be deployed!
 
 ### `npm run deploy`
 
 Builds the app for production and deploys it to [GitHub Pages](https://pages.github.com/) <br />
-Have a look at the [Create React App docs about how to configure it](https://create-react-app.dev/docs/deployment/#github-pages).
+Have a look at [How Gatsby Works with GitHub Pagesw to configure it](https://www.gatsbyjs.com/docs/how-gatsby-works-with-github-pages/).
 
+### `npm run lint` & `npm run lint:fix`
+
+Run ESLint on the project to report wrong patterns on the code, and the second one also tries to fix them
 
 <!-- Authors -->
 ## Authors
 
 - **Ramón Morcillo** - _Initial work_ - [reymon359](https://github.com/reymon359)
 
-
 <!-- Credits -->
 ## Credits
-- jeff
-- michel
 
-Readme template made with link to readme template
+- [Jeff Rafter](https://github.com/jeffrafter) and his post about [Building a Static Gatsby-based Website with TypeScript](https://jeffrafter.com/gatsby-with-typescript/) helped me a lot with the setup at the beginning of the project.
+
+- [Michele Mazzuco](https://github.com/michelemazzucco) and his [site](https://www.michelemazzucco.it/) which inspired me to style this one.
+
