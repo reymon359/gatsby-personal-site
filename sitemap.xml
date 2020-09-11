@@ -3,16 +3,17 @@
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/auto-update-dependencies-safely-github-actions/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/getting-started-with-graphql-and-nodejs/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/visiting-the-dolomites/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ramonmorcillo.com/gatsby-personal-site/tags/Books/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/tags/Personal/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ramonmorcillo.com/gatsby-personal-site/tags/Gatsby/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ramonmorcillo.com/gatsby-personal-site/tags/React/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ramonmorcillo.com/gatsby-personal-site/tags/TypeScript/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ramonmorcillo.com/gatsby-personal-site/tags/Books/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/tags/Learning/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/tags/Continuous Integration/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/tags/Tutorial/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/tags/GitHub/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/tags/Maintainability/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ramonmorcillo.com/gatsby-personal-site/tags/React/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/tags/GraphQL/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ramonmorcillo.com/gatsby-personal-site/tags/TypeScript/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/tags/Apollo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/tags/Node.js/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/tags/Adventures/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -26,7 +27,6 @@
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/tags/JavaScript/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/tags/WebSocket/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ramonmorcillo.com/gatsby-personal-site/blog-old/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ramonmorcillo.com/gatsby-personal-site/projects/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
