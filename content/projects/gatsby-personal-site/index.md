@@ -2,7 +2,7 @@
 id: 'gatsby-personal-site'
 title: 'Gatsby Personal Site'
 description: "I rebuilt my site using Gatsby and TypeScript"
-date: '2020-04-27'
+date: '2020-09-09'
 author: 'Ramón Morcillo'
 categories: ['Personal']
 tags: [ 'Personal', 'Gatsby', 'React', TypeScript ]
