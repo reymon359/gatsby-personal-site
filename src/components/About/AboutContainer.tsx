@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {AboutMe} from './AboutMe';
 import {Image} from './Image';
-import {IntroContainer} from '../Intro';
+import Intro from '../Intro';
 
 export const Wrapper = styled.section`
   display: grid;
@@ -33,7 +33,7 @@ export const AboutContainer: React.FC = () => {
   return (
     <Wrapper>
       <Information>
-        <IntroContainer fixed={false} />
+        <Intro fixed={false} />
         <AboutMe />
       </Information>
       <Image />
