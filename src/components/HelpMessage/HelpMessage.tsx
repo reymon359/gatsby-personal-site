@@ -1,13 +1,11 @@
 import React from 'react';
-import {useDeviceDetect} from '../../hooks';
 import styled from 'styled-components';
-import {components} from '../../data';
 
-interface HelpMessageContainerProps {
+interface WrapperProps {
   show: boolean;
 }
 
-const HelpMessageContainer = styled.div<HelpMessageContainerProps>`
+const Wrapper = styled.div<WrapperProps>`
   color: ${props => props.theme.colors.light};
   font-size: ${props => props.theme.fontSizes.normal};
   font-weight: ${props => props.theme.fontWeights.normal};
@@ -53,21 +51,12 @@ const HelpMessageContainer = styled.div<HelpMessageContainerProps>`
 
 interface HelpMessageProps {
   readonly show: boolean;
+  readonly text: string;
 }
 
-const HelpMessage: React.FC<HelpMessageProps> = ({show = false}) => {
-  const {isMobile} = useDeviceDetect();
-  const {
-    navigation: {
-      helpMessage: {mobile, desktop}
-    }
-  } = components;
-
-  const helpMessageText = isMobile ? mobile : desktop;
-
-  return (
-    <HelpMessageContainer show={show}>{helpMessageText}</HelpMessageContainer>
-  );
-};
+const HelpMessage: React.FC<HelpMessageProps> = ({
+  show = false,
+  text = 'Move around the screen or scroll it'
+}) => <Wrapper show={show}>{text}</Wrapper>;
 
 export default HelpMessage;
