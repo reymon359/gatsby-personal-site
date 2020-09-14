@@ -48,13 +48,13 @@ interface PageQueryData {
 }
 
 export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
+    query {
+        site {
+            siteMetadata {
+                title
+            }
+        }
     }
-  }
 `;
 
 export default AboutPage;
