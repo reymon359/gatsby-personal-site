@@ -14,7 +14,7 @@ const Content = styled.main`
   }
 `;
 
-export const AboutMe: React.FC = () => {
+const AboutMe: React.FC = () => {
   return (
     <Content>
       <p>
@@ -94,3 +94,5 @@ export const AboutMe: React.FC = () => {
     </Content>
   );
 };
+
+export default AboutMe;
