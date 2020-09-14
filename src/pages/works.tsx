@@ -12,6 +12,7 @@ interface WorksPageProps {
 }
 
 const WorksPage: React.FC<WorksPageProps> = ({data}) => {
+  console.log(data);
   const siteTitle = data.site.siteMetadata.title;
 
   return (
@@ -40,11 +41,9 @@ const WorksPage: React.FC<WorksPageProps> = ({data}) => {
 };
 
 export const pageQuery = graphql`
-  query PageQueryTitle {
+  query {
     site {
-      siteMetadata {
-        title
-      }
+      ...SiteTitle
     }
   }
 `;

@@ -42,9 +42,7 @@ const NotFoundPage: React.FC<NotFoundPageProps> = ({data}) => {
 export const pageQuery = graphql`
   query {
     site {
-      siteMetadata {
-        title
-      }
+      ...SiteTitle
     }
   }
 `;

@@ -42,9 +42,7 @@ const ProjectsPage: React.FC<ProjectsPageProps> = ({data}) => {
 export const pageQuery = graphql`
   query {
     site {
-      siteMetadata {
-        title
-      }
+      ...SiteTitle
     }
   }
 `;

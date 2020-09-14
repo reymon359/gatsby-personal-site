@@ -37,9 +37,7 @@ const IndexPage: React.FC<IndexPageProps> = ({data}) => {
 export const pageQuery = graphql`
   query {
     site {
-      siteMetadata {
-        title
-      }
+      ...SiteTitle
     }
   }
 `;
