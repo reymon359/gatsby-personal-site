@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Logo from './Logo';
+import Logo from '../Logo';
 import Footer from './Footer';
 import Menu from './Menu';
 import ToggleMenu from './ToggleMenu';
