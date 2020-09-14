@@ -7,18 +7,20 @@ interface BlogProps {
   posts: Work[];
 }
 
-const Blog: React.FC<BlogProps> = ({posts}) => (
-  <>
-    <Header>
-      <Title>Blog</Title>
-      <Description>What I write about</Description>
-    </Header>
-    <Section>
-      <SectionBody>
-        <ContentListContainer content={posts} />
-      </SectionBody>
-    </Section>
-  </>
-);
+const Blog: React.FC<BlogProps> = ({posts}) => {
+  return (
+    <>
+      <Header>
+        <Title>Blog</Title>
+        <Description>What I write about</Description>
+      </Header>
+      <Section>
+        <SectionBody>
+          <ContentListContainer content={posts} />
+        </SectionBody>
+      </Section>
+    </>
+  );
+};
 
 export default Blog;
