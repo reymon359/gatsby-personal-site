@@ -1,17 +1,16 @@
 import React from 'react';
 import {graphql} from 'gatsby';
-
 import Layout from '../components/Layout';
 import Head from '../components/Head';
 import Stars from '../components/Stars';
 import Content from '../components/Content';
-import {NotFoundContainer} from '../components/NotFound';
+import NotFound from '../components/NotFound';
 
-interface NotFoundProps {
+interface NotFoundPageProps {
   readonly data: PageQueryData;
 }
 
-const NotFound: React.FC<NotFoundProps> = ({data}) => {
+const NotFoundPage: React.FC<NotFoundPageProps> = ({data}) => {
   const siteTitle = data.site.siteMetadata.title;
 
   return (
@@ -33,7 +32,7 @@ const NotFound: React.FC<NotFoundProps> = ({data}) => {
         addEventListeners={false}
       />
       <Content fullHeight={false}>
-        <NotFoundContainer />
+        <NotFound />
       </Content>
     </Layout>
   );
@@ -57,4 +56,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default NotFound;
+export default NotFoundPage;
