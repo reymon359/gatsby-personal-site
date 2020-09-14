@@ -5,9 +5,10 @@ import Head from '../components/Head';
 import Stars from '../components/Stars';
 import Content from '../components/Content';
 import Tags from '../components/Tags';
+import {TitlePageQueryData} from '../types';
 
 interface TagsPageProps {
-  readonly data: PageQueryData;
+  readonly data: TitlePageQueryData;
 }
 
 const TagsPage: React.FC<TagsPageProps> = ({data}) => {
@@ -37,14 +38,6 @@ const TagsPage: React.FC<TagsPageProps> = ({data}) => {
     </Layout>
   );
 };
-
-interface PageQueryData {
-  site: {
-    siteMetadata: {
-      title: string;
-    };
-  };
-}
 
 export const pageQuery = graphql`
   query {

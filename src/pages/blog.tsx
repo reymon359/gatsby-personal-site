@@ -5,9 +5,10 @@ import Layout from '../components/Layout';
 import Stars from '../components/Stars';
 import Content from '../components/Content';
 import Blog from '../components/Blog';
+import {TitlePageQueryData} from '../types';
 
 interface BlogPageProps {
-  readonly data: PageQueryData;
+  readonly data: TitlePageQueryData;
 }
 
 const BlogPage: React.FC<BlogPageProps> = ({data}) => {
@@ -37,14 +38,6 @@ const BlogPage: React.FC<BlogPageProps> = ({data}) => {
     </Layout>
   );
 };
-
-interface PageQueryData {
-  site: {
-    siteMetadata: {
-      title: string;
-    };
-  };
-}
 
 export const pageQuery = graphql`
   query {

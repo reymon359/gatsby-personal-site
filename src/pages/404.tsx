@@ -5,9 +5,10 @@ import Head from '../components/Head';
 import Stars from '../components/Stars';
 import Content from '../components/Content';
 import NotFound from '../components/NotFound';
+import {TitlePageQueryData} from '../types';
 
 interface NotFoundPageProps {
-  readonly data: PageQueryData;
+  readonly data: TitlePageQueryData;
 }
 
 const NotFoundPage: React.FC<NotFoundPageProps> = ({data}) => {
@@ -37,7 +38,6 @@ const NotFoundPage: React.FC<NotFoundPageProps> = ({data}) => {
     </Layout>
   );
 };
-
 
 export const pageQuery = graphql`
   query {

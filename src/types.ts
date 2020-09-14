@@ -21,3 +21,11 @@ export interface Tag {
   fieldValue: string;
   totalCount: number;
 }
+
+export interface TitlePageQueryData {
+  site: {
+    siteMetadata: {
+      title: string;
+    };
+  };
+}

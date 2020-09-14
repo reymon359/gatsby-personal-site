@@ -5,9 +5,10 @@ import Layout from '../components/Layout';
 import Stars from '../components/Stars';
 import Content from '../components/Content';
 import Projects from '../components/Projects';
+import {TitlePageQueryData} from '../types';
 
 interface ProjectsPageProps {
-  readonly data: PageQueryData;
+  readonly data: TitlePageQueryData;
 }
 
 const ProjectsPage: React.FC<ProjectsPageProps> = ({data}) => {
@@ -37,14 +38,6 @@ const ProjectsPage: React.FC<ProjectsPageProps> = ({data}) => {
     </Layout>
   );
 };
-
-interface PageQueryData {
-  site: {
-    siteMetadata: {
-      title: string;
-    };
-  };
-}
 
 export const pageQuery = graphql`
   query {

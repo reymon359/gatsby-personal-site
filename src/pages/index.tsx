@@ -4,13 +4,15 @@ import Head from '../components/Head';
 import Layout from '../components/Layout';
 import Stars from '../components/Stars';
 import Home from '../components/Home';
+import {TitlePageQueryData} from '../types';
 
 interface IndexPageProps {
-  readonly data: PageQueryData;
+  readonly data: TitlePageQueryData;
 }
 
 const IndexPage: React.FC<IndexPageProps> = ({data}) => {
   const siteTitle: string = data.site.siteMetadata.title;
+
   return (
     <Layout title={siteTitle} transparentNavigation={true}>
       <Stars />
@@ -31,14 +33,6 @@ const IndexPage: React.FC<IndexPageProps> = ({data}) => {
     </Layout>
   );
 };
-
-interface PageQueryData {
-  site: {
-    siteMetadata: {
-      title: string;
-    };
-  };
-}
 
 export const pageQuery = graphql`
   query {
