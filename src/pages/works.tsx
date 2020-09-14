@@ -12,7 +12,6 @@ interface WorksPageProps {
 }
 
 const WorksPage: React.FC<WorksPageProps> = ({data}) => {
-  console.log(data);
   const siteTitle = data.site.siteMetadata.title;
 
   return (
