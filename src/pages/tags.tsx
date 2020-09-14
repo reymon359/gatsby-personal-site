@@ -1,19 +1,19 @@
 import React from 'react';
 import {graphql} from 'gatsby';
-
 import Layout from '../components/Layout';
 import Head from '../components/Head';
 import Stars from '../components/Stars';
 import Content from '../components/Content';
-import {Description, Header, ItemTags, Tag, Title} from '../styles';
+import {Tag} from '../types';
+import Tags from '../components/Tags';
 
-interface Props {
+interface TagsPageProps {
   readonly data: PageQueryData;
 }
 
-const Tags: React.FC<Props> = ({data}) => {
+const TagsPage: React.FC<TagsPageProps> = ({data}) => {
   const siteTitle = data.site.siteMetadata.title;
-  const group =
+  const tags: Tag[] =
     data.allMarkdownRemark &&
     data.allMarkdownRemark.group.sort((a, b) => b.totalCount - a.totalCount);
 
@@ -36,24 +36,7 @@ const Tags: React.FC<Props> = ({data}) => {
         addEventListeners={false}
       />
       <Content>
-        <Header>
-          <Title>All tags</Title>
-          <Description>Tags from the works</Description>
-        </Header>
-        <article>
-          <ItemTags>
-            {group &&
-              group.map(
-                tag =>
-                  tag && (
-                    <Tag key={tag.fieldValue} to={`/tags/${tag.fieldValue}/`}>
-                      {tag.fieldValue} -&nbsp;
-                      <small>{tag.totalCount}</small>
-                    </Tag>
-                  )
-              )}
-          </ItemTags>
-        </article>
+        <Tags tags={tags} />
       </Content>
     </Layout>
   );
@@ -89,4 +72,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default Tags;
+export default TagsPage;
