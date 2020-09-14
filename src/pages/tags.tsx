@@ -4,7 +4,6 @@ import Layout from '../components/Layout';
 import Head from '../components/Head';
 import Stars from '../components/Stars';
 import Content from '../components/Content';
-import {Tag} from '../types';
 import Tags from '../components/Tags';
 
 interface TagsPageProps {
@@ -13,9 +12,6 @@ interface TagsPageProps {
 
 const TagsPage: React.FC<TagsPageProps> = ({data}) => {
   const siteTitle = data.site.siteMetadata.title;
-  const tags: Tag[] =
-    data.allMarkdownRemark &&
-    data.allMarkdownRemark.group.sort((a, b) => b.totalCount - a.totalCount);
 
   return (
     <Layout title={siteTitle}>
@@ -36,7 +32,7 @@ const TagsPage: React.FC<TagsPageProps> = ({data}) => {
         addEventListeners={false}
       />
       <Content>
-        <Tags tags={tags} />
+        <Tags />
       </Content>
     </Layout>
   );
@@ -48,12 +44,6 @@ interface PageQueryData {
       title: string;
     };
   };
-  allMarkdownRemark: {
-    group: {
-      fieldValue: string;
-      totalCount: number;
-    }[];
-  };
 }
 
 export const pageQuery = graphql`
@@ -61,12 +51,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-      }
-    }
-    allMarkdownRemark(filter: {frontmatter: {published: {ne: false}}}) {
-      group(field: frontmatter___tags) {
-        fieldValue
-        totalCount
       }
     }
   }
