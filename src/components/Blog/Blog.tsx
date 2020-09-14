@@ -10,7 +10,7 @@ interface BlogProps {
 const Blog: React.FC<BlogProps> = ({posts}) => (
   <>
     <Header>
-      <Title>BlogPage</Title>
+      <Title>Blog</Title>
       <Description>What I write about</Description>
     </Header>
     <Section>
