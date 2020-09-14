@@ -36,7 +36,7 @@ interface NotFoundProps {
   readonly notFoundImageSrc?: string;
 }
 
-export const NotFound: React.FC<NotFoundProps> = ({notFoundImageSrc}) => {
+const NotFound: React.FC<NotFoundProps> = ({notFoundImageSrc}) => {
   return (
     <Wrapper>
       <Content>
@@ -50,3 +50,5 @@ export const NotFound: React.FC<NotFoundProps> = ({notFoundImageSrc}) => {
     </Wrapper>
   );
 };
+
+export default NotFound;

@@ -1,21 +1,18 @@
 import React from 'react';
 import {graphql} from 'gatsby';
-
 import Layout from '../components/Layout';
 import Head from '../components/Head';
 import Stars from '../components/Stars';
 import Content from '../components/Content';
-import {Description, Header, ItemTags, Tag, Title} from '../styles';
+import Tags from '../components/Tags';
+import {TitlePageQueryData} from '../types';
 
-interface Props {
-  readonly data: PageQueryData;
+interface TagsPageProps {
+  readonly data: TitlePageQueryData;
 }
 
-const Tags: React.FC<Props> = ({data}) => {
+const TagsPage: React.FC<TagsPageProps> = ({data}) => {
   const siteTitle = data.site.siteMetadata.title;
-  const group =
-    data.allMarkdownRemark &&
-    data.allMarkdownRemark.group.sort((a, b) => b.totalCount - a.totalCount);
 
   return (
     <Layout title={siteTitle}>
@@ -36,57 +33,17 @@ const Tags: React.FC<Props> = ({data}) => {
         addEventListeners={false}
       />
       <Content>
-        <Header>
-          <Title>All tags</Title>
-          <Description>Tags from the works</Description>
-        </Header>
-        <article>
-          <ItemTags>
-            {group &&
-              group.map(
-                tag =>
-                  tag && (
-                    <Tag key={tag.fieldValue} to={`/tags/${tag.fieldValue}/`}>
-                      {tag.fieldValue} -&nbsp;
-                      <small>{tag.totalCount}</small>
-                    </Tag>
-                  )
-              )}
-          </ItemTags>
-        </article>
+        <Tags />
       </Content>
     </Layout>
   );
 };
 
-interface PageQueryData {
-  site: {
-    siteMetadata: {
-      title: string;
-    };
-  };
-  allMarkdownRemark: {
-    group: {
-      fieldValue: string;
-      totalCount: number;
-    }[];
-  };
-}
-
 export const pageQuery = graphql`
   query {
     site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(filter: {frontmatter: {published: {ne: false}}}) {
-      group(field: frontmatter___tags) {
-        fieldValue
-        totalCount
-      }
+      ...SiteTitle
     }
   }
 `;
-
-export default Tags;
+export default TagsPage;

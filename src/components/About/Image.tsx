@@ -40,10 +40,13 @@ const StyledImage = styled.img`
       opacity: 0.7;
     `}
 `;
-export const Image: React.FC = () => {
+
+const Image: React.FC = () => {
   return (
     <StyledPicture>
       <StyledImage src="../../../images/ramon-morcillo-meta-image.jpg" />
     </StyledPicture>
   );
 };
+
+export default Image;

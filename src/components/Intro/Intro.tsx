@@ -2,11 +2,11 @@ import React from 'react';
 import styled, {css} from 'styled-components';
 import {addRemToProperty} from '../../styles';
 
-type TitleWrapperProps = {
+interface WrapperProps {
   fixed: boolean;
-};
+}
 
-const TitleWrapper = styled.div<TitleWrapperProps>`
+const Wrapper = styled.div<WrapperProps>`
   pointer-events: none;
   font-size: ${props => props.theme.fontSizes.large};
   max-width: 36rem;
@@ -57,16 +57,16 @@ const Title = styled.h1`
   }
 `;
 
-type IntroProps = {
+interface IntroProps {
   fixed: boolean;
   title: string;
-};
+}
 
 const Intro: React.FC<IntroProps> = ({fixed, title}) => {
   return (
-    <TitleWrapper fixed={fixed}>
+    <Wrapper fixed={fixed}>
       <Title>{title}</Title>
-    </TitleWrapper>
+    </Wrapper>
   );
 };
 
