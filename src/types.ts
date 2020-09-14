@@ -16,3 +16,8 @@ export interface Work {
     };
   };
 }
+
+export interface Tag {
+  fieldValue: string;
+  totalCount: number;
+}
