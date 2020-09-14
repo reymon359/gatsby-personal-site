@@ -4,19 +4,19 @@ import Head from '../components/Head';
 import Layout from '../components/Layout';
 import Stars from '../components/Stars';
 import Content from '../components/Content';
-import {AboutContainer} from '../components/About';
+import About from '../components/About';
 
-interface AboutProps {
+interface AboutPageProps {
   readonly data: PageQueryData;
 }
 
-const About: React.FC<AboutProps> = ({data}) => {
+const AboutPage: React.FC<AboutPageProps> = ({data}) => {
   const siteTitle = data.site.siteMetadata.title;
 
   return (
     <Layout title={siteTitle}>
       <Head
-        title="About"
+        title="AboutPage"
         keywords={[
           `blog`,
           `gatsby`,
@@ -33,7 +33,7 @@ const About: React.FC<AboutProps> = ({data}) => {
       />
 
       <Content>
-        <AboutContainer />
+        <About />
       </Content>
     </Layout>
   );
@@ -57,4 +57,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default About;
+export default AboutPage;
