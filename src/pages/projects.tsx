@@ -4,15 +4,14 @@ import Head from '../components/Head';
 import Layout from '../components/Layout';
 import Stars from '../components/Stars';
 import Content from '../components/Content';
-import {ContentListContainer} from '../components/ContentList';
-import {Header, Title, Description, Section, SectionBody} from '../styles';
 import {Work} from '../types';
+import Projects from '../components/Projects';
 
-interface ProjectsProps {
+interface ProjectsPageProps {
   readonly data: PageQueryData;
 }
 
-const Projects: React.FC<ProjectsProps> = ({data}) => {
+const ProjectsPage: React.FC<ProjectsPageProps> = ({data}) => {
   const siteTitle = data.site.siteMetadata.title;
   const projects: Work[] = data.allMarkdownRemark.edges.filter(
     work => work.node.frontmatter.type === 'project'
@@ -36,15 +35,7 @@ const Projects: React.FC<ProjectsProps> = ({data}) => {
         addEventListeners={false}
       />
       <Content>
-        <Header>
-          <Title>Projects</Title>
-          <Description>What I do or have done</Description>
-        </Header>
-        <Section>
-          <SectionBody>
-            <ContentListContainer content={projects} />
-          </SectionBody>
-        </Section>
+        <Projects projects={projects} />
       </Content>
     </Layout>
   );
@@ -117,4 +108,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default Projects;
+export default ProjectsPage;
