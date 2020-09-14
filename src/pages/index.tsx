@@ -1,15 +1,15 @@
 import React from 'react';
 import {graphql} from 'gatsby';
-import Intro from '../components/Intro';
 import Head from '../components/Head';
 import Layout from '../components/Layout';
 import Stars from '../components/Stars';
+import Home from '../components/Home';
 
-interface IndexProps {
+interface IndexPageProps {
   readonly data: PageQueryData;
 }
 
-const Index: React.FC<IndexProps> = ({data}) => {
+const IndexPage: React.FC<IndexPageProps> = ({data}) => {
   const siteTitle: string = data.site.siteMetadata.title;
   return (
     <Layout title={siteTitle} transparentNavigation={true}>
@@ -26,7 +26,7 @@ const Index: React.FC<IndexProps> = ({data}) => {
         ]}
       />
       <section>
-        <Intro fixed={true} />
+        <Home />
       </section>
     </Layout>
   );
@@ -50,4 +50,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default Index;
+export default IndexPage;
