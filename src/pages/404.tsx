@@ -38,13 +38,6 @@ const NotFoundPage: React.FC<NotFoundPageProps> = ({data}) => {
   );
 };
 
-interface PageQueryData {
-  site: {
-    siteMetadata: {
-      title: string;
-    };
-  };
-}
 
 export const pageQuery = graphql`
   query {
