@@ -4,8 +4,7 @@ interface CircleProps {
   readonly fill?: string;
   readonly width?: number;
   readonly height?: number;
-};
-
+}
 
 const Circle: React.FC<CircleProps> = ({fill, width = 22, height = 22}) => (
   <svg

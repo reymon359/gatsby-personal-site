@@ -62,16 +62,12 @@ const RelativeWrapper = styled.div`
   position: relative;
 `;
 
-
-
-
 interface LogoProps {
   fillColor: string;
   link?: string;
 }
 
 const Logo: React.FC<LogoProps> = ({link = '/', fillColor = '#ffffff'}) => {
-
   return (
     <Wrapper>
       <RelativeWrapper>
