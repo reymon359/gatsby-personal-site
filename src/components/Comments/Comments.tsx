@@ -2,9 +2,6 @@ import React, {useState, useEffect} from 'react'
 import styled from 'styled-components'
 import {getTimeAgoInWords} from '../../utils'
 
-// We can't generate comments when building the static parts of the website
-const isBrowser = typeof window !== `undefined`
-
 const Container = styled('div')`
   //width: 55%;
 `
@@ -179,30 +176,9 @@ const Reaction: React.FC<ReactionProps> = ({url, reaction, count}) => {
 
 interface CommentsProps {
   readonly url: string
+  readonly comments: any
 }
-const Comments: React.FC<CommentsProps> = ({url}) => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const [comments, setComments] = useState(null as any)
-
-  useEffect(() => {
-    if (!isBrowser) return
-    const apiUrl = url.replace('github.com/', 'api.github.com/repos/')
-    const commentsUrl = `${apiUrl}/comments`
-    const fetchComments = async (): Promise<void> => {
-      const response = await fetch(commentsUrl, {
-        headers: {
-          Accept:
-            'application/vnd.github.v3.html+json application/vnd.github.squirrel-girl-preview'
-        }
-      })
-
-      const json = await response.json()
-      console.log(json)
-      setComments(json)
-    }
-    fetchComments()
-  }, [url])
-
+const Comments: React.FC<CommentsProps> = ({url, comments}) => {
   return (
     <>
       <h2>Comments</h2>
