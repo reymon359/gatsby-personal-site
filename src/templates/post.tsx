@@ -7,6 +7,7 @@ import Head from '../components/Head'
 import Stars from '../components/Stars'
 import Content from '../components/Content'
 import {Header, Title, Description, ItemTags, Tag} from '../styles'
+import Comments from '../components/Comments'
 
 interface Props {
   readonly data: PageQueryData
@@ -19,12 +20,9 @@ interface Props {
 const OtherPostsLinks = styled.ul`
   list-style-type: none;
   margin-left: 0;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-wrap: wrap;
-  ${props => props.theme.media.max.md`
-      padding-bottom: 10rem;
-  `}
 
   li {
     text-align: left;
@@ -106,6 +104,7 @@ const PostTemplate: React.FC<Props> = ({data, pageContext}) => {
               style={{paddingLeft: '1rem', lineHeight: 1.6}}
               dangerouslySetInnerHTML={{__html: post.html}}
             />
+            <Comments commentsUrl={post.frontmatter.commentsUrl} />
             <h2>Other posts</h2>
             <OtherPostsLinks>
               {previous && (
@@ -145,6 +144,7 @@ interface PageQueryData {
       description: string
       date: string
       tags: [string]
+      commentsUrl: string
       featuredImage: any
     }
   }
@@ -166,6 +166,7 @@ export const pageQuery = graphql`
         description
         date(formatString: "MMMM DD, YYYY")
         tags
+        commentsUrl
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 800) {

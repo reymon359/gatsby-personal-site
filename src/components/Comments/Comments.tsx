@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react'
 import styled from 'styled-components'
 import {getTimeAgoInWords} from '../../utils'
+
 // We can't generate comments when building the static parts of the website
 const isBrowser = typeof window !== `undefined`
 
 const Container = styled('div')`
-  width: 55%;
+  //width: 55%;
 `
 
 const Comment = styled('div')`
@@ -83,7 +84,7 @@ const ReactionCount = styled('span')`
 
 const Actions = styled('div')`
   margin-top: 40px;
-  margin-bottom: 40px;
+  //margin-bottom: 40px;
   float: right;
 `
 
@@ -204,7 +205,6 @@ const Comments: React.FC<CommentsProps> = ({url}) => {
 
   return (
     <>
-      <hr />
       <h2>Comments</h2>
       <Container className="github">
         <div>
