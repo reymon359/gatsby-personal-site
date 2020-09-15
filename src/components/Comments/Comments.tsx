@@ -9,25 +9,23 @@ const Wrapper = styled.div`
   padding-bottom: 4rem;
 `
 
-const Comment = styled('div')`
+const Comment = styled.div`
   margin-top: 16px;
   padding-top: 16px;
   letter-spacing: normal;
 
   a {
-    border: none;
-    text-decoration: none;
     background: none;
   }
 
   .content {
-    border: 1px solid #efefef;
+    color: ${props => props.theme.colors.lightest};
+    border: 1px solid  ${props => props.theme.colors.lightest};;
     border-radius: 6px;
     margin-left: 60px;
 
     .header {
       padding: 16px;
-      background-color: #efefef;
       width: 100%;
 
       .date {
@@ -71,6 +69,19 @@ const Comment = styled('div')`
     }
   }
 `
+
+const Body = styled.div`
+box-sizing: border-box;
+min-width: 200px;
+max-width: 980px;
+margin: 0 auto;
+padding: 24px;
+letter-spacing: normal;
+border-bottom: 1px solid #efefef;
+line-height: 1.5;
+ color: ${props => props.theme.colors.lightest};
+`
+
 
 const Actions = styled('div')`
   margin-top: 40px;
