@@ -1,3 +1,3 @@
-import LogoContainer from './LogoContainer';
+import LogoContainer from './LogoContainer'
 
-export default LogoContainer;
+export default LogoContainer

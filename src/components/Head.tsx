@@ -1,28 +1,28 @@
-import React from 'react';
-import {Helmet} from 'react-helmet';
-import {StaticQuery, graphql} from 'gatsby';
-import {useDynamicFavicon} from '../hooks/useDynamicFavicon';
+import React from 'react'
+import {Helmet} from 'react-helmet'
+import {StaticQuery, graphql} from 'gatsby'
+import {useDynamicFavicon} from '../hooks/useDynamicFavicon'
 
 type StaticQueryData = {
   site: {
     siteMetadata: {
-      title: string;
-      description: string;
-      image: string;
-      googleSiteVerification: string;
+      title: string
+      description: string
+      image: string
+      googleSiteVerification: string
       author: {
-        name: string;
-      };
-    };
-  };
-};
+        name: string
+      }
+    }
+  }
+}
 
 interface HeadProps {
-  readonly title: string;
-  readonly description?: string;
-  readonly image?: string;
-  readonly lang?: string;
-  readonly keywords?: string[];
+  readonly title: string
+  readonly description?: string
+  readonly image?: string
+  readonly lang?: string
+  readonly keywords?: string[]
 }
 
 const Head: React.FC<HeadProps> = ({
@@ -49,11 +49,11 @@ const Head: React.FC<HeadProps> = ({
       }
     `}
     render={(data: StaticQueryData): React.ReactElement | null => {
-      const metaDescription = description || data.site.siteMetadata.description;
-      const metaImage = image || data.site.siteMetadata.image;
-      lang = lang || 'en';
-      keywords = keywords || [];
-      useDynamicFavicon();
+      const metaDescription = description || data.site.siteMetadata.description
+      const metaImage = image || data.site.siteMetadata.image
+      lang = lang || 'en'
+      keywords = keywords || []
+      useDynamicFavicon()
 
       return (
         <Helmet
@@ -116,9 +116,9 @@ const Head: React.FC<HeadProps> = ({
               : []
           )}
         />
-      );
+      )
     }}
   />
-);
+)
 
-export default Head;
+export default Head

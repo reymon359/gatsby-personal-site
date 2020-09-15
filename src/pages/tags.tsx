@@ -1,18 +1,18 @@
-import React from 'react';
-import {graphql} from 'gatsby';
-import Layout from '../components/Layout';
-import Head from '../components/Head';
-import Stars from '../components/Stars';
-import Content from '../components/Content';
-import Tags from '../components/Tags';
-import {TitlePageQueryData} from '../types';
+import React from 'react'
+import {graphql} from 'gatsby'
+import Layout from '../components/Layout'
+import Head from '../components/Head'
+import Stars from '../components/Stars'
+import Content from '../components/Content'
+import Tags from '../components/Tags'
+import {TitlePageQueryData} from '../types'
 
 interface TagsPageProps {
-  readonly data: TitlePageQueryData;
+  readonly data: TitlePageQueryData
 }
 
 const TagsPage: React.FC<TagsPageProps> = ({data}) => {
-  const siteTitle = data.site.siteMetadata.title;
+  const siteTitle = data.site.siteMetadata.title
 
   return (
     <Layout title={siteTitle}>
@@ -36,8 +36,8 @@ const TagsPage: React.FC<TagsPageProps> = ({data}) => {
         <Tags />
       </Content>
     </Layout>
-  );
-};
+  )
+}
 
 export const pageQuery = graphql`
   query {
@@ -45,5 +45,5 @@ export const pageQuery = graphql`
       ...SiteTitle
     }
   }
-`;
-export default TagsPage;
+`
+export default TagsPage

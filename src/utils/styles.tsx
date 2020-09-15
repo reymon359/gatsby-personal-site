@@ -1,10 +1,10 @@
-import {getRandomNumber} from './misc';
+import {getRandomNumber} from './misc'
 
 export const getRandomColor = () =>
-  '#' + ('00000' + ((Math.random() * (1 << 24)) | 0).toString(16)).slice(-6);
+  '#' + ('00000' + ((Math.random() * (1 << 24)) | 0).toString(16)).slice(-6)
 
 export const getRandomBackground = () => {
-  const background = [];
+  const background = []
   for (let i = 0; i < getRandomNumber(); i++) {
     background.push(`
       radial-gradient(
@@ -12,7 +12,7 @@ export const getRandomBackground = () => {
         ${getRandomColor() + '0d'},
         transparent ${getRandomNumber(100, 60)}%
       )
-  `);
+  `)
   }
-  return background.join(',');
-};
+  return background.join(',')
+}

@@ -1,3 +1,3 @@
-import CommentsContainer from './CommentsContainer';
+import CommentsContainer from './CommentsContainer'
 
-export default CommentsContainer;
+export default CommentsContainer

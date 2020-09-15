@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 const StyledPicture = styled.picture`
   grid-area: 1 / 4 / last-line / end;
@@ -21,7 +21,7 @@ const StyledPicture = styled.picture`
       padding-top: 100%;
     }
   `}
-`;
+`
 
 const StyledImage = styled.img`
   position: absolute;
@@ -39,14 +39,14 @@ const StyledImage = styled.img`
   ${props => props.theme.media.max.sm`
       opacity: 0.7;
     `}
-`;
+`
 
 const Image: React.FC = () => {
   return (
     <StyledPicture>
       <StyledImage src="../../../images/ramon-morcillo-meta-image.jpg" />
     </StyledPicture>
-  );
-};
+  )
+}
 
-export default Image;
+export default Image

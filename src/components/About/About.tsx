@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import AboutMe from './AboutMe';
-import Image from './Image';
-import Intro from '../Intro';
+import React from 'react'
+import styled from 'styled-components'
+import AboutMe from './AboutMe'
+import Image from './Image'
+import Intro from '../Intro'
 
 export const Wrapper = styled.section`
   display: grid;
@@ -14,7 +14,7 @@ export const Wrapper = styled.section`
     grid-template-rows: repeat(3, auto);
     grid-row-gap: 2rem;
   `}
-`;
+`
 
 export const Information = styled.header`
   grid-row: 2 / 4;
@@ -27,7 +27,7 @@ export const Information = styled.header`
     grid-row: 2 / 3;
     grid-column: 1 / 1;
   `}
-`;
+`
 
 const About: React.FC = () => {
   return (
@@ -38,7 +38,7 @@ const About: React.FC = () => {
       </Information>
       <Image />
     </Wrapper>
-  );
-};
+  )
+}
 
-export default About;
+export default About

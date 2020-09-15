@@ -1,7 +1,7 @@
-import React from 'react';
-import Blog from './Blog';
-import {Work} from '../../types';
-import {graphql, useStaticQuery} from 'gatsby';
+import React from 'react'
+import Blog from './Blog'
+import {Work} from '../../types'
+import {graphql, useStaticQuery} from 'gatsby'
 
 const BlogContainer: React.FC = () => {
   const data = useStaticQuery(graphql`
@@ -36,13 +36,13 @@ const BlogContainer: React.FC = () => {
         }
       }
     }
-  `);
+  `)
 
   const posts: Work[] = data.allMarkdownRemark.edges.filter(
     (work: Work) => work.node.frontmatter.type === 'post'
-  );
+  )
 
-  return <Blog posts={posts} />;
-};
+  return <Blog posts={posts} />
+}
 
-export default BlogContainer;
+export default BlogContainer

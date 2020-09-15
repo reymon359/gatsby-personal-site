@@ -1,15 +1,15 @@
-import React, {useState} from 'react';
-import Logo from '../Logo';
-import Footer from './Footer';
-import Menu from './Menu';
-import ToggleMenu from './ToggleMenu';
-import styled, {css} from 'styled-components';
-import {addRemToProperty} from '../../styles/shared';
-import HelpMessage from '../HelpMessage';
+import React, {useState} from 'react'
+import Logo from '../Logo'
+import Footer from './Footer'
+import Menu from './Menu'
+import ToggleMenu from './ToggleMenu'
+import styled, {css} from 'styled-components'
+import {addRemToProperty} from '../../styles/shared'
+import HelpMessage from '../HelpMessage'
 
 type WrapperProps = {
-  enablePointerEvents: boolean;
-};
+  enablePointerEvents: boolean
+}
 const Wrapper = styled.div<WrapperProps>`
   pointer-events: ${props => (props.enablePointerEvents ? 'none' : 'all')};
   ${props => props.theme.media.max.md`
@@ -23,12 +23,12 @@ const Wrapper = styled.div<WrapperProps>`
   @media only screen and (min-width:  54em) {
     pointer-events: none;
   }
-`;
+`
 
 type ShoableProps = {
-  open: boolean;
-  transparent: boolean;
-};
+  open: boolean
+  transparent: boolean
+}
 
 const Shoable = styled.div<ShoableProps>`
   ${props => props.theme.media.max.md`
@@ -57,11 +57,11 @@ const Shoable = styled.div<ShoableProps>`
       padding: 0 2rem 2rem;
     }
   `}
-`;
+`
 
 type HeaderProps = {
-  transparent: boolean;
-};
+  transparent: boolean
+}
 
 const Header = styled.header<HeaderProps>`
   ${props => props.theme.media.max.md`
@@ -81,16 +81,16 @@ const Header = styled.header<HeaderProps>`
         ${(props: any) => props.theme.colors.primaryDark} 50%
       );
     `}
-`;
+`
 
 interface NavigationProps {
-  readonly transparent: boolean;
+  readonly transparent: boolean
 }
 
 export const Navigation: React.FC<NavigationProps> = ({
   transparent = false
 }) => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   return (
     <Wrapper enablePointerEvents={transparent}>
@@ -106,5 +106,5 @@ export const Navigation: React.FC<NavigationProps> = ({
         </div>
       </Shoable>
     </Wrapper>
-  );
-};
+  )
+}

@@ -1,10 +1,10 @@
-import React from 'react';
-import {Description, Header, Section, SectionBody, Title} from '../../styles';
-import {ContentListContainer} from '../ContentList';
-import {Work} from '../../types';
+import React from 'react'
+import {Description, Header, Section, SectionBody, Title} from '../../styles'
+import {ContentListContainer} from '../ContentList'
+import {Work} from '../../types'
 
 interface ProjectsProps {
-  projects: Work[];
+  projects: Work[]
 }
 
 const Projects: React.FC<ProjectsProps> = ({projects}) => (
@@ -19,6 +19,6 @@ const Projects: React.FC<ProjectsProps> = ({projects}) => (
       </SectionBody>
     </Section>
   </>
-);
+)
 
-export default Projects;
+export default Projects

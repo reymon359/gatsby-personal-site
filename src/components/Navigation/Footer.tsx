@@ -1,6 +1,6 @@
-import React from 'react';
-import styled, {css} from 'styled-components';
-import {addRemToProperty} from '../../styles/shared';
+import React from 'react'
+import styled, {css} from 'styled-components'
+import {addRemToProperty} from '../../styles/shared'
 
 const FooterWrapper = styled.footer`
   width: 100%;
@@ -10,11 +10,11 @@ const FooterWrapper = styled.footer`
     position: static;
     padding-top: 1.5rem;
   `}
-`;
+`
 
 type ItemProps = {
-  position: string;
-};
+  position: string
+}
 
 const Item = styled.div<ItemProps>`
   position: absolute;
@@ -48,7 +48,7 @@ const Item = styled.div<ItemProps>`
   small {
     font-size: 70% !important;
   }
-`;
+`
 
 const Footer = () => (
   <FooterWrapper>
@@ -66,6 +66,6 @@ const Footer = () => (
       </small>
     </Item>
   </FooterWrapper>
-);
+)
 
-export default Footer;
+export default Footer

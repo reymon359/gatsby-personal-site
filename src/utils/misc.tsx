@@ -1,5 +1,5 @@
 export const getRandomNumber = (max = 10, min = 1) =>
-  Math.floor(Math.random() * max) + min;
+  Math.floor(Math.random() * max) + min
 export const getRandomFruit = () => {
   const fruits = [
     'kiwi',
@@ -17,7 +17,7 @@ export const getRandomFruit = () => {
     'peach',
     'cherries',
     'strawberry'
-  ];
+  ]
 
-  return fruits[Math.floor(Math.random() * fruits.length)];
-};
+  return fruits[Math.floor(Math.random() * fruits.length)]
+}

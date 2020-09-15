@@ -11,4 +11,4 @@ export const components = {
   notFound: {
     notFoundImageSrc: `../../../images/sup_seal.gif`
   }
-};
+}

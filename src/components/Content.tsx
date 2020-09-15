@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 type WrapperProps = {
-  fullHeight: boolean;
-};
+  fullHeight: boolean
+}
 
 export const Wrapper = styled.div<WrapperProps>`
   max-width: 68rem;
@@ -32,22 +32,22 @@ export const Wrapper = styled.div<WrapperProps>`
     margin: 2rem auto 0;
     padding: 0 2rem 6rem;
   `}
-`;
+`
 
 const BottomHeight = styled.div`
   height: 10rem;
-`;
+`
 
 type ContentProps = {
-  readonly children: React.ReactNode;
-  readonly fullHeight?: boolean;
-};
+  readonly children: React.ReactNode
+  readonly fullHeight?: boolean
+}
 
 const Content: React.FC<ContentProps> = ({children, fullHeight = true}) => (
   <Wrapper fullHeight={fullHeight}>
     {children}
     <BottomHeight />
   </Wrapper>
-);
+)
 
-export default Content;
+export default Content

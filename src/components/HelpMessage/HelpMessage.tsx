@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 interface WrapperProps {
-  show: boolean;
+  show: boolean
 }
 
 const Wrapper = styled.div<WrapperProps>`
@@ -14,9 +14,9 @@ const Wrapper = styled.div<WrapperProps>`
   text-align: center;
   opacity: 0;
 
- ${props =>
-   props.show &&
-   props.theme.media.min.md`
+  ${props =>
+    props.show &&
+    props.theme.media.min.md`
     position: relative;
     top: 90vh;
     display: flex;
@@ -24,7 +24,7 @@ const Wrapper = styled.div<WrapperProps>`
     align-items: center;
    `}
 
-   ${props => props.theme.media.max.md`
+  ${props => props.theme.media.max.md`
    margin-bottom: 0;
    padding-top: 0;
    `}
@@ -47,16 +47,16 @@ const Wrapper = styled.div<WrapperProps>`
       opacity: 0;
     }
   }
-`;
+`
 
 interface HelpMessageProps {
-  readonly show: boolean;
-  readonly text: string;
+  readonly show: boolean
+  readonly text: string
 }
 
 const HelpMessage: React.FC<HelpMessageProps> = ({
   show = false,
   text = 'Move around the screen or scroll it'
-}) => <Wrapper show={show}>{text}</Wrapper>;
+}) => <Wrapper show={show}>{text}</Wrapper>
 
-export default HelpMessage;
+export default HelpMessage

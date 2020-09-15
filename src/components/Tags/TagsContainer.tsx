@@ -1,7 +1,7 @@
-import React from 'react';
-import Tags from './Tags';
-import {graphql, useStaticQuery} from 'gatsby';
-import {Tag} from '../../types';
+import React from 'react'
+import Tags from './Tags'
+import {graphql, useStaticQuery} from 'gatsby'
+import {Tag} from '../../types'
 
 const TagsContainer: React.FC = () => {
   const data = useStaticQuery(graphql`
@@ -13,15 +13,15 @@ const TagsContainer: React.FC = () => {
         }
       }
     }
-  `);
+  `)
 
   const tags: Tag[] =
     data.allMarkdownRemark &&
     data.allMarkdownRemark.group.sort(
       (a: Tag, b: Tag) => b.totalCount - a.totalCount
-    );
+    )
 
-  return <Tags tags={tags} />;
-};
+  return <Tags tags={tags} />
+}
 
-export default TagsContainer;
+export default TagsContainer

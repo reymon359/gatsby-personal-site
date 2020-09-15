@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/camelcase */
-'use strict';
+'use strict'
 
 require('dotenv').config({
   path: `.env`
-});
+})
 
 module.exports = {
   pathPrefix: '/gatsby-personal-site',
@@ -142,4 +142,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ]
-};
+}

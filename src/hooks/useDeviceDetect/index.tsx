@@ -1,1 +1,1 @@
-export {useDeviceDetect} from './useDeviceDetect';
+export {useDeviceDetect} from './useDeviceDetect'

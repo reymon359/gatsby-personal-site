@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 interface ReactionsProps {
-  commentsUrl: string;
+  commentsUrl: string
 }
 
 const Reactions: React.FC<ReactionsProps> = () => {
-  return <h1>reactions</h1>;
-};
+  return <h1>reactions</h1>
+}
 
-export default Reactions;
+export default Reactions

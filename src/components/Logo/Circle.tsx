@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
 interface CircleProps {
-  readonly fill?: string;
-  readonly width?: number;
-  readonly height?: number;
+  readonly fill?: string
+  readonly width?: number
+  readonly height?: number
 }
 
 const Circle: React.FC<CircleProps> = ({fill, width = 22, height = 22}) => (
@@ -18,5 +18,5 @@ const Circle: React.FC<CircleProps> = ({fill, width = 22, height = 22}) => (
       fill={fill}
     />
   </svg>
-);
-export default Circle;
+)
+export default Circle

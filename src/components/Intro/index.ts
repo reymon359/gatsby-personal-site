@@ -1,3 +1,3 @@
-import IntroContainer from './IntroContainer';
+import IntroContainer from './IntroContainer'
 
-export default IntroContainer;
+export default IntroContainer

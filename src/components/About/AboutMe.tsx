@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 const Content = styled.main`
   margin-top: 1rem;
@@ -12,7 +12,7 @@ const Content = styled.main`
   p {
     margin: 1.5rem 0;
   }
-`;
+`
 
 const AboutMe: React.FC = () => {
   return (
@@ -92,7 +92,7 @@ const AboutMe: React.FC = () => {
         </a>
       </p>
     </Content>
-  );
-};
+  )
+}
 
-export default AboutMe;
+export default AboutMe

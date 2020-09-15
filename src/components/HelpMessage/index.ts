@@ -1,3 +1,3 @@
-import HelpMessageContainer from './HelpMessageContainer';
+import HelpMessageContainer from './HelpMessageContainer'
 
-export default HelpMessageContainer;
+export default HelpMessageContainer

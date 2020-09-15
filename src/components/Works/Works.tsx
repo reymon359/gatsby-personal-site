@@ -1,20 +1,20 @@
-import React from 'react';
-import {Description, Header, Section, SectionBody, Title} from '../../styles';
-import {ContentListContainer} from '../ContentList';
-import {Work} from '../../types';
-import styled from 'styled-components';
-import {Link} from 'gatsby';
+import React from 'react'
+import {Description, Header, Section, SectionBody, Title} from '../../styles'
+import {ContentListContainer} from '../ContentList'
+import {Work} from '../../types'
+import styled from 'styled-components'
+import {Link} from 'gatsby'
 
 const SectionHeader = styled.div`
   padding-left: 1rem;
   display: flex;
   align-items: center;
-`;
+`
 
 const SectionTitle = styled.h2`
   font-size: ${props => props.theme.fontSizes.mediumLarge};
   font-weight: ${props => props.theme.fontWeights.regular};
-`;
+`
 
 const MoreLink = styled(Link)`
   color: ${props => props.theme.colors.light};
@@ -37,11 +37,11 @@ const MoreLink = styled(Link)`
     background-color: ${props => props.theme.colors.light};
     border-bottom: none;
   }
-`;
+`
 
 interface WorksProps {
-  posts: Work[];
-  projects: Work[];
+  posts: Work[]
+  projects: Work[]
 }
 
 const Works: React.FC<WorksProps> = ({posts, projects}) => (
@@ -69,6 +69,6 @@ const Works: React.FC<WorksProps> = ({posts, projects}) => (
       </SectionBody>
     </Section>
   </>
-);
+)
 
-export default Works;
+export default Works
