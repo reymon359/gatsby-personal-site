@@ -1,10 +1,6 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import {getTimeAgoInWords} from '../../utils'
-
-const Container = styled('div')`
-  //width: 55%;
-`
 
 const Comment = styled('div')`
   margin-top: 16px;
@@ -182,16 +178,26 @@ const Comments: React.FC<CommentsProps> = ({url, comments}) => {
   return (
     <>
       <h2>Comments</h2>
-      <Container className="github">
-        <div>
-          <p>
-            Thanks for reading ❤️ – comment by replying to the{' '}
-            <a href={url}>issue for this post</a>.{` `}
-            {(!comments || comments.length === 0) &&
-              'There’s no comments yet; you could be the first.'}
-            <br />
+        <p>
+          Thanks for reading ❤️        </p>
+
+          <p> You can comment by replying to the{' '}
+          <a href={url}>issue for this post.</a>{` `}
           </p>
-        </div>
+
+          {(!comments || comments.length === 0) && (
+            <p>
+              There’s no comments yet,{` `}
+              <a
+                href={`${url}#new_comment_field`}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="button btn"
+              >
+                be the first to leave one!
+              </a>
+            </p>
+          )}
         {comments &&
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           comments.map((comment: any) => {
@@ -283,7 +289,6 @@ const Comments: React.FC<CommentsProps> = ({url, comments}) => {
             Add a comment &rarr;
           </a>
         </Actions>
-      </Container>
     </>
   )
 }
