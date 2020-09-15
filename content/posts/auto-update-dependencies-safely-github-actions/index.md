@@ -7,7 +7,8 @@ author: 'Ramón Morcillo'
 categories: ['Software']
 tags: ['Continuous Integration', 'Tutorial', 'GitHub', 'Maintainability']
 published: true
-featuredImage: './github_actions_and_renovate_logos.png'
+commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/155
+featuredImage: './github_actions_and_renovate_logos.png'    
 thumbnail: './github_actions_and_renovate_logos.png'
 type: 'post'
 url: 'none'
