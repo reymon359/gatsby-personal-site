@@ -24,7 +24,7 @@ export const getRandomFruit = () => {
 }
 
 // Comes from https://stackoverflow.com/questions/3177836/how-to-format-time-since-xxx-e-g-4-minutes-ago-similar-to-stack-exchange-site
-export const timeAgoInWords = (date: string): string => {
+export const getTimeAgoInWords = (date: string): string => {
   const start = +new Date(date)
   const elapsed = +new Date() - start
   const seconds = Math.floor(elapsed / 1000)

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import timeAgoInWords from '../util/time-ago-in-words'
 import styled from 'styled-components'
+import {getTimeAgoInWords} from '../../utils'
 // We can't generate comments when building the static parts of the website
 const isBrowser = typeof window !== `undefined`
 
@@ -235,7 +235,7 @@ const Comments: React.FC<CommentsProps> = ({url}) => {
                       {` `}
                       commented{' '}
                       <a href={comment.html_url}>
-                        {timeAgoInWords(comment.created_at)} ago
+                        {getTimeAgoInWords(comment.created_at)} ago
                       </a>
                       {` `}
                       {comment.updated_at > comment.created_at && (
