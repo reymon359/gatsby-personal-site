@@ -6,18 +6,19 @@ const Wrapper = styled.div`
   padding: 0;
   display: block;
   width: 100%;
+  border-top: 1px solid ${props => props.theme.colors.lightest};
   a {
     border: none;
   }
   g-emoji {
-    border-right: 1px solid lightgray;
+    border-right: 1px solid ${props => props.theme.colors.lightest};
     display: inline-block;
     padding: 12px;
     margin: 0;
   }
 
   .react div {
-    border-right: 1px solid lightgray;
+    border-right: 1px solid ${props => props.theme.colors.lightest};
     display: inline-block;
     padding: 16px;
     margin: 0;
@@ -68,7 +69,7 @@ const Reactions: React.FC<ReactionsProps> = ({comment}) => {
         rel="noreferrer noopener"
         className="react"
       >
-        <div>
+        <div style={{borderRight: 'none'}}>
           <svg
             className="octicon octicon-smiley"
             viewBox="0 0 16 16"

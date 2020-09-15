@@ -25,7 +25,7 @@ const Comment = styled.div`
     margin-left: 60px;
 
     .header {
-      padding: 16px;
+      padding: 1rem;
       width: 100%;
 
       .date {
@@ -42,24 +42,20 @@ const Comment = styled.div`
         padding: 4px 8px;
         font-size: 0.8em;
         text-transform: capitalize;
+        ${props => props.theme.media.max.md`
+          margin-top: 1rem;
+        `}
       }
-    }
-
-    .reactions {
     }
   }
 `
 
 const Body = styled.div`
-  box-sizing: border-box;
-  min-width: 200px;
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 24px;
-  letter-spacing: normal;
-  border-bottom: 1px solid #efefef;
-  line-height: 1.5;
   color: ${props => props.theme.colors.lightest};
+  margin: 0 auto;
+  padding: 1rem 2rem 2rem;
+  letter-spacing: normal;
+  line-height: 1.5;
 `
 
 const Actions = styled('div')`
@@ -110,10 +106,7 @@ const Comments: React.FC<CommentsProps> = ({url, comments}) => {
                   )}
                 </div>
                 <Body>
-                  <div
-                    className="markdown-body sans"
-                    dangerouslySetInnerHTML={{__html: comment.body_html}}
-                  />
+                  <div dangerouslySetInnerHTML={{__html: comment.body_html}} />
                 </Body>
                 <Reactions comment={comment} />
               </div>
