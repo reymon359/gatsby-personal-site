@@ -2,11 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import {getTimeAgoInWords} from '../../utils'
 import Avatar from './Avatar'
+import Reaction from './Reaction'
+import Header from './Header'
 
 const Wrapper = styled.div`
-padding-bottom: 4rem;
-`;
-
+  padding-bottom: 4rem;
+`
 
 const Comment = styled('div')`
   margin-top: 16px;
@@ -71,17 +72,10 @@ const Comment = styled('div')`
   }
 `
 
-const ReactionCount = styled('span')`
-  color: gray;
-  padding-left: 8px;
-`
-
 const Actions = styled('div')`
   margin-top: 40px;
-  //margin-bottom: 40px;
   float: right;
 `
-
 type ReactionKey =
   | '+1'
   | '-1'
@@ -91,10 +85,7 @@ type ReactionKey =
   | 'hooray'
   | 'laugh'
   | 'rocket'
-type ReactionImages = {[key in ReactionKey]: string}
-type ReactionEmoji = {[key in ReactionKey]: string}
-
-const REACTIONS = [
+const reactions = [
   '+1',
   '-1',
   'confused',
@@ -105,54 +96,6 @@ const REACTIONS = [
   'rocket'
 ]
 
-interface ReactionProps {
-  readonly reaction: ReactionKey
-  readonly count: number
-  readonly url: string
-}
-
-const Reaction: React.FC<ReactionProps> = ({url, reaction, count}) => {
-  const images: ReactionImages = {
-    '+1': '1f44d.png',
-    '-1': '1f44e.png',
-    confused: '1f615.png',
-    eyes: '1f440.png',
-    heart: '1f5bc.png',
-    hooray: '1f389.png',
-    laugh: '1f604.png',
-    rocket: '1f680.png'
-  }
-  const emoji: ReactionEmoji = {
-    '+1': '👍',
-    '-1': '👎',
-    confused: '😕',
-    eyes: '👀',
-    heart: '❤️',
-    hooray: '🎉',
-    laugh: '🤣',
-    rocket: '🚀'
-  }
-  const reactionImage = images[reaction]
-  const reactionEmoji = emoji[reaction]
-
-  if (count === 0) {
-    return <></>
-  }
-
-  return (
-    <a href={url} title={reaction} target="_blank" rel="noreferrer noopener">
-      <g-emoji
-        tone="0"
-        alias={reaction}
-        fallback-src={`https://github.githubassets.com/images/icons/emoji/unicode/${reactionImage}`}
-        className="emoji"
-      >
-        {reactionEmoji} <ReactionCount>{count}</ReactionCount>
-      </g-emoji>
-    </a>
-  )
-}
-
 interface CommentsProps {
   readonly url: string
   readonly comments: any
@@ -160,29 +103,8 @@ interface CommentsProps {
 const Comments: React.FC<CommentsProps> = ({url, comments}) => {
   return (
     <Wrapper>
-      <h2>Comments</h2>
-      <p>Thanks for reading ❤️ </p>
+      <Header url={url} noComments={!comments || comments.length === 0} />
 
-      <p>
-        {' '}
-        You can comment by replying to the{' '}
-        <a href={url}>issue for this post.</a>
-        {` `}
-      </p>
-
-      {(!comments || comments.length === 0) && (
-        <p>
-          There’s no comments yet,{` `}
-          <a
-            href={`${url}#new_comment_field`}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="button btn"
-          >
-            be the first to leave one!
-          </a>
-        </p>
-      )}
       {comments &&
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         comments.map((comment: any) => {
@@ -221,7 +143,7 @@ const Comments: React.FC<CommentsProps> = ({url, comments}) => {
                   dangerouslySetInnerHTML={{__html: comment.body_html}}
                 />
                 <div className="reactions">
-                  {REACTIONS.map(reaction => (
+                  {reactions.map(reaction => (
                     <Reaction
                       key={reaction}
                       url={comment.html_url}
