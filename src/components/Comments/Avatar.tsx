@@ -4,6 +4,11 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
   position: absolute;
   margin-left: -60px;
+
+  a {
+    border: none;
+  }
+
   img {
     border-radius: 40px;
   }
