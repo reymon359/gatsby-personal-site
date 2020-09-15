@@ -3,6 +3,11 @@ import styled from 'styled-components'
 import {getTimeAgoInWords} from '../../utils'
 import Avatar from './Avatar'
 
+const Wrapper = styled.div`
+padding-bottom: 4rem;
+`;
+
+
 const Comment = styled('div')`
   margin-top: 16px;
   padding-top: 16px;
@@ -154,7 +159,7 @@ interface CommentsProps {
 }
 const Comments: React.FC<CommentsProps> = ({url, comments}) => {
   return (
-    <>
+    <Wrapper>
       <h2>Comments</h2>
       <p>Thanks for reading ❤️ </p>
 
@@ -269,7 +274,7 @@ const Comments: React.FC<CommentsProps> = ({url, comments}) => {
           Add a comment &rarr;
         </a>
       </Actions>
-    </>
+    </Wrapper>
   )
 }
 
