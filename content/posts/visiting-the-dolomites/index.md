@@ -1,4 +1,5 @@
 ---
+id: 'visiting-the-dolomites'
 title: 'Visiting the Dolomites'
 description: 'Trip through the Dolomites, the Italian Alps.'
 date: '2019-08-29'
@@ -6,9 +7,10 @@ author: 'Ramón Morcillo'
 categories: ['Adventures']
 tags: ['Adventures', 'Trip', 'Italy', 'Nature']
 published: true
+commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/154
 featuredImage: './20190830_dolomites-2019_passo-pordoi_001.jpg'
-type: 'post'
 thumbnail: './20190830_dolomites-2019_passo-pordoi_001.jpg'
+type: 'post'
 url: 'none'
 ---
 
