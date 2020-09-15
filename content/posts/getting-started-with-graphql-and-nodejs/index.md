@@ -7,6 +7,7 @@ author: 'Ramón Morcillo'
 categories: ['Software']
 tags: ['Tutorial', 'Node.js', 'GraphQL', 'Apollo']
 published: true
+commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/153
 featuredImage: './gia-oris-_uM5_nG2ssc-unsplash.jpg'
 thumbnail: './gia-oris-_uM5_nG2ssc-unsplash.jpg'
 type: 'post'
