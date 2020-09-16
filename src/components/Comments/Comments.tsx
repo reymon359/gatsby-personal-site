@@ -58,9 +58,35 @@ const Body = styled.div`
   line-height: 1.5;
 `
 
-const Actions = styled('div')`
-  margin-top: 40px;
+const Actions = styled.div`
+  color: ${props => props.theme.colors.light};
+  background-color: ${props => props.theme.colors.light + '40'};
+  font-size: ${props => props.theme.fontSizes.normal};
+  font-weight: ${props => props.theme.fontWeights.bold};
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-decoration: none;
+  display: block;
+  padding: 0.4rem 0.6rem;
+  border-bottom: 0;
+  white-space: nowrap;
+  line-height: 1;
+  margin: 2rem 0 0.2rem 1rem;
+  transition: 0.4s ease;
   float: right;
+
+  &:hover {
+    background-color: ${props => props.theme.colors.light};
+    border-bottom: none;
+  }
+
+  a {
+    border: none;
+    &:hover {
+      border: none;
+      color: ${props => props.theme.colors.darkest};
+    }
+  }
 `
 
 interface CommentsProps {
