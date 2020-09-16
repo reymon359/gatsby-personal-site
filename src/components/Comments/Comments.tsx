@@ -37,7 +37,7 @@ const ContentHeader = styled.div`
 const ContentHeaderDate = styled.div`
   display: inline-block;
 `
-
+// ToDo: create a container and use flex to display left on mobile
 const ContentHeaderAssociation = styled.div`
   border: 1px solid lightgray;
   border-radius: 20px;

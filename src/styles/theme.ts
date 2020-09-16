@@ -2,11 +2,6 @@ import {css} from 'styled-components'
 
 export const theme = {
   colors: {
-    // blue900: '#1e2733', --> primaryDark
-    // gray500: '#94989e', --> mediumDark
-    // gray700: '#656a73', --> dark
-    // yellow500: '#EBC86E', --> secondary
-    // yellow700: '#6b6349', --> secondaryDark
 
     // Palette
     primary: '#255799',
