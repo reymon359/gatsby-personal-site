@@ -9,7 +9,11 @@ const Wrapper = styled.div`
   border-top: 1px solid ${props => props.theme.colors.lightest};
   a {
     border: none;
+    &:hover {
+      border: none;
+    }
   }
+
   g-emoji {
     border-right: 1px solid ${props => props.theme.colors.lightest};
     display: inline-block;
