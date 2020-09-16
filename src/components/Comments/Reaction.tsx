@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const ReactionCount = styled('span')`
-  color: gray;
+const ReactionCount = styled.span`
+  color: ${props => props.theme.colors.lightest};
   padding-left: 8px;
 `
 type ReactionKey =
