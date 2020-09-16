@@ -7,6 +7,9 @@ const Wrapper = styled.div`
 
   a {
     border: none;
+    &:hover {
+      border: none;
+    }
   }
 
   img {
