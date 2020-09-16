@@ -38,7 +38,7 @@ const BottomHeight = styled.div`
   height: 10rem;
 `
 
-type ContentProps = {
+interface ContentProps {
   readonly children: React.ReactNode
   readonly fullHeight?: boolean
 }

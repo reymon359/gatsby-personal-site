@@ -1,6 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
 
+const Wrapper = styled.div`
+  display: inline;
+  a {
+    border: none;
+    &:hover {
+      border: none;
+    }
+  }
+
+  g-emoji {
+    display: inline-block;
+    padding: 12px;
+    margin: 0;
+  }
+`
+
 const ReactionCount = styled.span`
   color: ${props => props.theme.colors.lightest};
   padding-left: 8px;
@@ -47,21 +63,26 @@ const Reaction: React.FC<ReactionProps> = ({url, reaction, count}) => {
   const reactionImage = images[reaction]
   const reactionEmoji = emoji[reaction]
 
-  if (count === 0) {
-    return <></>
-  }
-
   return (
-    <a href={url} title={reaction} target="_blank" rel="noreferrer noopener">
-      <g-emoji
-        tone="0"
-        alias={reaction}
-        fallback-src={`https://github.githubassets.com/images/icons/emoji/unicode/${reactionImage}`}
-        className="emoji"
-      >
-        {reactionEmoji} <ReactionCount>{count}</ReactionCount>
-      </g-emoji>
-    </a>
+    count !== 0 && (
+      <Wrapper>
+        <a
+          href={url}
+          title={reaction}
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <g-emoji
+            tone="0"
+            alias={reaction}
+            fallback-src={`https://github.githubassets.com/images/icons/emoji/unicode/${reactionImage}`}
+            className="emoji"
+          >
+            {reactionEmoji} <ReactionCount>{count}</ReactionCount>
+          </g-emoji>
+        </a>
+      </Wrapper>
+    )
   )
 }
 

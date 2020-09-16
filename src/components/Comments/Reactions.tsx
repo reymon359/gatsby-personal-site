@@ -7,18 +7,12 @@ const Wrapper = styled.div`
   display: block;
   width: 100%;
   border-top: 1px solid ${props => props.theme.colors.lightest};
+
   a {
     border: none;
     &:hover {
       border: none;
     }
-  }
-
-  g-emoji {
-    border-right: 1px solid ${props => props.theme.colors.lightest};
-    display: inline-block;
-    padding: 12px;
-    margin: 0;
   }
 
   .react div {
@@ -75,7 +69,6 @@ const Reactions: React.FC<ReactionsProps> = ({comment}) => {
       >
         <div style={{borderRight: 'none'}}>
           <svg
-            className="octicon octicon-smiley"
             viewBox="0 0 16 16"
             version="1.1"
             width="16"

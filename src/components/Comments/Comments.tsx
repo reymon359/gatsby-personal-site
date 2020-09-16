@@ -24,9 +24,6 @@ const Content = styled.div`
   border: 1px solid ${props => props.theme.colors.lightest};
   border-radius: 5px;
   margin-left: 60px;
-
-  .header {
-  }
 `
 
 const ContentHeader = styled.div`
