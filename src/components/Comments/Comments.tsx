@@ -6,51 +6,55 @@ import Header from './Header'
 import Reactions from './Reactions'
 
 const Wrapper = styled.div`
-  padding-bottom: 4rem;
+  padding: 1rem 1rem 4rem;
 `
 
 const Comment = styled.div`
-  margin-top: 16px;
-  padding-top: 16px;
+  margin-top: 1rem;
+  padding-top: 1rem;
   letter-spacing: normal;
 
   a {
     background: none;
   }
+`
 
-  .content {
-    color: ${props => props.theme.colors.lightest};
-    border: 1px solid ${props => props.theme.colors.lightest};
-    border-radius: 6px;
-    margin-left: 60px;
+const Content = styled.div`
+  color: ${props => props.theme.colors.lightest};
+  border: 1px solid ${props => props.theme.colors.lightest};
+  border-radius: 5px;
+  margin-left: 60px;
 
-    .header {
-      padding: 1rem;
-      width: 100%;
-
-      .date {
-        display: inline-block;
-      }
-
-      .association {
-        border: 1px solid lightgray;
-        border-radius: 20px;
-        display: inline-block;
-        margin-right: 6px;
-        margin-top: -3px;
-        float: right;
-        padding: 4px 8px;
-        font-size: 0.8em;
-        text-transform: capitalize;
-        ${props => props.theme.media.max.md`
-          margin-top: 1rem;
-        `}
-      }
-    }
+  .header {
   }
 `
 
-const Body = styled.div`
+const ContentHeader = styled.div`
+  padding: 1rem;
+  width: 100%;
+`
+
+const ContentHeaderDate = styled.div`
+  display: inline-block;
+`
+
+const ContentHeaderAssociation = styled.div`
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  display: inline-block;
+  margin-right: 6px;
+  margin-top: -3px;
+  float: right;
+  padding: 4px 8px;
+  font-size: 0.8em;
+  text-transform: capitalize;
+  ${props => props.theme.media.max.md`
+      margin-top: 1rem;
+          float: left;
+    `}
+`
+
+const ContentBody = styled.div`
   color: ${props => props.theme.colors.lightest};
   margin: 0 auto;
   padding: 1rem 2rem 2rem;
@@ -102,15 +106,15 @@ const Comments: React.FC<CommentsProps> = ({url, comments}) => {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         comments.map((comment: any) => {
           return (
-            <Comment key={comment.id} className="comment sans">
-              <div className="content">
+            <Comment key={comment.id}>
+              <Content>
                 <Avatar
                   url={comment.user.html_url}
                   avatar={comment.user.avatar_url}
                   login={comment.user.login}
                 />
-                <div className="header">
-                  <div className="date" data-date={comment.created_at}>
+                <ContentHeader>
+                  <ContentHeaderDate data-date={comment.created_at}>
                     <a href={comment.user.html_url}>
                       <strong>@{comment.user.login}</strong>
                     </a>
@@ -123,19 +127,19 @@ const Comments: React.FC<CommentsProps> = ({url, comments}) => {
                     {comment.updated_at > comment.created_at && (
                       <span>• edited</span>
                     )}
-                  </div>
+                  </ContentHeaderDate>
                   {comment.author_association === 'OWNER' && (
-                    <div className="association">Author</div>
+                    <ContentHeaderAssociation>Author</ContentHeaderAssociation>
                   )}
                   {comment.author_association === 'OWNER' && (
-                    <div className="association">Owner</div>
+                    <ContentHeaderAssociation>Owner</ContentHeaderAssociation>
                   )}
-                </div>
-                <Body>
+                </ContentHeader>
+                <ContentBody>
                   <div dangerouslySetInnerHTML={{__html: comment.body_html}} />
-                </Body>
+                </ContentBody>
                 <Reactions comment={comment} />
-              </div>
+              </Content>
             </Comment>
           )
         })}

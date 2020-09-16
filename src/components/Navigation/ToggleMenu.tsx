@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, {css} from 'styled-components'
 
-type ToggleMenuWrapperProps = {
+interface ToggleMenuWrapperProps {
   open: boolean
   onClick: any
 }
