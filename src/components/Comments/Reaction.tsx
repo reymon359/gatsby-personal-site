@@ -36,7 +36,7 @@ interface ReactionProps {
   readonly reaction: ReactionKey
   readonly count: number
 }
-
+// @ts-expect-error needed
 const Reaction: React.FC<ReactionProps> = ({url, reaction, count}) => {
   const emoji: ReactionEmoji = {
     '+1': '👍',
