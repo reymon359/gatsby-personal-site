@@ -7,7 +7,7 @@ author: 'Ramón Morcillo'
 categories: ['Adventures']
 tags: ['Adventures', 'Trip', 'Italy', 'Nature']
 published: true
-commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/154
+commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/168
 featuredImage: './20190830_dolomites-2019_passo-pordoi_001.jpg'
 thumbnail: './20190830_dolomites-2019_passo-pordoi_001.jpg'
 type: 'post'
