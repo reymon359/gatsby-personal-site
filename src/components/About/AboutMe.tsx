@@ -18,16 +18,16 @@ const AboutMe: React.FC = () => {
   return (
     <Content>
       <p>
-        Over the last years, I have been working on both backend and frontend
-        development.&nbsp;
+        Over the last years, I have been working, discovering, and having fun on
+        both backend and frontend software development. I deeply enjoy&nbsp;
         <a
-          href="../../../files/ramon-morcillo-resume.pdf"
+          href="https://github.com/reymon359"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Here is my resume
+          learning, reading, creating
         </a>
-        &nbsp;in case you want to have a look.
+        , and trying new things.
       </p>
 
       <p>
@@ -47,27 +47,27 @@ const AboutMe: React.FC = () => {
         >
           TypeScript
         </a>
-        &nbsp; among other technologies and use it as a place to share what I
-        learn and do.&nbsp;
+        &nbsp;among other technologies and use it as a place to share what I
+        learn and do. I believe in an open source world,&nbsp;
         <a
           href="https://github.com/reymon359/gatsby-personal-site"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Here is the source.
+          here is the one from this site.
         </a>
       </p>
-
       <p>
-        I deeply enjoy&nbsp;
+        I am always improving myself and helping others if I have the chance to.
+        &nbsp;
         <a
-          href="https://github.com/reymon359"
+          href="../../../files/ramon-morcillo-resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
-          learning, reading, building,
+          Here is my resume
         </a>
-        &nbsp; and trying new things.
+        &nbsp;in case you want to have a look.
       </p>
       <p>
         Sometimes&nbsp;
@@ -78,7 +78,7 @@ const AboutMe: React.FC = () => {
         >
           I tweet
         </a>
-        &nbsp; and share photos on&nbsp;
+        &nbsp;and share photos on&nbsp;
         <a
           href="https://www.instagram.com/ramon.mor/"
           target="_blank"
