@@ -2,7 +2,6 @@ import {css} from 'styled-components'
 
 export const theme = {
   colors: {
-
     // Palette
     primary: '#255799',
     primaryLight: '#5b98e8',

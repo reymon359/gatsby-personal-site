@@ -87,7 +87,7 @@ const AboutMe: React.FC = () => {
           Instagram
         </a>
         . You can contact me through them or send me an email to&nbsp;
-        <a rel="noopener" href="mailto:hey@ramonmorcillo.com">
+        <a rel="noopener" href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!">
           hey@ramonmorcillo.com
         </a>
       </p>
