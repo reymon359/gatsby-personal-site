@@ -23,7 +23,7 @@ const Item = styled.div<ItemProps>`
   color: ${props => props.theme.colors.lightest};
   font-size: 0.85rem;
   line-height: 1em;
-
+  pointer-events: all;
   a {
     border-bottom: none;
   }
