@@ -31,7 +31,7 @@ export const ListItem = styled.li`
 `
 
 const rule = (property: string, value: string): TemplateStringsArray =>
-  // @ts-ignore
+  // @ts-expect-error needed
   `${property}: ${value};`
 
 export const addRemToProperty = (property: string) =>
