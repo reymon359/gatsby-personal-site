@@ -171,7 +171,10 @@ export const Menu: React.FC = () => {
           </NavItem>
         ))}
         <NavItem>
-          <a rel="noopener" href="mailto:hey@ramonmorcillo.com">
+          <a
+            rel="noopener"
+            href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!"
+          >
             Contact
           </a>
         </NavItem>
