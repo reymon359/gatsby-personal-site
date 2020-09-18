@@ -23,6 +23,11 @@ const Item = styled.div<ItemProps>`
   color: ${props => props.theme.colors.lightest};
   font-size: 0.85rem;
   line-height: 1em;
+
+  a {
+    border-bottom: none;
+  }
+
   ${props =>
     props.position === 'left'
       ? css`
@@ -53,7 +58,14 @@ const Item = styled.div<ItemProps>`
 const Footer = () => (
   <FooterWrapper>
     <Item position="left">
-      <span>Ramón Morcillo - {new Date().getFullYear()}</span>
+      <span>Ramón Morcillo - {new Date().getFullYear()} - </span>{' '}
+      <a
+        href="https://github.com/reymon359/gatsby-personal-site/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        source
+      </a>
     </Item>
     <Item position="right">
       Made with love & time&nbsp;

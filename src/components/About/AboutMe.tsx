@@ -54,7 +54,7 @@ const AboutMe: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          here is the one from this site.
+          here is this site's one.
         </a>
       </p>
       <p>
