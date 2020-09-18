@@ -7,9 +7,7 @@ interface CommentsContainerProps {
   commentsUrl: string
 }
 
-const CommentsContainer: React.FC<CommentsContainerProps> = ({
-  commentsUrl = 'https://github.com/reymon359/gatsby-personal-site/labels/Post%20Comments%20%F0%9F%92%AC'
-}) => {
+const CommentsContainer: React.FC<CommentsContainerProps> = ({commentsUrl}) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [comments, setComments] = useState(null as any)
 
