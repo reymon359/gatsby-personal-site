@@ -1,8 +1,8 @@
-import React from 'react';
-import Home from './Home';
+import React from 'react'
+import Home from './Home'
 
 const HomeContainer: React.FC = () => {
-  return <Home />;
-};
+  return <Home />
+}
 
-export default HomeContainer;
+export default HomeContainer

@@ -1,1 +1,1 @@
-export * from './useDeviceDetect';
+export * from './useDeviceDetect'

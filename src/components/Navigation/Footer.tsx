@@ -1,6 +1,6 @@
-import React from 'react';
-import styled, {css} from 'styled-components';
-import {addRemToProperty} from '../../styles/shared';
+import React from 'react'
+import styled, {css} from 'styled-components'
+import {addRemToProperty} from '../../styles/shared'
 
 const FooterWrapper = styled.footer`
   width: 100%;
@@ -10,11 +10,11 @@ const FooterWrapper = styled.footer`
     position: static;
     padding-top: 1.5rem;
   `}
-`;
+`
 
 type ItemProps = {
-  position: string;
-};
+  position: string
+}
 
 const Item = styled.div<ItemProps>`
   position: absolute;
@@ -23,6 +23,11 @@ const Item = styled.div<ItemProps>`
   color: ${props => props.theme.colors.lightest};
   font-size: 0.85rem;
   line-height: 1em;
+  pointer-events: all;
+  a {
+    border-bottom: none;
+  }
+
   ${props =>
     props.position === 'left'
       ? css`
@@ -48,12 +53,19 @@ const Item = styled.div<ItemProps>`
   small {
     font-size: 70% !important;
   }
-`;
+`
 
 const Footer = () => (
   <FooterWrapper>
     <Item position="left">
-      <span>Ramón Morcillo - {new Date().getFullYear()}</span>
+      <span>Ramón Morcillo - {new Date().getFullYear()} - </span>{' '}
+      <a
+        href="https://github.com/reymon359/gatsby-personal-site/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        source
+      </a>
     </Item>
     <Item position="right">
       Made with love & time&nbsp;
@@ -66,6 +78,6 @@ const Footer = () => (
       </small>
     </Item>
   </FooterWrapper>
-);
+)
 
-export default Footer;
+export default Footer

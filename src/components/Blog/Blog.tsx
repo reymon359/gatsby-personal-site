@@ -1,10 +1,10 @@
-import React from 'react';
-import {Description, Header, Section, SectionBody, Title} from '../../styles';
-import {ContentListContainer} from '../ContentList';
-import {Work} from '../../types';
+import React from 'react'
+import {Description, Header, Section, SectionBody, Title} from '../../styles'
+import {ContentListContainer} from '../ContentList'
+import {Work} from '../../types'
 
 interface BlogProps {
-  posts: Work[];
+  posts: Work[]
 }
 
 const Blog: React.FC<BlogProps> = ({posts}) => {
@@ -20,7 +20,7 @@ const Blog: React.FC<BlogProps> = ({posts}) => {
         </SectionBody>
       </Section>
     </>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blog

@@ -1,1 +1,1 @@
-export {useDynamicFavicon} from './useDynamicFavicon';
+export {useDynamicFavicon} from './useDynamicFavicon'

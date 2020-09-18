@@ -1,8 +1,8 @@
-import React from 'react';
-import About from './About';
+import React from 'react'
+import About from './About'
 
 const AboutContainer: React.FC = () => {
-  return <About />;
-};
+  return <About />
+}
 
-export default AboutContainer;
+export default AboutContainer

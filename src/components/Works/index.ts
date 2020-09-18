@@ -1,3 +1,3 @@
-import WorksContainer from './WorksContainer';
+import WorksContainer from './WorksContainer'
 
-export default WorksContainer;
+export default WorksContainer

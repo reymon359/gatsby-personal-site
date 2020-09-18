@@ -1,9 +1,9 @@
-import React from 'react';
-import {Link} from 'gatsby';
-import styled from 'styled-components';
-import {Tooltip} from 'react-tippy';
-import Img from 'gatsby-image';
-import {ItemTags, Tag} from '../../styles';
+import React from 'react'
+import {Link} from 'gatsby'
+import styled from 'styled-components'
+import {Tooltip} from 'react-tippy'
+import Img from 'gatsby-image'
+import {ItemTags, Tag} from '../../styles'
 
 const ItemContainer = styled.article`
   transition: 0.2s ease;
@@ -21,14 +21,14 @@ const ItemContainer = styled.article`
   &:hover {
     background-color: ${props => props.theme.colors.light + '40'};
   }
-`;
+`
 
 const ItemHeader = styled.div`
   max-width: 70%;
   ${props => props.theme.media.max.md`
     max-width: 100%;
   `}
-`;
+`
 
 const ItemTitle = styled(Link)`
   color: ${props => props.theme.colors.lightest};
@@ -38,7 +38,7 @@ const ItemTitle = styled(Link)`
   &:hover {
     border-bottom: none;
   }
-`;
+`
 
 const ItemDescription = styled(Link)`
   color: ${props => props.theme.colors.medium};
@@ -50,7 +50,7 @@ const ItemDescription = styled(Link)`
   &:hover {
     border-bottom: none;
   }
-`;
+`
 
 const ItemDate = styled(Link)`
   max-width: 30%;
@@ -70,7 +70,7 @@ const ItemDate = styled(Link)`
     padding-top: 0;
     max-width: 100%;
   `}
-`;
+`
 
 const TypeTag = styled(Tag)`
   color: ${props => props.theme.colors.darkest};
@@ -80,39 +80,38 @@ const TypeTag = styled(Tag)`
     color: ${props => props.theme.colors.darkest};
     background-color: ${props => props.theme.colors.light};
   }
-`;
+`
 
 interface Node {
-  excerpt: string;
+  excerpt: string
   fields: {
-    slug: string;
-  };
+    slug: string
+  }
   frontmatter: {
-    date: string;
-    title: string;
-    description: string;
-    featuredImage: any;
-    tags: string[];
-    type: string;
-    url: string;
-  };
+    date: string
+    title: string
+    description: string
+    featuredImage: any
+    tags: string[]
+    type: string
+    url: string
+  }
 }
 
 interface ContentListItemProps {
-  readonly type?: boolean;
-  readonly node: Node;
+  readonly type?: boolean
+  readonly node: Node
 }
 
 export const ContentList: React.FC<ContentListItemProps> = ({
   type = false,
   node
 }) => {
-  const title = node.frontmatter.title || node.fields.slug;
-  const tags = node.frontmatter.tags;
-  const workType = node.frontmatter.type;
-  const featuredImgFluid = node.frontmatter.featuredImage.childImageSharp.fluid;
-  const workLink =
-    workType === 'post' ? node.fields.slug : node.frontmatter.url;
+  const title = node.frontmatter.title || node.fields.slug
+  const tags = node.frontmatter.tags
+  const workType = node.frontmatter.type
+  const featuredImgFluid = node.frontmatter.featuredImage.childImageSharp.fluid
+  const workLink = workType === 'post' ? node.fields.slug : node.frontmatter.url
   return (
     <Tooltip
       position="top"
@@ -153,5 +152,5 @@ export const ContentList: React.FC<ContentListItemProps> = ({
         </ItemDate>
       </ItemContainer>
     </Tooltip>
-  );
-};
+  )
+}

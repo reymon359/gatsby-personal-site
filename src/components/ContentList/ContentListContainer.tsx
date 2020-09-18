@@ -1,10 +1,10 @@
-import React from 'react';
-import {ContentList} from './ContentList';
-import {Work} from '../../types';
+import React from 'react'
+import {ContentList} from './ContentList'
+import {Work} from '../../types'
 
 interface ContentListProps {
-  readonly type?: boolean;
-  readonly content: Work[];
+  readonly type?: boolean
+  readonly content: Work[]
 }
 
 export const ContentListContainer: React.FC<ContentListProps> = ({
@@ -16,4 +16,4 @@ export const ContentListContainer: React.FC<ContentListProps> = ({
       <ContentList key={node.fields.slug} type={type} node={node} />
     ))}
   </>
-);
+)

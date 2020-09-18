@@ -1,17 +1,17 @@
-import React from 'react';
-import {graphql} from 'gatsby';
-import Head from '../components/Head';
-import Layout from '../components/Layout';
-import Stars from '../components/Stars';
-import Home from '../components/Home';
-import {TitlePageQueryData} from '../types';
+import React from 'react'
+import {graphql} from 'gatsby'
+import Head from '../components/Head'
+import Layout from '../components/Layout'
+import Stars from '../components/Stars'
+import Home from '../components/Home'
+import {TitlePageQueryData} from '../types'
 
 interface IndexPageProps {
-  readonly data: TitlePageQueryData;
+  readonly data: TitlePageQueryData
 }
 
 const IndexPage: React.FC<IndexPageProps> = ({data}) => {
-  const siteTitle: string = data.site.siteMetadata.title;
+  const siteTitle: string = data.site.siteMetadata.title
 
   return (
     <Layout title={siteTitle} transparentNavigation={true}>
@@ -31,8 +31,8 @@ const IndexPage: React.FC<IndexPageProps> = ({data}) => {
         <Home />
       </section>
     </Layout>
-  );
-};
+  )
+}
 
 export const pageQuery = graphql`
   query {
@@ -40,6 +40,6 @@ export const pageQuery = graphql`
       ...SiteTitle
     }
   }
-`;
+`
 
-export default IndexPage;
+export default IndexPage

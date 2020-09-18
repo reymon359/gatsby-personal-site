@@ -1,23 +1,24 @@
-import React from 'react';
-import {graphql} from 'gatsby';
-import Layout from '../components/Layout';
-import Head from '../components/Head';
-import Stars from '../components/Stars';
-import Content from '../components/Content';
-import {ContentListContainer} from '../components/ContentList';
-import {Header, Title, Section, SectionBody} from '../styles';
-import {Work} from '../types';
+import React from 'react'
+import {graphql} from 'gatsby'
+import Layout from '../components/Layout'
+import Head from '../components/Head'
+import Stars from '../components/Stars'
+import Content from '../components/Content'
+import {ContentListContainer} from '../components/ContentList'
+import {Header, Title, Section, SectionBody} from '../styles'
+import {Work} from '../types'
+
 interface Props {
-  readonly data: PageQueryData;
+  readonly data: PageQueryData
   readonly pageContext: {
-    tag: string;
-  };
+    tag: string
+  }
 }
 
 const TagTemplate: React.FC<Props> = ({data, pageContext}) => {
-  const {tag} = pageContext;
-  const siteTitle = data.site.siteMetadata.title;
-  const works: Work[] = data.allMarkdownRemark.edges;
+  const {tag} = pageContext
+  const siteTitle = data.site.siteMetadata.title
+  const works: Work[] = data.allMarkdownRemark.edges
 
   return (
     <Layout title={siteTitle}>
@@ -50,35 +51,35 @@ const TagTemplate: React.FC<Props> = ({data, pageContext}) => {
         </article>
       </Content>
     </Layout>
-  );
-};
+  )
+}
 
 interface PageQueryData {
   site: {
     siteMetadata: {
-      title: string;
-    };
-  };
+      title: string
+    }
+  }
   allMarkdownRemark: {
     edges: {
       node: {
-        id: string;
-        excerpt: string;
+        id: string
+        excerpt: string
         fields: {
-          slug: string;
-        };
+          slug: string
+        }
         frontmatter: {
-          date: string;
-          title: string;
-          description: string;
-          tags: string[];
-          type: string;
-          url: string;
-          featuredImage: any;
-        };
-      };
-    }[];
-  };
+          date: string
+          title: string
+          description: string
+          tags: string[]
+          type: string
+          url: string
+          featuredImage: any
+        }
+      }
+    }[]
+  }
 }
 
 export const pageQuery = graphql`
@@ -120,6 +121,6 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
 
-export default TagTemplate;
+export default TagTemplate

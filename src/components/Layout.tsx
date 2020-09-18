@@ -1,13 +1,13 @@
-import React from 'react';
-import {NavigationContainer} from './Navigation';
-import {ThemeProvider} from 'styled-components';
-import {theme, GlobalStyle} from '../styles/';
+import React from 'react'
+import {NavigationContainer} from './Navigation'
+import {ThemeProvider} from 'styled-components'
+import {theme, GlobalStyle} from '../styles/'
 
 type LayoutProps = {
-  readonly title?: string;
-  readonly children: React.ReactNode;
-  readonly transparentNavigation?: boolean;
-};
+  readonly title?: string
+  readonly children: React.ReactNode
+  readonly transparentNavigation?: boolean
+}
 
 const Layout: React.FC<LayoutProps> = ({
   children,
@@ -20,6 +20,6 @@ const Layout: React.FC<LayoutProps> = ({
       <NavigationContainer transparentNavigation={transparentNavigation} />
     </ThemeProvider>
   </>
-);
+)
 
-export default Layout;
+export default Layout

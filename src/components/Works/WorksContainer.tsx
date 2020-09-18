@@ -1,7 +1,7 @@
-import React from 'react';
-import Works from './Works';
-import {Work} from '../../types';
-import {graphql, useStaticQuery} from 'gatsby';
+import React from 'react'
+import Works from './Works'
+import {Work} from '../../types'
+import {graphql, useStaticQuery} from 'gatsby'
 
 const WorksContainer: React.FC = () => {
   const data = useStaticQuery(graphql`
@@ -36,17 +36,17 @@ const WorksContainer: React.FC = () => {
         }
       }
     }
-  `);
+  `)
 
   const posts = data.allMarkdownRemark.edges
     .filter((work: Work) => work.node.frontmatter.type === 'post')
-    .slice(0, 3);
+    .slice(0, 3)
 
   const projects = data.allMarkdownRemark.edges
     .filter((work: Work) => work.node.frontmatter.type === 'project')
-    .slice(0, 3);
+    .slice(0, 3)
 
-  return <Works posts={posts} projects={projects} />;
-};
+  return <Works posts={posts} projects={projects} />
+}
 
-export default WorksContainer;
+export default WorksContainer

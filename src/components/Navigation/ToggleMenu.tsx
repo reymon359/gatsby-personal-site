@@ -1,10 +1,10 @@
-import React from 'react';
-import styled, {css} from 'styled-components';
+import React from 'react'
+import styled, {css} from 'styled-components'
 
-type ToggleMenuWrapperProps = {
-  open: boolean;
-  onClick: any;
-};
+interface ToggleMenuWrapperProps {
+  open: boolean
+  onClick: any
+}
 
 const ToggleMenuWrapper = styled.div<ToggleMenuWrapperProps>`
   pointer-events: all;
@@ -64,12 +64,12 @@ const ToggleMenuWrapper = styled.div<ToggleMenuWrapperProps>`
   ${props => props.theme.media.max.md`
     display: flex;
   `}
-`;
+`
 
 type ToggleMenuProps = {
-  open: boolean;
-  onClick: any;
-};
+  open: boolean
+  onClick: any
+}
 
 const ToggleMenu: React.FC<ToggleMenuProps> = ({open, onClick}) => (
   <ToggleMenuWrapper open={open} onClick={onClick}>
@@ -77,6 +77,6 @@ const ToggleMenu: React.FC<ToggleMenuProps> = ({open, onClick}) => (
     <span />
     <span />
   </ToggleMenuWrapper>
-);
+)
 
-export default ToggleMenu;
+export default ToggleMenu

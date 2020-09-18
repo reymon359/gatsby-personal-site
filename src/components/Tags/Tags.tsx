@@ -1,9 +1,9 @@
-import React from 'react';
-import {Tag as TagInterface} from '../../types';
-import {Description, Header, ItemTags, Tag, Title} from '../../styles';
+import React from 'react'
+import {Tag as TagInterface} from '../../types'
+import {Description, Header, ItemTags, Tag, Title} from '../../styles'
 
 interface TagsProps {
-  tags: TagInterface[];
+  tags: TagInterface[]
 }
 
 const Tags: React.FC<TagsProps> = ({tags}) => {
@@ -28,7 +28,7 @@ const Tags: React.FC<TagsProps> = ({tags}) => {
         </ItemTags>
       </article>
     </>
-  );
-};
+  )
+}
 
-export default Tags;
+export default Tags

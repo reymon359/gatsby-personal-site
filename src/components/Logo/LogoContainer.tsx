@@ -1,13 +1,13 @@
-import React, {useContext} from 'react';
-import Logo from './Logo';
-import {ThemeContext} from 'styled-components';
+import React, {useContext} from 'react'
+import Logo from './Logo'
+import {ThemeContext} from 'styled-components'
 
 const LogoContainer: React.FC = () => {
   const {
     colors: {lightest}
-  } = useContext(ThemeContext);
+  } = useContext(ThemeContext)
 
-  return <Logo fillColor={lightest} />;
-};
+  return <Logo fillColor={lightest} />
+}
 
-export default LogoContainer;
+export default LogoContainer

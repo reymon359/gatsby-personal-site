@@ -1,30 +1,28 @@
-import React from 'react';
-import {Link, graphql} from 'gatsby';
-import styled from 'styled-components';
-import Img from 'gatsby-image';
-import Layout from '../components/Layout';
-import Head from '../components/Head';
-import Stars from '../components/Stars';
-import Content from '../components/Content';
-import {Header, Title, Description, ItemTags, Tag} from '../styles';
+import React from 'react'
+import {Link, graphql} from 'gatsby'
+import styled from 'styled-components'
+import Img from 'gatsby-image'
+import Layout from '../components/Layout'
+import Head from '../components/Head'
+import Stars from '../components/Stars'
+import Content from '../components/Content'
+import {Header, Title, Description, ItemTags, Tag} from '../styles'
+import Comments from '../components/Comments'
 
 interface Props {
-  readonly data: PageQueryData;
+  readonly data: PageQueryData
   readonly pageContext: {
-    previous?: any;
-    next?: any;
-  };
+    previous?: any
+    next?: any
+  }
 }
 
 const OtherPostsLinks = styled.ul`
   list-style-type: none;
   margin-left: 0;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-wrap: wrap;
-  ${props => props.theme.media.max.md`
-      padding-bottom: 10rem;
-  `}
 
   li {
     text-align: left;
@@ -51,18 +49,18 @@ const OtherPostsLinks = styled.ul`
   a {
     border-bottom: none;
   }
-`;
+`
 
 const Date = styled.div`
   font-size: ${props => props.theme.fontSizes.normal};
   font-weight: ${props => props.theme.fontWeights.thin};
   padding: 1rem 0 2rem 0;
-`;
+`
 const PostTemplate: React.FC<Props> = ({data, pageContext}) => {
-  const post = data.markdownRemark;
-  const siteTitle = data.site.siteMetadata.title;
-  const {previous, next} = pageContext;
-  const featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid;
+  const post = data.markdownRemark
+  const siteTitle = data.site.siteMetadata.title
+  const {previous, next} = pageContext
+  const featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
   return (
     <Layout title={siteTitle}>
       <Head
@@ -106,6 +104,7 @@ const PostTemplate: React.FC<Props> = ({data, pageContext}) => {
               style={{paddingLeft: '1rem', lineHeight: 1.6}}
               dangerouslySetInnerHTML={{__html: post.html}}
             />
+            <Comments commentsUrl={post.frontmatter.commentsUrl} />
             <h2>Other posts</h2>
             <OtherPostsLinks>
               {previous && (
@@ -127,27 +126,28 @@ const PostTemplate: React.FC<Props> = ({data, pageContext}) => {
         </article>
       </Content>
     </Layout>
-  );
-};
+  )
+}
 
 interface PageQueryData {
   site: {
     siteMetadata: {
-      title: string;
-    };
-  };
+      title: string
+    }
+  }
   markdownRemark: {
-    id?: string;
-    excerpt?: string;
-    html: string;
+    id?: string
+    excerpt?: string
+    html: string
     frontmatter: {
-      title: string;
-      description: string;
-      date: string;
-      tags: [string];
-      featuredImage: any;
-    };
-  };
+      title: string
+      description: string
+      date: string
+      tags: [string]
+      commentsUrl: string
+      featuredImage: any
+    }
+  }
 }
 
 export const pageQuery = graphql`
@@ -166,6 +166,7 @@ export const pageQuery = graphql`
         description
         date(formatString: "MMMM DD, YYYY")
         tags
+        commentsUrl
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 800) {
@@ -176,6 +177,6 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
 
-export default PostTemplate;
+export default PostTemplate

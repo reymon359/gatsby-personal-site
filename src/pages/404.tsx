@@ -1,18 +1,18 @@
-import React from 'react';
-import {graphql} from 'gatsby';
-import Layout from '../components/Layout';
-import Head from '../components/Head';
-import Stars from '../components/Stars';
-import Content from '../components/Content';
-import NotFound from '../components/NotFound';
-import {TitlePageQueryData} from '../types';
+import React from 'react'
+import {graphql} from 'gatsby'
+import Layout from '../components/Layout'
+import Head from '../components/Head'
+import Stars from '../components/Stars'
+import Content from '../components/Content'
+import NotFound from '../components/NotFound'
+import {TitlePageQueryData} from '../types'
 
 interface NotFoundPageProps {
-  readonly data: TitlePageQueryData;
+  readonly data: TitlePageQueryData
 }
 
 const NotFoundPage: React.FC<NotFoundPageProps> = ({data}) => {
-  const siteTitle = data.site.siteMetadata.title;
+  const siteTitle = data.site.siteMetadata.title
 
   return (
     <Layout title={siteTitle}>
@@ -36,8 +36,8 @@ const NotFoundPage: React.FC<NotFoundPageProps> = ({data}) => {
         <NotFound />
       </Content>
     </Layout>
-  );
-};
+  )
+}
 
 export const pageQuery = graphql`
   query {
@@ -45,6 +45,6 @@ export const pageQuery = graphql`
       ...SiteTitle
     }
   }
-`;
+`
 
-export default NotFoundPage;
+export default NotFoundPage

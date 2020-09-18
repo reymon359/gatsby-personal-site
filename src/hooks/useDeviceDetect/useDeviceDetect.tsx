@@ -1,18 +1,18 @@
-import React from 'react';
+import React from 'react'
 
 export const useDeviceDetect = () => {
-  const [isMobile, setMobile] = React.useState(false);
+  const [isMobile, setMobile] = React.useState(false)
 
   React.useEffect(() => {
     const userAgent =
-      typeof window.navigator === 'undefined' ? '' : navigator.userAgent;
+      typeof window.navigator === 'undefined' ? '' : navigator.userAgent
     const mobile = Boolean(
       userAgent.match(
         /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
       )
-    );
-    setMobile(mobile);
-  }, []);
+    )
+    setMobile(mobile)
+  }, [])
 
-  return {isMobile};
-};
+  return {isMobile}
+}

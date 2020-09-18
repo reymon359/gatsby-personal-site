@@ -1,7 +1,7 @@
-import React from 'react';
-import {useStaticQuery, graphql, Link} from 'gatsby';
-import styled from 'styled-components';
-import {addRemToProperty} from '../../styles/shared';
+import React from 'react'
+import {useStaticQuery, graphql, Link} from 'gatsby'
+import styled from 'styled-components'
+import {addRemToProperty} from '../../styles/shared'
 
 const MenuWrapper = styled.nav`
   position: fixed;
@@ -58,7 +58,7 @@ const MenuWrapper = styled.nav`
     position: static;
     padding: 0;
   `}
-`;
+`
 
 const Nav = styled.ul`
   list-style: none;
@@ -66,7 +66,7 @@ const Nav = styled.ul`
   margin: 0;
   width: 50%;
   max-width: 14rem;
-`;
+`
 
 const NavItem = styled.li`
   list-style: none;
@@ -93,7 +93,7 @@ const NavItem = styled.li`
       border-bottom: none;
     }
   }
-`;
+`
 
 const NavLink = styled(Link).attrs({
   activeClassName: 'active'
@@ -114,23 +114,23 @@ const NavLink = styled(Link).attrs({
       opacity: 1;
     }
   }
-`;
+`
 
 interface SocialLink {
-  name: string;
-  socialUrl: string;
+  name: string
+  socialUrl: string
 }
 
 interface StaticQueryData {
   site: {
     siteMetadata: {
-      social: SocialLink[];
-    };
-  };
+      social: SocialLink[]
+    }
+  }
 }
 
 export const Menu: React.FC = () => {
-  const pages = [`works`, `about`];
+  const pages = [`works`, `about`]
   const {site}: StaticQueryData = useStaticQuery(
     graphql`
       query {
@@ -144,7 +144,7 @@ export const Menu: React.FC = () => {
         }
       }
     `
-  );
+  )
 
   return (
     <MenuWrapper>
@@ -171,12 +171,15 @@ export const Menu: React.FC = () => {
           </NavItem>
         ))}
         <NavItem>
-          <a rel="noopener" href="mailto:hey@ramonmorcillo.com">
+          <a
+            rel="noopener"
+            href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!"
+          >
             Contact
           </a>
         </NavItem>
       </Nav>
     </MenuWrapper>
-  );
-};
-export default Menu;
+  )
+}
+export default Menu

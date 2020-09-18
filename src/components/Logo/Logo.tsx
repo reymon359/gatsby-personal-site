@@ -1,8 +1,8 @@
-import React from 'react';
-import Link from 'gatsby-link';
-import styled from 'styled-components';
-import {addRemToProperty} from '../../styles/shared';
-import Circle from './Circle';
+import React from 'react'
+import Link from 'gatsby-link'
+import styled from 'styled-components'
+import {addRemToProperty} from '../../styles/shared'
+import Circle from './Circle'
 
 const Background = styled.div`
   position: absolute;
@@ -16,7 +16,7 @@ const Background = styled.div`
   pointer-events: none;
   opacity: 1;
   will-change: transform;
-`;
+`
 
 const Wrapper = styled.div`
   position: fixed;
@@ -56,15 +56,15 @@ const Wrapper = styled.div`
     transform: translate(-50%, -50%) scale(7.5);
     transition: transform 1s cubic-bezier(0.45, 0, 0.1, 1), opacity 0.8s ease;
   }
-`;
+`
 
 const RelativeWrapper = styled.div`
   position: relative;
-`;
+`
 
 interface LogoProps {
-  fillColor: string;
-  link?: string;
+  fillColor: string
+  link?: string
 }
 
 const Logo: React.FC<LogoProps> = ({link = '/', fillColor = '#ffffff'}) => {
@@ -77,7 +77,7 @@ const Logo: React.FC<LogoProps> = ({link = '/', fillColor = '#ffffff'}) => {
         <Background />
       </RelativeWrapper>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default Logo;
+export default Logo

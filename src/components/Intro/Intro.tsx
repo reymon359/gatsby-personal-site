@@ -1,9 +1,9 @@
-import React from 'react';
-import styled, {css} from 'styled-components';
-import {addRemToProperty} from '../../styles';
+import React from 'react'
+import styled, {css} from 'styled-components'
+import {addRemToProperty} from '../../styles'
 
 interface WrapperProps {
-  fixed: boolean;
+  fixed: boolean
 }
 
 const Wrapper = styled.div<WrapperProps>`
@@ -39,7 +39,7 @@ const Wrapper = styled.div<WrapperProps>`
       : css`
           text-align: left;
         `}
-`;
+`
 
 const Title = styled.h1`
   -webkit-touch-callout: none;
@@ -55,11 +55,11 @@ const Title = styled.h1`
     color: ${props => props.theme.colors.secondary};
     text-decoration: line-through;
   }
-`;
+`
 
 interface IntroProps {
-  fixed: boolean;
-  title: string;
+  fixed: boolean
+  title: string
 }
 
 const Intro: React.FC<IntroProps> = ({fixed, title}) => {
@@ -67,7 +67,7 @@ const Intro: React.FC<IntroProps> = ({fixed, title}) => {
     <Wrapper fixed={fixed}>
       <Title>{title}</Title>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default Intro;
+export default Intro

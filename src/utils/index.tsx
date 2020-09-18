@@ -1,2 +1,2 @@
-export {getRandomColor, getRandomBackground} from './styles';
-export {getRandomNumber} from './misc';
+export {getRandomColor, getRandomBackground} from './styles'
+export {getRandomNumber, getTimeAgoInWords} from './misc'

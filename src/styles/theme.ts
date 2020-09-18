@@ -1,13 +1,7 @@
-import {css} from 'styled-components';
+import {css} from 'styled-components'
 
 export const theme = {
   colors: {
-    // blue900: '#1e2733', --> primaryDark
-    // gray500: '#94989e', --> mediumDark
-    // gray700: '#656a73', --> dark
-    // yellow500: '#EBC86E', --> secondary
-    // yellow700: '#6b6349', --> secondaryDark
-
     // Palette
     primary: '#255799',
     primaryLight: '#5b98e8',
@@ -89,37 +83,37 @@ export const theme = {
     max: {
       xs: (...args: TemplateStringsArray[]) => css`
         @media (max-width: ${theme.mq.xs}) {
-          ${//@ts-ignore
+          ${//@ts-expect-error needed
           css(...args)}
         }
       `,
       sm: (...args: TemplateStringsArray[]) => css`
         @media (max-width: ${theme.mq.sm}) {
-          ${//@ts-ignore
+          ${//@ts-expect-error needed
           css(...args)}
         }
       `,
       md: (...args: TemplateStringsArray[]) => css`
         @media (max-width: ${theme.mq.md}) {
-          ${//@ts-ignore
+          ${//@ts-expect-error needed
           css(...args)}
         }
       `,
       lg: (...args: TemplateStringsArray[]) => css`
         @media (max-width: ${theme.mq.lg}) {
-          ${//@ts-ignore
+          ${//@ts-expect-error needed
           css(...args)}
         }
       `,
       xl: (...args: TemplateStringsArray[]) => css`
         @media (max-width: ${theme.mq.xl}) {
-          ${//@ts-ignore
+          ${//@ts-expect-error needed
           css(...args)}
         }
       `,
       hover: (...args: TemplateStringsArray[]) => css`
         @media not all and (hover: none) {
-          ${//@ts-ignore
+          ${//@ts-expect-error needed
           css(...args)}
         }
       `
@@ -127,40 +121,40 @@ export const theme = {
     min: {
       xs: (...args: TemplateStringsArray[]) => css`
         @media (min-width: ${theme.mq.xs}) {
-          ${//@ts-ignore
+          ${//@ts-expect-error needed
           css(...args)}
         }
       `,
       sm: (...args: TemplateStringsArray[]) => css`
         @media (min-width: ${theme.mq.sm}) {
-          ${//@ts-ignore
+          ${//@ts-expect-error needed
           css(...args)}
         }
       `,
       md: (...args: TemplateStringsArray[]) => css`
         @media (min-width: ${theme.mq.md}) {
-          ${//@ts-ignore
+          ${//@ts-expect-error needed
           css(...args)}
         }
       `,
       lg: (...args: TemplateStringsArray[]) => css`
         @media (min-width: ${theme.mq.lg}) {
-          ${//@ts-ignore
+          ${//@ts-expect-error needed
           css(...args)}
         }
       `,
       xl: (...args: TemplateStringsArray[]) => css`
         @media (min-width: ${theme.mq.xl}) {
-          ${//@ts-ignore
+          ${//@ts-expect-error needed
           css(...args)}
         }
       `,
       hover: (...args: TemplateStringsArray[]) => css`
         @media not all and (hover: none) {
-          ${//@ts-ignore
+          ${//@ts-expect-error needed
           css(...args)}
         }
       `
     }
   }
-};
+}

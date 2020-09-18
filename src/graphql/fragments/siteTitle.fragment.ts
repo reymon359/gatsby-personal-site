@@ -1,4 +1,4 @@
-import {graphql} from 'gatsby';
+import {graphql} from 'gatsby'
 
 export const TitlePageQueryFragment = graphql`
   fragment SiteTitle on Site {
@@ -6,4 +6,4 @@ export const TitlePageQueryFragment = graphql`
       title
     }
   }
-`;
+`

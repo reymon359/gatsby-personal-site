@@ -1,12 +1,12 @@
-import React from 'react';
-import {Navigation} from './Navigation';
+import React from 'react'
+import {Navigation} from './Navigation'
 
 type NavigationContainerProps = {
-  transparentNavigation: boolean;
-};
+  transparentNavigation: boolean
+}
 
 export const NavigationContainer: React.FC<NavigationContainerProps> = ({
   transparentNavigation = false
 }) => {
-  return <Navigation transparent={transparentNavigation} />;
-};
+  return <Navigation transparent={transparentNavigation} />
+}
