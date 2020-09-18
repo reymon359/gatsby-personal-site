@@ -3,10 +3,10 @@ import Reaction from './Reaction'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
+  border-top: 1px solid ${props => props.theme.colors.lightest};
   padding: 0;
   display: block;
   width: 100%;
-  border-top: 1px solid ${props => props.theme.colors.lightest};
 
   a {
     border: none;
@@ -14,14 +14,15 @@ const Wrapper = styled.div`
       border: none;
     }
   }
+`
 
-  .react div {
-    border-right: 1px solid ${props => props.theme.colors.lightest};
-    display: inline-block;
-    padding: 16px;
-    margin: 0;
-  }
-  .react div svg {
+const AddReaction = styled.div`
+  border-right: none;
+  display: inline-block;
+  padding: 16px;
+  margin: 0;
+
+  svg {
     padding-top: 2px;
   }
 `
@@ -65,9 +66,8 @@ const Reactions: React.FC<ReactionsProps> = ({comment}) => {
         title="Add a reaction"
         target="_blank"
         rel="noreferrer noopener"
-        className="react"
       >
-        <div style={{borderRight: 'none'}}>
+        <AddReaction>
           <svg
             viewBox="0 0 16 16"
             version="1.1"
@@ -88,7 +88,7 @@ const Reactions: React.FC<ReactionsProps> = ({comment}) => {
                             01-.715-.657l-.014-.02-.005-.006-.002-.003v-.002h-.001l.613-.432-.614.43a.75.75 0 01.183-1.044h.001z"
             />
           </svg>
-        </div>
+        </AddReaction>
       </a>
     </Wrapper>
   )
