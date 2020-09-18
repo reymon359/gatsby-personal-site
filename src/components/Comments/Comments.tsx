@@ -27,28 +27,40 @@ const Content = styled.div`
 `
 
 const ContentHeader = styled.div`
+  border-bottom: 1px solid ${props => props.theme.colors.lightest};
   padding: 1rem;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 `
 
 const ContentHeaderDate = styled.div`
-  display: inline-block;
+  width: 70%;
+  padding: 0.2rem;
+  ${props => props.theme.media.max.sm`
+    width: 100%;
+  `}
 `
-// ToDo: create a container and use flex to display left on mobile
-const ContentHeaderAssociation = styled.div`
-  border: 1px solid lightgray;
+
+const AssociationWrapper = styled.div`
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.2rem;
+
+  ${props => props.theme.media.max.sm`
+    padding: 0.5rem 0.2rem 0.2rem;
+    justify-content: flex-start;
+  `}
+`
+
+const Association = styled.div`
+  border: 1px solid ${props => props.theme.colors.lightest};
+  font-size: ${props => props.theme.fontSizes.small};
   border-radius: 20px;
-  display: inline-block;
   margin-right: 6px;
-  margin-top: -3px;
-  float: right;
   padding: 4px 8px;
-  font-size: 0.8em;
   text-transform: capitalize;
-  ${props => props.theme.media.max.md`
-      margin-top: 1rem;
-          float: left;
-    `}
 `
 
 const ContentBody = styled.div`
@@ -123,14 +135,17 @@ const Comments: React.FC<CommentsProps> = ({url, comments}) => {
                     {` `}
                     {comment.updated_at > comment.created_at && (
                       <span>• edited</span>
-                    )}
+                    )}{' '}
                   </ContentHeaderDate>
-                  {comment.author_association === 'OWNER' && (
-                    <ContentHeaderAssociation>Author</ContentHeaderAssociation>
-                  )}
-                  {comment.author_association === 'OWNER' && (
-                    <ContentHeaderAssociation>Owner</ContentHeaderAssociation>
-                  )}
+
+                  <AssociationWrapper>
+                    {comment.author_association === 'OWNER' && (
+                      <Association>Author</Association>
+                    )}
+                    {comment.author_association === 'OWNER' && (
+                      <Association>Owner</Association>
+                    )}
+                  </AssociationWrapper>
                 </ContentHeader>
                 <ContentBody>
                   <div dangerouslySetInnerHTML={{__html: comment.body_html}} />

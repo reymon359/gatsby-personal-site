@@ -11,9 +11,10 @@ const Header: React.FC<HeaderProps> = ({url, noComments}) => (
     <p>Thanks for reading ❤️ </p>
 
     <p>
-      {' '}
-      You can comment by replying to the <a href={url}>issue for this post.</a>
-      {` `}
+      You can comment by replying to the{' '}
+      <a href={url} target="_blank" rel="noreferrer noopener">
+        issue for this post.
+      </a>
     </p>
 
     {noComments && (
@@ -23,7 +24,6 @@ const Header: React.FC<HeaderProps> = ({url, noComments}) => (
           href={`${url}#new_comment_field`}
           target="_blank"
           rel="noreferrer noopener"
-          className="button btn"
         >
           be the first to leave one!
         </a>
