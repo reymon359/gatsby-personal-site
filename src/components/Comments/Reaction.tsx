@@ -29,7 +29,6 @@ type ReactionKey =
   | 'hooray'
   | 'laugh'
   | 'rocket'
-type ReactionImages = {[key in ReactionKey]: string}
 type ReactionEmoji = {[key in ReactionKey]: string}
 
 interface ReactionProps {
