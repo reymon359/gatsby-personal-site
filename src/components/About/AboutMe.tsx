@@ -48,7 +48,7 @@ const AboutMe: React.FC = () => {
           TypeScript
         </a>
         &nbsp;among other technologies and use it as a place to share what I
-        learn and do. I believe in an open source world,&nbsp;
+        learn and do. I believe in an open source world so&nbsp;
         <a
           href="https://github.com/reymon359/gatsby-personal-site"
           target="_blank"
