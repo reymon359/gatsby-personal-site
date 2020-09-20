@@ -155,10 +155,10 @@ blockquote{
 }
 
 img[src$=".gif"] {
+  display: block;
   margin: auto;
-  max-width: 600px;
   width: 100%;
-  horizontal-align: middle;
+  max-width: 600px;
 }
 
 figcaption {
