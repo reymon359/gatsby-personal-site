@@ -64,6 +64,7 @@ module.exports = {
               inlineCodeMarker: null,
               aliases: {},
               showCaptions: [`alt`],
+              markdownCaptions: true,
               showLineNumbers: true,
               noInlineHighlight: true,
               backgroundColor: 'none',
