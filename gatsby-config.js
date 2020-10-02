@@ -78,6 +78,19 @@ module.exports = {
             }
           },
           {
+            resolve: 'gatsby-remark-video',
+            options: {
+              width: 600,
+              height: 'auto',
+              preload: 'auto',
+              muted: true,
+              autoplay: true,
+              playsinline: true,
+              controls: true,
+              loop: true
+            }
+          },
+          {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
               offsetY: `100`,

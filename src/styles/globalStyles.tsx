@@ -161,11 +161,19 @@ img[src$=".gif"] {
   max-width: 600px;
 }
 
+video {
+  max-height: 500px;
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0.5rem auto;
+}
+
 figcaption {
   text-align: center;
   font-size: ${theme.fontSizes.normal};
   font-style: italic;
-  margin: 0.5rem 0;
+  margin: 2rem 0;
 }
 
 em {
