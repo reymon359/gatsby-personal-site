@@ -130,3 +130,69 @@ The tour’s day morning I woke up early for a morning run around the city on my
 
 ![Morning views from the Saône](./morning_views_from_the_saone.jpg)
 
+## Chamonix - Mont Blanc
+
+Once done with Lyon we spent the next few days in Chamonix - Mont blanc, a town renowned for its skiing near the junction of France, Switzerland and Italy, at the base of **Mont Blanc (4,808 m), the highest summit in the Alps.**
+
+![Chamonix - Mont Blanc](./chamonix-mont_blanc.jpg)
+
+There are cable cars that take visitors up to several nearby peaks with panoramic views, including _Aiguille du Midi,_ _Pointe Helbronner,_ and a rack railway to the _Mer de Glace_ vast glacier. Besides, beautiful treks are nearby the town, just like in Lyon, some mornings and afternoons I went to run. Some mornings the fog was so dense you couldn't see far away and was hard to position yourself.
+
+![Chamonix nearby treks](./chamonix_nearby_treks.jpg)
+
+![More Chamonix nearby treks](./more_chamonix_nearby_treks.jpg)
+
+### Aiguille du Midi
+
+The Aiguille du Midi is a 3,842-metre-tall mountain, you had to take a cable car from Chamonix to get up there. 
+
+`video: title: "Going up in the cable car": ./going_up_in_the_cable_car.mp4`
+
+The summit station is bigger than I thought indeed. You can easily spend the morning or even half day here, and the spots it offers.
+
+![Aiguille du Midi summit map](./aiguille_du_midi_summit_map.jpg)
+
+Undoubtedly the best thing are the astonishing views of the Alps. I could have spent gladly all day contemplating them.
+
+![Rock structures and Chamonix Valley](./rock_structures_and_chamonix_valley.jpg)
+
+![Alps view from Aiguille du Midi](./alps_view_from_aiguille_du_midi.jpg)
+
+### Gorges of the Diosaz
+
+Another place we were encouraged to visit at the tourist info office was the _Gorges of the Diosaz,_ a suspended path in a valley near Chamonix. The path followed the river's flow up and its waterfalls.
+
+![Gorges of the Diosaz](./gorges_of_the_diosaz.jpg)
+
+### Mer De Glace
+
+The last spot we reached in Chamonix valley was the _Mer De Glace_ ("Sea of Ice"), a valley glacier located on the northern slopes of the Mont Blanc massif, It is 7.5 km and can be regarded as **the longest and largest glacier in France.** To arrive a rack railway has to be taken from Chamonix. The train leaves you on the glacier station from where you can contemplate the glacier flowing through the valley.
+
+![Mer De Glace flowing through the valley](./mer_de_glace_flowing_through_the_valley.jpg)
+
+The main attraction was getting inside the glacier. While descending the stairs you could see on the rock wall measures of the glacier level through the years which had worryingly decreased the last decades.
+
+![Mer De Glace stairs](./mer_de_glace_stairs.jpg)
+
+> Recently, climate change has dramatically impacted the Mer De Glace glacier. The glacier has retreated more than 1000 meters since 1870, and the surface has dropped approximately 100 meters since its position was measured in 1909. **If the history of Mer De Glace’s retreat appears dramatic, its future looks apocalyptic.** A recent study demonstrated the Mer De Glace glacier is expected to retreat another 1200 meters between now and 2040. With a significant acceleration of the melt rate occurring, **this may be the last century to see the Mer De Glace.**
+> — [GlacierHub 2018](https://glacierhub.org/2018/12/27/sensing-the-divine-frankensteins-creature-and-the-mer-de-glace/)
+
+![Mer De Glace comparison: 1909 and 2017. Source: Eduard Spelterini / Dr Kieran Baxter](./mer_de_glace_comparison_1909_2017.webp)
+
+Once you reached the glacier level you were able to access it. I had never been inside a glacier before and it surprised me that even though you are literally inside of ice, it is not as chill as it seems to be at first thought. 
+
+![Inside Mer De Glace](./inside_mer_de_glace.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
