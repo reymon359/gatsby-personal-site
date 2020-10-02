@@ -101,3 +101,32 @@ Before crossing the Saône river to get to Vieux Lyon we stepped in front of a b
 
 ![Fresque des Lyonnais](./fresque_des_lyonnais.jpg)
 
+Here is another mind-blowing fresque we saw later that day located in another street where the tour did not pass. 
+
+![Fresque des Canuts](./fresque_des_lyonnais.jpg)
+
+The tour ended at Vieux Lyon, whose buildings remained luckily  undamaged (even after two world wars) from the 15th century, when important families from Spain and Europe resided there; _Saint-Jean-Baptiste Cathedral_ is the main structure.
+
+![Saint-Jean-Baptiste Cathedral](./saint-jean-baptiste_cathedral.jpg)
+
+Many French architects admired the Renaissance architecture from Italy like Florence's cathedral and started adding some of these new styles at their courtyards. To spot them, look for brown signs, most of them are accessible to tourists and citizens. 
+
+![Vieux Lyon courtyard entrance](./vieux_lyon_courtyard_entrance.jpg)
+
+If you have the chance, take a funicular to Vieux Lyon hill to visit _La Basilique Notre Dame de Fourvière_ and contemplate the views from there. 
+
+![Basilique Notre Dame de Fourvière](./basilique_notre_dame_de_fourviere.jpg)
+
+![Views from Vieux Lyon hill](./views_from_vieux_lyon_hill.jpg)
+
+You can also walk along the shores of the rivers, particularly the Rhône’s ones whose sidewalks are wider, and you can find boat bars moored.
+
+![Sunset from the Rhône](./sunset_from_the_rhone.jpg)
+
+The tour’s day morning I woke up early for a morning run around the city on my own. I do this frequently back at home, but I never did while traveling. I have to say It was totally worth it, seeing Lyon’s morning face, people setting up local markets or eating something after a long night of fun, it was the morning after Saturday's night and as Paul said Lyon is a lively city.
+
+![Morning views of Lyon](./morning_views_of_lyon.jpg)
+
+
+![Morning views from the Saône](./morning_views_from_the_saone.jpg)
+
