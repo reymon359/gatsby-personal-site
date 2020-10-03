@@ -111,7 +111,7 @@ Before crossing the Saône river to get to Vieux Lyon we stepped in front of a b
 
 Here is another mind-blowing fresque we saw later that day located in another street where the tour did not pass. 
 
-![Fresque des Canuts](./fresque_des_lyonnais.jpg)
+![Fresque des Canuts](./fresque_des_canuts.jpg)
 
 The tour ended at Vieux Lyon, whose buildings remained luckily  undamaged (even after two world wars) from the 15th century, when important families from Spain and Europe resided there; _Saint-Jean-Baptiste Cathedral_ is the main structure.
 
