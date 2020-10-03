@@ -65,7 +65,7 @@ const PostTemplate: React.FC<Props> = ({data, pageContext}) => {
     <Layout title={siteTitle}>
       <Head
         title={post.frontmatter.title}
-        description={post.excerpt}
+        description={post.frontmatter.description}
         keywords={[
           `blog`,
           `gatsby`,

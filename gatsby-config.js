@@ -64,6 +64,7 @@ module.exports = {
               inlineCodeMarker: null,
               aliases: {},
               showCaptions: [`alt`],
+              markdownCaptions: true,
               showLineNumbers: true,
               noInlineHighlight: true,
               backgroundColor: 'none',
@@ -74,6 +75,19 @@ module.exports = {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1rem; max-width: 600px; height: 400px; margin: auto;`
+            }
+          },
+          {
+            resolve: 'gatsby-remark-video',
+            options: {
+              width: 600,
+              height: 'auto',
+              preload: 'auto',
+              muted: true,
+              autoplay: true,
+              playsinline: true,
+              controls: true,
+              loop: true
             }
           },
           {
