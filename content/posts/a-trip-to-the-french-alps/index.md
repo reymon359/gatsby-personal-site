@@ -14,7 +14,7 @@ type: 'post'
 url: 'none'
 ---
 
-A month ago we drove ahead to the French Alps and visited Lyon, Chamonix Mont-Blanc, and Turin. We were not sure if we would be able to do this trip given the current COVID situation, so we booked accommodations a week before. In the end, everything went fine though we had to adapt to the _new normality_ rules like wearing a mask and keeping one's distance.
+A month ago we drove ahead to the French Alps and visited Lyon, Chamonix Mont-Blanc, and Turin. We were not sure if we would be able to do this trip given the current COVID situation, so we booked accommodations just a week before. In the end, everything went fine though we had to adapt to the _new normality_ rules like wearing a mask and keeping one's distance.
 
 This is just a summary of the trip and the places we visited to help anyone who is planning a similar trip as well as to improve my knowledge about them and remember the incredible moments lived when reading it in the future.
 
