@@ -212,7 +212,7 @@ The second one is the _Piazza San Carlo_ which has two churches addressed to dif
 
 ![Piazza San Carlo](./piazza_san_carlo.jpg)
 
-Back in the day, _the Savoy,_ was a powerful rich French family who wanted to enlarge their territories and took Turin’s region in the 16th century, becoming the new capital of their territory. When in the 19th century Italy united as a single nation its monarch was chosen from the Savoy family although they lasted until the second world war where Mussolini imposed its authority while they stayed in the background. When war was over, a referendum was made to choose between monarchy or Republic, and they were exiled when Republic was chosen
+Back in the day, _the Savoy,_ was a powerful rich French family who wanted to enlarge their territories and took Turin’s region in the 16th century, becoming the new capital of their territory. When in the 19th century Italy united as a single nation its monarch was chosen from the Savoy family although they lasted until the second world war where Mussolini imposed its authority while they stayed in the background. When war was over, a referendum was made to choose between monarchy or Republic, and they were exiled when Republic was chosen.
 
 One of these kings married a spanish princess from the royal family which gave him chocolate and coffee brought from America. Since then chocolate has become its food icon, being the _gianduiotto_ the most famous, made with hazelnuts, cocoa, and sugar. The well known brand Nutella is original from there. 
 
@@ -222,13 +222,46 @@ Coffee became popular too, the brand _Lavazza_ was from here as well. However, t
 
 ![Carpano sign and the famous Caffe Torino](./carpano_sign_and_the_famous_caffe_torino.jpg)
 
+Speaking of older times, there is a world-famous Egyptian museum in Turin for the unusual reason that the Savoy family won Napoleon soldiers when they were transporting Egyptian pieces and treasures. In addition, some buildings hold cannonballs from the Napoleon war on their facades; when rebuilding the city they added them like _a battle scar that symbolizes that they were stronger._
 
+![Cannonball in a building on the city hall square](./cannonball_in_a_building_on_the_city_hall_square.jpg)
 
+Downtown city’s style is mainly baroque nevertheless there is a medieval district preserving the old Roman planning. This civilization raised cities intersecting two main roads, called _cardo_ and _decumanus,_ then separated the city into quarters forming a big square known in Italy as _Quadrilateral Romano,_ this can be observed throughout Turin. _Via Garibaldi_ was the only street named differently in honor of Garibaldi, a popular hero.
 
+![Medieval district streets](./medieval_district_streets.jpg)
 
+Having that square planning, cities had four gates yet only one has survived over the years, the _Porta Palatina_ which leads straight forward to Milan. Side towers were added in the middle age and if you wanted to access the city you had to pay a pass tax, a common practice in Roman cities. Named after Julius Caesar, Turin's original name was _Julia Taurinorum,_ then Augustus changed it to _Augusta Taurinorum._
 
+![Turin Porta Palatina](./turin_porta_palatina.jpg)
 
+The _Piazza Castello_ is the central city point named after the medieval castle situated in the middle which was a Roman gate back in the day. However, the king wanted a baroque palace so architects built it on the front side becoming an unusual building half medieval castle half baroque palace.
 
+![Turin Piazza castello](./turin_piazza_castello.jpg)
+
+![Side view of the castle](./side_view_of_the_castle.jpg)
+
+The Savoy family enjoyed having a similar style and height for buildings, so most of the important buildings do not stand out from the rest. There is only one high-rise building, the _Torre Littoria_ made for Mussolini’s National Fascist Party. Angelo told us **Turin citizens dislike it and call it Mussolini’s finger** for his semblance with the dictator’s hand pointing to the sky.
+
+![Turin Torre Littoria](./turin_torre_littoria.jpg)
+
+The last monumental building of the tour was _Mole Antonelliana,_ the tallest building in Italy and Europe until 1960 (167.5 meters). Originally conceived of as a synagogue, it now houses the National Museum of Cinema which is believed the tallest museum in the world.
+
+![Turin Mole Antonelliana](./turin_mole_antonelliana.jpg)
+
+Other notes about Turin I pointed down:
+- Yellow and blue are the main colors. 
+- Is the second city with more arcades, about 18 km, being the first bologna with 38 km
+- _Baci di dama_ (ladies kisses) are a typical sweet similar to macaroni but filled with _Gianduiotto._ 
+
+![Baci di dama](./baci_di_dama.jpg)
+
+## Annecy
+
+On the way back to Spain we stopped in _Annecy_ an alpine town in southeastern France, with a beautiful lake. Quite a lovely place to spend a day or half of it.
+
+![Annecy downtown](./annecy_downtown.jpg)
+
+![Lake Annecy](./lake_annecy.jpg)
 
 
 
