@@ -118,8 +118,12 @@ ol {
   list-style-type: decimal;
 }
 
-li{
-  padding: 0.2rem ;
+li {
+  padding: 0.2rem;
+  
+  p {
+    margin: 0;
+  }
 }
 
 a {
