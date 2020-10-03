@@ -18,11 +18,19 @@ A month ago we drove ahead to the French Alps and visited Lyon, Chamonix Mont-Bl
 
 This is just a summary of the trip and the places we visited to help anyone who is planning a similar trip as well as to improve my knowledge about them and remember the incredible moments lived when reading it in the future.
 
-## Table of contents
-   - fjweew
-   - fwefwe
-   - efwfewf
-   
+## Table of Contents
+
+- [Nimes](#Nimes)
+- [Lyon](#Lyon)
+- [Chamonix - Mont Blanc](#Chamonix---Mont-Blanc)
+  - [Aiguille du Midi](#Aiguille-du-Midi)
+  - [Gorges of the Diosaz](#Gorges-of-the-Diosaz)
+  - [Mer De Glace](#Mer-De-Glace)
+- [Turin](#Turin)
+- [Annecy](#Annecy)
+- [Conclusion and tips](#Conclusion-and-tips)
+- [Resources](#Resources)
+
 ## Nimes
 
 We first headed to Lyon and on the way stopped to visit Nimes. We hadn't planned to go there, in fact, we like to **let some decisions be made on the go**, and when we were hungry enough to have lunch Nimes was the closest city big enough to worth paying a visit.  
@@ -266,7 +274,7 @@ On the way back to Spain we stopped in _Annecy_ an alpine town in southeastern F
 ## Conclusion and tips
 
 I deeply enjoy traveling and discovering new places and this trip was no exception. The view of the alps from Aiguille du Midi is something I (hope) will never forget from this one. Here are some tips I have learnt not just from this journey but general ones.
-- **Tours.** Do a bit of research to find a free or paid tour of the places you are heading to.  It's one of the best ways to truly discover a place’s culture, gastronomy, and normal life. About taking notes during the tour, helped me to understand and remember what I saw but I understand that other people may feel is not for them. However, like everything in life, the best thing you can do is try it and see if it suits you or not.
+- **Book a tour.** Do a bit of research to find a free or paid tour of the places you are heading to.  It's one of the best ways to truly discover a place’s culture, gastronomy, and normal life. About taking notes during the tour, helped me to understand and remember what I saw but I understand that other people may feel is not for them. However, like everything in life, the best thing you can do is try it and see if it suits you or not.
 - **Don’t plan everything.** Book some time for upcoming plans you may want to do when you get there. Just make a small list of the most important things you really want to visit and let the rest of the time get filled with upcoming plans. This will help you to not get stressed overthinking the trip and having some free time just resting, having a walk, or going to a park.
 - **Visit the tourist office.** Apart from searching for plans on the internet, it is worth it to pass by the tourist office. You may discover events that will happen at the time you are visiting the city and it is usually located in the city center so you will be close to it soon or later.
 - **Rent a car.** This one depends on the place you are traveling to, if it is a city you may not need it but for nature destinations or spending time in more than one spot, it gives you a lot of freedom which improves the trip considerably.
