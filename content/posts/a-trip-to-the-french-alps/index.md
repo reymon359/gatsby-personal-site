@@ -183,6 +183,44 @@ Once you reached the glacier level you were able to access it. I had never been 
 
 ![Inside Mer De Glace](./inside_mer_de_glace.jpg)
 
+## Turin
+
+The first time we planned this trip we were going to pass through and stay in Turin on our way to Chamonix. It was the COVID-19 situation at the moment, and the consequent uncertainty of whether we could access italy without passing a control or having to quarantine which made us update the itinerary and choose Lyon instead. How glad I am that things turned out that way, Lyon pleasantly amazed me. 
+
+Nonetheless, the desire of visiting Turin was still there, and we had some unplanned days on purpose so one of them we got up early and crossed the border. The shortest way to get to Turin from Chamonix was crossing the _Mont Blanc Tunnel_ (11.611 km), **the world's second deepest operational tunnel.**
+
+`video: title: "Crossing the Mont Blanc Tunnel": ./crossing_the_mont_blanc_tunnel.mp4`
+
+Keeping tradition, I booked a free tour for Turin. The tour was as great as our guide, Angelo, a local showed us every city detail. [Here is the site](https://www.freetourturin.com/) from which I booked it. I took some notes too from him so here goes a summary of them about Turin.
+
+Turin is the capital city of Piedmont in northern Italy, the Alps rise to the northwest of it. Located next to river Po , stately baroque buildings and old cafes line its boulevards and grand squares. Here is a map of the city:
+
+
+![Turin city map. Source: [OnTheWorldMap](http://ontheworldmap.com/italy/city/turin/)](./turin_city_map.jpg)
+
+The name comes from its symbol, the bull, _Torino_ in Italian. Legend has it that when north tribes came to live here there was a dragon already, and they sent a bull to fight and defeat it. When Romans arrived and found the bull as the tribe’s totemic sign adopted it as the main emblem of the city.
+
+Its main street, _Via Roma,_ was renovated by Mussolini in a fascist style in the 1930s. Some main shops and famous brands located along it still have the golden frame on the doors which symbolized luxury back then.
+
+![Turin Via Roma](./turin_via_roma.jpg)
+
+The first square found in Via Roma is the _CLN square,_ a monument against Mussolini. It was originally called the _Two fountains square,_ which represent the two rivers from Turin, _Po_ and _Dora Riparia._
+
+![Turin CLN square](./turin_cln_square.jpg)
+
+The second one is the _Piazza San Carlo_ which has two churches addressed to different attendees in the past, poor people richer one. Surely decoration and ornaments are more abundant on the richer people’s one. 
+
+![Piazza San Carlo](./piazza_san_carlo.jpg)
+
+Back in the day, _the Savoy,_ was a powerful rich French family who wanted to enlarge their territories and took Turin’s region in the 16th century, becoming the new capital of their territory. When in the 19th century Italy united as a single nation its monarch was chosen from the Savoy family although they lasted until the second world war where Mussolini imposed its authority while they stayed in the background. When war was over, a referendum was made to choose between monarchy or Republic, and they were exiled when Republic was chosen
+
+One of these kings married a spanish princess from the royal family which gave him chocolate and coffee brought from America. Since then chocolate has become its food icon, being the _gianduiotto_ the most famous, made with hazelnuts, cocoa, and sugar. The well known brand Nutella is original from there. 
+
+![Typical chocolate with hazelnuts at a Turin’s Chocolatey](./typical_chocolate_with_hazelnuts_at_a_turin’s_chocolatey.jpg)
+
+Coffee became popular too, the brand _Lavazza_ was from here as well. However, the most popular drink was the vermouth, made with wine and local herbs from the area. Adding more world-famous brands to the list _Martini_ was originated here too however the local oldest one is Carpano. 
+
+![Carpano sign and the famous Caffe Torino](./carpano_sign_and_the_famous_caffe_torino.jpg)
 
 
 
