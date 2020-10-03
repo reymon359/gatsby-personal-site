@@ -271,3 +271,9 @@ I deeply enjoy traveling and discovering new places and this trip was no excepti
 - **Visit the tourist office.** Apart from searching for plans on the internet, it is worth it to pass by the tourist office. You may discover events that will happen at the time you are visiting the city and it is usually located in the city center so you will be close to it soon or later.
 - **Rent a car.** This one depends on the place you are traveling to, if it is a city you may not need it but for nature destinations or spending time in more than one spot, it gives you a lot of freedom which improves the trip considerably.
 
+## Resources
+
+- [Free tour Lyon.](https://www.freetourlyon.com/) The Free tour I made in Lyon.
+- [Chez Grand-Mère.](https://www.chezgrandmere.fr/) A great restaurant from Lyon to try typical gastronomy. 
+- [Free Walking Tour Turin.](https://www.freetour.com/turin/turin-free-walking-tour) The Free tour I made in Turin.
+- [On the world map.](http://ontheworldmap.com/) A site to get really useful city maps. 
