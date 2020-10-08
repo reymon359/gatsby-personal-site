@@ -99,7 +99,7 @@ Paul mentioned a tradition still done nowadays in some restaurants where a coupl
 
 ![](./the_more_you_know.gif)
 
-Regarding its past,** Lyon was an important Roman city back in the day, the second one after Rome** actually. Julius Caesar conquered the Godus here and, after his death, they arose back with no victory although Romans ended afraid enough to move themselves to the top of the Vieux Lyon hill, a fact very uncommon given that they always built their cities in the valleys. This choice required aqueducts to be built in order to move the water up there.
+Regarding its past,**Lyon was an important Roman city back in the day, the second one after Rome** actually. Julius Caesar conquered the Godus here and, after his death, they arose back with no victory although Romans ended afraid enough to move themselves to the top of the Vieux Lyon hill, a fact very uncommon given that they always built their cities in the valleys. This choice required aqueducts to be built in order to move the water up there.
 
 We then passed by the _Roman Amphithéâtre des Trois Gaules_. Here is where I realized, thanks to Paul, about the meaning of the term amphitheater which derives from the ancient Greek _amphi_, meaning "on both sides" or "around" and _théātron_, meaning "place for viewing".  Both ancient Greek and ancient Roman theatres were built as a semicircle then an amphitheatre simply means two theatres. A theatre was a place to see plays and when they coupled another one it resulted in an arena for fighting. Despite fighting lions was the main attraction for citizens, when they ran out of them gladiators began fighting bulls, giving birth to the nowadays Spanish tradition.
 
