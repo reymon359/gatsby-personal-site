@@ -4,10 +4,10 @@ title: 'Developing a reusable ecommerce platform'
 description: 'Process and lessons learned from the development of a reusable ecommerce platform.'
 date: '2020-10-23'
 author: 'Ramón Morcillo'
-categories: ['??']
-tags: ['??']
+categories: ['Software Development']
+tags: ['Software Development', 'Ecommerce', 'Architecture', 'Teamwork', 'GraphQL']
 published: true
-commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/153
+commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/243
 featuredImage: './rachel-lees-WlhzJkBvNDo-unsplash.jpg'
 thumbnail: './rachel-lees-WlhzJkBvNDo-unsplash.jpg'
 type: 'post'
