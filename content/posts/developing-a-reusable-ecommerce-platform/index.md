@@ -80,3 +80,40 @@ Just to be clear, if we had decided to go with REST we would had needed to creat
 Furthermore, by making a single request on-demand, the payload is lighter, and therefore, the performance over the network is improved.
 
 Anyway, as with every problem, there were other approaches on the way to develop this project and its architecture, however at that moment this one seemed to us the best one.
+
+## Architecture and Tech Stack
+
+The microservices architecture were mainly Node.js services hosted on Azure K8s clusters which, depending on their needs and the data they worked with, had or not a MongoDB, PostgreSQL, or Redis database associated. 
+
+The asynchronous communication between them was handled mainly with [Azure Service Bus](https://azure.microsoft.com/en-us/services/service-bus/) topics and subscriptions through a publish/subscribe messaging communication model. The main difference with common messaging queues is that you can have more than one receiver, so you do not have multiple queues to receive messages in more than one service.
+
+![Azure Service Bus messaging Queues. [Source](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview#queues)](./azure_service_bus_messaging_queues.png)
+
+![Azure Service Bus messaging Topics. [Source](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview#topics)
+](./azure_service_bus_messaging_topics.png)
+
+On the frontend part, the sites were developed with React; sometimes using [Next](https://github.com/vercel/next.js/), and other ones from scratch with [Create React App](https://github.com/facebook/create-react-app) depending on the complexity and the requirements of each. We moved from Redux, used in previous projects, to the official [Context API](https://reactjs.org/docs/context.html) to manage most of the state. 
+
+Here are the main services and their functionalities for the first MVP architecture: 
+
+-   **shop-web-app:** The client shop application.
+-   **gateway-api-service:** Proxy service to receive requests from the client and redirect them to the corresponding services.
+-   **cms-api-service:** Service to retrieve and serve the content from Contentful
+-   **catalog-api-service:** Service that subscribes to team In messages and persists the product core data to serve it later through GraphQL.
+-   **orders-api-service.** Service that handles all the payment business logic
+-   **auth-api-service:** Provisional service to implement the user authentication to be able to buy products.
+-   **auth-web-app:** The client for the auth service.
+-   **integrations-ecommerce-api-service:** service from the integrations domain that handles the payments. Although this service was not in our domain we developed it together to increase the delivery speed and free them from extra work.
+
+![First MVP architecture](./first_mvp_arquitecture.jpg)
+
+To deploy and update the resources needed on Azure we used [Terraform](https://www.terraform.io/), which let us define infrastructure as code and manage their life cycles on the K8s clusters. We also worked with Azure DevOps as our CI & CD system.
+
+On the services, we used [Systemic](https://github.com/guidesmiths/systemic), a Node.js framework for minimal dependency injection that lets you create components and their dependencies in a system, where each component handles a separate object from the domain such as the routing, controller, services, database, … in an agnostic way from the others.
+
+[Apollo](https://www.apollographql.com/) was our choice to implement GraphQL providing us with a data graph layer to easily connect both, frontend and backend. Again, to learn more about it check [their docs](https://www.apollographql.com/docs/) or [this tutorial.](https://www.ramonmorcillo.com/getting-started-with-graphql-and-nodejs/) Finally, we hosted the code on [GitHub](https://github.com/) to make use of features like Pull Requests to review code properly before implementing it. 
+
+
+
+
+
