@@ -131,5 +131,30 @@ After all the changes mentioned above the architecture evolved this way.
 
 ![Second MVP architecture](./second_mvp_arquitecture.jpg)
 
+## Conclusion and lessons learned
 
+As I am writing this, the platform isn’t finished yet, however it has been a great challenge to get where we are. We have learned some valuable lessons that can be useful to others, not just about the stack and architecture described above but the way we worked as a team.
 
+**Innovate the stack.** Working with new technologies can be risky and less comfortable than sticking with old and well-known ones, _but innovation and adapting is the right way to not be left behind in Software Development._ One of the most important points when you upgrade the stack or adopt a new one, apart from checking the proper way to do so following standards, is _being sure the team is comfortable working with it,_ not just at the beginning but during the whole process to make the transition easier.
+
+**Don’t underestimate, promise less, deliver more.** We happily estimated the first MVP and agreed to deliver a great number of features. We ended up needing more time because of all the issues that appeared on the way and _had to learn to say “no” _sometimes. On the second MVP, we didn’t estimate that far in time and didn’t commit ourselves to features we weren’t sure to deliver on the time expected. _We achieved to work less stressed, have a better mood, deliver better code, and improve the client's feelings_ about the project since they weren’t disappointed with the progress.
+
+**Teamwork inside the team.** We realized the best way to progress and develop was to feel comfortable with not just the technologies but, most importantly the teammates. Some of the measures that improved our relationship and teamwork were:
+
+- **Team democracy.** No matter the work we were doing at the moment, _all of us had the same voice and our opinion counted the same_ when making a choice. This was key when discussed the adoption of the new stack and the practices we would follow.
+- **Reviewing code**. Feedback is one of the best ways to improve not only the code itself but the way you write it too. That's why we decided to work with GitHub Pull Requests to implement most of the features. _Working with them not only improved our code base but also made us aware of how the features were being implemented in other areas, avoiding catchup meetings and helping to keep track of the full project scope_. We refined this system little by little with features like a [minimum number of reviewers to merge them](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/about-required-reviews-for-pull-requests) or [subscribing to them through slack.](https://github.com/integrations/slack)
+- **Helping and asking for help.** In my opinion, this one is a must. _The team must lose the fear to ask for help if they get stuck and, at the same time be willing to help others when they ask for it._ I am happy to say that we were able to reach this situation and our work got improved in many ways. The next point, pairing, was key in losing the fear to ask for help and get to know each other better.
+- **Pairing as much as possible.** At this point in software development, the advantages of doing pair programming are more than well known, we paired not just to deliver the features in a faster and better way but to learn from each other's way to code. We weekly decided the pairing tasks and teammates to implement them, however, if someone needed or wanted to pair, we just asked for it and moments after a teammate offered it.  
+- **Pay attention to feedback.** The sprint retrospectives were the perfect moment to review all the things that went well, wrong, propose changes, and look forward to improvement. Therefore the more we shared our opinions the more issues we could approach and solve. 
+
+![Teamwork makes de dream work](./teamwork_makes_the_dream_work.gif)
+
+**Teamwork with other partners.** We were dependent on other teams' work therefore having a good relationship with them was also an important point in the development. _Communication was the key point, the more we communicated the more we improved,_ thanks to it, the feeling we had was to be one whole team. Here are some actions we followed in order to enhance this communication:
+
+- **Have a private place just for us.** We created a separate channel to talk about the progress and solve the doubts as soon as possible without extra meetings.
+- **Quick meetings.** A meeting once a week worked great to check the progress on the main issues, however, we did not wait for it and had a quick call whenever an issue needed to be discussed.
+- **Stay updated on the overall progress.** We had a teammate from our team attending their daily standups and one of them at ours who updated the rest of the team if needed. 
+
+![Actual footage of us and the Integrations Team](./teamwork_bike.gif)
+
+**Make the client feel like part of the team.** At the beginning of the first MVP, there were too many clues and too little communication to clarify them so we were blocked sometimes or had to set up wasting-time meetings for them. The core of the problem, like most life ones, was a lack of communication therefore we solved it by increasing it, asking questions directly to the client, inviting them to retrospectives, daily standups, and other meetings even when they were not required, to keep them updated as much as possible. In the end, the more we communicated the more we made them feel part of the team, and the better we worked together.
