@@ -156,7 +156,8 @@ As I am writing this, the platform isn’t finished yet, however it has been a g
 - **Quick meetings.** A meeting once a week worked great to check the progress on the main issues, however, we did not wait for it and had a quick call whenever an issue needed to be discussed.
 - **Stay updated on the overall progress.** We had a teammate from our team attending their daily standups and one of them at ours who updated the rest of the team if needed.
 
-![Actual footage of us and the Integrations Team](./teamwork_bike.gif)
+Here is some actual footage of us and the Integrations Team:
+`video: title: "Actual footage of us and the Integrations Team": ./actual_footage.mp4`
 
 **Make the client feel like part of the team.** At the beginning of the first MVP, there were too many clues and too little communication to clarify them so we were blocked sometimes or had to set up wasting-time meetings for them. The core of the problem, like most life ones, was a lack of communication therefore we solved it by increasing it, asking questions directly to the client, inviting them to retrospectives, daily standups, and other meetings even when they were not required, to keep them updated as much as possible. In the end, the more we communicated the more we made them feel part of the team, and the better we worked together.
 
