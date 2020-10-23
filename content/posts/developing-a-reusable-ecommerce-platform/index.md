@@ -31,29 +31,29 @@ I will try to focus on the relevant parts as much as possible to make it easier 
 
 ## Context
 
-The client we were developing the platform for was an eLearning company which was composed of 3 main sub-companies. 
+The client we were developing the platform for was an eLearning company which was composed of 3 main sub-companies.
 
 For the past few years, the sub-companies had been operating mostly independently but now they were trying to create a standardized way of doing things, and grow together in the best way.
 
-The project was an ambitious one. Creating an ecommerce platform that would work for all the sub-companies wasn’t easy to design, neither to implement given a large number of unsolved doubts it had, which made it very hard to estimate. 
+The project was an ambitious one. Creating an ecommerce platform that would work for all the sub-companies wasn’t easy to design, neither to implement given a large number of unsolved doubts it had, which made it very hard to estimate.
 
 ![Doubts gif](./doubts.gif)
 
 ## The first MVP
 
-To tackle this difficult challenge, we started from the bottom, with one of the 3 sub-companies, let’s call it sub-company H, in fact, it wasn’t one of the main sub-companies, it was a sub-company from a sub-company. To explain it better, if we name the 3 main sub-companies L, N, and P, then H was a sub-company of N. 
+To tackle this difficult challenge, we started from the bottom, with one of the 3 sub-companies, let’s call it sub-company H, in fact, it wasn’t one of the main sub-companies, it was a sub-company from a sub-company. To explain it better, if we name the 3 main sub-companies L, N, and P, then H was a sub-company of N.
 
-Being a sub-sub-company didn’t mean the platform would be simpler to develop, quite the opposite actually given all the features proposed for the MVP. 
+Being a sub-sub-company didn’t mean the platform would be simpler to develop, quite the opposite actually given all the features proposed for the MVP.
 
 ![Main company structure](./main_company_structure.jpg)
 
-While the main goal for it was the user being able to purchase a product, quite obvious indeed, there were too many dependencies with other services to accomplish this simple, at first sight, MVP. 
+While the main goal for it was the user being able to purchase a product, quite obvious indeed, there were too many dependencies with other services to accomplish this simple, at first sight, MVP.
 
-Part of the product and orders information came from another team’s domain, the Integrations team, I will call it team _In_, I would have called it team I (capital i) but it could be misunderstood with an l (non-capital L) or a 1 (number one). They communicated with [Swell](https://www.swell.is/) and Klopotek, an ecommerce system where we stored the product's information along with the order’s status. 
+Part of the product and orders information came from another team’s domain, the Integrations team, I will call it team _In_, I would have called it team I (capital i) but it could be misunderstood with an l (non-capital L) or a 1 (number one). They communicated with [Swell](https://www.swell.is/) and Klopotek, an ecommerce system where we stored the product's information along with the order’s status.
 
-The discounts were also provided by team _In’s_, to which we had to subscribe and then calculate the final product price according to the user info and privileges before displaying it. 
+The discounts were also provided by team _In’s_, to which we had to subscribe and then calculate the final product price according to the user info and privileges before displaying it.
 
-To make product content like images or descriptions accessible and customizable for the client we retrieved it through [Contentful](https://www.contentful.com/), a content platform where clients were able to manage it in an easy way. 
+To make product content like images or descriptions accessible and customizable for the client we retrieved it through [Contentful](https://www.contentful.com/), a content platform where clients were able to manage it in an easy way.
 
 We managed the payment with [Stripe](https://stripe.com/), a payments service, and then we communicated with team _In_ to update the order status on Swell.
 
@@ -84,7 +84,7 @@ Anyway, as with every problem, there were other approaches on the way to develop
 
 ## Architecture and Tech Stack
 
-The microservices architecture were mainly Node.js services hosted on Azure K8s clusters which, depending on their needs and the data they worked with, had or not a MongoDB, PostgreSQL, or Redis database associated. 
+The microservices architecture were mainly Node.js services hosted on Azure K8s clusters which, depending on their needs and the data they worked with, had or not a MongoDB, PostgreSQL, or Redis database associated.
 
 The asynchronous communication between them was handled mainly with [Azure Service Bus](https://azure.microsoft.com/en-us/services/service-bus/) topics and subscriptions through a publish/subscribe messaging communication model. The main difference with common messaging queues is that you can have more than one receiver, so you do not have multiple queues to receive messages in more than one service.
 
@@ -93,18 +93,18 @@ The asynchronous communication between them was handled mainly with [Azure Servi
 ![Azure Service Bus messaging Topics. [Source](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview#topics)
 ](./azure_service_bus_messaging_topics.png)
 
-On the frontend part, the sites were developed with React; sometimes using [Next](https://github.com/vercel/next.js/), and other ones from scratch with [Create React App](https://github.com/facebook/create-react-app) depending on the complexity and the requirements of each. We moved from Redux, used in previous projects, to the official [Context API](https://reactjs.org/docs/context.html) to manage most of the state. 
+On the frontend part, the sites were developed with React; sometimes using [Next](https://github.com/vercel/next.js/), and other ones from scratch with [Create React App](https://github.com/facebook/create-react-app) depending on the complexity and the requirements of each. We moved from Redux, used in previous projects, to the official [Context API](https://reactjs.org/docs/context.html) to manage most of the state.
 
 Here are the main services and their functionalities for the first MVP architecture: 
 
--   **shop-web-app:** The client shop application.
--   **gateway-api-service:** Proxy service to receive requests from the client and redirect them to the corresponding services.
--   **cms-api-service:** Service to retrieve and serve the content from Contentful
--   **catalog-api-service:** Service that subscribes to team In messages and persists the product core data to serve it later through GraphQL.
--   **orders-api-service.** Service that handles all the payment business logic
--   **auth-api-service:** Provisional service to implement the user authentication to be able to buy products.
--   **auth-web-app:** The client for the auth service.
--   **integrations-ecommerce-api-service:** service from the integrations domain that handles the payments. Although this service was not in our domain we developed it together to increase the delivery speed and free them from extra work.
+- **shop-web-app:** The client shop application.
+- **gateway-api-service:** Proxy service to receive requests from the client and redirect them to the corresponding services.
+- **cms-api-service:** Service to retrieve and serve the content from Contentful
+- **catalog-api-service:** Service that subscribes to team In messages and persists the product core data to serve it later through GraphQL.
+- **orders-api-service.** Service that handles all the payment business logic
+- **auth-api-service:** Provisional service to implement the user authentication to be able to buy products.
+- **auth-web-app:** The client for the auth service.
+- **integrations-ecommerce-api-service:** service from the integrations domain that handles the payments. Although this service was not in our domain we developed it together to increase the delivery speed and free them from extra work.
 
 ![First MVP architecture](./first_mvp_arquitecture.jpg)
 
@@ -112,7 +112,7 @@ To deploy and update the resources needed on Azure we used [Terraform](https://w
 
 On the services, we used [Systemic](https://github.com/guidesmiths/systemic), a Node.js framework for minimal dependency injection that lets you create components and their dependencies in a system, where each component handles a separate object from the domain such as the routing, controller, services, database, … in an agnostic way from the others.
 
-[Apollo](https://www.apollographql.com/) was our choice to implement GraphQL providing us with a data graph layer to easily connect both, frontend and backend. Again, to learn more about it check [their docs](https://www.apollographql.com/docs/) or [this tutorial.](https://www.ramonmorcillo.com/getting-started-with-graphql-and-nodejs/) Finally, we hosted the code on [GitHub](https://github.com/) to make use of features like Pull Requests to review code properly before implementing it. 
+[Apollo](https://www.apollographql.com/) was our choice to implement GraphQL providing us with a data graph layer to easily connect both, frontend and backend. Again, to learn more about it check [their docs](https://www.apollographql.com/docs/) or [this tutorial.](https://www.ramonmorcillo.com/getting-started-with-graphql-and-nodejs/) Finally, we hosted the code on [GitHub](https://github.com/) to make use of features like Pull Requests to review code properly before implementing it.
 
 ## The second MVP
 
@@ -124,9 +124,9 @@ Although we tried to make a proper estimation of the first one we surpassed its 
 
 We saw this MVP as an opportunity to start over and improve our codebase and so we added TypesScript and Styled-Components to our React application. I have to admit that I was very happy when we made these choices because I had been working with that stack on [my own projects](https://github.com/reymon359?tab=repositories&q=&type=source&language=typescript) and now I was able to learn more and get even better at it.
 
-A good thing was that we were able to reuse most of the code from the previous MVP for the React apps and the backend services, however, not everything was a bed of roses; not all of us were used to working with this new stack and it slowed us at the beginning. Furthermore, with the same stack, we started developing a React components library for all the platforms, which, even though was planned for the first MVP, never saw the light. 
+A good thing was that we were able to reuse most of the code from the previous MVP for the React apps and the backend services, however, not everything was a bed of roses; not all of us were used to working with this new stack and it slowed us at the beginning. Furthermore, with the same stack, we started developing a React components library for all the platforms, which, even though was planned for the first MVP, never saw the light.
 
-By that time, the team in charge of the user authentication service started working on it so we stopped its development and just implemented it on the site. In addition, we started the development of a products search service (**search-api-service**) with [Azure Cognitive Search](https://azure.microsoft.com/en-us/services/search/). 
+By that time, the team in charge of the user authentication service started working on it so we stopped its development and just implemented it on the site. In addition, we started the development of a products search service (**search-api-service**) with [Azure Cognitive Search](https://azure.microsoft.com/en-us/services/search/).
 
 After all the changes mentioned above the architecture evolved this way.
 
@@ -146,7 +146,7 @@ As I am writing this, the platform isn’t finished yet, however it has been a g
 - **Reviewing code**. Feedback is one of the best ways to improve not only the code itself but the way you write it too. That's why we decided to work with GitHub Pull Requests to implement most of the features. _Working with them not only improved our code base but also made us aware of how the features were being implemented in other areas, avoiding catchup meetings and helping to keep track of the full project scope_. We refined this system little by little with features like a [minimum number of reviewers to merge them](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/about-required-reviews-for-pull-requests) or [subscribing to them through slack.](https://github.com/integrations/slack)
 - **Helping and asking for help.** In my opinion, this one is a must. _The team must lose the fear to ask for help if they get stuck and, at the same time be willing to help others when they ask for it._ I am happy to say that we were able to reach this situation and our work got improved in many ways. The next point, pairing, was key in losing the fear to ask for help and get to know each other better.
 - **Pairing as much as possible.** At this point in software development, the advantages of doing pair programming are more than well known, we paired not just to deliver the features in a faster and better way but to learn from each other's way to code. We weekly decided the pairing tasks and teammates to implement them, however, if someone needed or wanted to pair, we just asked for it and moments after a teammate offered it.  
-- **Pay attention to feedback.** The sprint retrospectives were the perfect moment to review all the things that went well, wrong, propose changes, and look forward to improvement. Therefore the more we shared our opinions the more issues we could approach and solve. 
+- **Pay attention to feedback.** The sprint retrospectives were the perfect moment to review all the things that went well, wrong, propose changes, and look forward to improvement. Therefore the more we shared our opinions the more issues we could approach and solve.
 
 ![Teamwork makes de dream work](./teamwork_makes_the_dream_work.gif)
 
@@ -154,7 +154,7 @@ As I am writing this, the platform isn’t finished yet, however it has been a g
 
 - **Have a private place just for us.** We created a separate channel to talk about the progress and solve the doubts as soon as possible without extra meetings.
 - **Quick meetings.** A meeting once a week worked great to check the progress on the main issues, however, we did not wait for it and had a quick call whenever an issue needed to be discussed.
-- **Stay updated on the overall progress.** We had a teammate from our team attending their daily standups and one of them at ours who updated the rest of the team if needed. 
+- **Stay updated on the overall progress.** We had a teammate from our team attending their daily standups and one of them at ours who updated the rest of the team if needed.
 
 ![Actual footage of us and the Integrations Team](./teamwork_bike.gif)
 
@@ -166,6 +166,6 @@ I want to first thank my teammates. It has been a pleasure to work with them, st
 
 On the same level the teammates from other teams who always gave a helping hand when requested.
 
-Then I want to thank the opportunity of having been able to participate in the full end-to-end implementation of the project from which I learned so much. I solved issues on Front, Back, and DevOps such as setting up environments, pipelines, messaging between services, persisting and retrieving data, serving it to the frontend, and implementing  the interfaces to display it. 
+Then I want to thank the opportunity of having been able to participate in the full end-to-end implementation of the project from which I learned so much. I solved issues on Front, Back, and DevOps such as setting up environments, pipelines, messaging between services, persisting and retrieving data, serving it to the frontend, and implementing  the interfaces to display it.
 
 Finally, I am thankful for having the chance to work and get better at technologies that I was using on side-projects like GraphQL or TypeScript.
