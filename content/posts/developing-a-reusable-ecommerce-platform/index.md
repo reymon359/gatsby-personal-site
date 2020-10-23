@@ -18,4 +18,22 @@ This is a story about my team's hard work developing not a single ecommerce plat
 
 I will try to focus on the relevant parts as much as possible to make it easier to understand. Having said this, a bit of domain is needed to go through this lecture.
 
-## 
+## Table of Contents
+
+Context
+The first MVP
+Implementing GraphQL
+Architecture and Tech Stack
+The second MVP
+Conclusion and lessons learned
+Greetings
+
+## Context
+
+The client we were developing the platform for was an eLearning company which was composed of 3 main sub-companies. 
+
+For the past few years, the sub-companies had been operating mostly independently but now they were trying to create a standardized way of doing things, and grow together in the best way.
+
+The project was an ambitious one. Creating an ecommerce platform that would work for all the sub-companies wasn’t easy to design, neither to implement given a large number of unsolved doubts it had, which made it very hard to estimate. 
+
+![Doubts gif](./doubts.gif)
