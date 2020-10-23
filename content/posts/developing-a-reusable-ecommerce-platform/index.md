@@ -7,7 +7,7 @@ author: 'Ramón Morcillo'
 categories: ['??']
 tags: ['??']
 published: true
-commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/??
+commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/153
 featuredImage: './rachel-lees-WlhzJkBvNDo-unsplash.jpg'
 thumbnail: './rachel-lees-WlhzJkBvNDo-unsplash.jpg'
 type: 'post'
@@ -57,3 +57,9 @@ To make product content like images or descriptions accessible and customizable 
 We managed the payment with [Stripe](https://stripe.com/), a payments service, and then we communicated with team _In_ to update the order status on Swell.
 
 The service available for the user to authenticate should be agnostic to the owner and reusable on all sub-companies. It had to be provided by another team, yet in the end, we actually developed it ourselves.
+
+And to put the icing on the cake we also had to implement the user tracking with [Segment](https://segment.com/), a popular service to collect user events from web & mobile apps.
+
+Here is a simple diagram of what I have been describing which might make it easier to understand. I have grouped the microservices architecture in just _Backend_ and _Frontend_ to keep it simple.
+
+![MVP Architecture overview](./mvp_architecture_overview.jpg)
