@@ -63,3 +63,20 @@ And to put the icing on the cake we also had to implement the user tracking with
 Here is a simple diagram of what I have been describing which might make it easier to understand. I have grouped the microservices architecture in just _Backend_ and _Frontend_ to keep it simple.
 
 ![MVP Architecture overview](./mvp_architecture_overview.jpg)
+
+## Implementing GraphQL
+
+To accomplish the project we had to _provide the frontend with a unique source of truth_ of the product’s core information from the backend. Therefore the only thing that we aimed to have different from one store’s frontend to another would be the designs and the content from Contentful. Regarding these designs and their implementations on React, we planned to use a shared-components-library.
+
+Therefore, what is GraphQL doing here and why did we decide to go for it? Well, in case you don’t know how GraphQL works, essentially it lets us define a Schema with all the properties and queries that could be made to our product, and then serve it to the frontend to let it decide what to request without the backend having to create an endpoint for each of those requests like in REST services. To learn more about it [I wrote a tutorial to explain it](https://www.ramonmorcillo.com/getting-started-with-graphql-and-nodejs/) which teaches how to use it with Node.js, moreover, [their docs](https://graphql.org/learn/) are worth checking out.
+
+This meant that each of the shops would request the data they would need from the product just looking at the Schema, the source of truth. Thanks to this fact we would not have to implement in the backend different sources of data for each shop, giving the frontend the power and responsibility (the first involves the second 🕷) to request the product data needed to display at each interface.
+
+> With great power comes great responsibility.
+> — Stan Lee
+
+Just to be clear, if we had decided to go with REST we would had needed to create different endpoints for each of the shops or make the frontend retrieve all the product data in each shop and then decide which properties to display, storing unnecessary data in the frontend that would only add noise. Or even worse, we would have had all the shops’ backend services deployed for each one of the frontend shops which would mean to use unnecessary resources and increase the cost considerably. Here is why we took this initial approach. The worst fact, in my opinion, would be the waste of time needed to maintain and hardly refactor all the mess that we would have created.
+
+Furthermore, by making a single request on-demand, the payload is lighter, and therefore, the performance over the network is improved.
+
+Anyway, as with every problem, there were other approaches on the way to develop this project and its architecture, however at that moment this one seemed to us the best one.
