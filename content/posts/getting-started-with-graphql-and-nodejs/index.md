@@ -4,8 +4,8 @@ title: 'Getting started with GraphQL and Node.js'
 description: 'Hello World Client Server project to explain how GraphQL Works.'
 date: '2020-04-14'
 author: 'Ramón Morcillo'
-categories: ['Software']
-tags: ['Tutorial', 'Node.js', 'GraphQL', 'Apollo']
+categories: ['Software Development']
+tags: ['Software Development', 'Tutorial', 'Node.js', 'GraphQL', 'Apollo']
 published: true
 commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/169
 featuredImage: './gia-oris-_uM5_nG2ssc-unsplash.jpg'
