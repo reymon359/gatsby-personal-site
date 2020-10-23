@@ -113,7 +113,23 @@ On the services, we used [Systemic](https://github.com/guidesmiths/systemic), a 
 
 [Apollo](https://www.apollographql.com/) was our choice to implement GraphQL providing us with a data graph layer to easily connect both, frontend and backend. Again, to learn more about it check [their docs](https://www.apollographql.com/docs/) or [this tutorial.](https://www.ramonmorcillo.com/getting-started-with-graphql-and-nodejs/) Finally, we hosted the code on [GitHub](https://github.com/) to make use of features like Pull Requests to review code properly before implementing it. 
 
+## The second MVP
 
+An MVP (Minimum Viable Product) is the first prototype you create and deliver in a project, therefore there is usually just one and when you achieve it you start implementing new features on it. So, why did we focus on a second MVP for the same project? Well, When we reached a “stable” version of the first one, the client realized that we needed to start with the main sub-companies stores, and took the decision to stop the sub-sub-company H store development to focus on the development of the new ones. The reason behind this was mainly due to some services ending their support for the sub-companies in the coming months, meaning that their stores had to be developed first.
+
+![Graphical representation of how we felt with the second MVP](./how_we_felt_with_second_mvp.jpg)
+
+Although we tried to make a proper estimation of the first one we surpassed its deadline since some unplanned issues appeared along. Thus, when we were told that the new deadline would be even closer we decided to take a different approach to reach it on time. We concluded to develop more than one store at the same time which was a double-edged sword approach; on one hand, we would see on the go how well the reusability aspect of our platform worked while refactoring it and we would also end up with more than one store in the end. On the other hand, we would have to set up and maintain the environments and resources of multiple shops plus implement the designs of them which would slow us down, therefore we may not reach the deadline on time, again.
+
+We saw this MVP as an opportunity to start over and improve our codebase and so we added TypesScript and Styled-Components to our React application. I have to admit that I was very happy when we made these choices because I had been working with that stack on [my own projects](https://github.com/reymon359?tab=repositories&q=&type=source&language=typescript) and now I was able to learn more and get even better at it.
+
+A good thing was that we were able to reuse most of the code from the previous MVP for the React apps and the backend services, however, not everything was a bed of roses; not all of us were used to working with this new stack and it slowed us at the beginning. Furthermore, with the same stack, we started developing a React components library for all the platforms, which, even though was planned for the first MVP, never saw the light. 
+
+By that time, the team in charge of the user authentication service started working on it so we stopped its development and just implemented it on the site. In addition, we started the development of a products search service (**search-api-service**) with [Azure Cognitive Search](https://azure.microsoft.com/en-us/services/search/). 
+
+After all the changes mentioned above the architecture evolved this way.
+
+![Second MVP architecture](./second_mvp_arquitecture.jpg)
 
 
 
