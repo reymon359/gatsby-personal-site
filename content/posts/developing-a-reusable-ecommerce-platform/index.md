@@ -158,3 +158,13 @@ As I am writing this, the platform isn’t finished yet, however it has been a g
 ![Actual footage of us and the Integrations Team](./teamwork_bike.gif)
 
 **Make the client feel like part of the team.** At the beginning of the first MVP, there were too many clues and too little communication to clarify them so we were blocked sometimes or had to set up wasting-time meetings for them. The core of the problem, like most life ones, was a lack of communication therefore we solved it by increasing it, asking questions directly to the client, inviting them to retrospectives, daily standups, and other meetings even when they were not required, to keep them updated as much as possible. In the end, the more we communicated the more we made them feel part of the team, and the better we worked together.
+
+## Greetings
+
+I want to first thank my teammates. It has been a pleasure to work with them, starting each day eager to have fun together developing the project.
+
+On the same level the teammates from other teams who always gave a helping hand when requested.
+
+Then I want to thank the opportunity of having been able to participate in the full end-to-end implementation of the project from which I learned so much. I solved issues on Front, Back, and DevOps such as setting up environments, pipelines, messaging between services, persisting and retrieving data, serving it to the frontend, and implementing  the interfaces to display it. 
+
+Finally, I am thankful for having the chance to work and get better at technologies that I was using on side-projects like GraphQL or TypeScript.
