@@ -54,7 +54,7 @@
     "gatsby-transformer-json": "2.4.15",
     "gatsby-transformer-remark": "2.8.46",
     "gatsby-transformer-sharp": "2.5.19",
-    "prism-themes": "1.4.1",
+    "prism-themes": "1.5.0",
     "prismjs": "1.22.0",
     "prop-types": "15.7.2",
     "react": "16.14.0",
