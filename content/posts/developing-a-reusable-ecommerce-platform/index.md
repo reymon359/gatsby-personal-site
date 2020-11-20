@@ -20,14 +20,14 @@ I will try to focus on the relevant parts as much as possible to make it easier 
 
 ## Table of Contents
 
-- [Table of Contents](#table-of-contents)
-- [Context](#context)
-- [The first MVP](#the-first-mvp)
-- [Implementing GraphQL](#implementing-graphql)
-- [Architecture and Tech Stack](#architecture-and-tech-stack)
-- [The second MVP](#the-second-mvp)
-- [Conclusion and lessons learned](#conclusion-and-lessons-learned)
-- [Greetings](#greetings)
+- [Table of Contents](#Table-of-Contents)
+- [Context](#Context)
+- [The first MVP](#The-first-MVP)
+- [Implementing GraphQL](#Implementing-GraphQL)
+- [Architecture and Tech Stack](#Architecture-and-Tech-Stack)
+- [The second MVP](#The-second-MVP)
+- [Conclusion and lessons learned](#Conclusion-and-lessons-learned)
+- [Greetings](#Greetings)
 
 ## Context
 
