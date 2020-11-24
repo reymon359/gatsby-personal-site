@@ -52,6 +52,14 @@ Buy the way down **cable-car ticket (13 euros)**. After the effort made hiking i
 
 ![The first cable car arriving at the Upper Station](./the_first_cable-car_arriving_at_the_upper_station.jpg)
 
+Get your body and mind used to **staying up late**. I normally go to bed and wake up early, changing my normal schedule and staying up until very late the days before the hike helped me that night. Besides, drinking **coffee** and/or tea before and during the hike was a great idea to fight sleep.  Prepare some flasks full of it and obviously, do not forget **water and food** for the hike.
+
+**Extras**
+
+Check the calendar for the next **full moon**. When climbing Teide that night or a nearby one the landscape views were beautiful, and we didn't need a flashlight. The negative point is that we couldn't see the stars properly. However, you can see them every night from any high spot on the island. Thus said, the night landscape views from the Teide are obviously better while full moon.
+
+![Teide National Park views from La Caldereta](./teide_national_park_views_from_la_caldereta.jpg)
+
 ## The Route
 
 Lorem ipsum
