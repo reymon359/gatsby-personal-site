@@ -42,6 +42,8 @@ Some things you must know about the adventure:
 - In case you are thinking of doing it by daytime, you’ll need **permission to hike it from 9 am until 6 pm.** You automatically get permission to hike up the tip If you plan to stay on the refuge.
 - There is a **cable car,** but it **does not run on windy days.** Take it into account because you may end up hiking it down too.
 
+![Teide view after crossing the sea of clouds](./teide_view_after_crossing_the_sea_of_clouds.jpg)
+
 ## Before the Hike
 
 Lorem ipsum
