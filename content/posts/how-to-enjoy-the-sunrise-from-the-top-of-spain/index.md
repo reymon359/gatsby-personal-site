@@ -18,3 +18,4 @@ Last month some friends and I made it to the **Teide’s summit (3.718 m) at nig
 
 We were a five people group, a good number to stay close enough during the hike and not spread out. Remember this is not a normal hike given the fact of doing it at night so, even if you are in good shape **it can be tough for casual hikers.**
 
+![Waiting to start the ascension](./waiting_to_start_the_ascension.jpg)
