@@ -48,10 +48,9 @@ Some things you must know about the adventure:
 
 Check the **weather**. This includes temperature, wind, and precipitation. [On this site,](https://www.volcanoteide.com/es/teide-hoy) you can have a look at the Live forecast of the Teide and its paths. It will be very cold, so you will need appropriate clothing. You should dress up with **winter clothing** which means gloves, and a hat at least.
 
-Buy the way down **cable car ticket (13 euros)**. After the effort made hiking it you will take the cable car to reach the base. Make sure to buy it and don’t forget to bring it with you.
+Buy the way down **cable-car ticket (13 euros)**. After the effort made hiking it you will take the cable car to reach the base. Make sure to buy it and don’t forget to bring it with you.
 
-
-
+![The first cable car arriving at the Upper Station](./the_first_cable-car_arriving_at_the_upper_station.jpg)
 
 ## The Route
 
