@@ -20,7 +20,6 @@ I will try to focus on the relevant parts as much as possible to make it easier 
 
 ## Table of Contents
 
-- [Table of Contents](#Table-of-Contents)
 - [Context](#Context)
 - [The first MVP](#The-first-MVP)
 - [Implementing GraphQL](#Implementing-GraphQL)
