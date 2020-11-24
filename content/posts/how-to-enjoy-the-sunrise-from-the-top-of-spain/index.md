@@ -35,7 +35,12 @@ We were a five people group, a good number to stay close enough during the hike 
 
 ## Basic information
 
-Lorem ipsum
+Some things you must know about the adventure:
+
+- As said in the title, the Teide is the **biggest mountain in Spain** with a high of **3718 meters.**
+- About the hike, the distance is around **8 km** with a very steep slope including **gradients of up to 60%** and takes about **5.5 hours** on average. The start point altitude is 2348 m so, the **elevation gain is 1370 m.**
+- In case you are thinking of doing it by daytime, you’ll need **permission to hike it from 9 am until 6 pm.** You automatically get permission to hike up the tip If you plan to stay on the refuge.
+- There is a **cable car,** but it **does not run on windy days.** Take it into account because you may end up hiking it down too.
 
 ## Before the Hike
 
