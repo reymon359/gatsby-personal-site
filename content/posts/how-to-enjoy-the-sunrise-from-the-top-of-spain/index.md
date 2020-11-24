@@ -62,7 +62,10 @@ Check the calendar for the next **full moon**. When climbing Teide that night or
 
 ## The Route
 
-Lorem ipsum
+If you can afford it, try to **drive there in more than one car.** The path does not begin where the cable car drops you off. You will have to walk back to where you parked the car at the beginning of the trail unless you have a second car. Therefore, the _trick_ is to leave one of them in a car park near the cable-car Base Station before heading to the starting spot with the second car. This way **when you get off the cable car exhausted you won't have to walk another 40 min** to get to the car.
+
+Is a good idea to spend some hours at the base before the adventure. We got to the starting point late in the evening to have a picnic dinner and start **getting used to the high altitude hours before the hike.** This will help you to prevent [altitude sickness.](https://en.wikipedia.org/wiki/Altitude_sickness)
+
 
 ### Getting to the starting point
 
