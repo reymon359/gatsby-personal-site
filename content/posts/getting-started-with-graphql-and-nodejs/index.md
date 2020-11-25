@@ -70,7 +70,7 @@ Now that you understand Apollo better and why we will use it, let's continue set
 
 ## Define the Schema
 
-A GraphQL Schema is at the core of any GraphQL server implementation. It **describes the shape of your data**, defining it with a hierarchy of **types** with fields that are populated from your data source and also specifies which **queries** and **mutations** are available so the client knows about the information that can be requested or sent.
+A GraphQL Schema is at the core of any GraphQL server implementation. It **describes the shape of your data**, defining it with a hierarchy of **types** with fields that are populated from your data source and specifies which **queries** and **mutations** are available, so the client knows about the information that can be requested or sent.
 
 For example, if we wanted to build a music application, our simplest schema, usually defined in a `schema.graphql` file, would contain two **Object types**: `Song` and `Author` like this
 
@@ -95,7 +95,7 @@ type Query {
 }
 ```
 
-To keep it as simple as possible our schema will have just **a single Query** type which will return a String
+To keep it as simple as possible our schema will have just **a single Query** type which will return a `String.
 
 ```js
 type Query {
@@ -106,10 +106,10 @@ type Query {
 We can use **any programming language** to create a GraphQL schema and **build an interface around it** but as I explained before we will use Apollo server to execute GraphQL queries. So we create a new `server.js` file in the server directory to define the Schema on it.
 
 ```text
-📁project
-├── 📁client
-└── 📁server
-    └── 📄server.js
+📁 project
+├── 📁 client
+└── 📁 server
+    └── 📄 server.js
 ```
 
 We have to import the **tag function** `gql` from **apollo-server** to parse the schema this way: `const {gql} = require('apollo-server');` and then declare a `typeDefs` constant which is an [abstract syntax tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree) of the Graphql code.
