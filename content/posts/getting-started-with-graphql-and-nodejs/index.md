@@ -196,7 +196,7 @@ server
   .then(({ url }) => console.log(`Server running at ${url}`));
 ```
 
-Now if we run `node server/server.js` we will finally have our GrapqhQL server up and running🎉!
+Now if we run `node server/server.js` we will finally have our GraphQL server up and running🎉!
 
 You can go and check it on [http://localhost:9000/](http://localhost:9000/)
 
@@ -401,7 +401,7 @@ And our `index.html` will have the loading title updated with the data fetched f
 
 I hope you enjoyed the post and that this project has fulfilled the objective of showing **how graphql works under the hood**, at least in a very simple way. I know there are a lot of things that I have not explained or that I could have gone deeper but like any `hello world` project, it is intended for people who are beginners with it, so I wanted to keep it as simple as possible.
 
-I'm looking forward to learning more about GrapqhQL and using it in future projects. If you've got any questions, suggestions, or feedback in general, don't hesitate to reach out on any of the social networks from [my site](https://ramonmorcillo.com) or [by mail](mailto:hey@ramonmorcillo.com).
+I'm looking forward to learning more about GraphQL and using it in future projects. If you've got any questions, suggestions, or feedback in general, don't hesitate to reach out on any of the social networks from [my site](https://ramonmorcillo.com) or [by mail](mailto:hey@ramonmorcillo.com).
 
 ## Useful resources
 
