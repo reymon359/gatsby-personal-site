@@ -264,12 +264,12 @@ The `index.html` file will have the basics of any `HTML` file and a loading head
 First off, in the same client folder, we create an `app.js` file where we will write the client logic to fetch the data from the server.
 
 ```text
-📁project
-├── 📁client
-|   └── 📄client.html
-|   └── 📄app.js
-└── 📁server
-    └── 📄server.js
+📁 project
+├── 📁 client
+|   └── 📄 client.html
+|   └── 📄 app.js
+└── 📁 server
+    └── 📄 server.js
 ```
 
 Inside it, we set the server url to which we will make the request.
@@ -278,7 +278,7 @@ Inside it, we set the server url to which we will make the request.
 const GRAPHQL_URL = 'http://localhost:9000/';
 ```
 
-Next, we define our async function `fetchGreeting()` to, fetch the greeting from the server. We will use the [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) to perform the HTTP request which by default returns a promise to which we can subscribe and get the answer in an asynchronous way.
+Next, we define our async function `fetchGreeting()` to, fetch the greeting from the server. We will use the [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) to perform the HTTP request which by default returns a promise to which we can subscribe and get the answer asynchronously.
 
 ```js
 async function fetchGreeting() {
@@ -301,7 +301,7 @@ async function fetchGreeting() {
 }
 ```
 
-A detail to take into account is that the method of the request is `POST`, which can confuse us if we are used to working with `RESTful` because this same request made in `RESTful`, where we just want to read information from the server, would be usually done using the method `GET`.
+A detail to take into account is that the method of the request is `POST`, which can confuse us if we are used to working with `RESTful` because this same request made in `RESTful`, where we just want to read information from the server, would be usually done with the method `GET`.
 
 The thing is that with GraphQL we always make `POST` requests where we pass **the query in the payload** (body).
 
@@ -332,7 +332,7 @@ async function fetchGreeting() {
 fetchGreeting();
 ```
 
-If you open the file in your browser and see the **console on the developer tools** you can see that we actually got the greeting data from the query🙌!
+If you open the file in your browser and see the **console on the developer tools** you can see that we actually got the greeting data from the query 🙌!
 
 ![Fetching data from the server](./fetching-data-from-server.png)
 
