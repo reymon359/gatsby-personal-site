@@ -433,4 +433,4 @@ Here is a collection of links and resources which have been useful for me to imp
 ### Extras 🍍
 
 - [GraphQL APIs](https://github.com/APIs-guru/graphql-apis) - A list of public GraphQL APIs to test your skills or to build something with them.
-- [GraphQL: The Documentary](https://www.youtube.com/watch?v=783ccP__No8) - A 30 min video that explores the story of why and how GraphQL came to be and the impact it's having on big #tech companies worldwide, including Facebook, Twitter, Airbnb, and Github.
+- [GraphQL: The Documentary](https://www.youtube.com/watch?v=783ccP__No8) - A 30 min video that explores the story of why and how GraphQL appeared, and the impact it's having on big tech companies worldwide, including Facebook, Twitter, Airbnb, and Github.
