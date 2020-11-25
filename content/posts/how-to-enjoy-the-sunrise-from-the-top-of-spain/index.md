@@ -72,7 +72,17 @@ Is a good idea to spend some hours at the base before the adventure. We got to t
 
 ### Getting to the starting point
 
-Lorem ipsum
+**The trail begins at path 7 - Montaña Blanca (2.320 m).** We got there from _La Orotava_ following the signs that led us to the Teide. At some point, you will get over the level of the clouds, do yourself a favor, and stop to contemplate **the sea of clouds.**
+
+![Sea of clouds sunset view on the way up](./sea_of_clouds_sunset_view_on_the_way_up.jpg)
+
+A while after you will notice the lack of vegetation on the landscape which means you are entering the Teide National Park.
+
+![Driving through the Teide National Park](driving_through_the_teide_national_park.jpg)
+
+If you go in one car **head to the beginning of the Montaña Blanca path** and wait there until beginning the ascension. If you manage to get two cars, keep driving until the cable-car Base Station and leave one in the car park near it. Then go back with the other car to the Montaña Blanca starting point. Here you’ll have to **wait until around 1:00 am to begin.** 
+
+![The sun going to bed](./the_sun_going_to_bed.jpg)
 
 ### Montaña Blanca
 
