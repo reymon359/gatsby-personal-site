@@ -230,14 +230,14 @@ So let's try it!
 
 ## Set up the Client
 
-Now that we have our server up and running let's focus on the client part. We will start creating a `client.html` file inside our client folder.
+Now we have our server up and running let's focus on the client part. We will start creating a `client.html` file inside our client folder.
 
 ```text
-📁project
-├── 📁client
-|   └── 📄client.html
-└── 📁server
-    └── 📄server.js
+📁 project
+├── 📁 client
+|   └── 📄 client.html
+└── 📁 server
+    └── 📄 server.js
 ```
 
 The `index.html` file will have the basics of any `HTML` file and a loading header `<h1>Loading...</h1>` to show the user something while we request the data from the server.
