@@ -135,7 +135,7 @@ const typeDefs = gql`
 Now we have defined our Schema we need a way to answer the client requests for that data; the **resolvers**.
 **A resolver is a function that handles the data for each one of the fields of your schema**. You can send that data to the client by **fetching a back-end database** or a third-party **API** among others.
 
-They have to **match the type definitions of the Schema**, in our case, we just have one type definition Query which returns a greeting of type String so we will define a resolver for the `greeting` field, like so:
+They have to **match the type definitions of the Schema**, in our case, we just have one type definition Query which returns a greeting of type `String`, so we will define a resolver for the `greeting` field, like so:
 
 ```js
 const resolvers = {
