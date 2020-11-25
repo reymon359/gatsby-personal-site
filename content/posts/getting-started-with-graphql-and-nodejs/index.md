@@ -272,7 +272,7 @@ First off, in the same client folder, we create an `app.js` file where we will w
     └── 📄 server.js
 ```
 
-Inside it, we set the server url to which we will make the request.
+Inside it, we set the server URL to which we will make the request.
 
 ```js
 const GRAPHQL_URL = 'http://localhost:9000/';
@@ -338,7 +338,7 @@ If you open the file in your browser and see the **console on the developer tool
 
 ## Displaying the data
 
-Now that we have successfully got the data from the server let's **update the loading title**. The first thing we will do is destructure the response and return just the `data` from it.
+Now we have successfully got the data from the server lets **update the loading title**. The first thing we will do is destructure the response and return just the `data` from it.
 
 Just replace this part of the code
 
@@ -354,7 +354,7 @@ const { data } = await response.json();
 return data;
 ```
 
-And then we will update the title with the `greeting` returned **inside the data from the response**
+Then we will update the title with the `greeting` returned **inside the data from the response**
 
 ```js
 fetchGreeting().then(({ greeting }) => {
@@ -393,7 +393,7 @@ fetchGreeting().then(({ greeting }) => {
 });
 ```
 
-And our `index.html` will have the loading title updated with the data fetched from our server!🎉
+Our `index.html` will have the loading title updated with the data fetched from our server!🎉
 
 ![Displaying the data](./displaying-the-data.png)
 
