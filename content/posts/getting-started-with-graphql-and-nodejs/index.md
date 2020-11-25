@@ -95,7 +95,7 @@ type Query {
 }
 ```
 
-To keep it as simple as possible our schema will have just **a single Query** type which will return a `String.
+To keep it as simple as possible our schema will have just **a single Query** type which will return a `String`.
 
 ```js
 type Query {
