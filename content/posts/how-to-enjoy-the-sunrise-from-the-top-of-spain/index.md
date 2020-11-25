@@ -86,7 +86,9 @@ If you go in one car **head to the beginning of the Montaña Blanca path** and w
 
 ### Montaña Blanca
 
-Lorem ipsum
+This path starts easily with a low gradient ascending walk that lasts an hour and a half. You’ll see on the way some **Teide eggs,** big pieces of solidified lava that descended like volcanic snowballs when the volcano erupted.
+
+![Teide egg at Montaña Blanca](./teide_egg_at_montana_blanca.jpg)
 
 ### The Peak
 
