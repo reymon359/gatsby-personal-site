@@ -42,25 +42,25 @@ While [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) has 
 The first step is to [download and install Node.js](https://nodejs.org/en/download/) in case you haven't already. Once you have it installed let's begin with the directory structure. The project will be composed of **two directories**, one for the Client and another for the Server. I have chosen to keep both inside the project root directory but then you can split it into two separate projects or any way you want.
 
 ```text
-📁project
-├── 📁client
-└── 📁server
+📁 project
+├── 📁 client
+└── 📁 server
 ```
 
-Now we will initialize the project in the server directory. Change the location to the server folder in your terminal and run `npm init` to fill the project info and generate the **package.json** file. Or `npm init -y` which tells the generator to use the defaults (instead of asking questions and simply generate an empty npm project without going through an interactive process).
+Now we will initialize the project in the server directory. Change the location to the server folder in your terminal and run `npm init` to fill in the project info and generate the **package.json** file. Or `npm init -y` which tells the generator to use the defaults (instead of asking questions and simply generate an empty npm project without going through an interactive process).
 
 The next step will be to install [GraphQL.js](https://github.com/graphql/graphql-js) and [Apollo Server](https://github.com/apollographql/apollo-server) to our server. GraphQL.js will provide two important capabilities:
 
 - Building a type schema, which we will do in the [next step](#define-the-schema).
 - Serving queries against that type schema.
 
-To install it just run `npm install graphql`. I am assuming you are using a version of NPM equal or higher than **5.0.0** so you [do not need](https://blog.npmjs.org/post/161081169345/v500) to add `--save` when installing a dependency to be saved in the package.json
+To install it just run `npm install graphql`. I am assuming you are using a version of NPM equal or higher than **5.0.0** so you [do not need](https://blog.npmjs.org/post/161081169345/v500) to add `--save` when installing a dependency to be saved in the `package.json`.
 
 Apollo Server, on the other hand, will help us to implement the GraphQL functionalities. It is part of the [Apollo Data Graph Platform](https://www.apollographql.com/).
 
 > Apollo is a platform for building a data graph, a communication layer that seamlessly connects your application clients (such as React and iOS apps) to your back-end services. Is an implementation of GraphQL designed for the needs of product engineering teams building modern, data-driven applications. - [Apollo Documentation](https://www.apollographql.com/docs/)
 
-What you need to know about Apollo, at least for now, is it’s a community that builds on top of GraphQL, and provides different **tools to help you build your projects**. The tools provided by Apollo are mainly 2: Client and Server.
+What you need to know about Apollo, at least for now, is it’s a community that builds on top of GraphQL and provides different **tools to help you build your projects**. The tools provided by Apollo are mainly 2: Client and Server.
 
 - **Apollo Client** helps your Frontend communicate with a GraphQL API. It has support for the most popular frameworks such as React, Vue, or Angular and native development on iOS and Android.
 
