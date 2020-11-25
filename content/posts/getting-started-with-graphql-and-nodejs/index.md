@@ -18,7 +18,7 @@ The main purpose of this server-client [Node.js](https://nodejs.org/en/) project
 
 Now, straight to the point: [GraphQL](https://graphql.org/) is a **query language for [APIs](https://en.wikipedia.org/wiki/Application_programming_interface)** developed and [open-sourced by Facebook](https://engineering.fb.com/core-data/graphql-a-data-query-language/) to speed up the request process.
 
-While [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) has been a popular way to expose data from a server, instead of having **multiple endpoints** that return fixed data structures, GraphQL just has **a single endpoint** and it is the client's job to specify what data it needs from it.
+While [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) has been a popular way to expose data from a server, instead of having **multiple endpoints** that return fixed data structures, GraphQL just has **a single endpoint**, and it is the client's job to specify what data it needs from it.
 
 ## Table of Contents
 
