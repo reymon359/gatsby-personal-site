@@ -100,7 +100,7 @@ From here to the top it will take one hour more or less. Do not rest too much at
 
 ### The Peak
 
-Lorem ipsum
+The cable-car Upper Station is at 3,550 m, so there are **still 163 altitude meters until the Teide Peak,** at 3,718 m. This last part is called the Telesforo Bravo Trail. A short but steep **40 min trail.** This will be the last effort until you reach the top and contemplate the show.
 
 ### Taking the cable-car down
 
