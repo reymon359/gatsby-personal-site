@@ -90,6 +90,14 @@ This path starts easily with a low gradient ascending walk that lasts an hour an
 
 ![Teide egg at Montaña Blanca](./teide_egg_at_montana_blanca.jpg)
 
+At some point through Montaña Blanca before reaching the cable-car Upper Station (3.550 m), the path will be narrower and present a strong gradient, which sometimes exceeds 60%.
+
+You will pass by the **Altavista Refuge (3.260 m),** where you can rest. Due to Covid reasons, it was closed when we got there, however, we could cover from the wind on the outside with other hikers.
+
+![Night views from near the Altavista Refuge](./night_views_from_near_the_altavista_refuge.jpg)
+
+From here to the top it will take one hour more or less. Do not rest too much at the refuge and **pay attention to the times to get to the top before dawn**. Between the refuge and the end, you will find the cable-car Upper Station from where the path to the peak begins. 
+
 ### The Peak
 
 Lorem ipsum
