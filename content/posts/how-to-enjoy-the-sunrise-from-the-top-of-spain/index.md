@@ -126,6 +126,12 @@ The time will come to start going down to reach the cable-car Upper Station. The
 
 Remember to have the cable-car ticket ready because you will be requested to show it. 
 
+`video: title: "Going down in the cable-car": ./going_down_in_the_cable-car.mp4`
+
+Once you reach the cable-car Base Station, head to the car on Montaña Blanca starting Point. If you came with two cars and left the one near the Base Station take it to get to the other one.
+
+And that's all folks. I hope your doubts got solved and if you end up doing it I wish you to enjoy it as much as I did or even more.
+
 ## Greetings
 
 Lorem ipsum
