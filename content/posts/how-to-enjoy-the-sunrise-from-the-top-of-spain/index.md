@@ -134,7 +134,9 @@ And that's all folks. I hope your doubts got solved and if you end up doing it I
 
 ## Greetings
 
-Lorem ipsum
+![The Teide Team](./the_teide_team.jpg)
+
+First, to the friends I did the hike with, for their support during it and for making the experience a hundred times better. Second to the random hikers we found and talked and sang with on our way. Finally, special thanks to Eirik for lending me most of the winter clothes to do the hike and don’t freeze. 
 
 ## Resources
 
