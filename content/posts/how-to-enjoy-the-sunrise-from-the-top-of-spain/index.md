@@ -104,11 +104,17 @@ The cable-car Upper Station is at 3,550 m, so there are **still 163 altitude met
 
 ![The horizon begins to light up](./the_horizon_begins_to_light_up.jpg)
 
-
 ![The Magical Moment](./the_magical_moment.jpg)
 
 ![Opposite views of the moon](./opposite_views_of_the_moon.jpg)
 
+As a curiosity, when you get closer to the top you'll start smelling **sulfur** due to **small active fumaroles** near the summit which emit it. You can get warm near them.
+
+![Steam from the active fumaroles](./steam_from_the_active_fumaroles.jpg)
+
+If you wait until the sun is high enough you will also see the Teide’s shadow on the opposite side.
+
+![The sea of clouds covered by the Teide’s shadow](./the_sea_of_clouds_covered_by_the_teides_shadow.jpg)
 
 ### Taking the cable-car down
 
