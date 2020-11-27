@@ -118,7 +118,13 @@ If you wait until the sun is high enough you will also see the Teide’s shadow 
 
 ### Taking the cable-car down
 
-Lorem ipsum
+![Getting down to the cable-car Upper Station](./getting_down_to_the_cable-car_upper_station.jpg)
+
+The time will come to start going down to reach the cable-car Upper Station. The first cable car ascends at 09:00 AM and will arrive at the station at **09:10 AM.** If you don’t get it on time, there is one **every 40 minutes.**
+
+![Views on the way down](./views_on_the_way_down.jpg)
+
+Remember to have the cable-car ticket ready because you will be requested to show it. 
 
 ## Greetings
 
