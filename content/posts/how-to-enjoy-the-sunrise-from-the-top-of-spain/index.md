@@ -152,4 +152,6 @@ List of useful resources:
 
 ## TL;DR
 
+You start hiking from the base of the Teide at 2356 meters, via Montaña Blanca (Trail no. 7). This starts beside TF-21 highway, at Km. 40.7 (28°15'34"N 16 36'12"W). After hiking for around 3-4 hours, you will reach the Altavista Refuge (3,260 m), then you continue the trail for approximately 1 hour and a half and enjoy the sunrise from the crater (3,718m). So basically, the climb to the top of the Teide, through Montaña Blanca, lasts around 5 hours and a half (only the ascent). After enjoying the amazing sunrise, you go down to take the first cable car at 9 am. The cable car only takes 8 minutes to go back to the base. 
+
 
