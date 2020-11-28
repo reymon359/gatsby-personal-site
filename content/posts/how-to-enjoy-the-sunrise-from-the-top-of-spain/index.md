@@ -78,7 +78,7 @@ Is a good idea to spend some hours at the base before the adventure. We got to t
 
 A while after you will notice the lack of vegetation on the landscape which means you are entering the Teide National Park.
 
-![Driving through the Teide National Park](./driving_through_the_teide_national_park.jpg)
+![Driving through the Teide National Park](./driving_through_the_teide_national_park.jpg) 
 
 If you go in one car **head to the beginning of the Montaña Blanca path** and wait there until beginning the ascension. If you manage to get two cars, keep driving until the cable-car Base Station and leave one in the car park near it. Then go back with the other car to the Montaña Blanca starting point. Here you’ll have to **wait until around 1:00 am to begin.** 
 
