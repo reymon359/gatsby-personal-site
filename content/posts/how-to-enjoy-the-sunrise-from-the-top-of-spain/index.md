@@ -143,7 +143,12 @@ First, to the friends I did the hike with, for their support during it and for m
 
 ## Resources
 
-Lorem ipsum
+List of useful resources:
+
+- [Official site to buy the cable-car ticket](https://www.volcanoteide.com/es/volcano_teide/teleferico_del_teide/teleferico_del_teide)
+- [Live forecast of the Teide and the paths for the next days](https://www.volcanoteide.com/es/teide-hoy)
+- [Trail 7 - Montaña Blanca Trail information](https://www.webtenerife.co.uk/what-to-do/nature/hiking/trails/montana-blanca-pico-teide.htm)
+- [Other Teide National Park Routes](http://www.gobiernodecanarias.org/parquesnacionalesdecanarias/en/Teide/InfraestructuraServicios/RutasItinerarios.html)
 
 ## TLDR
 
