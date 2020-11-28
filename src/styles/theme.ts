@@ -83,76 +83,100 @@ export const theme = {
     max: {
       xs: (...args: TemplateStringsArray[]) => css`
         @media (max-width: ${theme.mq.xs}) {
-          ${//@ts-expect-error needed
-          css(...args)}
+          ${
+            //@ts-expect-error needed
+            css(...args)
+          }
         }
       `,
       sm: (...args: TemplateStringsArray[]) => css`
         @media (max-width: ${theme.mq.sm}) {
-          ${//@ts-expect-error needed
-          css(...args)}
+          ${
+            //@ts-expect-error needed
+            css(...args)
+          }
         }
       `,
       md: (...args: TemplateStringsArray[]) => css`
         @media (max-width: ${theme.mq.md}) {
-          ${//@ts-expect-error needed
-          css(...args)}
+          ${
+            //@ts-expect-error needed
+            css(...args)
+          }
         }
       `,
       lg: (...args: TemplateStringsArray[]) => css`
         @media (max-width: ${theme.mq.lg}) {
-          ${//@ts-expect-error needed
-          css(...args)}
+          ${
+            //@ts-expect-error needed
+            css(...args)
+          }
         }
       `,
       xl: (...args: TemplateStringsArray[]) => css`
         @media (max-width: ${theme.mq.xl}) {
-          ${//@ts-expect-error needed
-          css(...args)}
+          ${
+            //@ts-expect-error needed
+            css(...args)
+          }
         }
       `,
       hover: (...args: TemplateStringsArray[]) => css`
         @media not all and (hover: none) {
-          ${//@ts-expect-error needed
-          css(...args)}
+          ${
+            //@ts-expect-error needed
+            css(...args)
+          }
         }
       `
     },
     min: {
       xs: (...args: TemplateStringsArray[]) => css`
         @media (min-width: ${theme.mq.xs}) {
-          ${//@ts-expect-error needed
-          css(...args)}
+          ${
+            //@ts-expect-error needed
+            css(...args)
+          }
         }
       `,
       sm: (...args: TemplateStringsArray[]) => css`
         @media (min-width: ${theme.mq.sm}) {
-          ${//@ts-expect-error needed
-          css(...args)}
+          ${
+            //@ts-expect-error needed
+            css(...args)
+          }
         }
       `,
       md: (...args: TemplateStringsArray[]) => css`
         @media (min-width: ${theme.mq.md}) {
-          ${//@ts-expect-error needed
-          css(...args)}
+          ${
+            //@ts-expect-error needed
+            css(...args)
+          }
         }
       `,
       lg: (...args: TemplateStringsArray[]) => css`
         @media (min-width: ${theme.mq.lg}) {
-          ${//@ts-expect-error needed
-          css(...args)}
+          ${
+            //@ts-expect-error needed
+            css(...args)
+          }
         }
       `,
       xl: (...args: TemplateStringsArray[]) => css`
         @media (min-width: ${theme.mq.xl}) {
-          ${//@ts-expect-error needed
-          css(...args)}
+          ${
+            //@ts-expect-error needed
+            css(...args)
+          }
         }
       `,
       hover: (...args: TemplateStringsArray[]) => css`
         @media not all and (hover: none) {
-          ${//@ts-expect-error needed
-          css(...args)}
+          ${
+            //@ts-expect-error needed
+            css(...args)
+          }
         }
       `
     }
