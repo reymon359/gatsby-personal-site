@@ -14,7 +14,7 @@ type: 'post'
 url: 'none'
 ---
 
-Last month some friends and I made it to the **Teide’s summit (3.718 m) at night** to enjoy the sunrise from it. The experience was probably one of the best I have had in life and after being asked multiple times how we did it (route, clothes, timings, ...) I decided to explain it here for anyone interested in doing it. By the way, I added a [TLDR version at the end of the article](#TLDR) in case you don’t want to read all of it.
+Last month some friends and I made it to the **Teide’s summit (3.718 m) at night** to enjoy the sunrise from it. The experience was probably one of the best I have had in life and after being asked multiple times how we did it (route, clothes, timings, ...) I decided to explain it here for anyone interested in doing it. By the way, I added a [TL;DR version at the end of the article](#TLDR) in case you don’t want to read all of it.
 
 We were a five people group, a good number to stay close enough during the hike and not spread out. Remember this is not a normal hike given the fact of doing it at night so, even if you are in good shape **it can be tough for casual hikers.**
 
@@ -31,7 +31,7 @@ We were a five people group, a good number to stay close enough during the hike 
     - [Taking the cable-car down](#Taking-the-cable-car-down)
 - [Greetings](#Greetings)
 - [Resources](#Resources)
-- [TLDR](#TLDR)
+- [TL;DR](#TLDR)
 
 ## Basic information
 
@@ -134,7 +134,7 @@ And that's all folks. I hope your doubts got solved and if you end up doing it I
 
 ## Greetings
 
-![The Teide Team](./the_teide_team.jpg)
+![The Teide Team ❤️](./the_teide_team.jpg)
 
 First, to the friends I did the hike with, for their support during it and for making the experience a hundred times better. Second to the random hikers we found and talked and sang with on our way. Finally, special thanks to Eirik for lending me most of the winter clothes to do the hike and don’t freeze. 
 
@@ -150,7 +150,6 @@ List of useful resources:
 - [Trail 7 - Montaña Blanca Trail information](https://www.webtenerife.co.uk/what-to-do/nature/hiking/trails/montana-blanca-pico-teide.htm)
 - [Other Teide National Park Routes](http://www.gobiernodecanarias.org/parquesnacionalesdecanarias/en/Teide/InfraestructuraServicios/RutasItinerarios.html)
 
-## TLDR
+## TL;DR
 
-Lorem ipsum
-	
+
