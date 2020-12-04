@@ -10,7 +10,6 @@ interface CommentsContainerProps {
 const CommentsContainer: React.FC<CommentsContainerProps> = ({commentsUrl}) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [comments, setComments] = useState(null as any)
-
   useEffect(() => {
     if (!isBrowser) return
     const apiUrl = `${commentsUrl.replace(
@@ -25,8 +24,10 @@ const CommentsContainer: React.FC<CommentsContainerProps> = ({commentsUrl}) => {
         }
       })
 
-      const json = await response.json()
-      setComments(json)
+      if (response.ok) {
+        const json = await response.json()
+        setComments(json)
+      }
     }
     fetchComments()
   }, [commentsUrl])
