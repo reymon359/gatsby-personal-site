@@ -82,7 +82,7 @@ type Song {
 
 type Author {
   name: String
-  song: [Song]
+  songs: [Song]
 }
 ```
 
