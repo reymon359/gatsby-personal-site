@@ -292,6 +292,12 @@ The most important thing to keep in mind is that **refactoring is not a certain 
 ## Main differences
 
 
+I did not want this lecture to be a comparison but although they focus on similar subjects, the content, and the way they are narrated are not the same. Here are the main impressions I got from them not related to the content itself that can help you have an idea of what to expect while reading them.
+
+- The Clean Coder speaks about the developer in a more day by day at work way, with references to common situations that are given in such an environment like the relationship with sales or business people, working in a team, or saying no to clients. The developer at the Pragmatic Programmer isn’t that much pictured into job situations, rather it grants an overview of the field structuring the book on advice: _topics and tips_, for any situation.  
+- The Clean Coder refers to the figure of the Software Developer as a _Professional Programmer_ while The Pragmatic Programmer uses the totally unexpected term _Pragmatic Programmer_.
+- In general terms, The Clean Coder has a more subjective sense since it tells more personal experiences from the author whereas The Pragmatic Programmer feels more objective focusing mostly on the advice themselves.
+- The Pragmatic Programmer contains more code examples in different programming languages than the Clean Coder which helps you understand the concepts discussed.
 
 ## Conclusions
 
