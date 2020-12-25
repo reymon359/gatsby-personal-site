@@ -181,6 +181,7 @@ Then it comes to the matrix where we will configure the combination of versions 
       matrix:
         node-version: [10, 12]
 ```
+
 Finally, the Workflow's steps. The first one is the [checkout action](https://github.com/actions/checkout) which is a standard action that you must include in your workflow when you need a copy of your repository to run the workflow.
 
 Then you can run other actions and processes, in our app, we will use the **setup-node** action with the matrix we defined before. Then we will add steps to install the project, build it, and run the tests.
@@ -200,6 +201,7 @@ Then you can run other actions and processes, in our app, we will use the **setu
       - name: Run tests
         run: npm test
 ```
+
 Now Create a GitHub Repository for the project, commit the local changes made, and push them to it.
 
 Quick tip, If you want to create it faster go to [repo.new](https://repo.new) or [github.new](https://github.new). You can use [gist.new](https://gist.new) for gists too! 
