@@ -255,6 +255,39 @@ Don't forget to be there for others too when they are under pressure and need he
 
 ## Refactoring
 
+The term _Refactoring_ is defined by Martin Fowler as a:
+
+> Disciplined technique for restructuring an existing body of code, altering its internal structure without changing its external behavior.
+> — Martin Fowler
+
+Sometimes you will find code that does not feel right and should be fixed or improved, and you have to keep in mind the best moment to do so is **now**, when you find it.
+
+**It is inevitable, a program’s code needs to grow, evolve, and improve.** To do so, some decisions must be rethought, and the code has to be changed therefore be sure to have it covered with **automated tests** to guarantee that the external behavior does not change.
+
+> Rather than construction, software is more like gardening—it is more organic than concrete. You plant many things in a garden according to an initial plan and conditions. You constantly monitor the health of the garden, and make adjustments as needed.
+> — The Pragmatic Programmer
+
+![Bob gardening](./bobs_burger_gardening.gif)
+
+When should you refactor the code? Here is a list of situations that qualify to do so:
+
+- Remove **code duplication.**
+- Making_ _some parts of the code more **orthogonal.**
+- **Update_ _**code and/or documentation outdated.
+- To improve **performance.**
+
+And here are Martin Fowler tips on how to refactor without doing more harm than good:
+
+1. _Don’t try to refactor and add functionality at the same time._
+2. _Make sure you have good tests before you begin refactoring. Run the tests as often as possible._
+3. _Take short, deliberate steps: move a field from one class to another, split a method, rename a variable. Refactoring often involves making many localized changes that result in a larger-scale change._
+
+The most important thing to keep in mind is that **refactoring is not a certain task, it is a habit **which, as with most things in life, is easier to do while the issues are small, as an ongoing activity while coding. **The less you refactor now the greater time you’ll have to invest to fix the problem down the road.**
+
+![Cat refactoring](./cat_refactoring.gif)
+
+> Refactoring as "a growth." Removing it requires invasive surgery. You can take it out while it is still small. Or, you could wait while it grows and spreads—but removing it then will be both more expensive and more dangerous. Wait even longer, and you may lose the patient entirely.
+> — The Pragmatic Programmer
 
 ## Main differences
 
