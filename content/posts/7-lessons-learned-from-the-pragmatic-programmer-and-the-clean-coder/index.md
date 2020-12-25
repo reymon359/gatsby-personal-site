@@ -302,9 +302,15 @@ I did not want this lecture to be a comparison but although they focus on simila
 
 ## Conclusions
 
+Keep in mind that these are just the personal impressions and lessons I got from reading the two titles. The books have much more to offer, and the best thing you can do is read both yourself to form your own opinion and conclusions. 
 
+If you are interested in software development, want to get better but think they are too similar and don’t have time to read both, think twice, each will bring you different knowledge and best practices for your career. 
+
+Having said that, if you still want to go the lazy way, I made this [open-source project with the core sentences from them](https://github.com/reymon359/book-sentences).
+
+[![[Book Sentences Project](https://github.com/reymon359/book-sentences)](./book_sentences.png)](https://github.com/reymon359/book-sentences)
 
 ## Resources
 
-
+The main resources are both books which you can find easily on the internet and [the project](https://github.com/reymon359/book-sentences/) where I noted down the sentences I found most important from them.
 
