@@ -19,3 +19,15 @@ I recently finished reading both books: _The Pragmatic Programmer 20th Anniversa
 When you are developing software you may get stuck at a point where Youtube videos and Stackoverflow answers don’t help. You end up reaching for the official docs or the source code of that technology to find the answer. The same thing happens when you want to understand the subject properly. **Articles fall short and reading well-known books is the best approach.**
 
 These books focus not only on how to write code but on teaching you best practices for developing software and even useful life lessons. I’ll share some of the lessons I learned from them. 
+
+## Table of Contents
+
+- [Taking Responsibility](#Taking-Responsibility)
+- [Testing](#Testing)
+- [Teamwork](#Teamwork)
+- [Estimating](#Estimating)
+- [Tracer bullet](#Tracer-bullet)
+- [Handling pressure](#Handling-pressure)
+- [Main differences](#Main-differences)
+- [Conclusions](#Conclusions)
+- [Resources](#Resources)
