@@ -91,7 +91,35 @@ Developers have to aim “QA should find nothing” as a goal by implementing di
 
 ## Teamwork
 
+When working on a team you have to be a "team player", communicate frequently, keep an eye out for your teammates, and execute your responsibilities as well as possible.
 
+> Good communication is key to avoiding these problems. And by "good" we mean instant and frictionless. Frictionless means it’s easy and low-ceremony to ask questions, share your progress, your problems, your insights and learnings, and to stay aware of what your teammates are doing.
+> — The Pragmatic Programmer
+
+![[Source](https://unsplash.com/photos/iuqmGmst5Po)](./tobias-mrzyk-iuqmGmst5Po-unsplash.jpg)
+
+Teams should be **small, less than 10-12 members**, where everyone knows and trusts each other. This team environment is **hard to achieve** therefore once you get it you have to **care for it changing the projects they work on rather than the members.**
+
+> As team size grows, communication paths grow at the rate of O(n^2), where n is the number of team members. On larger teams, communication begins to break down and becomes ineffective.
+> — The Pragmatic Programmer
+
+> To form teams around projects is a foolish approach. Individuals are only on the project for a short time and therefore never learn how to deal with each other. Teams are harder to build than projects. Therefore, it is better to form persistent teams that move together from one project to the next and can take on more than one project at a time.
+> — The Clean Coder
+
+![[Source](https://unsplash.com/photos/Px3oXvVXRxc)](./tobias-mrzyk-Px3oXvVXRxc-unsplash.jpg)
+
+Furthermore, great teams will face and solve issues together where each individual will provide their best. They _get things done as a unit_. In the end, they will be known for their performance and quality of work.
+
+> Quality can come only from the individual contributions of all team members. Quality is built in, not bolted on.
+> — The Pragmatic Programmer
+
+> A gelled team can work miracles, anticipate each other, cover for each other, support each other, and demand the best from each other. They make things happen.
+> — The Clean Coder
+
+> Great project teams have a distinct personality. People look forward to meetings with them, because they know that they’ll see a well-prepared performance that makes everyone feel good. The documentation they produce is crisp, accurate, and consistent.
+> — The Pragmatic Programmer
+
+![[Source](https://unsplash.com/photos/wJK9eTiEZHY)](./natalie-pedigo-wJK9eTiEZHY-unsplash.jpg)
 
 ## Estimating
 
