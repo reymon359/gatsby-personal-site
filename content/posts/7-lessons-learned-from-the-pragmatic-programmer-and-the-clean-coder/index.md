@@ -8,8 +8,8 @@ categories: ['Software Development']
 tags: ['Software Development', 'Books', 'Learning']
 published: true
 commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/293
-featuredImage: './the_magical_moment.jpg'
-thumbnail: './the_magical_moment.jpg'
+featuredImage: './pragmatic_programmer_and_clean_coder_book_covers.jpg'
+thumbnail: './pragmatic_programmer_and_clean_coder_book_covers.jpg'
 type: 'post'
 url: 'none'
 ---
