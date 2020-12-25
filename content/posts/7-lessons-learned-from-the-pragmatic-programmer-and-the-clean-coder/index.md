@@ -123,7 +123,40 @@ Furthermore, great teams will face and solve issues together where each individu
 
 ## Estimating
 
+This lesson, like the majority from both books, is as important in software development as in real life. The more you practice and develop it, the more intuitive will be your ability to determine the feasibility of any task. 
 
+First, I want to clarify what _estimating_ means by sharing The Clean Coder definition of an estimate which refers to it as a _probability distribution._
+
+> An estimate is not a number. An estimate is a _probability distribution,_ the likelihood of completion.
+> — The Clean Coder
+
+To help you understand it, here is a figure of the likelihood of completion of a task for the next 11 days.
+
+![Probability distribution, the likelihood of completion. Source: The clean coder](./probability_distribution.png)
+
+One of the basics to make great estimations is to **have proper knowledge of what you are estimating.** 
+
+> The first part of any estimation exercise is building an understanding of what’s being asked. You need to have a grasp of the scope of the domain.
+> — The Pragmatic Programmer
+
+Don’t estimate alone, **communicate with other people to be as accurate as possible.**
+
+> The most important estimation resource you have are the people around you. They can see things that you don’t. They can help you estimate your tasks more accurately than you can estimate them on your own.
+> — The Clean Coder
+
+> A basic estimating trick that always gives good answers: ask someone who’s already done it.
+> — The Pragmatic Programmer
+
+When asked for an estimation choose the units that better reflect the accuracy you intend to convey. This table may help you with it. 
+
+| Duration      | Quote estimate in                    |
+| ------------- |:------------------------------------:|
+| 1–15 days     | Days                                 |
+| 3–6	weeks   | Weeks                                |
+| 8–20	weeks   | Months                               |
+| 20+	weeks   | Think hard before giving an estimate |
+
+Estimation times scale. Source: The Pragmatic Programmer
 
 ## Tracer bullets
 
