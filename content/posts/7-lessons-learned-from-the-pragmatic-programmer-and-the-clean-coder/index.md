@@ -147,7 +147,7 @@ Don’t estimate alone, **communicate with other people to be as accurate as pos
 > A basic estimating trick that always gives good answers: ask someone who’s already done it.
 > — The Pragmatic Programmer
 
-When asked for an estimation choose the units that better reflect the accuracy you intend to convey. This table may help you with it. 
+When asked for an estimation choose the units that better reflect the accuracy you intend to convey. This Estimation times scale from The Pragmatic Programmer may help you.
 
 | Duration      | Quote estimate in                    |
 | ------------- |:------------------------------------:|
@@ -156,7 +156,36 @@ When asked for an estimation choose the units that better reflect the accuracy y
 | 8–20	weeks   | Months                               |
 | 20+	weeks   | Think hard before giving an estimate |
 
-Estimation times scale. Source: The Pragmatic Programmer
+Although Business likes to view estimates as commitments, remember that **an estimate is just a guess therefore no commitment is implied.** 
+
+> A commitment is something you must achieve. If you commit to getting something done by a certain date, then you simply have to get it done by that date. Professionals don’t make commitments unless they know they can achieve them. Missing a commitment is an act of dishonesty only slightly less onerous than an overt lie.
+> — The Clean Coder
+
+Thus said, to help Business measuring requirements and making appropriate plans you have to **remove the requirement’s ambiguity before estimating.** Afterwards, **keep them updated about the progress.** 
+
+> The trick to managing lateness is early detection and transparency. Regularly measure your progress against your goal. Be as honest as you can about all dates. Do not incorporate hope into your estimates!
+> — The Clean Coder
+
+Do not reinvent the wheel, use well-known estimation techniques for tasks. Here I made a summary of some techniques mentioned in both books.
+
+- [PERT](https://github.com/reymon359/book-sentences/blob/master/books/the-clean-coder/README.md#pert)
+- [Wideband Delphi](https://github.com/reymon359/book-sentences/tree/master/books/the-clean-coder/README.md#wideband-delphi)
+- [Flying Fingers](https://github.com/reymon359/book-sentences/tree/master/books/the-clean-coder/README.md#flying-fingers)
+- [Planning Poker](https://github.com/reymon359/book-sentences/tree/master/books/the-clean-coder/README.md#planning-poker)
+- [Affinity Estimation](https://github.com/reymon359/book-sentences/tree/master/books/the-clean-coder/README.md#affinity-estimation)
+- [Trivariate Estimates](https://github.com/reymon359/book-sentences/blob/master/books/the-clean-coder/README.md#trivariate-estimates)
+- [The Law of Large Numbers](https://github.com/reymon359/book-sentences/tree/master/books/the-clean-coder/README.md#the-law-of-large-numbers)
+
+The more experience you have on a certain project the better you will estimate its tasks. Therefore don’t worry if the first estimates you make are not as accurate as they could be. It is an incremental process as with every long term goal you want to achieve. 
+
+Like one of my favorite quotes states:
+
+> There is only **one** way to **eat an elephant**: a **bite at a time**.
+> — Desmond Tutu
+
+However, there is no way you can eat such cuteness
+
+![Elephant](./elephant.gif)
 
 ## Tracer bullets
 
