@@ -189,7 +189,24 @@ However, there is no way you can eat such cuteness
 
 ## Tracer bullets
 
+Tracer bullets are a special kind of bullet used in movies to mark the path they’ve taken as feedback for the shooter to aim better the next time. Therefore, the main goal of Tracer Bullet Development is to "shoot" new features into the project and get quick feedback to "aim" better on the next ones.
 
+> Tracer development is consistent with the idea that a project is never finished: there will always be changes required and functions to add. It is an incremental approach.
+> — The Pragmatic Programmer
+
+![Tracer Bullets. Source: The Pragmatic Programmer](./tracer_bullets.png)
+
+This method helps developers to focus on the main features to be implemented so others can be built on. In addition, it serves as **proof the architecture is compatible and feasible** by providing a functional and demonstrable skeleton to work from the beginning of the development process.
+
+> Look for the important requirements, the ones that define the system. Look for the areas where you have doubts, and where you see the biggest risks. Then prioritize your development so that these are the first areas you code.
+> — The Pragmatic Programmer
+
+![[Source](https://unsplash.com/photos/Ys78stblUyY)](./outer-digit-Ys78stblUyY-unsplash.jpg)
+
+Lastly, **Tracer Bullet Development should not be confused with prototyping.** The code from prototypes isn’t supposed to be part of the project whereas the code from the tracer bullets isn’t thrown away. It works and is improved each iteration with new features.
+
+> Prototyping generates disposable code. Tracer code is lean but complete, and forms part of the skeleton of the final system. Think of prototyping as the reconnaissance and intelligence gathering that takes place before a single tracer bullet is fired.
+> — The Pragmatic Programmer
 
 ## Handling pressure
 
