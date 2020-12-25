@@ -52,7 +52,42 @@ Responsibility is not only related to coding, you have to **take responsibility 
 
 ## Testing
 
+The gravity of testing in software development is such that both books focus on this topic. 
 
+You have to **look at tests as the first users of your code**, so they are the best feedback that guides your coding.
+
+Practice [TDD Test Driven Development.](https://en.wikipedia.org/wiki/Test-driven_development) How? Three steps explanation:
+
+1 Choose a feature to add and write a test that will pass after implementing it. Now, all tests but the new one should pass. 
+
+2 Write the code required to pass it. 
+
+3 Refactor the code, and check all tests still pass.
+
+Thus said, it is important to look at the big picture and not to miss the main goal by writing too many tests.
+
+> It is easy to become seduced by the green "tests passed" message, writing lots of code that doesn’t actually get you closer to a solution.
+> — The Pragmatic Programmer
+
+![Tests](./tests.gif)
+
+There are three ways of testing: _First, During,_ and_ Never._ First (TDD) is the best one, During is a fallback when First is not useful, and Never is often called “Test Later” but sadly **in most cases Later means Never.**
+
+> The need to test first forces you to think about "good design."
+> — The Clean Coder
+
+Having tests give you the confidence to refactor code more often because you have the tests to check if they still pass after the changes are done.
+
+> Tests should be run as frequently as possible to provide maximum feedback and to ensure that the system remains continuously clean.
+> — The Clean Coder
+
+Use acceptance tests to _define when a requirement is done_ collaborating with the stakeholders.
+
+Developers take the responsibility to ensure that tests are _always automated_ for a simple reason: **cost.**
+
+Developers have to aim “QA should find nothing” as a goal by implementing different kinds of tests, in different measures from unit to exploratory ones.
+
+![The Test Automation Pyramid - The Clean Coder](./the_test_automation_pyramid.png)
 
 ## Teamwork
 
