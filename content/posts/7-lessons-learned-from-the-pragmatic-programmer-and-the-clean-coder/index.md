@@ -291,6 +291,7 @@ The most important thing to keep in mind is that **refactoring is not a certain 
 
 ## Main differences
 
+![Differences](./differences.gif)
 
 I did not want this lecture to be a comparison but although they focus on similar subjects, the content, and the way they are narrated are not the same. Here are the main impressions I got from them not related to the content itself that can help you have an idea of what to expect while reading them.
 
