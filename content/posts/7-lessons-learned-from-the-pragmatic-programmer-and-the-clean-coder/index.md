@@ -32,3 +32,55 @@ These books focus not only on how to write code but on teaching you best practic
 - [Main differences](#Main-differences)
 - [Conclusions](#Conclusions)
 - [Resources](#Resources)
+
+## Taking Responsibility
+
+As a software developer, you are responsible for the code you create and must ensure that it not only works now but will do in the best possible way for a long time (nothing lasts forever). The best way to make sure the code won’t fail is by testing it, having automated tests that you run each time you write new lines to be sure everything is still working.
+
+> Take Responsibility. Responsibility is something you actively agree to.
+> — The Pragmatic Programmer
+
+Responsibility is not only related to coding, you have to **take responsibility for improving yourself** too and get better by scheduling time for it. 
+
+> Professionals spend time caring for their profession. Presumably, you became a software developer because you are passionate about software and your desire to be a professional is motivated by that passion.
+> — The Clean Coder
+
+> Your knowledge and experience are your most important day-to-day professional assets.
+> — The Pragmatic Programmer
+
+![Responsibility](./responsibility.gif)
+
+## Testing
+
+
+
+## Teamwork
+
+
+
+## Estimating
+
+
+
+## Tracer bullets
+
+
+
+## Handling pressure
+
+
+## Refactoring
+
+
+## Main differences
+
+
+
+## Conclusions
+
+
+
+## Resources
+
+
+
