@@ -210,6 +210,48 @@ Lastly, **Tracer Bullet Development should not be confused with prototyping.** T
 
 ## Handling pressure
 
+I liked this one as well since it helps you outside software development too. Soon or later you will be under pressure, and the best tricks to handling it are to **avoid it when you can, and weather it when you can’t.**
+
+> The best way to stay calm under pressure is to avoid the situations that cause pressure.
+> — The Clean Coder
+
+![Avoiding](./avoiding.gif)
+
+You mainly **avoid it by managing commitments, keeping clean, and following your disciplines.** 
+
+The best way to manage commitments is by _saying no_ to those which deadlines you aren’t sure to meet. Keeping clean basically means to have no mess on your systems, code, and design.
+
+> The way to go fast, and to keep the deadlines at bay, is to stay clean. Professionals do not succumb to the temptation to create a mess in order to move quickly. “Quick and dirty” is an oxymoron. Dirty always means slow!
+> — The Clean Coder
+
+**Follow disciplines you truly believe in and stick to them all the time** no matter the situation. Crisis times will come, and it’s when you have to pay attention to how you behave because if you follow your disciplines means you believe in them. Changing your behavior and not following them would mean you don’t truly believe in your normal behavior, and you have to shift those disciplines to improve it.
+
+> If you keep your code clean during normal times but make messes in a crisis, then you don’t really believe that messes slow you down. If you pair in a crisis but don’t normally pair, then you believe pairing is more efficient than non-pairing.
+> — The Clean Coder
+
+![[Source](https://unsplash.com/photos/YBuVjp5Mtrw)](./federico-lancellotti-YBuVjp5Mtrw-unsplash.jpg)
+
+Choose disciplines that you feel comfortable following in a crisis. _Then follow them all the time._ Following these disciplines is the best way to avoid getting into a crisis. Don’t change your behavior when the crunch comes. If your disciplines are the best way to work, then they should be followed even in the depths of a crisis.
+
+However, you can’t avoid pressure always so you have to learn how to get through it. **You weather it by staying calm, communicating, following your disciplines, and getting help.**
+
+To stay calm **don’t panic,** manage your stress and think the problem through to find the best possible outcome. Then go for it at a steady pace, _eating an elephant way-_ **communicating** all the time with your team and superiors to let them know when you are in trouble to get input and guidance. This way there won’t be any unexpected surprises in the end.
+
+![Communication is the key. [Source](https://anstesters.org/the-art-of-communication-an-important-soft-skill-in-software-testing/)](./good_communication_is_the_key_to_success.jpg)
+
+> Avoid creating surprises. Nothing makes people more angry and less rational than surprises. Surprises multiply the pressure by ten.
+> — The Clean Coder
+
+In the same way you relied on your disciplines to avoid pressure, you should also rely on them when the moment gets tough. In fact, these times you have to pay special attention to them and neither question nor abandon them.
+
+The communication tip includes **asking for help** from teammates to pair, superiors or internet sites and forums. 
+
+Don't forget to be there for others too when they are under pressure and need help.
+
+> When the heat is on, find an associate who is willing to pair program with you. You will get done faster, with fewer defects. Your pair partner will help you hold on to your disciplines and keep you from panicking.
+> — The Clean Coder
+
+![Pairing](./pairing.gif)
 
 ## Refactoring
 
