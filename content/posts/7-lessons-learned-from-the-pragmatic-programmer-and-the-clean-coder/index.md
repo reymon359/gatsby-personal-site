@@ -62,7 +62,7 @@ Practice [TDD Test Driven Development.](https://en.wikipedia.org/wiki/Test-drive
 
 2 Write the code required to pass it. 
 
-3 Refactor the code, and check all tests still pass.
+3 Refactor the code and check all tests still pass.
 
 Thus said, it is important to look at the big picture and not to miss the main goal by writing too many tests.
 
