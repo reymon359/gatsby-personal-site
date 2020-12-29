@@ -196,6 +196,18 @@ em {
   }
 }
 
+table {
+  font-size: ${theme.fontSizes.medium};
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+  overflow: auto;
+}
+
+table, tr, th, td {
+  border: 1px solid ${theme.colors.mediumDark};
+  padding: .5rem;
+}
 
 `
 
