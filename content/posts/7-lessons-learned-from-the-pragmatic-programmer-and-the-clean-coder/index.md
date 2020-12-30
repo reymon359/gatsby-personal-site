@@ -62,7 +62,7 @@ Practice [TDD Test Driven Development.](https://en.wikipedia.org/wiki/Test-drive
 
 2 Write the code required to pass it. 
 
-3 Refactor the code, and check all tests still pass.
+3 Refactor the code and check all tests still pass.
 
 Thus said, it is important to look at the big picture and not to miss the main goal by writing too many tests.
 
@@ -235,7 +235,7 @@ Choose disciplines that you feel comfortable following in a crisis. _Then follow
 
 However, you can’t avoid pressure always so you have to learn how to get through it. **You weather it by staying calm, communicating, following your disciplines, and getting help.**
 
-To stay calm **don’t panic,** manage your stress and think the problem through to find the best possible outcome. Then go for it at a steady pace, _eating an elephant way-_ **communicating** all the time with your team and superiors to let them know when you are in trouble to get input and guidance. This way there won’t be any unexpected surprises in the end.
+To stay calm **don’t panic,** manage your stress, and think the problem through to find the best possible outcome. Then go for it at a steady pace, _eating an elephant way-_ **communicating** all the time with your team and superiors to let them know when you are in trouble to get input and guidance. This way there won’t be any unexpected surprises in the end.
 
 ![Communication is the key. [Source](https://anstesters.org/the-art-of-communication-an-important-soft-skill-in-software-testing/)](./good_communication_is_the_key_to_success.jpg)
 
@@ -244,7 +244,7 @@ To stay calm **don’t panic,** manage your stress and think the problem through
 
 In the same way you relied on your disciplines to avoid pressure, you should also rely on them when the moment gets tough. In fact, these times you have to pay special attention to them and neither question nor abandon them.
 
-The communication tip includes **asking for help** from teammates to pair, superiors or internet sites and forums. 
+The communication tip includes **asking for help** from teammates to pair, superiors, or internet sites and forums. 
 
 Don't forget to be there for others too when they are under pressure and need help.
 
@@ -272,8 +272,8 @@ Sometimes you will find code that does not feel right and should be fixed or imp
 When should you refactor the code? Here is a list of situations that qualify to do so:
 
 - Remove **code duplication.**
-- Making_ _some parts of the code more **orthogonal.**
-- **Update_ _**code and/or documentation outdated.
+- Making some parts of the code more **orthogonal.**
+- **Update** code and/or documentation outdated.
 - To improve **performance.**
 
 And here are Martin Fowler tips on how to refactor without doing more harm than good:
@@ -282,7 +282,7 @@ And here are Martin Fowler tips on how to refactor without doing more harm than 
 2. _Make sure you have good tests before you begin refactoring. Run the tests as often as possible._
 3. _Take short, deliberate steps: move a field from one class to another, split a method, rename a variable. Refactoring often involves making many localized changes that result in a larger-scale change._
 
-The most important thing to keep in mind is that **refactoring is not a certain task, it is a habit **which, as with most things in life, is easier to do while the issues are small, as an ongoing activity while coding. **The less you refactor now the greater time you’ll have to invest to fix the problem down the road.**
+The most important thing to keep in mind is that **refactoring is not a certain task, it is a habit** that, as with most things in life, is easier to do while the issues are small, as an ongoing activity while coding. **The less you refactor now the greater time you’ll have to invest to fix the problem down the road.**
 
 ![Cat refactoring](./cat_refactoring.gif)
 
