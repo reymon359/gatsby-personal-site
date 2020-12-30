@@ -282,7 +282,7 @@ And here are Martin Fowler tips on how to refactor without doing more harm than 
 2. _Make sure you have good tests before you begin refactoring. Run the tests as often as possible._
 3. _Take short, deliberate steps: move a field from one class to another, split a method, rename a variable. Refactoring often involves making many localized changes that result in a larger-scale change._
 
-The most important thing to keep in mind is that **refactoring is not a certain task, it is a habit **which, as with most things in life, is easier to do while the issues are small, as an ongoing activity while coding. **The less you refactor now the greater time you’ll have to invest to fix the problem down the road.**
+The most important thing to keep in mind is that **refactoring is not a certain task, it is a habit** that, as with most things in life, is easier to do while the issues are small, as an ongoing activity while coding. **The less you refactor now the greater time you’ll have to invest to fix the problem down the road.**
 
 ![Cat refactoring](./cat_refactoring.gif)
 
