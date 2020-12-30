@@ -272,8 +272,8 @@ Sometimes you will find code that does not feel right and should be fixed or imp
 When should you refactor the code? Here is a list of situations that qualify to do so:
 
 - Remove **code duplication.**
-- Making_ _some parts of the code more **orthogonal.**
-- **Update_ _**code and/or documentation outdated.
+- Making some parts of the code more **orthogonal.**
+- **Update** code and/or documentation outdated.
 - To improve **performance.**
 
 And here are Martin Fowler tips on how to refactor without doing more harm than good:
