@@ -58,11 +58,9 @@ You have to **look at tests as the first users of your code**, so they are the b
 
 Practice [TDD Test Driven Development.](https://en.wikipedia.org/wiki/Test-driven_development) How? Three steps explanation:
 
-1 Choose a feature to add and write a test that will pass after implementing it. Now, all tests but the new one should pass. 
-
-2 Write the code required to pass it. 
-
-3 Refactor the code and check all tests still pass.
+1. Choose a feature to add and write a test that will pass after implementing it. Now, all tests but the new one should pass. 
+2. Write the code required to pass it.
+3. Refactor the code and check all tests still pass.
 
 Thus said, it is important to look at the big picture and not to miss the main goal by writing too many tests.
 
