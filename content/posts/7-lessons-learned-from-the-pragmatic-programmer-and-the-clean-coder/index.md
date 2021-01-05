@@ -58,11 +58,9 @@ You have to **look at tests as the first users of your code**, so they are the b
 
 Practice [TDD Test Driven Development.](https://en.wikipedia.org/wiki/Test-driven_development) How? Three steps explanation:
 
-1 Choose a feature to add and write a test that will pass after implementing it. Now, all tests but the new one should pass. 
-
-2 Write the code required to pass it. 
-
-3 Refactor the code and check all tests still pass.
+1. Choose a feature to add and write a test that will pass after implementing it. Now, all tests but the new one should pass. 
+2. Write the code required to pass it.
+3. Refactor the code and check all tests still pass.
 
 Thus said, it is important to look at the big picture and not to miss the main goal by writing too many tests.
 
@@ -71,7 +69,7 @@ Thus said, it is important to look at the big picture and not to miss the main g
 
 ![Tests](./tests.gif)
 
-There are three ways of testing: _First, During,_ and_ Never._ First (TDD) is the best one, During is a fallback when First is not useful, and Never is often called “Test Later” but sadly **in most cases Later means Never.**
+There are three ways of testing: _First, During,_ and _Never._ First (TDD) is the best one, During is a fallback when First is not useful, and Never is often called “Test Later” but sadly **in most cases Later means Never.**
 
 > The need to test first forces you to think about "good design."
 > — The Clean Coder
