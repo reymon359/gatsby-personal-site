@@ -69,7 +69,7 @@ Thus said, it is important to look at the big picture and not to miss the main g
 
 ![Tests](./tests.gif)
 
-There are three ways of testing: _First, During,_ and_ Never._ First (TDD) is the best one, During is a fallback when First is not useful, and Never is often called “Test Later” but sadly **in most cases Later means Never.**
+There are three ways of testing: _First, During,_ and _Never._ First (TDD) is the best one, During is a fallback when First is not useful, and Never is often called “Test Later” but sadly **in most cases Later means Never.**
 
 > The need to test first forces you to think about "good design."
 > — The Clean Coder
