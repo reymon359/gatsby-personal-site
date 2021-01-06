@@ -30,7 +30,7 @@ I will share what I learned so anyone can experience it too. Be advised that I a
     - [ISO](#ISO)
     - [Aperture](#Aperture)
     - [Shutter Speed](#Shutter-Speed)
-- [Conclusions](#Conclusions)
+- [Conclusion](#Conclusion)
 - [Greetings](#Greetings)
 
 ## The Location
@@ -49,13 +49,26 @@ Remember to **have the device in a fixed position while taking the photo.** Don'
 
 ## The Exposure Triangle
 
+The most important thing to understand is how to play with the amount of light, or rather, the lack of it. You will have to **adjust your camera settings more than once to get the right amount of light from the environment for the shot when there is almost none.** 
+
+For this purpose, there are three main settings you will have to adjust: **ISO, Aperture, and Shutter speed.** The Exposure Triangle is a graphic representation of them and how they work together.
+
+![The exposure triangle. [Source.](https://www.photographytalk.com/beginner-photography-tips/aperture-shutter-speed-and-iso-the-exposure-triangle)
+](./exposure_triangle.jpg)
+
 ### ISO
+
+This is the **sensitivity level of your camera to light.** The higher the sensitivity level the more light (artificial) you will get. However, you will get more _noise_ which appears like grain in the picture.
 
 ### Aperture
 
+This one regulates the **amount of light** that reaches the sensor. The smaller the aperture size, the less light you will get. It also controls the **depth of field** which the smaller the aperture the wider it will be and the less blurry stars’ pictures.
+
 ### Shutter Speed
 
-## Conclusions
+It controls the **shot duration,** in other words, how long the sensor is capturing light. The longer the shutter speed the more light will enter. If you have set the aperture to the minimum you won’t get too much light, therefore, you will have to increase the Shutter speed to spend more time capturing light for the shot.
+
+## Conclusion
 
 ## Greetings
 
