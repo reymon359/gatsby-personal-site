@@ -107,11 +107,11 @@ strong {
 ul, ol {
   font-size: 1.2rem;
   padding: 1rem;
+  margin-left: 1rem;
 }
 
 ul {
   list-style-type: circle;
-  margin-left: 1rem;
 }
 
 ol {
