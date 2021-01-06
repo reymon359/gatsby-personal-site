@@ -21,3 +21,14 @@ Those were not my first nights contemplating the stars on a clear sky, but the f
 ![The milky way over [the Teide.](./../how-to-enjoy-the-sunrise-from-the-top-of-spain) Aperture ƒ/1.7, Shuter Speed 30s, ISO 2000](./the_milky_way_over_the_teide.jpg)
 
 I will share what I learned so anyone can experience it too. Be advised that I am no professional photographer and that I will explain technical concepts in a _simpler_ way as this article is addressed to beginners.
+   
+## Table of Contents
+
+- [The Location](#The-Location)
+- [The Device](#the-Device)
+- [The Exposure Triangle](#The-Exposure-Triangle)
+    - [ISO](#ISO)
+    - [Aperture](#Aperture)
+    - [Shutter Speed](#Shutter-Speed)
+- [Conclusions](#Conclusions)
+- [Greetings](#Greetings)
