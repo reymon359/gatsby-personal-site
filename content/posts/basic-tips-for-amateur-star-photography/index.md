@@ -82,6 +82,8 @@ Another comparison of three photos of the [Teide](./../how-to-enjoy-the-sunrise-
 - Center. ISO 1600 and 30 sec. Shutter speed.
 - Right. ISO 400 and 30 sec. Shutter speed.
 
+By the way, the white lights are people climbing it with lanterns. You can appreciate how their trail increases with the Shutter speed.
+
 ![Teide National Park night pictures.](./teide_national_park_night_pictures.jpg)
 
 At first, it seems complicated and hard to understand, or at least to understand the minimum to get a decent shot. However, with these concepts and practice, getting stars’ pictures becomes enjoyable and fun. 
