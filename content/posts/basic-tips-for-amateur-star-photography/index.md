@@ -41,6 +41,12 @@ Nowadays **because of the cities’ light pollution, these are not the best plac
 
 ## The Device
 
+**You don’t need an expensive camera, or a night mode one** to have fun and take decent pictures. The majority of phones have a mode that lets you adjust the settings for the shot. 
+
+![My mates and me experimenting with the settings for the next shot](./my_mates_and_me_experimenting_with_the_settings_for_the_next_shot.jpg)
+
+Remember to **have the device in a fixed position while taking the photo.** Don't even consider holding it with your hands. Although you don't need a tripod it will help you for this purpose.
+
 ## The Exposure Triangle
 
 ### ISO
