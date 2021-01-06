@@ -18,7 +18,7 @@ Some time ago I was living in the Canary Islands, a set of islands well-known fo
 
 Those were not my first nights contemplating the stars on a clear sky, but the fact of **capturing them contributed more to enjoy the moment.** I always thought this kind of activity was just for professional photographers but **after understanding some concepts even someone with no experience can enjoy it and take awesome pictures.** 
 
-![The milky way over [the Teide.](./../how-to-enjoy-the-sunrise-from-the-top-of-spain) Aperture ƒ/1.7, Shuter Speed 30s, ISO 2000](./the_milky_way_over_the_teide.jpg)
+![The Milky Way over [the Teide.](./../how-to-enjoy-the-sunrise-from-the-top-of-spain) Aperture ƒ/1.7, Shuter Speed 30s, ISO 2000](./the_milky_way_over_the_teide.jpg)
 
 I will share what I learned so anyone can experience it too. Be advised that I am no professional photographer and that I will explain technical concepts in a _simpler_ way as this article is addressed to beginners.
    
@@ -87,4 +87,10 @@ Another comparison of three photos of the [Teide](./../how-to-enjoy-the-sunrise-
 At first, it seems complicated and hard to understand, or at least to understand the minimum to get a decent shot. However, with these concepts and practice, getting stars’ pictures becomes enjoyable and fun. 
 
 ## Greetings
+
+Greetings to my housemates and my friend Unai who taught me these concepts in the first place. By the way, the cover photo is from one of those nights.
+
+To end, you can edit the photos later to make them look better. Here is an edit Unai made with one of them.
+
+![The Milky Way over the Teide edited.](./the_milky_way_over_the_teide_edited.jpg)
 
