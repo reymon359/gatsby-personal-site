@@ -32,3 +32,24 @@ I will share what I learned so anyone can experience it too. Be advised that I a
     - [Shutter Speed](#Shutter-Speed)
 - [Conclusions](#Conclusions)
 - [Greetings](#Greetings)
+
+## The Location
+
+Nowadays **because of the cities’ light pollution, these are not the best places for this activity.** Therefore the further you are from them the better If you want to have a clearer sky. The [Bortle scale](https://en.wikipedia.org/wiki/Bortle_scale) is a nine-level numeric scale that measures the night sky's brightness.
+
+![Light Pollution in the Bortle scale. [Source](https://www.reddit.com/r/interestingasfuck/comments/khe15u/the_concept_of_light_pollution_is_crazy/).](./light_pollution_in_the_bortle_scale.jpg)
+
+## The Device
+
+## The Exposure Triangle
+
+### ISO
+
+### Aperture
+
+### Shutter Speed
+
+## Conclusions
+
+## Greetings
+
