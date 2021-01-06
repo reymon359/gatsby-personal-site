@@ -70,5 +70,21 @@ It controls the **shot duration,** in other words, how long the sensor is captur
 
 ## Conclusion
 
+To capture the stars you should **set the aperture to the minimum to not get blurry images.** Then experiment with the ISO and Shutter speed. Remember that if you increase the ISO although you will have to wait for less, it will have more noise. Therefore, **the best approach is to increase the shutter speed (time taking the shot) to get the most quantity of light without noise.** 
+
+Here is an example where the first picture has a higher ISO (8000) and was taken with a shutter speed of 1 second and another where the ISO is lower (800), and a shutter speed of 15 seconds. You can see that there is more noise (grain) in the first one.
+
+![ISO and shutter speed combinations.](./iso_and_shutter_speed_combinations.jpg)
+
+Another comparison of three photos of the [Teide](./../how-to-enjoy-the-sunrise-from-the-top-of-spain) National Park at night. Although all of them have the same aperture of ƒ/1.7, changing the ISO, and the Shutter speed gives you totally different photos.
+
+- Left. ISO 14600 and 1/3 sec. Shutter speed.
+- Center. ISO 1600 and 30 sec. Shutter speed.
+- Right. ISO 400 and 30 sec. Shutter speed.
+
+![Teide National Park night pictures.](./teide_national_park_night_pictures.jpg)
+
+At first, it seems complicated and hard to understand, or at least to understand the minimum to get a decent shot. However, with these concepts and practice, getting stars’ pictures becomes enjoyable and fun. 
+
 ## Greetings
 
