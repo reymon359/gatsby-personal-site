@@ -14,7 +14,7 @@ type: 'post'
 url: 'none'
 ---
 
-Some time ago I was living in the Canary Islands, a set of islands well-known for having one of the clearest skies in the world. Amazed by the stars’ views my housemates and me spent some nights stargazing.
+Some time ago I was living in the Canary Islands, a group of islands well-known for having one of the clearest skies in the world. Amazed by the stars views my housemates and I spent some nights stargazing.
 
 Those were not my first nights contemplating the stars on a clear sky, but the fact of **capturing them contributed more to enjoy the moment.** I always thought this kind of activity was just for professional photographers but **after understanding some concepts even someone with no experience can enjoy it and take awesome pictures.** 
 
@@ -35,7 +35,7 @@ I will share what I learned so anyone can experience it too. Be advised that I a
 
 ## The Location
 
-Nowadays **because of the cities’ light pollution, these are not the best places for this activity.** Therefore the further you are from them the better If you want to have a clearer sky. The [Bortle scale](https://en.wikipedia.org/wiki/Bortle_scale) is a nine-level numeric scale that measures the night sky's brightness.
+Nowadays **because of the cities’ light pollution, these are not the best places for this activity.** Therefore the further you are from them the better to have a clearer sky. The [Bortle scale](https://en.wikipedia.org/wiki/Bortle_scale) is a nine-level numeric scale that measures the night sky's brightness.
 
 ![Light Pollution in the Bortle scale. [Source](https://www.reddit.com/r/interestingasfuck/comments/khe15u/the_concept_of_light_pollution_is_crazy/).](./light_pollution_in_the_bortle_scale.jpg)
 
@@ -43,7 +43,7 @@ Nowadays **because of the cities’ light pollution, these are not the best plac
 
 **You don’t need an expensive camera, or a night mode one** to have fun and take decent pictures. The majority of phones have a mode that lets you adjust the settings for the shot. 
 
-![My mates and me experimenting with the settings for the next shot](./my_mates_and_me_experimenting_with_the_settings_for_the_next_shot.jpg)
+![My mates and I experimenting with the settings for the next shot](./my_mates_and_i_experimenting_with_the_settings_for_the_next_shot.jpg)
 
 Remember to **have the device in a fixed position while taking the photo.** Don't even consider holding it with your hands. Although you don't need a tripod it will help you for this purpose.
 
@@ -70,7 +70,7 @@ It controls the **shot duration,** in other words, how long the sensor is captur
 
 ## Conclusion
 
-To capture the stars you should **set the aperture to the minimum to not get blurry images.** Then experiment with the ISO and Shutter speed. Remember that if you increase the ISO although you will have to wait for less, it will have more noise. Therefore, **the best approach is to increase the shutter speed (time taking the shot) to get the most quantity of light without noise.** 
+To capture the stars you should **set the aperture (if your device allows you) to the minimum to not get blurry images.** Then experiment with the ISO and Shutter speed. Remember that if you increase the ISO although you will have to wait for less, it will have more noise. Therefore, **the best approach is to increase the shutter speed (time taking the shot) to get the most quantity of light without noise.** 
 
 Here is an example where the first picture has a higher ISO (8000) and was taken with a shutter speed of 1 second and another where the ISO is lower (800), and a shutter speed of 15 seconds. You can see that there is more noise (grain) in the first one.
 
