@@ -56,13 +56,13 @@ Get your body and mind used to **staying up late**. I normally go to bed and wak
 
 **Extras**
 
-Check the calendar for the next **full moon**. When climbing Teide that night or a nearby one the landscape views were beautiful, and we didn't need a flashlight. The negative point is that we couldn't see the stars properly. However, you can see them every night from any high spot on the island. Thus said, the night landscape views from the Teide are obviously better while full moon.
+Check the calendar for the next **full moon**. When climbing Teide that night or a nearby one the landscape views were beautiful, and we didn't need a flashlight. The negative point is that we couldn't see the [stars](./../basic-tips-for-amateur-star-photography) properly. However, you can see them every night from any high spot on the island. Thus said, the night landscape views from the Teide are obviously better while full moon.
 
 ![Teide National Park views from La Caldereta](./teide_national_park_views_from_la_caldereta.jpg)
 
 If you can afford it, try to **drive there in more than one car.** The path does not begin where the cable car drops you off. You will have to walk back to where you parked the car at the beginning of the trail unless you have a second car. Therefore, the _trick_ is to leave one of them in a car park near the cable-car Base Station before heading to the starting spot with the second car. This way **when you get off the cable car exhausted you won't have to walk another 40 min** to get to the car.
 
-![Night talks under the stars](./night_talks_under_the_stars.jpg)
+![Night talks under the [stars](./../basic-tips-for-amateur-star-photography)](./night_talks_under_the_stars.jpg)
 
 Is a good idea to spend some hours at the base before the adventure. We got to the starting point late in the evening to have a picnic dinner and start **getting used to the high altitude hours before the hike.** This will help you to prevent [altitude sickness.](https://en.wikipedia.org/wiki/Altitude_sickness)
 
