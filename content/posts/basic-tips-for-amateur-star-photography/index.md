@@ -94,4 +94,4 @@ Greetings to my housemates and my friend Unai who taught me these concepts in th
 
 To end, you can edit the photos later to make them look better. Here is an edit Unai made with one of them.
 
-![The Milky Way over the Teide edited.](./the_milky_way_over_the_teide_edited.jpg)
+![The Milky Way over the [Teide](./../how-to-enjoy-the-sunrise-from-the-top-of-spain) edited.](./the_milky_way_over_the_teide_edited.jpg)
