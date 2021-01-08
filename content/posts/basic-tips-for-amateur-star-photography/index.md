@@ -2,7 +2,7 @@
 id: 'basic-tips-for-amateur-star-photography'
 title: 'Basic tips for amateur Star Photography'
 description: 'A few useful concepts I learned stargazing in the Canary Islands'
-date: '2021-01-06'
+date: '2021-01-08'
 author: 'Ramón Morcillo'
 categories: ['Photography']
 tags: ['Adventures', 'Tutorial', 'Photography', 'Canary Islands']
