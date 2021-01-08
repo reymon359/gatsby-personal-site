@@ -8,8 +8,8 @@ categories: ['Photography']
 tags: ['Adventures', 'Tutorial', 'Photography', 'Canary Islands']
 published: true
 commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/337
-featuredImage: './housemates_and_me_stargazing.jpg'
-thumbnail: './housemates_and_me_stargazing.jpg'
+featuredImage: './housemates_and_i_stargazing.jpg'
+thumbnail: './housemates_and_i_stargazing.jpg'
 type: 'post'
 url: 'none'
 ---
@@ -95,4 +95,3 @@ Greetings to my housemates and my friend Unai who taught me these concepts in th
 To end, you can edit the photos later to make them look better. Here is an edit Unai made with one of them.
 
 ![The Milky Way over the Teide edited.](./the_milky_way_over_the_teide_edited.jpg)
-
