@@ -8,7 +8,6 @@ categories: ['Software']
 tags: [ 'Game', 'C++' ]
 published: true
 featuredImage: './space-pizza.jpg'
-thumbnail: './space-pizza.jpg'
 type: 'project'
 url: 'https://www.youtube.com/watch?v=5ss2MxXbMi0'
 ---

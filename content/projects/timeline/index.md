@@ -8,7 +8,6 @@ categories: ['Personal']
 tags: [ 'Personal', 'GitHub' ]
 published: false
 featuredImage: './timeline.png'
-thumbnail: './timeline.png'
 type: 'project'
 url: 'https://github.com/users/reymon359/projects/1'
 ---

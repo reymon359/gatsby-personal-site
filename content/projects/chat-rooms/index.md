@@ -8,7 +8,6 @@ categories: ['Software']
 tags: [ 'JavaScript', 'Node.js', 'WebSocket' ]
 published: true
 featuredImage: './chat-rooms.jpg'
-thumbnail: './chat-rooms.jpg'
 type: 'project'
 url: 'https://reymon359-chat-rooms.herokuapp.com/'
 ---

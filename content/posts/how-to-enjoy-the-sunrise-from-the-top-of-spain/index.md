@@ -9,7 +9,6 @@ tags: ['Adventures', 'Nature', 'Spain', 'Canary Islands']
 published: true
 commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/293
 featuredImage: './the_magical_moment.jpg'
-thumbnail: './the_magical_moment.jpg'
 type: 'post'
 url: 'none'
 ---

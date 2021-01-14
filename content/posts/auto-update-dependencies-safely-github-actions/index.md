@@ -9,7 +9,6 @@ tags: ['Software Development', 'Continuous Integration', 'Tutorial', 'GitHub', '
 published: true
 commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/170
 featuredImage: './github_actions_and_renovate_logos.png'    
-thumbnail: './github_actions_and_renovate_logos.png'
 type: 'post'
 url: 'none'
 ---

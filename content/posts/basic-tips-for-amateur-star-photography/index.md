@@ -9,7 +9,6 @@ tags: ['Adventures', 'Tutorial', 'Photography', 'Canary Islands']
 published: true
 commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/361
 featuredImage: './housemates_and_i_stargazing.jpg'
-thumbnail: './housemates_and_i_stargazing.jpg'
 type: 'post'
 url: 'none'
 ---

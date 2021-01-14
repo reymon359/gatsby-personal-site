@@ -8,7 +8,6 @@ categories: ['Software']
 tags: [ 'JavaScript', 'Personal', 'Learning' ]
 published: true
 featuredImage: './my-place.jpg'
-thumbnail: './my-place.jpg'
 type: 'project'
 url: 'https://myplace.ramonmorcillo.com/'
 ---
