@@ -8,7 +8,6 @@ categories: ['Personal']
 tags: ['Books', 'Personal', 'Learning']
 published: true
 featuredImage: './book-sentences.png'
-thumbnail: './book-sentences.png'
 type: 'project'
 url: 'https://github.com/reymon359/book-sentences'
 ---

@@ -9,7 +9,6 @@ tags: ['Software Development', 'Ecommerce', 'Architecture', 'Teamwork', 'GraphQL
 published: true
 commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/243
 featuredImage: './rachel-lees-WlhzJkBvNDo-unsplash.jpg'
-thumbnail: './rachel-lees-WlhzJkBvNDo-unsplash.jpg'
 type: 'post'
 url: 'none'
 ---

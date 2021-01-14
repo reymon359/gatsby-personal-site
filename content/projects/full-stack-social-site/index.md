@@ -8,7 +8,6 @@ categories: ['Software']
 tags: ['React', 'GraphQL', 'TypeScript', 'Apollo']
 published: true
 featuredImage: './full-stack-social-site.png'
-thumbnail: './full-stack-social-site.png'
 type: 'project'
 url: 'https://github.com/reymon359/full-stack-social-site'
 ---
