@@ -150,7 +150,8 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-json`,
-    `gatsby-plugin-react-svg`
+    `gatsby-plugin-react-svg`,
+    `gatsby-plugin-meta-redirect`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

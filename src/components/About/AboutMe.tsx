@@ -18,28 +18,30 @@ const AboutMe: React.FC = () => {
   return (
     <Content>
       <p>
-        Over the last years, I have been working, discovering, and having fun on
-        both backend and frontend software development. I deeply enjoy&nbsp;
-        <a
-          href="https://github.com/reymon359"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          learning, reading, creating
-        </a>
-        , and trying new things.
+        I enjoy life and have fun going on adventures, doing software
+        development, meeting new people, helping others, learning new things,
+        improving myself, trying new foods, visiting new places, opening my
+        mind, achieving my goals, and exercising (running, hiking, and
+        boardsports mainly).
       </p>
 
       <p>
         I built this website with&nbsp;
         <a
+          href="https://reactjs.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          React,&nbsp;
+        </a>
+        <a
           href="https://www.gatsbyjs.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Gatsby
+          Gatsby,
         </a>
-        &nbsp;and&nbsp;
+        &nbsp; and&nbsp;
         <a
           href="https://www.typescriptlang.org/"
           target="_blank"
@@ -47,19 +49,17 @@ const AboutMe: React.FC = () => {
         >
           TypeScript
         </a>
-        &nbsp;among other technologies and use it as a place to share what I
+        &nbsp;among other technologies. I use it as a place to share what I
         learn and do. I believe in an open source world so&nbsp;
         <a
           href="https://github.com/reymon359/gatsby-personal-site"
           target="_blank"
           rel="noopener noreferrer"
         >
-          here is this site's one.
+          here is this site's one on GitHub.
         </a>
       </p>
       <p>
-        I am always improving myself and helping others if I have the chance to.
-        &nbsp;
         <a
           href="../../../files/ramon-morcillo-resume.pdf"
           target="_blank"
@@ -67,16 +67,13 @@ const AboutMe: React.FC = () => {
         >
           Here is my resume
         </a>
-        &nbsp;in case you want to have a look.
-      </p>
-      <p>
-        Sometimes&nbsp;
+        &nbsp;in case you want to have a look. Sometimes I&nbsp;
         <a
           href="https://twitter.com/reymon359"
           target="_blank"
           rel="noopener noreferrer"
         >
-          I tweet
+          tweet
         </a>
         &nbsp;and share photos on&nbsp;
         <a
@@ -86,7 +83,7 @@ const AboutMe: React.FC = () => {
         >
           Instagram
         </a>
-        . You can contact me through them or send me an email to&nbsp;
+        . You can contact me through them or send me an email at&nbsp;
         <a
           rel="noopener"
           href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!"
