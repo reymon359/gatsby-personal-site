@@ -59,6 +59,7 @@ This site is meant to be a place to add and share my works about the things I le
 - **[Commitlint](https://github.com/conventional-changelog/commitlint):** To enforce [conventional commit format](https://www.conventionalcommits.org/).
 - **[GitHub Actions](https://github.com/features/actions):** GitHub's Continuous Integration & Delivery tool.
 - **[Renovate](https://renovate.whitesourcesoftware.com/):** Free, open-source app to automate the update of dependencies.
+- **[GitHub Issues and Pull Requests Templates](https://docs.github.com/en/github/building-a-strong-community/about-issue-and-pull-request-templates):** Templates to submit new Issues and Pull Requests.
 
 <!-- Project Setup -->
 ## Setup the project
