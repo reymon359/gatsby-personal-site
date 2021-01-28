@@ -2,6 +2,14 @@ const {createFilePath} = require(`gatsby-source-filesystem`)
 const path = require(`path`)
 
 exports.createPages = ({graphql, actions}) => {
+  // Redirects
+  const {createRedirect} = actions
+  createRedirect({
+    fromPath: '/map',
+    toPath:
+      'https://www.google.com/maps/d/viewer?mid=1O0IseePWpXqpT0v6srZyZMRDAvHhpWDg'
+  })
+
   return graphql(
     `
       {
