@@ -111,6 +111,8 @@ We can use **any programming language** to create a GraphQL schema and **build a
     └── 📄 server.js
 ```
 
+Now we install apollo-server running `npm install apollo-server`
+
 We have to import the **tag function** `gql` from **apollo-server** to parse the schema this way: `const {gql} = require('apollo-server');` and then declare a `typeDefs` constant which is an [abstract syntax tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree) of the Graphql code.
 
 > When a GraphQL server receives a query to process it generally comes in as a String. This string must be tokenized and parsed into a representation that the machine understands. This representation is called an abstract syntax tree.
