@@ -44,7 +44,7 @@ const StyledImage = styled.img`
 const Image: React.FC = () => {
   return (
     <StyledPicture>
-      <StyledImage src="../../../images/ramon-morcillo-meta-image.jpg" />
+      <StyledImage src="../../../images/ramon_morcillo_meta_image.jpg" />
     </StyledPicture>
   )
 }
