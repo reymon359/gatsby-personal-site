@@ -60,13 +60,8 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 600,
-              classPrefix: 'language-',
-              inlineCodeMarker: null,
-              aliases: {},
               showCaptions: [`alt`],
               markdownCaptions: true,
-              showLineNumbers: true,
-              noInlineHighlight: true,
               backgroundColor: 'none',
               wrapperStyle: `border-bottom: none;`
             }
