@@ -73,8 +73,8 @@ const Head: React.FC<HeadProps> = ({
             },
             {
               property: `image`,
-              content: metaImage,
-             },
+              content: metaImage
+            },
             {
               property: `og:title`,
               content: title
