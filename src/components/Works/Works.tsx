@@ -54,6 +54,7 @@ const Works: React.FC<WorksProps> = ({posts, projects}) => (
       <SectionHeader>
         <SectionTitle>Latest posts</SectionTitle>
         <MoreLink to="/blog">All posts</MoreLink>
+        <MoreLink to="/tags">All tags</MoreLink>
       </SectionHeader>
       <SectionBody>
         <ContentListContainer content={posts} />
@@ -63,6 +64,7 @@ const Works: React.FC<WorksProps> = ({posts, projects}) => (
       <SectionHeader>
         <SectionTitle>Latest projects</SectionTitle>
         <MoreLink to="/projects">All projects</MoreLink>
+        <MoreLink to="/tags">All tags</MoreLink>
       </SectionHeader>
       <SectionBody>
         <ContentListContainer content={projects} />
