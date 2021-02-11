@@ -61,12 +61,13 @@ const PostTemplate: React.FC<Props> = ({data, pageContext}) => {
   const siteTitle = data.site.siteMetadata.title
   const {previous, next} = pageContext
   const featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
+  const featuredImgFixed = post.frontmatter.featuredImage.childImageSharp.fixed
   return (
     <Layout title={siteTitle}>
       <Head
         title={post.frontmatter.title}
         description={post.frontmatter.description}
-        image={`../../..${featuredImgFluid.src}`}
+        image={featuredImgFixed.src}
         keywords={[
           `blog`,
           `gatsby`,
@@ -170,6 +171,9 @@ export const pageQuery = graphql`
         commentsUrl
         featuredImage {
           childImageSharp {
+            fixed {
+              src
+            }
             fluid(maxWidth: 800) {
               ...GatsbyImageSharpFluid
             }
