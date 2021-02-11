@@ -126,10 +126,10 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Ramon Morcillo`,
-        shortName: `ramonmorcillo.com`,
-        startUrl: `/`,
-        backgroundColor: `#255799`,
-        themeColor: `#255799`,
+        short_name: `ramonmorcillo.com`,
+        start_url: `/`,
+        background_color: `#255799`,
+        theme_color: `#255799`,
         display: `standalone`,
         icon: `static/images/favicon/orange.png`, // This path is relative to the root of the site.
         crossOrigin: `use-credentials`
