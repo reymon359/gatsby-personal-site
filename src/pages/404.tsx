@@ -18,7 +18,7 @@ const NotFoundPage: React.FC<NotFoundPageProps> = ({data}) => {
     <Layout title={siteTitle}>
       <Head
         title="404: Not Found"
-        image="../../../images/sup_seal.gif"
+        image="/images/sup_seal.gif"
         keywords={[
           `blog`,
           `gatsby`,
