@@ -48,7 +48,7 @@ export const theme = {
     extraBold: 800
   },
   fontSizes: {
-    small: '.7rem',
+    small: '.8rem',
     normal: '1rem',
     medium: '1.25rem',
     mediumLarge: '1.5rem',

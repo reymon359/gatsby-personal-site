@@ -10,7 +10,7 @@ module.exports = {
     title: `ramonmorcillo.com`,
     description: `My personal site made with Gatsby.js`,
     siteUrl: `https://ramonmorcillo.com`,
-    image: `static/images/ramon-morcillo-meta-image.jpg`,
+    image: `/images/ramon_morcillo_meta_image.jpg`,
     googleSiteVerification:
       process.env.GOOGLE_SITE_VERIFICATION ||
       'Add the Google Site Verification',
@@ -60,13 +60,8 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 600,
-              classPrefix: 'language-',
-              inlineCodeMarker: null,
-              aliases: {},
               showCaptions: [`alt`],
               markdownCaptions: true,
-              showLineNumbers: true,
-              noInlineHighlight: true,
               backgroundColor: 'none',
               wrapperStyle: `border-bottom: none;`
             }
@@ -126,10 +121,10 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Ramon Morcillo`,
-        shortName: `ramonmorcillo.com`,
-        startUrl: `/`,
-        backgroundColor: `#255799`,
-        themeColor: `#255799`,
+        short_name: `ramonmorcillo.com`,
+        start_url: `/`,
+        background_color: `#255799`,
+        theme_color: `#255799`,
         display: `standalone`,
         icon: `static/images/favicon/orange.png`, // This path is relative to the root of the site.
         crossOrigin: `use-credentials`

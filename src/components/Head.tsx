@@ -8,6 +8,7 @@ type StaticQueryData = {
     siteMetadata: {
       title: string
       description: string
+      siteUrl: string
       image: string
       googleSiteVerification: string
       author: {
@@ -39,6 +40,7 @@ const Head: React.FC<HeadProps> = ({
           siteMetadata {
             title
             description
+            siteUrl
             image
             googleSiteVerification
             author {
@@ -50,7 +52,9 @@ const Head: React.FC<HeadProps> = ({
     `}
     render={(data: StaticQueryData): React.ReactElement | null => {
       const metaDescription = description || data.site.siteMetadata.description
-      const metaImage = image || data.site.siteMetadata.image
+      const metaImage =
+        data.site.siteMetadata.siteUrl +
+        `${image || data.site.siteMetadata.image}`
       lang = lang || 'en'
       keywords = keywords || []
       useDynamicFavicon()
@@ -66,6 +70,10 @@ const Head: React.FC<HeadProps> = ({
             {
               name: `description`,
               content: metaDescription
+            },
+            {
+              property: `image`,
+              content: metaImage
             },
             {
               property: `og:title`,
