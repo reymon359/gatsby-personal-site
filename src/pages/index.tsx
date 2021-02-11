@@ -18,6 +18,7 @@ const IndexPage: React.FC<IndexPageProps> = ({data}) => {
       <Stars />
       <Head
         title="Home"
+        image="../../images/site_demo.gif"
         keywords={[
           `blog`,
           `gatsby`,
