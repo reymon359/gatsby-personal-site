@@ -10,7 +10,7 @@ module.exports = {
     title: `ramonmorcillo.com`,
     description: `My personal site made with Gatsby.js`,
     siteUrl: `https://ramonmorcillo.com`,
-    image: `static/images/ramon-morcillo-meta-image.jpg`,
+    image: `/static/images/ramon-morcillo-meta-image.jpg`,
     googleSiteVerification:
       process.env.GOOGLE_SITE_VERIFICATION ||
       'Add the Google Site Verification',
