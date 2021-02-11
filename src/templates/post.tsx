@@ -66,6 +66,7 @@ const PostTemplate: React.FC<Props> = ({data, pageContext}) => {
       <Head
         title={post.frontmatter.title}
         description={post.frontmatter.description}
+        image={`../../..${featuredImgFluid.src}`}
         keywords={[
           `blog`,
           `gatsby`,
