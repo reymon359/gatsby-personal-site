@@ -61,6 +61,11 @@ Here are **the 5 Psychological First Aid main steps.** The details and applicati
 
 ## Why apply it
 
+![When a robot gets behind the wheel, 1974, Günter Radtke](./when_a_robot_gets_behind_the_wheel_1974_gunter_radtke.jpg)
+
+**Why apply it?** There is no better reason than **to help.** To help those affected to regain control of their life and face what has happened to them with the fewest possible consequences. Reducing the level of stress produced after the impact of the news or traumatic event. Finally, to connect those affected with their support network.
+
+There is another _Why_ for this reading though: **Why I am writing about this subject.** The first reason is that **writing is a very effective way to learn.** Besides, I completed [this course](https://www.coursera.org/learn/pap-covid19) recently to learn about the topic and be able to help people in these and similar situations. After the course, I wanted to review and share some useful knowledge I learned.
 
 ## Conclusions
 
