@@ -61,12 +61,16 @@ Here are **the 5 Psychological First Aid main steps.** The details and applicati
 
 ## Why apply it
 
-![When a robot gets behind the wheel, 1974, Günter Radtke](./when_a_robot_gets_behind_the_wheel_1974_gunter_radtke.jpg)
+![When a robot gets behind the wheel, 1974, Günter Radtke.](./when_a_robot_gets_behind_the_wheel_1974_gunter_radtke.jpg)
 
 **Why apply it?** There is no better reason than **to help.** To help those affected to regain control of their life and face what has happened to them with the fewest possible consequences. Reducing the level of stress produced after the impact of the news or traumatic event. Finally, to connect those affected with their support network.
 
 There is another _Why_ for this reading though: **Why I am writing about this subject.** The first reason is that **writing is a very effective way to learn.** Besides, I completed a course recently to learn about the topic and be able to help people in these and similar situations. After the course, I wanted to review and share some useful knowledge I learned.
 
 ## Conclusions
+
+![Project Atlantis, cover picture, 1982,  Eberhard Binder.](./project_atlantis_cover_picture_1982_eberhard_binder.jpg)
+
+In the same way as the physical first aid technique, the psychological one can be **decisive to help people** in the first moments they have gone through a tough situation. If we find someone in this situation and apply this technique, we will help them _more efficiently._
 
 ## Resources
