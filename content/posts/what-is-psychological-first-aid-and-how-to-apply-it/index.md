@@ -21,10 +21,10 @@ For this reading, I structured the content in a basic _problem-solving_ way base
 
 - [What is Psychological First Aid](#What-is-Psychological-First-Aid)
 - [When to apply it](#When-to-apply-it)
-- [How to apply it](How-to-apply-it)
-- [Why apply it](Why-apply-it)
-- [Conclusions](Conclusions)
-- [Resources](Resources)
+- [How to apply it](#How-to-apply-it)
+- [Why apply it](#Why-apply-it)
+- [Conclusions](#Conclusions)
+- [Resources](#Resources)
 
 ## What is Psychological First Aid
 
