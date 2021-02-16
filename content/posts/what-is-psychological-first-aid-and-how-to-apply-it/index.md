@@ -8,7 +8,7 @@ categories: ['Software Development']
 tags: ['Psychology', 'Tutorial', 'Learning', 'Health']
 published: true
 commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/337
-featuredImage: './the_new_universe_76_1959.jpg'
+featuredImage: './the_new_universe_76_1959_klaus_burgle.jpg'
 type: 'post'
 url: 'none'
 ---
@@ -27,6 +27,10 @@ For this reading, I structured the content in a basic _problem-solving_ way base
 - [Resources](Resources)
 
 ## What is Psychological First Aid
+
+![The New Universe  81, 1964, Klaus Bürgle.](./the_new_universe_81_1964_klaus_burgle.jpg)
+
+**Psychological First Aid is a technique used with people who have just suffered the impact of tragic news, an accident, or have experienced a catastrophe.** People who are in shock and feel vulnerable. They are trying to understand what has happened to them and the consequences of it.
 
 ## When to apply it
 
