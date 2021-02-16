@@ -34,6 +34,14 @@ For this reading, I structured the content in a basic _problem-solving_ way base
 
 ## When to apply it
 
+![Suspension railway over the Sahara: suspended 15 meters high, The world of tomorrow, Birkel scrapbook, 1959, Unknown Artist](./suspension_railway_over_the_sahara_suspended_15_meters_high_the_world_of_tomorrow_birkel_scrapbook_1959_unknown_artist.jpg)
+
+It is indicated to apply it **from immediately after the impact of what has happened until approximately 72 hours later.** 
+
+This does not mean that after 72 hours the affected do not need help, just that psychological first aid is the proper technique in the first 72 hours after the event.
+
+After a month after the incident, if the person has not recovered from his normal life, it is advisable to go to a doctor.
+
 ## Why apply it
 
 ## How to apply it
