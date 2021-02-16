@@ -77,7 +77,7 @@ In the same way as the physical first aid technique, the psychological one can b
 
 ![Hotel in the moon, 1970, Klaus Bürgle.](./hotel_in_the_moon_1970_klaus_burgle.jpg)
 
-The majority of the knowledge shared here comes from [the course I completed about Psychological First Aid](https://www.coursera.org/learn/pap-covid19). I have not wanted to extend this article more than necessary but it also delves into other interesting topics such as [Acute stress disorder](https://en.wikipedia.org/wiki/Acute_stress_disorder), [Post-traumatic stress disorder](https://en.wikipedia.org/wiki/Post-traumatic_stress_disorder), and the relation between each other.
+The majority of the knowledge shared here comes from [the course I completed about Psychological First Aid](https://www.coursera.org/learn/pap-covid19). I have not wanted to extend this article more than necessary, however it also delves into other interesting topics such as [Acute stress disorder](https://en.wikipedia.org/wiki/Acute_stress_disorder), [Post-traumatic stress disorder](https://en.wikipedia.org/wiki/Post-traumatic_stress_disorder), and the relation between each other.
 
 Other topics explained on it are the famous **Defusing** and **Debriefing** techniques from [Critical Incident Stress Management](https://en.wikipedia.org/wiki/Critical_incident_stress_management).
 
