@@ -65,7 +65,7 @@ Here are **the 5 Psychological First Aid main steps.** The details and applicati
 
 **Why apply it?** There is no better reason than **to help.** To help those affected to regain control of their life and face what has happened to them with the fewest possible consequences. Reducing the level of stress produced after the impact of the news or traumatic event. Finally, to connect those affected with their support network.
 
-There is another _Why_ for this reading though: **Why I am writing about this subject.** The first reason is that **writing is a very effective way to learn.** Besides, I completed a course recently to learn about the topic and be able to help people in these and similar situations. After the course, I wanted to review and share some useful knowledge I learned.
+There is another _Why_ for this reading though: **Why I am writing about this subject.** The first reason is that **writing is a very effective way to learn.** Besides, I completed a course recently to learn about the topic and be able to help people in these and similar situations. After the course, I wanted to review and share useful knowledge I learned.
 
 ## Conclusions
 
@@ -74,3 +74,11 @@ There is another _Why_ for this reading though: **Why I am writing about this su
 In the same way as the physical first aid technique, the psychological one can be **decisive to help people** in the first moments they have gone through a tough situation. If we find someone in this situation and apply this technique, we will help them _more efficiently._
 
 ## Resources
+
+![Hotel in the moon, 1970, Klaus Bürgle.](./hotel_in_the_moon_1970_klaus_burgle.jpg)
+
+The majority of the knowledge shared here comes from [the course I completed about Psychological First Aid](https://www.coursera.org/learn/pap-covid19). I have not wanted to extend this article more than necessary but it also delves into other interesting topics such as [Acute stress disorder](https://en.wikipedia.org/wiki/Acute_stress_disorder), [Post-traumatic stress disorder](https://en.wikipedia.org/wiki/Post-traumatic_stress_disorder), and the relation between each other.
+
+Other topics explained on it are the famous **Defusing** and **Debriefing** techniques from [Critical Incident Stress Management](https://en.wikipedia.org/wiki/Critical_incident_stress_management).
+
+The pictures of the article are related to a recent discovery I made about the [Retrofuturism](https://en.wikipedia.org/wiki/Retrofuturism) movement. I was amazed by its art and for this article I added the pictures I liked the most from its main artists. The cover picture is _The New Universe 76, 1959_ from _Klaus Bürgle._
