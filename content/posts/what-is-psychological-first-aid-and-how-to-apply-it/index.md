@@ -21,8 +21,8 @@ For this reading, I structured the content in a basic _problem-solving_ way base
 
 - [What is Psychological First Aid](#What-is-Psychological-First-Aid)
 - [When to apply it](#When-to-apply-it)
-- [Why apply it](Why-apply-it)
 - [How to apply it](How-to-apply-it)
+- [Why apply it](Why-apply-it)
 - [Conclusions](Conclusions)
 - [Resources](Resources)
 
@@ -34,7 +34,7 @@ For this reading, I structured the content in a basic _problem-solving_ way base
 
 ## When to apply it
 
-![Suspension railway over the Sahara: suspended 15 meters high, The world of tomorrow, Birkel scrapbook, 1959, Unknown Artist](./suspension_railway_over_the_sahara_suspended_15_meters_high_the_world_of_tomorrow_birkel_scrapbook_1959_unknown_artist.jpg)
+![Suspension railway over the Sahara: suspended 15 meters high, The world of tomorrow, Birkel scrapbook, 1959, Unknown Artist.](./suspension_railway_over_the_sahara_suspended_15_meters_high_the_world_of_tomorrow_birkel_scrapbook_1959_unknown_artist.jpg)
 
 It is indicated to apply it **from immediately after the impact of what has happened until approximately 72 hours later.** 
 
@@ -42,9 +42,25 @@ This does not mean that after 72 hours the affected do not need help, just that 
 
 After a month after the incident, if the person has not recovered from his normal life, it is advisable to go to a doctor.
 
+## How to apply it
+
+![The New Universe 85, 1968,  Klaus Bürgle.](./the_new_universe_85_1968_klaus_burgle.jpg)
+
+Here are **the 5 Psychological First Aid main steps.** The details and applications of each one vary with the patient's age; you don’t calm a baby the same way you do with a teenager or an old man. Anyway, the concept remains the same for any age.
+
+
+
+1. **Contain.** First, we have to give the person security, **make them feel safe.** The important point is to try to prevent the person's emotions, fears, feelings from overflowing.
+2. **Calm. Help the person relax** speaking in a slow voice, trying to conduct yourself as calmly as possible, lowering our activation tone. We will never tell the person that everything will be better when calmed down because it may not be true.
+3. **Inform.** We will not inform the person until it is calmed. We should not explain or give more information than the needed or give morbid details of what has happened. **The shorter an explanation is, the more security it will give.** 
+
+    Listen to what the person tells us without judging and give it the importance it has. It is preferable, to tell them that you do not know something than to tell them something you are not sure which later may not be true. 
+
+4. **Normalize.** Normalize the symptoms and what is happening to the person. Make them see that they are not the only ones who have these feelings or reactions. **Help them realize it is normal to experience those feelings.**
+5. **Comfort.** Obviously, we have to **comfort them and give them support.** Try to make them feel useful. However, you have to accept that maybe you are not the one to comfort them the best. In this situation try to find the best way or person to comfort them.
+
 ## Why apply it
 
-## How to apply it
 
 ## Conclusions
 
