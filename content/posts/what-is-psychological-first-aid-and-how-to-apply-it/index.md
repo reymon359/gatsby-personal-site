@@ -2,12 +2,12 @@
 id: 'what-is-psychological-first-aid-and-how-to-apply-it'
 title: 'What is Psychological First Aid and how to apply it'
 description: 'Key concepts on Psychological First Aid to help people in the immediate aftermath of a disaster'
-date: '2021-02-17'
+date: '2021-02-18'
 author: 'Ramón Morcillo'
 categories: ['Software Development']
 tags: ['Psychology', 'Tutorial', 'Learning', 'Health']
 published: true
-commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/337
+commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/413
 featuredImage: './the_new_universe_76_1959_klaus_burgle.jpg'
 type: 'post'
 url: 'none'
@@ -47,8 +47,6 @@ After a month after the incident, if the person has not recovered from his norma
 ![The New Universe 85, 1968,  Klaus Bürgle.](./the_new_universe_85_1968_klaus_burgle.jpg)
 
 Here are **the 5 Psychological First Aid main steps.** The details and applications of each one vary with the patient's age; you don’t calm a baby the same way you do with a teenager or an old man. Anyway, the concept remains the same for any age.
-
-
 
 1. **Contain.** First, we have to give the person security, **make them feel safe.** The important point is to try to prevent the person's emotions, fears, feelings from overflowing.
 2. **Calm. Help the person relax** speaking in a slow voice, trying to conduct yourself as calmly as possible, lowering our activation tone. We will never tell the person that everything will be better when calmed down because it may not be true.
