@@ -30,7 +30,7 @@ I will share what I learned so anyone can experience it too. Be advised that I a
     - [Aperture](#Aperture)
     - [Shutter Speed](#Shutter-Speed)
 - [Conclusion](#Conclusion)
-- [Greetings](#Greetings)
+- [Acknowledgments](#Acknowledgments)
 
 ## The Location
 
@@ -87,9 +87,9 @@ By the way, the white lights are people climbing it with lanterns. You can appre
 
 At first, it seems complicated and hard to understand, or at least to understand the minimum to get a decent shot. However, with these concepts and practice, getting stars’ pictures becomes enjoyable and fun. 
 
-## Greetings
+## Acknowledgments
 
-Greetings to my housemates and my friend Unai who taught me these concepts in the first place. By the way, the cover photo is from one of those nights.
+Acknowledgments to my housemates and my friend Unai who taught me these concepts in the first place. By the way, the cover photo is from one of those nights.
 
 To end, you can edit the photos later to make them look better. Here is an edit Unai made with one of them.
 

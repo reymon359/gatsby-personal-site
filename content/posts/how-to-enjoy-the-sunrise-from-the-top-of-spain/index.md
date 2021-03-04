@@ -28,7 +28,7 @@ We were a five people group, a good number to stay close enough during the hike 
     - [Montaña Blanca](#Montaña-Blanca)
     - [The Peak](#The-Peak)
     - [Taking the cable-car down](#Taking-the-cable-car-down)
-- [Greetings](#Greetings)
+- [Acknowledgments](#Acknowledgments)
 - [Resources](#Resources)
 - [TL;DR](#TLDR)
 
@@ -131,7 +131,7 @@ Once you reach the cable-car Base Station, head to the car on Montaña Blanca st
 
 And that's all folks. I hope your doubts got solved and if you end up doing it I wish you to enjoy it as much as I did or even more.
 
-## Greetings
+## Acknowledgments
 
 ![The Teide Team ❤️](./the_teide_team.jpg)
 
