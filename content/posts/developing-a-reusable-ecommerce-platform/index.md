@@ -25,7 +25,7 @@ I will try to focus on the relevant parts as much as possible to make it easier 
 - [Architecture and Tech Stack](#Architecture-and-Tech-Stack)
 - [The second MVP](#The-second-MVP)
 - [Conclusion and lessons learned](#Conclusion-and-lessons-learned)
-- [Greetings](#Greetings)
+- [Acknowledgments](#Acknowledgments)
 
 ## Context
 
@@ -159,7 +159,7 @@ Here is some actual footage of us and the Integrations Team:
 
 **Make the client feel like part of the team.** At the beginning of the first MVP, there were too many clues and too little communication to clarify them so we were blocked sometimes or had to set up wasting-time meetings for them. The core of the problem, like most life ones, was a lack of communication therefore we solved it by increasing it, asking questions directly to the client, inviting them to retrospectives, daily standups, and other meetings even when they were not required, to keep them updated as much as possible. In the end, the more we communicated the more we made them feel part of the team, and the better we worked together.
 
-## Greetings
+## Acknowledgments
 
 I want to first thank my teammates. It has been a pleasure to work with them, starting each day eager to have fun together developing the project.
 
