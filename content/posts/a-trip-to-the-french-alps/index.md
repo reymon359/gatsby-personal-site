@@ -5,7 +5,7 @@ description: 'Trip to the French Alps, Lyon, Chamonix Mont-Blanc, and Turin.'
 date: '2020-10-03'
 author: 'Ramón Morcillo'
 categories: ['Adventures']
-tags: ['Adventures', 'Trip', 'City', 'Nature']
+tags: ['Adventures', 'Trips', 'City', 'Nature']
 published: true
 commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/195
 featuredImage: './alps_view_from_aiguille_du_midi.jpg'
