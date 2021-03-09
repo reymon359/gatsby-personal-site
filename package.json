@@ -8,7 +8,6 @@
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
-    "format": "prettier \"**/*.{ts,tsx,js,jsx,json,md}\" --write",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
@@ -76,13 +75,10 @@
     "@typescript-eslint/eslint-plugin": "4.17.0",
     "@typescript-eslint/parser": "4.17.0",
     "eslint": "7.21.0",
-    "eslint-config-prettier": "7.2.0",
-    "eslint-plugin-prettier": "3.3.1",
     "eslint-plugin-react": "7.22.0",
     "eslint-plugin-react-hooks": "4.2.0",
     "gh-pages": "3.1.0",
     "husky": "4.3.8",
-    "prettier": "2.2.1",
     "typescript": "4.2.3"
   },
   "keywords": [
