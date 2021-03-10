@@ -67,7 +67,7 @@ There is great biological diversity from humid forests to arid deserts and high 
 
 Sometimes _Calima_ situations occur. Calima (haze) is the local term used to describe the presence of suspended dust that comes from the African continent (mainly from the Sahara and Sahel deserts).
 
-![Santa Cruz de Tenerife covered by the haze. [Source.]https://www.eleconomista.es/canarias/noticias/10446389/03/20/Que-papel-ha-jugado-la-calima-en-la-contencion-del-coronavirus-en-Canarias.html)](./assets/santa_cruz_de_tenerife_covered_by_the_haze.jpg)
+![Santa Cruz de Tenerife covered by the haze. [Source.](https://www.eleconomista.es/canarias/noticias/10446389/03/20/Que-papel-ha-jugado-la-calima-en-la-contencion-del-coronavirus-en-Canarias.html)](./assets/santa_cruz_de_tenerife_covered_by_the_haze.jpg)
 
 The flora is very different compared to the mainland one. From all the new variety of plants you can find here, there is one that stands out and only lives here: The **Canary Islands dragon tree** or **Drago**.
 
@@ -108,3 +108,76 @@ Its **flag** colors represent the two provinces separated by the sea. The white 
 
 ![Canary flag in a handmade mask I bought on Guaza’s flea market, Tenerife.](./assets/canary_flag_in_a_handmade_mask_i_bought_on_guaza_s_flea_market_tenerife.jpg)
 
+## Gastronomy
+
+Every island has its own distinctive food. However, there are some meals that you will be able to find in all of them. Seafood is very common too, the sea is close after all.
+
+
+### Papas arrugadas
+
+Probably the most well-known meal from the islands. They are small baked potatoes that are frequently accompanied by _mojos_. They are called **arrugadas** which means they have wrinkles on the skin.
+
+![Papas arrugadas from Restaurante Playa Casa Africa near Benijo, Tenerife.](./assets/papas_arrugadas_from_restaurante_playa_casa_africa_near_benijo_tenerife.jpg)
+
+### Mojos
+
+The main sauces from the Canary Islands. The _red mojo_ and the _green mojo_. The red is also known as "mojo picón". Although the red one is the best known outside the archipelago, both are equally important among the islands.
+
+![Chocos (little sepias) served with green mojo and papas arrugadas in Tasca Restaurante Los Pinos, Garachico, Tenerife.](./assets/chocos_little_sepias_served_with_green_mojo_and_papas_arrugadas_in_tasca_restaurante_los_pinos_garachico_tenerife.jpg)
+
+The red one is normally spicier and is made with peppers. It is commonly served with meats while the green one is used for fish and is made with green pepper, parsley, and garlic.
+
+![Local grilled meat served with red mojo in Guachinche Los Gómez, Tenerife.](./assets/local_grilled_meat_served_with_red_mojo_in_guachinche_los_gomez_tenerife.jpg)
+
+### Goat food
+
+Goats are the dominant farm animal on the islands therefore a lot of meals are made with resources coming from them. The smoked cheese with mojos and or palm honey was my favorite starter there.
+
+![Smoked goat cheese covered with mojos in Guachinche El Cubano, Tenerife.](./assets/smoked_goat_cheese_covered_with_mojos_in_guachinche_el_cubano_tenerife.jpg)
+
+### Gofio
+
+If there is a distinctive food from the Canary islands it has to be the Gofio.
+
+> Gofio is a sort of Canarian flour made from roasted grains (typically wheat or certain varieties of maize) or other starchy plants - [Wikipedia](https://en.wikipedia.org/wiki/Gofio)
+
+Canary people use it in plenty of dishes: soups, stews, desserts, etc. If you are in La Palma,  it is worth visiting the Gofio Interpretation Museum (MIGO)  to learn in-depth about this food.
+
+![Escaldón from Guachinche La Salud - Los Gómez, Tenerife.](./assets/escaldon_from_guachinche_la_salud_los_gomez_tenerife.jpg)
+
+
+![Gofio sprinkled over cod and mojos in Bodegón San Vicente, Tenerife.](./assets/gofio_sprinkled_over_cod_and_mojos_in_bodegon_san_vicente_tenerife.jpg)
+
+### Desserts
+
+To end the meal there is nothing better than a “Quesillo” or “Polvito Uruguayo”. The first one is a mix between cheesecake and flan. 
+
+![Quesillo from Restaurante Playa Casa Africa near Benijo, Tenerife.](./assets/quesillo_from_restaurante_playa_casa_africa_near_benijo_tenerife.jpg)
+
+The Polvito Uruguayo on the other hand is made of cream, caramel, and cookies.
+
+![Polvito Uruguayo en Guachinche La Casona, Tenerife.](./assets/polvito_uruguayo_en_guachinche_la_casona_tenerife.jpg)
+
+### Venezuelan food
+
+The Canary Islands have historically been influenced by Venezuela and a great part of its population comes from there. Therefore, plenty of its cuisine and restaurants are Venezuelan. Be careful because it’s easy to fall in love with their “Tequeños” and “Cachapas”.
+
+![Tequeños and empanadas from Arepera Las Rosas, Tenerife.](./assets/tequenos_and_empanadas_from_arepera_las_rosas_tenerife.jpg)
+
+![Cachapa Reina pepiada from La Real Tasca Cafetería, La Palma.](./assets/cachapa_reina_pepiada_from_la_real_tasca_cafeteria_la_palma.jpg)
+
+![Different arepas from Arepera Las Rosas, Tenerife.](./assets/different_arepas_from_arepera_las_rosas_tenerife.jpg)
+
+### Fish and Seafood
+
+Fish and seafood are also quite common and of good quality.
+
+![Alfonsino from Restaurante Mundial 82, Tenerife.](./assets/alfonsino_from_restaurante_mundial_82_tenerife.jpg)
+
+![Lapas with Green mojo from Restaurante Playa Casa Africa near Benijo, Tenerife.](./assets/lapas_with_green_mojo_from_restaurante_playa_casa_africa_near_benijo_tenerife.jpg)
+
+### Others
+
+Here are common food products among the Canary Islands very rare around other world places. The most distinctive are the crisps **Munchitos,** the soda **Clipper,** and the candy bars **Ambrosias.**
+
+![Munchitos, Strawberry Clipper and Ambrosias](./assets/munchitos_strawberry_clipper_and_ambrosias.jpg)
