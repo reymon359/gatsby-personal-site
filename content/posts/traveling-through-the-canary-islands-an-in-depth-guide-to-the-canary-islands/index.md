@@ -186,5 +186,35 @@ Here are common food products among the Canary Islands very rare around other wo
 
 There are eight islands on the archipelago and all of them are unique. I have not visited El Hierro, La Gomera and La Graciosa, _yet._ Therefore I will focus more on the other ones I was able to travel to.
 
-
 ![Map of the Canary Islands from [Wikipedia.](https://en.wikipedia.org/wiki/Canary_Islands#/media/File:Map_of_the_Canary_Islands.svg)](./assets/map_of_the_canary_islands_from_wikipedia.jpg)
+
+## Tenerife
+
+The greatest of them. This island offers plenty of things to do from beaches, museums, hiking, or visiting local towns. If you are looking for a place to stay when visiting it remember the north of the island has more local life, and the south is more oriented to mass tourism. Therefore, if you want to have a better experience I would suggest you stay on the island’s north side.
+
+### Gastronomy
+
+Tenerife is well-known for its **Guachinches.** They are an establishment where locally produced wine is served accompanied by homemade traditional food. They are originally from the _Orotava Valley._
+
+![Guachinche El Cubano Tenerife.](./assets/guachinche_el_cubano_tenerife.jpg)
+
+The most typical dishes you should try from these places are the “Ropa vieja”, “Carne de fiesta”, the Gofio-made “Escaldón” and grilled meat. 
+
+![Ropa vieja and grilled meat from the Guachinche El Cubano, Tenerife.](./assets/ropa_vieja_and_grilled_meat_from_the_guachinche_el_cubano_tenerife.jpg)
+
+Most of them will also have delicious homemade Spanish croquetas.
+
+![Croquetas from Guachinche La Salud - Los Gómez.](./assets/croquetas_from_guachinche_la_salud_los_gomez.jpg)
+
+Speaking about croquetas, an honorable mention has to be made to the amazing _banana croquetas_ I ate in Garachico at _Tasca Restaurante Los Pinos._
+
+![Banana croquetas from Tasca Restaurante Los Pinos - Garachico - Tenerife.](./assets/banana_croquetas_from_tasca_restaurante_los_pinos_garachico_tenerife.jpg)
+
+If you are into **beer** _Dorada_ is the main from Tenerife. Their logo is obviously The Teide. They have a wide variety to choose from.
+
+![Dorada Beer types.](./assets/dorada_beer_types.jpg)
+
+And for **coffee** lovers, you can’t leave this island without trying the _Barraquito_ or _Zaperoco._ A multi-layered coffee liqueur drink. Each layer references Coffee, Licor 43, milk, and is usually accompanied by cinnamon and or/lemon peel.
+
+![Barraquitos from Guachinche La Casona.](./assets/barraquitos_from_guachinche_la_casona.jpg )
+
