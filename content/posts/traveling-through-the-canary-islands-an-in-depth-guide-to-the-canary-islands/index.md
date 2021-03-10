@@ -57,4 +57,27 @@ Most of the pictures and data from this guide come from my time living there how
 - [La Graciosa](#La Graciosa)	
 - [Acknowledgments](#Acknowledgments)	
 
+## Nature
 
+Being an Atlantic archipelago of volcanic origin, the nature of the Canary Islands offers original landscapes. A subtropical climate is found among them that varies depending on the altitude.
+
+There is great biological diversity from humid forests to arid deserts and high mountain areas.
+
+![Landscapes from Gran Canaria, Fuerteventura, and Tenerife.](./assets/landscapes_from_gran_canaria_fuerteventura_and_tenerife.jpg)
+
+Sometimes _Calima_ situations occur. Calima (haze) is the local term used to describe the presence of suspended dust that comes from the African continent (mainly from the Sahara and Sahel deserts).
+
+![Santa Cruz de Tenerife covered by the haze. [Source.]https://www.eleconomista.es/canarias/noticias/10446389/03/20/Que-papel-ha-jugado-la-calima-en-la-contencion-del-coronavirus-en-Canarias.html)](./assets/santa_cruz_de_tenerife_covered_by_the_haze.jpg)
+
+The flora is very different compared to the mainland one. From all the new variety of plants you can find here, there is one that stands out and only lives here: The **Canary Islands dragon tree** or **Drago**.
+
+![Drago in Santa Cruz de Tenerife, Tenerife and others near the Buracas Caves, La Palma.](./assets/drago_in_santa_cruz_de_tenerife_tenerife_and_others_near_the_buracas_caves_la_palma.jpg)
+
+There is another tree that can be found in other parts of the world, however, the variety of the Canary Islands is unique. The **Canary Pine** is the most abundant tree in the Canary Archipelago from where it is endemic. It can reach heights greater than 60 m and the most shocking: Is resistant to fire! This is due to the thickness of the bark which is why it survives moderate fires.
+
+![Canary Pine pictures from Tenerife and La Palma.](./assets/canary_pine_pictures_from_tenerife_and_la_palma.jpg)
+
+The Canary Islands are known around the globe to be [a perfect stargazing spot.](https://ramonmorcillo.com/basic-tips-for-amateur-star-photography/) The quality and low light pollution of its skies are such that they have multiple Observatories. La Palma and Tenerife have two international astronomical observatories of the International Astronomical Center dedicated to the _study of how the universe in which we live works._
+
+
+![Observatory in La Palma and the Milky Way over the Teide.](./assets/observatory_in_la_palma_and_the_milky_way_over_the_teide.jpg)
