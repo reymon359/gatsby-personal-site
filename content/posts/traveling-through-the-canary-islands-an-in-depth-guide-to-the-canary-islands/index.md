@@ -12,3 +12,16 @@ featuredImage: './assets/cofete_beach.jpg'
 type: 'post'
 url: 'none'
 ---
+The Canary Islands are a Spanish archipelago located in the Atlantic Ocean, west of Morocco. Here I will share the knowledge and experiences from my time living there for anyone planning to visit the Islands. This guide will provide a general view of them and then focus on the ones I visited.
+
+This guide is based on my own experience therefore some aspects and opinions are not as objective as others.
+
+By the way here is the map from my [World Places project](https://ramonmorcillo.com/map) where I added some of my favorite places from them and others that people suggested to me. To use it, have a look at the legend and select the layers you are interested in.
+
+&lt;iframe height="480" width="640" src="[https://www.google.com/maps/d/u/0/embed?mid=1O0IseePWpXqpT0v6srZyZMRDAvHhpWDg&amp;ll=28.362176239479567%2C-16.220206526556023&amp;z=7](https://www.google.com/maps/d/u/0/embed?mid=1O0IseePWpXqpT0v6srZyZMRDAvHhpWDg&amp;ll=28.362176239479567%2C-16.220206526556023&amp;z=7)">&lt;/iframe>
+
+Although I did not visit every island, a good reason to go back in the future, I can confirm a well-known fact about them: _they are all very different._ Each one has different landscapes, culture, and gastronomy.
+
+This fact is perfect because no matter what your travel style is, you will find one that suits your needs.
+
+Most of the pictures and data from this guide come from my time living there however other external resources properly credited have been used too. 
