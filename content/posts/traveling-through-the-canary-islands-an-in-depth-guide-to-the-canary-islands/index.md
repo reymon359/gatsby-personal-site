@@ -181,3 +181,10 @@ Fish and seafood are also quite common and of good quality.
 Here are common food products among the Canary Islands very rare around other world places. The most distinctive are the crisps **Munchitos,** the soda **Clipper,** and the candy bars **Ambrosias.**
 
 ![Munchitos, Strawberry Clipper and Ambrosias](./assets/munchitos_strawberry_clipper_and_ambrosias.jpg)
+
+## Islands
+
+There are eight islands on the archipelago and all of them are unique. I have not visited El Hierro, La Gomera and La Graciosa, _yet._ Therefore I will focus more on the other ones I was able to travel to.
+
+
+![Map of the Canary Islands from [Wikipedia.](https://en.wikipedia.org/wiki/Canary_Islands#/media/File:Map_of_the_Canary_Islands.svg)](./assets/map_of_the_canary_islands_from_wikipedia.jpg)
