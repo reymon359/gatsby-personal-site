@@ -81,3 +81,30 @@ The Canary Islands are known around the globe to be [a perfect stargazing spot.]
 
 
 ![Observatory in La Palma and the Milky Way over the Teide.](./assets/observatory_in_la_palma_and_the_milky_way_over_the_teide.jpg)
+
+## History
+
+The first Indigenous peoples of the Canary Islands were the **Guanches**. They supposedly arrived from North African and are related to the _Berbers. _However, I heard other theories that relate them to other ancient civilizations like the Vikings, Phoenicians, or Romans.
+
+![Guanches sculptures in Tenerife and Fuerteventura.](./assets/guanches_sculptures_in_tenerife_and_fuerteventura.jpg)
+
+In the 14th century, Europe began to rediscover the islands. And in the **15th the Conquest of the Canary Islands by Spain** started with Lanzarote and Fuerteventura and ended with Tenerife in 1495. **In 1492 Columbus' fleet sailed from La Gomera, towards the New World.**
+
+![Timeline from the Cultural Park La Zarza museum in La Palma.](./assets/timeline_from_the_cultural_park_la_zarza_museum_in_la_palma.jpg)
+
+**Until the 18th century,** Immigrants from Europe came to the Canary Islands, and from the Canary Islands, emigrants also left America.
+
+Other nations tried to seize the Canary Islands from Spain. The most famous that could have changed the fate of the archipelago occurred in 1797. The British Vice-Admiral Nelson along with 4000 soldiers were defeated trying to conquer Santa Cruz de Tenerife defended by barely 500 Spaniards, a French detachment, and local militias.
+
+**In the 20th century,** the Spanish civil war, postwar, and the dictatorship of General Franco brought times of misery and emigration, mainly to Venezuela.
+
+Since the 1960s, **mass tourism** has burst into the islands as a new economic alternative, which lasts until today. 
+
+![Mass tourism buildings and signs found along the islands.](./assets/mass_tourism_buildings_and_signs_found_along_the_islands.jpg)
+
+After the approval of the Spanish Constitution in 1982, the process of formation of the State of the Autonomies began. **Nowadays the Canary Islands is one of Spain’s 19 autonomous communities.**
+
+Its **flag** colors represent the two provinces separated by the sea. The white color of the _Province of Santa Cruz de Tenerife_ and the yellow color of the _Province of Las Palmas._
+
+![Canary flag in a handmade mask I bought on Guaza’s flea market, Tenerife.](./assets/canary_flag_in_a_handmade_mask_i_bought_on_guaza_s_flea_market_tenerife.jpg)
+
