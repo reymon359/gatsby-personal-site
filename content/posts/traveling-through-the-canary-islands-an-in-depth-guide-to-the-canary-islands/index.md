@@ -12,6 +12,7 @@ featuredImage: './assets/cofete_beach.jpg'
 type: 'post'
 url: 'none'
 ---
+
 The Canary Islands are a Spanish archipelago located in the Atlantic Ocean, west of Morocco. Here I will share the knowledge and experiences from my time living there for anyone planning to visit the Islands. This guide will provide a general view of them and then focus on the ones I visited.
 
 This guide is based on my own experience therefore some aspects and opinions are not as objective as others.
@@ -25,3 +26,35 @@ Although I did not visit every island, a good reason to go back in the future, I
 This fact is perfect because no matter what your travel style is, you will find one that suits your needs.
 
 Most of the pictures and data from this guide come from my time living there however other external resources properly credited have been used too. 
+
+## Table of Contents
+
+// TODO: FInish this properly
+
+- [Nature](#Nature)	
+- [History](#History)	
+- [Gastronomy](#Gastronomy)	
+- [Islands](#Islands)	
+- [Tenerife](#Tenerife)	
+- [Gastronomy](#Gastronomy)	
+- [Cities and towns](#Cities and towns)	
+- [Nature](#Nature)	
+- [Gran Canaria](#Gran Canaria)	
+- [Gastronomy](#Gastronomy)	
+- [Cities and towns](#Cities and towns)	
+- [Nature](#Nature)	
+- [La Palma](#La Palma)	
+- [Gastronomy](#Gastronomy)	
+- [Cities and towns](#Cities and towns)	
+- [Nature](#Nature)	
+- [Fuerteventura](#Fuerteventura)	
+- [Gastronomy](#Gastronomy)	
+- [Cities and towns](#Cities and towns)	
+- [Nature](#Nature)	
+- [La Gomera](#La Gomera)	
+- [El hierro](#El hierro)	
+- [Lanzarote](#Lanzarote)	
+- [La Graciosa](#La Graciosa)	
+- [Acknowledgments](#Acknowledgments)	
+
+
