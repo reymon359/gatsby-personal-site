@@ -218,3 +218,32 @@ And for **coffee** lovers, you can’t leave this island without trying the _Bar
 
 ![Barraquitos from Guachinche La Casona.](./assets/barraquitos_from_guachinche_la_casona.jpg )
 
+### Cities and towns
+
+I will not focus on the most touristic places like Las Américas, Los Cristianos, Puerto de la Cruz, or the Capital of Santa Cruz but on the hidden gems. The local towns worth a visit to see the authentic Tenerife.
+
+**La Laguna or San Cristobal de La Laguna.** Not a town but a city next to the capital Santa Cruz. University city which downtown has been classed as a World Heritage Place. It has its own microclimate and it is usually colder compared to other parts of the island. Remember to bring a jacket just in case.
+
+![The Cathedral and main streets of La Laguna.](./assets/the_cathedral_and_main_streets_of_la_laguna.jpg)
+
+**La Orotava.** A town with plenty of traditional colorful Canarian architecture. You will find traditional Canarias houses with balconies and courtyards. The _Casa de Los Balcones_ is a must-visit to get to know the traditional houses and how people lived there in the past.
+
+![Pictures from La Orotava including the Casa de Los Balcones and the cathedral.](./assets/pictures_from_la_orotava_including_the_casa_de_los_balcones_and_the_cathedral.jpg)
+
+**Icod de Los Vinos.** A large town in the north of the island home to _the oldest Dragon Tree in the world,_ which is believed to be over 800 years old. In addition, it has an amazing butterfly zoo that you should visit whether you like butterflies or not.
+
+![Icod de los Vinos pictures.](./assets/icod_de_los_vinos_pictures.jpg)
+
+**Garachico.** A picturesque coastal town once the most important port on the island until a volcanic eruption buried half the city in 1706.
+
+![Garachico pictures.](./assets/garachico_pictures.jpg)
+
+**Candelaria.** Located on the east coast, south of Santa Cruz. Next to its Basilica, there is a set of nine bronze statues, representing the nine Guanches. The Tenerife tribal leaders at the time of the Spanish conquest.
+
+![Candelaria pictures.](./assets/candelaria_pictures.jpg)
+
+**Masca.** The "hidden” town from the northwest of the island in the middle of the **Teno Rural Park.**
+
+![Masca pictures.](./assets/masca_pictures.jpg)
+
+
