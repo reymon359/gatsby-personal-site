@@ -246,4 +246,53 @@ I will not focus on the most touristic places like Las Américas, Los Cristianos
 
 ![Masca pictures.](./assets/masca_pictures.jpg)
 
+### Nature
 
+Tenerife is probably the one with the most nature diversity. Different local weather conditions and micro-climates around the island are provided by its unique climate and geography. All these different factors contribute to the presence of multiple types of plants and animals. As well as areas of forests, beaches, deserts, and mountains.
+
+**Teide National Park.** Named after [Mount Teide, the highest peak and volcano in Spain.](https://ramonmorcillo.com/how-to-enjoy-the-sunrise-from-the-top-of-spain/) There are trails that lead to the summit or you can take the cable-car. Other points of interest are the _Pico Viejo_ and the rock formations of _Roques de García._
+
+![Teide National Park pictures.](./assets/teide_national_park_pictures.jpg)
+
+**Rural Anaga Park.** Located in the north of the Island it was declared _Biosphere Reserve._ It is the place with the highest amount of endemism in Europe. It houses from humid dense forests to dream beaches along the Benijo coast.
+
+![Rural Anaga Park pictures.](./assets/rural_anaga_park_pictures.jpg)
+
+**Teno Rural Park.** Located on the north-west part of the island. The altitudes go from sea level to high peaks. The vegetation of this area varies according to how high you are.
+
+![Teno Rural Park pictures.](./assets/teno_rural_park_pictures.jpg)
+
+**The Orotava Valley.** Although it is not strictly speaking a valley, is the name given to the north-west lower slopes of the Teide. Named after La Orotava.  _La Caldera_ is one of the best nature spots for hiking here.
+
+![Orotava Valley and La Caldera pictures.](./assets/orotava_valley_and_la_caldera_pictures.jpg)
+
+**Charcos.** Around the coast of the island, you can find these beautiful volcanic rock swimming pools.
+
+![Charco del Viento y Charco de La Laja, Tenerife.](./assets/charco_del_viento_y_charco_de_la_laja_tenerife.jpg)
+
+
+
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
