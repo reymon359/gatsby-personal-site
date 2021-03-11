@@ -274,29 +274,29 @@ Tenerife is probably the one with the most nature diversity. Different local wea
 
 Home of the Canary Islands capital, Las Palmas de Gran Canaria. As happened in Tenerife, the south of the island is more oriented to tourists while the locals reside in the center and north. It was named this way because of the abundance of large dogs (_can_ in Latin) existing in it.
 
-![A big dog (Great Can) sculpture and t-shirt, Gran Canaria.](./assets/)
+![A big dog (Great Can) sculpture and t-shirt, Gran Canaria.](./assets/a_big_dog_great_can_sculpture_and_t_shirt_gran_canaria.jpg)
 
 ###  Gastronomy
 
 **Chorizo de Teror.** Original from the Teror locality. This red sausage is similar to the _sobrasada,_ and can be eaten alone or, given its softy, spread on bread.
 
-![Chorizo de Teror. [Source.](https://www.grancanaria.com/blog/en/article/the-special-flavour-of-teror/)](./assets/)
+![Chorizo de Teror. [Source.](https://www.grancanaria.com/blog/en/article/the-special-flavour-of-teror/)](./assets/chorizo_de_teror.jpg)
 
 **Carne de Cabra.** Goat's meat. This meal is more common in the interior regions of the island such as Tejeda.
 
-![Carne de Cabra in Cruz de Tejeda, Gran Canaria.](./assets/)
+![Carne de Cabra in Cruz de Tejeda, Gran Canaria.](./assets/carne_de_cabra_in_cruz_de_tejeda_gran_canaria.jpg)
 
 **Gofio escaldado.** Very similar to the _escaldón_ from Tenerife. A gofio-made plate accompanied by onions.
 
-![Gofio Escaldado in El Padrino Restaurante Las Palmas, Gran Canaria.](./assets/)
+![Gofio Escaldado in El Padrino Restaurante Las Palmas, Gran Canaria.](./assets/gofio_escaldado_in_el_padrino_restaurante_las_palmas_gran_canaria.jpg)
 
 **Truchas.** These sweet dumplings are sweets made with sweet potatoes, sugar, and cinnamon. Are found along all the island.
 
-![Truchas from Gran Canaria.](./assets/)
+![Truchas from Gran Canaria.](./assets/truchas_from_gran_canaria.jpg)
 
 When it comes to drinks, and more specifically **beers,** the classic one from Gran Canaria is the **Tropical.** Known for having the logo of a dog that turns blue when the beer is cold. A nifty way to help people know when it's ready to drink. Mention that **sparkling water** is much more common on this island than on others.
 
-![Tropical beer pictures.](./assets/)
+![Tropical beer pictures.](./assets/tropical_beer_pictures.jpg)
 
 
 ![](./assets/)
