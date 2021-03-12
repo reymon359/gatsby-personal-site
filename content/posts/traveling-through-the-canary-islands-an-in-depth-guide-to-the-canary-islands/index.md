@@ -298,6 +298,73 @@ When it comes to drinks, and more specifically **beers,** the classic one from G
 
 ![Tropical beer pictures.](./assets/tropical_beer_pictures.jpg)
 
+###  Cities and towns
+
+The mass tourism cities in the south are so artificial that you feel like being in a theme park. To The most important ones are _Maspalomas,_ _Playa del Inglés,_ or _Puerto de Mogán._
+
+I will list here the towns and places worth visiting if you want to see the beautiful architecture and local life of Gran Canaria.
+
+**Vegueta.** The founding neighborhood of Las Palmas de Gran Canaria. If you visit or stay at the capital make sure to take a walk around its streets to go back to a different era in the past.
+
+![Vegueta neighborhood pictures.](./assets/)
+
+**Tejeda** and **Cruz de Tejeda.** Located in the center, Tejeda is famous for being credited as one of the most beautiful towns in Spain. The second one is a charming waypoint to make an stop or begin a hike from.
+
+![Tejeda and Cruz de Tejeda pictures.](./assets/)
+
+**Telde.** The second most populous municipality on the island. The oldest city and the first capital of the island. This can be appreciated when you walk through of its neighborhoods
+
+![Telde pictures.](./assets/)
+
+**Teror.** A lovely town whith streets full of houses with beautiful balconies. Mainly known for two things, its **chorizo** and the enormous **pine** from the main square. The latter gives name to the _Virgen del Pino_ (Virgin of the pine), patron of Gran Canaria.
+
+![Teror pictures.](./assets/)
+
+**Agaete.** A coastal town located in the northwest. Its beautiful seaport “Puerto de las Nieves” is where the daily ferry with the island of Tenerife heads from. A rock formation known as the _Finger of God_ that looks like a human finger rises up off the coast.
+
+![Agaete pictures.](./assets/)
+
+
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
 
 ![](./assets/)
 
