@@ -306,23 +306,23 @@ I will list here the towns and places worth visiting if you want to see the beau
 
 **Vegueta.** The founding neighborhood of Las Palmas de Gran Canaria. If you visit or stay at the capital make sure to take a walk around its streets to go back to a different era in the past.
 
-![Vegueta neighborhood pictures.](./assets/)
+![Vegueta neighborhood pictures.](./assets/vegueta_neighborhood_pictures.jpg)
 
 **Tejeda** and **Cruz de Tejeda.** Located in the center, Tejeda is famous for being credited as one of the most beautiful towns in Spain. The second one is a charming waypoint to make an stop or begin a hike from.
 
-![Tejeda and Cruz de Tejeda pictures.](./assets/)
+![Tejeda and Cruz de Tejeda pictures.](./assets/tejeda_and_cruz_de_tejeda_pictures.jpg)
 
 **Telde.** The second most populous municipality on the island. The oldest city and the first capital of the island. This can be appreciated when you walk through of its neighborhoods
 
-![Telde pictures.](./assets/)
+![Telde pictures.](./assets/telde_pictures.jpg)
 
 **Teror.** A lovely town whith streets full of houses with beautiful balconies. Mainly known for two things, its **chorizo** and the enormous **pine** from the main square. The latter gives name to the _Virgen del Pino_ (Virgin of the pine), patron of Gran Canaria.
 
-![Teror pictures.](./assets/)
+![Teror pictures.](./assets/teror_pictures.jpg)
 
 **Agaete.** A coastal town located in the northwest. Its beautiful seaport “Puerto de las Nieves” is where the daily ferry with the island of Tenerife heads from. A rock formation known as the _Finger of God_ that looks like a human finger rises up off the coast.
 
-![Agaete pictures.](./assets/)
+![Agaete pictures.](./assets/agaete_pictures.jpg)
 
 
 
