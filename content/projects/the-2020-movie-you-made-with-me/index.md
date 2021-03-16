@@ -1,0 +1,13 @@
+---
+id: 'the-2020-movie-you-made-with-me'
+title: 'The 2020 movie you made with me'
+description: "A compilation of the best moments of 2020 with all the people who have made it so special and unforgettable."
+date: '2021-03-16'
+author: 'Ramón Morcillo'
+categories: ['Adventures']
+tags: [ 'Movie', 'Compilation', 'Personal', 'Adventures' ]
+published: true
+featuredImage: './the-2020-movie-you-made-with-me.jpg'
+type: 'project'
+url: 'https://youtu.be/Ezkhm9QNIt0'
+---
