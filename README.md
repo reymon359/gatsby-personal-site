@@ -57,6 +57,7 @@ This site is meant to be a place to add and share my works about the things I le
 - **[Styled-Components](https://styled-components.com):** CSS in JS Library for the styles.
 - **[GraphQL](https://graphql.org/):** The query language used to access the data with Gatsby.
 - **[Commitlint](https://github.com/conventional-changelog/commitlint):** To enforce [conventional commit format](https://www.conventionalcommits.org/).
+- **[ESlint](https://eslint.org/):** To find and fix problems in your JavaScript code. Although [Prettier](https://prettier.io/) was used to format files now the linter `fix` option does it.
 - **[GitHub Actions](https://github.com/features/actions):** GitHub's Continuous Integration & Delivery tool.
 - **[Renovate](https://renovate.whitesourcesoftware.com/):** Free, open-source app to automate the update of dependencies.
 - **[GitHub Issues and Pull Requests Templates](https://docs.github.com/en/github/building-a-strong-community/about-issue-and-pull-request-templates):** Templates to submit new Issues and Pull Requests.
@@ -71,16 +72,10 @@ Download it and run `npm install`
 
 In the project directory, you can run:
 
-### `npm run start`
+### `npm run develop`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
-
-
-### `npm run format`
-
-formats document files according to the rules of the `.prettierrc` file.<br />
-See more information about prettier configuration [here](https://prettier.io/docs/en/configuration.html).
 
 ### `npm run build`
 
