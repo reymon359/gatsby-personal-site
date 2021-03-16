@@ -5,7 +5,7 @@ description: 'A map with world places I have visited and want to go.'
 date: '2020-11-01'
 author: 'Ramón Morcillo'
 categories: ['Adventures']
-tags: [ 'Adventures', 'Personal', 'Trips' ]
+tags: [ 'Adventures', 'Trips' ]
 published: true
 featuredImage: './world-places.jpg'
 type: 'project'

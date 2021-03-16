@@ -4,8 +4,8 @@ title: 'Timeline'
 description: "A GitHub project to keep track of projects, courses, and other stuff"
 date: '2019-06-01'
 author: 'Ramón Morcillo'
-categories: ['Personal']
-tags: [ 'Personal', 'GitHub' ]
+categories: []
+tags: [ 'GitHub' ]
 published: false
 featuredImage: './timeline.png'
 type: 'project'
