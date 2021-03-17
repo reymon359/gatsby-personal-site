@@ -324,15 +324,26 @@ I will list here the towns and places worth visiting if you want to see the beau
 
 ![Agaete pictures.](./assets/agaete_pictures.jpg)
 
+### Nature
 
+The second largest island in the archipelago is more than a beach island. The interior of Gran Canaria has plenty of mountains and astonishing areas to explore.
 
-![](./assets/)
+**Roque Nublo.** The third highest place in Gran Canaria. Located in the geographic center of the island, near Tejeda. When declared a Natural Area and Rural Park it got converted into a Canarian symbol. The desert landscape that surrounds this giant stone seems from another planet.
 
-![](./assets/)
+![Roque Nublo pictures.](./assets/roque-nublo-pictures.jpg)
 
-![](./assets/)
+**Maspalomas Dunes.** South from the mass tourism city _Playa del Inglés._ A sea of sand considered a small desert. Its appearance changes according to the wind hence every day the dune landscape gives you a different picture.
 
-![](./assets/)
+![Maspalomas Dunes pictures.](./assets/maspalomas-dunes-pictures.jpg)
+
+**Pico de las nieves.** Not far from Roque Nublo. It is the highest peak of the island (1,949 meters.). A spot to visit for the views and the surrounding routes.
+ 
+![Pico de las nieves pictures.](./assets/pico-de-las-nieves-pictures.jpg)
+
+**Tamadaba Natural Park.** Located in the west of the island this mountain range is undoubtedly one of the most beautiful parts of Gran Canaria and probably my favorite one. From **Agaete** until the **Mirador del Balcon** you will find natural wild beaches, view spots, and hidden lagoons like the **Charco Azul.**
+
+![Tamadaba Natural Park pictures.](./assets/tamadaba-natural-park-pictures.jpg)
+
 
 ![](./assets/)
 
