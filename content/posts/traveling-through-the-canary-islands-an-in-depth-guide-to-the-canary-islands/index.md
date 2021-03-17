@@ -330,22 +330,27 @@ The second largest island in the archipelago is more than a beach island. The in
 
 **Roque Nublo.** The third highest place in Gran Canaria. Located in the geographic center of the island, near Tejeda. When declared a Natural Area and Rural Park it got converted into a Canarian symbol. The desert landscape that surrounds this giant stone seems from another planet.
 
-![Roque Nublo pictures.](./assets/roque-nublo-pictures.jpg)
+![Roque Nublo pictures.](./assets/roque_nublo_pictures.jpg)
 
 **Maspalomas Dunes.** South from the mass tourism city _Playa del Inglés._ A sea of sand considered a small desert. Its appearance changes according to the wind hence every day the dune landscape gives you a different picture.
 
-![Maspalomas Dunes pictures.](./assets/maspalomas-dunes-pictures.jpg)
+![Maspalomas Dunes pictures.](./assets/maspalomas_dunes_pictures.jpg)
 
 **Pico de las nieves.** Not far from Roque Nublo. It is the highest peak of the island (1,949 meters.). A spot to visit for the views and the surrounding routes.
  
-![Pico de las nieves pictures.](./assets/pico-de-las-nieves-pictures.jpg)
+![Pico de las nieves pictures.](./assets/pico_de_las_nieves_pictures.jpg)
 
 **Tamadaba Natural Park.** Located in the west of the island this mountain range is undoubtedly one of the most beautiful parts of Gran Canaria and probably my favorite one. From **Agaete** until the **Mirador del Balcon** you will find natural wild beaches, view spots, and hidden lagoons like the **Charco Azul.**
 
-![Tamadaba Natural Park pictures.](./assets/tamadaba-natural-park-pictures.jpg)
+![Tamadaba Natural Park pictures.](./assets/tamadaba_natural_park_pictures.jpg)
+
+## La Palma
+
+Known as “La Isla Bonita” (the beautiful island). It Is the greenest one full of lush forests. A perfect destination for hiking and [stargazing](https://ramonmorcillo.com/basic-tips-for-amateur-star-photography/). You can find international observatories in the _Roque de Los Muchachos,_ the second highest canary peak after the Teide. UNESCO declared the whole island of La Palma a World Biosphere Reserve.
+
+![La Palma green landscapes pictures.](./assets/la_palma_green_landscapes_pictures.jpg)
 
 
-![](./assets/)
 
 ![](./assets/)
 
