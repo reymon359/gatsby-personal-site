@@ -4,7 +4,7 @@ title: 'Traveling through The Canary Islands: An in-depth guide to the Canary Is
 description: 'A compilation of personal knowledge from the Canary Islands to help people get to know them better'
 date: '2021-03-01'
 author: 'Ramón Morcillo'
-tags: ['Adventures', 'Trips', 'Canary Islands', 'guide']
+tags: ['Adventures', 'Trips', 'Canary Islands', 'Guide']
 published: true
 commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/337
 featuredImage: './assets/cofete_beach.jpg'
@@ -14,9 +14,7 @@ url: 'none'
 
 The Canary Islands are a Spanish archipelago located in the Atlantic Ocean, west of Morocco. Here I will share the knowledge and experiences from my time living there for anyone planning to visit the Islands. This guide will provide a general view of them and then focus on the ones I visited.
 
-This guide is based on my own experience therefore some aspects and opinions are not as objective as others.
-
-Here is the map from my [World Places project](https://ramonmorcillo.com/map) where I added some of my favorite places from them and others that people suggested to me. To use it, have a look at the legend and select the layers you are interested in.
+Here is the map from my [World Places project](https://ramonmorcillo.com/map) where I added my favorite places from them and others that people suggested to me. To use it, have a look at the legend and select the layers you are interested in.
 
 <iframe height="350" width="640" src="https://www.google.com/maps/d/u/0/embed?mid=1O0IseePWpXqpT0v6srZyZMRDAvHhpWDg&amp;ll=28.362176239479567%2C-16.220206526556023&amp;z=7"></iframe>
 
@@ -24,7 +22,9 @@ Although I did not visit every island, a good reason to go back in the future, I
 
 This fact is perfect because no matter what your travel style is, you will find one that suits your needs.
 
-Most of the pictures and data from this guide come from my time living there however other external resources properly credited have been used too. 
+Most of the pictures and data from this guide come from my time living there. Other external resources properly credited have been used.
+
+This guide will focus first on the general aspects of all the islands and then on the specific characteristics of each of them.
 
 ## Table of Contents
 
@@ -115,7 +115,7 @@ Its **flag** colors represent the two provinces separated by the sea. The white 
 
 ## Gastronomy
 
-Every island has its own distinctive food. However, there are some meals that you will be able to find in all of them. Seafood is very common too, the sea is close after all.
+Every island has its own distinctive food. However, there are meals that you will be able to find in all of them. Seafood is very common, the sea is close after all.
 
 
 ### Papas arrugadas
@@ -219,7 +219,7 @@ If you are into **beer** _Dorada_ is the main from Tenerife. Their logo is obvio
 
 ![Dorada Beer types.](./assets/dorada_beer_types.jpg)
 
-And for **coffee** lovers, you can’t leave this island without trying the _Barraquito_ or _Zaperoco._ A multi-layered coffee liqueur drink. Each layer references Coffee, Licor 43, milk, and is usually accompanied by cinnamon and or/lemon peel.
+And for **coffee** lovers, you can’t leave this island without trying the _Barraquito_ or _Zaperoco._ A multi-layered coffee liqueur drink. Each layer references Coffee, Licor 43, milk, and accompanied by cinnamon and or/lemon peel.
 
 ![Barraquitos from Guachinche La Casona.](./assets/barraquitos_from_guachinche_la_casona.jpg )
 
@@ -227,7 +227,7 @@ And for **coffee** lovers, you can’t leave this island without trying the _Bar
 
 I will not focus on the most touristic places like Las Américas, Los Cristianos, Puerto de la Cruz, or the Capital of Santa Cruz but on the hidden gems. The local towns worth a visit to see the authentic Tenerife.
 
-**La Laguna or San Cristobal de La Laguna.** Not a town but a city next to the capital Santa Cruz. University city which downtown has been classed as a World Heritage Place. It has its own microclimate and it is usually colder compared to other parts of the island. Remember to bring a jacket just in case.
+**La Laguna or San Cristobal de La Laguna.** Not a town but a city next to the capital Santa Cruz. University city which downtown has been classed as a World Heritage Place. It has its own colder microclimate compared to other parts of the island. Remember to bring a jacket just in case.
 
 ![The Cathedral and main streets of La Laguna.](./assets/the_cathedral_and_main_streets_of_la_laguna.jpg)
 
@@ -375,7 +375,7 @@ The **Tea Wine** made on this island is a unique variety not found anywhere else
 
 ### Cities and towns
 
-**Santa Cruz de la Palma.** The capital of the island whose traditions are based on the sea. Its downtown was classified as a Historic-Artistic Complex since it preserves many buildings from the 16th and 17th centuries. An example is the unique set of wooden balconies that overlook the sea.
+**Santa Cruz de la Palma.** The capital of the island whose traditions are based on the sea. Its downtown was classified as a Historic-Artistic Complex since it preserves buildings from the 16th and 17th centuries. An example is the unique set of wooden balconies that overlook the sea.
 
 ![Wooden Balconies in Santa Cruz de La Palma.](./assets/wooden_balconies_in_santa_cruz_de_la_palma.jpg)
 
@@ -402,7 +402,7 @@ A little further south from Tijarafe you find the viewpoint of **El Time.** A mu
 
 ![Tijarafe pictures and views from the viewpoint of El Time, La Palma.](./assets/tijarafe_pictures_and_views_from_the_viewpoint_of_el_time_la_palma.jpg)
 
-**Garafía.** Not a town but a municipality. Worth mentioning for some points of great cultural importance.
+**Garafía.** Not a town but a municipality. Worth mentioning for having points of great cultural importance.
 
 - **Museo de Interpretación del Gofio (MIGO).** The best place to learn about the history of the most fundamental Canarian food and understand all its secrets. It even preserves one of the iconic windmills for milling the grains.
 
