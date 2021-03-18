@@ -354,19 +354,19 @@ Known as “La Isla Bonita” (the beautiful island). It Is the greenest one ful
 
 **Chicharrones.** La Palma typical tapa made of square pieces from the pork belly bathed in gofio.
 
-![Chicharrones from Casa Pancho, La Palma.](./assets/)
+![Chicharrones from Casa Pancho, La Palma.](./assets/chicharrones_from_casa_pancho_la_palma.jpg)
 
 **Bananas.** La Palma is the island producing the most bananas after Tenerife. Therefore, they are quite common as well as products based on them.
 
-![A bag of homemade banana fries from La Palma.](./assets/)
+![A bag of homemade banana fries from La Palma.](./assets/a_bag_of_homemade_banana_fries_from_la_palma.jpg)
 
 You can find plenty of **Venezuelan** and **German** gastronomic options given the high population percentage from those countries. On this island, I discovered the **Cachapas** and it was _love at first bite._
 
-![Cachapa "Especial de la Casa" from La Real Tasca Cafeteria in Los Llanos, La Palma.](./assets/)
+![Cachapa "Especial de la Casa" from La Real Tasca Cafeteria in Los Llanos, La Palma.](./assets/cachapa_especial_de_la_casa_from_la_real_tasca_cafeteria_in_los_llanos_la_palma.jpg)
 
 The **Tea Wine** made on this island is a unique variety not found anywhere else in the world. It is elaborated in canary pine barrels therefore the liquid mixes subtly with the pine sap. They have two local** **brands of **craft beer** called _Isla Verde_ and _Gara_
 
-![Gara and Isla Verde beers collection.](./assets/)
+![Gara and Isla Verde beers collection.](./assets/gara_and_isla_verde_beers_collection.jpg)
 
 ### Cities and towns
 
