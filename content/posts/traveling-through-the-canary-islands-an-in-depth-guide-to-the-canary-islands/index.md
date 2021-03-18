@@ -411,6 +411,75 @@ A little further south from Tijarafe you find the viewpoint of **El Time.** A mu
 
 ![Cultural Park La Zarza, La Palma.](./assets/cultural_park_la_zarza_la_palma.jpg)
 
+### Nature
+
+**Roque de los muchachos.** At 2426 meters it is the highest peak on the island. One of the most emblematic natural monuments on the island of La Palma. International observatories populate the summit [gazing at the stars.](https://ramonmorcillo.com/basic-tips-for-amateur-star-photography/)
+
+![Roque de los muchachos pictures.](./assets/roque_de_los_muchachos_pictures.jpg)
+
+**Los Tilos.** In the northeast part of the island, this natural park of jungles and forests is a perfect spot for hiking.
+
+![Los Tilos trails pictures.](./assets/los_tilos_trails_pictures.jpg)
+
+**Caldera de Taburiente National Park.** Declared World Biosphere Reserve by Unesco. The impressive landscapes are the product of large-scale landslides through multiple volcanic eruptions that have occurred over the centuries. The viewpoint of “Los Andenes” is a nice one to contemplate it.
+
+![Caldera de Taburiente National Park pictures.](./assets/caldera_de_taburiente_national_park_pictures.jpg)
+
+**Cueva de Las Palomas.** In 1949 a volcanic eruption buried part of the area and formed a [lava tube.](https://en.wikipedia.org/wiki/Lava_tube) The landscape and views are worth visiting. You can book tours inside the lava tube in the visitors center.
+
+
+![Cueva de Las Palomas landscape pictures.](./assets/cueva_de_las_palomas_landscape_pictures.jpg)
+
+**Cumbre Vieja National Park**. Another great spot for hiking that covers the entire south-central part of the island.
+
+![Cumbre Vieja National Park pictures.](./assets/cumbre_vieja_national_park_pictures.jpg)
+
+**Echentive beach.** Located in the south of the island. A gray sandy beach with natural pools, created by a volcanic eruption in 1971.
+
+![Echentive beach pictures.](./assets/echentive_beach_pictures.jpg)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
+![](./assets/)
+
 ![](./assets/)
 
 ![](./assets/)
