@@ -438,31 +438,67 @@ A little further south from Tijarafe you find the viewpoint of **El Time.** A mu
 
 ![Echentive beach pictures.](./assets/echentive_beach_pictures.jpg)
 
-![](./assets/)
+## Fuerteventura
 
-![](./assets/)
+Called thus by its strong winds (fuertes vientos). The best island for windsurfing, surfing, and kite-surfing. It is known for its beaches as well.
 
-![](./assets/)
+### Gastronomy
 
-![](./assets/)
+The island has almost no vegetation and farmlands, they only planted when it rained. Therefore the most typical food comes from the **goat and fish.**
 
-![](./assets/)
+**Queso Majorero.** The treasure of Fuerteventura. A world-renowned and protected goat cheese. The name comes from the _majorera_ breed of goat.
 
-![](./assets/)
+![Queso Majorero. [source.](https://es.wikipedia.org/wiki/Queso_majorero)](./assets/queso_majorero.jpg)
 
-![](./assets/)
+**Goat meat.** When living on an island where it hardly rains you have to optimize the resources you have. Therefore when you can't get any more cheese, you make delicious meals with the rest of the goat.
 
-![](./assets/)
+![Goat meat meals from Restaurante Los Podomorfos, Fuerteventura.](./assets/goat_meat_meals_from_restaurante_los_podomorfos_fuerteventura.jpg)
 
-![](./assets/)
+**Laja Craft Beer.** The local craft beer from the island. They have a huge variety of types from lager to IPAs.
 
-![](./assets/)
+![Laja Craft Beer pictures.](./assets/laja_craft_beer_pictures.jpg)
 
-![](./assets/)
+### Cities and towns
 
-![](./assets/)
+Both, the capital **Puerto del Rosario,** and the south of the island are the most tourist areas. To discover local towns you will have to go further into the island.
 
-![](./assets/)
+![Pictures from Puerto del Rosario and Morro Jable in the south.](./assets/pictures_from_puerto_del_rosario_and_morro_jable_in_the_south.jpg)
+
+**Corralejo.** An important port city with extensive fine sand beaches. It is the starting point for boat trips to Lobos _Island (Isla de Lobos)._
+
+![Corralejo pictures.](./assets/corralejo_pictures.jpg)
+
+**Betancuria.** It was the ancient capital of Fuerteventura until the 19th century. Declared one of the most beautiful towns in Spain. Worth paying a visit.
+
+![Road to Betancuria pictures.](./assets/road_to_betancuria_pictures.jpg)
+
+**El Cotillo.** Located in the north as well as Corralejo although smaller than it. El Cotillo is another coastal town great to take a walk and eat local fresh fish.
+
+![El Cotillo pictures.](./assets/el_cotillo_pictures.jpg)
+
+**Ecomuseo De La Alcogida.** In the center of the island, this abandoned group of houses has been transformed into a museum where you can learn about the lives of the inhabitants of Fuerteventura throughout the centuries.
+
+![Ecomuseo De La Alcogida pictures.](./assets/ecomuseo_de_la_alcogida_pictures.jpg)
+
+### Nature
+
+**Lobos Island.** A small island between Lanzarote and Fuerteventura. There is a regular maritime transport service that connects it with Corralejo. The beautiful nature is different from the mother island one. You can enjoy beaches with crystal clear waters.
+
+![Lobos island pictures.](./assets/lobos_island_pictures.jpg)
+
+**Cofete beach.** A natural area on the Jandia peninsula. As beautiful as hard to access. This immense coastline virgin of hotels and mass tourism is definitely worth a visit. Don’t forget to check the **Villa Winter** if you get there.
+
+![Cofete beach pictures.](./assets/cofete_beach_pictures.jpg)
+
+**Barranco de los enamorados.** “Lovers ravine”, Hidden in the middle of the island between El Cotillo and Tindaya. A landscape of fossil dunes that have been carved out by water and shaped by the wind. It is a tradition to engrave your name and your loved one on the wall.
+
+![Barranco de los enamorados pictures.](./assets/barranco_de_los_enamorados_pictures.jpg)
+
+**La Pared.** Located in the southwest of the island this place gathers incredible beaches and viewpoints. Perfect place for sunsets.
+
+![La pared beach and viewpoint pictures.](./assets/la_pared_beach_and_viewpoint_pictures.jpg)
+
+![Views of La Gomera from Los Cristianos and different types of almogrote in Santa Cruz de Tenerife main market.](./assets/views_of_la_gomera_from_los_cristianos_and_different_types_of_almogrote_in_santa_cruz_de_tenerife_main_market.jpg)
 
 ![](./assets/)
 
