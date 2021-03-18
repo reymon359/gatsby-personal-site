@@ -370,21 +370,46 @@ The **Tea Wine** made on this island is a unique variety not found anywhere else
 
 ### Cities and towns
 
-![](./assets/)
+**Santa Cruz de la Palma.** The capital of the island whose traditions are based on the sea. Its downtown was classified as a Historic-Artistic Complex since it preserves many buildings from the 16th and 17th centuries. An example is the unique set of wooden balconies that overlook the sea.
 
-![](./assets/)
+![Wooden Balconies in Santa Cruz de La Palma.](./assets/wooden_balconies_in_santa_cruz_de_la_palma.jpg)
 
-![](./assets/)
+**Los Llanos de Aridane.** The second most populous municipality. The best area is the old town part. On Sundays, the most important flea market on the island takes place in a nearby open area.
 
-![](./assets/)
+![Los Llanos de Aridane downtown pictures.](./assets/los_llanos_de_aridane_downtown_pictures.jpg)
 
-![](./assets/)
+![Los Llanos de Aridane flea market pictures.](./assets/los_llanos_de_aridane_flea_market_pictures.jpg)
 
-![](./assets/)
+**Port of Tazacorte.** A small coaster town. Worth visiting it and walking around the dock and beach or having a snack.
 
-![](./assets/)
+![Port of Tazacorte pictures.](./assets/port_of_tazacorte_pictures.jpg)
 
-![](./assets/)
+**Tijarafe.** A tiny local town located on the heights with views of the west coast of the island. A street called poetically _Adios_ (Goodbye) used to lead to the cemetery. Now there is a text fragment on one of its walls.
+
+> “If you come to visit my island, La Palma, do not forget Tijarafe where there is a street called Adios… (…) What kind of secret did it cherish that its memory has endured across a distance, measured by waves, from almost a lifetime ago? We knew it later on. It was neither a shadow of love nor of mystery, it was not an aroma of legend (…) “Adiós” (Goodbye) simply, was the street which led to the cemetery. But I am going to say that it was in an exquisite manner: it was with poetry, something which scarcely exists in municipalities, or rather in any subject matter.
+I do not think that it was named by councilors: it was the village, a tiny village, which got used to calling it that, or it was born with its name, which was private, innate, exact. Hence the grace, the delicacy which could not be forgotten by those who looked at it when they were children.
+The street goes down a slope, cut on a rock; the village is located above it, with a handful of houses on the verge of the ravine. But going down, and on the slope which descends vertically, on a fold of the rock, the cemetery, put there as if it were a bunch of lemon blossoms on the mountain’s chest.
+It is well understood that it is difficult to reach that place, even for the children of this rugged countryside, experienced in crossing over ravines. This was the origin of the custom of stopping at the opening where the street was broken up by a series of gullies running downhill.
+This used to be the threshold of the farewells: companions would remain there for a while, watching a small group of people go down. There, in a touched silence, the friend gave the leaving friend the last greeting, brothers to brothers…Afterwards, they went up the street in silence and the street, impregnated with sighs, rich in goodbyes without exit, could have just one name: and it was called Adios (Goodbye)”.
+Extract from the book of Dulce María Loynaz, “Un verano en Tenerife”, Aguilar, Madrid, 1958
+
+A little further south from Tijarafe you find the viewpoint of **El Time.** A must stop to enjoy the views.
+
+![Tijarafe pictures and views from the viewpoint of El Time, La Palma.](./assets/tijarafe_pictures_and_views_from_the_viewpoint_of_el_time_la_palma.jpg)
+
+**Garafía.** Not a town but a municipality. Worth mentioning for some points of great cultural importance.
+
+- **Museo de Interpretación del Gofio (MIGO).** The best place to learn about the history of the most fundamental Canarian food and understand all its secrets. It even preserves one of the iconic windmills for milling the grains.
+
+![Museo de Interpretación del Gofio (MIGO), La Palma.](./assets/gofio_museum.jpg)
+
+- **Buracas Caves.** Near the Gofio Museum MIGO. A nature area full of Dragon Trees and samples of the island’s rural architecture.
+
+![Buracas caves, La Palma.](./assets/buracas_caves_la_palma.jpg)
+
+- **Cultural Park La Zarza.** The home to the original inhabitants of La Palma, the _Benahores._ There is a museum about the history of the island throughout the centuries. Moreover. On the outside, a pleasant trail goes along a forest where they lived in caves and painted circular markings on rock walls.
+
+![Cultural Park La Zarza, La Palma.](./assets/cultural_park_la_zarza_la_palma.jpg)
 
 ![](./assets/)
 
