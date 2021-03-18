@@ -4,8 +4,7 @@ title: 'Up to date React Template'
 description: "An always up to date React Template."
 date: '2020-05-01'
 author: 'Ramón Morcillo'
-categories: ['Software']
-tags: [ 'React', 'TypeScript', 'Continuous Integration', 'GitHub' ]
+tags: ['Software Development', 'React', 'TypeScript', 'Continuous Integration', 'GitHub' ]
 published: true
 featuredImage: './up-to-date-react-template.png'
 type: 'project'
