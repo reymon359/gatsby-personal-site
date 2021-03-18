@@ -2,11 +2,11 @@
 id: 'traveling-through-the-canary-islands-an-in-depth-guide-to-the-canary-islands'
 title: 'Traveling through The Canary Islands: An in-depth guide to the Canary Islands'
 description: 'A compilation of personal knowledge from the Canary Islands to help people get to know them better'
-date: '2021-03-01'
+date: '2021-03-18'
 author: 'Ramón Morcillo'
 tags: ['Adventures', 'Trips', 'Canary Islands', 'Guide']
 published: true
-commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/337
+commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/460
 featuredImage: './assets/cofete_beach.jpg'
 type: 'post'
 url: 'none'
@@ -528,3 +528,19 @@ I was able to write this guide thanks to the wonderful local people from the isl
 In addition, thanks to my best adventures companion those months, Unai. I will never forget all those moments driving and discovering places across the archipelago.
 
 ![Awesome people I met on my adventures](./assets/awesome_people_i_met_on_my_adventures.jpg)
+
+
+<h1 align="center">
+  Traveling through The Canary Islands: An in-depth guide to the Canary Islands
+</h1>
+
+<p align="center">
+  <a href="https://www.ramonmorcillo.com/traveling-through-the-canary-islands-an-in-depth-guide-to-the-canary-islands/">
+    <img alt="https://www.ramonmorcillo.com/traveling-through-the-canary-islands-an-in-depth-guide-to-the-canary-islands/" src="https://raw.githubusercontent.com/reymon359/gatsby-personal-site/master/content/posts/traveling-through-the-canary-islands-an-in-depth-guide-to-the-canary-islands/assets/cofete_beach.jpg" width="600" />
+  </a>
+</p>
+
+<h3 align="center">
+  Questions and comments for <br><br>
+  <a href="https://www.ramonmorcillo.com/traveling-through-the-canary-islands-an-in-depth-guide-to-the-canary-islands/">https://www.ramonmorcillo.com/traveling-through-the-canary-islands-an-in-depth-guide-to-the-canary-islands/</a>
+</h3>
