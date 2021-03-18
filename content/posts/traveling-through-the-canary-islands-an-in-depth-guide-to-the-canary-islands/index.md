@@ -498,38 +498,28 @@ Both, the capital **Puerto del Rosario,** and the south of the island are the mo
 
 ![La pared beach and viewpoint pictures.](./assets/la_pared_beach_and_viewpoint_pictures.jpg)
 
+## La Gomera
+
+I have not visited this island (yet). However, an easy way to get there is by the ferry in Los Cristianos, Tenerife. The _almogrote_ originated on this island.
+
 ![Views of La Gomera from Los Cristianos and different types of almogrote in Santa Cruz de Tenerife main market.](./assets/views_of_la_gomera_from_los_cristianos_and_different_types_of_almogrote_in_santa_cruz_de_tenerife_main_market.jpg)
 
-![](./assets/)
+## El Hierro
 
-![](./assets/)
+I have been told it is the most savage one. The least inhabited and the best destination to disconnect from the rest of the world.
 
-![](./assets/)
+## Lanzarote
 
-![](./assets/)
+The closest to the African continent. Named the "Island of Fire" for its volcanic landscapes. Well known as well for its lunar appearance.
 
-![](./assets/)
+## La Graciosa
 
-![](./assets/)
+While writing this guide I discovered in 2018 La Graciosa officially became the eighth Canary Island. One of the reasons I like writing so much; Is one of the best ways to learn.
 
-![](./assets/)
+## Acknowledgments
 
-![](./assets/)
+I was able to write this guide thanks to the wonderful local people from the islands I met while living there and who showed me their paradise in the middle of the Atlantic sea.
 
-![](./assets/)
+In addition, thanks to my best adventures companion those months, Unai. I will never forget all those moments driving and discovering places across the archipelago.
 
-![](./assets/)
-
-![](./assets/)
-
-![](./assets/)
-
-![](./assets/)
-
-![](./assets/)
-
-![](./assets/)
-
-![](./assets/)
-
-![](./assets/)
+![Awesome people I met on my adventures](./assets/awesome_people_i_met_on_my_adventures.jpg)
