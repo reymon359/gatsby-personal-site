@@ -4,7 +4,6 @@ title: 'Space Pizza'
 description: "An indie arcade game made with some colleagues in C++ and SFML"
 date: '2019-04-01'
 author: 'Ramón Morcillo'
-categories: ['Software']
 tags: [ 'Game', 'C++' ]
 published: true
 featuredImage: './space-pizza.jpg'

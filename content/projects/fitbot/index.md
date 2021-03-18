@@ -4,8 +4,7 @@ title: 'Fitbot'
 description: "Progressive Web Application to help and motivate people to exercise and lead a healthier life."
 date: '2019-04-01'
 author: 'Ramón Morcillo'
-categories: ['Software']
-tags: [ 'TypeScript', 'PWA', 'Health' ]
+tags: ['Software Development', 'TypeScript', 'PWA', 'Health' ]
 published: true
 featuredImage: './fitbot.jpg'
 type: 'project'

@@ -4,7 +4,6 @@ title: '7 lessons learned from The Pragmatic Programmer and The Clean Coder'
 description: 'Software development and life lessons from the Pragmatic Programmer and the Clean Coder'
 date: '2020-12-29'
 author: 'Ramón Morcillo'
-categories: ['Software Development']
 tags: ['Software Development', 'Books', 'Learning']
 published: true
 commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/337

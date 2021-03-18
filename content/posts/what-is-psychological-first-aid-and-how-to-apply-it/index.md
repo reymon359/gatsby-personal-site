@@ -4,7 +4,6 @@ title: 'What is Psychological First Aid and how to apply it'
 description: 'Key concepts on Psychological First Aid to help people in the immediate aftermath of a disaster'
 date: '2021-02-18'
 author: 'Ramón Morcillo'
-categories: ['Software Development']
 tags: ['Psychology', 'Tutorial', 'Learning', 'Health']
 published: true
 commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/413

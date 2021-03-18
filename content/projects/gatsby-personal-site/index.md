@@ -4,7 +4,6 @@ title: 'Gatsby Personal Site'
 description: "I rebuilt my site using Gatsby and TypeScript"
 date: '2020-09-11'
 author: 'Ramón Morcillo'
-categories: ['Software Development']
 tags: [ 'Software Development', 'Gatsby', 'React', TypeScript ]
 published: true
 featuredImage: './gatsby-personal-site.png'

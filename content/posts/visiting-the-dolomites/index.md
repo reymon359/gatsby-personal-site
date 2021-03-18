@@ -4,7 +4,6 @@ title: 'Visiting the Dolomites'
 description: 'Trip through the Dolomites, the Italian Alps.'
 date: '2019-08-29'
 author: 'Ramón Morcillo'
-categories: ['Adventures']
 tags: ['Adventures', 'Trips', 'Nature']
 published: true
 commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/168

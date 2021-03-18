@@ -4,7 +4,6 @@ title: 'The 2020 movie you made with me'
 description: "A compilation of the best moments of 2020."
 date: '2021-03-16'
 author: 'Ramón Morcillo'
-categories: ['Adventures']
 tags: [ 'Movie', 'Compilation', 'Adventures' ]
 published: true
 featuredImage: './the-2020-movie-you-made-with-me.jpg'

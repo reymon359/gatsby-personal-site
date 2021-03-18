@@ -4,7 +4,6 @@ title: 'Traveling through The Canary Islands: An in-depth guide to the Canary Is
 description: 'A compilation of personal knowledge from the Canary Islands to help people get to know them better'
 date: '2021-03-01'
 author: 'Ramón Morcillo'
-categories: ['Adventures']
 tags: ['Adventures', 'Trips', 'Canary Islands', 'guide']
 published: true
 commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/337
