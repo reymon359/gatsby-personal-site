@@ -89,7 +89,7 @@ The Canary Islands are known around the globe to be [a perfect stargazing spot.]
 
 ## History
 
-The first Indigenous peoples of the Canary Islands were the **Guanches**. They supposedly arrived from North African and are related to the _Berbers. _However, I heard other theories that relate them to other ancient civilizations like the Vikings, Phoenicians, or Romans.
+The first Indigenous peoples of the Canary Islands were the **Guanches**. They supposedly arrived from North African and are related to the _Berbers._ However, I heard other theories that relate them to other ancient civilizations like the Vikings, Phoenicians, or Romans.
 
 ![Guanches sculptures in Tenerife and Fuerteventura.](./assets/guanches_sculptures_in_tenerife_and_fuerteventura.jpg)
 
