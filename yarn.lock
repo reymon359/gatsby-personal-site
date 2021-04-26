@@ -7360,7 +7360,7 @@ gatsby-plugin-manifest@2.12.1:
     semver "^7.3.2"
     sharp "^0.27.0"
 
-gatsby-plugin-meta-redirect@^1.1.1:
+gatsby-plugin-meta-redirect@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-meta-redirect/-/gatsby-plugin-meta-redirect-1.1.1.tgz#058e8e53edff38dc44d3bb6153109d01c910f863"
   integrity sha512-Oc4qgU3SlDUM9qoxIMKO+re2bdMs3/a2KXrfL65gb8XMLsHylBbveWtXZRhgjd2QDL/49RX4S9SEykuadRju2w==
