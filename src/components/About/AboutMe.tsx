@@ -21,7 +21,7 @@ const AboutMe: React.FC = () => {
         I enjoy life and have fun going on adventures, doing software
         development, meeting new people, helping others, learning new things,
         improving myself, trying new foods, visiting new places, opening my
-        mind, achieving my goals, and exercising (running, hiking, and
+        mind, achieving my goals, and doing sports (running, hiking, and
         boardsports mainly).
       </p>
 
@@ -75,15 +75,23 @@ const AboutMe: React.FC = () => {
         >
           tweet
         </a>
-        &nbsp;and share photos on&nbsp;
+        &nbsp;and share&nbsp;
         <a
           href="https://www.instagram.com/ramon.mor/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Instagram
+          stuff
         </a>
-        . You can contact me through them or send me an email at&nbsp;
+        &nbsp;or&nbsp;
+        <a
+          href="https://www.instagram.com/ramon.mor.photos/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          pictures
+        </a>
+        &nbsp;on Instagram. You can contact me through them or send me an email at&nbsp;
         <a
           rel="noopener"
           href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!"
