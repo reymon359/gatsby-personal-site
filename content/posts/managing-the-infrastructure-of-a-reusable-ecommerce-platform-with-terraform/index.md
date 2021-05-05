@@ -22,4 +22,10 @@ Here is where [Terraform](https://www.terraform.io/) comes in handy.
 
 ## What is Terraform
 
+![Terraform logo by HashiCorp](./assets/hashicorp_terraform_logo.png)
 
+[Terraform](https://www.terraform.io/) is an open-source infrastructure as code software tool developed by HashiCorp. It provides a consistent CLI workflow to manage hundreds of cloud services in configuration files. [Here](https://learn.hashicorp.com/tutorials/terraform/install-cli) is the official guide on how to install it.
+
+Terraform is a tool that helps you manage various cloud infrastructure services coding configuration files where you can configure the ones needed. It has support for the main cloud providers out there like AWS, Azure, or GCP.
+
+I will enumerate the main features it provides. There are plenty more, however, these are the minimum ones required to understand the tool and this article.
