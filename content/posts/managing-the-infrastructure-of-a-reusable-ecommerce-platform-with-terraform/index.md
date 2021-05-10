@@ -101,4 +101,8 @@ After running it successfully the console shows this output.
 
 And that is an overall view of defining and creating your infrastructure resources in an _automated_ way. All through config files **removing the manual process.** 
 
-![]
+![Terraform resource Spanish omelet from Casa Paco, Madrid](./assets/terraform_resource_spanish_omelet_from_casa_paco_madrid.jpeg)
+
+## How we use it
+
+Going back to our reusable ecommerce platform. Here is how we take advantage of Terraform’s features to improve our workflow.
