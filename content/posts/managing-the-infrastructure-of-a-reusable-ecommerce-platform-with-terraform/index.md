@@ -106,3 +106,51 @@ And that is an overall view of defining and creating your infrastructure resourc
 ## How we use it
 
 Going back to our reusable ecommerce platform. Here is how we take advantage of Terraform’s features to improve our workflow.
+### Version Control system
+
+Having all the infrastructure defined in code files means we can use a **VCS** (Version Control System). We opt for Git and host it in a GitHub repository. This way we can keep a history control of the resources we have been using.
+
+In addition, the integration with GitHub allows us to work with pull requests in order to add, change or destroy resources from the Infrastructure.  
+
+### Terraform Variables
+
+Being a reusable platform means its infrastructure has to be the same in every shop we create. With terraform, we accomplish this by defining a [Terraform input variable](https://www.terraform.io/docs/language/values/variables.html) called `shops_to_apply`.
+
+We then pass this variable through the modules and resources where we want to use it.  This way when we apply the plan the changes will happen in each of the shops.
+
+Here is an example of how we would define the variable if we had to set up the infrastructure for three different shops.
+
+```hcl
+variable "shops_to_apply" {
+  default = {
+   happy  = "happyReadings"
+   world  = "worldOfWaves"   
+   healt  = "healthyFruits"
+  }
+}
+```
+
+Then in each resource, we use a Terraform [for_each meta-argument](https://www.terraform.io/docs/language/meta-arguments/for_each.html) to iterate them.
+
+```hcl
+resource "azurerm_postgresql_database" "orders-api-service" {
+  for_each            = var.shops_to_apply
+  name                = "${each.key}-orders-api-service"
+  ... other config
+}
+```
+
+### Environments and CICD
+
+We work with three environments:
+
+- **Development:** A testing environment where all services new features, refactors, and bug fixes get released once merged to the main repository branch.
+- **Staging:** A mirror of the Production environment. When the changes have been properly implemented in Development they are promoted to this environment. In this environment, we can see how they will work in a production-similar situation.
+- **Production:** The environment the user has access to. The final environment where the changes get promoted from Staging.
+
+Not all the changes are visible at once in each environment. We use [ConfigCat](https://configcat.com/) as our system of feature flags to make most of the changes visible or not.
+
+We use [GitHub Actions](https://github.com/features/actions) and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/pipelines/) for our Continuous Integration and Continuous Delivery system. When the changes on the Terraform infrastructure repository are added to the main branch the CICD system gets triggered and the plan is executed on our development environments. When the logs from the plan are the expected ones we manually run the `apply`.
+
+[Azure DevOps Release Stages](./assets/azure_devops_release_pipelines.jpg)
+
