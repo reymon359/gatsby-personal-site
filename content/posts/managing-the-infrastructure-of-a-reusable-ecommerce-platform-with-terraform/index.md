@@ -154,3 +154,14 @@ We use [GitHub Actions](https://github.com/features/actions) and [Azure DevOps](
 
 [Azure DevOps Release Stages](./assets/azure_devops_release_pipelines.jpg)
 
+## Conlusions
+
+Having the infrastructure defined as code has brought us nothing but improvements to our platform. Here is a list of them:
+
+- **Reduce human error and increase automation.** The fewer resources you set up manually the fewer errors you get in the long term.
+- **It is easier to maintain** since all the infrastructure is coded in config files. Plus we are **using GitHub repositories and Pull Requests** to collaborate all together.
+- The infrastructure is **easier to change** compared to traditional manual ways.
+- All the configuration files work as **documentation of the resources** we are using.
+- Thanks to the use of variables we **speed up the process of setting up new ecommerce platforms.**
+- Updating and deleting resources is a delicate topic. Having a proper CICD allows us to **predict and make changes to the infrastructure in the safest way possible.**
+- We can effortlessly **provision our development, staging, and production environments with the same consistent configuration.**
