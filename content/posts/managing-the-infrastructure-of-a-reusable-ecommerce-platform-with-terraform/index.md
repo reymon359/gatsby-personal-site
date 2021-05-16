@@ -152,7 +152,7 @@ Not all the changes are visible at once in each environment. We use [ConfigCat](
 
 We use [GitHub Actions](https://github.com/features/actions) and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/pipelines/) for our Continuous Integration and Continuous Delivery system. When the changes on the Terraform infrastructure repository are added to the main branch the CICD system gets triggered and the plan is executed on our development environments. When the logs from the plan are the expected ones we manually run the `apply`.
 
-[Azure DevOps Release Stages](./assets/azure_devops_release_pipelines.jpg)
+![Azure DevOps Release Stages](./assets/azure_devops_release_pipelines.jpg)
 
 ## Conlusions
 
