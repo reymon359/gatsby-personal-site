@@ -14,11 +14,24 @@ url: 'none'
 
 Setting up and maintaining the infrastructure for a [reusable ecommerce platform](https://ramonmorcillo.com/developing-a-reusable-ecommerce-platform/) with a microservice architecture is not an easy task. You have to provide every service with resources, keep track of them and update them when needed.
 
-We use [Azure](https://azure.microsoft.com/en-us/) as our cloud provider to manage all those resources. **Every service uses different resources related to the business logic they handle. **Some of them work with a persistence layer and use resources like [Azure Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/) or [Azure Database for PostgreSQL](https://azure.microsoft.com/en-us/services/postgresql/) databases. Others provide an API to search among a catalog of products with [Azure Cognitive Search](https://azure.microsoft.com/en-us/services/search/).
+We use [Azure](https://azure.microsoft.com/en-us/) as our cloud provider to manage all those resources. **Every service uses different resources related to the business logic they handle.** Some of them work with a persistence layer and use resources like [Azure Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/) or [Azure Database for PostgreSQL](https://azure.microsoft.com/en-us/services/postgresql/) databases. Others provide an API to search among a catalog of products with [Azure Cognitive Search](https://azure.microsoft.com/en-us/services/search/).
 
 And how do you keep track of all the resources that are being used?
 
 Here is where [Terraform](https://www.terraform.io/) comes in handy.
+
+## Table of Contents
+
+- [What is Terraform](#What-is-Terraform)
+  - [Modules](#Modules)
+  - [Resources](#Resources)
+  - [Terraform Plan](#Terraform-Plan)
+  - [Terraform Apply](#Terraform-Apply)
+- [How we use it](#How-we-use-it)
+  - [Version Control System](#Version-Control-System)
+  - [Terraform Variables](#Terraform-Variables)
+  - [Environments and CICD](#Environments-and-CICD)
+- [Conlusions](#Conlusions)
 
 ## What is Terraform
 
@@ -106,7 +119,8 @@ And that is an overall view of defining and creating your infrastructure resourc
 ## How we use it
 
 Going back to our reusable ecommerce platform. Here is how we take advantage of Terraform’s features to improve our workflow.
-### Version Control system
+
+### Version Control System
 
 Having all the infrastructure defined in code files means we can use a **VCS** (Version Control System). We opt for Git and host it in a GitHub repository. This way we can keep a history control of the resources we have been using.
 
