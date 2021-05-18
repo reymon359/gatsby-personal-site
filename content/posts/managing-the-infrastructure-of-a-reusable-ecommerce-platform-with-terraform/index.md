@@ -72,11 +72,11 @@ resource "food_tapas" "spanish_omelet" {
 }
 ```
 
-The language used in Terraform is the _HashiCorp Configuration Language (HCL)._ In the example above we first specify the cloud provider `food`. Then define a resource of the type `food_tapas` with the name `spanish_omelet`. Inside the resource block, we have the configuration arguments which for this delicious resource are the ingredients.
+The language used in Terraform is the _HashiCorp Configuration Language (HCL)_. In the example above we first specify the cloud provider `food`. Then define a resource of the type `food_tapas` with the name `spanish_omelet`. Inside the resource block, we have the configuration arguments which are the ingredients for this delicious resource.
 
 ### Terraform Plan
 
-Once all the infrastructure resources have been defined a **Plan** is run. Here Terraform checks the code for syntax errors, state verification, API authentication, and then outputs a summary of the changes.
+Once all the infrastructure resources have been defined, a **Plan** is run. Here Terraform checks the code for syntax errors, state verification, API authentication, and then outputs a summary of the changes.
 
 Running `terraform plan` allows you to check if the plan to be executed for such configuration is the one you were expecting before changing the infrastructure.
 
