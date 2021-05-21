@@ -14,11 +14,13 @@ url: 'none'
 
 Setting up and maintaining the infrastructure for a [reusable ecommerce platform](https://ramonmorcillo.com/developing-a-reusable-ecommerce-platform/) with a microservice architecture is not an easy task. You have to provide every service with resources, keep track of them and update them when needed.
 
-We use [Azure](https://azure.microsoft.com/en-us/) as our cloud provider to manage all those resources. **Every service uses different resources related to the business logic they handle.** Some of them work with a persistence layer and use resources like [Azure Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/) or [Azure Database for PostgreSQL](https://azure.microsoft.com/en-us/services/postgresql/) databases. Others provide an API to search among a catalog of products with [Azure Cognitive Search](https://azure.microsoft.com/en-us/services/search/).
+We use [Azure](https://azure.microsoft.com/en-us/) as our cloud provider to manage all those resources. **Every service uses different resources related to the business logic they handle.** We use resources like [Azure Service Bus](https://azure.microsoft.com/en-us/services/service-bus/) to handle the asynchronous communication between them and [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) to store the secrets and environment variables.
 
-And how do you keep track of all the resources that are being used?
+In the ones where we need a persistence layer, we rely on the resources [Azure Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/) or [Azure Database for PostgreSQL](https://azure.microsoft.com/en-us/services/postgresql/). Others provide an API to search among a catalog of products with [Azure Cognitive Search](https://azure.microsoft.com/en-us/services/search/).
 
-Here is where [Terraform](https://www.terraform.io/) comes in handy.
+So how do you keep track of all the resources that are being used?
+
+This is where [Terraform](https://www.terraform.io/) comes in handy.
 
 ## Table of Contents
 
