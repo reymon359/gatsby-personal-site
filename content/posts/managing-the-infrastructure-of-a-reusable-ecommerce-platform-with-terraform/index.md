@@ -29,6 +29,7 @@ This is where [Terraform](https://www.terraform.io/) comes in handy.
   - [Resources](#Resources)
   - [Terraform Plan](#Terraform-Plan)
   - [Terraform Apply](#Terraform-Apply)
+  - [State](#State)
 - [How we use it](#How-we-use-it)
   - [Version Control System](#Version-Control-System)
   - [Terraform Variables](#Terraform-Variables)
@@ -118,6 +119,14 @@ And that is an overall view of defining and creating your infrastructure resourc
 
 ![Terraform resource Spanish omelet from Casa Paco, Madrid](./assets/terraform_resource_spanish_omelet_from_casa_paco_madrid.jpeg)
 
+### State
+
+The last thing to mention would be the **Terraform State.** Its purpose is to store the relation between the objects in a remote system and the resource instances declared in your configuration.
+
+When the remote object is created its identity is recorded against a particular resource instance.
+
+Future configuration changes will update the state and make terraform update or delete that object.
+
 ## How we use it
 
 Going back to our reusable ecommerce platform. Here is how we take advantage of Terraform’s features to improve our workflow.
@@ -127,6 +136,8 @@ Going back to our reusable ecommerce platform. Here is how we take advantage of 
 Having all the infrastructure defined in code files means we can use a **VCS** (Version Control System). We opt for Git and host it in a GitHub repository. This way we can keep a history control of the resources we have been using.
 
 In addition, the integration with GitHub allows us to work with pull requests in order to add, change or destroy resources from the Infrastructure.  
+
+Although the Terraform State is stored locally by default in a file named `terraform.tfstate`, we store it remotely outside the VCS. This is a good practice when working in a team environment.
 
 ### Terraform Variables
 
