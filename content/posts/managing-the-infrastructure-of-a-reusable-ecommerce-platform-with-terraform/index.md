@@ -34,7 +34,7 @@ This is where [Terraform](https://www.terraform.io/) comes in handy.
   - [Version Control System](#Version-Control-System)
   - [Terraform Variables](#Terraform-Variables)
   - [Environments and CICD](#Environments-and-CICD)
-- [Conlusions](#Conlusions)
+- [Conclusions](#Conclusions)
 
 ## What is Terraform
 
@@ -181,7 +181,7 @@ We use [GitHub Actions](https://github.com/features/actions) and [Azure DevOps](
 
 ![Azure DevOps Release Stages](./assets/azure_devops_release_pipelines.jpg)
 
-## Conlusions
+## Conclusions
 
 Having the infrastructure defined as code has brought us nothing but improvements to our platform. Here is a list of them:
 
