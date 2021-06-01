@@ -14,11 +14,11 @@ url: 'none'
 
 Setting up and maintaining the infrastructure for a [reusable ecommerce platform](https://ramonmorcillo.com/developing-a-reusable-ecommerce-platform/) with a microservice architecture is not an easy task. You have to provide every service with resources, keep track of them and update them when needed.
 
-We use [Azure](https://azure.microsoft.com/en-us/) as our cloud provider to manage all those resources. **Every service uses different resources related to the business logic they handle.** We use resources like [Azure Service Bus](https://azure.microsoft.com/en-us/services/service-bus/) to handle the asynchronous communication between them and [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) to store the secrets and environment variables.
+Our team uses [Azure](https://azure.microsoft.com/en-us/) as our cloud provider to manage all those resources. **Every service uses different resources related to the business logic they handle.** We use resources like [Azure Service Bus](https://azure.microsoft.com/en-us/services/service-bus/) to handle the asynchronous communication between them and [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) to store the secrets and environment variables.
 
-In the ones where we need a persistence layer, we rely on the resources [Azure Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/) or [Azure Database for PostgreSQL](https://azure.microsoft.com/en-us/services/postgresql/). Others provide an API to search among a catalog of products with [Azure Cognitive Search](https://azure.microsoft.com/en-us/services/search/).
+In the ones where we need a persistence layer, we rely on the resources [Azure Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/) or [Azure Database for PostgreSQL](https://azure.microsoft.com/en-us/services/postgresql/). Other services provide an API to search among a catalog of products with [Azure Cognitive Search](https://azure.microsoft.com/en-us/services/search/).
 
-So how do you keep track of all the resources that are being used?
+So, how do you keep track of all the resources that are being used?
 
 This is where [Terraform](https://www.terraform.io/) comes in handy.
 
@@ -107,7 +107,7 @@ Plan: 1 to add, 0 to change, 0 to destroy.
 
 ### Terraform Apply
 
-Once confirmed the summary of changes are the ones wanted, we execute them with `terraform apply`.
+Once confirmed, the summary of changes are the ones wanted, we execute them with `terraform apply`.
 
 After running it successfully the console shows this output.
 
@@ -177,7 +177,7 @@ We work with three environments:
 
 Not all the changes are visible at once in each environment. We use [ConfigCat](https://configcat.com/) as our system of feature flags to make most of the changes visible or not.
 
-We use [GitHub Actions](https://github.com/features/actions) and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/pipelines/) for our Continuous Integration and Continuous Delivery system. When the changes on the Terraform infrastructure repository are added to the main branch the CICD system gets triggered and the plan is executed on our development environments. When the logs from the plan are the expected ones we manually run the `apply`.
+We use [GitHub Actions](https://github.com/features/actions) and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/pipelines/) for our Continuous Integration and Continuous Delivery system. When the changes on the Terraform infrastructure repository are added to the main branch, the CICD system gets triggered and the plan is executed on our development environments. When the logs from the plan are the expected ones we manually run the `apply`.
 
 ![Azure DevOps Release Stages](./assets/azure_devops_release_pipelines.jpg)
 
@@ -185,7 +185,7 @@ We use [GitHub Actions](https://github.com/features/actions) and [Azure DevOps](
 
 Having the infrastructure defined as code has brought us nothing but improvements to our platform. Here is a list of them:
 
-- **Reduce human error and increase automation.** The fewer resources you set up manually the fewer errors you get in the long term.
+- **Reduce human error and increase automation.** The fewer resources you set up manually, the fewer errors you get in the long term.
 - **It is easier to maintain** since all the infrastructure is coded in config files. Plus we are **using GitHub repositories and Pull Requests** to collaborate all together.
 - The infrastructure is **easier to change** compared to traditional manual ways.
 - All the configuration files work as **documentation of the resources** we are using.
