@@ -81,7 +81,7 @@ The language used in Terraform is the _HashiCorp Configuration Language (HCL)_. 
 
 Once all the infrastructure resources have been defined, a **Plan** is run. Here Terraform checks the code for syntax errors, state verification, API authentication, and then outputs a summary of the changes.
 
-Running `terraform plan` allows you to check if the plan to be executed for such configuration is the one you were expecting before changing the infrastructure.
+Running `terraform plan` allows you to check if the plan to be applied for such configuration is the one you were expecting before changing the infrastructure.
 
 Here is an example of the output summary we would get when running `terraform plan` with the example resource
 
