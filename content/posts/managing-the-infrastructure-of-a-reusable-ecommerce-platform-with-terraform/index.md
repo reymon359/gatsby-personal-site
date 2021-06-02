@@ -18,6 +18,8 @@ Our team uses [Azure](https://azure.microsoft.com/en-us/) as our cloud provider 
 
 In the ones where we need a persistence layer, we rely on the resources [Azure Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/) or [Azure Database for PostgreSQL](https://azure.microsoft.com/en-us/services/postgresql/). Other services provide an API to search among a catalog of products with [Azure Cognitive Search](https://azure.microsoft.com/en-us/services/search/). As I will explain later, we work with different _environments_, therefore, creating and updating the resources across them becomes a harder task. 
 
+If you want to understand better the context of the **reusable ecommerce platform** I mention in this lecture, I recommend you to take a look at [this article](https://ramonmorcillo.com/developing-a-reusable-ecommerce-platform/). Although the architecture has changed a bit, the core concept of the reusable ecommerce platform remains the same, making this article easier to understand.
+
 So, how do you keep track of all the services resources that are being used across them? 
 
 This is where [Terraform](https://www.terraform.io/) comes in handy.
