@@ -16,9 +16,9 @@ Setting up and maintaining the infrastructure for a [reusable ecommerce platform
 
 Our team uses [Azure](https://azure.microsoft.com/en-us/) as our cloud provider to manage all those resources. **Every service uses different resources related to the business logic they handle.** We use resources like [Azure Service Bus](https://azure.microsoft.com/en-us/services/service-bus/) to handle the asynchronous communication between them and [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) to store the secrets and environment variables.
 
-In the ones where we need a persistence layer, we rely on the resources [Azure Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/) or [Azure Database for PostgreSQL](https://azure.microsoft.com/en-us/services/postgresql/). Other services provide an API to search among a catalog of products with [Azure Cognitive Search](https://azure.microsoft.com/en-us/services/search/).
+In the ones where we need a persistence layer, we rely on the resources [Azure Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/) or [Azure Database for PostgreSQL](https://azure.microsoft.com/en-us/services/postgresql/). Other services provide an API to search among a catalog of products with [Azure Cognitive Search](https://azure.microsoft.com/en-us/services/search/). As I will explain later, we work with different _environments_, therefore, creating and updating the resources across them becomes a harder task. 
 
-So, how do you keep track of all the resources that are being used?
+So, how do you keep track of all the services resources that are being used across them? 
 
 This is where [Terraform](https://www.terraform.io/) comes in handy.
 
