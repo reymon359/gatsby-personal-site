@@ -4,7 +4,7 @@ title: 'Using GitHub Actions and Renovate to safely update dependencies automati
 description: 'Keeping your project dependencies updated the right way'
 date: '2020-07-24'
 author: 'Ramón Morcillo'
-tags: ['Software Development', 'Continuous Integration', 'Tutorial', 'GitHub', 'Maintainability']
+tags: ['Software Development', 'DevOps', 'Tutorial', 'GitHub', 'Maintainability']
 published: true
 commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/170
 featuredImage: './github_actions_and_renovate_logos.png'    
