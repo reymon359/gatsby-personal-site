@@ -4,9 +4,9 @@ title: 'Managing the infrastructure of a reusable ecommerce platform with Terraf
 description: 'Advice to manage the infrastructure of an ecommerce platform in Azure with Terraform.'
 date: '2021-05-01'
 author: 'Ramón Morcillo'
-tags: ['Software Development', 'CICD', 'DevOps', 'Ecommerce', 'Terraform']
+tags: ['Software Development', 'Azure', 'DevOps', 'Ecommerce', 'Terraform']
 published: true
-commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/460
+commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/534
 featuredImage: './assets/denys-nevozhai-Zeu57mprpaI-unsplash.jpeg'
 type: 'post'
 url: 'none'
