@@ -11184,10 +11184,10 @@ pretty-format@^26.0.0, pretty-format@^26.6.0:
     ansi-styles "^4.0.0"
     react-is "^16.12.0"
 
-prism-themes@1.7.0:
-  version "1.7.0"
-  resolved "https://registry.npmjs.org/prism-themes/-/prism-themes-1.7.0.tgz"
-  integrity sha512-D5EsUQXOY4W9pcGwrOXFJiT22RRUuxWaaxyVNMGHRGr96h86K1XLLWMhzc3tXL0Qri7BhRE8mJtEN/ZZSNau6w==
+prism-themes@1.8.0:
+  version "1.8.0"
+  resolved "https://registry.npmjs.org/prism-themes/-/prism-themes-1.8.0.tgz"
+  integrity sha512-pj7A7C9C8juQRFkZHYeApQHdUiak5nkKYlHyWwh7n/b6WjI9KzGtqaGhxUZAIaV1PZ9Z1epJwe41Px3TUGsNJw==
 
 prismjs@1.24.1:
   version "1.24.1"
