@@ -6336,10 +6336,10 @@ gatsby-plugin-react-svg@3.0.1:
   dependencies:
     svg-react-loader "^0.4.4"
 
-gatsby-plugin-sharp@3.10.0:
-  version "3.10.0"
-  resolved "https://registry.npmjs.org/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.10.0.tgz"
-  integrity sha512-jX+4OFdigQd7M3aG+JonTSSr1SBfSGUFalghB3i/fixeQhAvGanE+N1EYx5yUvO0xYeW/LMLauEyGQQA8nOkhA==
+gatsby-plugin-sharp@3.10.2:
+  version "3.10.2"
+  resolved "https://registry.npmjs.org/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.10.2.tgz"
+  integrity sha512-aaoxfsYgfS2LqGLxLHit9fRAH8mbpltyEni+l9SYMUwjfZAJHFnY0tqstsIYijMZyeatAzm3UWt7lQnEUEtGTg==
   dependencies:
     "@babel/runtime" "^7.14.6"
     async "^3.2.0"
@@ -6655,10 +6655,10 @@ gatsby-worker@^0.1.0:
   dependencies:
     "@babel/core" "^7.14.6"
 
-gatsby@3.10.0:
-  version "3.10.0"
-  resolved "https://registry.npmjs.org/gatsby/-/gatsby-3.10.0.tgz"
-  integrity sha512-deVhuroEoS/UjmyLRZv+pkOuRa7/d6rXgMn3VO4K4r/LDsfsrPCe3ATHtuHOdAOJ6fZYRcyFQ2v2zPCPGtR66A==
+gatsby@3.10.1:
+  version "3.10.1"
+  resolved "https://registry.npmjs.org/gatsby/-/gatsby-3.10.1.tgz"
+  integrity sha512-LFO5czWy+mgHv/8GwSYqflKukYKFYwe61wdi4qwNcvnJPeB24w8FrxWKh2RwWkaJuIhB7hzPi45uwDoUrvkbFA==
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/core" "^7.14.6"
