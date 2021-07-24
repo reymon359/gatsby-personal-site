@@ -2171,10 +2171,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@17.0.14":
-  version "17.0.14"
-  resolved "https://registry.npmjs.org/@types/react/-/react-17.0.14.tgz"
-  integrity sha512-0WwKHUbWuQWOce61UexYuWTGuGY/8JvtUe/dtQ6lR4sZ3UiylHotJeWpf3ArP9+DSGUoLY3wbU59VyMrJps5VQ==
+"@types/react@*", "@types/react@17.0.15":
+  version "17.0.15"
+  resolved "https://registry.npmjs.org/@types/react/-/react-17.0.15.tgz"
+  integrity sha512-uTKHDK9STXFHLaKv6IMnwp52fm0hwU+N89w/p9grdUqcFA6WuqDyPhaWopbNyE1k/VhgzmHl8pu1L4wITtmlLw==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -13213,9 +13213,9 @@ tar-stream@^2.1.4:
     readable-stream "^3.1.1"
 
 tar@^4.4.13:
-  version "4.4.13"
-  resolved "https://registry.yarnpkg.com/tar/-/tar-4.4.13.tgz#43b364bc52888d555298637b10d60790254ab525"
-  integrity sha512-w2VwSrBoHa5BsSyH+KxEqeQBAllHhccyMFVHtGtdMpF4W7IRWfZjFiQceJPChOeTsSDVUpER2T8FA93pr0L+QA==
+  version "4.4.14"
+  resolved "https://registry.yarnpkg.com/tar/-/tar-4.4.14.tgz#994901b59ce34402be3907ed7c0332a9e38c43c5"
+  integrity sha512-ouN3XcSWYOAHmXZ+P4NEFJvqXL50To9OZBSQNNP30vBUFJFZZ0PLX15fnwupv6azfxMUfUDUr2fhYw4zGAEPcg==
   dependencies:
     chownr "^1.1.1"
     fs-minipass "^1.2.5"
