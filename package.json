@@ -69,7 +69,7 @@
     "@types/styled-components": "5.1.11",
     "@typescript-eslint/eslint-plugin": "4.28.5",
     "@typescript-eslint/parser": "4.28.5",
-    "eslint": "7.31.0",
+    "eslint": "7.32.0",
     "eslint-plugin-react": "7.24.0",
     "eslint-plugin-react-hooks": "4.2.0",
     "gh-pages": "3.2.3",
