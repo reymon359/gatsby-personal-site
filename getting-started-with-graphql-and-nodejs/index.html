@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/gatsby-personal-site/styles.131b48b25a50eff60b34.css">code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><meta name="generator" content="Gatsby 2.24.47"/><style type="text/css">
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/gatsby-personal-site/styles.e53586a225ffdde20c86.css" data-identity="gatsby-global-css">code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><meta name="generator" content="Gatsby 3.7.0"/><style type="text/css">
     .autolink-headers.before {
       position: absolute;
       top: 0;
@@ -48,115 +48,98 @@
         }
       }
     })
-  </script><link rel="canonical" href="https://ramonmorcillo.com/getting-started-with-graphql-and-nodejs/" data-baseprotocol="https:" data-basehost="ramonmorcillo.com"/><link rel="icon" href="/gatsby-personal-site/favicon-32x32.png?v=942805c02543e38c68e21b5554eb981b" type="image/png"/><link rel="manifest" href="/gatsby-personal-site/manifest.webmanifest" crossorigin="use-credentials"/><link rel="apple-touch-icon" sizes="48x48" href="/gatsby-personal-site/icons/icon-48x48.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="72x72" href="/gatsby-personal-site/icons/icon-72x72.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="96x96" href="/gatsby-personal-site/icons/icon-96x96.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="144x144" href="/gatsby-personal-site/icons/icon-144x144.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="192x192" href="/gatsby-personal-site/icons/icon-192x192.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="256x256" href="/gatsby-personal-site/icons/icon-256x256.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="384x384" href="/gatsby-personal-site/icons/icon-384x384.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="512x512" href="/gatsby-personal-site/icons/icon-512x512.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><title data-react-helmet="true">Getting started with GraphQL and Node.js | ramonmorcillo.com</title><meta data-react-helmet="true" name="description" content="The main purpose of this server-client Node.js project is to help other people understand how GraphQL exposes the data from the Server and the Client fetches it. I have tried to make it as simple as possible- if you want to dive into the code of the project you can find it here. Now, straight to the point: GraphQL is a query language for APIs developed and open-sourced by Facebook to speed up the request process. While REST has been a popular way to expose data from a server, instead of having multiple endpoints that return fixed data structures, GraphQL just has a single endpoint and it is the client’s job to specify what data it needs from it. Table of Contents Getting started Define the Schema Add Resolver function Set up the Server Set up the Client Fetching data from the server Displaying the data Conclusion Useful resources Docs 📚 Learn 📝 Tools 🔧 IDEs 💻 Extras 🍍 Getting started The first step is to download and install Node.js in case you haven’t already. Once you have it installed let’s begin with the directory structure. The project will be composed of two directories, one for the Client and another for the Server. I have chosen to keep both inside the project root directory but then you can split it into two separate projects or any way you want. Now we will initialize the project in the server directory. Change the location to the server folder in your terminal and run  to fill the project info and generate the package.json file. Or  which tells the generator to use the defaults (instead of asking questions and simply generate an empty npm project without going through an interactive process). The next step will be to install GraphQL.js and Apollo Server to our server. GraphQL.js will provide two important capabilities: Building a type schema, which we will do in the next step. Serving queries against that type schema. To install it just run . I am assuming you are using a version of NPM equal or higher than 5.0.0 so you do not need to add  when installing a dependency to be saved in the package.json Apollo Server, on the other hand, will help us to implement the GraphQL functionalities. It is part of the Apollo Data Graph Platform. Apollo is a platform for building a data graph, a communication layer that seamlessly connects your application clients (such as React and iOS apps) to your back-end services. Is an implementation of GraphQL designed for the needs of product engineering teams building modern, data-driven applications. - Apollo…"/><meta data-react-helmet="true" property="og:title" content="Getting started with GraphQL and Node.js"/><meta data-react-helmet="true" property="og:description" content="The main purpose of this server-client Node.js project is to help other people understand how GraphQL exposes the data from the Server and the Client fetches it. I have tried to make it as simple as possible- if you want to dive into the code of the project you can find it here. Now, straight to the point: GraphQL is a query language for APIs developed and open-sourced by Facebook to speed up the request process. While REST has been a popular way to expose data from a server, instead of having multiple endpoints that return fixed data structures, GraphQL just has a single endpoint and it is the client’s job to specify what data it needs from it. Table of Contents Getting started Define the Schema Add Resolver function Set up the Server Set up the Client Fetching data from the server Displaying the data Conclusion Useful resources Docs 📚 Learn 📝 Tools 🔧 IDEs 💻 Extras 🍍 Getting started The first step is to download and install Node.js in case you haven’t already. Once you have it installed let’s begin with the directory structure. The project will be composed of two directories, one for the Client and another for the Server. I have chosen to keep both inside the project root directory but then you can split it into two separate projects or any way you want. Now we will initialize the project in the server directory. Change the location to the server folder in your terminal and run  to fill the project info and generate the package.json file. Or  which tells the generator to use the defaults (instead of asking questions and simply generate an empty npm project without going through an interactive process). The next step will be to install GraphQL.js and Apollo Server to our server. GraphQL.js will provide two important capabilities: Building a type schema, which we will do in the next step. Serving queries against that type schema. To install it just run . I am assuming you are using a version of NPM equal or higher than 5.0.0 so you do not need to add  when installing a dependency to be saved in the package.json Apollo Server, on the other hand, will help us to implement the GraphQL functionalities. It is part of the Apollo Data Graph Platform. Apollo is a platform for building a data graph, a communication layer that seamlessly connects your application clients (such as React and iOS apps) to your back-end services. Is an implementation of GraphQL designed for the needs of product engineering teams building modern, data-driven applications. - Apollo…"/><meta data-react-helmet="true" property="og:image" content="static/images/ramon-morcillo-meta-image.jpg"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Ramon Morcillo"/><meta data-react-helmet="true" name="twitter:title" content="Getting started with GraphQL and Node.js"/><meta data-react-helmet="true" name="twitter:description" content="The main purpose of this server-client Node.js project is to help other people understand how GraphQL exposes the data from the Server and the Client fetches it. I have tried to make it as simple as possible- if you want to dive into the code of the project you can find it here. Now, straight to the point: GraphQL is a query language for APIs developed and open-sourced by Facebook to speed up the request process. While REST has been a popular way to expose data from a server, instead of having multiple endpoints that return fixed data structures, GraphQL just has a single endpoint and it is the client’s job to specify what data it needs from it. Table of Contents Getting started Define the Schema Add Resolver function Set up the Server Set up the Client Fetching data from the server Displaying the data Conclusion Useful resources Docs 📚 Learn 📝 Tools 🔧 IDEs 💻 Extras 🍍 Getting started The first step is to download and install Node.js in case you haven’t already. Once you have it installed let’s begin with the directory structure. The project will be composed of two directories, one for the Client and another for the Server. I have chosen to keep both inside the project root directory but then you can split it into two separate projects or any way you want. Now we will initialize the project in the server directory. Change the location to the server folder in your terminal and run  to fill the project info and generate the package.json file. Or  which tells the generator to use the defaults (instead of asking questions and simply generate an empty npm project without going through an interactive process). The next step will be to install GraphQL.js and Apollo Server to our server. GraphQL.js will provide two important capabilities: Building a type schema, which we will do in the next step. Serving queries against that type schema. To install it just run . I am assuming you are using a version of NPM equal or higher than 5.0.0 so you do not need to add  when installing a dependency to be saved in the package.json Apollo Server, on the other hand, will help us to implement the GraphQL functionalities. It is part of the Apollo Data Graph Platform. Apollo is a platform for building a data graph, a communication layer that seamlessly connects your application clients (such as React and iOS apps) to your back-end services. Is an implementation of GraphQL designed for the needs of product engineering teams building modern, data-driven applications. - Apollo…"/><meta data-react-helmet="true" name="twitter:image" content="static/images/ramon-morcillo-meta-image.jpg"/><meta data-react-helmet="true" name="google-site-verification" content="Add the Google Site Verification"/><meta data-react-helmet="true" name="keywords" content="blog, gatsby, typescript, javascript, portfolio, react"/><style data-styled="" data-styled-version="5.1.1">.eFCMIq{padding-left:1rem;margin-bottom:1.5rem;}/*!sc*/
-data-styled.g3[id="shared__Header-tnyzq1-2"]{content:"eFCMIq,"}/*!sc*/
-.hKfkmO{font-size:2rem;font-weight:400;}/*!sc*/
-data-styled.g4[id="shared__Title-tnyzq1-3"]{content:"hKfkmO,"}/*!sc*/
-.hzWzVR{font-size:1.5rem;font-weight:200;-webkit-letter-spacing:0.1rem;-moz-letter-spacing:0.1rem;-ms-letter-spacing:0.1rem;letter-spacing:0.1rem;padding:1rem 0;}/*!sc*/
-data-styled.g5[id="shared__Description-tnyzq1-4"]{content:"hzWzVR,"}/*!sc*/
-.kAHoo{padding:0.6rem 0 0 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-left:-0.3rem;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;}/*!sc*/
-data-styled.g8[id="shared__ItemTags-tnyzq1-7"]{content:"kAHoo,"}/*!sc*/
-.eOKRGs{padding:0.4rem 0.6rem;height:1.5rem;color:#F3F3F3;background-color:#F3F3F340;font-weight:600;font-size:.7rem;border-radius:3rem;margin:0.2rem;-webkit-text-decoration:none;text-decoration:none;border-bottom:0;white-space:nowrap;line-height:1;-webkit-transition:0.2s ease;transition:0.2s ease;}/*!sc*/
-.eOKRGs:hover{color:#333333;background-color:#F3F3F3;}/*!sc*/
-data-styled.g9[id="shared__Tag-tnyzq1-8"]{content:"eOKRGs,"}/*!sc*/
-.jtdOaB{position:relative;}/*!sc*/
-data-styled.g10[id="Logo__RelativeWrapper-sc-1a2c5zq-0"]{content:"jtdOaB,"}/*!sc*/
-.gwbwuc{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%) scale(0);-ms-transform:translate(-50%,-50%) scale(0);transform:translate(-50%,-50%) scale(0);background:#FFFFFF10;height:100%;width:100%;border-radius:100%;pointer-events:none;opacity:1;will-change:transform;}/*!sc*/
-data-styled.g11[id="Logo__CircleBackground-sc-1a2c5zq-1"]{content:"gwbwuc,"}/*!sc*/
-.dOBtGg{position:fixed;top:0;left:0;max-width:18rem;padding:5rem;}/*!sc*/
-@media (max-width:78em){.dOBtGg{padding:3rem;}}/*!sc*/
-@media (max-width:54em){.dOBtGg{padding:3rem;}}/*!sc*/
-@media (max-width:40em){.dOBtGg{padding:2rem;}}/*!sc*/
-@media (max-width:54em){.dOBtGg{position:static;padding:0;}}/*!sc*/
-.dOBtGg a,.dOBtGg svg{pointer-events:all;display:block;}/*!sc*/
-.dOBtGg a{width:1.65rem;border-bottom:none;}/*!sc*/
-.dOBtGg a:hover{border-bottom:none;}/*!sc*/
-@media (max-width:78em){.dOBtGg a{width:1.45rem;}}/*!sc*/
-.dOBtGg svg{width:100%;height:auto;}/*!sc*/
-.dOBtGg a:hover + .Logo__CircleBackground-sc-1a2c5zq-1{opacity:0;-webkit-transform:translate(-50%,-50%) scale(7.5);-ms-transform:translate(-50%,-50%) scale(7.5);transform:translate(-50%,-50%) scale(7.5);-webkit-transition:-webkit-transform 1s cubic-bezier(0.45,0,0.1,1),opacity 0.8s ease;-webkit-transition:transform 1s cubic-bezier(0.45,0,0.1,1),opacity 0.8s ease;transition:transform 1s cubic-bezier(0.45,0,0.1,1),opacity 0.8s ease;}/*!sc*/
-data-styled.g12[id="Logo__CircleWrapper-sc-1a2c5zq-2"]{content:"dOBtGg,"}/*!sc*/
-.kVSAqo{width:100%;position:fixed;top:50%;}/*!sc*/
-@media (max-width:54em){.kVSAqo{position:static;padding-top:1.5rem;}}/*!sc*/
-data-styled.g13[id="Footer__FooterWrapper-sc-1df0yns-0"]{content:"kVSAqo,"}/*!sc*/
-.DWFzK{position:absolute;font-family:"Roboto",stack-sans,"Open Sans","Lato","Nunito Sans","Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-letter-spacing:0.1rem;-moz-letter-spacing:0.1rem;-ms-letter-spacing:0.1rem;letter-spacing:0.1rem;color:#FFFFFF;font-size:0.85rem;line-height:1em;-webkit-transform:rotate(-90deg) translateX(-50%);-ms-transform:rotate(-90deg) translateX(-50%);transform:rotate(-90deg) translateX(-50%);-webkit-transform-origin:left;-ms-transform-origin:left;transform-origin:left;left:5rem;}/*!sc*/
-@media (max-width:78em){.DWFzK{left:3rem;}}/*!sc*/
-@media (max-width:54em){.DWFzK{left:3rem;}}/*!sc*/
-@media (max-width:40em){.DWFzK{left:2rem;}}/*!sc*/
-@media (max-width:54em){.DWFzK{position:static;-webkit-transform:rotate(0) translateX(0);-ms-transform:rotate(0) translateX(0);transform:rotate(0) translateX(0);-webkit-transform-origin:0;-ms-transform-origin:0;transform-origin:0;padding:.5rem 0 0;text-align:center;font-size:.8rem;}}/*!sc*/
-.DWFzK small{font-size:70% !important;}/*!sc*/
-.hjAAcR{position:absolute;font-family:"Roboto",stack-sans,"Open Sans","Lato","Nunito Sans","Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-letter-spacing:0.1rem;-moz-letter-spacing:0.1rem;-ms-letter-spacing:0.1rem;letter-spacing:0.1rem;color:#FFFFFF;font-size:0.85rem;line-height:1em;-webkit-transform:rotate(90deg) translateX(50%);-ms-transform:rotate(90deg) translateX(50%);transform:rotate(90deg) translateX(50%);-webkit-transform-origin:right;-ms-transform-origin:right;transform-origin:right;right:5rem;}/*!sc*/
-@media (max-width:78em){.hjAAcR{right:3rem;}}/*!sc*/
-@media (max-width:54em){.hjAAcR{right:3rem;}}/*!sc*/
-@media (max-width:40em){.hjAAcR{right:2rem;}}/*!sc*/
-@media (max-width:54em){.hjAAcR{position:static;-webkit-transform:rotate(0) translateX(0);-ms-transform:rotate(0) translateX(0);transform:rotate(0) translateX(0);-webkit-transform-origin:0;-ms-transform-origin:0;transform-origin:0;padding:.5rem 0 0;text-align:center;font-size:.8rem;}}/*!sc*/
-.hjAAcR small{font-size:70% !important;}/*!sc*/
-data-styled.g14[id="Footer__Item-sc-1df0yns-1"]{content:"DWFzK,hjAAcR,"}/*!sc*/
-.dHOpqb{position:fixed;bottom:0;left:0;right:0;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding:5rem;}/*!sc*/
-@media (max-width:78em){.dHOpqb{padding:3rem;}}/*!sc*/
-@media (max-width:54em){.dHOpqb{padding:3rem;}}/*!sc*/
-@media (max-width:40em){.dHOpqb{padding:2rem;}}/*!sc*/
-.dHOpqb ul:last-child li{text-align:right;}/*!sc*/
-.dHOpqb ul:last-child li a{-webkit-transition:color 0.4s ease;transition:color 0.4s ease;will-change:color;position:relative;border-bottom:none;}/*!sc*/
-.dHOpqb ul:last-child li a::before{position:absolute;left:-1.1rem;top:50%;background:#FFFFFF;border-radius:100%;content:'';display:block;height:0.3rem;width:0.3rem;-webkit-transition:-webkit-transform 0.3s cubic-bezier(0.45,0,0.1,1),opacity 0.1s ease;-webkit-transition:transform 0.3s cubic-bezier(0.45,0,0.1,1),opacity 0.1s ease;transition:transform 0.3s cubic-bezier(0.45,0,0.1,1),opacity 0.1s ease;will-change:transform,opacity;}/*!sc*/
-.dHOpqb ul:last-child li a:not(.active)::before{opacity:0;-webkit-transform:translate(-1rem,-50%);-ms-transform:translate(-1rem,-50%);transform:translate(-1rem,-50%);}/*!sc*/
-.dHOpqb ul:last-child li a:hover{color:#FFFFFF;}/*!sc*/
-.dHOpqb ul:last-child li a:hover::before{-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);transform:translate(0,-50%);opacity:1;}/*!sc*/
-@media (max-width:54em){.dHOpqb{position:static;padding:0;}}/*!sc*/
-data-styled.g15[id="Menu__MenuWrapper-sc-1vxe8de-0"]{content:"dHOpqb,"}/*!sc*/
-.cGxYXm{list-style:none;padding:0;margin:0;width:50%;max-width:14rem;}/*!sc*/
-data-styled.g16[id="Menu__Nav-sc-1vxe8de-1"]{content:"cGxYXm,"}/*!sc*/
-.iTvxVL{list-style:none;padding:0.5rem 0;line-height:1em;}/*!sc*/
-.iTvxVL:last-child{padding-bottom:0;}/*!sc*/
-.iTvxVL a{font-size:1rem;font-family:"Roboto",stack-sans,"Open Sans","Lato","Nunito Sans","Helvetica Neue",Helvetica,Arial,sans-serif;color:#DDDDDD;font-weight:400;pointer-events:all;-webkit-transition:color 0.1s ease;transition:color 0.1s ease;line-height:1em;border-bottom:none;}/*!sc*/
-.iTvxVL a:hover{color:#FFFFFF;font-weight:600;border-bottom:none;}/*!sc*/
-data-styled.g17[id="Menu__NavItem-sc-1vxe8de-2"]{content:"iTvxVL,"}/*!sc*/
-.gTGjFF{text-transform:capitalize;}/*!sc*/
-.gTGjFF:hover{color:#FFFFFF;font-weight:600;}/*!sc*/
-.gTGjFF.active{color:#FFFFFF;font-weight:600;}/*!sc*/
-.gTGjFF.active::before{-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);transform:translate(0,-50%);opacity:1;}/*!sc*/
-data-styled.g18[id="Menu__NavLink-sc-1vxe8de-3"]{content:"gTGjFF,"}/*!sc*/
-.iRpNsT{pointer-events:all;display:none;height:15px;width:1.75rem;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transition:-webkit-transform 0.45s cubic-bezier(0.45,0,0.07,1);-webkit-transition:transform 0.45s cubic-bezier(0.45,0,0.07,1);transition:transform 0.45s cubic-bezier(0.45,0,0.07,1);will-change:transform;cursor:pointer;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);}/*!sc*/
-.iRpNsT span{display:inline-block;height:1px;background:#FFFFFF;}/*!sc*/
-.iRpNsT span:nth-child(1){width:100%;}/*!sc*/
-.iRpNsT span:nth-child(2){width:60%;margin-right:20%;}/*!sc*/
-.iRpNsT span:nth-child(3){width:100%;}/*!sc*/
-@media (max-width:54em){.iRpNsT{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}/*!sc*/
-data-styled.g19[id="ToggleMenu__ToggleMenuWrapper-sc-1rm9swz-0"]{content:"iRpNsT,"}/*!sc*/
-.fluJjo{color:#F3F3F3;font-size:1rem;font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;-webkit-letter-spacing:0.05rem;-moz-letter-spacing:0.05rem;-ms-letter-spacing:0.05rem;letter-spacing:0.05rem;text-align:center;opacity:0;display:none;-webkit-animation:fade 10s;animation:fade 10s;}/*!sc*/
-@media (min-width:54em){.fluJjo{position:relative;top:90vh;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}}/*!sc*/
-@media (max-width:54em){.fluJjo{margin-bottom:0;padding-top:0;}}/*!sc*/
-@media (max-width:40em){.fluJjo{margin-bottom:-0.3rem;max-width:70%;}}/*!sc*/
+  </script><link rel="canonical" href="https://ramonmorcillo.com/getting-started-with-graphql-and-nodejs/" data-baseprotocol="https:" data-basehost="ramonmorcillo.com"/><link rel="icon" href="/gatsby-personal-site/favicon-32x32.png?v=942805c02543e38c68e21b5554eb981b" type="image/png"/><link rel="manifest" href="/gatsby-personal-site/manifest.webmanifest" crossorigin="use-credentials"/><meta name="theme-color" content="#255799"/><link rel="apple-touch-icon" sizes="48x48" href="/gatsby-personal-site/icons/icon-48x48.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="72x72" href="/gatsby-personal-site/icons/icon-72x72.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="96x96" href="/gatsby-personal-site/icons/icon-96x96.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="144x144" href="/gatsby-personal-site/icons/icon-144x144.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="192x192" href="/gatsby-personal-site/icons/icon-192x192.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="256x256" href="/gatsby-personal-site/icons/icon-256x256.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="384x384" href="/gatsby-personal-site/icons/icon-384x384.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="512x512" href="/gatsby-personal-site/icons/icon-512x512.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><title data-react-helmet="true">Getting started with GraphQL and Node.js | ramonmorcillo.com</title><meta data-react-helmet="true" name="description" content="Hello World Client Server project to explain how GraphQL Works."/><meta data-react-helmet="true" property="image" content="https://ramonmorcillo.com/gatsby-personal-site/static/45fa279ac094c75905073249afa16ef6/2244e/gia-oris-_uM5_nG2ssc-unsplash.jpg"/><meta data-react-helmet="true" property="og:title" content="Getting started with GraphQL and Node.js"/><meta data-react-helmet="true" property="og:description" content="Hello World Client Server project to explain how GraphQL Works."/><meta data-react-helmet="true" property="og:image" content="https://ramonmorcillo.com/gatsby-personal-site/static/45fa279ac094c75905073249afa16ef6/2244e/gia-oris-_uM5_nG2ssc-unsplash.jpg"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Ramon Morcillo"/><meta data-react-helmet="true" name="twitter:title" content="Getting started with GraphQL and Node.js"/><meta data-react-helmet="true" name="twitter:description" content="Hello World Client Server project to explain how GraphQL Works."/><meta data-react-helmet="true" name="twitter:image" content="https://ramonmorcillo.com/gatsby-personal-site/static/45fa279ac094c75905073249afa16ef6/2244e/gia-oris-_uM5_nG2ssc-unsplash.jpg"/><meta data-react-helmet="true" name="google-site-verification" content="Add the Google Site Verification"/><meta data-react-helmet="true" name="keywords" content="blog, gatsby, typescript, javascript, portfolio, react"/><style data-styled="" data-styled-version="5.3.0">.bESpfA{padding-left:1rem;margin-bottom:1.5rem;}/*!sc*/
+data-styled.g3[id="shared__Header-tnyzq1-2"]{content:"bESpfA,"}/*!sc*/
+.eCLyvQ{font-size:2rem;font-weight:400;}/*!sc*/
+data-styled.g4[id="shared__Title-tnyzq1-3"]{content:"eCLyvQ,"}/*!sc*/
+.iEIPhv{font-size:1.5rem;font-weight:200;-webkit-letter-spacing:0.1rem;-moz-letter-spacing:0.1rem;-ms-letter-spacing:0.1rem;letter-spacing:0.1rem;padding:1rem 0;}/*!sc*/
+data-styled.g5[id="shared__Description-tnyzq1-4"]{content:"iEIPhv,"}/*!sc*/
+.gSZNPC{padding:0.6rem 0 0 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-left:-0.3rem;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;}/*!sc*/
+data-styled.g8[id="shared__ItemTags-tnyzq1-7"]{content:"gSZNPC,"}/*!sc*/
+.bpExil{padding:0.4rem 0.6rem;height:1.5rem;color:#F3F3F3;background-color:#F3F3F340;font-weight:600;font-size:.8rem;border-radius:3rem;margin:0.2rem;-webkit-text-decoration:none;text-decoration:none;border-bottom:0;white-space:nowrap;line-height:1;-webkit-transition:0.2s ease;transition:0.2s ease;}/*!sc*/
+.bpExil:hover{color:#333333;background-color:#F3F3F3;}/*!sc*/
+data-styled.g9[id="shared__Tag-tnyzq1-8"]{content:"bpExil,"}/*!sc*/
+.dQZthV{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%) scale(0);-ms-transform:translate(-50%,-50%) scale(0);transform:translate(-50%,-50%) scale(0);background:#FFFFFF10;height:100%;width:100%;border-radius:100%;pointer-events:none;opacity:1;will-change:transform;}/*!sc*/
+data-styled.g10[id="Logo__Background-sc-19tlazh-0"]{content:"dQZthV,"}/*!sc*/
+.bCOyZr{position:fixed;top:0;left:0;max-width:18rem;padding:5rem;}/*!sc*/
+@media (max-width:78em){.bCOyZr{padding:3rem;}}/*!sc*/
+@media (max-width:54em){.bCOyZr{padding:3rem;}}/*!sc*/
+@media (max-width:40em){.bCOyZr{padding:2rem;}}/*!sc*/
+@media (max-width:54em){.bCOyZr{position:static;padding:0;}}/*!sc*/
+.bCOyZr a,.bCOyZr svg{pointer-events:all;display:block;}/*!sc*/
+.bCOyZr a{width:1.65rem;border-bottom:none;}/*!sc*/
+.bCOyZr a:hover{border-bottom:none;}/*!sc*/
+@media (max-width:78em){.bCOyZr a{width:1.45rem;}}/*!sc*/
+.bCOyZr svg{width:100%;height:auto;}/*!sc*/
+.bCOyZr a:hover + .Logo__Background-sc-19tlazh-0{opacity:0;-webkit-transform:translate(-50%,-50%) scale(7.5);-ms-transform:translate(-50%,-50%) scale(7.5);transform:translate(-50%,-50%) scale(7.5);-webkit-transition:-webkit-transform 1s cubic-bezier(0.45,0,0.1,1),opacity 0.8s ease;-webkit-transition:transform 1s cubic-bezier(0.45,0,0.1,1),opacity 0.8s ease;transition:transform 1s cubic-bezier(0.45,0,0.1,1),opacity 0.8s ease;}/*!sc*/
+data-styled.g11[id="Logo__Wrapper-sc-19tlazh-1"]{content:"bCOyZr,"}/*!sc*/
+.Essph{position:relative;}/*!sc*/
+data-styled.g12[id="Logo__RelativeWrapper-sc-19tlazh-2"]{content:"Essph,"}/*!sc*/
+.iXxlXu{width:100%;position:fixed;top:50%;}/*!sc*/
+@media (max-width:54em){.iXxlXu{position:static;padding-top:1.5rem;}}/*!sc*/
+data-styled.g13[id="Footer__FooterWrapper-sc-1df0yns-0"]{content:"iXxlXu,"}/*!sc*/
+.jSPHnk{position:absolute;font-family:"Roboto",stack-sans,"Open Sans","Lato","Nunito Sans","Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-letter-spacing:0.1rem;-moz-letter-spacing:0.1rem;-ms-letter-spacing:0.1rem;letter-spacing:0.1rem;color:#FFFFFF;font-size:0.85rem;line-height:1em;pointer-events:all;-webkit-transform:rotate(-90deg) translateX(-50%);-ms-transform:rotate(-90deg) translateX(-50%);transform:rotate(-90deg) translateX(-50%);-webkit-transform-origin:left;-ms-transform-origin:left;transform-origin:left;left:5rem;}/*!sc*/
+.jSPHnk a{border-bottom:none;}/*!sc*/
+@media (max-width:78em){.jSPHnk{left:3rem;}}/*!sc*/
+@media (max-width:54em){.jSPHnk{left:3rem;}}/*!sc*/
+@media (max-width:40em){.jSPHnk{left:2rem;}}/*!sc*/
+@media (max-width:54em){.jSPHnk{position:static;-webkit-transform:rotate(0) translateX(0);-ms-transform:rotate(0) translateX(0);transform:rotate(0) translateX(0);-webkit-transform-origin:0;-ms-transform-origin:0;transform-origin:0;padding:.5rem 0 0;text-align:center;font-size:.8rem;}}/*!sc*/
+.jSPHnk small{font-size:70% !important;}/*!sc*/
+.iYbvcT{position:absolute;font-family:"Roboto",stack-sans,"Open Sans","Lato","Nunito Sans","Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-letter-spacing:0.1rem;-moz-letter-spacing:0.1rem;-ms-letter-spacing:0.1rem;letter-spacing:0.1rem;color:#FFFFFF;font-size:0.85rem;line-height:1em;pointer-events:all;-webkit-transform:rotate(90deg) translateX(50%);-ms-transform:rotate(90deg) translateX(50%);transform:rotate(90deg) translateX(50%);-webkit-transform-origin:right;-ms-transform-origin:right;transform-origin:right;right:5rem;}/*!sc*/
+.iYbvcT a{border-bottom:none;}/*!sc*/
+@media (max-width:78em){.iYbvcT{right:3rem;}}/*!sc*/
+@media (max-width:54em){.iYbvcT{right:3rem;}}/*!sc*/
+@media (max-width:40em){.iYbvcT{right:2rem;}}/*!sc*/
+@media (max-width:54em){.iYbvcT{position:static;-webkit-transform:rotate(0) translateX(0);-ms-transform:rotate(0) translateX(0);transform:rotate(0) translateX(0);-webkit-transform-origin:0;-ms-transform-origin:0;transform-origin:0;padding:.5rem 0 0;text-align:center;font-size:.8rem;}}/*!sc*/
+.iYbvcT small{font-size:70% !important;}/*!sc*/
+data-styled.g14[id="Footer__Item-sc-1df0yns-1"]{content:"jSPHnk,iYbvcT,"}/*!sc*/
+.bTtsHt{position:fixed;bottom:0;left:0;right:0;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding:5rem;}/*!sc*/
+@media (max-width:78em){.bTtsHt{padding:3rem;}}/*!sc*/
+@media (max-width:54em){.bTtsHt{padding:3rem;}}/*!sc*/
+@media (max-width:40em){.bTtsHt{padding:2rem;}}/*!sc*/
+.bTtsHt ul:last-child li{text-align:right;}/*!sc*/
+.bTtsHt ul:last-child li a{-webkit-transition:color 0.4s ease;transition:color 0.4s ease;will-change:color;position:relative;border-bottom:none;}/*!sc*/
+.bTtsHt ul:last-child li a::before{position:absolute;left:-1.1rem;top:50%;background:#FFFFFF;border-radius:100%;content:'';display:block;height:0.3rem;width:0.3rem;-webkit-transition:-webkit-transform 0.3s cubic-bezier(0.45,0,0.1,1),opacity 0.1s ease;-webkit-transition:transform 0.3s cubic-bezier(0.45,0,0.1,1),opacity 0.1s ease;transition:transform 0.3s cubic-bezier(0.45,0,0.1,1),opacity 0.1s ease;will-change:transform,opacity;}/*!sc*/
+.bTtsHt ul:last-child li a:not(.active)::before{opacity:0;-webkit-transform:translate(-1rem,-50%);-ms-transform:translate(-1rem,-50%);transform:translate(-1rem,-50%);}/*!sc*/
+.bTtsHt ul:last-child li a:hover{color:#FFFFFF;}/*!sc*/
+.bTtsHt ul:last-child li a:hover::before{-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);transform:translate(0,-50%);opacity:1;}/*!sc*/
+@media (max-width:54em){.bTtsHt{position:static;padding:0;}}/*!sc*/
+data-styled.g15[id="Menu__MenuWrapper-sc-1vxe8de-0"]{content:"bTtsHt,"}/*!sc*/
+.iNaoaw{list-style:none;padding:0;margin:0;width:50%;max-width:14rem;}/*!sc*/
+data-styled.g16[id="Menu__Nav-sc-1vxe8de-1"]{content:"iNaoaw,"}/*!sc*/
+.ByzpB{list-style:none;padding:0.5rem 0;line-height:1em;}/*!sc*/
+.ByzpB:last-child{padding-bottom:0;}/*!sc*/
+.ByzpB a{font-size:1rem;font-family:"Roboto",stack-sans,"Open Sans","Lato","Nunito Sans","Helvetica Neue",Helvetica,Arial,sans-serif;color:#DDDDDD;font-weight:400;pointer-events:all;-webkit-transition:color 0.1s ease;transition:color 0.1s ease;line-height:1em;border-bottom:none;}/*!sc*/
+.ByzpB a:hover{color:#FFFFFF;font-weight:600;border-bottom:none;}/*!sc*/
+data-styled.g17[id="Menu__NavItem-sc-1vxe8de-2"]{content:"ByzpB,"}/*!sc*/
+.cEEwRr{text-transform:capitalize;}/*!sc*/
+.cEEwRr:hover{color:#FFFFFF;font-weight:600;}/*!sc*/
+.cEEwRr.active{color:#FFFFFF;font-weight:600;}/*!sc*/
+.cEEwRr.active::before{-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);transform:translate(0,-50%);opacity:1;}/*!sc*/
+data-styled.g18[id="Menu__NavLink-sc-1vxe8de-3"]{content:"cEEwRr,"}/*!sc*/
+.bHbNgR{pointer-events:all;display:none;height:15px;width:1.75rem;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transition:-webkit-transform 0.45s cubic-bezier(0.45,0,0.07,1);-webkit-transition:transform 0.45s cubic-bezier(0.45,0,0.07,1);transition:transform 0.45s cubic-bezier(0.45,0,0.07,1);will-change:transform;cursor:pointer;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);}/*!sc*/
+.bHbNgR span{display:inline-block;height:1px;background:#FFFFFF;}/*!sc*/
+.bHbNgR span:nth-child(1){width:100%;}/*!sc*/
+.bHbNgR span:nth-child(2){width:60%;margin-right:20%;}/*!sc*/
+.bHbNgR span:nth-child(3){width:100%;}/*!sc*/
+@media (max-width:54em){.bHbNgR{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}/*!sc*/
+data-styled.g19[id="ToggleMenu__ToggleMenuWrapper-sc-1rm9swz-0"]{content:"bHbNgR,"}/*!sc*/
+.fPYIDe{color:#F3F3F3;font-size:1rem;font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;-webkit-letter-spacing:0.05rem;-moz-letter-spacing:0.05rem;-ms-letter-spacing:0.05rem;letter-spacing:0.05rem;text-align:center;opacity:0;display:none;-webkit-animation:fade 10s;animation:fade 10s;}/*!sc*/
+@media (max-width:54em){.fPYIDe{margin-bottom:0;padding-top:0;}}/*!sc*/
+@media (max-width:40em){.fPYIDe{margin-bottom:-0.3rem;max-width:70%;}}/*!sc*/
 @-webkit-keyframes fade{0%{opacity:1;}80%{opacity:1;}100%{opacity:0;}}/*!sc*/
 @keyframes fade{0%{opacity:1;}80%{opacity:1;}100%{opacity:0;}}/*!sc*/
-data-styled.g20[id="HelpMessage__HelpMessageContainer-fyo5c4-0"]{content:"fluJjo,"}/*!sc*/
-.kWLXTf{pointer-events:all;}/*!sc*/
-@media (max-width:54em){.kWLXTf{position:fixed;bottom:0;left:0;right:0;width:100%;z-index:10;}}/*!sc*/
-@media only screen and (min-width:54em){.kWLXTf{pointer-events:none;}}/*!sc*/
-data-styled.g21[id="NavigationContainer__Wrapper-xu6gj3-0"]{content:"kWLXTf,"}/*!sc*/
-@media (max-width:54em){.wFPfJ{background:#090f17;overflow:hidden;-webkit-transition:max-height .6s cubic-bezier(0.45,0,.1,1);transition:max-height .6s cubic-bezier(0.45,0,.1,1);will-change:max-height;max-height:0;}.wFPfJ > div{padding:0 3rem 3rem;}}/*!sc*/
-@media (max-width:40em){.wFPfJ > div{padding:0 2rem 2rem;}}/*!sc*/
-data-styled.g22[id="NavigationContainer__Shoable-xu6gj3-1"]{content:"wFPfJ,"}/*!sc*/
-.eECeEf{background-image:linear-gradient( to bottom,#090f1700 0%,#090f17 50% );}/*!sc*/
-@media (max-width:54em){.eECeEf{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;width:100%;min-height:7rem;padding:5rem;}@media (max-width:78em){.eECeEf{padding:3rem;}}@media (max-width:54em){.eECeEf{padding:3rem;}}@media (max-width:40em){.eECeEf{padding:2rem;}}}/*!sc*/
-data-styled.g23[id="NavigationContainer__Header-xu6gj3-2"]{content:"eECeEf,"}/*!sc*/
-.jXEmCz{max-width:68rem;width:calc(100% - 9.25rem * 2);margin:11rem auto 5rem;position:absolute;top:0;left:0;right:0;bottom:0;height:100%;}/*!sc*/
-@media (max-width:78em){.jXEmCz{width:1.45rem;margin:8rem auto 3rem;width:calc(100% - 11rem * 2);}}/*!sc*/
-@media (max-width:54em){.jXEmCz{width:100%;margin:4rem auto 0;padding:0 3rem 6rem;}}/*!sc*/
-@media (max-width:40em){.jXEmCz{margin:2rem auto 0;padding:0 2rem 6rem;}}/*!sc*/
-data-styled.g24[id="Content__Wrapper-sc-1q50de9-0"]{content:"jXEmCz,"}/*!sc*/
-.hxHujz{height:10rem;}/*!sc*/
-data-styled.g25[id="Content__BottomHeight-sc-1q50de9-1"]{content:"hxHujz,"}/*!sc*/
-.fMkycw{list-style-type:none;margin-left:0;padding-bottom:4rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}/*!sc*/
-@media (max-width:54em){.fMkycw{padding-bottom:10rem;}}/*!sc*/
-.fMkycw li{text-align:left;padding:1rem;width:50%;}/*!sc*/
-@media (max-width:54em){.fMkycw li{width:100%;text-align:center;}}/*!sc*/
-.fMkycw li::before{content:'' !important;padding-right:0 !important;}/*!sc*/
-.fMkycw li:nth-child(2){text-align:right;}/*!sc*/
-@media (max-width:54em){.fMkycw li:nth-child(2){text-align:center;}}/*!sc*/
-.fMkycw a{border-bottom:none;}/*!sc*/
-data-styled.g47[id="post__OtherPostsLinks-sc-18ghmkz-0"]{content:"fMkycw,"}/*!sc*/
-.behYBi{font-size:1rem;font-weight:200;padding:1rem 0 2rem 0;}/*!sc*/
-data-styled.g48[id="post__Date-sc-18ghmkz-1"]{content:"behYBi,"}/*!sc*/
+data-styled.g20[id="HelpMessage__Wrapper-sc-11fekqt-0"]{content:"fPYIDe,"}/*!sc*/
+.hfVphx{pointer-events:all;}/*!sc*/
+@media (max-width:54em){.hfVphx{position:fixed;bottom:0;left:0;right:0;width:100%;z-index:10;}}/*!sc*/
+@media only screen and (min-width:54em){.hfVphx{pointer-events:none;}}/*!sc*/
+data-styled.g21[id="Navigation__Wrapper-sxzav8-0"]{content:"hfVphx,"}/*!sc*/
+@media (max-width:54em){.jUAACT{background:#090f17;overflow:hidden;-webkit-transition:max-height .6s cubic-bezier(0.45,0,.1,1);transition:max-height .6s cubic-bezier(0.45,0,.1,1);will-change:max-height;max-height:0;}.jUAACT > div{padding:0 3rem 3rem;}}/*!sc*/
+@media (max-width:40em){.jUAACT > div{padding:0 2rem 2rem;}}/*!sc*/
+data-styled.g22[id="Navigation__Shoable-sxzav8-1"]{content:"jUAACT,"}/*!sc*/
+.iTMXyh{background-image:linear-gradient( to bottom,#090f1700 0%,#090f17 50% );}/*!sc*/
+@media (max-width:54em){.iTMXyh{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;width:100%;min-height:7rem;padding:5rem;}@media (max-width:78em){.iTMXyh{padding:3rem;}}@media (max-width:54em){.iTMXyh{padding:3rem;}}@media (max-width:40em){.iTMXyh{padding:2rem;}}}/*!sc*/
+data-styled.g23[id="Navigation__Header-sxzav8-2"]{content:"iTMXyh,"}/*!sc*/
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,main,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}/*!sc*/
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block;}/*!sc*/
 *[hidden]{display:none;}/*!sc*/
@@ -172,57 +155,67 @@ h2{display:inline-block;font-size:1.8rem;margin-top:1rem;margin-bottom:1rem;padd
 h3{display:inline-block;font-size:1.5rem;margin-top:.7rem;margin-bottom:.7rem;}/*!sc*/
 p{font-size:1.25rem;margin:1.5rem 0;vertical-align:baseline;}/*!sc*/
 strong{font-weight:600;}/*!sc*/
-ul,ol{font-size:1.2rem;padding:1rem;}/*!sc*/
-ul{list-style-type:circle;margin-left:1rem;}/*!sc*/
+ul,ol{font-size:1.2rem;padding:1rem;margin-left:1rem;}/*!sc*/
+ul{list-style-type:circle;}/*!sc*/
 ol{list-style-type:decimal;}/*!sc*/
 li{padding:0.2rem;}/*!sc*/
+li p{margin:0;}/*!sc*/
 a{cursor:pointer;-webkit-text-decoration:none;text-decoration:none;-webkit-transition:color ease-in .2s;transition:color ease-in .2s;font-weight:600;color:#FFFFFF;border-bottom:1px dashed #FFFFFF;}/*!sc*/
 a:hover{border-bottom:1px solid #FFFFFF;}/*!sc*/
 button:focus{outline:0;}/*!sc*/
 *{box-sizing:border-box;line-height:1.4em;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-kerning:auto;}/*!sc*/
 blockquote{box-shadow:inset 3px 0 0 0 #F8F8F8;padding-left:23px;font-style:italic;}/*!sc*/
-img[src$=".gif"]{margin:auto;max-width:600px;width:100%;horizontal-align:middle;}/*!sc*/
-figcaption{text-align:center;font-size:1rem;font-style:italic;margin:0.5rem 0;}/*!sc*/
+img[src$=".gif"]{display:block;margin:auto;width:100%;max-width:600px;}/*!sc*/
+video{max-height:500px;width:100%;max-width:600px;display:block;margin:0.5rem auto;}/*!sc*/
+figcaption{text-align:center;font-size:1rem;font-style:italic;margin:2rem 0;}/*!sc*/
 em{font-style:italic;}/*!sc*/
 ::selection{color:#ebc86e;background:transparent;}/*!sc*/
 .autolink-headers,.gatsby-resp-image-link{border-bottom:none;}/*!sc*/
 .autolink-headers:hover,.gatsby-resp-image-link:hover{border-bottom:none;}/*!sc*/
-data-styled.g49[id="sc-global-eQvSeh1"]{content:"sc-global-eQvSeh1,"}/*!sc*/
-</style><link rel="sitemap" type="application/xml" href="/gatsby-personal-site/sitemap.xml"/><link as="script" rel="preload" href="/gatsby-personal-site/webpack-runtime-a135790b6e0c1ec9a0da.js"/><link as="script" rel="preload" href="/gatsby-personal-site/framework-da19a435c6b034476fcb.js"/><link as="script" rel="preload" href="/gatsby-personal-site/styles-b41652628254a46ab628.js"/><link as="script" rel="preload" href="/gatsby-personal-site/app-5772e465f764aedd5039.js"/><link as="script" rel="preload" href="/gatsby-personal-site/commons-7f59153fe4e13c049f17.js"/><link as="script" rel="preload" href="/gatsby-personal-site/a93ca09b3e214b1f9c56eefcc27e05eb63340a26-e80b3dea36699f40609f.js"/><link as="script" rel="preload" href="/gatsby-personal-site/component---src-templates-post-tsx-bad7df9079ef814f63cf.js"/><link as="fetch" rel="preload" href="/gatsby-personal-site/page-data/getting-started-with-graphql-and-nodejs/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-personal-site/page-data/sq/d/1500402284.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-personal-site/page-data/sq/d/4120625882.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-personal-site/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><main role="main"><canvas id="canvas" style="background-color:#000000;background-image:radial-gradient(
-        circle at 64% 70%,
-        #18119a0d,
+table{font-size:1.25rem;margin:auto;width:100%;max-width:600px;overflow:auto;}/*!sc*/
+table,tr,th,td{border:1px solid #999999;padding:.5rem;}/*!sc*/
+data-styled.g24[id="sc-global-dLywzA1"]{content:"sc-global-dLywzA1,"}/*!sc*/
+.bHlQoN{max-width:68rem;width:calc(100% - 9.25rem * 2);margin:11rem auto 5rem;position:absolute;top:0;left:0;right:0;bottom:0;height:100%;}/*!sc*/
+@media (max-width:78em){.bHlQoN{width:1.45rem;margin:8rem auto 3rem;width:calc(100% - 11rem * 2);}}/*!sc*/
+@media (max-width:54em){.bHlQoN{width:100%;margin:4rem auto 0;padding:0 3rem 6rem;}}/*!sc*/
+@media (max-width:40em){.bHlQoN{margin:2rem auto 0;padding:0 2rem 6rem;}}/*!sc*/
+data-styled.g25[id="Content__Wrapper-sc-1q50de9-0"]{content:"bHlQoN,"}/*!sc*/
+.dYysHN{height:10rem;}/*!sc*/
+data-styled.g26[id="Content__BottomHeight-sc-1q50de9-1"]{content:"dYysHN,"}/*!sc*/
+.fCKPUh{padding:1rem 1rem 4rem;}/*!sc*/
+data-styled.g53[id="Comments__Wrapper-czvh9a-0"]{content:"fCKPUh,"}/*!sc*/
+.hfVTUK{color:#F3F3F3;background-color:#F3F3F340;font-size:1rem;font-weight:600;border-radius:5px;box-sizing:border-box;-webkit-text-decoration:none;text-decoration:none;display:block;padding:0.4rem 0.6rem;border-bottom:0;white-space:nowrap;line-height:1;margin:2rem 0 0.2rem 1rem;-webkit-transition:0.4s ease;transition:0.4s ease;float:right;}/*!sc*/
+.hfVTUK:hover{background-color:#F3F3F3;border-bottom:none;}/*!sc*/
+.hfVTUK a{border:none;}/*!sc*/
+.hfVTUK a:hover{border:none;color:#333333;}/*!sc*/
+data-styled.g61[id="Comments__Actions-czvh9a-8"]{content:"hfVTUK,"}/*!sc*/
+.galTMt{list-style-type:none;margin-left:0;padding-bottom:2rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}/*!sc*/
+.galTMt li{text-align:left;padding:1rem;width:50%;}/*!sc*/
+@media (max-width:54em){.galTMt li{width:100%;text-align:center;}}/*!sc*/
+.galTMt li::before{content:'' !important;padding-right:0 !important;}/*!sc*/
+.galTMt li:nth-child(2){text-align:right;}/*!sc*/
+@media (max-width:54em){.galTMt li:nth-child(2){text-align:center;}}/*!sc*/
+.galTMt a{border-bottom:none;}/*!sc*/
+data-styled.g62[id="post__OtherPostsLinks-sc-18ghmkz-0"]{content:"galTMt,"}/*!sc*/
+.iOOWPE{font-size:1rem;font-weight:200;padding:1rem 0 2rem 0;}/*!sc*/
+data-styled.g63[id="post__Date-sc-18ghmkz-1"]{content:"iOOWPE,"}/*!sc*/
+</style><link rel="sitemap" type="application/xml" href="/gatsby-personal-site/sitemap/sitemap-index.xml"/><link as="script" rel="preload" href="/gatsby-personal-site/webpack-runtime-37b80963a1cdea856f28.js"/><link as="script" rel="preload" href="/gatsby-personal-site/framework-de69d1d98c3759f869ba.js"/><link as="script" rel="preload" href="/gatsby-personal-site/app-661b59fc950a0d419b03.js"/><link as="script" rel="preload" href="/gatsby-personal-site/commons-2572092cd8427adb054b.js"/><link as="script" rel="preload" href="/gatsby-personal-site/a93ca09b3e214b1f9c56eefcc27e05eb63340a26-41145a67edc9f38f72ea.js"/><link as="script" rel="preload" href="/gatsby-personal-site/component---src-templates-post-tsx-fc7e64f5e9378365724d.js"/><link as="fetch" rel="preload" href="/gatsby-personal-site/page-data/getting-started-with-graphql-and-nodejs/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-personal-site/page-data/sq/d/1500402284.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-personal-site/page-data/sq/d/474397040.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-personal-site/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><main role="main"><canvas id="canvas" style="background-color:#000000;background-image:radial-gradient(
+        circle at 67% 21%,
+        #2e8b3f0d,
+        transparent 98%
+      )
+  ,
+      radial-gradient(
+        circle at 99% 53%,
+        #e703310d,
         transparent 154%
       )
   ,
       radial-gradient(
-        circle at 57% 58%,
-        #2fec6a0d,
-        transparent 151%
-      )
-  ,
-      radial-gradient(
-        circle at 35% 39%,
-        #fdfa0f0d,
-        transparent 107%
-      )
-  ,
-      radial-gradient(
-        circle at 86% 63%,
-        #8838b50d,
-        transparent 123%
-      )
-  ,
-      radial-gradient(
-        circle at 51% 33%,
-        #a4e3c60d,
-        transparent 105%
-      )
-  ,
-      radial-gradient(
-        circle at 75% 9%,
-        #790ead0d,
-        transparent 129%
-      );opacity:0.3;position:fixed;width:100%;height:100%"></canvas><div class="Content__Wrapper-sc-1q50de9-0 jXEmCz"><article><div class="shared__Header-tnyzq1-2 eFCMIq"><h1 class="shared__Title-tnyzq1-3 hKfkmO">Getting started with GraphQL and Node.js</h1><div class="shared__Description-tnyzq1-4 hzWzVR">Hello World Client Server project to explain how GraphQL Works.</div><div class="shared__ItemTags-tnyzq1-7 kAHoo"><a class="shared__Tag-tnyzq1-8 eOKRGs" href="/gatsby-personal-site/tags/Apollo/">Apollo</a><a class="shared__Tag-tnyzq1-8 eOKRGs" href="/gatsby-personal-site/tags/GraphQL/">GraphQL</a><a class="shared__Tag-tnyzq1-8 eOKRGs" href="/gatsby-personal-site/tags/Node.js/">Node.js</a><a class="shared__Tag-tnyzq1-8 eOKRGs" href="/gatsby-personal-site/tags/Tutorial/">Tutorial</a></div><div class="post__Date-sc-18ghmkz-1 behYBi">April 14, 2020</div><div style="width:100%;height:auto"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden"><div aria-hidden="true" style="width:100%;padding-bottom:56.5%"></div><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAGD5yywgn//xAAYEAADAQEAAAAAAAAAAAAAAAAAATECMv/aAAgBAQABBQJ8qGpin//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABoQAAICAwAAAAAAAAAAAAAAAAABEWEhMXH/2gAIAQEAAT8hbGmIrEwbRnLg2f/aAAwDAQACAAMAAAAQpB//xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQMBAT8QMX//xAAWEQADAAAAAAAAAAAAAAAAAAAQESH/2gAIAQIBAT8QdH//xAAbEAACAwADAAAAAAAAAAAAAAABEQAhMUFx8P/aAAgBAQABPxBgCUbGdqIERTiFiU8OpsTiEez/2Q==" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/gatsby-personal-site/static/45fa279ac094c75905073249afa16ef6/f836f/gia-oris-_uM5_nG2ssc-unsplash.jpg 200w,
+        circle at 70% 35%,
+        #20b8230d,
+        transparent 121%
+      );opacity:0.3;position:fixed;width:100%;height:100%"></canvas><div class="Content__Wrapper-sc-1q50de9-0 bHlQoN"><article><div class="shared__Header-tnyzq1-2 bESpfA"><h1 class="shared__Title-tnyzq1-3 eCLyvQ">Getting started with GraphQL and Node.js</h1><div class="shared__Description-tnyzq1-4 iEIPhv">Hello World Client Server project to explain how GraphQL Works.</div><div class="shared__ItemTags-tnyzq1-7 gSZNPC"><a class="shared__Tag-tnyzq1-8 bpExil" href="/gatsby-personal-site/tags/Apollo/">Apollo</a><a class="shared__Tag-tnyzq1-8 bpExil" href="/gatsby-personal-site/tags/GraphQL/">GraphQL</a><a class="shared__Tag-tnyzq1-8 bpExil" href="/gatsby-personal-site/tags/Node.js/">Node.js</a><a class="shared__Tag-tnyzq1-8 bpExil" href="/gatsby-personal-site/tags/Software Development/">Software Development</a><a class="shared__Tag-tnyzq1-8 bpExil" href="/gatsby-personal-site/tags/Tutorial/">Tutorial</a></div><div class="post__Date-sc-18ghmkz-1 iOOWPE">April 14, 2020</div><div style="width:100%;height:auto"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden"><div aria-hidden="true" style="width:100%;padding-bottom:56.5%"></div><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQT/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABg/PllxBP/8QAGBAAAwEBAAAAAAAAAAAAAAAAAAExAjL/2gAIAQEAAQUCfKg5in//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAbEAACAQUAAAAAAAAAAAAAAAAAEQEQITFhcf/aAAgBAQABPyGVvRNhozkpan//2gAMAwEAAgADAAAAELQf/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAR/9oACAEDAQE/EDF//8QAFhEAAwAAAAAAAAAAAAAAAAAAEBEh/9oACAECAQE/EHR//8QAGhAAAwEBAQEAAAAAAAAAAAAAAAERMSFh8P/aAAgBAQABPxCiG41T7vBIR4HSQf48Ni8Q27p//9k=" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/gatsby-personal-site/static/45fa279ac094c75905073249afa16ef6/f836f/gia-oris-_uM5_nG2ssc-unsplash.jpg 200w,
 /gatsby-personal-site/static/45fa279ac094c75905073249afa16ef6/2244e/gia-oris-_uM5_nG2ssc-unsplash.jpg 400w,
 /gatsby-personal-site/static/45fa279ac094c75905073249afa16ef6/14b42/gia-oris-_uM5_nG2ssc-unsplash.jpg 800w,
 /gatsby-personal-site/static/45fa279ac094c75905073249afa16ef6/47498/gia-oris-_uM5_nG2ssc-unsplash.jpg 1200w,
@@ -234,7 +227,7 @@ data-styled.g49[id="sc-global-eQvSeh1"]{content:"sc-global-eQvSeh1,"}/*!sc*/
 /gatsby-personal-site/static/45fa279ac094c75905073249afa16ef6/0e329/gia-oris-_uM5_nG2ssc-unsplash.jpg 1600w,
 /gatsby-personal-site/static/45fa279ac094c75905073249afa16ef6/2dc2a/gia-oris-_uM5_nG2ssc-unsplash.jpg 5475w" src="/gatsby-personal-site/static/45fa279ac094c75905073249afa16ef6/14b42/gia-oris-_uM5_nG2ssc-unsplash.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div></div><div><div style="padding-left:1rem;line-height:1.6"><p>The main purpose of this server-client <a href="https://nodejs.org/en/">Node.js</a> project is to help other people <strong>understand how GraphQL exposes the data from the Server and the Client fetches it</strong>. I have tried to make it as simple as possible- if you want to dive into the code of the project you can find it <a href="https://github.com/reymon359/graphql-hello-world-server">here</a>.</p>
 <p>Now, straight to the point: <a href="https://graphql.org/">GraphQL</a> is a <strong>query language for <a href="https://en.wikipedia.org/wiki/Application_programming_interface">APIs</a></strong> developed and <a href="https://engineering.fb.com/core-data/graphql-a-data-query-language/">open-sourced by Facebook</a> to speed up the request process.</p>
-<p>While <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> has been a popular way to expose data from a server, instead of having <strong>multiple endpoints</strong> that return fixed data structures, GraphQL just has <strong>a single endpoint</strong> and it is the client’s job to specify what data it needs from it.</p>
+<p>While <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> has been a popular way to expose data from a server, instead of having <strong>multiple endpoints</strong> that return fixed data structures, GraphQL just has <strong>a single endpoint</strong>, and it is the client’s job to specify what data it needs from it.</p>
 <h2 id="Table-of-Contents" style="position:relative;">Table of Contents<a href="#Table-of-Contents" aria-label="Table of Contents permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
 <ul>
 <li><a href="#Getting-started">Getting started</a></li>
@@ -245,8 +238,7 @@ data-styled.g49[id="sc-global-eQvSeh1"]{content:"sc-global-eQvSeh1,"}/*!sc*/
 <li><a href="#Fetching-data-from-the-server">Fetching data from the server</a></li>
 <li><a href="#Displaying-the-data">Displaying the data</a></li>
 <li><a href="#Conclusion">Conclusion</a></li>
-<li>
-<p><a href="#Useful-resources">Useful resources</a></p>
+<li><a href="#Useful-resources">Useful resources</a>
 <ul>
 <li><a href="#Docs-">Docs 📚</a></li>
 <li><a href="#Learn-">Learn 📝</a></li>
@@ -258,28 +250,32 @@ data-styled.g49[id="sc-global-eQvSeh1"]{content:"sc-global-eQvSeh1,"}/*!sc*/
 </ul>
 <h2 id="Getting-started" style="position:relative;">Getting started<a href="#Getting-started" aria-label="Getting started permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
 <p>The first step is to <a href="https://nodejs.org/en/download/">download and install Node.js</a> in case you haven’t already. Once you have it installed let’s begin with the directory structure. The project will be composed of <strong>two directories</strong>, one for the Client and another for the Server. I have chosen to keep both inside the project root directory but then you can split it into two separate projects or any way you want.</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">📁project
-├── 📁client
-└── 📁server</code></pre></div>
-<p>Now we will initialize the project in the server directory. Change the location to the server folder in your terminal and run <code class="language-text">npm init</code> to fill the project info and generate the <strong>package.json</strong> file. Or <code class="language-text">npm init -y</code> which tells the generator to use the defaults (instead of asking questions and simply generate an empty npm project without going through an interactive process).</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">📁 project
+├── 📁 client
+└── 📁 server</code></pre></div>
+<p>Now we will initialize the project in the server directory. Change the location to the server folder in your terminal and run <code class="language-text">npm init</code> to fill in the project info and generate the <strong>package.json</strong> file. Or <code class="language-text">npm init -y</code> which tells the generator to use the defaults (instead of asking questions and simply generate an empty npm project without going through an interactive process).</p>
 <p>The next step will be to install <a href="https://github.com/graphql/graphql-js">GraphQL.js</a> and <a href="https://github.com/apollographql/apollo-server">Apollo Server</a> to our server. GraphQL.js will provide two important capabilities:</p>
 <ul>
 <li>Building a type schema, which we will do in the <a href="#define-the-schema">next step</a>.</li>
 <li>Serving queries against that type schema.</li>
 </ul>
-<p>To install it just run <code class="language-text">npm install graphql</code>. I am assuming you are using a version of NPM equal or higher than <strong>5.0.0</strong> so you <a href="https://blog.npmjs.org/post/161081169345/v500">do not need</a> to add <code class="language-text">--save</code> when installing a dependency to be saved in the package.json</p>
+<p>To install it just run <code class="language-text">npm install graphql</code>. I am assuming you are using a version of NPM equal or higher than <strong>5.0.0</strong> so you <a href="https://blog.npmjs.org/post/161081169345/v500">do not need</a> to add <code class="language-text">--save</code> when installing a dependency to be saved in the <code class="language-text">package.json</code>.</p>
 <p>Apollo Server, on the other hand, will help us to implement the GraphQL functionalities. It is part of the <a href="https://www.apollographql.com/">Apollo Data Graph Platform</a>.</p>
 <blockquote>
 <p>Apollo is a platform for building a data graph, a communication layer that seamlessly connects your application clients (such as React and iOS apps) to your back-end services. Is an implementation of GraphQL designed for the needs of product engineering teams building modern, data-driven applications. - <a href="https://www.apollographql.com/docs/">Apollo Documentation</a></p>
 </blockquote>
-<p>What you need to know about Apollo, at least for now, is it’s a community that builds on top of GraphQL, and provides different <strong>tools to help you build your projects</strong>. The tools provided by Apollo are mainly 2: Client and Server.</p>
+<p>What you need to know about Apollo, at least for now, is it’s a community that builds on top of GraphQL and provides different <strong>tools to help you build your projects</strong>. The tools provided by Apollo are mainly 2: Client and Server.</p>
 <ul>
-<li><strong>Apollo Client</strong> helps your Frontend communicate with a GraphQL API. It has support for the most popular frameworks such as React, Vue, or Angular and native development on iOS and Android.</li>
-<li><strong>Apollo Server</strong> is the GraphQL server layer in your backend that delivers the responses back to the client requests.</li>
+<li>
+<p><strong>Apollo Client</strong> helps your Frontend communicate with a GraphQL API. It has support for the most popular frameworks such as React, Vue, or Angular and native development on iOS and Android.</p>
+</li>
+<li>
+<p><strong>Apollo Server</strong> is the GraphQL server layer in your backend that delivers the responses back to the client requests.</p>
+</li>
 </ul>
 <p>Now that you understand Apollo better and why we will use it, let’s continue setting up GraphQL.</p>
 <h2 id="Define-the-Schema" style="position:relative;">Define the Schema<a href="#Define-the-Schema" aria-label="Define the Schema permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
-<p>A GraphQL Schema is at the core of any GraphQL server implementation. It <strong>describes the shape of your data</strong>, defining it with a hierarchy of <strong>types</strong> with fields that are populated from your data source and also specifies which <strong>queries</strong> and <strong>mutations</strong> are available so the client knows about the information that can be requested or sent.</p>
+<p>A GraphQL Schema is at the core of any GraphQL server implementation. It <strong>describes the shape of your data</strong>, defining it with a hierarchy of <strong>types</strong> with fields that are populated from your data source and specifies which <strong>queries</strong> and <strong>mutations</strong> are available, so the client knows about the information that can be requested or sent.</p>
 <p>For example, if we wanted to build a music application, our simplest schema, usually defined in a <code class="language-text">schema.graphql</code> file, would contain two <strong>Object types</strong>: <code class="language-text">Song</code> and <code class="language-text">Author</code> like this</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">type Song <span class="token punctuation">{</span>
   title<span class="token operator">:</span> String
@@ -288,22 +284,23 @@ data-styled.g49[id="sc-global-eQvSeh1"]{content:"sc-global-eQvSeh1,"}/*!sc*/
 
 type Author <span class="token punctuation">{</span>
   name<span class="token operator">:</span> String
-  song<span class="token operator">:</span> <span class="token punctuation">[</span>Song<span class="token punctuation">]</span>
+  songs<span class="token operator">:</span> <span class="token punctuation">[</span>Song<span class="token punctuation">]</span>
 <span class="token punctuation">}</span></code></pre></div>
 <p>Then we would have a <strong>Query type</strong> to define the available queries: <code class="language-text">getSongs</code> and <code class="language-text">getAuthors</code>, each returning a list of the corresponding type.</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">type Query <span class="token punctuation">{</span>
   getSongs<span class="token operator">:</span> <span class="token punctuation">[</span>Song<span class="token punctuation">]</span>
   getAuthors<span class="token operator">:</span> <span class="token punctuation">[</span>Author<span class="token punctuation">]</span>
 <span class="token punctuation">}</span></code></pre></div>
-<p>To keep it as simple as possible our schema will have just <strong>a single Query</strong> type which will return a String</p>
+<p>To keep it as simple as possible our schema will have just <strong>a single Query</strong> type which will return a <code class="language-text">String</code>.</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">type Query <span class="token punctuation">{</span>
   greeting<span class="token operator">:</span> String
 <span class="token punctuation">}</span></code></pre></div>
 <p>We can use <strong>any programming language</strong> to create a GraphQL schema and <strong>build an interface around it</strong> but as I explained before we will use Apollo server to execute GraphQL queries. So we create a new <code class="language-text">server.js</code> file in the server directory to define the Schema on it.</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">📁project
-├── 📁client
-└── 📁server
-    └── 📄server.js</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">📁 project
+├── 📁 client
+└── 📁 server
+    └── 📄 server.js</code></pre></div>
+<p>Now we install apollo-server running <code class="language-text">npm install apollo-server</code></p>
 <p>We have to import the <strong>tag function</strong> <code class="language-text">gql</code> from <strong>apollo-server</strong> to parse the schema this way: <code class="language-text">const {gql} = require(&#39;apollo-server&#39;);</code> and then declare a <code class="language-text">typeDefs</code> constant which is an <a href="https://en.wikipedia.org/wiki/Abstract_syntax_tree">abstract syntax tree</a> of the Graphql code.</p>
 <blockquote>
 <p>When a GraphQL server receives a query to process it generally comes in as a String. This string must be tokenized and parsed into a representation that the machine understands. This representation is called an abstract syntax tree.</p>
@@ -320,7 +317,7 @@ type Author <span class="token punctuation">{</span>
 <h2 id="Add-Resolver-function" style="position:relative;">Add Resolver function<a href="#Add-Resolver-function" aria-label="Add Resolver function permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
 <p>Now we have defined our Schema we need a way to answer the client requests for that data; the <strong>resolvers</strong>.
 <strong>A resolver is a function that handles the data for each one of the fields of your schema</strong>. You can send that data to the client by <strong>fetching a back-end database</strong> or a third-party <strong>API</strong> among others.</p>
-<p>They have to <strong>match the type definitions of the Schema</strong>, in our case, we just have one type definition Query which returns a greeting of type String so we will define a resolver for the <code class="language-text">greeting</code> field, like so:</p>
+<p>They have to <strong>match the type definitions of the Schema</strong>, in our case, we just have one type definition Query which returns a greeting of type <code class="language-text">String</code>, so we will define a resolver for the <code class="language-text">greeting</code> field, like so:</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> resolvers <span class="token operator">=</span> <span class="token punctuation">{</span>
   Query<span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token function-variable function">greeting</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token string">'Hello GraphQL world!👋'</span><span class="token punctuation">,</span>
@@ -359,7 +356,7 @@ type Author <span class="token punctuation">{</span>
 server
   <span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token punctuation">{</span> port<span class="token operator">:</span> <span class="token number">9000</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
   <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> url <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Server running at </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>url<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
-<p>Now if we run <code class="language-text">node server/server.js</code> we will finally have our GrapqhQL server up and running🎉!</p>
+<p>Now if we run <code class="language-text">node server/server.js</code> we will finally have our GraphQL server up and running🎉!</p>
 <p>You can go and check it on <a href="http://localhost:9000/">http://localhost:9000/</a></p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">~/graphql-hello-world-server
 <span class="token operator">></span> node server/server.js
@@ -380,7 +377,7 @@ Server running at http://localhost:9000/</code></pre></div>
   >
     <span
     class="gatsby-resp-image-background-image"
-    style="padding-bottom: 63.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAAClklEQVQ4y22SSW/TQBTHTZrNaewsTuzUaRYvWRyvaZK22UoFAQ4c2IIQEuLCEYkLEh8ELCHxYTgiEYkzHwO1F8DEebyZJOqiHn56M2/GP/1nxoyimXbZ9D6na9anrNb3672ZL3eOfFk3/FzN8FOS6ieFss8W9v14TvYTedlncZ68ykfsfUmXau8ZQbNe6od3Id8cIIcgu6dQMicgtg9BwF5W60JGcYCvO1Bo9kDQD3DuQVb1IIdrRdxTbPZB6gxBqLk/mWzHe1oyR5BvDP7ihoBXnIBveFjdACWUjOoFCdkIZk9eBQd3HgeFzjiQ7NuB2JkEkkn5I5knUH4w+8Zw5fa8ZByRBCFfs1Y8SdPq0kRczabwtFqQ13sgmWOQ7FMQPcSdQtHB01jjpWhMoPxwtmC4SntO4vN1N+Tr9ooeT1nLiHQLmZOjisYIBScgOoQpgkJ7spSsKRS0owWTU715oT2EojEMMcGKp4kuJJeFWbW7Fm4Teij1plQomlPiWDB4yXO8CxDNSSg0BqsrkusJibAzvgmasNg+XjB5jQhpM8xfE/I3CIuYkJxoS5GebrROeCGc4GXfkHDzKNseV7UgUzUhp9ggqC7emUfn6X1jyWHlKwYRdp8JLfyH2sNlXu+H+HFIX7yOFcfcBtJLV8xwd68RphCu3AozFSOUGl4oKNY/tqQDK6nfmUKj/7zevwfK4D7+zMeYhryyi/fnkpen4zUeTcruNQCFtCYlHYq6CwImTsktSJX0H0zVHj168ebd79dvP5xpvdMz3HyeqXbOc3WL1pTcPN/dQNYwxSW0DeovrEtWVL4yMTbNJdNZh+WyTjS560SicWcnFnfiCRZrwmEi0Qt2Yk4Ee5e5FUViCRvHXiSWVP4DaH9ARM1MyjMAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    style="padding-bottom: 63.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAACsElEQVQ4y22S24/SQBSH67K7FAoDFDott14oBXqFspcKlHXXGC8PPm6MvhrjqzEm4pNvm77pv2BiiK/+cRtJwTlmWpZdjQ9fzsyZ5Jvf5AzT6TmhZA6/cG37iu8FkXr0MJL6R1FD70eoPYjyWIlYvhGx1WZ0WKlv13fgG1GWr1+x1ebXgiRfMvXB+LPqz6GkDaHaO4GGOwdxEIBg+FDRx1BSXECyBUi2oaJ5270NSHGgrLpQ1UcJta4PfNv9yVTt44+SNQHeOF5VOqMYdbwYGaMYacMYqV6M1GFc0kYxJzvx85ev4/7kSSzY8xg7ZzG2ZrFoh5RfknsGzaePvjMV1V2I5ikUFXeDFJegzhBQbwRIcWkvIVnLDohmAJITguidAx6dAx7OQXBDIljTNbZn0Lp8vGSQbC/oc5HqbZDqkmStealI9XbQfanjA7ZmgJ0HgL0zwF5IIdgJ19icQbVzsmR4fbyo9e9DbTDZlHWfoCTRreSusNI9SoSidwHYpynnFILdcE37tUGwZGq9k0Vyqx1u+O4RuZH8LyEdkmiHacpbCLZmqbAfLJmqcbwQzCk92FTuCP8lFaYJBXNCX5QgmFMimNNEKKTCbUIr/EtYvDOUXU92oKQ4wGve7rsg2SaFlrUu0q/UNtOEyW3mdF3Rx1RIkOoROiA69eIW2iu0TMLVDZKvGwS1BqQsW0Tq+bTGrKhDTuwsGTwIPrVGF9D2LwhvHN+mUW6eO0yrNoRC24ac1IVc3UgqK3VB7PlQVuzfOYn29B+MGz778Orte3jx5t11wwpWhWZ/VZLtFa+5K9Q2V/lGf8U1U/J1Y5UT9RQpJZ/W6xxNiLVvTLEqSmJLneCmGmQL5WA/mw8OclzAcijYZ7ng3gG7Y+8wF2TYQpDJcjv2svlgL8udZtjCNJPltD94jkDUq/AL0AAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
   ></span>
   <img
         class="gatsby-resp-image-image"
@@ -396,10 +393,11 @@ Server running at http://localhost:9000/</code></pre></div>
         sizes="(max-width: 600px) 100vw, 600px"
         style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
         loading="lazy"
+        decoding="async"
       />
   </a>
     </span>
-    <figcaption class="gatsby-resp-image-figcaption">GraphQL Playground. Source: https://github.com/prisma-labs/graphql-playground</figcaption>
+    <figcaption class="gatsby-resp-image-figcaption"><p>GraphQL Playground. Source: <a href="https://github.com/prisma-labs/graphql-playground">https://github.com/prisma-labs/graphql-playground</a></p></figcaption>
   </figure></p>
 <blockquote>
 <p><a href="https://github.com/prisma-labs/graphql-playground">GraphQL Playground</a> is a graphical, interactive, in-browser GraphQL IDE, created by <a href="https://www.prisma.io/">Prisma</a> and based on <a href="https://github.com/graphql/graphiql">GraphiQL</a>. - <a href="https://www.apollographql.com/docs/apollo-server/testing/graphql-playground/">Apollo docs</a></p>
@@ -415,12 +413,12 @@ Server running at http://localhost:9000/</code></pre></div>
 </ol>
 <p><img src="/gatsby-personal-site/76952aa79e4b8845fee8ccf45c1829e3/greeting-query-on-playground.gif" alt="Writting query on GraphQl Playground"></p>
 <h2 id="Set-up-the-Client" style="position:relative;">Set up the Client<a href="#Set-up-the-Client" aria-label="Set up the Client permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
-<p>Now that we have our server up and running let’s focus on the client part. We will start creating a <code class="language-text">client.html</code> file inside our client folder.</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">📁project
-├── 📁client
-|   └── 📄client.html
-└── 📁server
-    └── 📄server.js</code></pre></div>
+<p>Now we have our server up and running let’s focus on the client part. We will start creating a <code class="language-text">client.html</code> file inside our client folder.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">📁 project
+├── 📁 client
+|   └── 📄 client.html
+└── 📁 server
+    └── 📄 server.js</code></pre></div>
 <p>The <code class="language-text">index.html</code> file will have the basics of any <code class="language-text">HTML</code> file and a loading header <code class="language-text">&lt;h1&gt;Loading...&lt;/h1&gt;</code> to show the user something while we request the data from the server.</p>
 <div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
@@ -438,15 +436,15 @@ Server running at http://localhost:9000/</code></pre></div>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre></div>
 <h2 id="Fetching-data-from-the-server" style="position:relative;">Fetching data from the server<a href="#Fetching-data-from-the-server" aria-label="Fetching data from the server permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
 <p>First off, in the same client folder, we create an <code class="language-text">app.js</code> file where we will write the client logic to fetch the data from the server.</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">📁project
-├── 📁client
-|   └── 📄client.html
-|   └── 📄app.js
-└── 📁server
-    └── 📄server.js</code></pre></div>
-<p>Inside it, we set the server url to which we will make the request.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">📁 project
+├── 📁 client
+|   └── 📄 client.html
+|   └── 📄 app.js
+└── 📁 server
+    └── 📄 server.js</code></pre></div>
+<p>Inside it, we set the server URL to which we will make the request.</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token constant">GRAPHQL_URL</span> <span class="token operator">=</span> <span class="token string">'http://localhost:9000/'</span><span class="token punctuation">;</span></code></pre></div>
-<p>Next, we define our async function <code class="language-text">fetchGreeting()</code> to, fetch the greeting from the server. We will use the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">fetch API</a> to perform the HTTP request which by default returns a promise to which we can subscribe and get the answer in an asynchronous way.</p>
+<p>Next, we define our async function <code class="language-text">fetchGreeting()</code> to, fetch the greeting from the server. We will use the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">fetch API</a> to perform the HTTP request which by default returns a promise to which we can subscribe and get the answer asynchronously.</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">fetchGreeting</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">const</span> response <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token constant">GRAPHQL_URL</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
     method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
@@ -465,7 +463,7 @@ Server running at http://localhost:9000/</code></pre></div>
   <span class="token keyword">const</span> responseBody <span class="token operator">=</span> <span class="token keyword">await</span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>responseBody<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre></div>
-<p>A detail to take into account is that the method of the request is <code class="language-text">POST</code>, which can confuse us if we are used to working with <code class="language-text">RESTful</code> because this same request made in <code class="language-text">RESTful</code>, where we just want to read information from the server, would be usually done using the method <code class="language-text">GET</code>.</p>
+<p>A detail to take into account is that the method of the request is <code class="language-text">POST</code>, which can confuse us if we are used to working with <code class="language-text">RESTful</code> because this same request made in <code class="language-text">RESTful</code>, where we just want to read information from the server, would be usually done with the method <code class="language-text">GET</code>.</p>
 <p>The thing is that with GraphQL we always make <code class="language-text">POST</code> requests where we pass <strong>the query in the payload</strong> (body).</p>
 <p>Finally, we just call our method <code class="language-text">fetchGreeting();</code></p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token constant">GRAPHQL_URL</span> <span class="token operator">=</span> <span class="token string">'http://localhost:9000/'</span><span class="token punctuation">;</span>
@@ -490,7 +488,7 @@ Server running at http://localhost:9000/</code></pre></div>
 <span class="token punctuation">}</span>
 
 <span class="token function">fetchGreeting</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
-<p>If you open the file in your browser and see the <strong>console on the developer tools</strong> you can see that we actually got the greeting data from the query🙌!</p>
+<p>If you open the file in your browser and see the <strong>console on the developer tools</strong> you can see that we actually got the greeting data from the query 🙌!</p>
 <p><figure class="gatsby-resp-image-figure" style="border-bottom: none;">
     <span
       class="gatsby-resp-image-wrapper"
@@ -505,7 +503,7 @@ Server running at http://localhost:9000/</code></pre></div>
   >
     <span
     class="gatsby-resp-image-background-image"
-    style="padding-bottom: 31.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABJUlEQVQY022P20oCYRRG51FE56gmzMlRG7WxGmruLA8kVNBLG5KYeCteCSKoqz1TA2Ft+Fh7/xcf61dG4wlPk2deXt94eBwxGI4ZSvr9Aa1Wm3q9SaNxiesFOI4n8TGMMqZVxTArWD9Mb1OorFYr3qdTFotP9vs9u92OdGazGZ1OhyAIJA0pMSkUCrLXszfX87AdB8/3sW0bX+jIrWy3WzabDev1muPxSD7L5ZK7+4QkSYjjmFqtRiC2rttE11Q0VRVq37tQVVOqKJzN4XDI+DGfE7dDbqOItphquoZX9fEqYigmtmVRLpW4MDUMXaUkexrldDrxO7llWhiFAb2rLmEYZl/WVR1LtzLb3Oo8fwzzwrkUht1rot5NVpgW5BbFYjHjf4VfqxQNvjho+esAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    style="padding-bottom: 31.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABKElEQVQY03WPX2uCcBSG/SrTn7rUTE1Lm2Y1Yq3drG8RW3+2wca+bWPdJN0Ei6CLekZGIoMdeHjhwHk4rzSdvTKfv/H+8clkOud5MmU2e2E8fiKO2wRBSBi2cNw6lmXjeT6mWcW0bAyzilWtFXnaSev1mq/FguX3kvJsNhsGgwHNZpMoijAMA1m+otEI8p3reTiOg+fVqdVO6eG6LtJut2P7s80F+/2ew+GQC7Ms43E0Yjgc5ti2TRhE+PUWmhAFuqqgqgJFUXIk/sxFuMoyHnoduvENSdJG01SciotvBER+gGcaGIqCpavo+lkohEA6Ho+UKQvv+j163ZQ0TbmuVPIDTdXy+kJVUYTIESX+/TDLVtz270naHZI4RtO0opYsy8VHQpzzUvkXEpIRP1PHvnIAAAAASUVORK5CYII='); background-size: cover; display: block;"
   ></span>
   <img
         class="gatsby-resp-image-image"
@@ -520,20 +518,21 @@ Server running at http://localhost:9000/</code></pre></div>
         sizes="(max-width: 600px) 100vw, 600px"
         style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
         loading="lazy"
+        decoding="async"
       />
   </a>
     </span>
-    <figcaption class="gatsby-resp-image-figcaption">Fetching data from the server</figcaption>
+    <figcaption class="gatsby-resp-image-figcaption"><p>Fetching data from the server</p></figcaption>
   </figure></p>
 <h2 id="Displaying-the-data" style="position:relative;">Displaying the data<a href="#Displaying-the-data" aria-label="Displaying the data permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
-<p>Now that we have successfully got the data from the server let’s <strong>update the loading title</strong>. The first thing we will do is destructure the response and return just the <code class="language-text">data</code> from it.</p>
+<p>Now we have successfully got the data from the server lets <strong>update the loading title</strong>. The first thing we will do is destructure the response and return just the <code class="language-text">data</code> from it.</p>
 <p>Just replace this part of the code</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> responseBody <span class="token operator">=</span> <span class="token keyword">await</span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>responseBody<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
 <p>With this one</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token punctuation">{</span> data <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">return</span> data<span class="token punctuation">;</span></code></pre></div>
-<p>And then we will update the title with the <code class="language-text">greeting</code> returned <strong>inside the data from the response</strong></p>
+<p>Then we will update the title with the <code class="language-text">greeting</code> returned <strong>inside the data from the response</strong></p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token function">fetchGreeting</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> greeting <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
   <span class="token keyword">const</span> title <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'h1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   title<span class="token punctuation">.</span>textContent <span class="token operator">=</span> greeting<span class="token punctuation">;</span>
@@ -564,7 +563,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
   <span class="token keyword">const</span> title <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'h1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   title<span class="token punctuation">.</span>textContent <span class="token operator">=</span> greeting<span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
-<p>And our <code class="language-text">index.html</code> will have the loading title updated with the data fetched from our server!🎉</p>
+<p>Our <code class="language-text">index.html</code> will have the loading title updated with the data fetched from our server!🎉</p>
 <p><figure class="gatsby-resp-image-figure" style="border-bottom: none;">
     <span
       class="gatsby-resp-image-wrapper"
@@ -579,7 +578,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
   >
     <span
     class="gatsby-resp-image-background-image"
-    style="padding-bottom: 51.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA7UlEQVQoz+XQS0vDQBDA8XwRX3gvmDYPtAc/rF/CiyTavDXxUpCKBKzYECSQR3NK83ezIHiq6dmBHzuzswzDKurUYGCYc67m1zKfzgxmmiBO3bgUuYkmclXVRV+TtbzTTSaTC46Ozzg5PZcUx3Hx/EAKgpAoesTzfCkMI8IoYrFwuLMecF0PR3B/GXqWZWPZ94KN8rpakSTPpGlKlmXEcUwSP/G+XrPZfLJcvhD6t7wlN4wJpWkayrJku22FLXmeUxQFdd3Qti1VVYv6i6r4oNvt6LpuL4UDou/7vzccHo31M3Tf4IM2HPWH/2/gN0Us2B2vYZz2AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    style="padding-bottom: 51.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA2UlEQVQoz+WOUU7CQBCGeycB4QIEi7tLwXg8b+ENGkn1AWNSkg2QLWtoKN6Auv2MawQCSnjgjT/5MvPPJP9McBNKvhEyIurf//RCIWTPE0V3SNVHqQFhKAi7gq5Q3AqFlD3a7Q5XtWvqjRb1RpPAmIwsm2PtO4tF7jHGeJ/nua9aj0nTV1arD5bL4oCi2BKM05QkeUZrjbWWOI5JhkOmsxl2njEavfEUPzJ5eeAUBVVVbYxzFWVZ4pzz/OrTOcr1ejM/hg/cZVf7s/39vx+eyl9HDgI5sy4w8Atyi+WTe8sKXAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
   ></span>
   <img
         class="gatsby-resp-image-image"
@@ -593,14 +592,15 @@ console<span class="token punctuation">.</span><span class="token function">log<
         sizes="(max-width: 600px) 100vw, 600px"
         style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
         loading="lazy"
+        decoding="async"
       />
   </a>
     </span>
-    <figcaption class="gatsby-resp-image-figcaption">Displaying the data</figcaption>
+    <figcaption class="gatsby-resp-image-figcaption"><p>Displaying the data</p></figcaption>
   </figure></p>
 <h2 id="Conclusion" style="position:relative;">Conclusion<a href="#Conclusion" aria-label="Conclusion permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
 <p>I hope you enjoyed the post and that this project has fulfilled the objective of showing <strong>how graphql works under the hood</strong>, at least in a very simple way. I know there are a lot of things that I have not explained or that I could have gone deeper but like any <code class="language-text">hello world</code> project, it is intended for people who are beginners with it, so I wanted to keep it as simple as possible.</p>
-<p>I’m looking forward to learning more about GrapqhQL and using it in future projects. If you’ve got any questions, suggestions, or feedback in general, don’t hesitate to reach out on any of the social networks from <a href="https://ramonmorcillo.com">my site</a> or <a href="mailto:hey@ramonmorcillo.com">by mail</a>.</p>
+<p>I’m looking forward to learning more about GraphQL and using it in future projects. If you’ve got any questions, suggestions, or feedback in general, don’t hesitate to reach out on any of the social networks from <a href="https://ramonmorcillo.com">my site</a> or <a href="mailto:hey@ramonmorcillo.com">by mail</a>.</p>
 <h2 id="Useful-resources" style="position:relative;">Useful resources<a href="#Useful-resources" aria-label="Useful resources permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
 <p>Here is a collection of links and resources which have been useful for me to improve and learn more about GraphQL</p>
 <h3 id="Docs-" style="position:relative;">Docs 📚<a href="#Docs-" aria-label="Docs  permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
@@ -629,8 +629,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <h3 id="Extras-" style="position:relative;">Extras 🍍<a href="#Extras-" aria-label="Extras  permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
 <ul>
 <li><a href="https://github.com/APIs-guru/graphql-apis">GraphQL APIs</a> - A list of public GraphQL APIs to test your skills or to build something with them.</li>
-<li><a href="https://www.youtube.com/watch?v=783ccP__No8">GraphQL: The Documentary</a> - A 30 min video that explores the story of why and how GraphQL came to be and the impact it’s having on big #tech companies worldwide, including Facebook, Twitter, Airbnb, and Github.</li>
-</ul></div><h2>Other posts</h2><ul class="post__OtherPostsLinks-sc-18ghmkz-0 fMkycw"><li><a rel="prev" href="/gatsby-personal-site/visiting-the-dolomites/">← <!-- -->Visiting the Dolomites</a></li><li><a rel="next" href="/gatsby-personal-site/auto-update-dependencies-safely-github-actions/">Using GitHub Actions and Renovate to safely update dependencies automatically<!-- --> →</a></li></ul></div></article><div class="Content__BottomHeight-sc-1q50de9-1 hxHujz"></div></div></main><div class="NavigationContainer__Wrapper-xu6gj3-0 kWLXTf"><header class="NavigationContainer__Header-xu6gj3-2 eECeEf"><div class="Logo__CircleWrapper-sc-1a2c5zq-2 dOBtGg"><div class="Logo__RelativeWrapper-sc-1a2c5zq-0 jtdOaB"><a href="/gatsby-personal-site/"><svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path d="M11 21.5C5.201 21.5.5 16.799.5 11S5.201.5 11 .5 21.5 5.201 21.5 11 16.799 21.5 11 21.5zm0-1a9.5 9.5 0 1 0 0-19 9.5 9.5 0 0 0 0 19z" fill="#FFFFFF"></path></svg></a><div class="Logo__CircleBackground-sc-1a2c5zq-1 gwbwuc"></div></div></div><div class="HelpMessage__HelpMessageContainer-fyo5c4-0 fluJjo">Move around the screen or scroll it</div><div class="ToggleMenu__ToggleMenuWrapper-sc-1rm9swz-0 iRpNsT"><span></span><span></span><span></span></div></header><div class="NavigationContainer__Shoable-xu6gj3-1 wFPfJ"><div><nav class="Menu__MenuWrapper-sc-1vxe8de-0 dHOpqb"><ul class="Menu__Nav-sc-1vxe8de-1 cGxYXm"><li class="Menu__NavItem-sc-1vxe8de-2 iTvxVL"><a href="https://github.com/reymon359" rel="noopener noreferrer" target="_blank">GitHub</a></li><li class="Menu__NavItem-sc-1vxe8de-2 iTvxVL"><a href="https://www.linkedin.com/in/ramon-morcillo/" rel="noopener noreferrer" target="_blank">Linkedin</a></li><li class="Menu__NavItem-sc-1vxe8de-2 iTvxVL"><a href="https://codepen.io/reymon359" rel="noopener noreferrer" target="_blank">Codepen</a></li><li class="Menu__NavItem-sc-1vxe8de-2 iTvxVL"><a href="https://twitter.com/reymon359" rel="noopener noreferrer" target="_blank">Twitter</a></li></ul><ul class="Menu__Nav-sc-1vxe8de-1 cGxYXm"><li class="Menu__NavItem-sc-1vxe8de-2 iTvxVL"><a class="Menu__NavLink-sc-1vxe8de-3 gTGjFF" href="/gatsby-personal-site/">Index</a></li><li class="Menu__NavItem-sc-1vxe8de-2 iTvxVL"><a class="Menu__NavLink-sc-1vxe8de-3 gTGjFF" href="/gatsby-personal-site/works">works</a></li><li class="Menu__NavItem-sc-1vxe8de-2 iTvxVL"><a class="Menu__NavLink-sc-1vxe8de-3 gTGjFF" href="/gatsby-personal-site/about">about</a></li><li class="Menu__NavItem-sc-1vxe8de-2 iTvxVL"><a rel="noopener" href="mailto:hey@ramonmorcillo.com">Contact</a></li></ul></nav><footer class="Footer__FooterWrapper-sc-1df0yns-0 kVSAqo"><div class="Footer__Item-sc-1df0yns-1 DWFzK"><span>Ramón Morcillo - <!-- -->2020</span></div><div class="Footer__Item-sc-1df0yns-1 hjAAcR">Made with love &amp; time <small style="font-size:70%">(a lot of it)</small></div></footer></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+<li><a href="https://www.youtube.com/watch?v=783ccP__No8">GraphQL: The Documentary</a> - A 30 min video that explores the story of why and how GraphQL appeared, and the impact it’s having on big tech companies worldwide, including Facebook, Twitter, Airbnb, and Github.</li>
+</ul></div><div class="Comments__Wrapper-czvh9a-0 fCKPUh"><h2>Comments</h2><p>Thanks for reading ❤️ </p><p>You can comment by replying to the<!-- --> <a href="https://github.com/reymon359/gatsby-personal-site/issues/169" target="_blank" rel="noreferrer noopener">issue for this post.</a></p><p>There’s no comments yet,<!-- --> <a href="https://github.com/reymon359/gatsby-personal-site/issues/169#new_comment_field" target="_blank" rel="noreferrer noopener">be the first to leave one!</a></p><div class="Comments__Actions-czvh9a-8 hfVTUK"><a href="https://github.com/reymon359/gatsby-personal-site/issues/169#new_comment_field" target="_blank" rel="noreferrer noopener" class="button btn">Add a comment →</a></div></div><h2>Other posts</h2><ul class="post__OtherPostsLinks-sc-18ghmkz-0 galTMt"><li><a rel="prev" href="/gatsby-personal-site/visiting-the-dolomites/">← <!-- -->Visiting the Dolomites</a></li><li><a rel="next" href="/gatsby-personal-site/auto-update-dependencies-safely-github-actions/">Using GitHub Actions and Renovate to safely update dependencies automatically<!-- --> →</a></li></ul></div></article><div class="Content__BottomHeight-sc-1q50de9-1 dYysHN"></div></div></main><div class="Navigation__Wrapper-sxzav8-0 hfVphx"><header class="Navigation__Header-sxzav8-2 iTMXyh"><div class="Logo__Wrapper-sc-19tlazh-1 bCOyZr"><div class="Logo__RelativeWrapper-sc-19tlazh-2 Essph"><a href="/gatsby-personal-site/"><svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path d="M11 21.5C5.201 21.5.5 16.799.5 11S5.201.5 11 .5 21.5 5.201 21.5 11 16.799 21.5 11 21.5zm0-1a9.5 9.5 0 1 0 0-19 9.5 9.5 0 0 0 0 19z" fill="#FFFFFF"></path></svg></a><div class="Logo__Background-sc-19tlazh-0 dQZthV"></div></div></div><div class="HelpMessage__Wrapper-sc-11fekqt-0 fPYIDe">Move around the screen or scroll it</div><div class="ToggleMenu__ToggleMenuWrapper-sc-1rm9swz-0 bHbNgR"><span></span><span></span><span></span></div></header><div class="Navigation__Shoable-sxzav8-1 jUAACT"><div><nav class="Menu__MenuWrapper-sc-1vxe8de-0 bTtsHt"><ul class="Menu__Nav-sc-1vxe8de-1 iNaoaw"><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a href="https://github.com/reymon359" rel="noopener noreferrer" target="_blank">GitHub</a></li><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a href="https://www.linkedin.com/in/ramon-morcillo/" rel="noopener noreferrer" target="_blank">Linkedin</a></li><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a href="https://codepen.io/reymon359" rel="noopener noreferrer" target="_blank">Codepen</a></li><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a href="https://twitter.com/reymon359" rel="noopener noreferrer" target="_blank">Twitter</a></li></ul><ul class="Menu__Nav-sc-1vxe8de-1 iNaoaw"><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a class="Menu__NavLink-sc-1vxe8de-3 cEEwRr" href="/gatsby-personal-site/">Index</a></li><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a class="Menu__NavLink-sc-1vxe8de-3 cEEwRr" href="/gatsby-personal-site/works">works</a></li><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a class="Menu__NavLink-sc-1vxe8de-3 cEEwRr" href="/gatsby-personal-site/about">about</a></li><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a rel="noopener" href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!">Contact</a></li></ul></nav><footer class="Footer__FooterWrapper-sc-1df0yns-0 iXxlXu"><div class="Footer__Item-sc-1df0yns-1 jSPHnk"><span>Ramón Morcillo - <!-- -->2021<!-- --> - </span> <a href="https://github.com/reymon359/gatsby-personal-site/" target="_blank" rel="noopener noreferrer">source</a></div><div class="Footer__Item-sc-1df0yns-1 iYbvcT">Made with love &amp; time <small style="font-size:70%">(a lot of it)</small></div></footer></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
   
   
   if(true) {
@@ -646,4 +646,4 @@ console<span class="token punctuation">.</span><span class="token function">log<
       
       
       
-      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/getting-started-with-graphql-and-nodejs/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-e6de79636614e087cd3b.js"],"app":["/app-5772e465f764aedd5039.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-d07b1a0dc7c694e54e4b.js"],"component---src-pages-about-tsx":["/component---src-pages-about-tsx-a41a9c47e05e75a27363.js"],"component---src-pages-blog-tsx":["/component---src-pages-blog-tsx-a7f2d0513762c1d1b933.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-87f0ac6d6d056e2e39e4.js"],"component---src-pages-projects-tsx":["/component---src-pages-projects-tsx-088254c3be10d349fcbd.js"],"component---src-pages-tags-tsx":["/component---src-pages-tags-tsx-fc7113c2d97a7b08a7d9.js"],"component---src-pages-works-tsx":["/component---src-pages-works-tsx-42f665b8d53a1e25c0c3.js"],"component---src-templates-post-tsx":["/component---src-templates-post-tsx-bad7df9079ef814f63cf.js"],"component---src-templates-tag-tsx":["/component---src-templates-tag-tsx-ff4878559b3895f6dfd7.js"]};/*]]>*/</script><script src="/gatsby-personal-site/polyfill-e6de79636614e087cd3b.js" nomodule=""></script><script src="/gatsby-personal-site/component---src-templates-post-tsx-bad7df9079ef814f63cf.js" async=""></script><script src="/gatsby-personal-site/a93ca09b3e214b1f9c56eefcc27e05eb63340a26-e80b3dea36699f40609f.js" async=""></script><script src="/gatsby-personal-site/commons-7f59153fe4e13c049f17.js" async=""></script><script src="/gatsby-personal-site/app-5772e465f764aedd5039.js" async=""></script><script src="/gatsby-personal-site/styles-b41652628254a46ab628.js" async=""></script><script src="/gatsby-personal-site/framework-da19a435c6b034476fcb.js" async=""></script><script src="/gatsby-personal-site/webpack-runtime-a135790b6e0c1ec9a0da.js" async=""></script></body></html>
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/getting-started-with-graphql-and-nodejs/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-247a476f55ec3e43e6a4.js"],"app":["/app-661b59fc950a0d419b03.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-178ddf60e15d54bac954.js"],"component---src-pages-about-tsx":["/component---src-pages-about-tsx-5aaaeb6b901c30f0b9f1.js"],"component---src-pages-blog-tsx":["/component---src-pages-blog-tsx-2e712053337d0a4f701a.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-8e82322f2ded75ae2842.js"],"component---src-pages-projects-tsx":["/component---src-pages-projects-tsx-1ca09437a35e137e6d9d.js"],"component---src-pages-tags-tsx":["/component---src-pages-tags-tsx-a8fec2bde9c760d22c0d.js"],"component---src-pages-works-tsx":["/component---src-pages-works-tsx-30d97cacd9ae793fcf93.js"],"component---src-templates-post-tsx":["/component---src-templates-post-tsx-fc7e64f5e9378365724d.js"],"component---src-templates-tag-tsx":["/component---src-templates-tag-tsx-d873fc5846013d61fddb.js"]};/*]]>*/</script><script src="/gatsby-personal-site/polyfill-247a476f55ec3e43e6a4.js" nomodule=""></script><script src="/gatsby-personal-site/component---src-templates-post-tsx-fc7e64f5e9378365724d.js" async=""></script><script src="/gatsby-personal-site/a93ca09b3e214b1f9c56eefcc27e05eb63340a26-41145a67edc9f38f72ea.js" async=""></script><script src="/gatsby-personal-site/commons-2572092cd8427adb054b.js" async=""></script><script src="/gatsby-personal-site/app-661b59fc950a0d419b03.js" async=""></script><script src="/gatsby-personal-site/framework-de69d1d98c3759f869ba.js" async=""></script><script src="/gatsby-personal-site/webpack-runtime-37b80963a1cdea856f28.js" async=""></script></body></html>

@@ -1,0 +1,846 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/gatsby-personal-site/styles.e53586a225ffdde20c86.css" data-identity="gatsby-global-css">code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><meta name="generator" content="Gatsby 3.7.0"/><style type="text/css">
+    .autolink-headers.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .autolink-headers.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .autolink-headers svg,
+    h2 .autolink-headers svg,
+    h3 .autolink-headers svg,
+    h4 .autolink-headers svg,
+    h5 .autolink-headers svg,
+    h6 .autolink-headers svg {
+      visibility: hidden;
+    }
+    h1:hover .autolink-headers svg,
+    h2:hover .autolink-headers svg,
+    h3:hover .autolink-headers svg,
+    h4:hover .autolink-headers svg,
+    h5:hover .autolink-headers svg,
+    h6:hover .autolink-headers svg,
+    h1 .autolink-headers:focus svg,
+    h2 .autolink-headers:focus svg,
+    h3 .autolink-headers:focus svg,
+    h4 .autolink-headers:focus svg,
+    h5 .autolink-headers:focus svg,
+    h6 .autolink-headers:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 100)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="canonical" href="https://ramonmorcillo.com/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/" data-baseprotocol="https:" data-basehost="ramonmorcillo.com"/><link rel="icon" href="/gatsby-personal-site/favicon-32x32.png?v=942805c02543e38c68e21b5554eb981b" type="image/png"/><link rel="manifest" href="/gatsby-personal-site/manifest.webmanifest" crossorigin="use-credentials"/><meta name="theme-color" content="#255799"/><link rel="apple-touch-icon" sizes="48x48" href="/gatsby-personal-site/icons/icon-48x48.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="72x72" href="/gatsby-personal-site/icons/icon-72x72.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="96x96" href="/gatsby-personal-site/icons/icon-96x96.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="144x144" href="/gatsby-personal-site/icons/icon-144x144.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="192x192" href="/gatsby-personal-site/icons/icon-192x192.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="256x256" href="/gatsby-personal-site/icons/icon-256x256.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="384x384" href="/gatsby-personal-site/icons/icon-384x384.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="512x512" href="/gatsby-personal-site/icons/icon-512x512.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><title data-react-helmet="true">7 lessons learned from The Pragmatic Programmer and The Clean Coder | ramonmorcillo.com</title><meta data-react-helmet="true" name="description" content="Software development and life lessons from the Pragmatic Programmer and the Clean Coder"/><meta data-react-helmet="true" property="image" content="https://ramonmorcillo.com/gatsby-personal-site/static/d999137bb33d666717d9085c3ab43ae6/2244e/pragmatic_programmer_and_clean_coder_book_covers.jpg"/><meta data-react-helmet="true" property="og:title" content="7 lessons learned from The Pragmatic Programmer and The Clean Coder"/><meta data-react-helmet="true" property="og:description" content="Software development and life lessons from the Pragmatic Programmer and the Clean Coder"/><meta data-react-helmet="true" property="og:image" content="https://ramonmorcillo.com/gatsby-personal-site/static/d999137bb33d666717d9085c3ab43ae6/2244e/pragmatic_programmer_and_clean_coder_book_covers.jpg"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Ramon Morcillo"/><meta data-react-helmet="true" name="twitter:title" content="7 lessons learned from The Pragmatic Programmer and The Clean Coder"/><meta data-react-helmet="true" name="twitter:description" content="Software development and life lessons from the Pragmatic Programmer and the Clean Coder"/><meta data-react-helmet="true" name="twitter:image" content="https://ramonmorcillo.com/gatsby-personal-site/static/d999137bb33d666717d9085c3ab43ae6/2244e/pragmatic_programmer_and_clean_coder_book_covers.jpg"/><meta data-react-helmet="true" name="google-site-verification" content="Add the Google Site Verification"/><meta data-react-helmet="true" name="keywords" content="blog, gatsby, typescript, javascript, portfolio, react"/><style data-styled="" data-styled-version="5.3.0">.bESpfA{padding-left:1rem;margin-bottom:1.5rem;}/*!sc*/
+data-styled.g3[id="shared__Header-tnyzq1-2"]{content:"bESpfA,"}/*!sc*/
+.eCLyvQ{font-size:2rem;font-weight:400;}/*!sc*/
+data-styled.g4[id="shared__Title-tnyzq1-3"]{content:"eCLyvQ,"}/*!sc*/
+.iEIPhv{font-size:1.5rem;font-weight:200;-webkit-letter-spacing:0.1rem;-moz-letter-spacing:0.1rem;-ms-letter-spacing:0.1rem;letter-spacing:0.1rem;padding:1rem 0;}/*!sc*/
+data-styled.g5[id="shared__Description-tnyzq1-4"]{content:"iEIPhv,"}/*!sc*/
+.gSZNPC{padding:0.6rem 0 0 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-left:-0.3rem;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;}/*!sc*/
+data-styled.g8[id="shared__ItemTags-tnyzq1-7"]{content:"gSZNPC,"}/*!sc*/
+.bpExil{padding:0.4rem 0.6rem;height:1.5rem;color:#F3F3F3;background-color:#F3F3F340;font-weight:600;font-size:.8rem;border-radius:3rem;margin:0.2rem;-webkit-text-decoration:none;text-decoration:none;border-bottom:0;white-space:nowrap;line-height:1;-webkit-transition:0.2s ease;transition:0.2s ease;}/*!sc*/
+.bpExil:hover{color:#333333;background-color:#F3F3F3;}/*!sc*/
+data-styled.g9[id="shared__Tag-tnyzq1-8"]{content:"bpExil,"}/*!sc*/
+.dQZthV{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%) scale(0);-ms-transform:translate(-50%,-50%) scale(0);transform:translate(-50%,-50%) scale(0);background:#FFFFFF10;height:100%;width:100%;border-radius:100%;pointer-events:none;opacity:1;will-change:transform;}/*!sc*/
+data-styled.g10[id="Logo__Background-sc-19tlazh-0"]{content:"dQZthV,"}/*!sc*/
+.bCOyZr{position:fixed;top:0;left:0;max-width:18rem;padding:5rem;}/*!sc*/
+@media (max-width:78em){.bCOyZr{padding:3rem;}}/*!sc*/
+@media (max-width:54em){.bCOyZr{padding:3rem;}}/*!sc*/
+@media (max-width:40em){.bCOyZr{padding:2rem;}}/*!sc*/
+@media (max-width:54em){.bCOyZr{position:static;padding:0;}}/*!sc*/
+.bCOyZr a,.bCOyZr svg{pointer-events:all;display:block;}/*!sc*/
+.bCOyZr a{width:1.65rem;border-bottom:none;}/*!sc*/
+.bCOyZr a:hover{border-bottom:none;}/*!sc*/
+@media (max-width:78em){.bCOyZr a{width:1.45rem;}}/*!sc*/
+.bCOyZr svg{width:100%;height:auto;}/*!sc*/
+.bCOyZr a:hover + .Logo__Background-sc-19tlazh-0{opacity:0;-webkit-transform:translate(-50%,-50%) scale(7.5);-ms-transform:translate(-50%,-50%) scale(7.5);transform:translate(-50%,-50%) scale(7.5);-webkit-transition:-webkit-transform 1s cubic-bezier(0.45,0,0.1,1),opacity 0.8s ease;-webkit-transition:transform 1s cubic-bezier(0.45,0,0.1,1),opacity 0.8s ease;transition:transform 1s cubic-bezier(0.45,0,0.1,1),opacity 0.8s ease;}/*!sc*/
+data-styled.g11[id="Logo__Wrapper-sc-19tlazh-1"]{content:"bCOyZr,"}/*!sc*/
+.Essph{position:relative;}/*!sc*/
+data-styled.g12[id="Logo__RelativeWrapper-sc-19tlazh-2"]{content:"Essph,"}/*!sc*/
+.iXxlXu{width:100%;position:fixed;top:50%;}/*!sc*/
+@media (max-width:54em){.iXxlXu{position:static;padding-top:1.5rem;}}/*!sc*/
+data-styled.g13[id="Footer__FooterWrapper-sc-1df0yns-0"]{content:"iXxlXu,"}/*!sc*/
+.jSPHnk{position:absolute;font-family:"Roboto",stack-sans,"Open Sans","Lato","Nunito Sans","Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-letter-spacing:0.1rem;-moz-letter-spacing:0.1rem;-ms-letter-spacing:0.1rem;letter-spacing:0.1rem;color:#FFFFFF;font-size:0.85rem;line-height:1em;pointer-events:all;-webkit-transform:rotate(-90deg) translateX(-50%);-ms-transform:rotate(-90deg) translateX(-50%);transform:rotate(-90deg) translateX(-50%);-webkit-transform-origin:left;-ms-transform-origin:left;transform-origin:left;left:5rem;}/*!sc*/
+.jSPHnk a{border-bottom:none;}/*!sc*/
+@media (max-width:78em){.jSPHnk{left:3rem;}}/*!sc*/
+@media (max-width:54em){.jSPHnk{left:3rem;}}/*!sc*/
+@media (max-width:40em){.jSPHnk{left:2rem;}}/*!sc*/
+@media (max-width:54em){.jSPHnk{position:static;-webkit-transform:rotate(0) translateX(0);-ms-transform:rotate(0) translateX(0);transform:rotate(0) translateX(0);-webkit-transform-origin:0;-ms-transform-origin:0;transform-origin:0;padding:.5rem 0 0;text-align:center;font-size:.8rem;}}/*!sc*/
+.jSPHnk small{font-size:70% !important;}/*!sc*/
+.iYbvcT{position:absolute;font-family:"Roboto",stack-sans,"Open Sans","Lato","Nunito Sans","Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-letter-spacing:0.1rem;-moz-letter-spacing:0.1rem;-ms-letter-spacing:0.1rem;letter-spacing:0.1rem;color:#FFFFFF;font-size:0.85rem;line-height:1em;pointer-events:all;-webkit-transform:rotate(90deg) translateX(50%);-ms-transform:rotate(90deg) translateX(50%);transform:rotate(90deg) translateX(50%);-webkit-transform-origin:right;-ms-transform-origin:right;transform-origin:right;right:5rem;}/*!sc*/
+.iYbvcT a{border-bottom:none;}/*!sc*/
+@media (max-width:78em){.iYbvcT{right:3rem;}}/*!sc*/
+@media (max-width:54em){.iYbvcT{right:3rem;}}/*!sc*/
+@media (max-width:40em){.iYbvcT{right:2rem;}}/*!sc*/
+@media (max-width:54em){.iYbvcT{position:static;-webkit-transform:rotate(0) translateX(0);-ms-transform:rotate(0) translateX(0);transform:rotate(0) translateX(0);-webkit-transform-origin:0;-ms-transform-origin:0;transform-origin:0;padding:.5rem 0 0;text-align:center;font-size:.8rem;}}/*!sc*/
+.iYbvcT small{font-size:70% !important;}/*!sc*/
+data-styled.g14[id="Footer__Item-sc-1df0yns-1"]{content:"jSPHnk,iYbvcT,"}/*!sc*/
+.bTtsHt{position:fixed;bottom:0;left:0;right:0;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding:5rem;}/*!sc*/
+@media (max-width:78em){.bTtsHt{padding:3rem;}}/*!sc*/
+@media (max-width:54em){.bTtsHt{padding:3rem;}}/*!sc*/
+@media (max-width:40em){.bTtsHt{padding:2rem;}}/*!sc*/
+.bTtsHt ul:last-child li{text-align:right;}/*!sc*/
+.bTtsHt ul:last-child li a{-webkit-transition:color 0.4s ease;transition:color 0.4s ease;will-change:color;position:relative;border-bottom:none;}/*!sc*/
+.bTtsHt ul:last-child li a::before{position:absolute;left:-1.1rem;top:50%;background:#FFFFFF;border-radius:100%;content:'';display:block;height:0.3rem;width:0.3rem;-webkit-transition:-webkit-transform 0.3s cubic-bezier(0.45,0,0.1,1),opacity 0.1s ease;-webkit-transition:transform 0.3s cubic-bezier(0.45,0,0.1,1),opacity 0.1s ease;transition:transform 0.3s cubic-bezier(0.45,0,0.1,1),opacity 0.1s ease;will-change:transform,opacity;}/*!sc*/
+.bTtsHt ul:last-child li a:not(.active)::before{opacity:0;-webkit-transform:translate(-1rem,-50%);-ms-transform:translate(-1rem,-50%);transform:translate(-1rem,-50%);}/*!sc*/
+.bTtsHt ul:last-child li a:hover{color:#FFFFFF;}/*!sc*/
+.bTtsHt ul:last-child li a:hover::before{-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);transform:translate(0,-50%);opacity:1;}/*!sc*/
+@media (max-width:54em){.bTtsHt{position:static;padding:0;}}/*!sc*/
+data-styled.g15[id="Menu__MenuWrapper-sc-1vxe8de-0"]{content:"bTtsHt,"}/*!sc*/
+.iNaoaw{list-style:none;padding:0;margin:0;width:50%;max-width:14rem;}/*!sc*/
+data-styled.g16[id="Menu__Nav-sc-1vxe8de-1"]{content:"iNaoaw,"}/*!sc*/
+.ByzpB{list-style:none;padding:0.5rem 0;line-height:1em;}/*!sc*/
+.ByzpB:last-child{padding-bottom:0;}/*!sc*/
+.ByzpB a{font-size:1rem;font-family:"Roboto",stack-sans,"Open Sans","Lato","Nunito Sans","Helvetica Neue",Helvetica,Arial,sans-serif;color:#DDDDDD;font-weight:400;pointer-events:all;-webkit-transition:color 0.1s ease;transition:color 0.1s ease;line-height:1em;border-bottom:none;}/*!sc*/
+.ByzpB a:hover{color:#FFFFFF;font-weight:600;border-bottom:none;}/*!sc*/
+data-styled.g17[id="Menu__NavItem-sc-1vxe8de-2"]{content:"ByzpB,"}/*!sc*/
+.cEEwRr{text-transform:capitalize;}/*!sc*/
+.cEEwRr:hover{color:#FFFFFF;font-weight:600;}/*!sc*/
+.cEEwRr.active{color:#FFFFFF;font-weight:600;}/*!sc*/
+.cEEwRr.active::before{-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);transform:translate(0,-50%);opacity:1;}/*!sc*/
+data-styled.g18[id="Menu__NavLink-sc-1vxe8de-3"]{content:"cEEwRr,"}/*!sc*/
+.bHbNgR{pointer-events:all;display:none;height:15px;width:1.75rem;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transition:-webkit-transform 0.45s cubic-bezier(0.45,0,0.07,1);-webkit-transition:transform 0.45s cubic-bezier(0.45,0,0.07,1);transition:transform 0.45s cubic-bezier(0.45,0,0.07,1);will-change:transform;cursor:pointer;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);}/*!sc*/
+.bHbNgR span{display:inline-block;height:1px;background:#FFFFFF;}/*!sc*/
+.bHbNgR span:nth-child(1){width:100%;}/*!sc*/
+.bHbNgR span:nth-child(2){width:60%;margin-right:20%;}/*!sc*/
+.bHbNgR span:nth-child(3){width:100%;}/*!sc*/
+@media (max-width:54em){.bHbNgR{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}/*!sc*/
+data-styled.g19[id="ToggleMenu__ToggleMenuWrapper-sc-1rm9swz-0"]{content:"bHbNgR,"}/*!sc*/
+.fPYIDe{color:#F3F3F3;font-size:1rem;font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;-webkit-letter-spacing:0.05rem;-moz-letter-spacing:0.05rem;-ms-letter-spacing:0.05rem;letter-spacing:0.05rem;text-align:center;opacity:0;display:none;-webkit-animation:fade 10s;animation:fade 10s;}/*!sc*/
+@media (max-width:54em){.fPYIDe{margin-bottom:0;padding-top:0;}}/*!sc*/
+@media (max-width:40em){.fPYIDe{margin-bottom:-0.3rem;max-width:70%;}}/*!sc*/
+@-webkit-keyframes fade{0%{opacity:1;}80%{opacity:1;}100%{opacity:0;}}/*!sc*/
+@keyframes fade{0%{opacity:1;}80%{opacity:1;}100%{opacity:0;}}/*!sc*/
+data-styled.g20[id="HelpMessage__Wrapper-sc-11fekqt-0"]{content:"fPYIDe,"}/*!sc*/
+.hfVphx{pointer-events:all;}/*!sc*/
+@media (max-width:54em){.hfVphx{position:fixed;bottom:0;left:0;right:0;width:100%;z-index:10;}}/*!sc*/
+@media only screen and (min-width:54em){.hfVphx{pointer-events:none;}}/*!sc*/
+data-styled.g21[id="Navigation__Wrapper-sxzav8-0"]{content:"hfVphx,"}/*!sc*/
+@media (max-width:54em){.jUAACT{background:#090f17;overflow:hidden;-webkit-transition:max-height .6s cubic-bezier(0.45,0,.1,1);transition:max-height .6s cubic-bezier(0.45,0,.1,1);will-change:max-height;max-height:0;}.jUAACT > div{padding:0 3rem 3rem;}}/*!sc*/
+@media (max-width:40em){.jUAACT > div{padding:0 2rem 2rem;}}/*!sc*/
+data-styled.g22[id="Navigation__Shoable-sxzav8-1"]{content:"jUAACT,"}/*!sc*/
+.iTMXyh{background-image:linear-gradient( to bottom,#090f1700 0%,#090f17 50% );}/*!sc*/
+@media (max-width:54em){.iTMXyh{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;width:100%;min-height:7rem;padding:5rem;}@media (max-width:78em){.iTMXyh{padding:3rem;}}@media (max-width:54em){.iTMXyh{padding:3rem;}}@media (max-width:40em){.iTMXyh{padding:2rem;}}}/*!sc*/
+data-styled.g23[id="Navigation__Header-sxzav8-2"]{content:"iTMXyh,"}/*!sc*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,main,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}/*!sc*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block;}/*!sc*/
+*[hidden]{display:none;}/*!sc*/
+body{line-height:1;}/*!sc*/
+ol,ul{list-style:none;}/*!sc*/
+blockquote,q{quotes:none;}/*!sc*/
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}/*!sc*/
+table{border-collapse:collapse;border-spacing:0;}/*!sc*/
+html,body{height:100%;font-size:14px;}/*!sc*/
+body{background:#090f17;color:#FFFFFF;font-family:"Roboto",stack-sans,"Open Sans","Lato","Nunito Sans","Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-backface-visibility:hidden;backface-visibility:hidden;margin:0;}/*!sc*/
+h1,h2,h3,h4,h5,h6{font-weight:300;line-height:inherit;}/*!sc*/
+h2{display:inline-block;font-size:1.8rem;margin-top:1rem;margin-bottom:1rem;padding:0.4rem 0;}/*!sc*/
+h3{display:inline-block;font-size:1.5rem;margin-top:.7rem;margin-bottom:.7rem;}/*!sc*/
+p{font-size:1.25rem;margin:1.5rem 0;vertical-align:baseline;}/*!sc*/
+strong{font-weight:600;}/*!sc*/
+ul,ol{font-size:1.2rem;padding:1rem;margin-left:1rem;}/*!sc*/
+ul{list-style-type:circle;}/*!sc*/
+ol{list-style-type:decimal;}/*!sc*/
+li{padding:0.2rem;}/*!sc*/
+li p{margin:0;}/*!sc*/
+a{cursor:pointer;-webkit-text-decoration:none;text-decoration:none;-webkit-transition:color ease-in .2s;transition:color ease-in .2s;font-weight:600;color:#FFFFFF;border-bottom:1px dashed #FFFFFF;}/*!sc*/
+a:hover{border-bottom:1px solid #FFFFFF;}/*!sc*/
+button:focus{outline:0;}/*!sc*/
+*{box-sizing:border-box;line-height:1.4em;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-kerning:auto;}/*!sc*/
+blockquote{box-shadow:inset 3px 0 0 0 #F8F8F8;padding-left:23px;font-style:italic;}/*!sc*/
+img[src$=".gif"]{display:block;margin:auto;width:100%;max-width:600px;}/*!sc*/
+video{max-height:500px;width:100%;max-width:600px;display:block;margin:0.5rem auto;}/*!sc*/
+figcaption{text-align:center;font-size:1rem;font-style:italic;margin:2rem 0;}/*!sc*/
+em{font-style:italic;}/*!sc*/
+::selection{color:#ebc86e;background:transparent;}/*!sc*/
+.autolink-headers,.gatsby-resp-image-link{border-bottom:none;}/*!sc*/
+.autolink-headers:hover,.gatsby-resp-image-link:hover{border-bottom:none;}/*!sc*/
+table{font-size:1.25rem;margin:auto;width:100%;max-width:600px;overflow:auto;}/*!sc*/
+table,tr,th,td{border:1px solid #999999;padding:.5rem;}/*!sc*/
+data-styled.g24[id="sc-global-dLywzA1"]{content:"sc-global-dLywzA1,"}/*!sc*/
+.bHlQoN{max-width:68rem;width:calc(100% - 9.25rem * 2);margin:11rem auto 5rem;position:absolute;top:0;left:0;right:0;bottom:0;height:100%;}/*!sc*/
+@media (max-width:78em){.bHlQoN{width:1.45rem;margin:8rem auto 3rem;width:calc(100% - 11rem * 2);}}/*!sc*/
+@media (max-width:54em){.bHlQoN{width:100%;margin:4rem auto 0;padding:0 3rem 6rem;}}/*!sc*/
+@media (max-width:40em){.bHlQoN{margin:2rem auto 0;padding:0 2rem 6rem;}}/*!sc*/
+data-styled.g25[id="Content__Wrapper-sc-1q50de9-0"]{content:"bHlQoN,"}/*!sc*/
+.dYysHN{height:10rem;}/*!sc*/
+data-styled.g26[id="Content__BottomHeight-sc-1q50de9-1"]{content:"dYysHN,"}/*!sc*/
+.fCKPUh{padding:1rem 1rem 4rem;}/*!sc*/
+data-styled.g53[id="Comments__Wrapper-czvh9a-0"]{content:"fCKPUh,"}/*!sc*/
+.hfVTUK{color:#F3F3F3;background-color:#F3F3F340;font-size:1rem;font-weight:600;border-radius:5px;box-sizing:border-box;-webkit-text-decoration:none;text-decoration:none;display:block;padding:0.4rem 0.6rem;border-bottom:0;white-space:nowrap;line-height:1;margin:2rem 0 0.2rem 1rem;-webkit-transition:0.4s ease;transition:0.4s ease;float:right;}/*!sc*/
+.hfVTUK:hover{background-color:#F3F3F3;border-bottom:none;}/*!sc*/
+.hfVTUK a{border:none;}/*!sc*/
+.hfVTUK a:hover{border:none;color:#333333;}/*!sc*/
+data-styled.g61[id="Comments__Actions-czvh9a-8"]{content:"hfVTUK,"}/*!sc*/
+.galTMt{list-style-type:none;margin-left:0;padding-bottom:2rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}/*!sc*/
+.galTMt li{text-align:left;padding:1rem;width:50%;}/*!sc*/
+@media (max-width:54em){.galTMt li{width:100%;text-align:center;}}/*!sc*/
+.galTMt li::before{content:'' !important;padding-right:0 !important;}/*!sc*/
+.galTMt li:nth-child(2){text-align:right;}/*!sc*/
+@media (max-width:54em){.galTMt li:nth-child(2){text-align:center;}}/*!sc*/
+.galTMt a{border-bottom:none;}/*!sc*/
+data-styled.g62[id="post__OtherPostsLinks-sc-18ghmkz-0"]{content:"galTMt,"}/*!sc*/
+.iOOWPE{font-size:1rem;font-weight:200;padding:1rem 0 2rem 0;}/*!sc*/
+data-styled.g63[id="post__Date-sc-18ghmkz-1"]{content:"iOOWPE,"}/*!sc*/
+</style><link rel="sitemap" type="application/xml" href="/gatsby-personal-site/sitemap/sitemap-index.xml"/><link as="script" rel="preload" href="/gatsby-personal-site/webpack-runtime-37b80963a1cdea856f28.js"/><link as="script" rel="preload" href="/gatsby-personal-site/framework-de69d1d98c3759f869ba.js"/><link as="script" rel="preload" href="/gatsby-personal-site/app-661b59fc950a0d419b03.js"/><link as="script" rel="preload" href="/gatsby-personal-site/commons-2572092cd8427adb054b.js"/><link as="script" rel="preload" href="/gatsby-personal-site/a93ca09b3e214b1f9c56eefcc27e05eb63340a26-41145a67edc9f38f72ea.js"/><link as="script" rel="preload" href="/gatsby-personal-site/component---src-templates-post-tsx-fc7e64f5e9378365724d.js"/><link as="fetch" rel="preload" href="/gatsby-personal-site/page-data/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-personal-site/page-data/sq/d/1500402284.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-personal-site/page-data/sq/d/474397040.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-personal-site/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><main role="main"><canvas id="canvas" style="background-color:#000000;background-image:radial-gradient(
+        circle at 50% 12%,
+        #4930300d,
+        transparent 154%
+      )
+  ,
+      radial-gradient(
+        circle at 1% 81%,
+        #6793fb0d,
+        transparent 159%
+      )
+  ,
+      radial-gradient(
+        circle at 40% 52%,
+        #99e1400d,
+        transparent 111%
+      );opacity:0.3;position:fixed;width:100%;height:100%"></canvas><div class="Content__Wrapper-sc-1q50de9-0 bHlQoN"><article><div class="shared__Header-tnyzq1-2 bESpfA"><h1 class="shared__Title-tnyzq1-3 eCLyvQ">7 lessons learned from The Pragmatic Programmer and The Clean Coder</h1><div class="shared__Description-tnyzq1-4 iEIPhv">Software development and life lessons from the Pragmatic Programmer and the Clean Coder</div><div class="shared__ItemTags-tnyzq1-7 gSZNPC"><a class="shared__Tag-tnyzq1-8 bpExil" href="/gatsby-personal-site/tags/Books/">Books</a><a class="shared__Tag-tnyzq1-8 bpExil" href="/gatsby-personal-site/tags/Learning/">Learning</a><a class="shared__Tag-tnyzq1-8 bpExil" href="/gatsby-personal-site/tags/Software Development/">Software Development</a></div><div class="post__Date-sc-18ghmkz-1 iOOWPE">December 29, 2020</div><div style="width:100%;height:auto"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden"><div aria-hidden="true" style="width:100%;padding-bottom:56.5%"></div><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAQL/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAGvbljjsP/EABoQAAMBAAMAAAAAAAAAAAAAAAECAwQAEBH/2gAIAQEAAQUC03adNVnmyH2bgHgAPX//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAcEAEAAgIDAQAAAAAAAAAAAAABAAIhMRARElH/2gAIAQEABj8C6LBiV8ob3Kv0mQmQeP/EABsQAQACAwEBAAAAAAAAAAAAAAEAESExYUFx/9oACAEBAAE/IQhijSdgCaifiMzsGZZT0lDuPSGCf//aAAwDAQACAAMAAAAQSM//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAgEBPxAn/8QAGhABAQEAAwEAAAAAAAAAAAAAAREAITGRwf/aAAgBAQABPxCrKAKtR8zn5ECPCd51akQnKDlDoKiusoCk2e4AAABAN//Z" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/gatsby-personal-site/static/d999137bb33d666717d9085c3ab43ae6/f836f/pragmatic_programmer_and_clean_coder_book_covers.jpg 200w,
+/gatsby-personal-site/static/d999137bb33d666717d9085c3ab43ae6/2244e/pragmatic_programmer_and_clean_coder_book_covers.jpg 400w,
+/gatsby-personal-site/static/d999137bb33d666717d9085c3ab43ae6/14b42/pragmatic_programmer_and_clean_coder_book_covers.jpg 800w,
+/gatsby-personal-site/static/d999137bb33d666717d9085c3ab43ae6/8a0c9/pragmatic_programmer_and_clean_coder_book_covers.jpg 875w" sizes="(max-width: 800px) 100vw, 800px" /><img loading="lazy" sizes="(max-width: 800px) 100vw, 800px" srcset="/gatsby-personal-site/static/d999137bb33d666717d9085c3ab43ae6/f836f/pragmatic_programmer_and_clean_coder_book_covers.jpg 200w,
+/gatsby-personal-site/static/d999137bb33d666717d9085c3ab43ae6/2244e/pragmatic_programmer_and_clean_coder_book_covers.jpg 400w,
+/gatsby-personal-site/static/d999137bb33d666717d9085c3ab43ae6/14b42/pragmatic_programmer_and_clean_coder_book_covers.jpg 800w,
+/gatsby-personal-site/static/d999137bb33d666717d9085c3ab43ae6/8a0c9/pragmatic_programmer_and_clean_coder_book_covers.jpg 875w" src="/gatsby-personal-site/static/d999137bb33d666717d9085c3ab43ae6/14b42/pragmatic_programmer_and_clean_coder_book_covers.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div></div><div><div style="padding-left:1rem;line-height:1.6"><p>I recently finished reading both books: <em>The Pragmatic Programmer 20th Anniversary Edition</em> (2019) and <em>The Clean Coder</em> (2011) which are found on almost every “top 10 Software Development books” lists out there. My goal was to learn, improve, and get something a teacher from mine used to say: “<em>knowledge that can’t be obtained from just reading articles</em>.”</p>
+<p>When you are developing software you may get stuck at a point where Youtube videos and Stackoverflow answers don’t help. You end up reaching for the official docs, or the source code of that technology to find the answer. The same thing happens when you want to understand the subject properly. <strong>Articles fall short and reading well-known books is the best approach.</strong></p>
+<p>These books focus not only on how to write code but on teaching you best practices for developing software and even useful life lessons. I’ll share some lessons I learned from them.</p>
+<h2 id="Table-of-Contents" style="position:relative;">Table of Contents<a href="#Table-of-Contents" aria-label="Table of Contents permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<ul>
+<li><a href="#Taking-Responsibility">Taking Responsibility</a></li>
+<li><a href="#Testing">Testing</a></li>
+<li><a href="#Teamwork">Teamwork</a></li>
+<li><a href="#Estimating">Estimating</a></li>
+<li><a href="#Tracer-bullets">Tracer bullets</a></li>
+<li><a href="#Handling-pressure">Handling pressure</a></li>
+<li><a href="#Refactoring">Refactoring</a></li>
+<li><a href="#Main-differences">Main differences</a></li>
+<li><a href="#Conclusions">Conclusions</a></li>
+<li><a href="#Resources">Resources</a></li>
+</ul>
+<h2 id="Taking-Responsibility" style="position:relative;">Taking Responsibility<a href="#Taking-Responsibility" aria-label="Taking Responsibility permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p>As a software developer, you are responsible for the code you create and must ensure that it not only works now but will do in the best possible way for a long time (nothing lasts forever). The best way to make sure the code won’t fail is by testing it, having automated tests that you run each time you write new lines to be sure everything is still working.</p>
+<blockquote>
+<p>Take Responsibility. Responsibility is something you actively agree to.
+— The Pragmatic Programmer</p>
+</blockquote>
+<p>Responsibility is not only related to coding, you have to <strong>take responsibility for improving yourself</strong> too and get better by scheduling time for it.</p>
+<blockquote>
+<p>Professionals spend time caring for their profession. Presumably, you became a software developer because you are passionate about software and your desire to be a professional is motivated by that passion.
+— The Clean Coder</p>
+</blockquote>
+<blockquote>
+<p>Your knowledge and experience are your most important day-to-day professional assets.
+— The Pragmatic Programmer</p>
+</blockquote>
+<p><img src="/gatsby-personal-site/0564ed8d12621364383b42fc32b0f552/responsibility.gif" alt="Responsibility"></p>
+<h2 id="Testing" style="position:relative;">Testing<a href="#Testing" aria-label="Testing permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p>The gravity of testing in software development is such that both books focus on this topic.</p>
+<p>You have to <strong>look at tests as the first users of your code</strong>, so they are the best feedback that guides your coding.</p>
+<p>Practice <a href="https://en.wikipedia.org/wiki/Test-driven_development">TDD Test Driven Development.</a> How? Three steps explanation:</p>
+<ol>
+<li>Choose a feature to add and write a test that will pass after implementing it. Now, all tests but the new one should pass.</li>
+<li>Write the code required to pass it.</li>
+<li>Refactor the code and check all tests still pass.</li>
+</ol>
+<p>Thus said, it is important to look at the big picture and not to miss the main goal by writing too many tests.</p>
+<blockquote>
+<p>It is easy to become seduced by the green “tests passed” message, writing lots of code that doesn’t actually get you closer to a solution.
+— The Pragmatic Programmer</p>
+</blockquote>
+<p><img src="/gatsby-personal-site/83a2345d6937cceced15dbfb7b2496f2/tests.gif" alt="Tests"></p>
+<p>There are three ways of testing: <em>First, During,</em> and <em>Never.</em> First (TDD) is the best one, During is a fallback when First is not useful, and Never is often called “Test Later” but sadly <strong>in most cases Later means Never.</strong></p>
+<blockquote>
+<p>The need to test first forces you to think about “good design.”
+— The Clean Coder</p>
+</blockquote>
+<p>Having tests give you the confidence to refactor code more often because you have the tests to check if they still pass after the changes are done.</p>
+<blockquote>
+<p>Tests should be run as frequently as possible to provide maximum feedback and to ensure that the system remains continuously clean.
+— The Clean Coder</p>
+</blockquote>
+<p>Use acceptance tests to <em>define when a requirement is done</em> collaborating with the stakeholders.</p>
+<p>Developers take the responsibility to ensure that tests are <em>always automated</em> for a simple reason: <strong>cost.</strong></p>
+<p>Developers have to aim “QA should find nothing” as a goal by implementing different kinds of tests, in different measures from unit to exploratory ones.</p>
+<p><figure class="gatsby-resp-image-figure" style="border-bottom: none;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-personal-site/static/381ccf00b4b294a779df2ba44727c1b0/ef9e5/the_test_automation_pyramid.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 80%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAABpklEQVQ4y41T2YrCQBCc//8TwRMv8L6NGk8QRPEAHwTfREU0aC3V0NkQk80ONJPMUV1V3WMQMD6fjxsc7/cbjuO4e97ZP0wYoHc+Ho8YDAaBySIB/WCv1wvD4RC5XA7n8zmSZSTg4XBAt9tFp9PBcrmMlG7+ArteryiVSojH40ilUshms5LgX4Beb/TQYrFAu91Gs9lEo9GQ716vh9vtFgpqwtidTicpRLVaRSaTQbFYRKFQkLX1eh1aIBME9nw+hVUymRRmBK3VaqjX6+InLWDCoLuBgPv9Hv1+H5ZliUTODF1jgWazmfSnn6nxg10uF2FDaePxGOl0GrFYDPl8XhjTx/l8LqCbzeaLpfH7wMy8SFCyIbDODGVZLpelN+/3e7hk+kKJ0+lU2PGbxSA7BgHoqW3bsj8ajb4KZLwvgofJjgz4OghYqVSkF1kYsmq1WrKnzHneWyAXcLfbiS8EoSyVplIZCqT7DHbDZDJxC2S0EATjBUqhJJXFBHwhfClkycu6z+A/W2m73f4CrlYrJBIJkUf/FEyDXjEZZ++6Br1l0z8eD/wA6s+VOmYdllIAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="The Test Automation Pyramid - The Clean Coder"
+        title="The Test Automation Pyramid - The Clean Coder"
+        src="/gatsby-personal-site/static/381ccf00b4b294a779df2ba44727c1b0/0a47e/the_test_automation_pyramid.png"
+        srcset="/gatsby-personal-site/static/381ccf00b4b294a779df2ba44727c1b0/8a4e8/the_test_automation_pyramid.png 150w,
+/gatsby-personal-site/static/381ccf00b4b294a779df2ba44727c1b0/5a46d/the_test_automation_pyramid.png 300w,
+/gatsby-personal-site/static/381ccf00b4b294a779df2ba44727c1b0/0a47e/the_test_automation_pyramid.png 600w,
+/gatsby-personal-site/static/381ccf00b4b294a779df2ba44727c1b0/ef9e5/the_test_automation_pyramid.png 607w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><p>The Test Automation Pyramid - The Clean Coder</p></figcaption>
+  </figure></p>
+<h2 id="Teamwork" style="position:relative;">Teamwork<a href="#Teamwork" aria-label="Teamwork permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p>When working on a team you have to be a “team player”, communicate frequently, keep an eye out for your teammates, and execute your responsibilities as well as possible.</p>
+<blockquote>
+<p>Good communication is key to avoiding these problems. And by “good” we mean instant and frictionless. Frictionless means it’s easy and low-ceremony to ask questions, share your progress, your problems, your insights and learnings, and to stay aware of what your teammates are doing.
+— The Pragmatic Programmer</p>
+</blockquote>
+<p><figure class="gatsby-resp-image-figure" style="border-bottom: none;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-personal-site/static/c499e42d54805cef51a127779bf375a4/c5c87/tobias-mrzyk-iuqmGmst5Po-unsplash.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAf/EABUBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAAGLYVsMEkX/xAAZEAEBAQEBAQAAAAAAAAAAAAABAgADEBP/2gAIAQEAAQUCnhq4hqJH63lXz//EABYRAQEBAAAAAAAAAAAAAAAAAAAREv/aAAgBAwEBPwHKP//EABYRAQEBAAAAAAAAAAAAAAAAAAAREv/aAAgBAgEBPwHSv//EABkQAAMAAwAAAAAAAAAAAAAAAAABECExMv/aAAgBAQAGPwKbOmZc/8QAGxAAAgIDAQAAAAAAAAAAAAAAAREAIRAxQWH/2gAIAQEAAT8hcnszqCEASPLuq4VZCfcf/9oADAMBAAIAAwAAABBHD//EABURAQEAAAAAAAAAAAAAAAAAAABx/9oACAEDAQE/EKU//8QAFxEBAAMAAAAAAAAAAAAAAAAAABFRcf/aAAgBAgEBPxDKdP/EAB0QAQEAAgEFAAAAAAAAAAAAAAERACExEEFRYbH/2gAIAQEAAT8QiCBABdq8YBEGznvU+jgEaeN4iKJUMaWb9Vx+7bVW9P/Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Source"
+        title="Source"
+        src="/gatsby-personal-site/static/c499e42d54805cef51a127779bf375a4/b4294/tobias-mrzyk-iuqmGmst5Po-unsplash.jpg"
+        srcset="/gatsby-personal-site/static/c499e42d54805cef51a127779bf375a4/75985/tobias-mrzyk-iuqmGmst5Po-unsplash.jpg 150w,
+/gatsby-personal-site/static/c499e42d54805cef51a127779bf375a4/f93b5/tobias-mrzyk-iuqmGmst5Po-unsplash.jpg 300w,
+/gatsby-personal-site/static/c499e42d54805cef51a127779bf375a4/b4294/tobias-mrzyk-iuqmGmst5Po-unsplash.jpg 600w,
+/gatsby-personal-site/static/c499e42d54805cef51a127779bf375a4/8e1fc/tobias-mrzyk-iuqmGmst5Po-unsplash.jpg 900w,
+/gatsby-personal-site/static/c499e42d54805cef51a127779bf375a4/e5166/tobias-mrzyk-iuqmGmst5Po-unsplash.jpg 1200w,
+/gatsby-personal-site/static/c499e42d54805cef51a127779bf375a4/c5c87/tobias-mrzyk-iuqmGmst5Po-unsplash.jpg 1337w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><p>Source</p></figcaption>
+  </figure></p>
+<p>Teams should be <strong>small, less than 10-12 members</strong>, where everyone knows and trusts each other. This team environment is <strong>hard to achieve</strong> therefore once you get it you have to <strong>care for it changing the projects they work on rather than the members.</strong></p>
+<blockquote>
+<p>As team size grows, communication paths grow at the rate of O(n^2), where n is the number of team members. On larger teams, communication begins to break down and becomes ineffective.
+— The Pragmatic Programmer</p>
+</blockquote>
+<blockquote>
+<p>To form teams around projects is a foolish approach. Individuals are only on the project for a short time and therefore never learn how to deal with each other. Teams are harder to build than projects. Therefore, it is better to form persistent teams that move together from one project to the next and can take on more than one project at a time.
+— The Clean Coder</p>
+</blockquote>
+<p><figure class="gatsby-resp-image-figure" style="border-bottom: none;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-personal-site/static/2c7cdbe3501a9b9a87dec093767978a2/35868/tobias-mrzyk-Px3oXvVXRxc-unsplash.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 55.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHKnRB4gP/EABgQAAMBAQAAAAAAAAAAAAAAAAECERIQ/9oACAEBAAEFAkzRlgZe/wD/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPwGn/8QAFRABAQAAAAAAAAAAAAAAAAAAESD/2gAIAQEABj8CK//EABoQAQACAwEAAAAAAAAAAAAAAAEAESAxYbH/2gAIAQEAAT8hT9mC7dcg1OH/2gAMAwEAAgADAAAAEPvv/8QAFREBAQAAAAAAAAAAAAAAAAAAECH/2gAIAQMBAT8Qh//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAECAQE/EKV//8QAGRABAQADAQAAAAAAAAAAAAAAAREAEDFB/9oACAEBAAE/EBSZR8i5CSjq6YRApq6//9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Source"
+        title="Source"
+        src="/gatsby-personal-site/static/2c7cdbe3501a9b9a87dec093767978a2/b4294/tobias-mrzyk-Px3oXvVXRxc-unsplash.jpg"
+        srcset="/gatsby-personal-site/static/2c7cdbe3501a9b9a87dec093767978a2/75985/tobias-mrzyk-Px3oXvVXRxc-unsplash.jpg 150w,
+/gatsby-personal-site/static/2c7cdbe3501a9b9a87dec093767978a2/f93b5/tobias-mrzyk-Px3oXvVXRxc-unsplash.jpg 300w,
+/gatsby-personal-site/static/2c7cdbe3501a9b9a87dec093767978a2/b4294/tobias-mrzyk-Px3oXvVXRxc-unsplash.jpg 600w,
+/gatsby-personal-site/static/2c7cdbe3501a9b9a87dec093767978a2/8e1fc/tobias-mrzyk-Px3oXvVXRxc-unsplash.jpg 900w,
+/gatsby-personal-site/static/2c7cdbe3501a9b9a87dec093767978a2/e5166/tobias-mrzyk-Px3oXvVXRxc-unsplash.jpg 1200w,
+/gatsby-personal-site/static/2c7cdbe3501a9b9a87dec093767978a2/35868/tobias-mrzyk-Px3oXvVXRxc-unsplash.jpg 1525w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><p>Source</p></figcaption>
+  </figure></p>
+<p>Furthermore, great teams will face and solve issues together where each individual will provide their best. They <em>get things done as a unit</em>. In the end, they will be known for their performance and quality of work.</p>
+<blockquote>
+<p>Quality can come only from the individual contributions of all team members. Quality is built in, not bolted on.
+— The Pragmatic Programmer</p>
+</blockquote>
+<blockquote>
+<p>A gelled team can work miracles, anticipate each other, cover for each other, support each other, and demand the best from each other. They make things happen.
+— The Clean Coder</p>
+</blockquote>
+<blockquote>
+<p>Great project teams have a distinct personality. People look forward to meetings with them, because they know that they’ll see a well-prepared performance that makes everyone feel good. The documentation they produce is crisp, accurate, and consistent.
+— The Pragmatic Programmer</p>
+</blockquote>
+<p><figure class="gatsby-resp-image-figure" style="border-bottom: none;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-personal-site/static/c56c34a71fe269e294b14b079976d8ca/b29e7/natalie-pedigo-wJK9eTiEZHY-unsplash.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUBAgT/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAByXTyPBIR/8QAGhAAAgIDAAAAAAAAAAAAAAAAAAECEgMQEf/aAAgBAQABBQJJGOs1TfWf/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAIAQMBAT8BR//EABURAQEAAAAAAAAAAAAAAAAAAAAh/9oACAECAQE/AVf/xAAYEAACAwAAAAAAAAAAAAAAAAAAMQEgIf/aAAgBAQAGPwJwZRn/xAAbEAADAAIDAAAAAAAAAAAAAAAAARFBkRAhMf/aAAgBAQABPyGHvYUm/mCOE2nU4Uy2f//aAAwDAQACAAMAAAAQ4D//xAAVEQEBAAAAAAAAAAAAAAAAAAAQIf/aAAgBAwEBPxCD/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERcf/aAAgBAgEBPxC5af/EABoQAQACAwEAAAAAAAAAAAAAAAEAERAxQSH/2gAIAQEAAT8QPYRV6T1iVStkScGlI6NRYqq9VP/Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Source"
+        title="Source"
+        src="/gatsby-personal-site/static/c56c34a71fe269e294b14b079976d8ca/b4294/natalie-pedigo-wJK9eTiEZHY-unsplash.jpg"
+        srcset="/gatsby-personal-site/static/c56c34a71fe269e294b14b079976d8ca/75985/natalie-pedigo-wJK9eTiEZHY-unsplash.jpg 150w,
+/gatsby-personal-site/static/c56c34a71fe269e294b14b079976d8ca/f93b5/natalie-pedigo-wJK9eTiEZHY-unsplash.jpg 300w,
+/gatsby-personal-site/static/c56c34a71fe269e294b14b079976d8ca/b4294/natalie-pedigo-wJK9eTiEZHY-unsplash.jpg 600w,
+/gatsby-personal-site/static/c56c34a71fe269e294b14b079976d8ca/8e1fc/natalie-pedigo-wJK9eTiEZHY-unsplash.jpg 900w,
+/gatsby-personal-site/static/c56c34a71fe269e294b14b079976d8ca/e5166/natalie-pedigo-wJK9eTiEZHY-unsplash.jpg 1200w,
+/gatsby-personal-site/static/c56c34a71fe269e294b14b079976d8ca/b29e7/natalie-pedigo-wJK9eTiEZHY-unsplash.jpg 1332w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><p>Source</p></figcaption>
+  </figure></p>
+<h2 id="Estimating" style="position:relative;">Estimating<a href="#Estimating" aria-label="Estimating permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p>This lesson, like the majority from both books, is as important in software development as in real life. The more you practice and develop it, the more intuitive will be your ability to determine the feasibility of any task.</p>
+<p>First, I want to clarify what <em>estimating</em> means by sharing The Clean Coder definition of an estimate which refers to it as a <em>probability distribution.</em></p>
+<blockquote>
+<p>An estimate is not a number. An estimate is a <em>probability distribution,</em> the likelihood of completion.
+— The Clean Coder</p>
+</blockquote>
+<p>To help you understand it, here is a figure of the likelihood of completion of a task for the next 11 days.</p>
+<p><figure class="gatsby-resp-image-figure" style="border-bottom: none;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-personal-site/static/9a2fd3590182fc8eed02757175aaf01e/5f4af/probability_distribution.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA/ElEQVQoz7WR2WqFQBBE/f+fUxHRBxdEVNzFfa9QHZTc+xATSISixpnpQ023MgwDwjDEtm2oqgqapqHrOkzThHEcH3Xdm+cZ53lC4UaSJDdQ13UB8gLPfqplWT6BpMdx/LfAKIr+N2Hf91jX9e7Rk156+A40DAN5not+k/JOyCIOhT91XcM0TbiuK2B+T9Dr/AWYpimyLBOwZVnwPE+8LEtJve+7FH4Hv4HsVdM0UFUVjuPAtm1xJuXa931pCQfF3rKQ4Hcn5wYyBSEsJIBTpwdBIGum5St4Ti+KQsQgl7dtKy1SSKX4LDqHQz+OQ/a+OsVEvHM5n8tQXBP4ATvwTHvw9m2tAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Probability distribution, the likelihood of completion. Source: The clean coder"
+        title="Probability distribution, the likelihood of completion. Source: The clean coder"
+        src="/gatsby-personal-site/static/9a2fd3590182fc8eed02757175aaf01e/0a47e/probability_distribution.png"
+        srcset="/gatsby-personal-site/static/9a2fd3590182fc8eed02757175aaf01e/8a4e8/probability_distribution.png 150w,
+/gatsby-personal-site/static/9a2fd3590182fc8eed02757175aaf01e/5a46d/probability_distribution.png 300w,
+/gatsby-personal-site/static/9a2fd3590182fc8eed02757175aaf01e/0a47e/probability_distribution.png 600w,
+/gatsby-personal-site/static/9a2fd3590182fc8eed02757175aaf01e/5f4af/probability_distribution.png 665w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><p>Probability distribution, the likelihood of completion. Source: The clean coder</p></figcaption>
+  </figure></p>
+<p>One of the basics to make great estimations is to <strong>have proper knowledge of what you are estimating.</strong></p>
+<blockquote>
+<p>The first part of any estimation exercise is building an understanding of what’s being asked. You need to have a grasp of the scope of the domain.
+— The Pragmatic Programmer</p>
+</blockquote>
+<p>Don’t estimate alone, <strong>communicate with other people to be as accurate as possible.</strong></p>
+<blockquote>
+<p>The most important estimation resource you have are the people around you. They can see things that you don’t. They can help you estimate your tasks more accurately than you can estimate them on your own.
+— The Clean Coder</p>
+</blockquote>
+<blockquote>
+<p>A basic estimating trick that always gives good answers: ask someone who’s already done it.
+— The Pragmatic Programmer</p>
+</blockquote>
+<p>When asked for an estimation choose the units that better reflect the accuracy you intend to convey. This Estimation times scale from The Pragmatic Programmer may help you.</p>
+<table>
+<thead>
+<tr>
+<th>Duration</th>
+<th align="center">Quote estimate in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1–15 days</td>
+<td align="center">Days</td>
+</tr>
+<tr>
+<td>3–6	weeks</td>
+<td align="center">Weeks</td>
+</tr>
+<tr>
+<td>8–20	weeks</td>
+<td align="center">Months</td>
+</tr>
+<tr>
+<td>20+	weeks</td>
+<td align="center">Think hard before giving an estimate</td>
+</tr>
+</tbody>
+</table>
+<p>Although Business likes to view estimates as commitments, remember that <strong>an estimate is just a guess therefore no commitment is implied.</strong></p>
+<blockquote>
+<p>A commitment is something you must achieve. If you commit to getting something done by a certain date, then you simply have to get it done by that date. Professionals don’t make commitments unless they know they can achieve them. Missing a commitment is an act of dishonesty only slightly less onerous than an overt lie.
+— The Clean Coder</p>
+</blockquote>
+<p>Thus said, to help Business measuring requirements and making appropriate plans you have to <strong>remove the requirement’s ambiguity before estimating.</strong> Afterwards, <strong>keep them updated about the progress.</strong></p>
+<blockquote>
+<p>The trick to managing lateness is early detection and transparency. Regularly measure your progress against your goal. Be as honest as you can about all dates. Do not incorporate hope into your estimates!
+— The Clean Coder</p>
+</blockquote>
+<p>Do not reinvent the wheel, use well-known estimation techniques for tasks. Here I made a summary of some techniques mentioned in both books.</p>
+<ul>
+<li><a href="https://github.com/reymon359/book-sentences/blob/master/books/the-clean-coder/README.md#pert">PERT</a></li>
+<li><a href="https://github.com/reymon359/book-sentences/tree/master/books/the-clean-coder/README.md#wideband-delphi">Wideband Delphi</a></li>
+<li><a href="https://github.com/reymon359/book-sentences/tree/master/books/the-clean-coder/README.md#flying-fingers">Flying Fingers</a></li>
+<li><a href="https://github.com/reymon359/book-sentences/tree/master/books/the-clean-coder/README.md#planning-poker">Planning Poker</a></li>
+<li><a href="https://github.com/reymon359/book-sentences/tree/master/books/the-clean-coder/README.md#affinity-estimation">Affinity Estimation</a></li>
+<li><a href="https://github.com/reymon359/book-sentences/blob/master/books/the-clean-coder/README.md#trivariate-estimates">Trivariate Estimates</a></li>
+<li><a href="https://github.com/reymon359/book-sentences/tree/master/books/the-clean-coder/README.md#the-law-of-large-numbers">The Law of Large Numbers</a></li>
+</ul>
+<p>The more experience you have on a certain project the better you will estimate its tasks. Therefore don’t worry if the first estimates you make are not as accurate as they could be. It is an incremental process as with every long term goal you want to achieve.</p>
+<p>Like one of my favorite quotes states:</p>
+<blockquote>
+<p>There is only <strong>one</strong> way to <strong>eat an elephant</strong>: a <strong>bite at a time</strong>.
+— Desmond Tutu</p>
+</blockquote>
+<p>However, there is no way you can eat such cuteness</p>
+<p><img src="/gatsby-personal-site/0542a22b0c88e02fd37d9ddeb6e9d9a2/elephant.gif" alt="Elephant"></p>
+<h2 id="Tracer-bullets" style="position:relative;">Tracer bullets<a href="#Tracer-bullets" aria-label="Tracer bullets permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p>Tracer bullets are a special kind of bullet used in movies to mark the path they’ve taken as feedback for the shooter to aim better the next time. Therefore, the main goal of Tracer Bullet Development is to “shoot” new features into the project and get quick feedback to “aim” better on the next ones.</p>
+<blockquote>
+<p>Tracer development is consistent with the idea that a project is never finished: there will always be changes required and functions to add. It is an incremental approach.
+— The Pragmatic Programmer</p>
+</blockquote>
+<p><figure class="gatsby-resp-image-figure" style="border-bottom: none;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-personal-site/static/c6fc1643071531eaeaaaf8ee22a8ed5e/252a4/tracer_bullets.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 74.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAACtUlEQVQ4y3WTy27bRhSG8zB9pz5HUaCrZpVN0U0LdFUUaNJV0RtSO74kNuK4jSvZsevahiyJosSLxLsokqJ4EUlJX8FxbFR2cwACM5yZb84//zmPVqsV9VdHMAmxLQfP85gEAUEQ4Dgu3njMZDLhQ3F7vo5Ht5Msy1CUAd1uG03TkLtdZEmi1+vRbrVQFIWJ7+PZrrjI830s12U2m61B74DTaYJhX9DTXlAtKrT9PdyzM/JsRufPbeb5jNDw6G4dUaUZx67DrqoSvM98eR8Yxxn2+BxJ+4WiKjFf7uI0GmTpFOnwd7I0IrUC1M0GizTnNArZMwzCMFyTvgY0nb/pj36jrEqGOzu4zSbJLKJ9sEGexszsCdqrE6iWHEZTfnJcojAUTzBLkoeSLe+SjvpCAM39PfzTM6oiRX37M0UREXfH9L78A1/WeNxT+PjkkvPTdxwdHeF63jowz5eMgwa6+Q3zImf49Af6P/6Kpl5xvfMZV623tDb/Qf70DU5H4VtN52vdIvT9dcn1YFEVSJJNt/U57fOPuLi6oPfkC5TvnqENO8ivvyLPfNJhiPn8VEg+n0a8tiwhec0UAVyUyLKJpn2PaX0iTHE2NomOjymLDOlwS7gdWz797RtTjoMJ26MRYRD8f9nkeYkbXNNRt25MqV1uNkmTCOnNc+ZZTGz4KJsNVtmcpu+zY5h3GT4AhuEMZ3xJf7hBPs+xDw6wT05IkynyX7sCfOPyO8okFZL3R6O7DnoAnM8LNE1B0/skSSI6xTFNcUBqXxPHMbZlIXck0iRB0XWU4fDDnZLnOYP+gHpaF6thmuK/YRhM45jFYoEsy+TzuYDULblaLh/28i1MVVWxUG/WdV2MB4MBURSJjaZpisxvniekLMs12Oq/LteLVVVxO66jKAohU5TE+0zuZ3MfVgP/BboWYj/c1EjvAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Tracer Bullets. Source: The Pragmatic Programmer"
+        title="Tracer Bullets. Source: The Pragmatic Programmer"
+        src="/gatsby-personal-site/static/c6fc1643071531eaeaaaf8ee22a8ed5e/0a47e/tracer_bullets.png"
+        srcset="/gatsby-personal-site/static/c6fc1643071531eaeaaaf8ee22a8ed5e/8a4e8/tracer_bullets.png 150w,
+/gatsby-personal-site/static/c6fc1643071531eaeaaaf8ee22a8ed5e/5a46d/tracer_bullets.png 300w,
+/gatsby-personal-site/static/c6fc1643071531eaeaaaf8ee22a8ed5e/0a47e/tracer_bullets.png 600w,
+/gatsby-personal-site/static/c6fc1643071531eaeaaaf8ee22a8ed5e/1cfc2/tracer_bullets.png 900w,
+/gatsby-personal-site/static/c6fc1643071531eaeaaaf8ee22a8ed5e/c1b63/tracer_bullets.png 1200w,
+/gatsby-personal-site/static/c6fc1643071531eaeaaaf8ee22a8ed5e/252a4/tracer_bullets.png 1314w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><p>Tracer Bullets. Source: The Pragmatic Programmer</p></figcaption>
+  </figure></p>
+<p>This method helps developers to focus on the main features to be implemented so others can be built on. In addition, it serves as <strong>proof the architecture is compatible and feasible</strong> by providing a functional and demonstrable skeleton to work from the beginning of the development process.</p>
+<blockquote>
+<p>Look for the important requirements, the ones that define the system. Look for the areas where you have doubts, and where you see the biggest risks. Then prioritize your development so that these are the first areas you code.
+— The Pragmatic Programmer</p>
+</blockquote>
+<p><figure class="gatsby-resp-image-figure" style="border-bottom: none;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-personal-site/static/b2780253bbad1865c034ce91ca20f8c0/0f98f/outer-digit-Ys78stblUyY-unsplash.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAE/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/9oADAMBAAIQAxAAAAE7SgKVojbb/8QAGxAAAgMAAwAAAAAAAAAAAAAAAQIAAxEEEjL/2gAIAQEAAQUCWh2PUKx441CbJb60z//EABcRAQADAAAAAAAAAAAAAAAAAAABESH/2gAIAQMBAT8BjFv/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwFH/8QAHRAAAQQCAwAAAAAAAAAAAAAAAAECITEQcRJRYf/aAAgBAQAGPwKlTY1rXb9xcdC8pLP/xAAbEAEAAgMBAQAAAAAAAAAAAAABABEhMUFhkf/aAAgBAQABPyGgpuogMi1ixe5qNN06puYiMXep6Ps//9oADAMBAAIAAwAAABAnP//EABgRAAMBAQAAAAAAAAAAAAAAAAABEUFR/9oACAEDAQE/EHSXSeH/xAAXEQEAAwAAAAAAAAAAAAAAAAABEBFh/9oACAECAQE/EG1yH//EAB4QAQACAgEFAAAAAAAAAAAAAAEAESFBMWGBsdHh/9oACAEBAAE/EKZEXwH2U6gMFV3x43EUlDkTe5jrSsg9Iy9CBa07/wBU/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Source"
+        title="Source"
+        src="/gatsby-personal-site/static/b2780253bbad1865c034ce91ca20f8c0/b4294/outer-digit-Ys78stblUyY-unsplash.jpg"
+        srcset="/gatsby-personal-site/static/b2780253bbad1865c034ce91ca20f8c0/75985/outer-digit-Ys78stblUyY-unsplash.jpg 150w,
+/gatsby-personal-site/static/b2780253bbad1865c034ce91ca20f8c0/f93b5/outer-digit-Ys78stblUyY-unsplash.jpg 300w,
+/gatsby-personal-site/static/b2780253bbad1865c034ce91ca20f8c0/b4294/outer-digit-Ys78stblUyY-unsplash.jpg 600w,
+/gatsby-personal-site/static/b2780253bbad1865c034ce91ca20f8c0/8e1fc/outer-digit-Ys78stblUyY-unsplash.jpg 900w,
+/gatsby-personal-site/static/b2780253bbad1865c034ce91ca20f8c0/e5166/outer-digit-Ys78stblUyY-unsplash.jpg 1200w,
+/gatsby-personal-site/static/b2780253bbad1865c034ce91ca20f8c0/0f98f/outer-digit-Ys78stblUyY-unsplash.jpg 1920w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><p>Source</p></figcaption>
+  </figure></p>
+<p>Lastly, <strong>Tracer Bullet Development should not be confused with prototyping.</strong> The code from prototypes isn’t supposed to be part of the project whereas the code from the tracer bullets isn’t thrown away. It works and is improved each iteration with new features.</p>
+<blockquote>
+<p>Prototyping generates disposable code. Tracer code is lean but complete, and forms part of the skeleton of the final system. Think of prototyping as the reconnaissance and intelligence gathering that takes place before a single tracer bullet is fired.
+— The Pragmatic Programmer</p>
+</blockquote>
+<h2 id="Handling-pressure" style="position:relative;">Handling pressure<a href="#Handling-pressure" aria-label="Handling pressure permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p>I liked this one as well since it helps you outside software development too. Soon or later you will be under pressure, and the best tricks to handling it are to <strong>avoid it when you can, and weather it when you can’t.</strong></p>
+<blockquote>
+<p>The best way to stay calm under pressure is to avoid the situations that cause pressure.
+— The Clean Coder</p>
+</blockquote>
+<p><img src="/gatsby-personal-site/e8d84dce9c663f7f415920d0de85fd01/avoiding.gif" alt="Avoiding"></p>
+<p>You mainly <strong>avoid it by managing commitments, keeping clean, and following your disciplines.</strong></p>
+<p>The best way to manage commitments is by <em>saying no</em> to those which deadlines you aren’t sure to meet. Keeping clean basically means to have no mess on your systems, code, and design.</p>
+<blockquote>
+<p>The way to go fast, and to keep the deadlines at bay, is to stay clean. Professionals do not succumb to the temptation to create a mess in order to move quickly. “Quick and dirty” is an oxymoron. Dirty always means slow!
+— The Clean Coder</p>
+</blockquote>
+<p><strong>Follow disciplines you truly believe in and stick to them all the time</strong> no matter the situation. Crisis times will come, and it’s when you have to pay attention to how you behave because if you follow your disciplines means you believe in them. Changing your behavior and not following them would mean you don’t truly believe in your normal behavior, and you have to shift those disciplines to improve it.</p>
+<blockquote>
+<p>If you keep your code clean during normal times but make messes in a crisis, then you don’t really believe that messes slow you down. If you pair in a crisis but don’t normally pair, then you believe pairing is more efficient than non-pairing.
+— The Clean Coder</p>
+</blockquote>
+<p><figure class="gatsby-resp-image-figure" style="border-bottom: none;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-personal-site/static/42a9512f285b164936d9f412143aafd2/b29e7/federico-lancellotti-YBuVjp5Mtrw-unsplash.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAE10TeatBx//8QAGxAAAgMAAwAAAAAAAAAAAAAAAQIAAxESEyH/2gAIAQEAAQUCqbg/euG1YMhhb3//xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQMBAT8BjX//xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8BrH//xAAYEAEAAwEAAAAAAAAAAAAAAAABABARAv/aAAgBAQAGPwI6mjtlf//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExYVH/2gAIAQEAAT8h+PjvsvNBLHYBlQgIx8i9bP/aAAwDAQACAAMAAAAQPy//xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQMBAT8QCJ//xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8QKr//xAAcEAEAAwACAwAAAAAAAAAAAAABABEhMUFRcfD/2gAIAQEAAT8QYwXE8HEg4/AlaeyNCpz7uKYtbbAfFLvHLLY2Gruf/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Source"
+        title="Source"
+        src="/gatsby-personal-site/static/42a9512f285b164936d9f412143aafd2/b4294/federico-lancellotti-YBuVjp5Mtrw-unsplash.jpg"
+        srcset="/gatsby-personal-site/static/42a9512f285b164936d9f412143aafd2/75985/federico-lancellotti-YBuVjp5Mtrw-unsplash.jpg 150w,
+/gatsby-personal-site/static/42a9512f285b164936d9f412143aafd2/f93b5/federico-lancellotti-YBuVjp5Mtrw-unsplash.jpg 300w,
+/gatsby-personal-site/static/42a9512f285b164936d9f412143aafd2/b4294/federico-lancellotti-YBuVjp5Mtrw-unsplash.jpg 600w,
+/gatsby-personal-site/static/42a9512f285b164936d9f412143aafd2/8e1fc/federico-lancellotti-YBuVjp5Mtrw-unsplash.jpg 900w,
+/gatsby-personal-site/static/42a9512f285b164936d9f412143aafd2/e5166/federico-lancellotti-YBuVjp5Mtrw-unsplash.jpg 1200w,
+/gatsby-personal-site/static/42a9512f285b164936d9f412143aafd2/b29e7/federico-lancellotti-YBuVjp5Mtrw-unsplash.jpg 1332w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><p>Source</p></figcaption>
+  </figure></p>
+<p>Choose disciplines that you feel comfortable following in a crisis. <em>Then follow them all the time.</em> Following these disciplines is the best way to avoid getting into a crisis. Don’t change your behavior when the crunch comes. If your disciplines are the best way to work, then they should be followed even in the depths of a crisis.</p>
+<p>However, you can’t avoid pressure always so you have to learn how to get through it. <strong>You weather it by staying calm, communicating, following your disciplines, and getting help.</strong></p>
+<p>To stay calm <strong>don’t panic,</strong> manage your stress, and think the problem through to find the best possible outcome. Then go for it at a steady pace, <em>eating an elephant way-</em> <strong>communicating</strong> all the time with your team and superiors to let them know when you are in trouble to get input and guidance. This way there won’t be any unexpected surprises in the end.</p>
+<p><figure class="gatsby-resp-image-figure" style="border-bottom: none;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-personal-site/static/0dd8eac8e4590285e772f9c8a02a64bc/bba1f/good_communication_is_the_key_to_success.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 42%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/aAAwDAQACEAMQAAAB2TXGAw//xAAYEAACAwAAAAAAAAAAAAAAAAAAAgEQIf/aAAgBAQABBQJFhjK//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFREBAQAAAAAAAAAAAAAAAAAAEEH/2gAIAQIBAT8Bp//EABkQAAEFAAAAAAAAAAAAAAAAABEAAQIQMf/aAAgBAQAGPwJzILa//8QAGRABAQADAQAAAAAAAAAAAAAAAREAECFh/9oACAEBAAE/IQo5OXEjhfJr/9oADAMBAAIAAwAAABCDz//EABURAQEAAAAAAAAAAAAAAAAAABBB/9oACAEDAQE/EIf/xAAWEQEBAQAAAAAAAAAAAAAAAAAhEBH/2gAIAQIBAT8QdM//xAAZEAEAAgMAAAAAAAAAAAAAAAABABEQIWH/2gAIAQEAAT8QYdnUXcK1TqY//9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Communication is the key. Source"
+        title="Communication is the key. Source"
+        src="/gatsby-personal-site/static/0dd8eac8e4590285e772f9c8a02a64bc/b4294/good_communication_is_the_key_to_success.jpg"
+        srcset="/gatsby-personal-site/static/0dd8eac8e4590285e772f9c8a02a64bc/75985/good_communication_is_the_key_to_success.jpg 150w,
+/gatsby-personal-site/static/0dd8eac8e4590285e772f9c8a02a64bc/f93b5/good_communication_is_the_key_to_success.jpg 300w,
+/gatsby-personal-site/static/0dd8eac8e4590285e772f9c8a02a64bc/b4294/good_communication_is_the_key_to_success.jpg 600w,
+/gatsby-personal-site/static/0dd8eac8e4590285e772f9c8a02a64bc/bba1f/good_communication_is_the_key_to_success.jpg 840w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><p>Communication is the key. Source</p></figcaption>
+  </figure></p>
+<blockquote>
+<p>Avoid creating surprises. Nothing makes people more angry and less rational than surprises. Surprises multiply the pressure by ten.
+— The Clean Coder</p>
+</blockquote>
+<p>In the same way you relied on your disciplines to avoid pressure, you should also rely on them when the moment gets tough. In fact, these times you have to pay special attention to them and neither question nor abandon them.</p>
+<p>The communication tip includes <strong>asking for help</strong> from teammates to pair, superiors, or internet sites and forums.</p>
+<p>Don’t forget to be there for others too when they are under pressure and need help.</p>
+<blockquote>
+<p>When the heat is on, find an associate who is willing to pair program with you. You will get done faster, with fewer defects. Your pair partner will help you hold on to your disciplines and keep you from panicking.
+— The Clean Coder</p>
+</blockquote>
+<p><img src="/gatsby-personal-site/0fbb7a77c6d0408855bd5f277069338d/pairing.gif" alt="Pairing"></p>
+<h2 id="Refactoring" style="position:relative;">Refactoring<a href="#Refactoring" aria-label="Refactoring permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p>The term <em>Refactoring</em> is defined by Martin Fowler as a:</p>
+<blockquote>
+<p>Disciplined technique for restructuring an existing body of code, altering its internal structure without changing its external behavior.
+— Martin Fowler</p>
+</blockquote>
+<p>Sometimes you will find code that does not feel right and should be fixed or improved, and you have to keep in mind the best moment to do so is <strong>now</strong>, when you find it.</p>
+<p><strong>It is inevitable, a program’s code needs to grow, evolve, and improve.</strong> To do so, some decisions must be rethought, and the code has to be changed therefore be sure to have it covered with <strong>automated tests</strong> to guarantee that the external behavior does not change.</p>
+<blockquote>
+<p>Rather than construction, software is more like gardening—it is more organic than concrete. You plant many things in a garden according to an initial plan and conditions. You constantly monitor the health of the garden, and make adjustments as needed.
+— The Pragmatic Programmer</p>
+</blockquote>
+<p><img src="/gatsby-personal-site/0c5c154d7a740abeebb35fb3ea0c413b/bobs_burger_gardening.gif" alt="Bob gardening"></p>
+<p>When should you refactor the code? Here is a list of situations that qualify to do so:</p>
+<ul>
+<li>Remove <strong>code duplication.</strong></li>
+<li>Making some parts of the code more <strong>orthogonal.</strong></li>
+<li><strong>Update</strong> code and/or documentation outdated.</li>
+<li>To improve <strong>performance.</strong></li>
+</ul>
+<p>And here are Martin Fowler tips on how to refactor without doing more harm than good:</p>
+<ol>
+<li><em>Don’t try to refactor and add functionality at the same time.</em></li>
+<li><em>Make sure you have good tests before you begin refactoring. Run the tests as often as possible.</em></li>
+<li><em>Take short, deliberate steps: move a field from one class to another, split a method, rename a variable. Refactoring often involves making many localized changes that result in a larger-scale change.</em></li>
+</ol>
+<p>The most important thing to keep in mind is that <strong>refactoring is not a certain task, it is a habit</strong> that, as with most things in life, is easier to do while the issues are small, as an ongoing activity while coding. <strong>The less you refactor now the greater time you’ll have to invest to fix the problem down the road.</strong></p>
+<p><img src="/gatsby-personal-site/b68592f588f41067e19975d33812da15/cat_refactoring.gif" alt="Cat refactoring"></p>
+<blockquote>
+<p>Refactoring as “a growth.” Removing it requires invasive surgery. You can take it out while it is still small. Or, you could wait while it grows and spreads—but removing it then will be both more expensive and more dangerous. Wait even longer, and you may lose the patient entirely.
+— The Pragmatic Programmer</p>
+</blockquote>
+<h2 id="Main-differences" style="position:relative;">Main differences<a href="#Main-differences" aria-label="Main differences permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p><img src="/gatsby-personal-site/6108cf27e66eb71579786302c88d6068/differences.gif" alt="Differences"></p>
+<p>I did not want this lecture to be a comparison but although they focus on similar subjects, the content, and the way they are narrated are not the same. Here are the main impressions I got from them not related to the content itself that can help you have an idea of what to expect while reading them.</p>
+<ul>
+<li>The Clean Coder speaks about the developer in a more day by day at work way, with references to common situations that are given in such an environment like the relationship with sales or business people, working in a team, or saying no to clients. The developer at the Pragmatic Programmer isn’t that much pictured into job situations, rather it grants an overview of the field structuring the book on advice: <em>topics and tips</em>, for any situation.</li>
+<li>The Clean Coder refers to the figure of the Software Developer as a <em>Professional Programmer</em> while The Pragmatic Programmer uses the totally unexpected term <em>Pragmatic Programmer</em>.</li>
+<li>In general terms, The Clean Coder has a more subjective sense since it tells more personal experiences from the author whereas The Pragmatic Programmer feels more objective focusing mostly on the advice themselves.</li>
+<li>The Pragmatic Programmer contains more code examples in different programming languages than the Clean Coder which helps you understand the concepts discussed.</li>
+</ul>
+<h2 id="Conclusions" style="position:relative;">Conclusions<a href="#Conclusions" aria-label="Conclusions permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p>Keep in mind that these are just the personal impressions and lessons I got from reading the two titles. The books have much more to offer, and the best thing you can do is read both yourself to form your own opinion and conclusions.</p>
+<p>If you are interested in software development, want to get better but think they are too similar and don’t have time to read both, think twice, each will bring you different knowledge and best practices for your career.</p>
+<p>Having said that, if you still want to go the lazy way, I made this <a href="https://github.com/reymon359/book-sentences">open-source project with the core sentences from them</a>.</p>
+<p>[<figure class="gatsby-resp-image-figure" style="border-bottom: none;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 55.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAhElEQVQoz92RuwoCMRBF9///ylIQqyUyJndikhlCSGWhIq4bQRBU8AFu5WmHw4E7XfuB7g/k8UZr7TScVzb0/Xq7OzydPpfH1hbGzubL/XH4qmytJSIAzJxzJqIQNrgiIjFGZr6PP8gi4pwDoKq1VmOMqqaUAJRSvPcAXsrTDPaGyV51AfUshkGxWq7KAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Book Sentences Project"
+        title="Book Sentences Project"
+        src="/gatsby-personal-site/static/ab62bfb0e80c69f1ab6d61db2de5e73c/0a47e/book_sentences.png"
+        srcset="/gatsby-personal-site/static/ab62bfb0e80c69f1ab6d61db2de5e73c/8a4e8/book_sentences.png 150w,
+/gatsby-personal-site/static/ab62bfb0e80c69f1ab6d61db2de5e73c/5a46d/book_sentences.png 300w,
+/gatsby-personal-site/static/ab62bfb0e80c69f1ab6d61db2de5e73c/0a47e/book_sentences.png 600w,
+/gatsby-personal-site/static/ab62bfb0e80c69f1ab6d61db2de5e73c/1cfc2/book_sentences.png 900w,
+/gatsby-personal-site/static/ab62bfb0e80c69f1ab6d61db2de5e73c/c1b63/book_sentences.png 1200w,
+/gatsby-personal-site/static/ab62bfb0e80c69f1ab6d61db2de5e73c/0bdcb/book_sentences.png 1579w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><p>Book Sentences Project</p></figcaption>
+  </figure>](<a href="https://github.com/reymon359/book-sentences">https://github.com/reymon359/book-sentences</a>)</p>
+<h2 id="Resources" style="position:relative;">Resources<a href="#Resources" aria-label="Resources permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p>The main resources are both books which you can find easily on the internet and <a href="https://github.com/reymon359/book-sentences/">the project</a> where I noted down the sentences I found most important from them.</p></div><div class="Comments__Wrapper-czvh9a-0 fCKPUh"><h2>Comments</h2><p>Thanks for reading ❤️ </p><p>You can comment by replying to the<!-- --> <a href="https://github.com/reymon359/gatsby-personal-site/issues/337" target="_blank" rel="noreferrer noopener">issue for this post.</a></p><p>There’s no comments yet,<!-- --> <a href="https://github.com/reymon359/gatsby-personal-site/issues/337#new_comment_field" target="_blank" rel="noreferrer noopener">be the first to leave one!</a></p><div class="Comments__Actions-czvh9a-8 hfVTUK"><a href="https://github.com/reymon359/gatsby-personal-site/issues/337#new_comment_field" target="_blank" rel="noreferrer noopener" class="button btn">Add a comment →</a></div></div><h2>Other posts</h2><ul class="post__OtherPostsLinks-sc-18ghmkz-0 galTMt"><li><a rel="prev" href="/gatsby-personal-site/how-to-enjoy-the-sunrise-from-the-top-of-spain/">← <!-- -->How to enjoy the sunrise from the top of Spain</a></li><li><a rel="next" href="/gatsby-personal-site/basic-tips-for-amateur-star-photography/">Basic tips for amateur Star Photography<!-- --> →</a></li></ul></div></article><div class="Content__BottomHeight-sc-1q50de9-1 dYysHN"></div></div></main><div class="Navigation__Wrapper-sxzav8-0 hfVphx"><header class="Navigation__Header-sxzav8-2 iTMXyh"><div class="Logo__Wrapper-sc-19tlazh-1 bCOyZr"><div class="Logo__RelativeWrapper-sc-19tlazh-2 Essph"><a href="/gatsby-personal-site/"><svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path d="M11 21.5C5.201 21.5.5 16.799.5 11S5.201.5 11 .5 21.5 5.201 21.5 11 16.799 21.5 11 21.5zm0-1a9.5 9.5 0 1 0 0-19 9.5 9.5 0 0 0 0 19z" fill="#FFFFFF"></path></svg></a><div class="Logo__Background-sc-19tlazh-0 dQZthV"></div></div></div><div class="HelpMessage__Wrapper-sc-11fekqt-0 fPYIDe">Move around the screen or scroll it</div><div class="ToggleMenu__ToggleMenuWrapper-sc-1rm9swz-0 bHbNgR"><span></span><span></span><span></span></div></header><div class="Navigation__Shoable-sxzav8-1 jUAACT"><div><nav class="Menu__MenuWrapper-sc-1vxe8de-0 bTtsHt"><ul class="Menu__Nav-sc-1vxe8de-1 iNaoaw"><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a href="https://github.com/reymon359" rel="noopener noreferrer" target="_blank">GitHub</a></li><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a href="https://www.linkedin.com/in/ramon-morcillo/" rel="noopener noreferrer" target="_blank">Linkedin</a></li><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a href="https://codepen.io/reymon359" rel="noopener noreferrer" target="_blank">Codepen</a></li><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a href="https://twitter.com/reymon359" rel="noopener noreferrer" target="_blank">Twitter</a></li></ul><ul class="Menu__Nav-sc-1vxe8de-1 iNaoaw"><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a class="Menu__NavLink-sc-1vxe8de-3 cEEwRr" href="/gatsby-personal-site/">Index</a></li><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a class="Menu__NavLink-sc-1vxe8de-3 cEEwRr" href="/gatsby-personal-site/works">works</a></li><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a class="Menu__NavLink-sc-1vxe8de-3 cEEwRr" href="/gatsby-personal-site/about">about</a></li><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a rel="noopener" href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!">Contact</a></li></ul></nav><footer class="Footer__FooterWrapper-sc-1df0yns-0 iXxlXu"><div class="Footer__Item-sc-1df0yns-1 jSPHnk"><span>Ramón Morcillo - <!-- -->2021<!-- --> - </span> <a href="https://github.com/reymon359/gatsby-personal-site/" target="_blank" rel="noopener noreferrer">source</a></div><div class="Footer__Item-sc-1df0yns-1 iYbvcT">Made with love &amp; time <small style="font-size:70%">(a lot of it)</small></div></footer></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'Add the Google Analytics Tracking ID', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-247a476f55ec3e43e6a4.js"],"app":["/app-661b59fc950a0d419b03.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-178ddf60e15d54bac954.js"],"component---src-pages-about-tsx":["/component---src-pages-about-tsx-5aaaeb6b901c30f0b9f1.js"],"component---src-pages-blog-tsx":["/component---src-pages-blog-tsx-2e712053337d0a4f701a.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-8e82322f2ded75ae2842.js"],"component---src-pages-projects-tsx":["/component---src-pages-projects-tsx-1ca09437a35e137e6d9d.js"],"component---src-pages-tags-tsx":["/component---src-pages-tags-tsx-a8fec2bde9c760d22c0d.js"],"component---src-pages-works-tsx":["/component---src-pages-works-tsx-30d97cacd9ae793fcf93.js"],"component---src-templates-post-tsx":["/component---src-templates-post-tsx-fc7e64f5e9378365724d.js"],"component---src-templates-tag-tsx":["/component---src-templates-tag-tsx-d873fc5846013d61fddb.js"]};/*]]>*/</script><script src="/gatsby-personal-site/polyfill-247a476f55ec3e43e6a4.js" nomodule=""></script><script src="/gatsby-personal-site/component---src-templates-post-tsx-fc7e64f5e9378365724d.js" async=""></script><script src="/gatsby-personal-site/a93ca09b3e214b1f9c56eefcc27e05eb63340a26-41145a67edc9f38f72ea.js" async=""></script><script src="/gatsby-personal-site/commons-2572092cd8427adb054b.js" async=""></script><script src="/gatsby-personal-site/app-661b59fc950a0d419b03.js" async=""></script><script src="/gatsby-personal-site/framework-de69d1d98c3759f869ba.js" async=""></script><script src="/gatsby-personal-site/webpack-runtime-37b80963a1cdea856f28.js" async=""></script></body></html>

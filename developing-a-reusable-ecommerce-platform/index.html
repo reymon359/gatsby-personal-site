@@ -1,0 +1,596 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/gatsby-personal-site/styles.e53586a225ffdde20c86.css" data-identity="gatsby-global-css">code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><meta name="generator" content="Gatsby 3.7.0"/><style type="text/css">
+    .autolink-headers.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .autolink-headers.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .autolink-headers svg,
+    h2 .autolink-headers svg,
+    h3 .autolink-headers svg,
+    h4 .autolink-headers svg,
+    h5 .autolink-headers svg,
+    h6 .autolink-headers svg {
+      visibility: hidden;
+    }
+    h1:hover .autolink-headers svg,
+    h2:hover .autolink-headers svg,
+    h3:hover .autolink-headers svg,
+    h4:hover .autolink-headers svg,
+    h5:hover .autolink-headers svg,
+    h6:hover .autolink-headers svg,
+    h1 .autolink-headers:focus svg,
+    h2 .autolink-headers:focus svg,
+    h3 .autolink-headers:focus svg,
+    h4 .autolink-headers:focus svg,
+    h5 .autolink-headers:focus svg,
+    h6 .autolink-headers:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 100)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="canonical" href="https://ramonmorcillo.com/developing-a-reusable-ecommerce-platform/" data-baseprotocol="https:" data-basehost="ramonmorcillo.com"/><link rel="icon" href="/gatsby-personal-site/favicon-32x32.png?v=942805c02543e38c68e21b5554eb981b" type="image/png"/><link rel="manifest" href="/gatsby-personal-site/manifest.webmanifest" crossorigin="use-credentials"/><meta name="theme-color" content="#255799"/><link rel="apple-touch-icon" sizes="48x48" href="/gatsby-personal-site/icons/icon-48x48.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="72x72" href="/gatsby-personal-site/icons/icon-72x72.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="96x96" href="/gatsby-personal-site/icons/icon-96x96.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="144x144" href="/gatsby-personal-site/icons/icon-144x144.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="192x192" href="/gatsby-personal-site/icons/icon-192x192.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="256x256" href="/gatsby-personal-site/icons/icon-256x256.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="384x384" href="/gatsby-personal-site/icons/icon-384x384.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="apple-touch-icon" sizes="512x512" href="/gatsby-personal-site/icons/icon-512x512.png?v=942805c02543e38c68e21b5554eb981b"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><title data-react-helmet="true">Developing a reusable ecommerce platform | ramonmorcillo.com</title><meta data-react-helmet="true" name="description" content="Process and lessons learned from the development of a reusable ecommerce platform."/><meta data-react-helmet="true" property="image" content="https://ramonmorcillo.com/gatsby-personal-site/static/81ceac7797836420aec066b9740c5430/2244e/rachel-lees-WlhzJkBvNDo-unsplash.jpg"/><meta data-react-helmet="true" property="og:title" content="Developing a reusable ecommerce platform"/><meta data-react-helmet="true" property="og:description" content="Process and lessons learned from the development of a reusable ecommerce platform."/><meta data-react-helmet="true" property="og:image" content="https://ramonmorcillo.com/gatsby-personal-site/static/81ceac7797836420aec066b9740c5430/2244e/rachel-lees-WlhzJkBvNDo-unsplash.jpg"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Ramon Morcillo"/><meta data-react-helmet="true" name="twitter:title" content="Developing a reusable ecommerce platform"/><meta data-react-helmet="true" name="twitter:description" content="Process and lessons learned from the development of a reusable ecommerce platform."/><meta data-react-helmet="true" name="twitter:image" content="https://ramonmorcillo.com/gatsby-personal-site/static/81ceac7797836420aec066b9740c5430/2244e/rachel-lees-WlhzJkBvNDo-unsplash.jpg"/><meta data-react-helmet="true" name="google-site-verification" content="Add the Google Site Verification"/><meta data-react-helmet="true" name="keywords" content="blog, gatsby, typescript, javascript, portfolio, react"/><style data-styled="" data-styled-version="5.3.0">.bESpfA{padding-left:1rem;margin-bottom:1.5rem;}/*!sc*/
+data-styled.g3[id="shared__Header-tnyzq1-2"]{content:"bESpfA,"}/*!sc*/
+.eCLyvQ{font-size:2rem;font-weight:400;}/*!sc*/
+data-styled.g4[id="shared__Title-tnyzq1-3"]{content:"eCLyvQ,"}/*!sc*/
+.iEIPhv{font-size:1.5rem;font-weight:200;-webkit-letter-spacing:0.1rem;-moz-letter-spacing:0.1rem;-ms-letter-spacing:0.1rem;letter-spacing:0.1rem;padding:1rem 0;}/*!sc*/
+data-styled.g5[id="shared__Description-tnyzq1-4"]{content:"iEIPhv,"}/*!sc*/
+.gSZNPC{padding:0.6rem 0 0 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-left:-0.3rem;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;}/*!sc*/
+data-styled.g8[id="shared__ItemTags-tnyzq1-7"]{content:"gSZNPC,"}/*!sc*/
+.bpExil{padding:0.4rem 0.6rem;height:1.5rem;color:#F3F3F3;background-color:#F3F3F340;font-weight:600;font-size:.8rem;border-radius:3rem;margin:0.2rem;-webkit-text-decoration:none;text-decoration:none;border-bottom:0;white-space:nowrap;line-height:1;-webkit-transition:0.2s ease;transition:0.2s ease;}/*!sc*/
+.bpExil:hover{color:#333333;background-color:#F3F3F3;}/*!sc*/
+data-styled.g9[id="shared__Tag-tnyzq1-8"]{content:"bpExil,"}/*!sc*/
+.dQZthV{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%) scale(0);-ms-transform:translate(-50%,-50%) scale(0);transform:translate(-50%,-50%) scale(0);background:#FFFFFF10;height:100%;width:100%;border-radius:100%;pointer-events:none;opacity:1;will-change:transform;}/*!sc*/
+data-styled.g10[id="Logo__Background-sc-19tlazh-0"]{content:"dQZthV,"}/*!sc*/
+.bCOyZr{position:fixed;top:0;left:0;max-width:18rem;padding:5rem;}/*!sc*/
+@media (max-width:78em){.bCOyZr{padding:3rem;}}/*!sc*/
+@media (max-width:54em){.bCOyZr{padding:3rem;}}/*!sc*/
+@media (max-width:40em){.bCOyZr{padding:2rem;}}/*!sc*/
+@media (max-width:54em){.bCOyZr{position:static;padding:0;}}/*!sc*/
+.bCOyZr a,.bCOyZr svg{pointer-events:all;display:block;}/*!sc*/
+.bCOyZr a{width:1.65rem;border-bottom:none;}/*!sc*/
+.bCOyZr a:hover{border-bottom:none;}/*!sc*/
+@media (max-width:78em){.bCOyZr a{width:1.45rem;}}/*!sc*/
+.bCOyZr svg{width:100%;height:auto;}/*!sc*/
+.bCOyZr a:hover + .Logo__Background-sc-19tlazh-0{opacity:0;-webkit-transform:translate(-50%,-50%) scale(7.5);-ms-transform:translate(-50%,-50%) scale(7.5);transform:translate(-50%,-50%) scale(7.5);-webkit-transition:-webkit-transform 1s cubic-bezier(0.45,0,0.1,1),opacity 0.8s ease;-webkit-transition:transform 1s cubic-bezier(0.45,0,0.1,1),opacity 0.8s ease;transition:transform 1s cubic-bezier(0.45,0,0.1,1),opacity 0.8s ease;}/*!sc*/
+data-styled.g11[id="Logo__Wrapper-sc-19tlazh-1"]{content:"bCOyZr,"}/*!sc*/
+.Essph{position:relative;}/*!sc*/
+data-styled.g12[id="Logo__RelativeWrapper-sc-19tlazh-2"]{content:"Essph,"}/*!sc*/
+.iXxlXu{width:100%;position:fixed;top:50%;}/*!sc*/
+@media (max-width:54em){.iXxlXu{position:static;padding-top:1.5rem;}}/*!sc*/
+data-styled.g13[id="Footer__FooterWrapper-sc-1df0yns-0"]{content:"iXxlXu,"}/*!sc*/
+.jSPHnk{position:absolute;font-family:"Roboto",stack-sans,"Open Sans","Lato","Nunito Sans","Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-letter-spacing:0.1rem;-moz-letter-spacing:0.1rem;-ms-letter-spacing:0.1rem;letter-spacing:0.1rem;color:#FFFFFF;font-size:0.85rem;line-height:1em;pointer-events:all;-webkit-transform:rotate(-90deg) translateX(-50%);-ms-transform:rotate(-90deg) translateX(-50%);transform:rotate(-90deg) translateX(-50%);-webkit-transform-origin:left;-ms-transform-origin:left;transform-origin:left;left:5rem;}/*!sc*/
+.jSPHnk a{border-bottom:none;}/*!sc*/
+@media (max-width:78em){.jSPHnk{left:3rem;}}/*!sc*/
+@media (max-width:54em){.jSPHnk{left:3rem;}}/*!sc*/
+@media (max-width:40em){.jSPHnk{left:2rem;}}/*!sc*/
+@media (max-width:54em){.jSPHnk{position:static;-webkit-transform:rotate(0) translateX(0);-ms-transform:rotate(0) translateX(0);transform:rotate(0) translateX(0);-webkit-transform-origin:0;-ms-transform-origin:0;transform-origin:0;padding:.5rem 0 0;text-align:center;font-size:.8rem;}}/*!sc*/
+.jSPHnk small{font-size:70% !important;}/*!sc*/
+.iYbvcT{position:absolute;font-family:"Roboto",stack-sans,"Open Sans","Lato","Nunito Sans","Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-letter-spacing:0.1rem;-moz-letter-spacing:0.1rem;-ms-letter-spacing:0.1rem;letter-spacing:0.1rem;color:#FFFFFF;font-size:0.85rem;line-height:1em;pointer-events:all;-webkit-transform:rotate(90deg) translateX(50%);-ms-transform:rotate(90deg) translateX(50%);transform:rotate(90deg) translateX(50%);-webkit-transform-origin:right;-ms-transform-origin:right;transform-origin:right;right:5rem;}/*!sc*/
+.iYbvcT a{border-bottom:none;}/*!sc*/
+@media (max-width:78em){.iYbvcT{right:3rem;}}/*!sc*/
+@media (max-width:54em){.iYbvcT{right:3rem;}}/*!sc*/
+@media (max-width:40em){.iYbvcT{right:2rem;}}/*!sc*/
+@media (max-width:54em){.iYbvcT{position:static;-webkit-transform:rotate(0) translateX(0);-ms-transform:rotate(0) translateX(0);transform:rotate(0) translateX(0);-webkit-transform-origin:0;-ms-transform-origin:0;transform-origin:0;padding:.5rem 0 0;text-align:center;font-size:.8rem;}}/*!sc*/
+.iYbvcT small{font-size:70% !important;}/*!sc*/
+data-styled.g14[id="Footer__Item-sc-1df0yns-1"]{content:"jSPHnk,iYbvcT,"}/*!sc*/
+.bTtsHt{position:fixed;bottom:0;left:0;right:0;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding:5rem;}/*!sc*/
+@media (max-width:78em){.bTtsHt{padding:3rem;}}/*!sc*/
+@media (max-width:54em){.bTtsHt{padding:3rem;}}/*!sc*/
+@media (max-width:40em){.bTtsHt{padding:2rem;}}/*!sc*/
+.bTtsHt ul:last-child li{text-align:right;}/*!sc*/
+.bTtsHt ul:last-child li a{-webkit-transition:color 0.4s ease;transition:color 0.4s ease;will-change:color;position:relative;border-bottom:none;}/*!sc*/
+.bTtsHt ul:last-child li a::before{position:absolute;left:-1.1rem;top:50%;background:#FFFFFF;border-radius:100%;content:'';display:block;height:0.3rem;width:0.3rem;-webkit-transition:-webkit-transform 0.3s cubic-bezier(0.45,0,0.1,1),opacity 0.1s ease;-webkit-transition:transform 0.3s cubic-bezier(0.45,0,0.1,1),opacity 0.1s ease;transition:transform 0.3s cubic-bezier(0.45,0,0.1,1),opacity 0.1s ease;will-change:transform,opacity;}/*!sc*/
+.bTtsHt ul:last-child li a:not(.active)::before{opacity:0;-webkit-transform:translate(-1rem,-50%);-ms-transform:translate(-1rem,-50%);transform:translate(-1rem,-50%);}/*!sc*/
+.bTtsHt ul:last-child li a:hover{color:#FFFFFF;}/*!sc*/
+.bTtsHt ul:last-child li a:hover::before{-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);transform:translate(0,-50%);opacity:1;}/*!sc*/
+@media (max-width:54em){.bTtsHt{position:static;padding:0;}}/*!sc*/
+data-styled.g15[id="Menu__MenuWrapper-sc-1vxe8de-0"]{content:"bTtsHt,"}/*!sc*/
+.iNaoaw{list-style:none;padding:0;margin:0;width:50%;max-width:14rem;}/*!sc*/
+data-styled.g16[id="Menu__Nav-sc-1vxe8de-1"]{content:"iNaoaw,"}/*!sc*/
+.ByzpB{list-style:none;padding:0.5rem 0;line-height:1em;}/*!sc*/
+.ByzpB:last-child{padding-bottom:0;}/*!sc*/
+.ByzpB a{font-size:1rem;font-family:"Roboto",stack-sans,"Open Sans","Lato","Nunito Sans","Helvetica Neue",Helvetica,Arial,sans-serif;color:#DDDDDD;font-weight:400;pointer-events:all;-webkit-transition:color 0.1s ease;transition:color 0.1s ease;line-height:1em;border-bottom:none;}/*!sc*/
+.ByzpB a:hover{color:#FFFFFF;font-weight:600;border-bottom:none;}/*!sc*/
+data-styled.g17[id="Menu__NavItem-sc-1vxe8de-2"]{content:"ByzpB,"}/*!sc*/
+.cEEwRr{text-transform:capitalize;}/*!sc*/
+.cEEwRr:hover{color:#FFFFFF;font-weight:600;}/*!sc*/
+.cEEwRr.active{color:#FFFFFF;font-weight:600;}/*!sc*/
+.cEEwRr.active::before{-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);transform:translate(0,-50%);opacity:1;}/*!sc*/
+data-styled.g18[id="Menu__NavLink-sc-1vxe8de-3"]{content:"cEEwRr,"}/*!sc*/
+.bHbNgR{pointer-events:all;display:none;height:15px;width:1.75rem;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transition:-webkit-transform 0.45s cubic-bezier(0.45,0,0.07,1);-webkit-transition:transform 0.45s cubic-bezier(0.45,0,0.07,1);transition:transform 0.45s cubic-bezier(0.45,0,0.07,1);will-change:transform;cursor:pointer;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);}/*!sc*/
+.bHbNgR span{display:inline-block;height:1px;background:#FFFFFF;}/*!sc*/
+.bHbNgR span:nth-child(1){width:100%;}/*!sc*/
+.bHbNgR span:nth-child(2){width:60%;margin-right:20%;}/*!sc*/
+.bHbNgR span:nth-child(3){width:100%;}/*!sc*/
+@media (max-width:54em){.bHbNgR{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}/*!sc*/
+data-styled.g19[id="ToggleMenu__ToggleMenuWrapper-sc-1rm9swz-0"]{content:"bHbNgR,"}/*!sc*/
+.fPYIDe{color:#F3F3F3;font-size:1rem;font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;-webkit-letter-spacing:0.05rem;-moz-letter-spacing:0.05rem;-ms-letter-spacing:0.05rem;letter-spacing:0.05rem;text-align:center;opacity:0;display:none;-webkit-animation:fade 10s;animation:fade 10s;}/*!sc*/
+@media (max-width:54em){.fPYIDe{margin-bottom:0;padding-top:0;}}/*!sc*/
+@media (max-width:40em){.fPYIDe{margin-bottom:-0.3rem;max-width:70%;}}/*!sc*/
+@-webkit-keyframes fade{0%{opacity:1;}80%{opacity:1;}100%{opacity:0;}}/*!sc*/
+@keyframes fade{0%{opacity:1;}80%{opacity:1;}100%{opacity:0;}}/*!sc*/
+data-styled.g20[id="HelpMessage__Wrapper-sc-11fekqt-0"]{content:"fPYIDe,"}/*!sc*/
+.hfVphx{pointer-events:all;}/*!sc*/
+@media (max-width:54em){.hfVphx{position:fixed;bottom:0;left:0;right:0;width:100%;z-index:10;}}/*!sc*/
+@media only screen and (min-width:54em){.hfVphx{pointer-events:none;}}/*!sc*/
+data-styled.g21[id="Navigation__Wrapper-sxzav8-0"]{content:"hfVphx,"}/*!sc*/
+@media (max-width:54em){.jUAACT{background:#090f17;overflow:hidden;-webkit-transition:max-height .6s cubic-bezier(0.45,0,.1,1);transition:max-height .6s cubic-bezier(0.45,0,.1,1);will-change:max-height;max-height:0;}.jUAACT > div{padding:0 3rem 3rem;}}/*!sc*/
+@media (max-width:40em){.jUAACT > div{padding:0 2rem 2rem;}}/*!sc*/
+data-styled.g22[id="Navigation__Shoable-sxzav8-1"]{content:"jUAACT,"}/*!sc*/
+.iTMXyh{background-image:linear-gradient( to bottom,#090f1700 0%,#090f17 50% );}/*!sc*/
+@media (max-width:54em){.iTMXyh{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;width:100%;min-height:7rem;padding:5rem;}@media (max-width:78em){.iTMXyh{padding:3rem;}}@media (max-width:54em){.iTMXyh{padding:3rem;}}@media (max-width:40em){.iTMXyh{padding:2rem;}}}/*!sc*/
+data-styled.g23[id="Navigation__Header-sxzav8-2"]{content:"iTMXyh,"}/*!sc*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,main,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}/*!sc*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block;}/*!sc*/
+*[hidden]{display:none;}/*!sc*/
+body{line-height:1;}/*!sc*/
+ol,ul{list-style:none;}/*!sc*/
+blockquote,q{quotes:none;}/*!sc*/
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}/*!sc*/
+table{border-collapse:collapse;border-spacing:0;}/*!sc*/
+html,body{height:100%;font-size:14px;}/*!sc*/
+body{background:#090f17;color:#FFFFFF;font-family:"Roboto",stack-sans,"Open Sans","Lato","Nunito Sans","Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-backface-visibility:hidden;backface-visibility:hidden;margin:0;}/*!sc*/
+h1,h2,h3,h4,h5,h6{font-weight:300;line-height:inherit;}/*!sc*/
+h2{display:inline-block;font-size:1.8rem;margin-top:1rem;margin-bottom:1rem;padding:0.4rem 0;}/*!sc*/
+h3{display:inline-block;font-size:1.5rem;margin-top:.7rem;margin-bottom:.7rem;}/*!sc*/
+p{font-size:1.25rem;margin:1.5rem 0;vertical-align:baseline;}/*!sc*/
+strong{font-weight:600;}/*!sc*/
+ul,ol{font-size:1.2rem;padding:1rem;margin-left:1rem;}/*!sc*/
+ul{list-style-type:circle;}/*!sc*/
+ol{list-style-type:decimal;}/*!sc*/
+li{padding:0.2rem;}/*!sc*/
+li p{margin:0;}/*!sc*/
+a{cursor:pointer;-webkit-text-decoration:none;text-decoration:none;-webkit-transition:color ease-in .2s;transition:color ease-in .2s;font-weight:600;color:#FFFFFF;border-bottom:1px dashed #FFFFFF;}/*!sc*/
+a:hover{border-bottom:1px solid #FFFFFF;}/*!sc*/
+button:focus{outline:0;}/*!sc*/
+*{box-sizing:border-box;line-height:1.4em;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-kerning:auto;}/*!sc*/
+blockquote{box-shadow:inset 3px 0 0 0 #F8F8F8;padding-left:23px;font-style:italic;}/*!sc*/
+img[src$=".gif"]{display:block;margin:auto;width:100%;max-width:600px;}/*!sc*/
+video{max-height:500px;width:100%;max-width:600px;display:block;margin:0.5rem auto;}/*!sc*/
+figcaption{text-align:center;font-size:1rem;font-style:italic;margin:2rem 0;}/*!sc*/
+em{font-style:italic;}/*!sc*/
+::selection{color:#ebc86e;background:transparent;}/*!sc*/
+.autolink-headers,.gatsby-resp-image-link{border-bottom:none;}/*!sc*/
+.autolink-headers:hover,.gatsby-resp-image-link:hover{border-bottom:none;}/*!sc*/
+table{font-size:1.25rem;margin:auto;width:100%;max-width:600px;overflow:auto;}/*!sc*/
+table,tr,th,td{border:1px solid #999999;padding:.5rem;}/*!sc*/
+data-styled.g24[id="sc-global-dLywzA1"]{content:"sc-global-dLywzA1,"}/*!sc*/
+.bHlQoN{max-width:68rem;width:calc(100% - 9.25rem * 2);margin:11rem auto 5rem;position:absolute;top:0;left:0;right:0;bottom:0;height:100%;}/*!sc*/
+@media (max-width:78em){.bHlQoN{width:1.45rem;margin:8rem auto 3rem;width:calc(100% - 11rem * 2);}}/*!sc*/
+@media (max-width:54em){.bHlQoN{width:100%;margin:4rem auto 0;padding:0 3rem 6rem;}}/*!sc*/
+@media (max-width:40em){.bHlQoN{margin:2rem auto 0;padding:0 2rem 6rem;}}/*!sc*/
+data-styled.g25[id="Content__Wrapper-sc-1q50de9-0"]{content:"bHlQoN,"}/*!sc*/
+.dYysHN{height:10rem;}/*!sc*/
+data-styled.g26[id="Content__BottomHeight-sc-1q50de9-1"]{content:"dYysHN,"}/*!sc*/
+.fCKPUh{padding:1rem 1rem 4rem;}/*!sc*/
+data-styled.g53[id="Comments__Wrapper-czvh9a-0"]{content:"fCKPUh,"}/*!sc*/
+.hfVTUK{color:#F3F3F3;background-color:#F3F3F340;font-size:1rem;font-weight:600;border-radius:5px;box-sizing:border-box;-webkit-text-decoration:none;text-decoration:none;display:block;padding:0.4rem 0.6rem;border-bottom:0;white-space:nowrap;line-height:1;margin:2rem 0 0.2rem 1rem;-webkit-transition:0.4s ease;transition:0.4s ease;float:right;}/*!sc*/
+.hfVTUK:hover{background-color:#F3F3F3;border-bottom:none;}/*!sc*/
+.hfVTUK a{border:none;}/*!sc*/
+.hfVTUK a:hover{border:none;color:#333333;}/*!sc*/
+data-styled.g61[id="Comments__Actions-czvh9a-8"]{content:"hfVTUK,"}/*!sc*/
+.galTMt{list-style-type:none;margin-left:0;padding-bottom:2rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}/*!sc*/
+.galTMt li{text-align:left;padding:1rem;width:50%;}/*!sc*/
+@media (max-width:54em){.galTMt li{width:100%;text-align:center;}}/*!sc*/
+.galTMt li::before{content:'' !important;padding-right:0 !important;}/*!sc*/
+.galTMt li:nth-child(2){text-align:right;}/*!sc*/
+@media (max-width:54em){.galTMt li:nth-child(2){text-align:center;}}/*!sc*/
+.galTMt a{border-bottom:none;}/*!sc*/
+data-styled.g62[id="post__OtherPostsLinks-sc-18ghmkz-0"]{content:"galTMt,"}/*!sc*/
+.iOOWPE{font-size:1rem;font-weight:200;padding:1rem 0 2rem 0;}/*!sc*/
+data-styled.g63[id="post__Date-sc-18ghmkz-1"]{content:"iOOWPE,"}/*!sc*/
+</style><link rel="sitemap" type="application/xml" href="/gatsby-personal-site/sitemap/sitemap-index.xml"/><link as="script" rel="preload" href="/gatsby-personal-site/webpack-runtime-37b80963a1cdea856f28.js"/><link as="script" rel="preload" href="/gatsby-personal-site/framework-de69d1d98c3759f869ba.js"/><link as="script" rel="preload" href="/gatsby-personal-site/app-661b59fc950a0d419b03.js"/><link as="script" rel="preload" href="/gatsby-personal-site/commons-2572092cd8427adb054b.js"/><link as="script" rel="preload" href="/gatsby-personal-site/a93ca09b3e214b1f9c56eefcc27e05eb63340a26-41145a67edc9f38f72ea.js"/><link as="script" rel="preload" href="/gatsby-personal-site/component---src-templates-post-tsx-fc7e64f5e9378365724d.js"/><link as="fetch" rel="preload" href="/gatsby-personal-site/page-data/developing-a-reusable-ecommerce-platform/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-personal-site/page-data/sq/d/1500402284.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-personal-site/page-data/sq/d/474397040.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-personal-site/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><main role="main"><canvas id="canvas" style="background-color:#000000;background-image:radial-gradient(
+        circle at 33% 41%,
+        #47053a0d,
+        transparent 117%
+      )
+  ,
+      radial-gradient(
+        circle at 78% 15%,
+        #8b4d640d,
+        transparent 158%
+      )
+  ,
+      radial-gradient(
+        circle at 74% 51%,
+        #05b8620d,
+        transparent 150%
+      );opacity:0.3;position:fixed;width:100%;height:100%"></canvas><div class="Content__Wrapper-sc-1q50de9-0 bHlQoN"><article><div class="shared__Header-tnyzq1-2 bESpfA"><h1 class="shared__Title-tnyzq1-3 eCLyvQ">Developing a reusable ecommerce platform</h1><div class="shared__Description-tnyzq1-4 iEIPhv">Process and lessons learned from the development of a reusable ecommerce platform.</div><div class="shared__ItemTags-tnyzq1-7 gSZNPC"><a class="shared__Tag-tnyzq1-8 bpExil" href="/gatsby-personal-site/tags/Architecture/">Architecture</a><a class="shared__Tag-tnyzq1-8 bpExil" href="/gatsby-personal-site/tags/Ecommerce/">Ecommerce</a><a class="shared__Tag-tnyzq1-8 bpExil" href="/gatsby-personal-site/tags/GraphQL/">GraphQL</a><a class="shared__Tag-tnyzq1-8 bpExil" href="/gatsby-personal-site/tags/Software Development/">Software Development</a><a class="shared__Tag-tnyzq1-8 bpExil" href="/gatsby-personal-site/tags/Teamwork/">Teamwork</a></div><div class="post__Date-sc-18ghmkz-1 iOOWPE">October 23, 2020</div><div style="width:100%;height:auto"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden"><div aria-hidden="true" style="width:100%;padding-bottom:66.5%"></div><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMBBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/2gAMAwEAAhADEAAAAc51aQmiy3//xAAaEAACAwEBAAAAAAAAAAAAAAAAAQIREwMh/9oACAEBAAEFAlCQ40eo3F2t7n//xAAVEQEBAAAAAAAAAAAAAAAAAAAAIf/aAAgBAwEBPwGI/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAIAQIBAT8Bqv/EABkQAQACAwAAAAAAAAAAAAAAAAAhMgEQMf/aAAgBAQAGPwKdThVxV//EAB0QAAICAQUAAAAAAAAAAAAAAAABESExUWFxgcH/2gAIAQEAAT8hU9MaitMaZEDJ3q3OZ1kdnMuz/9oADAMBAAIAAwAAABAc/wD/xAAYEQACAwAAAAAAAAAAAAAAAAAAARFRYf/aAAgBAwEBPxBaIuf/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEVH/2gAIAQIBAT8Qrcv/xAAeEAEAAgICAwEAAAAAAAAAAAABACERMUFRYXGBkf/aAAgBAQABPxBUTjQpRVR0CJ3PXALMmiyvl+QBKu/iNdcR6lZxl+ep/9k=" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/gatsby-personal-site/static/81ceac7797836420aec066b9740c5430/f836f/rachel-lees-WlhzJkBvNDo-unsplash.jpg 200w,
+/gatsby-personal-site/static/81ceac7797836420aec066b9740c5430/2244e/rachel-lees-WlhzJkBvNDo-unsplash.jpg 400w,
+/gatsby-personal-site/static/81ceac7797836420aec066b9740c5430/14b42/rachel-lees-WlhzJkBvNDo-unsplash.jpg 800w,
+/gatsby-personal-site/static/81ceac7797836420aec066b9740c5430/47498/rachel-lees-WlhzJkBvNDo-unsplash.jpg 1200w,
+/gatsby-personal-site/static/81ceac7797836420aec066b9740c5430/0e329/rachel-lees-WlhzJkBvNDo-unsplash.jpg 1600w,
+/gatsby-personal-site/static/81ceac7797836420aec066b9740c5430/d8255/rachel-lees-WlhzJkBvNDo-unsplash.jpg 1920w" sizes="(max-width: 800px) 100vw, 800px" /><img loading="lazy" sizes="(max-width: 800px) 100vw, 800px" srcset="/gatsby-personal-site/static/81ceac7797836420aec066b9740c5430/f836f/rachel-lees-WlhzJkBvNDo-unsplash.jpg 200w,
+/gatsby-personal-site/static/81ceac7797836420aec066b9740c5430/2244e/rachel-lees-WlhzJkBvNDo-unsplash.jpg 400w,
+/gatsby-personal-site/static/81ceac7797836420aec066b9740c5430/14b42/rachel-lees-WlhzJkBvNDo-unsplash.jpg 800w,
+/gatsby-personal-site/static/81ceac7797836420aec066b9740c5430/47498/rachel-lees-WlhzJkBvNDo-unsplash.jpg 1200w,
+/gatsby-personal-site/static/81ceac7797836420aec066b9740c5430/0e329/rachel-lees-WlhzJkBvNDo-unsplash.jpg 1600w,
+/gatsby-personal-site/static/81ceac7797836420aec066b9740c5430/d8255/rachel-lees-WlhzJkBvNDo-unsplash.jpg 1920w" src="/gatsby-personal-site/static/81ceac7797836420aec066b9740c5430/14b42/rachel-lees-WlhzJkBvNDo-unsplash.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div></div><div><div style="padding-left:1rem;line-height:1.6"><p>This is a story about my team’s hard work developing not a single ecommerce platform, but a reusable one for different owners, keeping the same codebase, look and feel, but being highly customizable. I will conclude with what we learned from it which I believe can be a useful learning resource for other software developers out there and to ourselves in future projects.</p>
+<p>I will try to focus on the relevant parts as much as possible to make it easier to understand. Having said this, a bit of domain is needed to go through this lecture.</p>
+<h2 id="Table-of-Contents" style="position:relative;">Table of Contents<a href="#Table-of-Contents" aria-label="Table of Contents permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<ul>
+<li><a href="#Context">Context</a></li>
+<li><a href="#The-first-MVP">The first MVP</a></li>
+<li><a href="#Implementing-GraphQL">Implementing GraphQL</a></li>
+<li><a href="#Architecture-and-Tech-Stack">Architecture and Tech Stack</a></li>
+<li><a href="#The-second-MVP">The second MVP</a></li>
+<li><a href="#Conclusion-and-lessons-learned">Conclusion and lessons learned</a></li>
+<li><a href="#Acknowledgments">Acknowledgments</a></li>
+</ul>
+<h2 id="Context" style="position:relative;">Context<a href="#Context" aria-label="Context permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p>The client we were developing the platform for was an eLearning company which was composed of 3 main sub-companies.</p>
+<p>For the past few years, the sub-companies had been operating mostly independently but now they were trying to create a standardized way of doing things, and grow together in the best way.</p>
+<p>The project was an ambitious one. Creating an ecommerce platform that would work for all the sub-companies wasn’t easy to design, neither to implement given a large number of unsolved doubts it had, which made it very hard to estimate.</p>
+<p><img src="/gatsby-personal-site/9e8d698b1c962b988f6d8149bada6c65/doubts.gif" alt="Doubts gif"></p>
+<h2 id="The-first-MVP" style="position:relative;">The first MVP<a href="#The-first-MVP" aria-label="The first MVP permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p>To tackle this difficult challenge, we started from the bottom, with one of the 3 sub-companies, let’s call it sub-company H, in fact, it wasn’t one of the main sub-companies, it was a sub-company from a sub-company. To explain it better, if we name the 3 main sub-companies L, N, and P, then H was a sub-company of N.</p>
+<p>Being a sub-sub-company didn’t mean the platform would be simpler to develop, quite the opposite actually given all the features proposed for the MVP.</p>
+<p><figure class="gatsby-resp-image-figure" style="border-bottom: none;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-personal-site/static/01900d762287318daf9f35622cd7f6e4/9888c/main_company_structure.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 80.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAQABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAd1UigD/xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAEFAl//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAbEAACAQUAAAAAAAAAAAAAAAAAARARMUFhgf/aAAgBAQABPyFlt8jAlRx//9oADAMBAAIAAwAAABDgz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABsQAQADAQADAAAAAAAAAAAAAAEAETEhQVGR/9oACAEBAAE/EFRwc0IWurY8QUnQiOI+B8ge5//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Main company structure"
+        title="Main company structure"
+        src="/gatsby-personal-site/static/01900d762287318daf9f35622cd7f6e4/b4294/main_company_structure.jpg"
+        srcset="/gatsby-personal-site/static/01900d762287318daf9f35622cd7f6e4/75985/main_company_structure.jpg 150w,
+/gatsby-personal-site/static/01900d762287318daf9f35622cd7f6e4/f93b5/main_company_structure.jpg 300w,
+/gatsby-personal-site/static/01900d762287318daf9f35622cd7f6e4/b4294/main_company_structure.jpg 600w,
+/gatsby-personal-site/static/01900d762287318daf9f35622cd7f6e4/8e1fc/main_company_structure.jpg 900w,
+/gatsby-personal-site/static/01900d762287318daf9f35622cd7f6e4/9888c/main_company_structure.jpg 1142w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><p>Main company structure</p></figcaption>
+  </figure></p>
+<p>While the main goal for it was the user being able to purchase a product, quite obvious indeed, there were too many dependencies with other services to accomplish this simple, at first sight, MVP.</p>
+<p>Part of the product and orders information came from another team’s domain, the Integrations team, I will call it team <em>In</em>, I would have called it team I (capital i) but it could be misunderstood with an l (non-capital L) or a 1 (number one). They communicated with <a href="https://www.swell.is/">Swell</a> and Klopotek, an ecommerce system where we stored the product’s information along with the order’s status.</p>
+<p>The discounts were also provided by team <em>In’s</em>, to which we had to subscribe and then calculate the final product price according to the user info and privileges before displaying it.</p>
+<p>To make product content like images or descriptions accessible and customizable for the client we retrieved it through <a href="https://www.contentful.com/">Contentful</a>, a content platform where clients were able to manage it in an easy way.</p>
+<p>We managed the payment with <a href="https://stripe.com/">Stripe</a>, a payments service, and then we communicated with team <em>In</em> to update the order status on Swell.</p>
+<p>The service available for the user to authenticate should be agnostic to the owner and reusable on all sub-companies. It had to be provided by another team, yet in the end, we actually developed it ourselves.</p>
+<p>And to put the icing on the cake we also had to implement the user tracking with <a href="https://segment.com/">Segment</a>, a popular service to collect user events from web &#x26; mobile apps.</p>
+<p>Here is a simple diagram of what I have been describing which might make it easier to understand. I have grouped the microservices architecture in just <em>Backend</em> and <em>Frontend</em> to keep it simple.</p>
+<p><figure class="gatsby-resp-image-figure" style="border-bottom: none;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-personal-site/static/abda04d152ed349b08e9a7d69c52a5fc/dc2bb/mvp_architecture_overview.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHurDNI/8QAFhABAQEAAAAAAAAAAAAAAAAAARAA/9oACAEBAAEFAo13/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAGhAAAgIDAAAAAAAAAAAAAAAAABEhMQEQQf/aAAgBAQABPyFLIogsd1c//9oADAMBAAIAAwAAABCQD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABsQAQACAgMAAAAAAAAAAAAAAAEAETFRYXGB/9oACAEBAAE/EC5rlhRKG/YxFahlEsqY+p//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="MVP Architecture overview"
+        title="MVP Architecture overview"
+        src="/gatsby-personal-site/static/abda04d152ed349b08e9a7d69c52a5fc/b4294/mvp_architecture_overview.jpg"
+        srcset="/gatsby-personal-site/static/abda04d152ed349b08e9a7d69c52a5fc/75985/mvp_architecture_overview.jpg 150w,
+/gatsby-personal-site/static/abda04d152ed349b08e9a7d69c52a5fc/f93b5/mvp_architecture_overview.jpg 300w,
+/gatsby-personal-site/static/abda04d152ed349b08e9a7d69c52a5fc/b4294/mvp_architecture_overview.jpg 600w,
+/gatsby-personal-site/static/abda04d152ed349b08e9a7d69c52a5fc/8e1fc/mvp_architecture_overview.jpg 900w,
+/gatsby-personal-site/static/abda04d152ed349b08e9a7d69c52a5fc/e5166/mvp_architecture_overview.jpg 1200w,
+/gatsby-personal-site/static/abda04d152ed349b08e9a7d69c52a5fc/dc2bb/mvp_architecture_overview.jpg 1744w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><p>MVP Architecture overview</p></figcaption>
+  </figure></p>
+<h2 id="Implementing-GraphQL" style="position:relative;">Implementing GraphQL<a href="#Implementing-GraphQL" aria-label="Implementing GraphQL permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p>To accomplish the project we had to <em>provide the frontend with a unique source of truth</em> of the product’s core information from the backend. Therefore the only thing that we aimed to have different from one store’s frontend to another would be the designs and the content from Contentful. Regarding these designs and their implementations on React, we planned to use a shared-components-library.</p>
+<p>Therefore, what is GraphQL doing here and why did we decide to go for it? Well, in case you don’t know how GraphQL works, essentially it lets us define a Schema with all the properties and queries that could be made to our product, and then serve it to the frontend to let it decide what to request without the backend having to create an endpoint for each of those requests like in REST services. To learn more about it <a href="https://www.ramonmorcillo.com/getting-started-with-graphql-and-nodejs/">I wrote a tutorial to explain it</a> which teaches how to use it with Node.js, moreover, <a href="https://graphql.org/learn/">their docs</a> are worth checking out.</p>
+<p>This meant that each of the shops would request the data they would need from the product just looking at the Schema, the source of truth. Thanks to this fact we would not have to implement in the backend different sources of data for each shop, giving the frontend the power and responsibility (the first involves the second 🕷) to request the product data needed to display at each interface.</p>
+<blockquote>
+<p>With great power comes great responsibility.
+— Stan Lee</p>
+</blockquote>
+<p>Just to be clear, if we had decided to go with REST we would had needed to create different endpoints for each of the shops or make the frontend retrieve all the product data in each shop and then decide which properties to display, storing unnecessary data in the frontend that would only add noise. Or even worse, we would have had all the shops’ backend services deployed for each one of the frontend shops which would mean to use unnecessary resources and increase the cost considerably. Here is why we took this initial approach. The worst fact, in my opinion, would be the waste of time needed to maintain and hardly refactor all the mess that we would have created.</p>
+<p>Furthermore, by making a single request on-demand, the payload is lighter, and therefore, the performance over the network is improved.</p>
+<p>Anyway, as with every problem, there were other approaches on the way to develop this project and its architecture, however at that moment this one seemed to us the best one.</p>
+<h2 id="Architecture-and-Tech-Stack" style="position:relative;">Architecture and Tech Stack<a href="#Architecture-and-Tech-Stack" aria-label="Architecture and Tech Stack permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p>The microservices architecture were mainly Node.js services hosted on Azure K8s clusters which, depending on their needs and the data they worked with, had or not a MongoDB, PostgreSQL, or Redis database associated.</p>
+<p>The asynchronous communication between them was handled mainly with <a href="https://azure.microsoft.com/en-us/services/service-bus/">Azure Service Bus</a> topics and subscriptions through a publish/subscribe messaging communication model. The main difference with common messaging queues is that you can have more than one receiver, so you do not have multiple queues to receive messages in more than one service.</p>
+<p><figure class="gatsby-resp-image-figure" style="border-bottom: none;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-personal-site/static/7ab1d4660f125cc49bd86ea2f6d432ca/a1792/azure_service_bus_messaging_queues.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 17.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAw0lEQVQI12XMO2vCUABAYf+qm7/F1Wp9YAct7kIQxECLaL2SmkmTVggRrpr0JrkxQ3wgeAq1U/stZzsFrRPi5ECeSY5+jTwwifWF3ljRMQw8q44rWjiijW/V8awmL689Ss8jbGmzz9YkWqNURJqmFOIo4ksl5Aefs1fmuDfYhSeezJBWv48jHrAnj9jTBq6osJpVGZhdip0hC7lgl32if4bqPuSP22/DKOZtuUE4EuFK3tcB848t0+WGuSuxnIDrhX++ATlA1RYAR753AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Azure Service Bus messaging Queues. Source"
+        title="Azure Service Bus messaging Queues. Source"
+        src="/gatsby-personal-site/static/7ab1d4660f125cc49bd86ea2f6d432ca/0a47e/azure_service_bus_messaging_queues.png"
+        srcset="/gatsby-personal-site/static/7ab1d4660f125cc49bd86ea2f6d432ca/8a4e8/azure_service_bus_messaging_queues.png 150w,
+/gatsby-personal-site/static/7ab1d4660f125cc49bd86ea2f6d432ca/5a46d/azure_service_bus_messaging_queues.png 300w,
+/gatsby-personal-site/static/7ab1d4660f125cc49bd86ea2f6d432ca/0a47e/azure_service_bus_messaging_queues.png 600w,
+/gatsby-personal-site/static/7ab1d4660f125cc49bd86ea2f6d432ca/a1792/azure_service_bus_messaging_queues.png 780w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><p>Azure Service Bus messaging Queues. Source</p></figcaption>
+  </figure></p>
+<p><figure class="gatsby-resp-image-figure" style="border-bottom: none;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-personal-site/static/a837623ed0999aabc73d50ffaae0ab1e/a1792/azure_service_bus_messaging_topics.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 34%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABjUlEQVQoz3WQXW/SYABG+0eNv4ALr/wD3ngjGZCweeHFkG7pJuB0bANFPhQ10cRkYRkbL2v4apHVFtql0LflmM6LaTJPcm6fnDwK97ImW5+S1Fr8aGzzuabSrKq03+f5UlNpv8tR/thiuBCY9gDr2sKyLDzPQ1mvI8IoIrgxWXojwlDeDj4ujEmkj6gUnlHUUmg7GQq7KUpamoKaJFc+YexeYToDpuZPDMPAdV0U0e8zm81Y9p6wPEtgGCOqbZPEtuDRZpX6QZrDYpbS3hav97McFrd4u58hf1z9a3CKYRosFgsUKSVRFCFvBkhPEAQrfF/y8MUFD56WKGtJ9tQUuy830PIbvNpJoeWSPC+9QdgdhlaPyXjCaDTEcRwU/sNmY0Lm4DtfPx3TbFZoxDZOaLUq1D8cUft2ihfMcf05jjPHtm18348/XPPH6NaYIJAM9D66PqBzMaQrxlzqBpdXBj3d5FyMMafX94b8UxgPx4RhiBCCbrdLX/Q465wyd36xjiQyWBHKFVIG3MXc+Ru1wvOCf9KTSQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Azure Service Bus messaging Topics. Source
+"
+        title="Azure Service Bus messaging Topics. Source
+"
+        src="/gatsby-personal-site/static/a837623ed0999aabc73d50ffaae0ab1e/0a47e/azure_service_bus_messaging_topics.png"
+        srcset="/gatsby-personal-site/static/a837623ed0999aabc73d50ffaae0ab1e/8a4e8/azure_service_bus_messaging_topics.png 150w,
+/gatsby-personal-site/static/a837623ed0999aabc73d50ffaae0ab1e/5a46d/azure_service_bus_messaging_topics.png 300w,
+/gatsby-personal-site/static/a837623ed0999aabc73d50ffaae0ab1e/0a47e/azure_service_bus_messaging_topics.png 600w,
+/gatsby-personal-site/static/a837623ed0999aabc73d50ffaae0ab1e/a1792/azure_service_bus_messaging_topics.png 780w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><p>Azure Service Bus messaging Topics. Source</p></figcaption>
+  </figure></p>
+<p>On the frontend part, the sites were developed with React; sometimes using <a href="https://github.com/vercel/next.js/">Next</a>, and other ones from scratch with <a href="https://github.com/facebook/create-react-app">Create React App</a> depending on the complexity and the requirements of each. We moved from Redux, used in previous projects, to the official <a href="https://reactjs.org/docs/context.html">Context API</a> to manage most of the state.</p>
+<p>Here are the main services and their functionalities for the first MVP architecture:</p>
+<ul>
+<li><strong>shop-web-app:</strong> The client shop application.</li>
+<li><strong>gateway-api-service:</strong> Proxy service to receive requests from the client and redirect them to the corresponding services.</li>
+<li><strong>cms-api-service:</strong> Service to retrieve and serve the content from Contentful</li>
+<li><strong>catalog-api-service:</strong> Service that subscribes to team In messages and persists the product core data to serve it later through GraphQL.</li>
+<li><strong>orders-api-service.</strong> Service that handles all the payment business logic</li>
+<li><strong>auth-api-service:</strong> Provisional service to implement the user authentication to be able to buy products.</li>
+<li><strong>auth-web-app:</strong> The client for the auth service.</li>
+<li><strong>integrations-ecommerce-api-service:</strong> service from the integrations domain that handles the payments. Although this service was not in our domain we developed it together to increase the delivery speed and free them from extra work.</li>
+</ul>
+<p><figure class="gatsby-resp-image-figure" style="border-bottom: none;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-personal-site/static/9c4a74fdb4f6f590f8927438d87193dd/14c79/first_mvp_arquitecture.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 62.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe61Cg//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAEFAl//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAXEAADAQAAAAAAAAAAAAAAAAAAESBB/9oACAEBAAE/IUZP/9oADAMBAAIAAwAAABDwz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExQVH/2gAIAQEAAT8QAjQ1f2DQ3agZ2VE1Hc9hwn//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="First MVP architecture"
+        title="First MVP architecture"
+        src="/gatsby-personal-site/static/9c4a74fdb4f6f590f8927438d87193dd/b4294/first_mvp_arquitecture.jpg"
+        srcset="/gatsby-personal-site/static/9c4a74fdb4f6f590f8927438d87193dd/75985/first_mvp_arquitecture.jpg 150w,
+/gatsby-personal-site/static/9c4a74fdb4f6f590f8927438d87193dd/f93b5/first_mvp_arquitecture.jpg 300w,
+/gatsby-personal-site/static/9c4a74fdb4f6f590f8927438d87193dd/b4294/first_mvp_arquitecture.jpg 600w,
+/gatsby-personal-site/static/9c4a74fdb4f6f590f8927438d87193dd/8e1fc/first_mvp_arquitecture.jpg 900w,
+/gatsby-personal-site/static/9c4a74fdb4f6f590f8927438d87193dd/e5166/first_mvp_arquitecture.jpg 1200w,
+/gatsby-personal-site/static/9c4a74fdb4f6f590f8927438d87193dd/14c79/first_mvp_arquitecture.jpg 2484w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><p>First MVP architecture</p></figcaption>
+  </figure></p>
+<p>To deploy and update the resources needed on Azure we used <a href="https://www.terraform.io/">Terraform</a>, which let us define infrastructure as code and manage their life cycles on the K8s clusters. We also worked with Azure DevOps as our CI &#x26; CD system.</p>
+<p>On the services, we used <a href="https://github.com/guidesmiths/systemic">Systemic</a>, a Node.js framework for minimal dependency injection that lets you create components and their dependencies in a system, where each component handles a separate object from the domain such as the routing, controller, services, database, … in an agnostic way from the others.</p>
+<p><a href="https://www.apollographql.com/">Apollo</a> was our choice to implement GraphQL providing us with a data graph layer to easily connect both, frontend and backend. Again, to learn more about it check <a href="https://www.apollographql.com/docs/">their docs</a> or <a href="https://www.ramonmorcillo.com/getting-started-with-graphql-and-nodejs/">this tutorial.</a> Finally, we hosted the code on <a href="https://github.com/">GitHub</a> to make use of features like Pull Requests to review code properly before implementing it.</p>
+<h2 id="The-second-MVP" style="position:relative;">The second MVP<a href="#The-second-MVP" aria-label="The second MVP permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p>An MVP (Minimum Viable Product) is the first prototype you create and deliver in a project, therefore there is usually just one and when you achieve it you start implementing new features on it. So, why did we focus on a second MVP for the same project? Well, When we reached a “stable” version of the first one, the client realized that we needed to start with the main sub-companies stores, and took the decision to stop the sub-sub-company H store development to focus on the development of the new ones. The reason behind this was mainly due to some services ending their support for the sub-companies in the coming months, meaning that their stores had to be developed first.</p>
+<p><figure class="gatsby-resp-image-figure" style="border-bottom: none;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-personal-site/static/29d4278584a6213d83dc40ceec27edb3/12609/how_we_felt_with_second_mvp.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 68%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEAQP/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAF7eVIxof/EABsQAAICAwEAAAAAAAAAAAAAAAIDAQQAEBIR/9oACAEBAAEFAmWGCfc+YyuLT5jX/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQIBAT8BZ//EABwQAQABBAMAAAAAAAAAAAAAAAECABARIRJRYf/aAAgBAQAGPwJCJruo5NtuUlo8t//EABsQAQACAgMAAAAAAAAAAAAAAAEAESFBEDFR/9oACAEBAAE/IS+zZQFiNBmDZ1Urg4qiBA8UPH//2gAMAwEAAgADAAAAEIsP/8QAFhEAAwAAAAAAAAAAAAAAAAAAARBh/9oACAEDAQE/EBV//8QAFhEBAQEAAAAAAAAAAAAAAAAAERAh/9oACAECAQE/EAZP/8QAGxABAAIDAQEAAAAAAAAAAAAAAQARITGBQWH/2gAIAQEAAT8Qeb+LCm76QSWl2gX7GBbHyPWiEoGOSmy1IyhVb5DBP//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Graphical representation of how we felt with the second MVP"
+        title="Graphical representation of how we felt with the second MVP"
+        src="/gatsby-personal-site/static/29d4278584a6213d83dc40ceec27edb3/b4294/how_we_felt_with_second_mvp.jpg"
+        srcset="/gatsby-personal-site/static/29d4278584a6213d83dc40ceec27edb3/75985/how_we_felt_with_second_mvp.jpg 150w,
+/gatsby-personal-site/static/29d4278584a6213d83dc40ceec27edb3/f93b5/how_we_felt_with_second_mvp.jpg 300w,
+/gatsby-personal-site/static/29d4278584a6213d83dc40ceec27edb3/b4294/how_we_felt_with_second_mvp.jpg 600w,
+/gatsby-personal-site/static/29d4278584a6213d83dc40ceec27edb3/8e1fc/how_we_felt_with_second_mvp.jpg 900w,
+/gatsby-personal-site/static/29d4278584a6213d83dc40ceec27edb3/e5166/how_we_felt_with_second_mvp.jpg 1200w,
+/gatsby-personal-site/static/29d4278584a6213d83dc40ceec27edb3/12609/how_we_felt_with_second_mvp.jpg 3000w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><p>Graphical representation of how we felt with the second MVP</p></figcaption>
+  </figure></p>
+<p>Although we tried to make a proper estimation of the first one we surpassed its deadline since some unplanned issues appeared along. Thus, when we were told that the new deadline would be even closer we decided to take a different approach to reach it on time. We concluded to develop more than one store at the same time which was a double-edged sword approach; on one hand, we would see on the go how well the reusability aspect of our platform worked while refactoring it and we would also end up with more than one store in the end. On the other hand, we would have to set up and maintain the environments and resources of multiple shops plus implement the designs of them which would slow us down, therefore we may not reach the deadline on time, again.</p>
+<p>We saw this MVP as an opportunity to start over and improve our codebase and so we added TypesScript and Styled-Components to our React application. I have to admit that I was very happy when we made these choices because I had been working with that stack on <a href="https://github.com/reymon359?tab=repositories&#x26;q=&#x26;type=source&#x26;language=typescript">my own projects</a> and now I was able to learn more and get even better at it.</p>
+<p>A good thing was that we were able to reuse most of the code from the previous MVP for the React apps and the backend services, however, not everything was a bed of roses; not all of us were used to working with this new stack and it slowed us at the beginning. Furthermore, with the same stack, we started developing a React components library for all the platforms, which, even though was planned for the first MVP, never saw the light.</p>
+<p>By that time, the team in charge of the user authentication service started working on it so we stopped its development and just implemented it on the site. In addition, we started the development of a products search service (<strong>search-api-service</strong>) with <a href="https://azure.microsoft.com/en-us/services/search/">Azure Cognitive Search</a>.</p>
+<p>After all the changes mentioned above the architecture evolved this way.</p>
+<p><figure class="gatsby-resp-image-figure" style="border-bottom: none;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-personal-site/static/ece532213b48e10cd83c0a37107c5012/f6cc3/second_mvp_arquitecture.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 62%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQAF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3VCmP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEAAQUCX//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABoQAAICAwAAAAAAAAAAAAAAAAAQEUEhMWH/2gAIAQEAAT8hjeCiOK1//9oADAMBAAIAAwAAABCwz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABsQAAMAAgMAAAAAAAAAAAAAAAABERAhUWGB/9oACAEBAAE/EIgLaeE8CVCWy6WP/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Second MVP architecture"
+        title="Second MVP architecture"
+        src="/gatsby-personal-site/static/ece532213b48e10cd83c0a37107c5012/b4294/second_mvp_arquitecture.jpg"
+        srcset="/gatsby-personal-site/static/ece532213b48e10cd83c0a37107c5012/75985/second_mvp_arquitecture.jpg 150w,
+/gatsby-personal-site/static/ece532213b48e10cd83c0a37107c5012/f93b5/second_mvp_arquitecture.jpg 300w,
+/gatsby-personal-site/static/ece532213b48e10cd83c0a37107c5012/b4294/second_mvp_arquitecture.jpg 600w,
+/gatsby-personal-site/static/ece532213b48e10cd83c0a37107c5012/8e1fc/second_mvp_arquitecture.jpg 900w,
+/gatsby-personal-site/static/ece532213b48e10cd83c0a37107c5012/e5166/second_mvp_arquitecture.jpg 1200w,
+/gatsby-personal-site/static/ece532213b48e10cd83c0a37107c5012/f6cc3/second_mvp_arquitecture.jpg 2782w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><p>Second MVP architecture</p></figcaption>
+  </figure></p>
+<h2 id="Conclusion-and-lessons-learned" style="position:relative;">Conclusion and lessons learned<a href="#Conclusion-and-lessons-learned" aria-label="Conclusion and lessons learned permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p>As I am writing this, the platform isn’t finished yet, however it has been a great challenge to get where we are. We have learned some valuable lessons that can be useful to others, not just about the stack and architecture described above but the way we worked as a team.</p>
+<p><strong>Innovate the stack.</strong> Working with new technologies can be risky and less comfortable than sticking with old and well-known ones, <em>but innovation and adapting is the right way to not be left behind in Software Development.</em> One of the most important points when you upgrade the stack or adopt a new one, apart from checking the proper way to do so following standards, is <em>being sure the team is comfortable working with it,</em> not just at the beginning but during the whole process to make the transition easier.</p>
+<p><strong>Don’t underestimate, promise less, deliver more.</strong> We happily estimated the first MVP and agreed to deliver a great number of features. We ended up needing more time because of all the issues that appeared on the way and _had to learn to say “no” _sometimes. On the second MVP, we didn’t estimate that far in time and didn’t commit ourselves to features we weren’t sure to deliver on the time expected. <em>We achieved to work less stressed, have a better mood, deliver better code, and improve the client’s feelings</em> about the project since they weren’t disappointed with the progress.</p>
+<p><strong>Teamwork inside the team.</strong> We realized the best way to progress and develop was to feel comfortable with not just the technologies but, most importantly the teammates. Some of the measures that improved our relationship and teamwork were:</p>
+<ul>
+<li><strong>Team democracy.</strong> No matter the work we were doing at the moment, <em>all of us had the same voice and our opinion counted the same</em> when making a choice. This was key when discussed the adoption of the new stack and the practices we would follow.</li>
+<li><strong>Reviewing code</strong>. Feedback is one of the best ways to improve not only the code itself but the way you write it too. That’s why we decided to work with GitHub Pull Requests to implement most of the features. <em>Working with them not only improved our code base but also made us aware of how the features were being implemented in other areas, avoiding catchup meetings and helping to keep track of the full project scope</em>. We refined this system little by little with features like a <a href="https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/about-required-reviews-for-pull-requests">minimum number of reviewers to merge them</a> or <a href="https://github.com/integrations/slack">subscribing to them through slack.</a></li>
+<li><strong>Helping and asking for help.</strong> In my opinion, this one is a must. <em>The team must lose the fear to ask for help if they get stuck and, at the same time be willing to help others when they ask for it.</em> I am happy to say that we were able to reach this situation and our work got improved in many ways. The next point, pairing, was key in losing the fear to ask for help and get to know each other better.</li>
+<li><strong>Pairing as much as possible.</strong> At this point in software development, the advantages of doing pair programming are more than well known, we paired not just to deliver the features in a faster and better way but to learn from each other’s way to code. We weekly decided the pairing tasks and teammates to implement them, however, if someone needed or wanted to pair, we just asked for it and moments after a teammate offered it.</li>
+<li><strong>Pay attention to feedback.</strong> The sprint retrospectives were the perfect moment to review all the things that went well, wrong, propose changes, and look forward to improvement. Therefore the more we shared our opinions the more issues we could approach and solve.</li>
+</ul>
+<p><img src="/gatsby-personal-site/f65ca089c011fc6784fc5e23f1059a8e/teamwork_makes_the_dream_work.gif" alt="Teamwork makes de dream work"></p>
+<p><strong>Teamwork with other partners.</strong> We were dependent on other teams’ work therefore having a good relationship with them was also an important point in the development. <em>Communication was the key point, the more we communicated the more we improved,</em> thanks to it, the feeling we had was to be one whole team. Here are some actions we followed in order to enhance this communication:</p>
+<ul>
+<li><strong>Have a private place just for us.</strong> We created a separate channel to talk about the progress and solve the doubts as soon as possible without extra meetings.</li>
+<li><strong>Quick meetings.</strong> A meeting once a week worked great to check the progress on the main issues, however, we did not wait for it and had a quick call whenever an issue needed to be discussed.</li>
+<li><strong>Stay updated on the overall progress.</strong> We had a teammate from our team attending their daily standups and one of them at ours who updated the rest of the team if needed.</li>
+</ul>
+<p>Here is some actual footage of us and the Integrations Team:
+
+		<video
+			src=/gatsby-personal-site/8f66fa0e13f7bca6b0a613d9b8e93223/actual_footage.mp4
+			width="600"
+			height="auto"
+			preload="auto"
+			muted="true"
+			title="Actual footage of us and the Integrations Team"
+			autoplay
+			playsinline
+			controls
+			loop
+		></video>
+	</p>
+<p><strong>Make the client feel like part of the team.</strong> At the beginning of the first MVP, there were too many clues and too little communication to clarify them so we were blocked sometimes or had to set up wasting-time meetings for them. The core of the problem, like most life ones, was a lack of communication therefore we solved it by increasing it, asking questions directly to the client, inviting them to retrospectives, daily standups, and other meetings even when they were not required, to keep them updated as much as possible. In the end, the more we communicated the more we made them feel part of the team, and the better we worked together.</p>
+<h2 id="Acknowledgments" style="position:relative;">Acknowledgments<a href="#Acknowledgments" aria-label="Acknowledgments permalink" class="autolink-headers after"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20" style="margin: 0 0 -0.2rem 0.7rem; "><path fill="white" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p>I want to first thank my teammates. It has been a pleasure to work with them, starting each day eager to have fun together developing the project.</p>
+<p>On the same level the teammates from other teams who always gave a helping hand when requested.</p>
+<p>Then I want to thank the opportunity of having been able to participate in the full end-to-end implementation of the project from which I learned so much. I solved issues on Front, Back, and DevOps such as setting up environments, pipelines, messaging between services, persisting and retrieving data, serving it to the frontend, and implementing  the interfaces to display it.</p>
+<p>Finally, I am thankful for having the chance to work and get better at technologies that I was using on side-projects like GraphQL or TypeScript.</p></div><div class="Comments__Wrapper-czvh9a-0 fCKPUh"><h2>Comments</h2><p>Thanks for reading ❤️ </p><p>You can comment by replying to the<!-- --> <a href="https://github.com/reymon359/gatsby-personal-site/issues/243" target="_blank" rel="noreferrer noopener">issue for this post.</a></p><p>There’s no comments yet,<!-- --> <a href="https://github.com/reymon359/gatsby-personal-site/issues/243#new_comment_field" target="_blank" rel="noreferrer noopener">be the first to leave one!</a></p><div class="Comments__Actions-czvh9a-8 hfVTUK"><a href="https://github.com/reymon359/gatsby-personal-site/issues/243#new_comment_field" target="_blank" rel="noreferrer noopener" class="button btn">Add a comment →</a></div></div><h2>Other posts</h2><ul class="post__OtherPostsLinks-sc-18ghmkz-0 galTMt"><li><a rel="prev" href="/gatsby-personal-site/a-trip-to-the-french-alps/">← <!-- -->A trip to the French Alps</a></li><li><a rel="next" href="/gatsby-personal-site/how-to-enjoy-the-sunrise-from-the-top-of-spain/">How to enjoy the sunrise from the top of Spain<!-- --> →</a></li></ul></div></article><div class="Content__BottomHeight-sc-1q50de9-1 dYysHN"></div></div></main><div class="Navigation__Wrapper-sxzav8-0 hfVphx"><header class="Navigation__Header-sxzav8-2 iTMXyh"><div class="Logo__Wrapper-sc-19tlazh-1 bCOyZr"><div class="Logo__RelativeWrapper-sc-19tlazh-2 Essph"><a href="/gatsby-personal-site/"><svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path d="M11 21.5C5.201 21.5.5 16.799.5 11S5.201.5 11 .5 21.5 5.201 21.5 11 16.799 21.5 11 21.5zm0-1a9.5 9.5 0 1 0 0-19 9.5 9.5 0 0 0 0 19z" fill="#FFFFFF"></path></svg></a><div class="Logo__Background-sc-19tlazh-0 dQZthV"></div></div></div><div class="HelpMessage__Wrapper-sc-11fekqt-0 fPYIDe">Move around the screen or scroll it</div><div class="ToggleMenu__ToggleMenuWrapper-sc-1rm9swz-0 bHbNgR"><span></span><span></span><span></span></div></header><div class="Navigation__Shoable-sxzav8-1 jUAACT"><div><nav class="Menu__MenuWrapper-sc-1vxe8de-0 bTtsHt"><ul class="Menu__Nav-sc-1vxe8de-1 iNaoaw"><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a href="https://github.com/reymon359" rel="noopener noreferrer" target="_blank">GitHub</a></li><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a href="https://www.linkedin.com/in/ramon-morcillo/" rel="noopener noreferrer" target="_blank">Linkedin</a></li><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a href="https://codepen.io/reymon359" rel="noopener noreferrer" target="_blank">Codepen</a></li><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a href="https://twitter.com/reymon359" rel="noopener noreferrer" target="_blank">Twitter</a></li></ul><ul class="Menu__Nav-sc-1vxe8de-1 iNaoaw"><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a class="Menu__NavLink-sc-1vxe8de-3 cEEwRr" href="/gatsby-personal-site/">Index</a></li><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a class="Menu__NavLink-sc-1vxe8de-3 cEEwRr" href="/gatsby-personal-site/works">works</a></li><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a class="Menu__NavLink-sc-1vxe8de-3 cEEwRr" href="/gatsby-personal-site/about">about</a></li><li class="Menu__NavItem-sc-1vxe8de-2 ByzpB"><a rel="noopener" href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!">Contact</a></li></ul></nav><footer class="Footer__FooterWrapper-sc-1df0yns-0 iXxlXu"><div class="Footer__Item-sc-1df0yns-1 jSPHnk"><span>Ramón Morcillo - <!-- -->2021<!-- --> - </span> <a href="https://github.com/reymon359/gatsby-personal-site/" target="_blank" rel="noopener noreferrer">source</a></div><div class="Footer__Item-sc-1df0yns-1 iYbvcT">Made with love &amp; time <small style="font-size:70%">(a lot of it)</small></div></footer></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'Add the Google Analytics Tracking ID', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/developing-a-reusable-ecommerce-platform/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-247a476f55ec3e43e6a4.js"],"app":["/app-661b59fc950a0d419b03.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-178ddf60e15d54bac954.js"],"component---src-pages-about-tsx":["/component---src-pages-about-tsx-5aaaeb6b901c30f0b9f1.js"],"component---src-pages-blog-tsx":["/component---src-pages-blog-tsx-2e712053337d0a4f701a.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-8e82322f2ded75ae2842.js"],"component---src-pages-projects-tsx":["/component---src-pages-projects-tsx-1ca09437a35e137e6d9d.js"],"component---src-pages-tags-tsx":["/component---src-pages-tags-tsx-a8fec2bde9c760d22c0d.js"],"component---src-pages-works-tsx":["/component---src-pages-works-tsx-30d97cacd9ae793fcf93.js"],"component---src-templates-post-tsx":["/component---src-templates-post-tsx-fc7e64f5e9378365724d.js"],"component---src-templates-tag-tsx":["/component---src-templates-tag-tsx-d873fc5846013d61fddb.js"]};/*]]>*/</script><script src="/gatsby-personal-site/polyfill-247a476f55ec3e43e6a4.js" nomodule=""></script><script src="/gatsby-personal-site/component---src-templates-post-tsx-fc7e64f5e9378365724d.js" async=""></script><script src="/gatsby-personal-site/a93ca09b3e214b1f9c56eefcc27e05eb63340a26-41145a67edc9f38f72ea.js" async=""></script><script src="/gatsby-personal-site/commons-2572092cd8427adb054b.js" async=""></script><script src="/gatsby-personal-site/app-661b59fc950a0d419b03.js" async=""></script><script src="/gatsby-personal-site/framework-de69d1d98c3759f869ba.js" async=""></script><script src="/gatsby-personal-site/webpack-runtime-37b80963a1cdea856f28.js" async=""></script></body></html>
