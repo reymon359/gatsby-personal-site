@@ -20,16 +20,17 @@ These books focus not only on how to write code but on teaching you best practic
 
 ## Table of Contents
 
-- [Taking Responsibility](#Taking-Responsibility)
-- [Testing](#Testing)
-- [Teamwork](#Teamwork)
-- [Estimating](#Estimating)
-- [Tracer bullets](#Tracer-bullets)
-- [Handling pressure](#Handling-pressure)
-- [Refactoring](#Refactoring)
-- [Main differences](#Main-differences)
-- [Conclusions](#Conclusions)
-- [Resources](#Resources)
+- [Table of Contents](#table-of-contents)
+- [Taking Responsibility](#taking-responsibility)
+- [Testing](#testing)
+- [Teamwork](#teamwork)
+- [Estimating](#estimating)
+- [Tracer bullets](#tracer-bullets)
+- [Handling pressure](#handling-pressure)
+- [Refactoring](#refactoring)
+- [Main differences](#main-differences)
+- [Conclusions](#conclusions)
+- [Resources](#resources)
 
 ## Taking Responsibility
 
@@ -164,13 +165,13 @@ Thus said, to help Business measuring requirements and making appropriate plans 
 
 Do not reinvent the wheel, use well-known estimation techniques for tasks. Here I made a summary of some techniques mentioned in both books.
 
-- [PERT](https://github.com/reymon359/book-sentences/blob/master/books/the-clean-coder/README.md#pert)
-- [Wideband Delphi](https://github.com/reymon359/book-sentences/tree/master/books/the-clean-coder/README.md#wideband-delphi)
-- [Flying Fingers](https://github.com/reymon359/book-sentences/tree/master/books/the-clean-coder/README.md#flying-fingers)
-- [Planning Poker](https://github.com/reymon359/book-sentences/tree/master/books/the-clean-coder/README.md#planning-poker)
-- [Affinity Estimation](https://github.com/reymon359/book-sentences/tree/master/books/the-clean-coder/README.md#affinity-estimation)
-- [Trivariate Estimates](https://github.com/reymon359/book-sentences/blob/master/books/the-clean-coder/README.md#trivariate-estimates)
-- [The Law of Large Numbers](https://github.com/reymon359/book-sentences/tree/master/books/the-clean-coder/README.md#the-law-of-large-numbers)
+- [PERT](https://reymon359.github.io/book-sentences/#/The%20Clean%20Coder/index?id=pert)
+- [Wideband Delphi](https://reymon359.github.io/book-sentences/#/The%20Clean%20Coder/index?id=wideband-delphi)
+- [Flying Fingers](https://reymon359.github.io/book-sentences/#/The%20Clean%20Coder/index?id=flying-fingers)
+- [Planning Poker](https://reymon359.github.io/book-sentences/#/The%20Clean%20Coder/index?id=planning-poker)
+- [Affinity Estimation](https://reymon359.github.io/book-sentences/#/The%20Clean%20Coder/index?id=affinity-estimation)
+- [Trivariate Estimates](https://reymon359.github.io/book-sentences/#/The%20Clean%20Coder/index?id=trivariate-estimates)
+- [The Law of Large Numbers](https://reymon359.github.io/book-sentences/#/The%20Clean%20Coder/index?id=the-law-of-large-numbers)
 
 The more experience you have on a certain project the better you will estimate its tasks. Therefore don’t worry if the first estimates you make are not as accurate as they could be. It is an incremental process as with every long term goal you want to achieve. 
 
