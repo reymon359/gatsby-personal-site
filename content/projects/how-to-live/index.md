@@ -8,5 +8,5 @@ tags: ['Learning', 'Life']
 published: true
 featuredImage: './how-to-live.png'
 type: 'project'
-url: 'https://how-to-live.netlify.app/'
+url: 'https://reymon359.github.io/how-to-live/'
 ---

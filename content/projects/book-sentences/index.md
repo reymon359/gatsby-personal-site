@@ -8,5 +8,5 @@ tags: ['Books', 'Learning']
 published: true
 featuredImage: './book-sentences.png'
 type: 'project'
-url: 'https://github.com/reymon359/book-sentences'
+url: 'https://reymon359.github.io/book-sentences'
 ---
