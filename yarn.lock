@@ -6650,10 +6650,10 @@ gatsby-worker@^0.3.0:
   dependencies:
     "@babel/core" "^7.14.8"
 
-gatsby@3.12.0:
-  version "3.12.0"
-  resolved "https://registry.npmjs.org/gatsby/-/gatsby-3.12.0.tgz"
-  integrity sha512-H0F2ZNLuYZAg2TyHSjvsKlYfLo9bNUoMha3W4csLeAsI8okP3HV9m0J8FXVMrK4CdGc1RXqQzNu+2HdUpdMZZQ==
+gatsby@3.12.1:
+  version "3.12.1"
+  resolved "https://registry.npmjs.org/gatsby/-/gatsby-3.12.1.tgz"
+  integrity sha512-Z2lh2EB8Oh68JHImnlHpqgivAKQ81CYNA9faMgQM/okvF0n5Zrb8/1cKb1VuEwwbjhwZjLAlCQAIZ79vs7IHDg==
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/core" "^7.14.8"
