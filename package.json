@@ -21,7 +21,7 @@
     "babel-plugin-styled-components": "1.13.2",
     "classnames": "2.3.1",
     "dotenv": "10.0.0",
-    "gatsby": "3.13.0",
+    "gatsby": "3.13.1",
     "gatsby-image": "3.11.0",
     "gatsby-plugin-canonical-urls": "3.13.0",
     "gatsby-plugin-google-analytics": "3.13.0",
