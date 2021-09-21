@@ -7,7 +7,7 @@ author: 'Ramón Morcillo'
 tags: ['Adventures', 'Digital nomad', 'Coliving', 'Coronavirus']
 published: true
 commentsUrl: TODO
-featuredImage: './assets/chateau-coliving-bonfire.jpeg'
+featuredImage: './assets/chateau_coliving_bonfire.jpeg'
 type: 'post'
 url: 'none'
 ---
@@ -35,6 +35,9 @@ Besides, I met people without a computer, doing independent location jobs such a
 
 ### Why did I decide to embrace this lifestyle?
 
+I have always considered myself an adventurous person. I wanted to explore, live new experiences, see new places, meet new people, eat new foods, and enrich my life in general. With a remote job and nothing that tied me anywhere at the moment, I made a decision and left in search of adventures.
+
+![Going on an adventure](./assets/going_on_an_adventure.gif)
 
 ## Coliving
 
