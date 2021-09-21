@@ -85,9 +85,49 @@ In my opinion, weighing the pros and cons, the experiences and personal growth y
 
 ## Coliving
 
-### Definition
+> Co-living is a residential community living model that accommodates three or more biologically unrelated people.Generally coliving is a type of intentional community that provides shared housing for people with similar values or intentions. The coliving experience may simply include group discussions in common areas or weekly meals, although will oftentimes extend to shared workspace and collective endeavors such as living more sustainably. - [Wikipedia](https://en.wikipedia.org/wiki/Co-living)
 
-### My opinion and what I learned from it
+Although that definition from Wikipedia is right, the kind of colivings I have been had other amenities in common such as a coworking place, a proper wifi network, shared meals, or community activities among others.
+
+These places don’t fit in the known categories of a hotel, neither an Airbnb nor sharing a flat. 
+
+While looking for accommodations in Tenerife with a proper area to work, I found about Nine coliving. That’s when I discovered this whole new concept for living.
+
+### Characteristics
+
+Right now, after coronavirus and the increase of remote working, more and more colivings are appearing. However, not all of them are the kind of coliving I have had the chance to live in. Some of them are just big companies owning entire buildings that offer a coliving experience but end up being nothing more than sharing a flat.
+
+![[Nine coliving](https://www.ninecoliving.com/) shared kitchen and coworking](./assets/nine_coliving_shared_kitchen_and_coworking.jpeg)
+
+The colivings I have been share at least these characteristics:
+- A **coworking** area to work in a productive environment. Including a decent Wifi connection, video call areas, and 24h availability in case you need to work in a different timezone.
+- **Shared common areas** such as a kitchen or living room where you interact, cook, and enjoy meals with others.  Probably the most important one.
+- A variety of **activities,** from yoga or hiking to sharing-skills meetings, or going out for some drinks. Depending on what the community is up to. And depending on the location; It's a bit hard to go surfing when you are in the middle of Germany.
+- A **community** you share the place with. You live with ten residents, more or less, depending on the coliving accommodations. They normally share similar interests while having different backgrounds, which gives you new points of view. Thanks to this community, you don't have to look for new friends when arriving at a new location.
+
+### Price
+
+The price of the coliving depends on the kind of accommodation you book. A three-people shared room will be cheaper than a single room with a private bathroom (if they have this kind of room). It also depends on the amount of time you stay, normally the longer you live there the cheaper it gets.
+
+A great advantage of colivings is the release of paying monthly bills for electricity, gas, water, or wifi. All of them are included in the price, and you don’t have to waste time and effort worrying about them. 
+
+### Stay
+
+The time people spend in these locations varies on the coliving rules and the traveler situation. Some colivings encourage longer stays enforcing a minimum booking time or discounts for longer stays. Others don’t have staying restrictions and, although it's quite unusual, people may be there for just a weekend.
+
+### Community
+
+In my opinion, this is the best aspect. The people you meet in these places come from all around the globe. Therefore, you not only learn about the place you stay but about other countries, professions, lifestyles, languages, etc. Every human is a whole world, and meeting such random people opens your mind to new possibilities in life you didn’t even imagine. 
+
+Another advantage is having people to do plans with. Plus, you connect with them in a more meaningful way.
+
+> Ironically, I feel that I connect much deeper and much quicker with people when on the road, than with people "back at home". When you live with someone 24/7 in a coliving space in a foreign country & go on a desert trip with them, this is much deeper than living in separate apartments in the same city and meeting every now and then for a regular dinner. Both; the quantity of time & the depth of the experience itself is much more intense. - Tobias Hug
+
+Most of the people I met were digital nomads, however, other people used to live here too, such as the hosts, locals, or just travelers. Speaking of locals, sometimes coliving spaces can feel like “foreigners bubbles” when colivings don’t make the effort to integrate their guests with them.
+
+Although living with a lot of people may seem overwhelming, you can have privacy when you want to have time for yourself. This is the opposite common issue of the standard digital nomad who travels mostly alone and has to make an effort to meet people.
+
+![About to catch some waves with friends from [SunDesk](https://www.sun-desk.com/) in Imsouane Beach, Morocco](./assets/about_to_catch_some_waves_with_friends_from_sun_desk_in_imsouane_beach_morocco.jpeg)
 
 ## Coronavirus
 
