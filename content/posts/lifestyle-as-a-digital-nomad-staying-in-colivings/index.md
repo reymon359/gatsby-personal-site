@@ -131,13 +131,25 @@ Although living with a lot of people may seem overwhelming, you can have privacy
 
 ## Coronavirus
 
+The global pandemic has impulsed the digital nomad lifestyle. More companies offer now remote work, which makes it easier for some people to live this way. However, although more people can live location independent, most of them don’t consider it or have stopped moving because of the restrictions imposed by other countries. Flight cancellations, quarantines, or medical tests for traveling represent a barrier for most of them. 
+
+At the bottom of the article, I have collected useful resources for traveling, with and without Covid-19, which I have been using the most.
+
+Restrictions and prices for medical tests vary from one country to another. Countries like Malta offered free PCRs to anyone, tourists included. In France you could get vaccinated for free too as a foreigner.
+
+Traveling in this global situation can lead to situations unachievable in the last years. Visiting historical places without a single tourist, such as Ouarzazate in Morocco or Venice in Italy are examples of it. There are a lot of golden opportunities that may not happen again in history, worth if you make the effort to look for them. 
+
+Other situations are not as welcomed. Restaurants in some countries will be closed or serving food just by delivery. Looking at the bright side, you can take them to a park, seaside, or viewpoint to enjoy the food along with the views.
+
+![Enjoying maltese bragioli with views to Valletta, Malta](./assets/enjoying_maltese_bragioli_with_views_to_valletta_malta_enjoying_maltese_bragioli_with_views_to_valletta_malta.jpeg)
+
 ## Conclusions
 
 ## Resources
 
 ### Traveling
 
-### Covid19
+### Covid-19
 
 ### Coliving
 
