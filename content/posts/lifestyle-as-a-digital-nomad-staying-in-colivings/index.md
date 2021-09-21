@@ -145,6 +145,16 @@ Other situations are not as welcomed. Restaurants in some countries will be clos
 
 ## Conclusions
 
+In the end, this nomad lifestyle has made me grow and open my mind more than I imagined in the first place.
+
+Staying in colivings has been key to improve this experience. A great resource to meet international people to learn from and have adventures with. Plus the amenities that make traveling easier.
+
+I suppose the best I got is the awareness that this kind of lifestyle is possible and realize it's the way I want to live right now.
+
+![Having a sunset walk with Nora along a beach in Normandy](./assets/having_a_sunset_walk_with_nora_along_a_beach_in_normandy.jpeg)
+
+The coliving world is still young and will have to face some issues in the near future, which are already happening. Such as traveling as a family, or the simple fact of staying with pets and kids around people of such different ages.
+
 ## Resources
 
 ### Traveling
