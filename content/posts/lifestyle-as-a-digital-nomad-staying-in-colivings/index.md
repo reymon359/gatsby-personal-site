@@ -39,6 +39,50 @@ I have always considered myself an adventurous person. I wanted to explore, live
 
 ![Going on an adventure](./assets/going_on_an_adventure.gif)
 
+When I moved away to work remotely from a different place, the truth is that I didn’t even know the term “digital nomad”. It was only when I met other people living that way when I got introduced to it. 
+
+And it wasn’t until months later that I realized I was becoming myself one. 
+
+It was just a personal experiment at the beginning.
+
+### My opinion and what I learned from it
+
+Time has passed, and now I have a better idea of this lifestyle. Fortunately, I have found most of the things I was looking for, plus extra experiences and situations I would not have imagined.
+
+**Location independence**
+
+I have ended up with this feeling of “not having a home and my home is anywhere at the same time.”
+
+Looking at a map and thinking, “I could be living there next week”  gives me a rush of freedom, which I love. However, the uncertainty of not knowing where you will be in the future can be stressful for certain people.
+
+**Traveling**
+
+Being faced with the fact of traveling with just a backpack and a small suitcase taught me to realize what is important in my life and what I really need to live it. Embracing minimalism and reducing one’s possessions helped me to achieve this and experience more freedom.
+
+![A backpack and a bag with everything I need to live](./assets/backpack_and_bag.jpg)
+
+Although this lifestyle offers almost unlimited flexibility, most people may end up in burnout with the lack of stability from constantly traveling which includes booking planes, requesting visas, and searching for accommodations, among others. They will probably go “back to normal” if not finding a way to deal with it, such as _slow traveling._
+
+As an organized person, I myself suffered from this. In the end, I learned to let things flow and to not overplan. Staying longer in the locations and decreasing the travel frequency also helps with the burnout mentioned above. Plus, the longer you stay, the deeper you go into the culture. When people just have a few weeks to visit a place, they tend to go to the main attractions because they don’t want to miss them. They spend most of the time surrounded by tourists in tourist spots and not living with locals as one of them.
+
+However, maybe you don’t have this kind of issue and prefer to travel more frequently. And if you are not sure, you can just try it and learn from it.
+
+**Relationships**
+
+Meeting and learning from new international people while living experiences with them may be one of the best parts of this lifestyle. 
+
+Surprisingly, even though you meet a lot of people, there is a high chance to experience loneliness. It is hard to build strong relationships with other people that don’t stay longer in your location. However, when people stay longer at your place, it becomes pretty easier if you do things like coliving and sharing experiences together. The harder part becomes to maintain those relationships when you separate.
+
+You may get tired of meeting new people that you may not see again in your life or even the next week. This is another reason people end up staying longer in a location, so the connections you make last longer.
+
+Keep in mind these relationships properties vary from the kind of relationship; friendship, romantic, work-related, etc.
+
+**Conclusion**
+
+In my opinion, weighing the pros and cons, the experiences and personal growth you get from this lifestyle are worth the downsides.
+
+![Staring amazed in front of Ouarzazate main doors](./assets/staring_amazed_in_front_of_ouarzazate_main_doors.jpeg)
+
 ## Coliving
 
 ### Definition
