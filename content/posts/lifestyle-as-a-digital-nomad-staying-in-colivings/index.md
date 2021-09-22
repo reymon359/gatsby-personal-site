@@ -15,6 +15,7 @@ url: 'none'
 Here I will share my experiences living as a digital nomad while staying mostly in Colivings. After being asked multiple times about the topic, the aim of this lecture is to help other people have a better idea of this lifestyle.
 
 I will explain first the concept behind _Digital Nomad_ and _Coliving._ Adding my point of view and experiences. In the end, I will share several **conclusions** and **useful resources.**
+
 ## Table of Contents
 
 todo
@@ -157,13 +158,41 @@ The coliving world is still young and will have to face some issues in the near 
 
 ## Resources
 
+Here are all the resources I have gathered while traveling around. I hope they help you if you decide to embrace, or at least try, this lifestyle.
+
 ### Traveling
+
+Sites I have used the most to check flight connections, deals, or visa restrictions.
+
+- [Google flights.](https://www.google.com/flights) Easy to use for checking flights. It provides a map with enough filters to look for the best days and places to travel.
+- [FlightConnections.](https://www.flightconnections.com/) A map site to check flight routes worldwide. Find scheduled flights from all airports in the world. Look for the best-connected places to visit from your current location.
+- [Escape.](https://greatescape.co/) A site to find the cheapest flights. It has advanced filters unavailable in other apps. 
+- [Nomadlist.](https://nomadlist.com/) Plenty of information about the most popular digital nomad destinations.
+- [Travelscope.](https://www.markuslerner.com/travelscope/) Interactive map to check International visa regulations.
+- [Numbeo Cost of Living.](https://www.numbeo.com/cost-of-living/) A crowd-sourced global database with quality of life statistics.
+
 
 ### Covid-19
 
-### Coliving
+The most useful sites related to Covid-19 and the current global situation. After looking at them, I always double-check with official government sites from the countries I decide to visit.
+
+- [Canitravel.](https://canitravel.net/) Look which countries you can travel to based on the country you are, its restrictions, vaccination advantages, etc.
+- [COVID-19 Travel Regulations Map.](https://www.iatatravelcentre.com/world.php) Updated world map with each country restrictions. Used by airlines and other aviation partners to securely manage the passenger document verification process.
+- [Traveldoc.](https://www.traveldoc.aero/) Check if your personal documents meet the restrictions of a destination.
+
+### Colivings
+
+I discover colivings either searching Google or based on suggestions from friends I meet on the way. Here I list the top three colivings I have enjoyed the most (in no particular order). 
+
+- [Nine Coliving.](https://www.ninecoliving.com/) Located in Tenerife, Spain, in the heart of the beautiful Orotava Valley.
+- [SunDesk.](https://www.sun-desk.com/)  Located in Taghazout, Morocco, a local town next to the beach.
+- [Chateau Coliving.](https://www.chateaucoliving.com/) A castle located in the heart of Normandy, France. 
+
+[Coliving Community](https://coliving.community/). I recently found this site to look for colivings, which includes a map and filters for them.
 
 ### My map
+
+Lastly, I have [a map](https://ramonmorcillo.com/map) where I collect the places I visit or want to visit. It includes colivings, restaurants, cities nature places, among others. You can filter them using the checkboxes from the legend.
 
 ## Acknowledgments
 
