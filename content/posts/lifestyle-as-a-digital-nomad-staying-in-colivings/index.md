@@ -28,7 +28,7 @@ Actually, this definition from Wikipedia is quite accurate:
 
 > Digital nomads are people who use telecommunications technologies to earn a living and conduct their life in a nomadic manner. Such workers often work remotely from foreign countries, coffee shops, public libraries, co-working spaces, or recreational vehicles. The most common types of digital nomads include retired or semi-retired persons, independently wealthy or entrepreneurs, and (often younger) remote workers. People typically become digital nomads for many reasons, including the quest for financial independence and a career that allows for location independence. - [Wikipedia](https://en.wikipedia.org/wiki/Digital_nomad)
 
-Although most people I met had a laptop (or similar) to work with, this doesn’t mean all of them were doing a job associated with web development, digital marketing, or similar. Some had other jobs and used a computer to get tasks done like filling reports, sending files, or attending meetings.
+Although most people I met had a laptop (or similar) to work with, this doesn’t mean all of them were doing a job associated with web development, digital marketing, or similar. Many had jobs where they used a computer to get tasks done like filling reports, sending files, or attending meetings.
 
 Others didn't even have a job, like students who attended online classes and completed their homework.
 
@@ -96,14 +96,14 @@ While looking for accommodations in Tenerife with a proper area to work, I found
 
 ### Characteristics
 
-Right now, after coronavirus and the increase of remote working, more and more colivings are appearing. However, not all of them are the kind of coliving I have had the chance to live in. Some of them are just big companies owning entire buildings that offer a coliving experience but end up being nothing more than sharing a flat.
+Right now, after coronavirus and the increase of remote working, more and more colivings are appearing. However, not all of them are the kind of coliving I have had the chance to live in. A big part of them are just big companies owning entire buildings that offer a coliving experience but end up being nothing more than sharing a flat.
 
 ![[Nine coliving](https://www.ninecoliving.com/) shared kitchen and coworking](./assets/nine_coliving_shared_kitchen_and_coworking.jpeg)
 
 The colivings I have been share at least these characteristics:
 - A **coworking** area to work in a productive environment. Including a decent Wifi connection, video call areas, and 24h availability in case you need to work in a different timezone.
 - **Shared common areas** such as a kitchen or living room where you interact, cook, and enjoy meals with others.  Probably the most important one.
-- A variety of **activities,** from yoga or hiking to sharing-skills meetings, or going out for some drinks. Depending on what the community is up to. And depending on the location; It's a bit hard to go surfing when you are in the middle of Germany.
+- A variety of **activities,** from yoga or hiking to sharing-skills meetings, or going out for drinks. Depending on what the community is up to. And depending on the location; It's a bit hard to go surfing when you are in the middle of Germany.
 - A **community** you share the place with. You live with ten residents, more or less, depending on the coliving accommodations. They normally share similar interests while having different backgrounds, which gives you new points of view. Thanks to this community, you don't have to look for new friends when arriving at a new location.
 
 ### Price
@@ -114,7 +114,7 @@ A great advantage of colivings is the release of paying monthly bills for electr
 
 ### Stay
 
-The time people spend in these locations varies on the coliving rules and the traveler situation. Some colivings encourage longer stays enforcing a minimum booking time or discounts for longer stays. Others don’t have staying restrictions and, although it's quite unusual, people may be there for just a weekend.
+The time people spend in these locations varies on the coliving rules and the traveler situation. Most colivings encourage longer stays enforcing a minimum booking time or discounts for longer stays. Others don’t have staying restrictions and, although it's quite unusual, people may be there for just a weekend.
 
 ### Community
 
@@ -124,23 +124,23 @@ Another advantage is having people to do plans with. Plus, you connect with them
 
 > Ironically, I feel that I connect much deeper and much quicker with people when on the road, than with people "back at home". When you live with someone 24/7 in a coliving space in a foreign country & go on a desert trip with them, this is much deeper than living in separate apartments in the same city and meeting every now and then for a regular dinner. Both; the quantity of time & the depth of the experience itself is much more intense. - Tobias Hug
 
-Most of the people I met were digital nomads, however, other people used to live here too, such as the hosts, locals, or just travelers. Speaking of locals, sometimes coliving spaces can feel like “foreigners bubbles” when colivings don’t make the effort to integrate their guests with them.
+Most of the people I met were digital nomads, however, other people used to live here along, such as the hosts, locals, or just travelers. Speaking of locals, sometimes coliving spaces can feel like “foreigners bubbles” when colivings don’t make the effort to integrate their guests with them.
 
 Although living with a lot of people may seem overwhelming, you can have privacy when you want to have time for yourself. This is the opposite common issue of the standard digital nomad who travels mostly alone and has to make an effort to meet people.
 
-![About to catch some waves with friends from [SunDesk](https://www.sun-desk.com/) in Imsouane Beach, Morocco](./assets/about_to_catch_some_waves_with_friends_from_sun_desk_in_imsouane_beach_morocco.jpeg)
+![About to catch great waves with friends from [SunDesk](https://www.sun-desk.com/) in Imsouane Beach, Morocco](./assets/about_to_catch_great_waves_with_friends_from_sun_desk_in_imsouane_beach_morocco.jpeg)
 
 ## Coronavirus
 
-The global pandemic has impulsed the digital nomad lifestyle. More companies offer now remote work, which makes it easier for some people to live this way. However, although more people can live location independent, most of them don’t consider it or have stopped moving because of the restrictions imposed by other countries. Flight cancellations, quarantines, or medical tests for traveling represent a barrier for most of them. 
+The global pandemic has impulsed the digital nomad lifestyle. More companies offer now remote work, which makes it easier for people to live this way. However, although more people can live location independent, most of them don’t consider it or have stopped moving because of the restrictions imposed by other countries. Flight cancellations, quarantines, or medical tests for traveling represent a barrier for most of them. 
 
 At the bottom of the article, I have collected useful resources for traveling, with and without Covid-19, which I have been using the most.
 
-Restrictions and prices for medical tests vary from one country to another. Countries like Malta offered free PCRs to anyone, tourists included. In France you could get vaccinated for free too as a foreigner.
+Restrictions and prices for medical tests vary from one country to another. Countries like Malta offered free PCRs to anyone, tourists included. In France you could get vaccinated for free as a foreigner.
 
 Traveling in this global situation can lead to situations unachievable in the last years. Visiting historical places without a single tourist, such as Ouarzazate in Morocco or Venice in Italy are examples of it. There are a lot of golden opportunities that may not happen again in history, worth if you make the effort to look for them. 
 
-Other situations are not as welcomed. Restaurants in some countries will be closed or serving food just by delivery. Looking at the bright side, you can take them to a park, seaside, or viewpoint to enjoy the food along with the views.
+Other situations are not as welcomed. Restaurants may be closed or serving food just by delivery. Looking at the bright side, you can take them to a park, seaside, or viewpoint to enjoy the food along with the views.
 
 ![Enjoying maltese bragioli with views to Valletta, Malta](./assets/enjoying_maltese_bragioli_with_views_to_valletta_malta_enjoying_maltese_bragioli_with_views_to_valletta_malta.jpeg)
 
@@ -154,7 +154,7 @@ I suppose the best I got is the awareness that this kind of lifestyle is possibl
 
 ![Having a sunset walk with Nora along a beach in Normandy](./assets/having_a_sunset_walk_with_nora_along_a_beach_in_normandy.jpeg)
 
-The coliving world is still young and will have to face some issues in the near future, which are already happening. Such as traveling as a family, or the simple fact of staying with pets and kids around people of such different ages.
+The coliving world is still young and will have to face challenging issues in the near future, which are already happening. Such as traveling as a family, or the simple fact of staying with pets and kids around people of such different ages.
 
 ## Resources
 
@@ -196,5 +196,17 @@ Lastly, I have [a map](https://ramonmorcillo.com/map) where I collect the places
 
 ## Acknowledgments
 
+All these adventures and personal growth are thanks to all the friends made on the way. I could write a whole article just including your names. Thank you all, I hope you are doing well, and the future brings us back together.
 
+To all the family and friends that support me and try to keep the contact no matter if I am far away or around their location.
+
+And thanks to my company and teammates. They make this possible and support me with my decisions more than I could wish for. They make it easier for me to live this kind of life.  
+
+
+![The amazing people I met on the way](./assets/the_amazing_people_i_met_on_the_way.jpeg)
+
+
+Lastly, thanks to Tobias Hug, for the best review someone made me of an article.
+
+By the way, the article’s cover picture is from a bonfire at Chateau Coliving, in Normandy
 
