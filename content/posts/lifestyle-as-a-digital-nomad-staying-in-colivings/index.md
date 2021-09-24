@@ -6,7 +6,7 @@ date: '2021-09-20'
 author: 'Ramón Morcillo'
 tags: ['Adventures', 'Digital nomad', 'Coliving', 'Coronavirus']
 published: true
-commentsUrl: TODO
+commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/631
 featuredImage: './assets/chateau_coliving_bonfire.jpeg'
 type: 'post'
 url: 'none'
