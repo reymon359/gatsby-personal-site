@@ -169,7 +169,7 @@ I suppose the best I got is the awareness that this kind of lifestyle is possibl
 
 ![Having a sunset walk with Nora along a beach in Normandy](./assets/having_a_sunset_walk_with_nora_along_a_beach_in_normandy.jpeg)
 
-The coliving world is still young and will have to face challenging issues in the near future, which are already happening. Such as traveling as a family, or the simple fact of staying with pets and kids around people of such different ages.
+The coliving world is still young and will have to face challenging issues in the near future, which are already happening. Such as traveling as a family, or the simple fact of staying with pets and kids around people of different ages.
 
 ## Resources
 
@@ -207,11 +207,11 @@ I discover colivings either searching Google or based on suggestions from friend
 
 ### My map
 
-Lastly, I have [a map](https://ramonmorcillo.com/map) where I collect the places I visit or want to visit. It includes colivings, restaurants, cities nature places, among others. You can filter them using the checkboxes from the legend.
+Lastly, I have [a map](https://ramonmorcillo.com/map) where I collect the places I visit or want to visit. It includes colivings, restaurants, cities, and nature places. You can filter them using the checkboxes from the legend.
 
 ## Acknowledgments
 
-All these adventures and personal growth are thanks to all the friends made on the way. I could write a whole article just including your names. Thank you all, I hope you are doing well, and the future brings us back together.
+All these adventures and personal growth are thanks to the friends made on the way. I could write a whole article just including your names. Thank you all, I hope you are doing well, and the future brings us back together.
 
 To all the family and friends that support me and try to keep the contact no matter if I am far away or around their location.
 
@@ -221,7 +221,7 @@ And thanks to my company and teammates. They make this possible and support me w
 ![The amazing people I met on the way](./assets/the_amazing_people_i_met_on_the_way.jpeg)
 
 
-Lastly, thanks to Tobias Hug, for the best review someone made me of an article.
+Lastly, thanks to Tobias Hug, for the best review someone ever made me of an article.
 
 By the way, the article’s cover picture is from a bonfire at Chateau Coliving, in Normandy
 
