@@ -8670,10 +8670,10 @@ mute-stream@0.0.8, mute-stream@~0.0.4:
   resolved "https://registry.npmjs.org/mute-stream/-/mute-stream-0.0.8.tgz"
   integrity sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==
 
-nanocolors@^0.1.5:
-  version "0.1.6"
-  resolved "https://registry.npmjs.org/nanocolors/-/nanocolors-0.1.6.tgz"
-  integrity sha512-2pvTw6vYRaBLGir2xR7MxaJtyWkrn+C53EpW8yPotG+pdAwBvt0Xwk4VJ6VHLY0aLthVZPvDfm9TdZvrvAm5UQ==
+nanocolors@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.npmjs.org/nanocolors/-/nanocolors-0.2.2.tgz"
+  integrity sha512-t4mwdKizEGLFeZzDbr1r6SjwKYZQEB0Z/trGsdAIsw5EadaR010/zvJ0arkw6vznyTevcMi9BtppprJ5aqLXRg==
 
 nanoid@^3.1.25:
   version "3.1.25"
@@ -9748,12 +9748,12 @@ postcss-value-parser@^4.0.2, postcss-value-parser@^4.1.0:
   resolved "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.1.0.tgz"
   integrity sha512-97DXOFbQJhk71ne5/Mt6cOu6yxsSfM0QGQyl0L25Gca4yGWEGJaig7l7gbCX623VqTBNGLRLaVUCnNkcedlRSQ==
 
-postcss@8.3.7, postcss@^8.2.15, postcss@^8.2.9, postcss@^8.3.5:
-  version "8.3.7"
-  resolved "https://registry.npmjs.org/postcss/-/postcss-8.3.7.tgz"
-  integrity sha512-9SaY7nnyQ63/WittqZYAvkkYPyKxchMKH71UDzeTmWuLSvxTRpeEeABZAzlCi55cuGcoFyoV/amX2BdsafQidQ==
+postcss@8.3.8, postcss@^8.2.15, postcss@^8.2.9, postcss@^8.3.5:
+  version "8.3.8"
+  resolved "https://registry.npmjs.org/postcss/-/postcss-8.3.8.tgz"
+  integrity sha512-GT5bTjjZnwDifajzczOC+r3FI3Cu+PgPvrsjhQdRqa2kTJ4968/X9CUce9xttIB0xOs5c6xf0TCWZo/y9lF6bA==
   dependencies:
-    nanocolors "^0.1.5"
+    nanocolors "^0.2.2"
     nanoid "^3.1.25"
     source-map-js "^0.6.2"
 
