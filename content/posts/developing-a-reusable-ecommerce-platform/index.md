@@ -16,6 +16,8 @@ This is a story about my team's hard work developing not a single ecommerce plat
 
 I will try to focus on the relevant parts as much as possible to make it easier to understand. Having said this, a bit of domain is needed to go through this lecture.
 
+I wrote [another article](https://ramonmorcillo.com/managing-the-infrastructure-of-a-reusable-ecommerce-platform-with-terraform/) about how we manage the infrastructure of this project with Terraform.
+
 ## Table of Contents
 
 - [Context](#Context)
