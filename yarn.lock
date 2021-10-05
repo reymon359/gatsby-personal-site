@@ -1007,9 +1007,9 @@
     regenerator-runtime "^0.13.4"
 
 "@babel/standalone@^7.15.5":
-  version "7.15.6"
-  resolved "https://registry.npmjs.org/@babel/standalone/-/standalone-7.15.6.tgz"
-  integrity sha512-1N9+KHL9ZYKiDDXFgBvg8Sl135evIJgP/YZdOhqdfMMTL/zuAm6bUi/FYEwzTXYhQS8MBtRMVmmcIurif7hYiQ==
+  version "7.15.7"
+  resolved "https://registry.npmjs.org/@babel/standalone/-/standalone-7.15.7.tgz"
+  integrity sha512-1dPLi+eQEJE0g1GnUM0Ik2GcS5SMXivoxt6meQxQxGWEd/DCdSBRJClUVlQ25Vbqe49g1HG5Ej0ULhmsqtSMmg==
 
 "@babel/template@^7.10.4", "@babel/template@^7.15.4":
   version "7.15.4"
@@ -3747,24 +3747,25 @@ content-type@^1.0.4, content-type@~1.0.4:
   integrity sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==
 
 contentful-management@^7.5.1:
-  version "7.39.0"
-  resolved "https://registry.npmjs.org/contentful-management/-/contentful-management-7.39.0.tgz"
-  integrity sha512-BkzR5NTIamtSErC94Yrodt/Qwtco3zHj09lUIE+V3JlAuHpU8VgYkGsKkaLYTlTNRlTUGbr8333zJSoY/Rbwaw==
+  version "7.42.0"
+  resolved "https://registry.npmjs.org/contentful-management/-/contentful-management-7.42.0.tgz"
+  integrity sha512-Ux0l6iUEG1Tnc1Vl89jXEwddsRfo8/v06pFTpA/+N6tGdTvwF3RtQWLOpVxKWuy+9NK5TJh4oUnpc+zPsynoQA==
   dependencies:
     "@types/json-patch" "0.0.30"
     axios "^0.21.4"
-    contentful-sdk-core "^6.9.0"
+    contentful-sdk-core "^6.10.1"
     fast-copy "^2.1.0"
     lodash.isplainobject "^4.0.6"
     type-fest "^0.21.3"
 
-contentful-sdk-core@^6.9.0:
-  version "6.9.0"
-  resolved "https://registry.npmjs.org/contentful-sdk-core/-/contentful-sdk-core-6.9.0.tgz"
-  integrity sha512-fLwE0avEf81iDdJGVFUB5nC8AzI1OPg+YY33V8aFBgHkKMXpHI6zNInWnQGUekXCl2OAGKk5QkVfEAjvpkFGig==
+contentful-sdk-core@^6.10.1:
+  version "6.10.1"
+  resolved "https://registry.npmjs.org/contentful-sdk-core/-/contentful-sdk-core-6.10.1.tgz"
+  integrity sha512-q1dh5AHL3FoBc3CZThQMtnaxgFbs9BrJW8wDysdp/IT/Q2edgUQASh2fvj02T6cCh3ftMspRRe/HMfZDF9FfIQ==
   dependencies:
     fast-copy "^2.1.0"
     lodash "^4.17.21"
+    p-throttle "^4.1.1"
     qs "^6.9.4"
 
 conventional-changelog-angular@^5.0.11:
@@ -5560,10 +5561,10 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.npmjs.org/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
-gatsby-cli@^3.14.0:
-  version "3.14.0"
-  resolved "https://registry.npmjs.org/gatsby-cli/-/gatsby-cli-3.14.0.tgz"
-  integrity sha512-1Az1EEQu0txRE8eZmOo9GOxRSjhJtFseinraiIEtSeHkYuM0/gjuoKVSrtmbBFNWdOZll6QYCO3sRl6sOrwb+g==
+gatsby-cli@^3.14.1:
+  version "3.14.1"
+  resolved "https://registry.npmjs.org/gatsby-cli/-/gatsby-cli-3.14.1.tgz"
+  integrity sha512-0k8fJU2oE35U1D3sj4qFHMmKj32LJRmXeUSsDtJWdvNZ8+xhBNyIh+YGcqfqbCNicLXiPyfzvt6UwBIbOOTCRQ==
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/runtime" "^7.15.4"
@@ -5746,10 +5747,10 @@ gatsby-plugin-react-svg@3.0.1:
   dependencies:
     svg-react-loader "^0.4.4"
 
-gatsby-plugin-sharp@3.14.0:
-  version "3.14.0"
-  resolved "https://registry.npmjs.org/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.14.0.tgz"
-  integrity sha512-i4jrmOElr0mB2tWlpfxzX72zimiheGny0GF+jPPYY77Uoie43AH7GGZm6wyhdtqKlphYDhgatOMU7xeiWQar6g==
+gatsby-plugin-sharp@3.14.1:
+  version "3.14.1"
+  resolved "https://registry.npmjs.org/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.14.1.tgz"
+  integrity sha512-eLRoxLTrn5QCerIl/zaUTzJCBfPaaOZdVPhO6QUOd1o2qni6AR9QkeAw3He2e/1mnkB9wWGwJUdPiCfvUSE/pQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
     async "^3.2.1"
@@ -6065,10 +6066,10 @@ gatsby-worker@^0.5.0:
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-gatsby@3.14.1:
-  version "3.14.1"
-  resolved "https://registry.npmjs.org/gatsby/-/gatsby-3.14.1.tgz"
-  integrity sha512-6wt1MDMOfm6Zm8yiS8zDwjkth5spX7RorKKnYNNfZFyD0lztdql9jgAXFCxO0FxRDagDKxxfxj3cYyHHzPlalg==
+gatsby@3.14.2:
+  version "3.14.2"
+  resolved "https://registry.npmjs.org/gatsby/-/gatsby-3.14.2.tgz"
+  integrity sha512-1cjyfGkQ9zXtou+RhtYBprv8nYXTPuRIs4IFzBP373vBD1CdwabAC/R8kjqHfdvyNrorzg3sqRjLjActtfU8NA==
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/core" "^7.15.5"
@@ -6137,7 +6138,7 @@ gatsby@3.14.1:
     find-cache-dir "^3.3.1"
     fs-exists-cached "1.0.0"
     fs-extra "^10.0.0"
-    gatsby-cli "^3.14.0"
+    gatsby-cli "^3.14.1"
     gatsby-core-utils "^2.14.0"
     gatsby-graphiql-explorer "^1.14.0"
     gatsby-legacy-polyfills "^1.14.0"
@@ -9132,6 +9133,11 @@ p-map@^3.0.0:
   integrity sha512-d3qXVTF/s+W+CdJ5A29wywV2n8CQQYahlgz2bFiA+4eVNJbHJodPZ+/gXwPGh0bOqA+j8S+6+ckmvLGPk1QpxQ==
   dependencies:
     aggregate-error "^3.0.0"
+
+p-throttle@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.npmjs.org/p-throttle/-/p-throttle-4.1.1.tgz"
+  integrity sha512-TuU8Ato+pRTPJoDzYD4s7ocJYcNSEZRvlxoq3hcPI2kZDZ49IQ1Wkj7/gDJc3X7XiEAAvRGtDzdXJI0tC3IL1g==
 
 p-try@^1.0.0:
   version "1.0.0"
