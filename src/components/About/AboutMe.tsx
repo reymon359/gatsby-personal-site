@@ -50,13 +50,13 @@ const AboutMe: React.FC = () => {
           TypeScript
         </a>
         &nbsp;among other technologies. I use it as a place to share what I
-        learn and do. I believe in an open source world so&nbsp;
+        learn and do. I believe in an open source world and&nbsp;
         <a
           href="https://github.com/reymon359/gatsby-personal-site"
           target="_blank"
           rel="noopener noreferrer"
         >
-          here is this site's one on GitHub.
+          you can find this site code on GitHub.
         </a>
       </p>
       <p>
@@ -67,7 +67,9 @@ const AboutMe: React.FC = () => {
         >
           Here is my resume
         </a>
-        &nbsp;in case you want to have a look. Sometimes I&nbsp;
+        &nbsp;in case you want to have a look.
+      </p>
+      <p> Sometimes I&nbsp;
         <a
           href="https://twitter.com/reymon359"
           target="_blank"
@@ -81,7 +83,7 @@ const AboutMe: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          stuff
+          moments
         </a>
         &nbsp;or&nbsp;
         <a
@@ -91,7 +93,7 @@ const AboutMe: React.FC = () => {
         >
           pictures
         </a>
-        &nbsp;on Instagram. You can contact me through them or send me an email at&nbsp;
+        &nbsp;on Instagram. You can contact me through them or sending an email to&nbsp;
         <a
           rel="noopener"
           href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!"
