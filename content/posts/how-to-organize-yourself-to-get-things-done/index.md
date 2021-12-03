@@ -20,7 +20,21 @@ I added some diagrams along the lecture to understand it better. There is a chea
 
 ## Table of Contents
 
-TODO: TOC
+- [Achieving Goals](#Achieving-Goals)
+  - [From Year Goals to Daily Work](#From-Year-Goals-to-Daily-Work)
+  - [Bigger goals and uncertainty](#Bigger-goals-and-uncertainty)
+- [Managing tasks](#Managing-tasks)
+  - [Filling the bucket](#Filling-the-bucket)
+  - [Emptying the bucket](#Emptying-the-bucket)
+  - [Adding a task to the Calendar](#Adding-a-task-to-the-Calendar)
+    - [Priority](#Priority)
+    - [Recurrence](#Recurrence)
+- [Automatize](#Automatize)
+- [Diversify](#Diversify)
+- [Review](#Review)
+- [Conclusions](#Conclusions)
+- [Resources](#Resources)
+- [Acknowledgments](#Acknowledgments)
 
 ## Achieving Goals
 
