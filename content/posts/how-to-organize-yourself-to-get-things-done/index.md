@@ -6,7 +6,7 @@ date: '2021-11-26'
 author: 'Ramón Morcillo'
 tags: ['Productivity', 'Goals', 'Time management', 'Life']
 published: true
-commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/631
+commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/683
 featuredImage: './assets/cover.png'
 type: 'post'
 url: 'none'
