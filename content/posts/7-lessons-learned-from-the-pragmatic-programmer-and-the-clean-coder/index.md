@@ -20,17 +20,16 @@ These books focus not only on how to write code but on teaching you best practic
 
 ## Table of Contents
 
-- [Table of Contents](#table-of-contents)
-- [Taking Responsibility](#taking-responsibility)
-- [Testing](#testing)
-- [Teamwork](#teamwork)
-- [Estimating](#estimating)
-- [Tracer bullets](#tracer-bullets)
-- [Handling pressure](#handling-pressure)
-- [Refactoring](#refactoring)
-- [Main differences](#main-differences)
-- [Conclusions](#conclusions)
-- [Resources](#resources)
+- [Taking Responsibility](#Taking-Responsibility)
+- [Testing](#Testing)
+- [Teamwork](#Teamwork)
+- [Estimating](#Estimating)
+- [Tracer bullets](#Tracer-bullets)
+- [Handling pressure](#Handling-pressure)
+- [Refactoring](#Refactoring)
+- [Main differences](#Main-differences)
+- [Conclusions](#Conclusions)
+- [Resources](#Resources)
 
 ## Taking Responsibility
 
