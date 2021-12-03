@@ -12,11 +12,11 @@ type: 'post'
 url: 'none'
 ---
 
-In the last few years, I have been improving the way I organize myself to get things done. It started with a humble to-do list, and now I have reached a point where the method is complex enough that I spend too much time explaining it to others when they ask me about it. Hence, the reason I am writing this article. 
+In the last few years, I have been improving the way I organize myself to get things done. It started with a humble to-do list, and now I have reached a point where the method is complex enough that I spend excessive time explaining it to others when they ask me about it. Hence, the reason I am writing this article. 
 
 Any system is good enough if you manage to get things done with it. All the same time, everything can be improved. This is the method I use, which I hope will help you to be more productive.
 
-I added some diagrams along the lecture to understand it better. There is a cheat sheet including all of them in the resources section.
+I added diagrams along the lecture to understand it better. There is a cheat sheet including all of them in the resources section.
 
 ## Table of Contents
 
@@ -56,7 +56,7 @@ When reviewing and planning each week, assign a priority to the goals. This will
 
 Be realistic. Plan the week according to the time and activities you will have. If you are on holiday or sick, the amount of time and effort you can spend will be different from a more normal week.
 
-Each day, dedicate some minutes to see how the weekly goals are coming along. Plan the next day depending on their progress and priority.
+Each day, dedicate a couple of minutes to see how the weekly goals are coming along. Plan the next day depending on their progress and priority.
 
 For example, if you want to read more on a certain year, you can set up a Year Goal for reading X books. Afterward, create an Achievable Goal, such as to read a book. Then break it down into Weekly Goals like reading X pages or X chapters. Lastly, each day, have a look at what you will focus on the day after towards completing your Weekly goals. It could be reading for 2 hours or just 30 minutes. It depends on how the goal is coming along and if there are others with more priority that need more time.  
 
@@ -148,7 +148,7 @@ Examples of recurrent tasks that could have reminders:
 
 Remember to not be too strict with your priorities. It is crucial to review and update the tasks when requirements change. Adjust the priority or postpone them if needed.
 
-Keep in mind you can remove them too. It makes no sense to have a task on the calendar that no longer needs to be done.
+Keep in mind you can remove them as well. It makes no sense to have a task on the calendar that no longer needs to be done.
 
 ![Adding a task to the Calendar](./assets/adding_a_task_to_the_calendar.png)
 
@@ -189,7 +189,7 @@ This obviously means splitting those goals into smaller ones. For example, if yo
 
 The hardest part of this system is getting started with it. Do not try to have a perfect way to organize yourself from day one. Focus on having something that works. 
 
-Once you reach this point, review it after some time. Check what is working and what isn’t. Look for ways to improve it.
+Once you reach this point, review it from time to time. Check what is working and what isn’t. Look for ways to improve it.
 
 Ask yourself these simple questions every time you review your system:
 
@@ -215,13 +215,13 @@ Keep in mind, this is just how I am particularly organizing myself at this momen
 
 ## Resources 
 
-Here are some techniques and tools to help you manage your time and prioritize tasks.
+Here are great techniques and tools to help you manage your time and prioritize tasks.
 
 - **Eisenhower Matrix.** A great method for setting priorities and goals. Use it from time to time to evaluate your current task and overall progress. [More info.](https://reymon359.github.io/how-to-live/#/The%20Eisenhower%20Matrix/index)
 - **Pomodoro Technique.** A time management method that uses a timer to break work into intervals, traditionally 25 minutes in length, separated by short breaks.
 - **Eat the Frog.** A technique, which recommends you to complete the hardest task first.  Giving you a strong sense of achievement by doing it and focusing on more enjoyable projects later.
 
-[Here](https://reymon359.github.io/how-to-live/#/./Categories/Productivity) is some useful advice about productivity, I wrote some in the past.
+[Here](https://reymon359.github.io/how-to-live/#/./Categories/Productivity) is useful advice about productivity, which I wrote in the past.
 
 I made a cheat sheet with the most important points from the article.
 
