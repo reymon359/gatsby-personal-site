@@ -46,7 +46,7 @@
     "gatsby-transformer-json": "3.14.0",
     "gatsby-transformer-remark": "4.11.0",
     "gatsby-transformer-sharp": "3.14.0",
-    "postcss": "8.4.5",
+    "postcss": "8.4.6",
     "prism-themes": "1.9.0",
     "prismjs": "1.26.0",
     "prop-types": "15.8.1",
