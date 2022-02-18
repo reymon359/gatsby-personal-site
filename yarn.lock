@@ -2212,10 +2212,10 @@
   resolved "https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.1.tgz"
   integrity sha512-EaCxbanVeyxDRTQBkdLb3Bvl/HK7PBK6UJjsSixB0iHKoWxE5uu2Q/DgtpOhPIojN0Zl1whvOd7PoHs2P0s5eA==
 
-"@types/styled-components@5.1.22":
-  version "5.1.22"
-  resolved "https://registry.npmjs.org/@types/styled-components/-/styled-components-5.1.22.tgz"
-  integrity sha512-zQzf/0aGtgFDjB942f8IaKA6UilFziDza9wXkAX5mpiSWA/FBZBU6yUavvczulTvoR6759h6CH8HuuIcJDBgZA==
+"@types/styled-components@5.1.23":
+  version "5.1.23"
+  resolved "https://registry.npmjs.org/@types/styled-components/-/styled-components-5.1.23.tgz"
+  integrity sha512-zt8oQGU6XB4LH1Xpq169YnAVmt22+swzHJvyKMyTZu/z8+afvgKjjg0s79aAodgNSf36ZOEG6DyVAW/JhLH2Nw==
   dependencies:
     "@types/hoist-non-react-statics" "*"
     "@types/react" "*"
