@@ -34,6 +34,20 @@ Before moving to other topics, regarding the meaning of life, [here is an articl
 
 ## How I would like to die 
 
+This may be the best opportunity I have to address this subject, so let’s go. 
+
+One of my favorite movies is Big Fish, and definitely the part I like the most about it is the ending. When he arrives at the river and everyone is there, joyful to celebrate his farewell and see him again one last time. 
+
+![Sunset in the Trajineras from CDMX, Mexico](./assets/sunset-in-the-trajineras-from-cdmx-mexico.jpg)
+
+If I could choose how to leave the world, it would be in the same way. I would reunite
+all the people I interacted with in my life, to a greater or lesser extent. And meeting once again at a big feast party (One Piece post arc style) to exchange the last good moments.
+
+And then, there is the question of what to do with my body. As of today, I don’t really care what happens to it, as I will not be able to care for anything when dead. 
+
+Being properly preserved and then being awakened in the far future would be awesome (although I believe it will not be available in my lifetime).
+I would be pleased to behold how incredible the world of the future is going to be with all the technological advances.
+
 ## My feelings regarding death
 
 ## The purpose behind this article
