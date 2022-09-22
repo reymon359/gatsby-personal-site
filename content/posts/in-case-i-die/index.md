@@ -50,6 +50,11 @@ I would be pleased to behold how incredible the world of the future is going to 
 
 ## My feelings regarding death
 
+![Sunset in Canggu, Bali, Indonesia](./assets/sunset-in-canggu-bali-indonesia.jpg)
+
 ## The purpose behind this article
 
+![Sunset in Nine Coliving, Spain](./assets/sunset-in-nine-coliving-spain.jpg)
 ## Greetings
+
+![Sunset in Lisbon, Portugal](./assets/sunset-in-lisbon-portugal.jpg)
