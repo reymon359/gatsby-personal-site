@@ -1,12 +1,12 @@
 ---
 id: 'in-case-i-die'
 title: 'In case I die'
-description: 'Some thoughts about death for the people that care for me.'
-date: '2022-09-16'
+description: 'Thoughts about death for the people that care for me.'
+date: '2022-10-03'
 author: 'Ramón Morcillo'
 tags: ['Life', 'Death', 'Philosophy']
 published: true
-commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/683
+commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/728
 featuredImage: './assets/cover.jpg'
 type: 'post'
 url: 'none'
@@ -26,9 +26,9 @@ Not only that, I am also grateful for all the moments I lived in my years of gro
 
 I have also been able to live a [digital nomad life](https://ramonmorcillo.com/lifestyle-as-a-digital-nomad-staying-in-colivings/) for the last few years, which has brought me so much fun and adventures while getting to know amazing people from all over the world. 
 
-At some point, I felt some kind of fullness in life, not that I had found a purpose or meaning, but that I found a way of living I truly enjoyed and wanted to keep living.
+At some point, I felt a form of fullness in life, not that I had found a purpose or meaning, but that I found a way of living I truly enjoyed and wanted to keep living.
 
-Actually, the facts above and other thoughts were the precursors to my [How to Live](https://reymon359.github.io/how-to-live/#/) project. Although my opinion on some of the subjects mentioned there have changed, the fundamentals and purpose remain the same
+Actually, the facts above and other thoughts were the precursors to my [How to Live](https://reymon359.github.io/how-to-live/#/) project. Although my opinion on a few of the subjects mentioned there have changed, the fundamentals and purpose remain the same
 
 Before moving to other topics, regarding the meaning of life, [here is an article](https://moretothat.com/the-meaning-of-life-is-absurd/) I recently read whose point of view I agree with the most. Hope you find it helpful.
 
@@ -81,4 +81,4 @@ By the way, the code from this website is [open-sourced on GitHub](https://githu
 
 ![Sunset in Lisbon, Portugal](./assets/sunset-in-lisbon-portugal.jpg)
 
-The pictures in the article are just some of the sunsets from last year. The cover one is the  "Cala Cantalar", probably my favorite spot in my hometown. I enjoyed wonderful moments with wonderful people there.
+The pictures in the article are just some of the sunsets from last year. The cover one is the "Cala Cantalar", probably my favorite spot in my hometown. I enjoyed wonderful moments with wonderful people there.
