@@ -2,11 +2,11 @@
 id: 'in-case-i-die'
 title: 'In case I die'
 description: 'Thoughts about death for the people that care for me.'
-date: '2022-09-16'
+date: '2022-10-03'
 author: 'Ramón Morcillo'
 tags: ['Life', 'Death', 'Philosophy']
 published: true
-commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/683
+commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/728
 featuredImage: './assets/cover.jpg'
 type: 'post'
 url: 'none'
