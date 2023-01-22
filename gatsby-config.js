@@ -8,7 +8,7 @@ module.exports = {
   pathPrefix: '/gatsby-personal-site',
   siteMetadata: {
     title: `ramonmorcillo.com`,
-    description: `My personal site made with Gatsby.js`,
+    description: `Ramón Morcillo's website`,
     siteUrl: `https://ramonmorcillo.com`,
     image: `/images/ramon_morcillo_meta_image.jpg`,
     googleSiteVerification:
