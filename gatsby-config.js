@@ -134,7 +134,9 @@ module.exports = {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
           trackingIds: [
-              process.env.GA_MEASUREMENT_ID, // GA Measurement
+            process.env.GA_MEASUREMENT_ID ||
+            'Add the Google Measurement ID here',
+               // GA Measurement
           ],
           gtagConfig: {
               optimize_id: 'OPT_CONTAINER_ID',
