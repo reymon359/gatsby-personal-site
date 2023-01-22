@@ -1,7 +1,7 @@
 ---
 id: 'mapmelon'
 title: 'Mapmelon'
-description: "The easy way to join your friends' adventures."
+description: "Explore the world with your co-living family"
 date: '2022-11-03'
 author: 'Ramón Morcillo'
 tags: [ 'Adventures', 'React', 'PWA', 'Digital Nomad']
