@@ -139,9 +139,6 @@ module.exports = {
                // GA Measurement
           ],
           gtagConfig: {
-              optimize_id: 'OPT_CONTAINER_ID',
-              anonymize_ip: true,
-              cookie_expires: 0,
               send_page_view: true,
           },
           pluginConfig: {
