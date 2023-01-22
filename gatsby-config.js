@@ -131,13 +131,26 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-gtag',
       options: {
-        trackingId:
-          process.env.GOOGLE_ANALYTICS_TRACKING_ID ||
-          'Add the Google Analytics Tracking ID'
-      }
-    },
+          trackingIds: [
+            process.env.GA_MEASUREMENT_ID ||
+            'Add the Google Measurement ID here',
+               // GA Measurement
+          ],
+          gtagConfig: {
+              optimize_id: 'OPT_CONTAINER_ID',
+              anonymize_ip: true,
+              cookie_expires: 0,
+          },
+          pluginConfig: {
+              head: true,
+          },
+      },
+  }, 
+
+
+
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
