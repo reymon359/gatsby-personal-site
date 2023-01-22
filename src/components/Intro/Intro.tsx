@@ -59,13 +59,14 @@ const Title = styled.h1`
 
 interface IntroProps {
   fixed: boolean
-  title: string
 }
 
-const Intro: React.FC<IntroProps> = ({fixed, title}) => {
+const Intro: React.FC<IntroProps> = ({fixed}) => {
   return (
     <Wrapper fixed={fixed}>
-      <Title>{title}</Title>
+      <Title>
+        Hey, I am Ramón 👋
+      </Title>
     </Wrapper>
   )
 }

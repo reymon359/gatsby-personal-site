@@ -16,18 +16,18 @@ module.exports = {
       'Add the Google Site Verification',
     author: {
       name: `Ramon Morcillo`,
-      intro: `Hi, I am Ramón Morcillo, a Software Engineer from Spain`,
+      intro: `Hey, I am Ramón 👋`,
       url: `https://ramonmorcillo.com`,
       email: `hey@ramonmorcillo.com`
     },
     social: [
+      {name: `Twitter`, socialUrl: `https://twitter.com/reymon359`},
       {name: `GitHub`, socialUrl: `https://github.com/reymon359`},
+      {name: `Mapmelon`, socialUrl: `https://www.mapmelon.com/reymon359/`},
       {
-        name: `Linkedin`,
+        name: `LinkedIn`,
         socialUrl: `https://www.linkedin.com/in/ramon-morcillo/`
       },
-      {name: `Codepen`, socialUrl: `https://codepen.io/reymon359`},
-      {name: `Twitter`, socialUrl: `https://twitter.com/reymon359`}
     ]
   },
   plugins: [
@@ -142,6 +142,7 @@ module.exports = {
               optimize_id: 'OPT_CONTAINER_ID',
               anonymize_ip: true,
               cookie_expires: 0,
+              send_page_view: true,
           },
           pluginConfig: {
               head: true,

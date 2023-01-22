@@ -45,8 +45,11 @@ A personal site made with the static site generator <a href="https://www.gatsbyj
   </a>
 </p>
 
+
 <!-- Long description -->
 This site is meant to be a place to add and share my works about the things I learn and what I'm interested in. It was built from the [Gatsby's default starter](https://github.com/gatsbyjs/gatsby-starter-default) 
+
+IMPORTANT: You know what they say about looking at your own code. I was learning Gatsby, React, and TypeScript by the time I made this, so I'm sure there are a lot of things that should be improved. Please be aware of that 😉. 
 
 <!-- Technologies -->
 ## Built With these Technologies

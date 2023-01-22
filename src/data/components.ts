@@ -5,9 +5,7 @@ export const components = {
       desktop: `Move around the screen or scroll it`
     }
   },
-  intro: {
-    title: `Hi, I am Ramón Morcillo, a Software Engineer from Spain`
-  },
+
   notFound: {
     notFoundImageSrc: `../../../images/sup_seal.gif`
   }
