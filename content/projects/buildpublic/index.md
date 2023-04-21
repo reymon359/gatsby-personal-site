@@ -8,5 +8,4 @@ tags: [ 'React', 'PWA', 'BuildInPublic', 'Entrepenurship']
 published: true
 featuredImage: './buildPublic.png'
 type: 'project'
-url: 'https://www.buildpublic.app/'
 ---
