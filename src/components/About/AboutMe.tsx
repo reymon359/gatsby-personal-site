@@ -17,62 +17,35 @@ const Content = styled.main`
 const AboutMe: React.FC = () => {
   return (
     <Content>
-  <p>
-    Innovative problem solver and experienced maker with a passion for excellence.
-  </p>
-  <p>
-    Committed to continuous growth and improvement, both personally and professionally.
-  </p>
-  <p>
-    This website serves as a platform for sharing my knowledge and achievements.
-  </p>
- <p>
-    <a
-      href="../../../files/ramon-morcillo-resume.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Here is my resume
-    </a>
-    &nbsp;for further details.
-  </p> 
-  <p> Occasionally, I&nbsp;
-    <a
-      href="https://twitter.com/reymon359"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      share insights
-    </a>
-    &nbsp;and post&nbsp;
-    <a
-      href="https://www.instagram.com/ramon.mor/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      moments
-    </a>
-    &nbsp;or&nbsp;
-    <a
-      href="https://www.instagram.com/ramon.mor.photos/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      captivating images
-    </a>
-    &nbsp;on Instagram.
-  </p>
-  <p>
-    Feel free to connect with me through these platforms or by sending an email to&nbsp;
-    <a
-      rel="noopener"
-      href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!"
-    >
-      hey@ramonmorcillo.com
-    </a>.
-  </p>
+      <p>
+        Innovative problem solver and experienced maker with a passion for excellence.
+      </p>
+      <p>
+        Committed to continuous growth and improvement, both personally and professionally. I am passionate about creating captivating software experiences that bring joy to people's lives. I strive to optimize my work and life in pursuit of crafting exceptional and memorable moments for users.
+      </p>
+      <p>
+        Apart from working with various companies and individuals, I am proud to be the co-founder of <a href="https://www.mapmelon.com" target="_blank" rel="noopener noreferrer">Mapmelon</a>, a groundbreaking mapping platform.
+      </p>
+      <p>
+        This website serves as a platform for sharing my knowledge and achievements. You can find my resume <a href="../../../files/ramon-morcillo-resume.pdf" target="_blank" rel="noopener noreferrer">here</a>.
+      </p>
+      <p>
+        Occasionally, I&nbsp;
+        <a href="https://twitter.com/reymon359" target="_blank" rel="noopener noreferrer">share insights</a>
+        &nbsp;and post&nbsp;
+        <a href="https://www.instagram.com/ramon.mor/" target="_blank" rel="noopener noreferrer">moments</a>
+        &nbsp;or&nbsp;
+        <a href="https://www.instagram.com/ramon.mor.photos/" target="_blank" rel="noopener noreferrer">captivating images</a>
+        &nbsp;on Instagram.
+      </p>
 
+      <p>
+        Feel free to connect with me through these platforms or by sending an email to&nbsp;
+        <a href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!" rel="noopener">hey@ramonmorcillo.com</a>.
+      </p>
     </Content>
+
+
   )
 }
 
