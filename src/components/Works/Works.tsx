@@ -52,16 +52,6 @@ const Works: React.FC<WorksProps> = ({posts, projects}) => (
     </Header>
     <Section>
       <SectionHeader>
-        <SectionTitle>Latest posts</SectionTitle>
-        <MoreLink to="/blog">All posts</MoreLink>
-        <MoreLink to="/tags">All tags</MoreLink>
-      </SectionHeader>
-      <SectionBody>
-        <ContentListContainer content={posts} />
-      </SectionBody>
-    </Section>
-    <Section>
-      <SectionHeader>
         <SectionTitle>Latest projects</SectionTitle>
         <MoreLink to="/projects">All projects</MoreLink>
         <MoreLink to="/tags">All tags</MoreLink>
@@ -70,6 +60,17 @@ const Works: React.FC<WorksProps> = ({posts, projects}) => (
         <ContentListContainer content={projects} />
       </SectionBody>
     </Section>
+    <Section>
+      <SectionHeader>
+        <SectionTitle>Latest posts</SectionTitle>
+        <MoreLink to="/blog">All posts</MoreLink>
+        <MoreLink to="/tags">All tags</MoreLink>
+      </SectionHeader>
+      <SectionBody>
+        <ContentListContainer content={posts} />
+      </SectionBody>
+    </Section>
+   
   </>
 )
 
