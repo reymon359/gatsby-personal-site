@@ -17,62 +17,61 @@ const Content = styled.main`
 const AboutMe: React.FC = () => {
   return (
     <Content>
-      <p>
-        Maker. Problem solver. 🍉 Fruit Fanatic. 🏄‍♂️ Nomad Surfer.
-      </p>
+  <p>
+    Innovative problem solver and experienced maker with a passion for excellence.
+  </p>
+  <p>
+    Committed to continuous growth and improvement, both personally and professionally.
+  </p>
+  <p>
+    This website serves as a platform for sharing my knowledge and achievements.
+  </p>
+ <p>
+    <a
+      href="../../../files/ramon-morcillo-resume.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Here is my resume
+    </a>
+    &nbsp;for further details.
+  </p> 
+  <p> Occasionally, I&nbsp;
+    <a
+      href="https://twitter.com/reymon359"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      share insights
+    </a>
+    &nbsp;and post&nbsp;
+    <a
+      href="https://www.instagram.com/ramon.mor/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      moments
+    </a>
+    &nbsp;or&nbsp;
+    <a
+      href="https://www.instagram.com/ramon.mor.photos/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      captivating images
+    </a>
+    &nbsp;on Instagram.
+  </p>
+  <p>
+    Feel free to connect with me through these platforms or by sending an email to&nbsp;
+    <a
+      rel="noopener"
+      href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!"
+    >
+      hey@ramonmorcillo.com
+    </a>.
+  </p>
 
-      <p>
-        Constantly creating to improve myself and those around me.
-      </p>
-      <p>
-        I use this website as a place to share what I
-        learn and do.
-      </p>
-      {/* <p>
-        <a
-          href="../../../files/ramon-morcillo-resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Here is my resume
-        </a>
-        &nbsp;in case you want to have a look.
-      </p> */}
-      <p> Sometimes I&nbsp;
-        <a
-          href="https://twitter.com/reymon359"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          tweet
-        </a>
-        &nbsp;and share&nbsp;
-        <a
-          href="https://www.instagram.com/ramon.mor/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          moments
-        </a>
-        &nbsp;or&nbsp;
-        <a
-          href="https://www.instagram.com/ramon.mor.photos/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          pictures
-        </a>
-        &nbsp;on Instagram.
-      </p>
-      <p>
-        You can contact me through them or sending an email to&nbsp;
-        <a
-          rel="noopener"
-          href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!"
-        >
-          hey@ramonmorcillo.com
-        </a>
-      </p>
     </Content>
   )
 }
