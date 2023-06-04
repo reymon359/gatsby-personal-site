@@ -193,7 +193,7 @@ const Resume: React.FC = () => {
    
 
 
-    <h3>Skills</h3>
+    <h3>Stack</h3>
 
     <p><strong>Front-End:</strong> React, Next,  CSS-in-JS, Chakra<br />
       <strong>Back-End:</strong> GraphQL, tRPC, serverless, Prisma, PostgreSQL, Mongo <br />
