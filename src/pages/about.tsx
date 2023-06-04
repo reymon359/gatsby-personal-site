@@ -4,8 +4,8 @@ import Head from '../components/Head'
 import Layout from '../components/Layout'
 import Stars from '../components/Stars'
 import Content from '../components/Content'
-import About from '../components/About'
 import {TitlePageQueryData} from '../types'
+import About from '../components/About/About'
 
 interface AboutPageProps {
   readonly data: TitlePageQueryData
