@@ -27,7 +27,7 @@ const AboutMe: React.FC = () => {
         Apart from working with various companies and individuals, I am proud to be the co-founder of <a href="https://www.mapmelon.com" target="_blank" rel="noopener noreferrer">Mapmelon</a>, a groundbreaking mapping platform.
       </p>
       <p>
-        This website serves as a platform for sharing my knowledge and achievements. You can find my resume <a href="../../../files/ramon-morcillo-resume.pdf" target="_blank" rel="noopener noreferrer">here</a>.
+        This website serves as a platform for sharing my knowledge and achievements. You can find my resume <a href="/resume"  >here</a>.
       </p>
       <p>
         Occasionally, I&nbsp;
