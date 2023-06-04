@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import Intro from './Intro'
+
 
 const Content = styled.main`
   margin-top: 1rem;
@@ -44,9 +46,23 @@ const AboutMe: React.FC = () => {
         <a href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!" rel="noopener">hey@ramonmorcillo.com</a>.
       </p>
     </Content>
-
-
   )
 }
 
-export default AboutMe
+
+const Image = styled.img`
+max-height: 300px;
+margin: auto;
+`
+
+const About: React.FC = () => {
+  return (
+    <>
+      <Intro fixed={false} />
+      <AboutMe />
+      <Image src="../../../images/ramon_morcillo_meta_image.jpg" />
+    </>
+  )
+}
+
+export default About

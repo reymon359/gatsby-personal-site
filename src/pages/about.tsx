@@ -1,17 +1,17 @@
 import React from 'react'
-import {graphql} from 'gatsby'
+import { graphql } from 'gatsby'
 import Head from '../components/Head'
 import Layout from '../components/Layout'
 import Stars from '../components/Stars'
 import Content from '../components/Content'
-import {TitlePageQueryData} from '../types'
-import About from '../components/About/About'
+import { TitlePageQueryData } from '../types'
+import About from '../components/About'
 
 interface AboutPageProps {
   readonly data: TitlePageQueryData
 }
 
-const AboutPage: React.FC<AboutPageProps> = ({data}) => {
+const AboutPage: React.FC<AboutPageProps> = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
