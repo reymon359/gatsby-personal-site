@@ -176,7 +176,7 @@ const Resume: React.FC = () => {
     >(PDF)</a></h2>
 
     <p>
-      I am a Full-stack JavaScript / TS engineer. Reach me at{' '}
+    As a Full-stack JavaScript / TS engineer, I possess the skills to bootstrap, architecture, or improve your project.<br/> Additionally, I provide services such as consulting, code analysis, and guidance to elevate your codebase while adhering to the latest standards in modern web development.<br/> Get in touch with me at{' '}
       <a href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!" rel="noopener">
         hey@ramonmorcillo.com
       </a>
