@@ -171,26 +171,26 @@ const Resume: React.FC = () => {
   return <Wrapper>
     <h2 >Ramón Morcillo - Resume <a
       className='no-print'
-    
-    onClick={() => window.print()}
+
+      onClick={() => window.print()}
     >(PDF)</a></h2>
 
     <p>
-    As a Full-stack JavaScript / TS engineer, I possess the skills to bootstrap, architecture, or improve your project.<br/> Additionally, I provide services such as consulting, code analysis, and guidance to elevate your codebase while adhering to the latest standards in modern web development.<br/> Get in touch with me at{' '}
+      As a Full-stack JavaScript / TS engineer, I possess the skills to bootstrap, architecture, or improve your project.<br /> Additionally, I provide services such as consulting, code analysis, and guidance to elevate your codebase while adhering to the latest standards in modern web development.<br /> Get in touch with me at{' '}
       <a href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!" rel="noopener">
         hey@ramonmorcillo.com
       </a>
       <p
-      className="print"
+        className="print"
 
-    >You can find an updated live version of this resume at <a
-      href="https://www.ramonmorcillo.com/resume"
-      target="_blank"
-      rel="noopener noreferrer"
-    >https://www.ramonmorcillo.com/resume</a>
+      >You can find an updated live version of this resume at <a
+        href="https://www.ramonmorcillo.com/resume"
+        target="_blank"
+        rel="noopener noreferrer"
+      >https://www.ramonmorcillo.com/resume</a>
+      </p>
     </p>
-    </p>
-   
+
 
 
     <h3>Stack</h3>
@@ -214,8 +214,8 @@ const Resume: React.FC = () => {
 
     <h3> Education and languages </h3>
     <p>
-    Degree in Software Engineering - Alicante University, 2014 <br />
-    Master in Web Engineering - Madrid Polytechnic University, 2019<br /><br />
+      Degree in Software Engineering - Alicante University, 2014 <br />
+      Master in Web Engineering - Madrid Polytechnic University, 2019<br /><br />
       I speak and write 🇪🇸 Spanish (native), 🇬🇧 English (fluent)
     </p>
 
