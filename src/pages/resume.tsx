@@ -218,7 +218,7 @@ const Resume: React.FC = () => {
         <strong>Front-End:</strong> React, Next, CSS-in-JS, Chakra
         <br />
         <strong>Back-End:</strong> GraphQL, tRPC, serverless, Prisma,
-        PostgreSQL, Mongo <br />
+        PostgreSQL, Mongo, AWS, Azure <br />
         <strong>Tooling:</strong> TypeScript, ESLint, Prettier,
         Storybook,Cypress, Jest, Docker, Zod
       </p>
