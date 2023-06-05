@@ -26,7 +26,7 @@ const AboutMe: React.FC = () => {
         Committed to continuous growth and improvement, both personally and professionally. I am passionate about creating captivating software experiences that bring joy to people's lives. I strive to optimize my work and life in pursuit of crafting exceptional and memorable moments for users.
       </p>
       <p>
-        Apart from working with various companies and individuals, I am proud to be the co-founder of <a href="https://www.mapmelon.com" target="_blank" rel="noopener noreferrer">Mapmelon</a>, a groundbreaking mapping platform.
+        Apart from working with various companies and individuals, I am proud to be the co-founder of <a href="https://www.mapmelon.com" target="_blank" rel="noopener noreferrer">Mapmelon</a>.
       </p>
       <p>
         This website serves as a platform for sharing my knowledge and achievements. You can find my resume <a href="/resume"  >here</a>.
