@@ -195,7 +195,9 @@ const Resume: React.FC = () => {
 
     <h3>Stack</h3>
 
-    <p><strong>Front-End:</strong> React, Next,  CSS-in-JS, Chakra<br />
+    <p
+      className='irrelevant'
+    ><strong>Front-End:</strong> React, Next,  CSS-in-JS, Chakra<br />
       <strong>Back-End:</strong> GraphQL, tRPC, serverless, Prisma, PostgreSQL, Mongo <br />
       <strong>Tooling:</strong> TypeScript, ESLint, Prettier, Storybook,Cypress, Jest, Docker, Zod
     </p>
