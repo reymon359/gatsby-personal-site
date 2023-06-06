@@ -105,7 +105,7 @@ const ProjectHighlights = () => {
     {
       name: "BuildPublic",
       year: "2023",
-      url: "https://www.buildpublic.app/",
+      url: "https://www.youtube.com/watch?v=KDDX1hn4x44",
       description:
         "Manage your social presence as a maker, with AI-powered build updates.",
     },
