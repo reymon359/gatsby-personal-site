@@ -68,14 +68,7 @@ const Footer = () => (
       </a>
     </Item>
     <Item position="right">
-      Made with love & time&nbsp;
-      <small
-        style={{
-          fontSize: '70%'
-        }}
-      >
-        (a lot of it)
-      </small>
+      Made with 💚 & ⏳
     </Item>
   </FooterWrapper>
 )
