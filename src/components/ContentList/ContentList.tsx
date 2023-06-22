@@ -124,8 +124,8 @@ export const ContentList: React.FC<ContentListItemProps> = ({
     >
       <ItemContainer>
         <ItemHeader>
-          <ItemTitle to={workLink}>{title}</ItemTitle>
-          <ItemDescription to={workLink}>
+          <ItemTitle target='_blank' to={workLink}>{title}</ItemTitle>
+          <ItemDescription target='_blank'  to={workLink}>
             {node.frontmatter.description}
           </ItemDescription>
           <ItemTags>
@@ -145,7 +145,7 @@ export const ContentList: React.FC<ContentListItemProps> = ({
               ))}
           </ItemTags>
         </ItemHeader>
-        <ItemDate to={workLink}>
+        <ItemDate target='_blank'  to={workLink}>
           {workType === 'post'
             ? node.frontmatter.date
             : node.frontmatter.date.split(',')[1]}
