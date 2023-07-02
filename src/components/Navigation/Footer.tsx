@@ -58,14 +58,7 @@ const Item = styled.div<ItemProps>`
 const Footer = () => (
   <FooterWrapper>
     <Item position="left">
-      <span>Ramón Morcillo - {new Date().getFullYear()} - </span>{' '}
-      <a
-        href="https://github.com/reymon359/gatsby-personal-site/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        source
-      </a>
+      <span>Ramón Morcillo - {new Date().getFullYear()}</span>
     </Item>
     <Item position="right">
       Made with 💚 & ⏳
