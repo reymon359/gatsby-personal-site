@@ -61,7 +61,6 @@ IMPORTANT: You know what they say about looking at your own code. I was learning
 - **[GraphQL](https://graphql.org/):** The query language used to access the data with Gatsby.
 - **[ESlint](https://eslint.org/):** To find and fix problems in your JavaScript code. Although [Prettier](https://prettier.io/) was used to format files now the linter `fix` option does it.
 - **[GitHub Actions](https://github.com/features/actions):** GitHub's Continuous Integration & Delivery tool.
-- **[Renovate](https://renovate.whitesourcesoftware.com/):** Free, open-source app to automate the update of dependencies.
 - **[GitHub Issues and Pull Requests Templates](https://docs.github.com/en/github/building-a-strong-community/about-issue-and-pull-request-templates):** Templates to submit new Issues and Pull Requests.
 
 <!-- Project Setup -->
