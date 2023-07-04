@@ -20,10 +20,10 @@ const AboutMe: React.FC = () => {
   return (
     <Content>
       <p>
-        Innovative problem solver and experienced maker with a passion for excellence.
+        Problem solver and experienced maker with a passion for excellence and pragmatism.
       </p>
       <p>
-        Committed to continuous growth and improvement, both personally and professionally. I am passionate about creating captivating software experiences that bring joy to people's lives. I strive to optimize my work and life in pursuit of crafting exceptional and memorable moments for users.
+        I am passionate about creating captivating software experiences that bring joy to people's lives.
       </p>
       <p>
         Apart from working with various companies and individuals, I am proud to be the co-founder of <a href="https://www.mapmelon.com" target="_blank" rel="noopener noreferrer">Mapmelon</a>.
@@ -42,7 +42,7 @@ const AboutMe: React.FC = () => {
       </p>
 
       <p>
-        Feel free to connect with me through these platforms or by sending an email to&nbsp;
+        Feel free to send me an email to&nbsp;
         <a href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!" rel="noopener">hey@ramonmorcillo.com</a>.
       </p>
     </Content>
