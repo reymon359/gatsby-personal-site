@@ -31,14 +31,38 @@ const ResumeItem = styled.div`
 const WorkExperience = () => {
   const workExperiences = [
     {
+      position: "Co-Founder",
+      company: "Mapmelon",
+      compnanyUrl: "https://www.mapmelon.com/",
+      location: "Remote",
+      startDate: "11/2022",
+      endDate: "Present",
+      description:
+        `- Make digital nomadism more accessible and enjoyable while connecting the community with the best coliving spaces.
+- Develop the whole platform from scratch with Next.js, Typescript, Prisma, and other modern technologies.
+- Design the architecture of the platform to be scalable and maintainable.`
+    },
+    {
+      position: "Software Engineer",
+      company: "On Target AI",
+      compnanyUrl: "https://on-target.ai/",
+      location: "Remote",
+      startDate: "06/2023",
+      endDate: "Present",
+      description:
+        `- Craft the whole user interface of the platform while develop a maintainable and scalable codebase.`
+    },
+    {
       position: "Full-Stack Engineer",
       company: "Flick",
       compnanyUrl: "https://www.flick.social/",
       location: "Remote",
       startDate: "11/2021",
-      endDate: "Present",
+      endDate: "06/2021",
       description:
-        "Flick is a social media platform. I Implemented complex React user experiences, delivering intuitive and seamless interfaces. I integrated an AI Social Marketing Assistant powered by OpenAI to overcome users creative blocks and enhance marketing strategies.",
+       `- Implement complex React user experiences, delivering intuitive and seamless interfaces.
+- Integrate an AI Social Marketing Assistant powered by OpenAI to overcome users' creative blocks and enhance marketing strategies.
+- Implement new social channels to open the platform to new audiences.`
     },
     {
       position: "Full-Stack Engineer",
@@ -48,7 +72,13 @@ const WorkExperience = () => {
       startDate: "03/2020",
       endDate: "11/2021",
       description:
-        "I developed a reusable ecommerce platform (same codebase, multiple clients) with a microservice architecture. I built rich interfaces with React, Next.js, Jest, Cypress. Designed GraphQL & Rest Microservices in NodeJS. Used MongoDB, PostgreSQL, or Redis for persistence. Develop CI&CD in Azure and GitHub Actions. Orchestrated K8s clusters with K9s, & Helm. Managed the Azure Cloud infrastructure with Terraform.",
+      `- Build rich interfaces with React, Next.js, Jest, Cypress. 
+- Design GraphQL & Rest Microservices in NodeJS. 
+- Use MongoDB, PostgreSQL, or Redis for persistence.
+- Develop CI&CD in Azure and GitHub Actions. 
+- Orchestrate K8s clusters with K9s, & Helm.
+- Manage the Azure Cloud infrastructure with Terraform.
+- Develop a reusable ecommerce platform (same codebase, multiple clients) with a microservice architecture based on both, sync & async communication. https://ramonmorcillo.com/developing-a-reusable-ecommerce-platform/`
     },
     {
       position: "Full-Stack Engineer",
@@ -58,7 +88,9 @@ const WorkExperience = () => {
       startDate: "01/2018",
       endDate: "03/2020",
       description:
-        "1millionbot is a chatbot platform. I refactored the main JS scripts to increase by 30% the data obtained from leads. I developed the company dashboard to speed up the NLP chatbot training by 50%. I designed the company architecture & integrated its infrastructure into Google Cloud Platform.",
+        `- Develop the company dashboard to speed up the NLP chatbots training by 50%.
+- Design the company's architecture & integrate its infra into GCP
+- Implement an Agile workflow with Github for Software Project Management.`
     },
   ];
 
@@ -86,7 +118,11 @@ const WorkExperience = () => {
               </small>
             </div>
           </ResumeItemHeader>
-          <p>{workExperience.description}</p>
+          <p
+            style={{
+              whiteSpace: "pre-wrap",
+            }}
+          >{workExperience.description}</p>
         </ResumeItem>
       ))}
     </>
@@ -113,7 +149,7 @@ const ProjectHighlights = () => {
       name: "How to Live",
       year: "2021",
       url: "https://reymon359.github.io/how-to-live/",
-      description: "A collection of life advices I have learned along the way.",
+      description: "A collection of life advices learned along the way.",
     },
   ];
 
