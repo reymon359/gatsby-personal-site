@@ -60,7 +60,7 @@ const WorkExperience = () => {
       startDate: "11/2021",
       endDate: "06/2021",
       description:
-       `- Implement complex React user experiences, delivering intuitive and seamless interfaces.
+        `- Implement complex React user experiences, delivering intuitive and seamless interfaces.
 - Integrate an AI Social Marketing Assistant powered by OpenAI to overcome users' creative blocks and enhance marketing strategies.
 - Implement new social channels to open the platform to new audiences.`
     },
@@ -72,7 +72,7 @@ const WorkExperience = () => {
       startDate: "03/2020",
       endDate: "11/2021",
       description:
-      `- Build rich interfaces with React, Next.js, Jest, Cypress. 
+        `- Build rich interfaces with React, Next.js, Jest, Cypress. 
 - Design GraphQL & Rest Microservices in NodeJS. 
 - Use MongoDB, PostgreSQL, or Redis for persistence.
 - Develop CI&CD in Azure and GitHub Actions. 
@@ -160,7 +160,6 @@ const ProjectHighlights = () => {
           <ResumeItemHeader>
             <ResumeItemTitle>
               <>
-                {" "}
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
                   {project.name}
                 </a>
@@ -195,9 +194,15 @@ const Wrapper = styled.section`
     display: none;
   }
 
+  @page {
+    margin: 0;
+}
   @media print {
+    color: black!important;
+   
     a {
-      border-bottom: 1px solid lightgray;
+      color: black!important;
+      border-bottom: 1px solid black;
     }
 
     .print {
@@ -214,7 +219,7 @@ const Resume: React.FC = () => {
   return (
     <Wrapper>
       <h2>
-        Ramón Morcillo - Resume{" "}
+        Ramón Morcillo - Resume&nbsp;
         <a className="no-print" onClick={() => window.print()}>
           (PDF)
         </a>
@@ -303,7 +308,7 @@ const ResumePage: React.FC<ResumePageProps> = ({ data }) => {
         image="/images/ramon_morcillo_meta_image.jpg"
         keywords={[
           `blog`,
-          `gatsby`,
+          `resume`,
           `typescript`,
           `javascript`,
           `portfolio`,

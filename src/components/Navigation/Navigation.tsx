@@ -1,10 +1,10 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Logo from '../Logo'
 import Footer from './Footer'
 import Menu from './Menu'
 import ToggleMenu from './ToggleMenu'
-import styled, {css} from 'styled-components'
-import {addRemToProperty} from '../../styles/shared'
+import styled, { css } from 'styled-components'
+import { addRemToProperty } from '../../styles/shared'
 import HelpMessage from '../HelpMessage'
 
 type WrapperProps = {
@@ -22,6 +22,10 @@ const Wrapper = styled.div<WrapperProps>`
   `}
   @media only screen and (min-width:  54em) {
     pointer-events: none;
+  }
+
+  @media print {
+    display: none;
   }
 `
 
@@ -83,23 +87,17 @@ const Header = styled.header<HeaderProps>`
     `}
 `
 
-interface NavigationProps {
-  readonly transparent: boolean
-}
-
-export const Navigation: React.FC<NavigationProps> = ({
-  transparent = false
-}) => {
+export const Navigation = ({ isTransparent = false }: { isTransparent?: boolean }) => {
   const [open, setOpen] = useState(false)
 
   return (
-    <Wrapper enablePointerEvents={transparent}>
-      <Header transparent={transparent}>
+    <Wrapper enablePointerEvents={isTransparent}>
+      <Header transparent={isTransparent}>
         <Logo />
-        <HelpMessage show={transparent} />
+        <HelpMessage show={isTransparent} />
         <ToggleMenu open={open} onClick={() => setOpen(!open)} />
       </Header>
-      <Shoable open={open} transparent={transparent}>
+      <Shoable open={open} transparent={isTransparent}>
         <div>
           <Menu />
           <Footer />

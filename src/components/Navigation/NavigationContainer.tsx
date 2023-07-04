@@ -8,5 +8,5 @@ type NavigationContainerProps = {
 export const NavigationContainer: React.FC<NavigationContainerProps> = ({
   transparentNavigation = false
 }) => {
-  return <Navigation transparent={transparentNavigation} />
+  return <Navigation isTransparent={transparentNavigation} />
 }
