@@ -59,7 +59,6 @@ IMPORTANT: You know what they say about looking at your own code. I was learning
 - **[TypeScript](https://www.typescriptlang.org/):** Microsoft's open-source Type-safe language that compiles to JavaScript.
 - **[Styled-Components](https://styled-components.com):** CSS in JS Library for the styles.
 - **[GraphQL](https://graphql.org/):** The query language used to access the data with Gatsby.
-- **[Commitlint](https://github.com/conventional-changelog/commitlint):** To enforce [conventional commit format](https://www.conventionalcommits.org/).
 - **[ESlint](https://eslint.org/):** To find and fix problems in your JavaScript code. Although [Prettier](https://prettier.io/) was used to format files now the linter `fix` option does it.
 - **[GitHub Actions](https://github.com/features/actions):** GitHub's Continuous Integration & Delivery tool.
 - **[Renovate](https://renovate.whitesourcesoftware.com/):** Free, open-source app to automate the update of dependencies.

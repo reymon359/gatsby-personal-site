@@ -57,8 +57,6 @@
     "styled-components": "5.3.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "12.1.4",
-    "@commitlint/config-conventional": "12.1.4",
     "@types/classnames": "2.3.1",
     "@types/jest": "26.0.24",
     "@types/node": "15.12.2",
