@@ -31,7 +31,7 @@ const ResumeItem = styled.div`
 const WorkExperience = () => {
   const workExperiences = [
     {
-      position: "Co-Founder",
+      position: "Co-Founder and CTO",
       company: "Mapmelon",
       compnanyUrl: "https://www.mapmelon.com/",
       location: "Remote",
