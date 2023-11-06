@@ -256,7 +256,7 @@ const Resume: React.FC = () => {
       <h3>Stack</h3>
 
       <p>
-        <strong>Front-End:</strong> React, Next, Tailwind, CSS-in-JS
+        <strong>Front-End:</strong> React, Next, Tailwind, CSS-in-JS, Chakra
         <br />
         <strong>Back-End:</strong> GraphQL, tRPC, serverless, Prisma,
         PostgreSQL, Mongo, AWS, Azure <br />
