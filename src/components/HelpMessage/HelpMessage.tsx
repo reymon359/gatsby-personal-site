@@ -56,7 +56,7 @@ interface HelpMessageProps {
 
 const HelpMessage: React.FC<HelpMessageProps> = ({
   show = false,
-  text = 'Move around the screen or scroll it'
+  text = 'Move around the screen or scroll up'
 }) => <Wrapper show={show}>{text}</Wrapper>
 
 export default HelpMessage
