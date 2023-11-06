@@ -260,8 +260,9 @@ const Resume: React.FC = () => {
         <br />
         <strong>Back-End:</strong> GraphQL, tRPC, serverless, Prisma,
         PostgreSQL, Mongo, AWS, Azure <br />
+        <strong>Skills:</strong> Strong communication abilities, Transparency, Complex problem solving, Open minded <br />
         <strong>Tooling:</strong> TypeScript, ESLint, Prettier,
-        Storybook,Cypress, Jest, Docker, Zod
+        Storybook, Cypress, Jest, Docker, Zod
       </p>
 
       <h3>Work Experience</h3>
