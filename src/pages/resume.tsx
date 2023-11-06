@@ -58,7 +58,7 @@ const WorkExperience = () => {
       compnanyUrl: "https://www.flick.social/",
       location: "Remote",
       startDate: "11/2021",
-      endDate: "06/2021",
+      endDate: "06/2022",
       description:
         `- Implement complex React user experiences, delivering intuitive and seamless interfaces.
 - Integrate an AI Social Marketing Assistant powered by OpenAI to overcome users' creative blocks and enhance marketing strategies.
