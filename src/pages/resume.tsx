@@ -215,8 +215,8 @@ I wholeheartedly recommend Ramon to any team seeking a front-end developer who b
     <>
       {quotes.map((quote) => (
       <p key={quote.author} style={{whiteSpace: "pre-wrap"}}>
-        “ {quote.text} ”
-        <br /> — <em>{quote.author}</em>, {quote.position}
+        <em>“ {quote.text} ”</em>
+        <br /> — <strong>{quote.author}, {quote.position}</strong>
       </p>
       ))}
     </>
