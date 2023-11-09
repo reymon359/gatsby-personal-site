@@ -176,27 +176,35 @@ const ProjectHighlights = () => {
   );
 };
 
+const QuoteContainer = styled.div`
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+`;
 
 const WhatOthersSay = () => {
   const quotes = [
     {
       text: "Working with Ramon was an absolute inspiration, and I know I'll carry the memory of our work together for years to come. From my perspective, he's a one-of-a-kind developer, defined by his meticulous attention to detail and a 'no problem is too complex' attitude. When I have the chance, I will definitely be working with him again!",
       author: "Evan Seaward",
+      image: "/images/resume/evan.jpg",
       position: "Head of Engineering"
-    },
-    {
-      text: `Since meeting Ramón at university, I've been able to watch him grow into the professional FullStack Software Engineer he is today. We got our first working experience together at 1millionbot, where his passion for software really takes off. 
-      
-Ramón takes software architecture seriously, always aiming for Clean Code, SOLID principles and good testing in his projects. His pragmatic approach not only leads to well-crafted solutions but also ensures that they are practical and effective. It's been great to both work and study alongside him, and it's one of the many reasons I value him as a teammate and a friend. For all these reasons, I truly recommend working with him.`,
-      author: "Pablo Company Ramírez",
-      position: "Software Engineer"
     },
     {
       text: `It was a pleasure working with Ramon on his project the Mapmelon App. Ramon is a skilled developer with a strong commitment to delivering exceptional user experiences. His growth mindset, focus on details and technical expertise make him an invaluable addition to any ambitious project. Apart from being a great developer, he is also a great person to work with. 
 
 I recommend him for any project in need of a talented UX-focused developer. He's an asset you'll be glad to have on your team 🚀.`,
       author: "Denisa Brichtova",
+      image: "/images/resume/denisa.jpg",
       position: "UI/UX Designer"
+    },
+    {
+      text: `Since meeting Ramón at university, I've been able to watch him grow into the professional FullStack Software Engineer he is today. We got our first working experience together at 1millionbot, where his passion for software really takes off. 
+      
+Ramón takes software architecture seriously, always aiming for Clean Code, SOLID principles and good testing in his projects. His pragmatic approach not only leads to well-crafted solutions but also ensures that they are practical and effective. It's been great to both work and study alongside him, and it's one of the many reasons I value him as a teammate and a friend. For all these reasons, I truly recommend working with him.`,
+      author: "Pablo Company Ramírez",
+      image: "/images/resume/pablo.jpg",
+      position: "Software Engineer"
     },
     {
       text: `I had the pleasure of bringing Ramon into our team as a front-end developer for the On-target AI tool for marketers, a decision influenced by his notable reputation within our shared professional circle. From the outset, Ramon stood out as an exceptionally responsive and reliable colleague. Although my direct collaboration with him was not extensive, his impact was unmistakable.
@@ -207,6 +215,7 @@ What impresses me most about Ramon is his ability to maintain high productivity 
 
 I wholeheartedly recommend Ramon to any team seeking a front-end developer who brings not only technical expertise but also a cooperative and proactive approach to their projects.`,
       author: "Andreea Rusu",
+      image: "/images/resume/andreea.jpg",
       position: "Marketing Project Manager & Community Builder"
     },
   ]
@@ -214,10 +223,19 @@ I wholeheartedly recommend Ramon to any team seeking a front-end developer who b
   return (
     <>
       {quotes.map((quote) => (
-      <p key={quote.author} style={{whiteSpace: "pre-wrap"}}>
-        <em>“ {quote.text} ”</em>
-        <br /> — <strong>{quote.author}, {quote.position}</strong>
-      </p>
+        <QuoteContainer key={quote.author}>
+          <img
+            src={quote.image}
+            alt={quote.author}
+            style={{ borderRadius: "50%" }}
+            width="60"
+            height="60"
+          />
+          <p style={{ whiteSpace: "pre-wrap", marginTop: 0 }}>
+            <em>“ {quote.text} ”</em>
+            <br /> — <strong>{quote.author}, {quote.position}</strong>
+          </p>
+        </QuoteContainer>
       ))}
     </>
   );
