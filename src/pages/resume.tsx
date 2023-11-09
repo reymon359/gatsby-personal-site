@@ -176,6 +176,53 @@ const ProjectHighlights = () => {
   );
 };
 
+
+const WhatOthersSay = () => {
+  const quotes = [
+    {
+      text: "Working with Ramon was an absolute inspiration, and I know I'll carry the memory of our work together for years to come. From my perspective, he's a one-of-a-kind developer, defined by his meticulous attention to detail and a 'no problem is too complex' attitude. When I have the chance, I will definitely be working with him again!",
+      author: "Evan Seaward",
+      position: "Head of Engineering"
+    },
+    {
+      text: `Since meeting Ramón at university, I've been able to watch him grow into the professional FullStack Software Engineer he is today. We got our first working experience together at 1millionbot, where his passion for software really takes off. 
+      
+Ramón takes software architecture seriously, always aiming for Clean Code, SOLID principles and good testing in his projects. His pragmatic approach not only leads to well-crafted solutions but also ensures that they are practical and effective. It's been great to both work and study alongside him, and it's one of the many reasons I value him as a teammate and a friend. For all these reasons, I truly recommend working with him.`,
+      author: "Pablo Company Ramírez",
+      position: "Software Engineer"
+    },
+    {
+      text: `It was a pleasure working with Ramon on his project the Mapmelon App. Ramon is a skilled developer with a strong commitment to delivering exceptional user experiences. His growth mindset, focus on details and technical expertise make him an invaluable addition to any ambitious project. Apart from being a great developer, he is also a great person to work with. 
+
+I recommend him for any project in need of a talented UX-focused developer. He's an asset you'll be glad to have on your team 🚀.`,
+      author: "Denisa Brichtova",
+      position: "UI/UX Designer"
+    },
+    {
+      text: `I had the pleasure of bringing Ramon into our team as a front-end developer for the On-target AI tool for marketers, a decision influenced by his notable reputation within our shared professional circle. From the outset, Ramon stood out as an exceptionally responsive and reliable colleague. Although my direct collaboration with him was not extensive, his impact was unmistakable.
+
+Ramon's approach to communication is a blend of clarity and accessibility, making complex technical discussions understandable and engaging. His responsiveness to tasks and inquiries, regardless of their complexity, significantly contributed to the smooth progression of our project. He has a knack for distilling complex front-end challenges into straightforward solutions, a skill invaluable in our fast-paced and dynamic environment.
+
+What impresses me most about Ramon is his ability to maintain high productivity and quality of work while being approachable and supportive to the team. His technical skills are top-notch, but it's his collaborative spirit and effective communication that truly set him apart.
+
+I wholeheartedly recommend Ramon to any team seeking a front-end developer who brings not only technical expertise but also a cooperative and proactive approach to their projects.`,
+      author: "Andreea Rusu",
+      position: "Marketing Project Manager & Community Builder"
+    },
+  ]
+
+  return (
+    <>
+      {quotes.map((quote) => (
+      <p key={quote.author} style={{whiteSpace: "pre-wrap"}}>
+        “ {quote.text} ”
+        <br /> — <em>{quote.author}</em>, {quote.position}
+      </p>
+      ))}
+    </>
+  );
+}
+
 const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
@@ -291,6 +338,11 @@ const Resume: React.FC = () => {
         <br />
         <br />I speak and write 🇪🇸 Spanish (native), 🇬🇧 English (fluent)
       </p>
+
+      <h3> What others say about me </h3>
+
+      <WhatOthersSay />
+
     </Wrapper>
   );
 };

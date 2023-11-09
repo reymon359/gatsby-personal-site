@@ -85,5 +85,8 @@
   },
   "bugs": {
     "url": "https://github.com/reymon359/gatsby-personal-site/issues"
+  },
+  "engines": {
+    "node": ">=16.14.0 <17.0.0"
   }
 }
