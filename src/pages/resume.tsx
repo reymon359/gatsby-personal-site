@@ -218,6 +218,18 @@ I wholeheartedly recommend Ramon to any team seeking a front-end developer who b
       image: "/images/resume/andreea.jpg",
       position: "Marketing Project Manager & Community Builder"
     },
+    {
+      text: `Building a product from scratch, refactoring an old Java API, migrating all the infrastructure to the cloud, and starting a new technology for the FE, all of this right after finishing the university, it is not easy. That was the challenge that I faced with Ramon in 1MillionBot, and it was an incredible journey. Ramon did not only deliver a great product, he also did it in a small amount of time. I’m lucky to have worked with Ramon during that time.`,
+      author: "Gonzalo Molina Gallego",
+      image: "/images/resume/gonzalo.jpg",
+      position: "Forward Deployed Engineer @ Palantir"
+    },
+    {
+      text: `Ramon is a remarkable software engineer with an unwavering dedication to his craft. During our time together at guidesmith/onebeyond, I witnessed his exceptional problem-solving skills, spanning both frontend and backend development. His ability to simplify code and create developer-friendly software stands out as a testament to his commitment. Ramon is not only a skilled developer but also a supportive team player, always willing to lend a hand. I enthusiastically recommend him as a valuable addition to any software team seeking a proficient and collaborative professional.`,
+      author: "Fran Palacios",
+      image: "/images/resume/fran.jpg",
+      position: "Software Engineer at Lean Mind"
+    },
   ]
 
   return (
