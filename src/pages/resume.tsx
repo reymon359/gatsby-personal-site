@@ -185,6 +185,12 @@ const QuoteContainer = styled.div`
 const WhatOthersSay = () => {
   const quotes = [
     {
+      text: `It was a pleasure collaborating with Ramon on the development of Flocus. His persistence, diligence, and reliability were instrumental in the success of our project. Every aspect of our work was handled with precision and care. He tackled challenges with a proactive mindset. Working with Ramon was not only professionally rewarding but also enjoyable due to his positive attitude and effective communication. I highly recommend Ramon to any team seeking a dedicated and dependable professional.`,
+      author: "Tobias Hug",
+      image: "/images/resume/tobias.jpg",
+      position: "Founder of Flocus"
+    },
+    {
       text: "Working with Ramon was an absolute inspiration, and I know I'll carry the memory of our work together for years to come. From my perspective, he's a one-of-a-kind developer, defined by his meticulous attention to detail and a 'no problem is too complex' attitude. When I have the chance, I will definitely be working with him again!",
       author: "Evan Seaward",
       image: "/images/resume/evan.jpg",
