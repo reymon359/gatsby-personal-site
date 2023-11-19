@@ -375,7 +375,13 @@ const Resume: React.FC = () => {
         <br />I speak and write 🇪🇸 Spanish (native), 🇬🇧 English (fluent)
       </p>
 
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems:'baseline' }}>
       <h3> What others say about me </h3>
+      <a href="https://www.linkedin.com/recs/give/?senderId=ramon-morcillo" target="_blank" rel="noopener noreferrer"
+      >add my review</a>
+
+      </div>
+     
 
       <WhatOthersSay />
 
