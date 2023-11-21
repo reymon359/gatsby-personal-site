@@ -311,7 +311,7 @@ const Resume: React.FC = () => {
             (PDF)
           </a>
         </h2>
-        <p style={{ marginTop: 0 }}>Co-Founder and CTO</p>
+        <p style={{ marginTop: 0 }}>Co-founder & CTO at Mapmelon | Coliving Enthusiast</p>
       </div>
       <div style={{ marginTop: '.3rem', whiteSpace: 'nowrap' }}>
         <p style={{ margin: '.3rem 0',fontSize:'14px'}}>
