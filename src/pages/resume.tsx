@@ -35,7 +35,7 @@ const WorkExperience = () => {
       company: "Mapmelon",
       companyUrl: "https://www.mapmelon.com/",
       location: "Remote",
-      startDate: "11/2022",
+      startDate: "Nov 2022",
       endDate: "Present",
       description:
         `- Improve the lives of Digital Nomads and Remote Workers connecting over 10,000 users to authentic community-focused coliving spaces.
@@ -47,7 +47,7 @@ const WorkExperience = () => {
       company: "On Target AI",
       companyUrl: "https://on-target.ai/",
       location: "Remote",
-      startDate: "06/2023",
+      startDate: "Jun 2023",
       endDate: "Present",
       description:
         `- Crafted user interfaces that improved user experience scores by 35%.
@@ -58,8 +58,8 @@ const WorkExperience = () => {
       company: "Flick",
       companyUrl: "https://www.flick.social/",
       location: "Remote",
-      startDate: "11/2021",
-      endDate: "06/2022",
+      startDate: "Nov 2021",
+      endDate: "Jun 2023",
       description:
         `- Integrated an AI Social Marketing Assistant, increasing user retention by 25%.
 - Expanded platform to new social channels, contributing to a 30% growth in user base.`
@@ -69,8 +69,8 @@ const WorkExperience = () => {
       company: "One Beyond",
       companyUrl: "https://www.one-beyond.com/",
       location: "Remote",
-      startDate: "03/2020",
-      endDate: "11/2021",
+      startDate: "March 2020",
+      endDate: "Nov 2021",
       description:
         `- Designed a reusable ecommerce platform, leading to a 50% increase in client acquisition.
 - Enhanced rich interfaces, enhancing customer satisfaction by 30%.
@@ -82,8 +82,8 @@ const WorkExperience = () => {
       company: "1millionbot",
       companyUrl: "https://www.1millionbot.com/",
       location: "Hybrid",
-      startDate: "01/2018",
-      endDate: "03/2020",
+      startDate: "Jan 2017",
+      endDate: "March 2020",
       description:
         `- Enhanced the company dashboard, speeding up chatbot training by 50%.
 - Streamlined company's architecture integration into GCP, resulting in a 35% improvement in system reliability.`
@@ -111,7 +111,7 @@ const WorkExperience = () => {
             </ResumeItemTitle>
             <div style={{ fontSize: ".9rem", marginTop:'.2rem' }}>
               <small>
-                {workExperience.location} • {workExperience.startDate} -{" "}
+                {workExperience.startDate} -{" "}
                 {workExperience.endDate}
               </small>
             </div>
@@ -167,7 +167,8 @@ const ProjectHighlights = () => {
               <small>{project.year}</small>
             </div>
           </ResumeItemHeader>
-          <p>{project.description}</p>
+          <p style={{ marginTop : '.5rem', marginBottom: 0 }}
+          >{project.description}</p>
         </ResumeItem>
       ))}
     </>
@@ -178,6 +179,7 @@ const QuoteContainer = styled.div`
   display: flex;
   gap: 2rem;
   margin-top: 1rem;
+
 `;
 
 const WhatOthersSay = () => {
@@ -239,7 +241,7 @@ I wholeheartedly recommend Ramon to any team seeking a front-end developer who b
   return (
     <>
       {quotes.map((quote) => (
-        <QuoteContainer key={quote.author}>
+        <QuoteContainer key={quote.author} className="no-print">
           <img
             src={quote.image}
             alt={quote.author}
@@ -361,7 +363,7 @@ const Resume: React.FC = () => {
         <br />
         <strong>Back-End:</strong> GraphQL, tRPC, serverless, Prisma,
         PostgreSQL, MongoDB, AWS, Azure, Docker, Kubernetes <br />
-        <strong>Soft:</strong> Strong communication, Transparency, Complex problem solving, Open minded <br />
+        <strong>Soft:</strong> Strong communication, Transparency, Open minded <br />
       </p>
 
       <h3>Work Experience</h3>
@@ -385,19 +387,27 @@ const Resume: React.FC = () => {
 
       <h3> Education and languages </h3>
       <p>
-        Degree in Software Engineering - Alicante University, 2014 <br />
+        Degree in Software Engineering - Alicante University, 2013 <br />
         Master in Web Engineering - Madrid Polytechnic University, 2019
         <br />
         <br />I speak and write 🇪🇸 Spanish (native), 🇬🇧 English (fluent)
       </p>
 
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: 'baseline' }}>
-        <h3> What others say about me </h3>
-        <a href="https://www.linkedin.com/recs/give/?senderId=ramon-morcillo" target="_blank" rel="noopener noreferrer"
+      <div 
+     
+      style={{ display: "flex", justifyContent: "space-between", alignItems: 'baseline' }}>
+        <h3 id='what-others-say'> What others say about me </h3>
+        <a  className="no-print"href="https://www.linkedin.com/recs/give/?senderId=ramon-morcillo" target="_blank" rel="noopener noreferrer"
         >add my review</a>
 
       </div>
+      <p className="print">
+        Check what others say about me in <a
+         href="https://www.ramonmorcillo.com/resume/#what-others-say" target="_blank" rel="noopener noreferrer">
+          the resume live version
+        </a>
 
+      </p>
 
       <WhatOthersSay />
 
