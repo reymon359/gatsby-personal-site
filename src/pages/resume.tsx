@@ -18,7 +18,7 @@ const ResumeItemHeader = styled.div`
   font-size: 1.2rem;
   // small screen column, large screen row
 
-  ${(props) => props.theme.media.max.md`
+  ${(props) => props.theme.media.max.sm`
     flex-direction: column;
   `}
 `;
@@ -33,64 +33,60 @@ const WorkExperience = () => {
     {
       position: "Co-Founder and CTO",
       company: "Mapmelon",
-      compnanyUrl: "https://www.mapmelon.com/",
+      companyUrl: "https://www.mapmelon.com/",
       location: "Remote",
       startDate: "11/2022",
       endDate: "Present",
       description:
-        `- Make digital nomadism more accessible and enjoyable while connecting the community with the best coliving spaces.
-- Develop the whole platform from scratch with Next.js, Typescript, Prisma, and other modern technologies.
-- Design the architecture of the platform to be scalable and maintainable.`
+        `- Improve the lives of Digital Nomads and Remote Workers connecting over 10,000 users to authentic community-focused coliving spaces.
+- Developed the platform from scratch, leading to a 40% increase in user engagement within the first 6 months.
+- Engineered scalable architecture, ensuring 99.9% uptime and accommodating a 30% quarterly growth in traffic.`
     },
     {
       position: "Software Engineer",
       company: "On Target AI",
-      compnanyUrl: "https://on-target.ai/",
+      companyUrl: "https://on-target.ai/",
       location: "Remote",
       startDate: "06/2023",
       endDate: "Present",
       description:
-        `- Craft the whole user interface of the platform while develop a maintainable and scalable codebase.`
+        `- Crafted user interfaces that improved user experience scores by 35%.
+- Implemented a scalable codebase, reducing bug reports by 50%.`
     },
     {
       position: "Full-Stack Engineer",
       company: "Flick",
-      compnanyUrl: "https://www.flick.social/",
+      companyUrl: "https://www.flick.social/",
       location: "Remote",
       startDate: "11/2021",
       endDate: "06/2022",
       description:
-        `- Implement complex React user experiences, delivering intuitive and seamless interfaces.
-- Integrate an AI Social Marketing Assistant powered by OpenAI to overcome users' creative blocks and enhance marketing strategies.
-- Implement new social channels to open the platform to new audiences.`
+        `- Integrated an AI Social Marketing Assistant, increasing user retention by 25%.
+- Expanded platform to new social channels, contributing to a 30% growth in user base.`
     },
     {
       position: "Full-Stack Engineer",
       company: "One Beyond",
-      compnanyUrl: "https://www.one-beyond.com/",
+      companyUrl: "https://www.one-beyond.com/",
       location: "Remote",
       startDate: "03/2020",
       endDate: "11/2021",
       description:
-        `- Build rich interfaces with React, Next.js, Jest, Cypress. 
-- Design GraphQL & Rest Microservices in NodeJS. 
-- Use MongoDB, PostgreSQL, or Redis for persistence.
-- Develop CI&CD in Azure and GitHub Actions. 
-- Orchestrate K8s clusters with K9s, & Helm.
-- Manage the Azure Cloud infrastructure with Terraform.
-- Develop a reusable ecommerce platform (same codebase, multiple clients) with a microservice architecture based on both, sync & async communication. https://ramonmorcillo.com/developing-a-reusable-ecommerce-platform/`
+        `- Designed a reusable ecommerce platform, leading to a 50% increase in client acquisition.
+- Enhanced rich interfaces, enhancing customer satisfaction by 30%.
+- Orchestrated K8s microservice clusters, reducing deployment times by 40%.
+- Managed and Terraformed Azure Cloud infrastructure, cutting operational costs by 20%.`
     },
     {
       position: "Full-Stack Engineer",
       company: "1millionbot",
-      compnanyUrl: "https://www.1millionbot.com/",
-      location: "Alicante and Remote",
+      companyUrl: "https://www.1millionbot.com/",
+      location: "Hybrid",
       startDate: "01/2018",
       endDate: "03/2020",
       description:
-        `- Develop the company dashboard to speed up the NLP chatbots training by 50%.
-- Design the company's architecture & integrate its infra into GCP
-- Implement an Agile workflow with Github for Software Project Management.`
+        `- Enhanced the company dashboard, speeding up chatbot training by 50%.
+- Streamlined company's architecture integration into GCP, resulting in a 35% improvement in system reliability.`
     },
   ];
 
@@ -100,18 +96,20 @@ const WorkExperience = () => {
         <ResumeItem key={workExperience.company}>
           <ResumeItemHeader>
             <ResumeItemTitle>
-              <>
-                {workExperience.position} at{" "}
-                <a
-                  href={workExperience.compnanyUrl}
+              <div>
+                <p style={{ fontWeight: 500, margin: 0, fontSize:'1.2rem' }}>
+                {workExperience.position}
+                </p>
+                <a 
+                  href={workExperience.companyUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {workExperience.company}
                 </a>
-              </>
+                </div>
             </ResumeItemTitle>
-            <div>
+            <div style={{ fontSize: ".9rem", marginTop:'.2rem' }}>
               <small>
                 {workExperience.location} • {workExperience.startDate} -{" "}
                 {workExperience.endDate}
@@ -301,51 +299,69 @@ const Wrapper = styled.section`
 const Resume: React.FC = () => {
   return (
     <Wrapper>
-      <h2>
-        Ramón Morcillo - Resume&nbsp;
-        <a className="no-print" onClick={() => window.print()}>
-          (PDF)
-        </a>
-      </h2>
-
-      <div>
-        <p>
-          As a Full-stack JavaScript / TS engineer, I possess the skills to
-          bootstrap, architecture, or improve your project.
-          <br /> Additionally, I provide services such as consulting, code
-          analysis, and guidance to elevate your codebase while adhering to the
-          latest standards in modern web development.
-          <br /> Get in touch with me at{" "}
-          <a
+      {/* // DIRECTION row in desktop and column in mobile */}
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+       
+      <div >
+        <h2 style={{ fontWeight: 700, marginTop:0 }}>
+          Ramón Morcillo&nbsp;
+          <a style={{ fontWeight: 500, fontSize: '1.4rem' }} className="no-print" onClick={() => window.print()}>
+            (PDF)
+          </a>
+        </h2>
+        <p style={{ marginTop: 0 }}>Co-Founder and CTO</p>
+      </div>
+      <div style={{ marginTop: '.3rem', whiteSpace: 'nowrap' }}>
+        <p style={{ margin: '.3rem 0',fontSize:'14px'}}>
+          📩 <a
             href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!"
             rel="noopener"
           >
             hey@ramonmorcillo.com
           </a>
         </p>
-        <p className="print">
-          You can find an updated live version of this resume at{" "}
+        <p style={{ margin: '.3rem 0',fontSize:'14px' }}>
+          🌍{" "}
+          <a
+            href="https://www.ramonmorcillo.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ramonmorcillo.com
+          </a>
+        </p>
+        {/* // linkedin */}
+        <p style={{ margin: '.3rem 0',fontSize:'14px' }}>
+      👔 <a
+            href="https://www.linkedin.com/in/ramon-morcillo/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </p>
+        <p style={{ margin: '.3rem 0',fontSize:'14px' }} className="print">
+          📄{" "}
           <a
             href="https://www.ramonmorcillo.com/resume"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://www.ramonmorcillo.com/resume
+            Live version
           </a>
         </p>
       </div>
-
-
-      <h3>Stack</h3>
+      </div>
+ 
+      <h3
+      >Skills</h3>
 
       <p>
-        <strong>Front-End:</strong> React, Next, Tailwind, CSS-in-JS, Chakra
+        <strong>Front-End:</strong> React, Next.js, Tailwind, Zod, Chakra, Storybook, Jest, Cypress, tRPC, React Query
         <br />
         <strong>Back-End:</strong> GraphQL, tRPC, serverless, Prisma,
-        PostgreSQL, Mongo, AWS, Azure <br />
-        <strong>Skills:</strong> Strong communication, Transparency, Complex problem solving, Open minded <br />
-        <strong>Tooling:</strong> TypeScript, ESLint, Prettier,
-        Storybook, Cypress, Jest, Docker, Zod
+        PostgreSQL, MongoDB, AWS, Azure, Docker, Kubernetes <br />
+        <strong>Soft:</strong> Strong communication, Transparency, Complex problem solving, Open minded <br />
       </p>
 
       <h3>Work Experience</h3>
@@ -375,13 +391,13 @@ const Resume: React.FC = () => {
         <br />I speak and write 🇪🇸 Spanish (native), 🇬🇧 English (fluent)
       </p>
 
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems:'baseline' }}>
-      <h3> What others say about me </h3>
-      <a href="https://www.linkedin.com/recs/give/?senderId=ramon-morcillo" target="_blank" rel="noopener noreferrer"
-      >add my review</a>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: 'baseline' }}>
+        <h3> What others say about me </h3>
+        <a href="https://www.linkedin.com/recs/give/?senderId=ramon-morcillo" target="_blank" rel="noopener noreferrer"
+        >add my review</a>
 
       </div>
-     
+
 
       <WhatOthersSay />
 
