@@ -361,9 +361,9 @@ const Resume: React.FC = () => {
       <p>
         <strong>Front-End:</strong> React, Next.js, Tailwind, Zod, Chakra, Storybook, Jest, Cypress, tRPC, React Query
         <br />
-        <strong>Back-End:</strong> GraphQL, tRPC, serverless, Prisma,
+        <strong>Back-End:</strong> Node.js, GraphQL, tRPC, serverless, Prisma,
         PostgreSQL, MongoDB, AWS, Azure, Docker, Kubernetes <br />
-        <strong>Soft:</strong> Strong communication, Transparency, Open minded <br />
+        <strong>Soft:</strong> Strong communication, Asking Questions, Transparency, Open minded <br />
       </p>
 
       <h3>Work Experience</h3>
