@@ -43,7 +43,7 @@ const WorkExperience = () => {
 - Engineered scalable architecture, ensuring 99.9% uptime and accommodating a 30% quarterly growth in traffic.`
     },
     {
-      position: "Software Engineer",
+      position: "Full Stack Engineer",
       company: "On Target AI",
       companyUrl: "https://on-target.ai/",
       location: "Remote",
@@ -54,7 +54,7 @@ const WorkExperience = () => {
 - Implemented a scalable codebase, reducing bug reports by 50%.`
     },
     {
-      position: "Full-Stack Engineer",
+      position: "Full Stack Engineer",
       company: "Flick",
       companyUrl: "https://www.flick.social/",
       location: "Remote",
@@ -65,7 +65,7 @@ const WorkExperience = () => {
 - Expanded platform to new social channels, contributing to a 30% growth in user base.`
     },
     {
-      position: "Full-Stack Engineer",
+      position: "Full Stack Engineer",
       company: "One Beyond",
       companyUrl: "https://www.one-beyond.com/",
       location: "Remote",
@@ -78,7 +78,7 @@ const WorkExperience = () => {
 - Managed and Terraformed Azure Cloud infrastructure, cutting operational costs by 20%.`
     },
     {
-      position: "Full-Stack Engineer",
+      position: "Full Stack Engineer",
       company: "1millionbot",
       companyUrl: "https://www.1millionbot.com/",
       location: "Hybrid",
