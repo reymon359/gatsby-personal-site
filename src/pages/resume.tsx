@@ -97,19 +97,19 @@ const WorkExperience = () => {
           <ResumeItemHeader>
             <ResumeItemTitle>
               <div>
-                <p style={{ fontWeight: 500, margin: 0, fontSize:'1.2rem' }}>
-                {workExperience.position}
+                <p style={{ fontWeight: 500, margin: 0, fontSize: '1.2rem' }}>
+                  {workExperience.position}
                 </p>
-                <a 
+                <a
                   href={workExperience.companyUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {workExperience.company}
                 </a>
-                </div>
+              </div>
             </ResumeItemTitle>
-            <div style={{ fontSize: ".9rem", marginTop:'.2rem' }}>
+            <div style={{ fontSize: ".9rem", marginTop: '.2rem' }}>
               <small>
                 {workExperience.startDate} -{" "}
                 {workExperience.endDate}
@@ -167,7 +167,7 @@ const ProjectHighlights = () => {
               <small>{project.year}</small>
             </div>
           </ResumeItemHeader>
-          <p style={{ marginTop : '.5rem', marginBottom: 0 }}
+          <p style={{ marginTop: '.5rem', marginBottom: 0 }}
           >{project.description}</p>
         </ResumeItem>
       ))}
@@ -236,6 +236,20 @@ I wholeheartedly recommend Ramon to any team seeking a front-end developer who b
       image: "/images/resume/fran.jpg",
       position: "Software Engineer at Lean Mind"
     },
+    {
+      text: `I am delighted to recommend Ramón as a talented Full Stack developer with a strong focus on the front end, particularly with React. I've had the privilege of working alongside Ramón in Deribe and his ability to design and build captivating user interfaces is impressive.
+
+  Ramón demonstrates a deep understanding of frontend technologies, and his expertise with React helped Deribe to grow quickly. His knack for transforming ideas into visually appealing and functional products is unparalleled. Moreover, he was always abreast of the latest trends and best practices in front-end development, significantly contributing to the quality and efficiency of our work.
+
+  Beyond his technical skills, Ramón is a proactive, results-oriented collaborator. He is always willing to take on new challenges and bring a creative mindset to any task he undertakes. His positive attitude and ability to work well in a team make collaborating with him a pleasure.
+
+  In summary, I would wholeheartedly recommend Ramón to any team seeking a Full Stack developer with a strong emphasis on the front end, especially those working with React. His experience and skills are a valuable asset, and I am confident he will continue to excel in any project he undertakes.`,
+      author: "Quico Llinares Llorens",
+      image: "/images/resume/quico.jpg",
+      position: "Senior Software Engineer"
+    },
+
+
   ]
 
   return (
@@ -303,58 +317,58 @@ const Resume: React.FC = () => {
     <Wrapper>
       {/* // DIRECTION row in desktop and column in mobile */}
       <div style={{ display: "flex", justifyContent: "space-between" }}>
-       
-      <div >
-        <h2 style={{ fontWeight: 700, marginTop:0 }}>
-          Ramón Morcillo&nbsp;
-          <a style={{ fontWeight: 500, fontSize: '1.4rem' }} className="no-print" onClick={() => window.print()}>
-            (PDF)
-          </a>
-        </h2>
-        <p style={{ marginTop: 0 }}>Co-founder & CTO at Mapmelon | Coliving Enthusiast</p>
+
+        <div >
+          <h2 style={{ fontWeight: 700, marginTop: 0 }}>
+            Ramón Morcillo&nbsp;
+            <a style={{ fontWeight: 500, fontSize: '1.4rem' }} className="no-print" onClick={() => window.print()}>
+              (PDF)
+            </a>
+          </h2>
+          <p style={{ marginTop: 0 }}>Co-founder & CTO at Mapmelon | Coliving Enthusiast</p>
+        </div>
+        <div style={{ marginTop: '.3rem', whiteSpace: 'nowrap' }}>
+          <p style={{ margin: '.3rem 0', fontSize: '14px' }}>
+            📩 <a
+              href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!"
+              rel="noopener"
+            >
+              hey@ramonmorcillo.com
+            </a>
+          </p>
+          <p style={{ margin: '.3rem 0', fontSize: '14px' }}>
+            🌍{" "}
+            <a
+              href="https://www.ramonmorcillo.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ramonmorcillo.com
+            </a>
+          </p>
+          {/* // linkedin */}
+          <p style={{ margin: '.3rem 0', fontSize: '14px' }}>
+            👔 <a
+              href="https://www.linkedin.com/in/ramon-morcillo/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </p>
+          <p style={{ margin: '.3rem 0', fontSize: '14px' }} className="print">
+            📄{" "}
+            <a
+              href="https://www.ramonmorcillo.com/resume"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live version
+            </a>
+          </p>
+        </div>
       </div>
-      <div style={{ marginTop: '.3rem', whiteSpace: 'nowrap' }}>
-        <p style={{ margin: '.3rem 0',fontSize:'14px'}}>
-          📩 <a
-            href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!"
-            rel="noopener"
-          >
-            hey@ramonmorcillo.com
-          </a>
-        </p>
-        <p style={{ margin: '.3rem 0',fontSize:'14px' }}>
-          🌍{" "}
-          <a
-            href="https://www.ramonmorcillo.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ramonmorcillo.com
-          </a>
-        </p>
-        {/* // linkedin */}
-        <p style={{ margin: '.3rem 0',fontSize:'14px' }}>
-      👔 <a
-            href="https://www.linkedin.com/in/ramon-morcillo/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-        </p>
-        <p style={{ margin: '.3rem 0',fontSize:'14px' }} className="print">
-          📄{" "}
-          <a
-            href="https://www.ramonmorcillo.com/resume"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Live version
-          </a>
-        </p>
-      </div>
-      </div>
- 
+
       <h3
       >Skills</h3>
 
@@ -393,17 +407,17 @@ const Resume: React.FC = () => {
         <br />I speak and write 🇪🇸 Spanish (native), 🇬🇧 English (fluent)
       </p>
 
-      <div 
-     
-      style={{ display: "flex", justifyContent: "space-between", alignItems: 'baseline' }}>
+      <div
+
+        style={{ display: "flex", justifyContent: "space-between", alignItems: 'baseline' }}>
         <h3 id='what-others-say'> What others say about me </h3>
-        <a  className="no-print"href="https://www.linkedin.com/recs/give/?senderId=ramon-morcillo" target="_blank" rel="noopener noreferrer"
+        <a className="no-print" href="https://www.linkedin.com/recs/give/?senderId=ramon-morcillo" target="_blank" rel="noopener noreferrer"
         >add my review</a>
 
       </div>
       <p className="print">
         Check what others say about me in <a
-         href="https://www.ramonmorcillo.com/resume/#what-others-say" target="_blank" rel="noopener noreferrer">
+          href="https://www.ramonmorcillo.com/resume/#what-others-say" target="_blank" rel="noopener noreferrer">
           the resume live version
         </a>
 
