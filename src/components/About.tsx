@@ -26,6 +26,9 @@ const AboutMe: React.FC = () => {
         I am passionate about creating captivating software experiences that bring joy to people's lives.
       </p>
       <p>
+        I also guide others through personalized <a href="https://coach.ramonmorcillo.com" target="_blank" rel="noopener noreferrer">coaching and mentoring services</a>.
+      </p>
+      <p>
         Apart from working with various companies and individuals, I am proud to be the co-founder of <a href="https://www.mapmelon.com" target="_blank" rel="noopener noreferrer">Mapmelon</a>.
       </p>
       <p>
