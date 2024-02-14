@@ -30,64 +30,71 @@ const ResumeItem = styled.div`
 
 const WorkExperience = () => {
   const workExperiences = [
-    {
-      position: "Co-Founder and CTO",
-      company: "Mapmelon",
-      companyUrl: "https://www.mapmelon.com/",
-      location: "Remote",
-      startDate: "Nov 2022",
-      endDate: "Present",
-      description:
-        `- Improve the lives of Digital Nomads and Remote Workers connecting over 10,000 users to authentic community-focused coliving spaces.
+		{
+			position: 'Co-Founder and CTO',
+			company: 'Mapmelon',
+			companyUrl: 'https://www.mapmelon.com/',
+			location: 'Remote',
+			startDate: 'Nov 2022',
+			endDate: 'Present',
+			description: `- Improve the lives of Digital Nomads and Remote Workers connecting over 10,000 users to authentic community-focused coliving spaces.
 - Developed the platform from scratch, leading to a 40% increase in user engagement within the first 6 months.
-- Engineered scalable architecture, ensuring 99.9% uptime and accommodating a 30% quarterly growth in traffic.`
-    },
-    {
-      position: "Full Stack Engineer",
-      company: "On Target AI",
-      companyUrl: "https://on-target.ai/",
-      location: "Remote",
-      startDate: "Jun 2023",
-      endDate: "Present",
-      description:
-        `- Crafted user interfaces that improved user experience scores by 35%.
-- Implemented a scalable codebase, reducing bug reports by 50%.`
-    },
-    {
-      position: "Full Stack Engineer",
-      company: "Flick",
-      companyUrl: "https://www.flick.social/",
-      location: "Remote",
-      startDate: "Nov 2021",
-      endDate: "Jun 2023",
-      description:
-        `- Integrated an AI Social Marketing Assistant, increasing user retention by 25%.
-- Expanded platform to new social channels, contributing to a 30% growth in user base.`
-    },
-    {
-      position: "Full Stack Engineer",
-      company: "One Beyond",
-      companyUrl: "https://www.one-beyond.com/",
-      location: "Remote",
-      startDate: "March 2020",
-      endDate: "Nov 2021",
-      description:
-        `- Designed a reusable ecommerce platform, leading to a 50% increase in client acquisition.
+- Engineered scalable architecture, ensuring 99.9% uptime and accommodating a 30% quarterly growth in traffic.`,
+		},
+		{
+			position: 'Senior Full Stack Engineer',
+			company: 'Coral Innovation GmbH',
+			companyUrl: 'https://www.coral-innovation.de/',
+			location: 'Remote',
+			startDate: 'Dec 2023',
+			endDate: 'Present',
+			description: `- Led team improvements, making us work smarter and get better together. Got a big thumbs up from our client for it.
+- Made coding faster and efficient for everyone by setting up coding standards, guidelines, and best practices.
+- Implemented and refined key features in the product, setting a high standard for code quality and serving as a model for best coding practices helping the team level up their coding game. 
+- Wrote comprehensive documentation and established guidelines, making our team more cohesive and efficient.`,
+		},
+		{
+			position: 'Senior Full Stack Engineer',
+			company: 'On Target AI',
+			companyUrl: 'https://on-target.ai/',
+			location: 'Remote',
+			startDate: 'Jun 2023',
+			endDate: 'Dec 2023',
+			description: `- Crafted user interfaces that improved user experience scores by 35%.
+- Implemented a scalable codebase, reducing bug reports by 50%.`,
+		},
+		{
+			position: 'Full Stack Engineer',
+			company: 'Flick',
+			companyUrl: 'https://www.flick.social/',
+			location: 'Remote',
+			startDate: 'Nov 2021',
+			endDate: 'Jun 2023',
+			description: `- Integrated an AI Social Marketing Assistant, increasing user retention by 25%.
+- Expanded platform to new social channels, contributing to a 30% growth in user base.`,
+		},
+		{
+			position: 'Full Stack Engineer',
+			company: 'One Beyond',
+			companyUrl: 'https://www.one-beyond.com/',
+			location: 'Remote',
+			startDate: 'March 2020',
+			endDate: 'Nov 2021',
+			description: `- Designed a reusable ecommerce platform, leading to a 50% increase in client acquisition.
 - Enhanced rich interfaces, enhancing customer satisfaction by 30%.
 - Orchestrated K8s microservice clusters, reducing deployment times by 40%.
-- Managed and Terraformed Azure Cloud infrastructure, cutting operational costs by 20%.`
-    },
-    {
-      position: "Full Stack Engineer",
-      company: "1millionbot",
-      companyUrl: "https://www.1millionbot.com/",
-      location: "Hybrid",
-      startDate: "Jan 2017",
-      endDate: "March 2020",
-      description:
-        `- Enhanced the company dashboard, speeding up chatbot training by 50%.
-- Streamlined company's architecture integration into GCP, resulting in a 35% improvement in system reliability.`
-    },
+- Managed and Terraformed Azure Cloud infrastructure, cutting operational costs by 20%.`,
+		},
+		{
+			position: 'Full Stack Engineer',
+			company: '1millionbot',
+			companyUrl: 'https://www.1millionbot.com/',
+			location: 'Hybrid',
+			startDate: 'Jan 2017',
+			endDate: 'March 2020',
+			description: `- Enhanced the company dashboard, speeding up chatbot training by 50%.
+- Streamlined company's architecture integration into GCP, resulting in a 35% improvement in system reliability.`,
+		},
   ];
 
   return (
