@@ -47,11 +47,10 @@ const WorkExperience = () => {
 			companyUrl: 'https://www.coral-innovation.de/',
 			location: 'Remote',
 			startDate: 'Dec 2023',
-			endDate: 'Present',
-			description: `- Led team improvements, making us work smarter and get better together, earning client gratitude for significant improvements in team dynamics and output.
-- Made coding faster and more efficient for everyone by setting up coding standards, guidelines, and best practices. 
-- Implemented and refined key features in the product, setting a high standard for code quality and serving as a model for best coding practices, helping the team level up their coding game.
-- Wrote comprehensive documentation and established guidelines, making our team more cohesive and efficient.`,
+			endDate: 'Present', 
+			description: `- Led team improvements, making us work smarter and get better together.
+- Made our coding 30% faster and more efficient by setting up coding standards, guidelines, and documentation. 
+- Implemented and refined key features in the product with a high standard for code quality and serving as a model for best coding practices.`,
 		},
 		{
 			position: 'Senior Full Stack Engineer',
