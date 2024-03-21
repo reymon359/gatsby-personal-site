@@ -4,7 +4,7 @@ title: 'Traveling through The Canary Islands: An in-depth guide to the Canary Is
 description: 'A compilation of personal knowledge from the Canary Islands to help people get to know them better'
 date: '2021-03-18'
 author: 'Ramón Morcillo'
-tags: ['Adventures', 'Trips', 'Canary Islands', 'Guide']
+tags: ['Adventures', 'Travel', 'Canary Islands', 'Guide']
 published: true
 commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/460
 featuredImage: './assets/cofete_beach.jpg'
@@ -28,39 +28,40 @@ This guide will focus first on the general aspects of all the islands and then o
 
 ## Table of Contents
 
-- [Nature](#Nature)
-- [History](#History)
-- [Gastronomy](#Gastronomy)
-  - [Papas arrugadas](#Papas-arrugadas)
-  - [Mojos](#Mojos)
-  - [Goat food](#Goat-food)
-  - [Gofio](#Gofio)
-  - [Desserts](#Desserts)
-  - [Venezuelan food](#Venezuelan-food)
-  - [Fish and Seafood](#Fish-and-Seafood)
-  - [Others](#Others)
-- [Islands](#Islands)
-- [Tenerife](#Tenerife)
-  - [Gastronomy](#Gastronomy-1)
-  - [Cities and towns](#Cities-and-towns)
-  - [Nature](#Nature-1)
-- [Gran Canaria](#Gran-Canaria)
-  - [Gastronomy](#Gastronomy-2)
-  - [Cities and towns](#Cities-and-towns-1)
-  - [Nature](#Nature-2)
-- [La Palma](#La-palma)
-  - [Gastronomy](#Gastronomy-3)
-  - [Cities and towns](#Cities-and-towns-2)
-  - [Nature](#Nature-3)
-- [Fuerteventura](#Fuerteventura)
-  - [Gastronomy](#Gastronomy-4)
-  - [Cities and towns](#Cities-and-towns-3)
-  - [Nature](#Nature-4)
-- [La Gomera](#La-Gomera)
-- [El Hierro](#El-Hierro)
-- [Lanzarote](#Lanzarote)
-- [La Graciosa](#La-Graciosa)
-- [Acknowledgments](#Acknowledgments)
+- [Table of Contents](#table-of-contents)
+- [Nature](#nature)
+- [History](#history)
+- [Gastronomy](#gastronomy)
+  - [Papas arrugadas](#papas-arrugadas)
+  - [Mojos](#mojos)
+  - [Goat food](#goat-food)
+  - [Gofio](#gofio)
+  - [Desserts](#desserts)
+  - [Venezuelan food](#venezuelan-food)
+  - [Fish and Seafood](#fish-and-seafood)
+  - [Others](#others)
+- [Islands](#islands)
+- [Tenerife](#tenerife)
+  - [Gastronomy](#gastronomy-1)
+  - [Cities and towns](#cities-and-towns)
+  - [Nature](#nature-1)
+- [Gran Canaria](#gran-canaria)
+  - [Gastronomy](#gastronomy-2)
+  - [Cities and towns](#cities-and-towns-1)
+  - [Nature](#nature-2)
+- [La Palma](#la-palma)
+  - [Gastronomy](#gastronomy-3)
+  - [Cities and towns](#cities-and-towns-2)
+  - [Nature](#nature-3)
+- [Fuerteventura](#fuerteventura)
+  - [Gastronomy](#gastronomy-4)
+  - [Cities and towns](#cities-and-towns-3)
+  - [Nature](#nature-4)
+- [La Gomera](#la-gomera)
+- [El Hierro](#el-hierro)
+- [Lanzarote](#lanzarote)
+- [La Graciosa](#la-graciosa)
+- [Acknowledgments](#acknowledgments)
 
 ## Nature
 

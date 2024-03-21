@@ -4,7 +4,7 @@ title: 'A trip to the French Alps'
 description: 'Trip to the French Alps, Lyon, Chamonix Mont-Blanc, and Turin.'
 date: '2020-10-03'
 author: 'Ramón Morcillo'
-tags: ['Adventures', 'Trips', 'City', 'Nature']
+tags: ['Adventures', 'Travel', 'City', 'Nature']
 published: true
 commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/195
 featuredImage: './alps_view_from_aiguille_du_midi.jpg'
@@ -18,16 +18,17 @@ This is just a summary of the trip and the places we visited to help anyone who 
 
 ## Table of Contents
 
-- [Nimes](#Nimes)
-- [Lyon](#Lyon)
-- [Chamonix - Mont Blanc](#Chamonix---Mont-Blanc)
-  - [Aiguille du Midi](#Aiguille-du-Midi)
-  - [Gorges of the Diosaz](#Gorges-of-the-Diosaz)
-  - [Mer De Glace](#Mer-De-Glace)
-- [Turin](#Turin)
-- [Annecy](#Annecy)
-- [Conclusion and tips](#Conclusion-and-tips)
-- [Resources](#Resources)
+- [Table of Contents](#table-of-contents)
+- [Nimes](#nimes)
+- [Lyon](#lyon)
+- [Chamonix - Mont Blanc](#chamonix---mont-blanc)
+  - [Aiguille du Midi](#aiguille-du-midi)
+  - [Gorges of the Diosaz](#gorges-of-the-diosaz)
+  - [Mer De Glace](#mer-de-glace)
+- [Turin](#turin)
+- [Annecy](#annecy)
+- [Conclusion and tips](#conclusion-and-tips)
+- [Resources](#resources)
 
 ## Nimes
 
