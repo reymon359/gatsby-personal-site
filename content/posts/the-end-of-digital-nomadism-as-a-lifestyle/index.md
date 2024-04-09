@@ -6,7 +6,7 @@ date: '2024-03-01'
 author: 'Ramón Morcillo'
 tags: ['Life', Digital Nomad', 'Adventures', 'Travel', 'Coliving', 'Philosophy']
 published: true
-commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/748
+commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/749
 featuredImage: './assets/cover.jpg'
 type: 'post'
 url: 'none'
