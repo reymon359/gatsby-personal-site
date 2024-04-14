@@ -77,7 +77,7 @@ Why do we seek community so much? Easy, the chances of survival and perpetuating
 
 To provide more context about colivings, I asked ChatGPT to summarize [this article explaining what is a coliving](https://www.mapmelon.com/blog/what-is-coliving-a-guide-for-digital-nomads-and-remote-workers) from [Sole Garcia](https://garciasole.com/). Go check it out if you want to learn more about the term.
 
-“Coliving for digital nomads and remote workers is a community-based living arrangement offering stays from one to three months. It provides not just a place to stay but a vibrant community, combining work-friendly amenities like high-speed internet and coworking spaces with social interaction and local cultural immersion, making it an ideal choice for those seeking flexibility, a sense of community, and an authentic local experience.”
+> “Coliving for digital nomads and remote workers is a community-based living arrangement offering stays from one to three months. It provides not just a place to stay but a vibrant community, combining work-friendly amenities like high-speed internet and coworking spaces with social interaction and local cultural immersion, making it an ideal choice for those seeking flexibility, a sense of community, and an authentic local experience.”
 
 You can also think about it as a “Hostel with Coworking” or “Erasmus for grown-up people” as my friend Mario calls them.
 
