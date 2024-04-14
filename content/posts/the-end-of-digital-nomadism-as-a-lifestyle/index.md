@@ -25,7 +25,22 @@ This article discusses why digital nomads eventually opt to settle down, tracing
 
 I made charts to represent certain data and to make the article more visually appealing. They are based on my own experiences and the experiences of other digital nomads I have met.
 
-TOC TODO
+## Table of contents
+
+- [Table of contents](#Table-of-contents)
+- [Our ancestors vs our modern lifestyle](#Our-ancestors-vs-our-modern-lifestyle)
+  - [The Rise of Digital Nomads](#The-Rise-of-Digital-Nomads)
+  - [Colivings for digital nomads and remote workers](#Colivings-for-digital-nomads-and-remote-workers)
+  - [Nomad couples](#Nomad-couples)
+- [Why do digital nomads stop this lifestyle?](#Why-do-digital-nomads-stop-this-lifestyle)
+  - [Bases and Slowmads](#Bases-and-Slowmads)
+  - [Nomad Families](#Nomad-Families)
+  - [Digital nomad problems](#Digital-nomad-problems)
+- [The future](#The-future)
+  - [Hubs](#Hubs)
+  - [More predictions](#More-predictions)
+- [Conclusion](#Conclusion)
+
 
 ## Our ancestors vs our modern lifestyle
 
