@@ -4,7 +4,7 @@ title: 'Lifestyle as a digital nomad staying in colivings'
 description: 'Information and resources about coliving and traveling as a digital nomad.'
 date: '2021-09-20'
 author: 'Ramón Morcillo'
-tags: ['Adventures', 'Digital nomad', 'Coliving', 'Coronavirus']
+tags: ['Adventures', 'Digital Nomad', 'Coliving', 'Coronavirus']
 published: true
 commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/631
 featuredImage: './assets/chateau_coliving_bonfire.jpeg'
@@ -18,22 +18,23 @@ I will explain first the concept behind _Coliving_ and _Digital Nomad._ Adding m
 
 ## Table of Contents
 
-- [Coliving](#Coliving)
-  - [Characteristics](#Characteristics)
-  - [Price](#Price)
-  - [Stay](#Stay)
-  - [Community](#Community)
-- [Digital nomad](#Digital-nomad)
-  - [Why did I decide to embrace this lifestyle?](#Why-did-I-decide-to-embrace-this-lifestyle)
-  - [My opinion and what I learned from it](#My-opinion-and-what-I-learned-from-it)
-- [Coronavirus](#Coronavirus)
-- [Conclusions](#Conclusions)
-- [Resources](#Resources)
-  - [Traveling](#Traveling)
-  - [Covid-19](#Covid-19)
-  - [Colivings](#Colivings)
-  - [My map](#My-map)
-- [Acknowledgments](#Acknowledgments)
+- [Table of Contents](#table-of-contents)
+- [Coliving](#coliving)
+  - [Characteristics](#characteristics)
+  - [Price](#price)
+  - [Stay](#stay)
+  - [Community](#community)
+- [Digital nomad](#digital-nomad)
+  - [Why did I decide to embrace this lifestyle?](#why-did-i-decide-to-embrace-this-lifestyle)
+  - [My opinion and what I learned from it](#my-opinion-and-what-i-learned-from-it)
+- [Coronavirus](#coronavirus)
+- [Conclusions](#conclusions)
+- [Resources](#resources)
+  - [Traveling](#traveling)
+  - [Covid-19](#covid-19)
+  - [Colivings](#colivings)
+  - [My map](#my-map)
+- [Acknowledgments](#acknowledgments)
 
 ## Coliving
 
@@ -224,4 +225,3 @@ And thanks to my company and teammates. They make this possible and support me w
 Lastly, thanks to Tobias Hug, for the best review someone ever made me of an article.
 
 By the way, the article’s cover picture is from a bonfire at Chateau Coliving, in Normandy
-

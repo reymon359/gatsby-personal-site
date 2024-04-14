@@ -4,7 +4,7 @@ title: 'Visiting the Dolomites'
 description: 'Trip through the Dolomites, the Italian Alps.'
 date: '2019-08-29'
 author: 'Ramón Morcillo'
-tags: ['Adventures', 'Trips', 'Nature']
+tags: ['Adventures', 'Travel', 'Nature']
 published: true
 commentsUrl: https://github.com/reymon359/gatsby-personal-site/issues/168
 featuredImage: './20190830_dolomites-2019_passo-pordoi_001.jpg'
@@ -19,11 +19,12 @@ In short, the Dolomites is a mountain range that is part of [the Alps](https://e
 ![Dolomites map](./20190828_dolomites-2019_map_001.jpg)
 
 ## Table of Contents
-- [First day: Trento](#First-day-Trento)
-- [Second day: Lago di Carezza](#Second-day-Lago-di-Carezza)
-- [Third day: Cortina d'Ampezzo](#Third-day-Cortina-dAmpezzo)
-- [Fourth day: Bolzano and Lago di Garda](#Fourth-day-Bolzano-and-Lago-di-Garda)
-- [Conclusion](#Conclusion)
+- [Table of Contents](#table-of-contents)
+- [First day: Trento](#first-day-trento)
+- [Second day: Lago di Carezza](#second-day-lago-di-carezza)
+- [Third day: Cortina d'Ampezzo](#third-day-cortina-dampezzo)
+- [Fourth day: Bolzano and Lago di Garda](#fourth-day-bolzano-and-lago-di-garda)
+- [Conclusion](#conclusion)
 
 ## First day: Trento
 
