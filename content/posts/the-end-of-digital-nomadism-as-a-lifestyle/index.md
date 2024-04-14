@@ -27,7 +27,6 @@ I made charts to represent certain data and to make the article more visually ap
 
 ## Table of contents
 
-- [Table of contents](#table-of-contents)
 - [Our ancestors vs our modern lifestyle](#our-ancestors-vs-our-modern-lifestyle)
   - [The Rise of Digital Nomads](#the-rise-of-digital-nomads)
   - [Colivings for digital nomads and remote workers](#colivings-for-digital-nomads-and-remote-workers)
