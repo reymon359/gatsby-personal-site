@@ -2,7 +2,7 @@
 id: 'the-end-of-digital-nomadism-as-a-lifestyle'
 title: 'The end of Digital Nomadism as a lifestyle'
 description: 'How the lack of community while exploring makes nomads start looking for a base to settle down'
-date: '2024-03-01'
+date: '2024-04-14'
 author: 'Ramón Morcillo'
 tags:
     [
