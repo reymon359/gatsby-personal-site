@@ -1,7 +1,7 @@
 ---
 id: 'the-end-of-digital-nomadism-as-a-lifestyle'
 title: 'The end of Digital Nomadism as a lifestyle'
-description: 'How the lack of community while exploring makes nomads start looking for a base to settle down'
+description: 'How the lack of community while exploring makes digital nomads start looking for a base to settle down'
 date: '2024-04-14'
 author: 'Ramón Morcillo'
 tags:
@@ -27,19 +27,19 @@ I made charts to represent certain data and to make the article more visually ap
 
 ## Table of contents
 
-- [Table of contents](#Table-of-contents)
-- [Our ancestors vs our modern lifestyle](#Our-ancestors-vs-our-modern-lifestyle)
-  - [The Rise of Digital Nomads](#The-Rise-of-Digital-Nomads)
-  - [Colivings for digital nomads and remote workers](#Colivings-for-digital-nomads-and-remote-workers)
-  - [Nomad couples](#Nomad-couples)
-- [Why do digital nomads stop this lifestyle?](#Why-do-digital-nomads-stop-this-lifestyle)
-  - [Bases and Slowmads](#Bases-and-Slowmads)
-  - [Nomad Families](#Nomad-Families)
-  - [Digital nomad problems](#Digital-nomad-problems)
-- [The future](#The-future)
-  - [Hubs](#Hubs)
-  - [More predictions](#More-predictions)
-- [Conclusion](#Conclusion)
+- [Table of contents](#table-of-contents)
+- [Our ancestors vs our modern lifestyle](#our-ancestors-vs-our-modern-lifestyle)
+  - [The Rise of Digital Nomads](#the-rise-of-digital-nomads)
+  - [Colivings for digital nomads and remote workers](#colivings-for-digital-nomads-and-remote-workers)
+  - [Nomad couples](#nomad-couples)
+- [Why do digital nomads stop this lifestyle?](#why-do-digital-nomads-stop-this-lifestyle)
+  - [Bases and Slowmads](#bases-and-slowmads)
+  - [Nomad Families](#nomad-families)
+  - [Digital nomad problems](#digital-nomad-problems)
+- [The future](#the-future)
+  - [Hubs](#hubs)
+  - [More predictions](#more-predictions)
+- [Conclusion](#conclusion)
 
 
 ## Our ancestors vs our modern lifestyle
