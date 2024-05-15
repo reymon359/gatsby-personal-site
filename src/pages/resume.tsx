@@ -31,6 +31,17 @@ const ResumeItem = styled.div`
 const WorkExperience = () => {
 	const workExperiences = [
 		{
+			position: 'Senior Full Stack Engineer',
+			company: 'Coral Innovation GmbH',
+			companyUrl: 'https://www.coral-innovation.de/',
+			location: 'Remote',
+			startDate: 'Dec 2023',
+			endDate: 'Present',
+			description: `- Led team improvements, making us work smarter and get better together.
+- Made our coding 30% faster and more efficient by setting up coding standards, guidelines, and documentation. 
+- Implemented and refined key features in the product with a high standard for code quality and serving as a model for best coding practices.`,
+		},
+		{
 			position: 'Founder and CTO',
 			company: 'MangoBeds',
 			companyUrl: 'https://www.mangobeds.com/',
@@ -53,17 +64,7 @@ const WorkExperience = () => {
 - Developed the platform from scratch, leading to a 40% increase in user engagement within the first 6 months.
 - Engineered scalable architecture, ensuring 99.9% uptime and accommodating a 30% quarterly growth in traffic.`,
 		},
-		{
-			position: 'Senior Full Stack Engineer',
-			company: 'Coral Innovation GmbH',
-			companyUrl: 'https://www.coral-innovation.de/',
-			location: 'Remote',
-			startDate: 'Dec 2023',
-			endDate: 'Present',
-			description: `- Led team improvements, making us work smarter and get better together.
-- Made our coding 30% faster and more efficient by setting up coding standards, guidelines, and documentation. 
-- Implemented and refined key features in the product with a high standard for code quality and serving as a model for best coding practices.`,
-		},
+
 		{
 			position: 'Senior Full Stack Engineer',
 			company: 'On Target AI',
