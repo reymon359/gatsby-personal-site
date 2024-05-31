@@ -361,7 +361,21 @@ const Resume: React.FC = () => {
 						</a>
 					</h2>
 					<p style={{ marginTop: 0 }}>
-						Co-founder & CTO at Mapmelon | Coliving Enthusiast
+						Senior Full Stack Engineer, CTO, and Founder
+					</p>
+					<p style={{ marginTop: 0, paddingRight: '1rem' }}>
+						Problem solver and experienced maker with a passion for
+						excellence and pragmatism. I create captivating software
+						experiences that bring joy to people's lives. I also
+						guide individuals and teams through personalized{' '}
+						<a
+							href="https://coach.ramonmorcillo.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							coaching and mentoring services
+						</a>
+						.
 					</p>
 				</div>
 				<div style={{ marginTop: '.3rem', whiteSpace: 'nowrap' }}>

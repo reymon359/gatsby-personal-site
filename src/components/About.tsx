@@ -23,10 +23,10 @@ const AboutMe: React.FC = () => {
         Problem solver and experienced maker with a passion for excellence and pragmatism.
       </p>
       <p>
-        I am passionate about creating captivating software experiences that bring joy to people's lives.
+        I create captivating software experiences that bring joy to people's lives.
       </p>
       <p>
-        I also guide others through personalized <a href="https://coach.ramonmorcillo.com" target="_blank" rel="noopener noreferrer">coaching and mentoring services</a>.
+        I also guide individuals and teams through personalized <a href="https://coach.ramonmorcillo.com" target="_blank" rel="noopener noreferrer">coaching and mentoring services</a>.
       </p>
       <p>
         Apart from working with various companies and individuals, I am proud to be the co-founder of <a href="https://www.mapmelon.com" target="_blank" rel="noopener noreferrer">Mapmelon</a>.
