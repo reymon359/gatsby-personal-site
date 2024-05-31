@@ -361,19 +361,20 @@ const Resume: React.FC = () => {
 						</a>
 					</h2>
 					<p style={{ marginTop: 0 }}>
-						Senior Full Stack Engineer, CTO, and Founder
+						Senior Full Stack Engineer, CTO, Founder, and Mentor
 					</p>
 					<p style={{ marginTop: 0, paddingRight: '1rem' }}>
 						Problem solver and experienced maker with a passion for
 						excellence and pragmatism. I create captivating software
 						experiences that bring joy to people's lives. I also
-						guide individuals and teams through personalized{' '}
+						guide individuals and teams through personalized
+						coaching and mentoring services. More about me{' '}
 						<a
-							href="https://coach.ramonmorcillo.com"
+							href="https://www.ramonmorcillo.com/about"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							coaching and mentoring services
+							here
 						</a>
 						.
 					</p>
