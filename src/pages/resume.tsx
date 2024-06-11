@@ -42,17 +42,17 @@ const WorkExperience = () => {
 - Implemented and refined key features in the product with a high standard for code quality and serving as a model for best coding practices.`,
 		},
 		{
-	position: 'Senior Full Stack Engineer',
-	company: 'Human Does',
-	companyUrl: 'https://humandoes.com/',
-	location: 'Remote',
-	startDate: 'Feb 2024',
-	endDate: 'Present',
-	description: `- Simplifying digital complexities for businesses by handling everything from social media setups to web development.
+			position: 'Senior Full Stack Engineer',
+			company: 'Human Does',
+			companyUrl: 'https://humandoes.com/',
+			location: 'Remote',
+			startDate: 'Feb 2024',
+			endDate: 'Present',
+			description: `- Simplifying digital complexities for businesses by handling everything from social media setups to web development.
 - Developing user-centric websites and applications that engage and convert visitors, increasing conversion rates by 25%.
 - Implementing tailored digital marketing strategies that boost visibility and engagement, leading to a 30% increase in online traffic.
 - Offering a personalized touch by diving deep into clients' businesses and providing strategies that align with their brand and goals.`,
-},
+		},
 		{
 			position: 'Senior Full Stack Engineer',
 			company: 'MangoBeds',
@@ -248,6 +248,12 @@ const WhatOthersSay = () => {
 			author: 'Evan Seaward',
 			image: '/images/resume/evan.jpg',
 			position: 'Head of Engineering',
+		},
+		{
+			text: 'Ramon works in a highly structured manner, takes the initiative, and consistently asks the right questions to ensure high-quality outcomes. Ramon has significantly helped us lift our coding standards and has a keen eye for writing clear, understandable code. He is always happy to help, I am glad to have him on our team and be able to poke him with questions.',
+			author: 'David Büttner',
+			image: '/images/resume/david.jpg',
+			position: 'Software Engineer',
 		},
 		{
 			text: `It was a pleasure working with Ramon on his project the Mapmelon App. Ramon is a skilled developer with a strong commitment to delivering exceptional user experiences. His growth mindset, focus on details and technical expertise make him an invaluable addition to any ambitious project. Apart from being a great developer, he is also a great person to work with. 
