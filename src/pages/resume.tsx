@@ -42,7 +42,19 @@ const WorkExperience = () => {
 - Implemented and refined key features in the product with a high standard for code quality and serving as a model for best coding practices.`,
 		},
 		{
-			position: 'Founder and CTO',
+	position: 'Senior Full Stack Engineer',
+	company: 'Human Does',
+	companyUrl: 'https://humandoes.com/',
+	location: 'Remote',
+	startDate: 'Feb 2024',
+	endDate: 'Present',
+	description: `- Simplifying digital complexities for businesses by handling everything from social media setups to web development.
+- Developing user-centric websites and applications that engage and convert visitors, increasing conversion rates by 25%.
+- Implementing tailored digital marketing strategies that boost visibility and engagement, leading to a 30% increase in online traffic.
+- Offering a personalized touch by diving deep into clients' businesses and providing strategies that align with their brand and goals.`,
+},
+		{
+			position: 'Senior Full Stack Engineer',
 			company: 'MangoBeds',
 			companyUrl: 'https://www.mangobeds.com/',
 			location: 'Remote',
@@ -54,7 +66,7 @@ const WorkExperience = () => {
 `,
 		},
 		{
-			position: 'Co-Founder and CTO',
+			position: 'Senior Full Stack Engineer',
 			company: 'Mapmelon',
 			companyUrl: 'https://www.mapmelon.com/',
 			location: 'Remote',
@@ -64,7 +76,17 @@ const WorkExperience = () => {
 - Developed the platform from scratch, leading to a 40% increase in user engagement within the first 6 months.
 - Engineered scalable architecture, ensuring 99.9% uptime and accommodating a 30% quarterly growth in traffic.`,
 		},
-
+		{
+			position: 'Mentor & Coach',
+			company: 'Mentorship & Coaching',
+			companyUrl: 'https://coach.ramonmorcillo.com/',
+			location: 'Remote',
+			startDate: 'Jan 2024',
+			endDate: 'Present',
+			description: `- Providing personalized coaching and mentorship services for individuals and teams.
+- Specializing in career development, technical skills enhancement, and leadership training.
+- Empowering clients to achieve their professional goals through structured guidance and support.`,
+		},
 		{
 			position: 'Senior Full Stack Engineer',
 			company: 'On Target AI',
@@ -349,7 +371,7 @@ const Resume: React.FC = () => {
 		<Wrapper>
 			{/* // DIRECTION row in desktop and column in mobile */}
 			<div style={{ display: 'flex', justifyContent: 'space-between' }}>
-				<div>
+				<div style={{ paddingRight: '1rem' }}>
 					<h2 style={{ fontWeight: 700, marginTop: 0 }}>
 						Ramón Morcillo&nbsp;
 						<a
@@ -361,22 +383,16 @@ const Resume: React.FC = () => {
 						</a>
 					</h2>
 					<p style={{ marginTop: 0 }}>
-						Senior Full Stack Engineer, CTO, Founder, and Mentor
+						Senior Full Stack Engineer, CTO, Founder, and Mentor |
+						Expert in Cloud Architecture & Agile Methodologies for
+						startups | Driving Innovation in Coliving Spaces
 					</p>
-					<p style={{ marginTop: 0, paddingRight: '1rem' }}>
+					<p style={{ marginTop: 0 }}>
 						Problem solver and experienced maker with a passion for
 						excellence and pragmatism. I create captivating software
 						experiences that bring joy to people's lives. I also
 						guide individuals and teams through personalized
-						coaching and mentoring services. More about me{' '}
-						<a
-							href="https://www.ramonmorcillo.com/about"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							here
-						</a>
-						.
+						coaching and mentoring services.
 					</p>
 				</div>
 				<div style={{ marginTop: '.3rem', whiteSpace: 'nowrap' }}>
@@ -433,10 +449,10 @@ const Resume: React.FC = () => {
 				Chakra, Storybook, Jest, Cypress, tRPC, React Query
 				<br />
 				<strong>Back-End:</strong> Node.js, GraphQL, tRPC, serverless,
-				Prisma, PostgreSQL, MongoDB, AWS, Azure, Docker, Kubernetes{' '}
+				Prisma, PostgreSQL, MongoDB, AI, AWS, Azure, Docker, Kubernetes{' '}
 				<br />
-				<strong>Soft:</strong> Strong communication, Asking Questions,
-				Transparency, Open minded <br />
+				<strong>Soft:</strong> Strong communication, Documentation,
+				Asking Questions, Transparency, Open minded <br />
 			</p>
 
 			<h3>Work Experience</h3>
