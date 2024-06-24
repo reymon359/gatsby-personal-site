@@ -42,7 +42,7 @@ const WorkExperience = () => {
 - Implemented and refined key features in the product with a high standard for code quality and serving as a model for best coding practices.`,
 		},
 		{
-			position: 'Senior Full Stack Engineer',
+			position: 'Head of Engineering',
 			company: 'Human Does',
 			companyUrl: 'https://humandoes.com/',
 			location: 'Remote',
