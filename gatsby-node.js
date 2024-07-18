@@ -9,6 +9,10 @@ exports.createPages = ({graphql, actions}) => {
     toPath:
       'https://www.google.com/maps/d/viewer?mid=1O0IseePWpXqpT0v6srZyZMRDAvHhpWDg'
   })
+  createRedirect({
+		fromPath: '/chat',
+		toPath: 'https://calendar.app.google/oR6Lt3FS5evzANkbA',
+  });
 
   return graphql(
     `
