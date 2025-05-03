@@ -21,13 +21,13 @@ module.exports = {
       email: `hey@ramonmorcillo.com`
     },
     social: [
-      {name: `Twitter`, socialUrl: `https://twitter.com/reymon359`},
-      {name: `GitHub`, socialUrl: `https://github.com/reymon359`},
-      {name: `Mapmelon`, socialUrl: `https://www.mapmelon.com/reymon359/`},
-      {
+        {
         name: `LinkedIn`,
         socialUrl: `https://www.linkedin.com/in/ramon-morcillo/`
       },
+      {name: `X`, socialUrl: `https://x.com/reymon359`},
+      {name: `GitHub`, socialUrl: `https://github.com/reymon359`},
+    
     ]
   },
   plugins: [

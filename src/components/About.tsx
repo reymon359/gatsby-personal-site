@@ -28,9 +28,7 @@ const AboutMe: React.FC = () => {
       <p>
         I also guide individuals and teams through personalized <a href="https://coach.ramonmorcillo.com" target="_blank" rel="noopener noreferrer">coaching and mentoring services</a>.
       </p>
-      <p>
-        Apart from working with various companies and individuals, I am proud to be the co-founder of <a href="https://www.mapmelon.com" target="_blank" rel="noopener noreferrer">Mapmelon</a>.
-      </p>
+    
       <p>
         This website serves as a platform for sharing my knowledge and achievements. You can find my resume <a href="/resume"  >here</a>.
       </p>
