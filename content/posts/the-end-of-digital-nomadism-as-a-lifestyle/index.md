@@ -49,7 +49,7 @@ We are social animals. Our need for interaction with others moves us to form com
 
 Here is a chart representing the life of a hunter-gatherer and their levels of community and exploration along it
 
-![Hunter-gatherer lifestyle](./assets/hunter-gatherer-lifestyle.jpg)
+![Hunter-gatherer lifestyle](/content/posts/the-end-of-digital-nomadism-as-a-lifestyle/assets/hunter-gatherer-lifestyle.jpg)
 
 Nowadays, exploration and community are separate concepts. Our society has become more individualistic, often placing personal goals ahead of the community. Most people prioritize the community part by putting down roots in a place and making stronger connections through their careers, family, and friends.
 
@@ -57,7 +57,7 @@ This choice limits exploration and mobility. Living in the same place most of yo
 
 Looking at our need for community, it is easy to understand why most people have chosen this lifestyle. They stay in the places where they were born or created their first strong bonds because of the community they have built there (family, friends, job).
 
-![Traditional lifestyle](./assets/traditional-lifestyle.jpg)
+![Traditional lifestyle](/content/posts/the-end-of-digital-nomadism-as-a-lifestyle/assets/traditional-lifestyle.jpg)
 
 ### The Rise of Digital Nomads
 
@@ -67,7 +67,7 @@ This does not mean a digital nomad life does not have a community, however, it i
 
 Friendships are formed when exploring new places. However, in common cases, they do not last forever. The digital nomad lifestyle is very volatile and everyone has different plans. Therefore, relationships in place, last only a few months in the best of scenarios. Even nowadays, with [more and more apps and platforms popping up that organize events and trips together](https://www.travelmassive.com/companies), in the long term, sooner or later, nomads end up missing the community part, as we are social beings.
 
-![Digital Nomad lifestyle](./assets/digital-nomad-lifestyle.jpg)
+![Digital Nomad lifestyle](/content/posts/the-end-of-digital-nomadism-as-a-lifestyle/assets/digital-nomad-lifestyle.jpg)
 
 Why do we seek community so much? Easy, the chances of survival and perpetuating the species are much higher living in a community than solo. Our ancestors and natural selection knew this and made us evolve developing positive reinforcements for being among others such as being calm, secure, and happier, and negative ones when we are alone such as loneliness, insecurity, or depression.
 
@@ -97,7 +97,7 @@ A last note on coliving communities, although the relationships normally last a 
 
 > “Ironically, I feel that I connect much deeper and much quicker with people when on the road, than with people “back at home”. When you live with someone 24/7 in a coliving space in a foreign country & go on a desert trip with them, this is much deeper than living in separate apartments in the same city and meeting now and then for a regular dinner. Both; the quantity of time & the depth of the experience itself is much more intense”
 
-![Community intensity during a year](./assets/community-intensity-during-a-year.jpg)
+![Community intensity during a year](/content/posts/the-end-of-digital-nomadism-as-a-lifestyle/assets/community-intensity-during-a-year.jpg)
 
 [I have been living this lifestyle](https://ramonmorcillo.com/lifestyle-as-a-digital-nomad-staying-in-colivings/) for the last few years and can confirm the above.
 
@@ -109,7 +109,7 @@ Having a couple and traveling with them can boost the sense of community and ext
 
 From my experience and others close to me, staying in a coliving as a couple has more upsides than downsides, but this topic is for a different article.
 
-![Community intensity during a year for digital nomads](./assets/community-intensity-during-a-year-for-digital-nomads.jpg)
+![Community intensity during a year for digital nomads](/content/posts/the-end-of-digital-nomadism-as-a-lifestyle/assets/community-intensity-during-a-year-for-digital-nomads.jpg)
 
 ## Why do digital nomads stop this lifestyle?
 
@@ -136,7 +136,7 @@ Finally, there is another group in the middle, which they call themselves “[sl
 
 Those digital nomads establishing a home base, as well as the slowmads traveling at a slower pace, could be considered part of the Expats community.
 
-![Community vs exploring](./assets/community-vs-exploring.jpg)
+![Community vs exploring](/content/posts/the-end-of-digital-nomadism-as-a-lifestyle/assets/community-vs-exploring.jpg)
 
 Defining clear lines between the three lifestyles above is challenging. Few individuals neatly fall into any single category. The majority adapt their way of living, finding the optimal balance between fulfilling their desires for community and exploration.
 

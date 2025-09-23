@@ -16,7 +16,7 @@ Some time ago I was living in the Canary Islands, a group of islands well-known 
 
 Those were not my first nights contemplating the stars on a clear sky, but the fact of **capturing them contributed more to enjoy the moment.** I always thought this kind of activity was just for professional photographers but **after understanding some concepts even someone with no experience can enjoy it and take awesome pictures.** 
 
-![The Milky Way over [the Teide.](./../how-to-enjoy-the-sunrise-from-the-top-of-spain) Aperture ƒ/1.7, Shuter Speed 30s, ISO 2000](./the_milky_way_over_the_teide.jpg)
+![The Milky Way over [the Teide.](/content/posts/basic-tips-for-amateur-star-photography/how-to-enjoy-the-sunrise-from-the-top-of-spain) Aperture ƒ/1.7, Shuter Speed 30s, ISO 2000](/content/posts/basic-tips-for-amateur-star-photography/the_milky_way_over_the_teide.jpg)
 
 I will share what I learned so anyone can experience it too. Be advised that I am no professional photographer and that I will explain technical concepts in a _simpler_ way as this article is addressed to beginners.
    
@@ -35,13 +35,13 @@ I will share what I learned so anyone can experience it too. Be advised that I a
 
 Nowadays **because of the cities’ light pollution, these are not the best places for this activity.** Therefore the further you are from them the better to have a clearer sky. The [Bortle scale](https://en.wikipedia.org/wiki/Bortle_scale) is a nine-level numeric scale that measures the night sky's brightness.
 
-![Light Pollution in the Bortle scale. [Source](https://www.reddit.com/r/interestingasfuck/comments/khe15u/the_concept_of_light_pollution_is_crazy/).](./light_pollution_in_the_bortle_scale.jpg)
+![Light Pollution in the Bortle scale. [Source](/content/posts/basic-tips-for-amateur-star-photography/https:/www.reddit.com/r/interestingasfuck/comments/khe15u/the_concept_of_light_pollution_is_crazy/).](/content/posts/basic-tips-for-amateur-star-photography/light_pollution_in_the_bortle_scale.jpg)
 
 ## The Device
 
 **You don’t need an expensive camera, or a night mode one** to have fun and take decent pictures. The majority of phones have a mode that lets you adjust the settings for the shot. 
 
-![My mates and I experimenting with the settings for the next shot](./my_mates_and_i_experimenting_with_the_settings_for_the_next_shot.jpg)
+![My mates and I experimenting with the settings for the next shot](/content/posts/basic-tips-for-amateur-star-photography/my_mates_and_i_experimenting_with_the_settings_for_the_next_shot.jpg)
 
 Remember to **have the device in a fixed position while taking the photo.** Don't even consider holding it with your hands. Although you don't need a tripod it will help you for this purpose.
 
@@ -51,7 +51,7 @@ The most important thing to understand is how to play with the amount of light, 
 
 For this purpose, there are three main settings you will have to adjust: **ISO, Aperture, and Shutter speed.** The Exposure Triangle is a graphic representation of them and how they work together.
 
-![The exposure triangle. [Source.](https://www.photographytalk.com/beginner-photography-tips/aperture-shutter-speed-and-iso-the-exposure-triangle)
+![The exposure triangle. [Source.](/content/posts/basic-tips-for-amateur-star-photography/https:/www.photographytalk.com/beginner-photography-tips/aperture-shutter-speed-and-iso-the-exposure-triangle)
 ](./exposure_triangle.jpg)
 
 ### ISO
@@ -72,7 +72,7 @@ To capture the stars you should **set the aperture (if your device allows you) t
 
 Here is an example where the first picture has a higher ISO (8000) and was taken with a shutter speed of 1 second and another where the ISO is lower (800), and a shutter speed of 15 seconds. You can see that there is more noise (grain) in the first one.
 
-![ISO and shutter speed combinations.](./iso_and_shutter_speed_combinations.jpg)
+![ISO and shutter speed combinations.](/content/posts/basic-tips-for-amateur-star-photography/iso_and_shutter_speed_combinations.jpg)
 
 Another comparison of three photos of the [Teide](./../how-to-enjoy-the-sunrise-from-the-top-of-spain) National Park at night. Although all of them have the same aperture of ƒ/1.7, changing the ISO, and the Shutter speed gives you totally different photos.
 
@@ -82,7 +82,7 @@ Another comparison of three photos of the [Teide](./../how-to-enjoy-the-sunrise-
 
 By the way, the white lights are people climbing it with lanterns. You can appreciate how their trail increases with the Shutter speed.
 
-![Teide National Park night pictures.](./teide_national_park_night_pictures.jpg)
+![Teide National Park night pictures.](/content/posts/basic-tips-for-amateur-star-photography/teide_national_park_night_pictures.jpg)
 
 At first, it seems complicated and hard to understand, or at least to understand the minimum to get a decent shot. However, with these concepts and practice, getting stars’ pictures becomes enjoyable and fun. 
 
@@ -92,4 +92,4 @@ Acknowledgments to my housemates and my friend Unai who taught me these concepts
 
 To end, you can edit the photos later to make them look better. Here is an edit Unai made with one of them.
 
-![The Milky Way over the [Teide](./../how-to-enjoy-the-sunrise-from-the-top-of-spain) edited.](./the_milky_way_over_the_teide_edited.jpg)
+![The Milky Way over the [Teide](/content/posts/basic-tips-for-amateur-star-photography/how-to-enjoy-the-sunrise-from-the-top-of-spain) edited.](/content/posts/basic-tips-for-amateur-star-photography/the_milky_way_over_the_teide_edited.jpg)

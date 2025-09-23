@@ -22,7 +22,7 @@ I want to express how grateful I am for the life I have lived. I feel lucky to h
 
 Not only that, I am also grateful for all the moments I lived in my years of growth (the good and the bad ones). They all made me become more aware of who I am. 
 
-![Sunset from Phra nang Cave Beach, Thailand](./assets/sunset-from-phra-nang-cave-beach-thailand.jpg)
+![Sunset from Phra nang Cave Beach, Thailand](/content/posts/in-case-i-die/assets/sunset-from-phra-nang-cave-beach-thailand.jpg)
 
 I have also been able to live a [digital nomad life](https://ramonmorcillo.com/lifestyle-as-a-digital-nomad-staying-in-colivings/) for the last few years, which has brought me so much fun and adventures while getting to know amazing people from all over the world. 
 
@@ -38,7 +38,7 @@ This may be the best opportunity I have to address this subject, so let’s go.
 
 One of my favorite movies is Big Fish, and definitely the part I like the most about it is the ending. When he arrives at the river and everyone is there, joyful to celebrate his farewell and see him again one last time.
 
-![Sunset in the Trajineras from CDMX, Mexico](./assets/sunset-in-the-trajineras-from-cdmx-mexico.jpg)
+![Sunset in the Trajineras from CDMX, Mexico](/content/posts/in-case-i-die/assets/sunset-in-the-trajineras-from-cdmx-mexico.jpg)
 
 If I could choose how to leave the world, it would be in the same way. I would reunite
 all the people I interacted with in my life, to a greater or lesser extent. Making a big feast party, like in every post arc from One Piece, to exchange the last good moments.
@@ -57,7 +57,7 @@ Like my good friend Mario said:
 
 Since I will no longer exist, I will not be able to experience suffering. The ones that will suffer will be my relatives and close friends. I hope that knowing that I am not worried about dying helps them with the situation.
 
-![Sunset in Canggu, Bali, Indonesia](./assets/sunset-in-canggu-bali-indonesia.jpg)
+![Sunset in Canggu, Bali, Indonesia](/content/posts/in-case-i-die/assets/sunset-in-canggu-bali-indonesia.jpg)
 
 ## The purpose behind this article
 
@@ -67,7 +67,7 @@ I want you to know that it's fine that I am no longer here.
 
 If you are reading this and got to meet me, I want you to know that it was wonderful to have the chance to get to know you. I am sure we spent great times together. Thank you so much for them.
 
-![Sunset in Nine Coliving, Spain](./assets/sunset-in-nine-coliving-spain.jpg)
+![Sunset in Nine Coliving, Spain](/content/posts/in-case-i-die/assets/sunset-in-nine-coliving-spain.jpg)
 
 ## Greetings
 
@@ -79,6 +79,6 @@ And finally, something inside me tells me to say thanks to my mom, for everythin
 
 By the way, the code from this website is [open-sourced on GitHub](https://github.com/reymon359/gatsby-personal-site). Feel free to use it and renew the domain when it expires if I am not here to do so. I grant anyone with the intention to do so full permission.
 
-![Sunset in Lisbon, Portugal](./assets/sunset-in-lisbon-portugal.jpg)
+![Sunset in Lisbon, Portugal](/content/posts/in-case-i-die/assets/sunset-in-lisbon-portugal.jpg)
 
 The pictures in the article are just some of the sunsets from last year. The cover one is the "Cala Cantalar", probably my favorite spot in my hometown. I enjoyed wonderful moments with wonderful people there.

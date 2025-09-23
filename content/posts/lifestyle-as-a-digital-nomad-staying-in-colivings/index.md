@@ -50,7 +50,7 @@ While looking for accommodations in Tenerife with a proper area to work, I found
 
 Right now, after coronavirus and the increase of remote working, more and more colivings are appearing. However, not all of them are the kind of coliving I have had the chance to live in. A big part of them are just big companies owning entire buildings that offer a coliving experience but end up being nothing more than sharing a flat.
 
-![[Nine coliving](https://www.ninecoliving.com/) shared kitchen and coworking](./assets/nine_coliving_shared_kitchen_and_coworking.jpeg)
+![[Nine coliving](/content/posts/lifestyle-as-a-digital-nomad-staying-in-colivings/https:/www.ninecoliving.com/) shared kitchen and coworking](/content/posts/lifestyle-as-a-digital-nomad-staying-in-colivings/assets/./assets/nine_coliving_shared_kitchen_and_coworking.jpeg)
 
 The colivings I have been share at least these characteristics:
 - A **coworking** area to work in a productive environment. Including a decent Wifi connection, video call areas, and 24h availability in case you need to work in a different timezone.
@@ -80,7 +80,7 @@ Most of the people I met were digital nomads, however, other people used to live
 
 Although living with a lot of people may seem overwhelming, you can have privacy when you want to have time for yourself. This is the opposite issue of the standard digital nomad who travels mostly alone and has to make an effort to meet people.
 
-![About to catch great waves with friends from [SunDesk](https://www.sun-desk.com/) in Imsouane Beach, Morocco](./assets/about_to_catch_great_waves_with_friends_from_sun_desk_in_imsouane_beach_morocco.jpeg)
+![About to catch great waves with friends from [SunDesk](/content/posts/lifestyle-as-a-digital-nomad-staying-in-colivings/https:/www.sun-desk.com/) in Imsouane Beach, Morocco](/content/posts/lifestyle-as-a-digital-nomad-staying-in-colivings/assets/./assets/about_to_catch_great_waves_with_friends_from_sun_desk_in_imsouane_beach_morocco.jpeg)
 
 ## Digital nomad
 
@@ -100,7 +100,7 @@ Besides, I met people without a computer, doing independent location jobs such a
 
 I have always considered myself an adventurous person. I wanted to explore, live new experiences, see new places, meet new people, eat new foods, and enrich my life in general. With a remote job and nothing that tied me anywhere at the moment, I made a decision and left in search of adventures.
 
-![Going on an adventure](./assets/going_on_an_adventure.gif)
+![Going on an adventure](/content/posts/lifestyle-as-a-digital-nomad-staying-in-colivings/assets/going_on_an_adventure.gif)
 
 When I moved away to work remotely from a different place, the truth is that I didn’t even know the term “digital nomad”. It was only when I met other people living that way when I got introduced to it. 
 
@@ -122,7 +122,7 @@ Looking at a random location from a map and thinking, “I could be living there
 
 Given the common flight travel restrictions, I am faced to travel with just a backpack and a small suitcase. This has taught me to realize what is important in my life and what I really need to live it. Embracing minimalism and reducing one’s possessions helped me to achieve this and experience more freedom.
 
-![A backpack and a bag with everything I need to live](./assets/backpack_and_bag.jpg)
+![A backpack and a bag with everything I need to live](/content/posts/lifestyle-as-a-digital-nomad-staying-in-colivings/assets/backpack_and_bag.jpg)
 
 Although this lifestyle offers almost unlimited flexibility, most people may end up in burnout with the lack of stability from constantly traveling which includes booking planes, requesting visas, and searching for accommodations, among others. They will probably go “back to normal” if not finding a way to deal with it, such as _slow traveling._
 
@@ -144,7 +144,7 @@ Keep in mind these relationships properties vary from the kind of relationship; 
 
 In my opinion, weighing the pros and cons, the experiences and personal growth you get from this lifestyle are worth the downsides.
 
-![Staring amazed in front of Ouarzazate main doors](./assets/staring_amazed_in_front_of_ouarzazate_main_doors.jpeg)
+![Staring amazed in front of Ouarzazate main doors](/content/posts/lifestyle-as-a-digital-nomad-staying-in-colivings/assets/staring_amazed_in_front_of_ouarzazate_main_doors.jpeg)
 
 ## Coronavirus
 
@@ -158,7 +158,7 @@ Traveling in this global situation can lead to situations unachievable in the la
 
 Other situations are not as welcomed. Restaurants may be closed or serving food just by delivery. Looking at the bright side, you can take them to a park, seaside, or viewpoint to enjoy the food along with the views.
 
-![Enjoying maltese bragioli with views to Valletta, Malta](./assets/enjoying_maltese_bragioli_with_views_to_valletta_malta_enjoying_maltese_bragioli_with_views_to_valletta_malta.jpeg)
+![Enjoying maltese bragioli with views to Valletta, Malta](/content/posts/lifestyle-as-a-digital-nomad-staying-in-colivings/assets/enjoying_maltese_bragioli_with_views_to_valletta_malta_enjoying_maltese_bragioli_with_views_to_valletta_malta.jpeg)
 
 ## Conclusions
 
@@ -168,7 +168,7 @@ Staying in colivings has been key to improve this experience. A great resource t
 
 I suppose the best I got is the awareness that this kind of lifestyle is possible and realize it's the way I want to live right now.
 
-![Having a sunset walk with Nora along a beach in Normandy](./assets/having_a_sunset_walk_with_nora_along_a_beach_in_normandy.jpeg)
+![Having a sunset walk with Nora along a beach in Normandy](/content/posts/lifestyle-as-a-digital-nomad-staying-in-colivings/assets/having_a_sunset_walk_with_nora_along_a_beach_in_normandy.jpeg)
 
 The coliving world is still young and will have to face challenging issues in the near future, which are already happening. Such as traveling as a family, or the simple fact of staying with pets and kids around people of different ages.
 
@@ -219,7 +219,7 @@ To all the family and friends that support me and try to keep the contact no mat
 And thanks to my company and teammates. They make this possible and support me with my decisions more than I could wish for. They make it easier for me to live this kind of life.  
 
 
-![The amazing people I met on the way](./assets/the_amazing_people_i_met_on_the_way.jpeg)
+![The amazing people I met on the way](/content/posts/lifestyle-as-a-digital-nomad-staying-in-colivings/assets/the_amazing_people_i_met_on_the_way.jpeg)
 
 
 Lastly, thanks to Tobias Hug, for the best review someone ever made me of an article.

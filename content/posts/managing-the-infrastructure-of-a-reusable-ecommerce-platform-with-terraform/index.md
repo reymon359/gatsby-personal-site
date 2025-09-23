@@ -26,21 +26,22 @@ This is where [Terraform](https://www.terraform.io/) comes in handy.
 
 ## Table of Contents
 
-- [What is Terraform](#What-is-Terraform)
-  - [Modules](#Modules)
-  - [Resources](#Resources)
-  - [Terraform Plan](#Terraform-Plan)
-  - [Terraform Apply](#Terraform-Apply)
-  - [State](#State)
-- [How we use it](#How-we-use-it)
-  - [Version Control System](#Version-Control-System)
-  - [Terraform Variables](#Terraform-Variables)
-  - [Environments and CICD](#Environments-and-CICD)
-- [Conclusions](#Conclusions)
+- [Table of Contents](#table-of-contents)
+- [What is Terraform](#what-is-terraform)
+  - [Modules](#modules)
+  - [Resources](#resources)
+  - [Terraform Plan](#terraform-plan)
+  - [Terraform Apply](#terraform-apply)
+  - [State](#state)
+- [How we use it](#how-we-use-it)
+  - [Version Control System](#version-control-system)
+  - [Terraform Variables](#terraform-variables)
+  - [Environments and CICD](#environments-and-cicd)
+- [Conclusions](#conclusions)
 
 ## What is Terraform
 
-![Terraform logo by HashiCorp](./assets/hashicorp_terraform_logo.png)
+![Terraform logo by HashiCorp](/content/posts/managing-the-infrastructure-of-a-reusable-ecommerce-platform-with-terraform/assets/hashicorp_terraform_logo.png)
 
 [Terraform](https://www.terraform.io/) is an open-source infrastructure as code software tool developed by HashiCorp. It provides a consistent CLI workflow to manage hundreds of cloud services in configuration files. [Here](https://learn.hashicorp.com/tutorials/terraform/install-cli) is the official guide on how to install it.
 
@@ -119,7 +120,7 @@ After running it successfully the console shows this output.
 
 And that is an overall view of defining and creating your infrastructure resources in an _automated_ way. All through config files **removing the manual process.** 
 
-![Terraform resource Spanish omelet from Casa Paco, Madrid](./assets/terraform_resource_spanish_omelet_from_casa_paco_madrid.jpeg)
+![Terraform resource Spanish omelet from Casa Paco, Madrid](/content/posts/managing-the-infrastructure-of-a-reusable-ecommerce-platform-with-terraform/assets/terraform_resource_spanish_omelet_from_casa_paco_madrid.jpeg)
 
 ### State
 
@@ -181,7 +182,7 @@ Not all the changes are visible at once in each environment. We use [ConfigCat](
 
 We use [GitHub Actions](https://github.com/features/actions) and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/pipelines/) for our Continuous Integration and Continuous Delivery system. When the changes on the Terraform infrastructure repository are added to the main branch, the CICD system gets triggered and the plan is executed on our development environments. When the logs from the plan are the expected ones we manually run the `apply`.
 
-![Azure DevOps Release Stages](./assets/azure_devops_release_pipelines.jpg)
+![Azure DevOps Release Stages](/content/posts/managing-the-infrastructure-of-a-reusable-ecommerce-platform-with-terraform/assets/azure_devops_release_pipelines.jpg)
 
 ## Conclusions
 

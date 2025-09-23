@@ -210,7 +210,7 @@ For the first time using GraphQL, you may be thinking **what is this application
 
 The answer to that question is the **GraphQL Playground**.
 
-![GraphQL Playground. Source: https://github.com/prisma-labs/graphql-playground](./graphql-playground.png)
+![GraphQL Playground. Source: https://github.com/prisma-labs/graphql-playground](/content/posts/getting-started-with-graphql-and-nodejs/graphql-playground.png)
 
 > [GraphQL Playground](https://github.com/prisma-labs/graphql-playground) is a graphical, interactive, in-browser GraphQL IDE, created by [Prisma](https://www.prisma.io/) and based on [GraphiQL](https://github.com/graphql/graphiql). - [Apollo docs](https://www.apollographql.com/docs/apollo-server/testing/graphql-playground/)
 
@@ -218,7 +218,7 @@ But what does that mean? It means that this is an environment where we can perfo
 
 If you have worked with **RESTful** requests before this would be some kind of equivalent to [Postman](https://www.postman.com/), just that here you **do not have to download and configure anything**, it just **comes by default** with Apollo!
 
-![Awesome](./awesome-chris-pratt.gif)
+![Awesome](/content/posts/getting-started-with-graphql-and-nodejs/awesome-chris-pratt.gif)
 
 So let's try it!
 
@@ -226,7 +226,7 @@ So let's try it!
 2. Then press the ▶ button that is in the middle.
 3. And _Voila!_ On the right panel appears the data we defined in our resolver to return.
 
-![Writting query on GraphQl Playground](./greeting-query-on-playground.gif)
+![Writting query on GraphQl Playground](/content/posts/getting-started-with-graphql-and-nodejs/greeting-query-on-playground.gif)
 
 ## Set up the Client
 
@@ -334,7 +334,7 @@ fetchGreeting();
 
 If you open the file in your browser and see the **console on the developer tools** you can see that we actually got the greeting data from the query 🙌!
 
-![Fetching data from the server](./fetching-data-from-server.png)
+![Fetching data from the server](/content/posts/getting-started-with-graphql-and-nodejs/fetching-data-from-server.png)
 
 ## Displaying the data
 
@@ -395,7 +395,7 @@ fetchGreeting().then(({ greeting }) => {
 
 Our `index.html` will have the loading title updated with the data fetched from our server!🎉
 
-![Displaying the data](./displaying-the-data.png)
+![Displaying the data](/content/posts/getting-started-with-graphql-and-nodejs/displaying-the-data.png)
 
 ## Conclusion
 

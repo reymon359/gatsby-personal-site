@@ -27,13 +27,13 @@ For this reading, I structured the content in a basic _problem-solving_ way base
 
 ## What is Psychological First Aid
 
-![The New Universe  81, 1964, Klaus Bürgle.](./the_new_universe_81_1964_klaus_burgle.jpg)
+![The New Universe  81, 1964, Klaus Bürgle.](/content/posts/what-is-psychological-first-aid-and-how-to-apply-it/the_new_universe_81_1964_klaus_burgle.jpg)
 
 **Psychological First Aid is a technique used with people who have just suffered the impact of tragic news, an accident, or have experienced a catastrophe.** People who are in shock and feel vulnerable. They are trying to understand what has happened to them and the consequences of it.
 
 ## When to apply it
 
-![Suspension railway over the Sahara: suspended 15 meters high, The world of tomorrow, Birkel scrapbook, 1959, Unknown Artist.](./suspension_railway_over_the_sahara_suspended_15_meters_high_the_world_of_tomorrow_birkel_scrapbook_1959_unknown_artist.jpg)
+![Suspension railway over the Sahara: suspended 15 meters high, The world of tomorrow, Birkel scrapbook, 1959, Unknown Artist.](/content/posts/what-is-psychological-first-aid-and-how-to-apply-it/suspension_railway_over_the_sahara_suspended_15_meters_high_the_world_of_tomorrow_birkel_scrapbook_1959_unknown_artist.jpg)
 
 It is indicated to apply it **from immediately after the impact of what has happened until approximately 72 hours later.** 
 
@@ -43,7 +43,7 @@ After a month after the incident, if the person has not recovered from his norma
 
 ## How to apply it
 
-![The New Universe 85, 1968,  Klaus Bürgle.](./the_new_universe_85_1968_klaus_burgle.jpg)
+![The New Universe 85, 1968,  Klaus Bürgle.](/content/posts/what-is-psychological-first-aid-and-how-to-apply-it/the_new_universe_85_1968_klaus_burgle.jpg)
 
 Here are **the 5 Psychological First Aid main steps.** The details and applications of each one vary with the patient's age; you don’t calm a baby the same way you do with a teenager or an old man. Anyway, the concept remains the same for any age.
 
@@ -58,7 +58,7 @@ Here are **the 5 Psychological First Aid main steps.** The details and applicati
 
 ## Why apply it
 
-![When a robot gets behind the wheel, 1974, Günter Radtke.](./when_a_robot_gets_behind_the_wheel_1974_gunter_radtke.jpg)
+![When a robot gets behind the wheel, 1974, Günter Radtke.](/content/posts/what-is-psychological-first-aid-and-how-to-apply-it/when_a_robot_gets_behind_the_wheel_1974_gunter_radtke.jpg)
 
 **Why apply it?** There is no better reason than **to help.** To help those affected to regain control of their life and face what has happened to them with the fewest possible consequences. Reducing the level of stress produced after the impact of the news or traumatic event. Finally, to connect those affected with their support network.
 
@@ -66,13 +66,13 @@ There is another _Why_ for this reading though: **Why I am writing about this su
 
 ## Conclusions
 
-![Project Atlantis, cover picture, 1982,  Eberhard Binder.](./project_atlantis_cover_picture_1982_eberhard_binder.jpg)
+![Project Atlantis, cover picture, 1982,  Eberhard Binder.](/content/posts/what-is-psychological-first-aid-and-how-to-apply-it/project_atlantis_cover_picture_1982_eberhard_binder.jpg)
 
 In the same way as the physical first aid technique, the psychological one can be **decisive to help people** in the first moments they have gone through a tough situation. If we find someone in this situation and apply this technique, we will help them _more efficiently._
 
 ## Resources
 
-![Hotel in the moon, 1970, Klaus Bürgle.](./hotel_in_the_moon_1970_klaus_burgle.jpg)
+![Hotel in the moon, 1970, Klaus Bürgle.](/content/posts/what-is-psychological-first-aid-and-how-to-apply-it/hotel_in_the_moon_1970_klaus_burgle.jpg)
 
 The majority of the knowledge shared here comes from [the course I completed about Psychological First Aid](https://www.coursera.org/learn/pap-covid19). I have not wanted to extend this article more than necessary, however it also delves into other interesting topics such as [Acute stress disorder](https://en.wikipedia.org/wiki/Acute_stress_disorder), [Post-traumatic stress disorder](https://en.wikipedia.org/wiki/Post-traumatic_stress_disorder), and the relation between each other.
 

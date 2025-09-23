@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+
+@theme inline {
+  --font-sans: var(--font-roboto);
+}
+
+
+/* Only keep the pseudo-element for the dot indicator */
+.menu-link::before {
+  position: absolute;
+  left: -1.1rem;
+  top: 50%;
+  background: #fff;
+  border-radius: 100%;
+  content: "";
+  display: block;
+  height: 0.3rem;
+  width: 0.3rem;
+  opacity: 0;
+  transform: translate(-1rem, -50%);
+  transition: transform 0.3s cubic-bezier(0.45, 0, 0.1, 1), opacity 0.1s;
+  will-change: transform, opacity;
+}
+.menu-link.active::before,
+.menu-link:hover::before {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@theme {
+  --animate-fade-out: fade-out 20s linear forwards;
+  /* --animate-fade-out: fade-out 2s linear; */
+  @keyframes fade-out {
+    0%, 80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+/* Remove browser print header/footer and set print margins */
+@media print {
+  @page {
+    margin: 0;
+  }
+  body {
+    margin: 1.6cm;
+  }
+}
+

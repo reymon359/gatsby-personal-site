@@ -60,7 +60,7 @@ Each day, dedicate a couple of minutes to see how the weekly goals are coming al
 
 For example, if you want to read more on a certain year, you can set up a Year Goal for reading X books. Afterward, create an Achievable Goal, such as to read a book. Then break it down into Weekly Goals like reading X pages or X chapters. Lastly, each day, have a look at what you will focus on the day after towards completing your Weekly goals. It could be reading for 2 hours or just 30 minutes. It depends on how the goal is coming along and if there are others with more priority that need more time.  
 
-![From Year Goals to Daily Work](./assets/from_year_goals_to_daily_work.png)
+![From Year Goals to Daily Work](/content/posts/how-to-organize-yourself-to-get-things-done/assets/from_year_goals_to_daily_work.png)
 
 With repetitive ones, you can try to automate them and set up reminders for them. This way you won't forget about doing them. 
 
@@ -80,23 +80,23 @@ Apart from the tasks obtained from splitting the main goals into smaller and sma
 
 ### Filling the bucket
 
-![Task Bucket](./assets/task_bucket.png)
+![Task Bucket](/content/posts/how-to-organize-yourself-to-get-things-done/assets/task_bucket.png)
 
 Add all these tasks that come from different inputs to a **Task Bucket.** The Task Bucket should be easy to use to quickly add tasks to it. Besides, the more accessible it is at any moment, the better. A simple to-do list will work for this purpose.
 
-![Filling the bucket](./assets/filling_the_bucket.png)
+![Filling the bucket](/content/posts/how-to-organize-yourself-to-get-things-done/assets/filling_the_bucket.png)
 
 Before adding the task, ask yourself if you can complete it at the moment (less than 5 min), and if that is the case, just do it.
 
 Here are some motivational words from Shia LaBeouf about this topic
 
-![Shia do it](./assets/shia_do_it.gif)
+![Shia do it](/content/posts/how-to-organize-yourself-to-get-things-done/assets/shia_do_it.gif)
 
 ### Emptying the bucket
 
 To empty the Task Bucket involves moving the tasks to a tool where they can be managed. As tasks are done primarily with time, we need a tool to manage tasks across time. I call this instrument a **Task Calendar**. The tool you use as a task calendar should allow you, at least, to allocate tasks in time and give them a priority. A calendar or notebook agenda, physical or digital, should work. 
 
-![Task Calendar](./assets/task_calendar.png)
+![Task Calendar](/content/posts/how-to-organize-yourself-to-get-things-done/assets/task_calendar.png)
 
 Each time you select a task from the bucket, ask yourself:
 
@@ -106,7 +106,7 @@ Each time you select a task from the bucket, ask yourself:
 
 Remember Shia's words
 
-![Shia just do it](./assets/shia_just_do_it.gif)
+![Shia just do it](/content/posts/how-to-organize-yourself-to-get-things-done/assets/shia_just_do_it.gif)
 
 Therefore, add a task to the calendar when:
 
@@ -114,7 +114,7 @@ Therefore, add a task to the calendar when:
 - It is your responsibility.
 - Cannot be done in 5 minutes or less.
 
-![Emptying the bucket](./assets/emptying_the_bucket.png)
+![Emptying the bucket](/content/posts/how-to-organize-yourself-to-get-things-done/assets/emptying_the_bucket.png)
 
 ### Adding a task to the Calendar
 
@@ -150,7 +150,7 @@ Remember to not be too strict with your priorities. It is crucial to review and 
 
 Keep in mind you can remove them as well. It makes no sense to have a task on the calendar that no longer needs to be done.
 
-![Adding a task to the Calendar](./assets/adding_a_task_to_the_calendar.png)
+![Adding a task to the Calendar](/content/posts/how-to-organize-yourself-to-get-things-done/assets/adding_a_task_to_the_calendar.png)
 
 ## Automatize
 
@@ -205,7 +205,7 @@ Find a system that works better for you. A to-do list or a notebook are a great 
 
 In case you had forgotten him
 
-![Shia don't let your dreams be dreams](./assets/shia_dreams.gif)
+![Shia don't let your dreams be dreams](/content/posts/how-to-organize-yourself-to-get-things-done/assets/shia_dreams.gif)
 
 Once you get used to working with it, review it and look for new ways to be more efficient.
 
@@ -225,7 +225,7 @@ Here are great techniques and tools to help you manage your time and prioritize 
 
 I made a cheat sheet with the most important points from the article.
 
-![How to organize yourself to get things done cheat sheet](./assets/how_to_organize_yourself_cheat_sheet.png)
+![How to organize yourself to get things done cheat sheet](/content/posts/how-to-organize-yourself-to-get-things-done/assets/how_to_organize_yourself_cheat_sheet.png)
 
 And finally Shia’s [motivational video](https://www.youtube.com/watch?v=ZXsQAXx_ao0) 
 

@@ -36,7 +36,7 @@ For the past few years, the sub-companies had been operating mostly independentl
 
 The project was an ambitious one. Creating an ecommerce platform that would work for all the sub-companies wasn’t easy to design, neither to implement given a large number of unsolved doubts it had, which made it very hard to estimate.
 
-![Doubts gif](./doubts.gif)
+![Doubts gif](/content/posts/developing-a-reusable-ecommerce-platform/doubts.gif)
 
 ## The first MVP
 
@@ -44,7 +44,7 @@ To tackle this difficult challenge, we started from the bottom, with one of the 
 
 Being a sub-sub-company didn’t mean the platform would be simpler to develop, quite the opposite actually given all the features proposed for the MVP.
 
-![Main company structure](./main_company_structure.jpg)
+![Main company structure](/content/posts/developing-a-reusable-ecommerce-platform/main_company_structure.jpg)
 
 While the main goal for it was the user being able to purchase a product, quite obvious indeed, there were too many dependencies with other services to accomplish this simple, at first sight, MVP.
 
@@ -62,7 +62,7 @@ And to put the icing on the cake we also had to implement the user tracking with
 
 Here is a simple diagram of what I have been describing which might make it easier to understand. I have grouped the microservices architecture in just _Backend_ and _Frontend_ to keep it simple.
 
-![MVP Architecture overview](./mvp_architecture_overview.jpg)
+![MVP Architecture overview](/content/posts/developing-a-reusable-ecommerce-platform/mvp_architecture_overview.jpg)
 
 ## Implementing GraphQL
 
@@ -87,9 +87,9 @@ The microservices architecture were mainly Node.js services hosted on Azure K8s 
 
 The asynchronous communication between them was handled mainly with [Azure Service Bus](https://azure.microsoft.com/en-us/services/service-bus/) topics and subscriptions through a publish/subscribe messaging communication model. The main difference with common messaging queues is that you can have more than one receiver, so you do not have multiple queues to receive messages in more than one service.
 
-![Azure Service Bus messaging Queues. [Source](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview#queues)](./azure_service_bus_messaging_queues.png)
+![Azure Service Bus messaging Queues. [Source](/content/posts/developing-a-reusable-ecommerce-platform/https:/docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview#queues)](/content/posts/developing-a-reusable-ecommerce-platform/azure_service_bus_messaging_queues.png)
 
-![Azure Service Bus messaging Topics. [Source](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview#topics)
+![Azure Service Bus messaging Topics. [Source](/content/posts/developing-a-reusable-ecommerce-platform/https:/docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview#topics)
 ](./azure_service_bus_messaging_topics.png)
 
 On the frontend part, the sites were developed with React; sometimes using [Next](https://github.com/vercel/next.js/), and other ones from scratch with [Create React App](https://github.com/facebook/create-react-app) depending on the complexity and the requirements of each. We moved from Redux, used in previous projects, to the official [Context API](https://reactjs.org/docs/context.html) to manage most of the state.
@@ -105,7 +105,7 @@ Here are the main services and their functionalities for the first MVP architect
 - **auth-web-app:** The client for the auth service.
 - **integrations-ecommerce-api-service:** service from the integrations domain that handles the payments. Although this service was not in our domain we developed it together to increase the delivery speed and free them from extra work.
 
-![First MVP architecture](./first_mvp_arquitecture.jpg)
+![First MVP architecture](/content/posts/developing-a-reusable-ecommerce-platform/first_mvp_arquitecture.jpg)
 
 To deploy and update the resources needed on Azure we used [Terraform](https://www.terraform.io/), which let us define infrastructure as code and manage their life cycles on the K8s clusters. We also worked with Azure DevOps as our CI & CD system.
 
@@ -117,7 +117,7 @@ On the services, we used [Systemic](https://github.com/guidesmiths/systemic), a 
 
 An MVP (Minimum Viable Product) is the first prototype you create and deliver in a project, therefore there is usually just one and when you achieve it you start implementing new features on it. So, why did we focus on a second MVP for the same project? Well, When we reached a “stable” version of the first one, the client realized that we needed to start with the main sub-companies stores, and took the decision to stop the sub-sub-company H store development to focus on the development of the new ones. The reason behind this was mainly due to some services ending their support for the sub-companies in the coming months, meaning that their stores had to be developed first.
 
-![Graphical representation of how we felt with the second MVP](./how_we_felt_with_second_mvp.jpg)
+![Graphical representation of how we felt with the second MVP](/content/posts/developing-a-reusable-ecommerce-platform/how_we_felt_with_second_mvp.jpg)
 
 Although we tried to make a proper estimation of the first one we surpassed its deadline since some unplanned issues appeared along. Thus, when we were told that the new deadline would be even closer we decided to take a different approach to reach it on time. We concluded to develop more than one store at the same time which was a double-edged sword approach; on one hand, we would see on the go how well the reusability aspect of our platform worked while refactoring it and we would also end up with more than one store in the end. On the other hand, we would have to set up and maintain the environments and resources of multiple shops plus implement the designs of them which would slow us down, therefore we may not reach the deadline on time, again.
 
@@ -129,7 +129,7 @@ By that time, the team in charge of the user authentication service started work
 
 After all the changes mentioned above the architecture evolved this way.
 
-![Second MVP architecture](./second_mvp_arquitecture.jpg)
+![Second MVP architecture](/content/posts/developing-a-reusable-ecommerce-platform/second_mvp_arquitecture.jpg)
 
 ## Conclusion and lessons learned
 
@@ -147,7 +147,7 @@ As I am writing this, the platform isn’t finished yet, however it has been a g
 - **Pairing as much as possible.** At this point in software development, the advantages of doing pair programming are more than well known, we paired not just to deliver the features in a faster and better way but to learn from each other's way to code. We weekly decided the pairing tasks and teammates to implement them, however, if someone needed or wanted to pair, we just asked for it and moments after a teammate offered it.  
 - **Pay attention to feedback.** The sprint retrospectives were the perfect moment to review all the things that went well, wrong, propose changes, and look forward to improvement. Therefore the more we shared our opinions the more issues we could approach and solve.
 
-![Teamwork makes de dream work](./teamwork_makes_the_dream_work.gif)
+![Teamwork makes de dream work](/content/posts/developing-a-reusable-ecommerce-platform/teamwork_makes_the_dream_work.gif)
 
 **Teamwork with other partners.** We were dependent on other teams' work therefore having a good relationship with them was also an important point in the development. _Communication was the key point, the more we communicated the more we improved,_ thanks to it, the feeling we had was to be one whole team. Here are some actions we followed in order to enhance this communication:
 

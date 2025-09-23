@@ -16,7 +16,7 @@ In Software Development **keeping up to date with technology updates** is crucia
 
 When you start a project from the ground you normally set it up with the libraries' latest stable versions. Then time goes by, and the size of the project grows, new features are added, new libraries too, and **the version of the libraries and packages usually remains the same and almost never gets updated**. And yes, why would you update them if the project works perfectly with the current ones?
 
-![This is fine](./this-is-fine.jpg)
+![This is fine](/content/posts/auto-update-dependencies-safely-github-actions/this-is-fine.jpg)
 
 Here are some reasons why you should keep your dependencies updated:
  - Solving problems from old versions.
@@ -206,7 +206,7 @@ Quick tip, If you want to create it faster go to [repo.new](https://repo.new) or
 
 Once you push your changes the Workflow will run, and you will be able to see how it went in the `Actions` [tab from the GitHub Project](https://github.com/reymon359/github-actions-and-renovate/actions).
 
-![GitHub Actions Workflow](./github_actions_workflows.png)
+![GitHub Actions Workflow](/content/posts/auto-update-dependencies-safely-github-actions/github_actions_workflows.png)
 
 ## Add Renovate 
 
@@ -216,7 +216,7 @@ Going to the point what we will do is add a bot that will submit pull requests t
 
 The cool thing, and the whole point of our project, is that we have previously defined in our workflow to run the tests with the pull requests so when renovate submits one **we will automatically check if the updates proposed will break the project or not before merging them to the master branch**. 
 
-![Thumbs Up Kid](./thumbs_up_kid.gif)
+![Thumbs Up Kid](/content/posts/auto-update-dependencies-safely-github-actions/thumbs_up_kid.gif)
 
 To add Renovate to our project we have to install [its app](https://github.com/apps/renovate) into the project's repository. Be careful when selecting the repository you want to add Renovate to and choose the one created before. If by mistake you want to reconfigure it you can do it in the [Personal Settings' Applications tab](https://github.com/settings/installations) from your account. 
 

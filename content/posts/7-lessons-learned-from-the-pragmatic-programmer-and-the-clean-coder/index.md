@@ -20,16 +20,17 @@ These books focus not only on how to write code but on teaching you best practic
 
 ## Table of Contents
 
-- [Taking Responsibility](#Taking-Responsibility)
-- [Testing](#Testing)
-- [Teamwork](#Teamwork)
-- [Estimating](#Estimating)
-- [Tracer bullets](#Tracer-bullets)
-- [Handling pressure](#Handling-pressure)
-- [Refactoring](#Refactoring)
-- [Main differences](#Main-differences)
-- [Conclusions](#Conclusions)
-- [Resources](#Resources)
+- [Table of Contents](#table-of-contents)
+- [Taking Responsibility](#taking-responsibility)
+- [Testing](#testing)
+- [Teamwork](#teamwork)
+- [Estimating](#estimating)
+- [Tracer bullets](#tracer-bullets)
+- [Handling pressure](#handling-pressure)
+- [Refactoring](#refactoring)
+- [Main differences](#main-differences)
+- [Conclusions](#conclusions)
+- [Resources](#resources)
 
 ## Taking Responsibility
 
@@ -46,7 +47,7 @@ Responsibility is not only related to coding, you have to **take responsibility 
 > Your knowledge and experience are your most important day-to-day professional assets.
 > — The Pragmatic Programmer
 
-![Responsibility](./responsibility.gif)
+![Responsibility](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/responsibility.gif)
 
 ## Testing
 
@@ -65,7 +66,7 @@ Thus said, it is important to look at the big picture and not to miss the main g
 > It is easy to become seduced by the green "tests passed" message, writing lots of code that doesn’t actually get you closer to a solution.
 > — The Pragmatic Programmer
 
-![Tests](./tests.gif)
+![Tests](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/tests.gif)
 
 There are three ways of testing: _First, During,_ and _Never._ First (TDD) is the best one, During is a fallback when First is not useful, and Never is often called “Test Later” but sadly **in most cases Later means Never.**
 
@@ -83,7 +84,7 @@ Developers take the responsibility to ensure that tests are _always automated_ f
 
 Developers have to aim “QA should find nothing” as a goal by implementing different kinds of tests, in different measures from unit to exploratory ones.
 
-![The Test Automation Pyramid - The Clean Coder](./the_test_automation_pyramid.png)
+![The Test Automation Pyramid - The Clean Coder](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/the_test_automation_pyramid.png)
 
 ## Teamwork
 
@@ -92,7 +93,7 @@ When working on a team you have to be a "team player", communicate frequently, k
 > Good communication is key to avoiding these problems. And by "good" we mean instant and frictionless. Frictionless means it’s easy and low-ceremony to ask questions, share your progress, your problems, your insights and learnings, and to stay aware of what your teammates are doing.
 > — The Pragmatic Programmer
 
-![[Source](https://unsplash.com/photos/iuqmGmst5Po)](./tobias-mrzyk-iuqmGmst5Po-unsplash.jpg)
+![[Source](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/https:/unsplash.com/photos/iuqmGmst5Po)](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/tobias-mrzyk-iuqmGmst5Po-unsplash.jpg)
 
 Teams should be **small, less than 10-12 members**, where everyone knows and trusts each other. This team environment is **hard to achieve** therefore once you get it you have to **care for it changing the projects they work on rather than the members.**
 
@@ -102,7 +103,7 @@ Teams should be **small, less than 10-12 members**, where everyone knows and tru
 > To form teams around projects is a foolish approach. Individuals are only on the project for a short time and therefore never learn how to deal with each other. Teams are harder to build than projects. Therefore, it is better to form persistent teams that move together from one project to the next and can take on more than one project at a time.
 > — The Clean Coder
 
-![[Source](https://unsplash.com/photos/Px3oXvVXRxc)](./tobias-mrzyk-Px3oXvVXRxc-unsplash.jpg)
+![[Source](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/https:/unsplash.com/photos/Px3oXvVXRxc)](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/tobias-mrzyk-Px3oXvVXRxc-unsplash.jpg)
 
 Furthermore, great teams will face and solve issues together where each individual will provide their best. They _get things done as a unit_. In the end, they will be known for their performance and quality of work.
 
@@ -115,7 +116,7 @@ Furthermore, great teams will face and solve issues together where each individu
 > Great project teams have a distinct personality. People look forward to meetings with them, because they know that they’ll see a well-prepared performance that makes everyone feel good. The documentation they produce is crisp, accurate, and consistent.
 > — The Pragmatic Programmer
 
-![[Source](https://unsplash.com/photos/wJK9eTiEZHY)](./natalie-pedigo-wJK9eTiEZHY-unsplash.jpg)
+![[Source](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/https:/unsplash.com/photos/wJK9eTiEZHY)](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/natalie-pedigo-wJK9eTiEZHY-unsplash.jpg)
 
 ## Estimating
 
@@ -128,7 +129,7 @@ First, I want to clarify what _estimating_ means by sharing The Clean Coder defi
 
 To help you understand it, here is a figure of the likelihood of completion of a task for the next 11 days.
 
-![Probability distribution, the likelihood of completion. Source: The clean coder](./probability_distribution.png)
+![Probability distribution, the likelihood of completion. Source: The clean coder](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/probability_distribution.png)
 
 One of the basics to make great estimations is to **have proper knowledge of what you are estimating.** 
 
@@ -181,7 +182,7 @@ Like one of my favorite quotes states:
 
 However, there is no way you can eat such cuteness
 
-![Elephant](./elephant.gif)
+![Elephant](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/elephant.gif)
 
 ## Tracer bullets
 
@@ -190,14 +191,14 @@ Tracer bullets are a special kind of bullet used in movies to mark the path they
 > Tracer development is consistent with the idea that a project is never finished: there will always be changes required and functions to add. It is an incremental approach.
 > — The Pragmatic Programmer
 
-![Tracer Bullets. Source: The Pragmatic Programmer](./tracer_bullets.png)
+![Tracer Bullets. Source: The Pragmatic Programmer](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/tracer_bullets.png)
 
 This method helps developers to focus on the main features to be implemented so others can be built on. In addition, it serves as **proof the architecture is compatible and feasible** by providing a functional and demonstrable skeleton to work from the beginning of the development process.
 
 > Look for the important requirements, the ones that define the system. Look for the areas where you have doubts, and where you see the biggest risks. Then prioritize your development so that these are the first areas you code.
 > — The Pragmatic Programmer
 
-![[Source](https://unsplash.com/photos/Ys78stblUyY)](./outer-digit-Ys78stblUyY-unsplash.jpg)
+![[Source](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/https:/unsplash.com/photos/Ys78stblUyY)](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/outer-digit-Ys78stblUyY-unsplash.jpg)
 
 Lastly, **Tracer Bullet Development should not be confused with prototyping.** The code from prototypes isn’t supposed to be part of the project whereas the code from the tracer bullets isn’t thrown away. It works and is improved each iteration with new features.
 
@@ -211,7 +212,7 @@ I liked this one as well since it helps you outside software development too. So
 > The best way to stay calm under pressure is to avoid the situations that cause pressure.
 > — The Clean Coder
 
-![Avoiding](./avoiding.gif)
+![Avoiding](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/avoiding.gif)
 
 You mainly **avoid it by managing commitments, keeping clean, and following your disciplines.** 
 
@@ -225,7 +226,7 @@ The best way to manage commitments is by _saying no_ to those which deadlines yo
 > If you keep your code clean during normal times but make messes in a crisis, then you don’t really believe that messes slow you down. If you pair in a crisis but don’t normally pair, then you believe pairing is more efficient than non-pairing.
 > — The Clean Coder
 
-![[Source](https://unsplash.com/photos/YBuVjp5Mtrw)](./federico-lancellotti-YBuVjp5Mtrw-unsplash.jpg)
+![[Source](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/https:/unsplash.com/photos/YBuVjp5Mtrw)](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/federico-lancellotti-YBuVjp5Mtrw-unsplash.jpg)
 
 Choose disciplines that you feel comfortable following in a crisis. _Then follow them all the time._ Following these disciplines is the best way to avoid getting into a crisis. Don’t change your behavior when the crunch comes. If your disciplines are the best way to work, then they should be followed even in the depths of a crisis.
 
@@ -233,7 +234,7 @@ However, you can’t avoid pressure always so you have to learn how to get throu
 
 To stay calm **don’t panic,** manage your stress, and think the problem through to find the best possible outcome. Then go for it at a steady pace, _eating an elephant way-_ **communicating** all the time with your team and superiors to let them know when you are in trouble to get input and guidance. This way there won’t be any unexpected surprises in the end.
 
-![Communication is the key. [Source](https://anstesters.org/the-art-of-communication-an-important-soft-skill-in-software-testing/)](./good_communication_is_the_key_to_success.jpg)
+![Communication is the key. [Source](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/https:/anstesters.org/the-art-of-communication-an-important-soft-skill-in-software-testing/)](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/good_communication_is_the_key_to_success.jpg)
 
 > Avoid creating surprises. Nothing makes people more angry and less rational than surprises. Surprises multiply the pressure by ten.
 > — The Clean Coder
@@ -247,7 +248,7 @@ Don't forget to be there for others too when they are under pressure and need he
 > When the heat is on, find an associate who is willing to pair program with you. You will get done faster, with fewer defects. Your pair partner will help you hold on to your disciplines and keep you from panicking.
 > — The Clean Coder
 
-![Pairing](./pairing.gif)
+![Pairing](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/pairing.gif)
 
 ## Refactoring
 
@@ -263,7 +264,7 @@ Sometimes you will find code that does not feel right and should be fixed or imp
 > Rather than construction, software is more like gardening—it is more organic than concrete. You plant many things in a garden according to an initial plan and conditions. You constantly monitor the health of the garden, and make adjustments as needed.
 > — The Pragmatic Programmer
 
-![Bob gardening](./bobs_burger_gardening.gif)
+![Bob gardening](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/bobs_burger_gardening.gif)
 
 When should you refactor the code? Here is a list of situations that qualify to do so:
 
@@ -280,14 +281,14 @@ And here are Martin Fowler tips on how to refactor without doing more harm than 
 
 The most important thing to keep in mind is that **refactoring is not a certain task, it is a habit** that, as with most things in life, is easier to do while the issues are small, as an ongoing activity while coding. **The less you refactor now the greater time you’ll have to invest to fix the problem down the road.**
 
-![Cat refactoring](./cat_refactoring.gif)
+![Cat refactoring](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/cat_refactoring.gif)
 
 > Refactoring as "a growth." Removing it requires invasive surgery. You can take it out while it is still small. Or, you could wait while it grows and spreads—but removing it then will be both more expensive and more dangerous. Wait even longer, and you may lose the patient entirely.
 > — The Pragmatic Programmer
 
 ## Main differences
 
-![Differences](./differences.gif)
+![Differences](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/differences.gif)
 
 I did not want this lecture to be a comparison but although they focus on similar subjects, the content, and the way they are narrated are not the same. Here are the main impressions I got from them not related to the content itself that can help you have an idea of what to expect while reading them.
 
@@ -304,7 +305,7 @@ If you are interested in software development, want to get better but think they
 
 Having said that, if you still want to go the lazy way, I made this [open-source project with the core sentences from them](https://github.com/reymon359/book-sentences).
 
-[![[Book Sentences Project](https://github.com/reymon359/book-sentences)](./book_sentences.png)](https://github.com/reymon359/book-sentences)
+[![[Book Sentences Project](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/https:/github.com/reymon359/book-sentences)](/content/posts/7-lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/book_sentences.png)](https://github.com/reymon359/book-sentences)
 
 ## Resources
 
