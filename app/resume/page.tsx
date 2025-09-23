@@ -5,6 +5,7 @@ import React from "react";
 
 // --- Data ---
 const workExperiences = [
+  
   {
     position: 'Senior Full Stack Engineer',
     company: 'Coral Innovation GmbH',
@@ -130,7 +131,16 @@ const projects = [
   },
 ];
 
-const quotes = [
+const quotes = [{
+  text: `I had the pleasure of working with Ramón Morcillo at Guide Smith for almost a year, and it was a truly enriching experience. Ramón is an incredibly passionate professional about software development, technology, and best practices. During the time we worked together, he consistently demonstrated an exceptional commitment to quality and continuous improvement.
+
+One of the things that impressed me the most was his dedication to learning. He made the most of my availability to learn about FrontEnd architecture, and together we shared many concerns about how to apply the best practices in software design. He was always willing to listen, collaborate, and contribute valuable ideas to the team.
+
+Although we haven’t worked directly together in recent years, we’ve stayed in touch regarding his Mapmelon project, and I can say that his dedication and enthusiasm remain as inspiring as ever. Ramón is a professional who radiates positive energy and has a strong focus on innovation. Anyone who has the opportunity to work with him or collaborate on his projects will greatly benefit from his experience and passion.`,
+  author: 'Adrián Ferrera González',
+  image: '/images/resume/adrian.jpg',
+  position: 'Lead Developer at Lean Mind',
+},
   {
     text: `It was a pleasure collaborating with Ramon on the development of Flocus. His persistence, diligence, and reliability were instrumental in the success of our project. Every aspect of our work was handled with precision and care. He tackled challenges with a proactive mindset. Working with Ramon was not only professionally rewarding but also enjoyable due to his positive attitude and effective communication. I highly recommend Ramon to any team seeking a dedicated and dependable professional.`,
     author: 'Tobias Hug',
@@ -201,6 +211,7 @@ I wholeheartedly recommend Ramon to any team seeking a front-end developer who b
     image: '/images/resume/quico.jpg',
     position: 'Senior Software Engineer',
   },
+ 
 ];
 
 const WorkExperience = () => {
@@ -306,14 +317,14 @@ export default function ResumePage() {
                 (PDF)
               </a>
             </h2>
-           <div className="flex flex-col my-4 gap-4">
+            <div className="flex flex-col my-4 gap-4">
               <p className="mt-0">
                 Senior Full Stack Engineer, CTO, Founder, and Mentor | Expert in Cloud Architecture & Agile Methodologies for startups | Driving Innovation in Coliving Spaces
               </p>
               <p className="mt-0">
                 Problem solver and experienced maker with a passion for excellence and pragmatism. I create captivating software experiences that bring joy to people&apos;s lives. I also guide individuals and teams through personalized coaching and mentoring services.
               </p>
-           </div>
+            </div>
           </div>
           <div className="mt-[.3rem] whitespace-nowrap">
             <p className="m-[.3rem_0] text-[14px]">
