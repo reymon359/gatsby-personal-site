@@ -14,7 +14,7 @@ const About: React.FC = () => {
                     Problem solver and experienced maker with a passion for excellence and pragmatism.
                 </p>
                 <p>
-                    I create captivating software experiences that bring joy to people&apos;s lives.
+                    I create software experiences that bring joy to people&apos;s lives.
                 </p>
                 <p>
                     I also guide individuals and teams through personalized <a href="https://coach.ramonmorcillo.com" target="_blank" rel="noopener noreferrer" className="cursor-pointer no-underline transition-colors ease-in duration-200 font-bold text-white border-b border-dashed border-white hover:border-solid">coaching and mentoring services</a>.
@@ -28,7 +28,7 @@ const About: React.FC = () => {
                     &nbsp;and post&nbsp;
                     <a href="https://www.instagram.com/ramon.mor/" target="_blank" rel="noopener noreferrer" className="cursor-pointer no-underline transition-colors ease-in duration-200 font-bold text-white border-b border-dashed border-white hover:border-solid">moments</a>
                     &nbsp;or&nbsp;
-                    <a href="https://www.instagram.com/ramon.mor.photos/" target="_blank" rel="noopener noreferrer" className="cursor-pointer no-underline transition-colors ease-in duration-200 font-bold text-white border-b border-dashed border-white hover:border-solid">captivating images</a>
+                    <a href="https://www.instagram.com/ramon.mor.photos/" target="_blank" rel="noopener noreferrer" className="cursor-pointer no-underline transition-colors ease-in duration-200 font-bold text-white border-b border-dashed border-white hover:border-solid">images</a>
                     &nbsp;on Instagram.
                 </p>
                 <p>
