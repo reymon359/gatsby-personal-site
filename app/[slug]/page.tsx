@@ -11,7 +11,7 @@ import CommentsContainer from "@/components/CommentsContainer"
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
-  const siteUrl = 'https://golden-panda-1e2e39.netlify.app';
+  const siteUrl = process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://ramonmorcillo.com';
   const imageUrl = `${siteUrl}${post?.image}`;
   console.log(imageUrl)
   return {
