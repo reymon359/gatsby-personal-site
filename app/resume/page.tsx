@@ -5,7 +5,7 @@ import React from "react";
 
 // --- Data ---
 const workExperiences = [
-  
+
   {
     position: 'Senior Full Stack Engineer',
     company: 'Coral Innovation GmbH',
@@ -141,77 +141,77 @@ Although we haven’t worked directly together in recent years, we’ve stayed i
   image: '/images/resume/adrian.jpg',
   position: 'Lead Developer at Lean Mind',
 },
-  {
-    text: `It was a pleasure collaborating with Ramon on the development of Flocus. His persistence, diligence, and reliability were instrumental in the success of our project. Every aspect of our work was handled with precision and care. He tackled challenges with a proactive mindset. Working with Ramon was not only professionally rewarding but also enjoyable due to his positive attitude and effective communication. I highly recommend Ramon to any team seeking a dedicated and dependable professional.`,
-    author: 'Tobias Hug',
-    image: '/images/resume/tobias.jpg',
-    position: 'Founder of Flocus',
-  },
-  {
-    text: "Working with Ramon was an absolute inspiration, and I know I'll carry the memory of our work together for years to come. From my perspective, he's a one-of-a-kind developer, defined by his meticulous attention to detail and a 'no problem is too complex' attitude. When I have the chance, I will definitely be working with him again!",
-    author: 'Evan Seaward',
-    image: '/images/resume/evan.jpg',
-    position: 'Head of Engineering',
-  },
-  {
-    text: 'Ramon works in a highly structured manner, takes the initiative, and consistently asks the right questions to ensure high-quality outcomes. Ramon has significantly helped us lift our coding standards and has a keen eye for writing clear, understandable code. He is always happy to help, I am glad to have him on our team and be able to poke him with questions.',
-    author: 'David Büttner',
-    image: '/images/resume/david.jpg',
-    position: 'Software Engineer',
-  },
-  {
-    text: `It was a pleasure working with Ramon on his project the Mapmelon App. Ramon is a skilled developer with a strong commitment to delivering exceptional user experiences. His growth mindset, focus on details and technical expertise make him an invaluable addition to any ambitious project. Apart from being a great developer, he is also a great person to work with. 
+{
+  text: `It was a pleasure collaborating with Ramon on the development of Flocus. His persistence, diligence, and reliability were instrumental in the success of our project. Every aspect of our work was handled with precision and care. He tackled challenges with a proactive mindset. Working with Ramon was not only professionally rewarding but also enjoyable due to his positive attitude and effective communication. I highly recommend Ramon to any team seeking a dedicated and dependable professional.`,
+  author: 'Tobias Hug',
+  image: '/images/resume/tobias.jpg',
+  position: 'Founder of Flocus',
+},
+{
+  text: "Working with Ramon was an absolute inspiration, and I know I'll carry the memory of our work together for years to come. From my perspective, he's a one-of-a-kind developer, defined by his meticulous attention to detail and a 'no problem is too complex' attitude. When I have the chance, I will definitely be working with him again!",
+  author: 'Evan Seaward',
+  image: '/images/resume/evan.jpg',
+  position: 'Head of Engineering',
+},
+{
+  text: 'Ramon works in a highly structured manner, takes the initiative, and consistently asks the right questions to ensure high-quality outcomes. Ramon has significantly helped us lift our coding standards and has a keen eye for writing clear, understandable code. He is always happy to help, I am glad to have him on our team and be able to poke him with questions.',
+  author: 'David Büttner',
+  image: '/images/resume/david.jpg',
+  position: 'Software Engineer',
+},
+{
+  text: `It was a pleasure working with Ramon on his project the Mapmelon App. Ramon is a skilled developer with a strong commitment to delivering exceptional user experiences. His growth mindset, focus on details and technical expertise make him an invaluable addition to any ambitious project. Apart from being a great developer, he is also a great person to work with. 
 
 I recommend him for any project in need of a talented UX-focused developer. He's an asset you'll be glad to have on your team 🚀.`,
-    author: 'Denisa Brichtova',
-    image: '/images/resume/denisa.jpg',
-    position: 'UI/UX Designer',
-  },
-  {
-    text: `Since meeting Ramón at university, I've been able to watch him grow into the professional FullStack Software Engineer he is today. We got our first working experience together at 1millionbot, where his passion for software really takes off. 
+  author: 'Denisa Brichtova',
+  image: '/images/resume/denisa.jpg',
+  position: 'UI/UX Designer',
+},
+{
+  text: `Since meeting Ramón at university, I've been able to watch him grow into the professional FullStack Software Engineer he is today. We got our first working experience together at 1millionbot, where his passion for software really takes off. 
       
 Ramón takes software architecture seriously, always aiming for Clean Code, SOLID principles and good testing in his projects. His pragmatic approach not only leads to well-crafted solutions but also ensures that they are practical and effective. It's been great to both work and study alongside him, and it's one of the many reasons I value him as a teammate and a friend. For all these reasons, I truly recommend working with him.`,
-    author: 'Pablo Company Ramírez',
-    image: '/images/resume/pablo.jpg',
-    position: 'Software Engineer',
-  },
-  {
-    text: `I had the pleasure of bringing Ramon into our team as a front-end developer for the On-target AI tool for marketers, a decision influenced by his notable reputation within our shared professional circle. From the outset, Ramon stood out as an exceptionally responsive and reliable colleague. Although my direct collaboration with him was not extensive, his impact was unmistakable.
+  author: 'Pablo Company Ramírez',
+  image: '/images/resume/pablo.jpg',
+  position: 'Software Engineer',
+},
+{
+  text: `I had the pleasure of bringing Ramon into our team as a front-end developer for the On-target AI tool for marketers, a decision influenced by his notable reputation within our shared professional circle. From the outset, Ramon stood out as an exceptionally responsive and reliable colleague. Although my direct collaboration with him was not extensive, his impact was unmistakable.
 
 Ramon's approach to communication is a blend of clarity and accessibility, making complex technical discussions understandable and engaging. His responsiveness to tasks and inquiries, regardless of their complexity, significantly contributed to the smooth progression of our project. He has a knack for distilling complex front-end challenges into straightforward solutions, a skill invaluable in our fast-paced and dynamic environment.
 
 What impresses me most about Ramon is his ability to maintain high productivity and quality of work while being approachable and supportive to the team. His technical skills are top-notch, but it's his collaborative spirit and effective communication that truly set him apart.
 
 I wholeheartedly recommend Ramon to any team seeking a front-end developer who brings not only technical expertise but also a cooperative and proactive approach to their projects.`,
-    author: 'Andreea Rusu',
-    image: '/images/resume/andreea.jpg',
-    position: 'Marketing Project Manager & Community Builder',
-  },
-  {
-    text: `Building a product from scratch, refactoring an old Java API, migrating all the infrastructure to the cloud, and starting a new technology for the FE, all of this right after finishing the university, it is not easy. That was the challenge that I faced with Ramon in 1MillionBot, and it was an incredible journey. Ramon did not only deliver a great product, he also did it in a small amount of time. I’m lucky to have worked with Ramon during that time.`,
-    author: 'Gonzalo Molina Gallego',
-    image: '/images/resume/gonzalo.jpg',
-    position: 'Forward Deployed Engineer @ Palantir',
-  },
-  {
-    text: `Ramon is a remarkable software engineer with an unwavering dedication to his craft. During our time together at guidesmith/onebeyond, I witnessed his exceptional problem-solving skills, spanning both frontend and backend development. His ability to simplify code and create developer-friendly software stands out as a testament to his commitment. Ramon is not only a skilled developer but also a supportive team player, always willing to lend a hand. I enthusiastically recommend him as a valuable addition to any software team seeking a proficient and collaborative professional.`,
-    author: 'Fran Palacios',
-    image: '/images/resume/fran.jpg',
-    position: 'Software Engineer at Lean Mind',
-  },
-  {
-    text: `I am delighted to recommend Ramón as a talented Full Stack developer with a strong focus on the front end, particularly with React. I've had the privilege of working alongside Ramón in Deribe and his ability to design and build captivating user interfaces is impressive.
+  author: 'Andreea Rusu',
+  image: '/images/resume/andreea.jpg',
+  position: 'Marketing Project Manager & Community Builder',
+},
+{
+  text: `Building a product from scratch, refactoring an old Java API, migrating all the infrastructure to the cloud, and starting a new technology for the FE, all of this right after finishing the university, it is not easy. That was the challenge that I faced with Ramon in 1MillionBot, and it was an incredible journey. Ramon did not only deliver a great product, he also did it in a small amount of time. I’m lucky to have worked with Ramon during that time.`,
+  author: 'Gonzalo Molina Gallego',
+  image: '/images/resume/gonzalo.jpg',
+  position: 'Forward Deployed Engineer @ Palantir',
+},
+{
+  text: `Ramon is a remarkable software engineer with an unwavering dedication to his craft. During our time together at guidesmith/onebeyond, I witnessed his exceptional problem-solving skills, spanning both frontend and backend development. His ability to simplify code and create developer-friendly software stands out as a testament to his commitment. Ramon is not only a skilled developer but also a supportive team player, always willing to lend a hand. I enthusiastically recommend him as a valuable addition to any software team seeking a proficient and collaborative professional.`,
+  author: 'Fran Palacios',
+  image: '/images/resume/fran.jpg',
+  position: 'Software Engineer at Lean Mind',
+},
+{
+  text: `I am delighted to recommend Ramón as a talented Full Stack developer with a strong focus on the front end, particularly with React. I've had the privilege of working alongside Ramón in Deribe and his ability to design and build captivating user interfaces is impressive.
 
   Ramón demonstrates a deep understanding of frontend technologies, and his expertise with React helped Deribe to grow quickly. His knack for transforming ideas into visually appealing and functional products is unparalleled. Moreover, he was always abreast of the latest trends and best practices in front-end development, significantly contributing to the quality and efficiency of our work.
 
   Beyond his technical skills, Ramón is a proactive, results-oriented collaborator. He is always willing to take on new challenges and bring a creative mindset to any task he undertakes. His positive attitude and ability to work well in a team make collaborating with him a pleasure.
 
   In summary, I would wholeheartedly recommend Ramón to any team seeking a Full Stack developer with a strong emphasis on the front end, especially those working with React. His experience and skills are a valuable asset, and I am confident he will continue to excel in any project he undertakes.`,
-    author: 'Quico Llinares Llorens',
-    image: '/images/resume/quico.jpg',
-    position: 'Senior Software Engineer',
-  },
- 
+  author: 'Quico Llinares Llorens',
+  image: '/images/resume/quico.jpg',
+  position: 'Senior Software Engineer',
+},
+
 ];
 
 const WorkExperience = () => {

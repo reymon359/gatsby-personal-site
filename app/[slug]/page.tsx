@@ -4,7 +4,6 @@ import { getPostBySlug, getPostSlugs } from '@/lib/md';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import slugify from 'slugify';
-import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 import CommentsContainer from "@/components/CommentsContainer"
 
@@ -72,7 +71,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <div className="text-white/90 text-sm mb-4">{post.meta.date}</div>
           {post.image && (
             <div className="w-full h-auto mb-6">
-              <Image src={post.image} alt={post.meta.title} width={800} height={400} className="rounded-lg object-cover w-full h-auto" />
+              <img src={post.image} alt={post.meta.title} width={800} height={400} className="rounded-lg object-cover w-full h-auto" />
             </div>
           )}
         </header>

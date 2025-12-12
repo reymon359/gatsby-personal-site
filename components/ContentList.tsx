@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import slugify from 'slugify';
-import Image from 'next/image';
 import React, { useState } from 'react';
 import * as Tooltip from '@radix-ui/react-tooltip';
 // Custom tooltip that follows the cursor for image preview
@@ -38,14 +37,12 @@ function CursorTooltip({ image, alt, children }: { image: string, alt: string, c
             maxWidth: '90vw',
           }}
         >
-          <Image
+          <img
             src={image}
             alt={alt}
             width={200}
             height={120}
             style={{ borderRadius: 6, width: '100%', height: 'auto' }}
-            placeholder="blur"
-            blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDIwMCAxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiNlZWUiLz48L3N2Zz4="
           />
         </div>
       )}

@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import Link from 'next/link';
 
 const About: React.FC = () => {
     return (
@@ -20,7 +20,7 @@ const About: React.FC = () => {
                     I also guide individuals and teams through personalized <a href="https://coach.ramonmorcillo.com" target="_blank" rel="noopener noreferrer" className="cursor-pointer no-underline transition-colors ease-in duration-200 font-bold text-white border-b border-dashed border-white hover:border-solid">coaching and mentoring services</a>.
                 </p>
                 <p>
-                    This website serves as a platform for sharing my knowledge and achievements. You can find my resume <a href="/resume" className="cursor-pointer no-underline transition-colors ease-in duration-200 font-bold text-white border-b border-dashed border-white hover:border-solid">here</a>.
+                    This website serves as a platform for sharing my knowledge and achievements. You can find my resume <Link href="/resume" className="cursor-pointer no-underline transition-colors ease-in duration-200 font-bold text-white border-b border-dashed border-white hover:border-solid">here</Link>.
                 </p>
                 <p>
                     Occasionally, I&nbsp;
@@ -37,7 +37,7 @@ const About: React.FC = () => {
                 </p>
             </section>
             <div className="flex mt-8">
-                <Image
+                <img
                     src="/images/ramon_morcillo_meta_image.jpg"
                     alt="Ramon Morcillo"
                     width={300}

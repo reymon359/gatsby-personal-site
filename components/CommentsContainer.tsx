@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
 import Reactions from './Reactions';
 // import dynamic from 'next/dynamic';
 
@@ -37,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ url, noComments }) => (
     <p className="">Thanks for reading ❤️</p>
     <p className="">
       You can comment by replying to the{' '}
-      
+
       <a
         href={url}
         target="_blank"
@@ -97,7 +96,7 @@ const Comments: React.FC<{ url: string; comments: GithubComment[] }> = ({ url, c
           rel="noopener noreferrer"
           className="flex-shrink-0"
         >
-          <Image
+          <img
             src={comment.user.avatar_url}
             alt={comment.user.login}
             width={40}
@@ -170,7 +169,7 @@ const Comments: React.FC<{ url: string; comments: GithubComment[] }> = ({ url, c
 
 const CommentsContainer: React.FC<CommentsContainerProps> = ({ commentsUrl }) => {
   const [comments, setComments] = useState<GithubComment[]>([]);
-    console.log(commentsUrl, "commentsUrl")
+  console.log(commentsUrl, "commentsUrl")
   useEffect(() => {
     const apiUrl = `${commentsUrl.replace('github.com/', 'api.github.com/repos/')}/comments`;
     fetch(apiUrl, {
