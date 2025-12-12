@@ -77,7 +77,7 @@ export function ContentList({ content, type = false, areExternalLinks = false }:
       <div className="space-y-6 relative z-30">
         {content.map((item) => {
           const workType = item.type;
-          const workLink = workType === 'project' && item.url ? item.url : `/blog/${item.slug}`;
+          const workLink = workType === 'project' && item.url ? item.url : `/${item.slug}`;
           const linkProps = areExternalLinks ? { target: '_blank' as const } : {};
           if (item.image) {
             return (

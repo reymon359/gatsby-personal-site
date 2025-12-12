@@ -6,19 +6,12 @@ import Link from 'next/link';
 import slugify from 'slugify';
 import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
-// import dynamic from 'next/dynamic';
-
 import CommentsContainer from "@/components/CommentsContainer"
-
-// const CommentsContainer = dynamic(() => import('@/components/CommentsContainer'), { ssr: false });
-
-
-
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
-  const siteUrl =  'https://golden-panda-1e2e39.netlify.app';
+  const siteUrl = 'https://golden-panda-1e2e39.netlify.app';
   const imageUrl = `${siteUrl}${post?.image}`;
   console.log(imageUrl)
   return {
@@ -47,6 +40,9 @@ export async function generateStaticParams() {
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
+  // #region agent log
+  fetch('http://127.0.0.1:7242/ingest/524e853e-bd89-4ed7-a1ad-5c1027180cdf', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ location: 'app/[slug]/page.tsx:49', message: 'Blog post page loaded', data: { slug, hasPost: !!post, postImage: post?.image, hasImage: !!post?.image }, timestamp: Date.now(), sessionId: 'debug-session', runId: 'post-fix', hypothesisId: 'A' }) }).catch(() => { });
+  // #endregion
   if (!post) return notFound();
 
   // Dummy previous/next logic: replace with your own logic to fetch previous/next posts
@@ -85,7 +81,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <div className="prose-invert prose-lg max-w-none">
           <ReactMarkdown>{post.content}</ReactMarkdown>
         </div>
-       
+
       </article>
       <CommentsContainer commentsUrl={post.meta.commentsUrl ?? ''} />
 
@@ -94,14 +90,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <ul className="flex gap-2 list-none p-0 mb-8 w-full justify-between">
         {previousPost && (
           <li className="w-1/2 text-left p-4">
-            <Link href={`/blog/${previousPost.slug}`} rel="prev" className="underline underline-offset-2 decoration-dashed decoration-white decoration-[1px] hover:decoration-solid transition-colors font-semibold text-white">
+            <Link href={`/${previousPost.slug}`} rel="prev" className="underline underline-offset-2 decoration-dashed decoration-white decoration-[1px] hover:decoration-solid transition-colors font-semibold text-white">
               ← {previousPost.meta.title}
             </Link>
           </li>
         )}
         {nextPost && (
           <li className="w-1/2 text-right p-4">
-            <Link href={`/blog/${nextPost.slug}`} rel="next" className="underline underline-offset-2 decoration-dashed decoration-white decoration-[1px] hover:decoration-solid transition-colors font-semibold text-white">
+            <Link href={`/${nextPost.slug}`} rel="next" className="underline underline-offset-2 decoration-dashed decoration-white decoration-[1px] hover:decoration-solid transition-colors font-semibold text-white">
               {nextPost.meta.title} →
             </Link>
           </li>
