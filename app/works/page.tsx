@@ -63,7 +63,7 @@ export default function WorksPage() {
           <h2 className="text-2xl">Latest posts</h2>
           <div className='flex gap-2 px-4'>
             <Link
-              href="/projects"
+              href="/blog"
               className="px-3 py-1 rounded-md bg-zinc-600 text-white font-medium text-sm border-0 whitespace-nowrap leading-none transition-colors duration-300 hover:bg-white hover:text-black "
             >
               All posts
