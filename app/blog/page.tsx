@@ -41,7 +41,7 @@ export default function BlogPage() {
               </Link>
             </div>
           </div>
-          <ContentList content={posts} type={true} />
+          <ContentList content={posts} type={true} areExternalLinks={false} />
         </section>
       </main>
     </div>

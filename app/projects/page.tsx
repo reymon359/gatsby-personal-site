@@ -33,7 +33,7 @@ export default function ProjectsPage() {
             </Link>
           </div>
         </div>
-        <ContentList content={projects} type={true} />
+        <ContentList content={projects} type={true} areExternalLinks={true} />
       </section>
     </main>
   );

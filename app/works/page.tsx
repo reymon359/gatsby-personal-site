@@ -56,7 +56,7 @@ export default function WorksPage() {
             </Link>
           </div>
         </div>
-        <ContentList content={projects} type={true} />
+        <ContentList content={projects} type={true} areExternalLinks={true} />
       </section>
       <section>
         <div className="flex items-center px-4 mb-4">
@@ -76,7 +76,7 @@ export default function WorksPage() {
             </Link>
           </div>
         </div>
-        <ContentList content={posts} type={true} />
+        <ContentList content={posts} type={true} areExternalLinks={false} />
       </section>
     </main>
   );

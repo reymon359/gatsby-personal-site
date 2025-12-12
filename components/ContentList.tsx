@@ -51,7 +51,7 @@ function CursorTooltip({ image, alt, children }: { image: string, alt: string, c
       )}
     </span>
   );
-// End of CursorTooltip
+  // End of CursorTooltip
 }
 
 export interface ContentListItem {
@@ -68,21 +68,23 @@ export interface ContentListItem {
 interface ContentListProps {
   content: ContentListItem[];
   type?: boolean;
+  areExternalLinks?: boolean;
 }
 
-export function ContentList({ content, type = false }: ContentListProps) {
+export function ContentList({ content, type = false, areExternalLinks = false }: ContentListProps) {
   return (
     <Tooltip.Provider delayDuration={0}>
       <div className="space-y-6 relative z-30">
         {content.map((item) => {
           const workType = item.type;
           const workLink = workType === 'project' && item.url ? item.url : `/blog/${item.slug}`;
+          const linkProps = areExternalLinks ? { target: '_blank' as const } : {};
           if (item.image) {
             return (
               <CursorTooltip image={item.image ?? ''} alt={item.title} key={item.slug}>
                 <Link
                   href={workLink}
-                  target="_blank"
+                  {...linkProps}
                   className="transition duration-200 ease-in-out p-4 rounded-[5px] flex flex-col md:flex-row md:items-center flex-wrap justify-between relative hover:bg-white/10 cursor-pointer"
                   tabIndex={0}
                   role="button"
@@ -93,7 +95,7 @@ export function ContentList({ content, type = false }: ContentListProps) {
                   <div className=" flex-1 md:max-w-full flex flex-col">
                     <Link
                       href={workLink}
-                      target="_blank"
+                      {...linkProps}
                       className="text-xl font-medium text-white border-b-0 hover:underline "
                     >
                       {item.title}
@@ -145,7 +147,7 @@ export function ContentList({ content, type = false }: ContentListProps) {
                 <div className=" flex-1 md:max-w-full flex flex-col">
                   <Link
                     href={workLink}
-                    target="_blank"
+                    {...linkProps}
                     className="text-xl font-medium text-white border-b-0 hover:underline "
                   >
                     {item.title}
