@@ -14,9 +14,9 @@ interface MenuLinkProps {
 
 // Social links and navigation links (updated)
 const socialLinks = [
-    { name: "Twitter", socialUrl: "https://twitter.com/reymon359", isExternal: true },
-    { name: "GitHub", socialUrl: "https://github.com/reymon359", isExternal: true },
     { name: "LinkedIn", socialUrl: "https://www.linkedin.com/in/ramon-morcillo/", isExternal: true },
+    { name: "GitHub", socialUrl: "https://github.com/reymon359", isExternal: true },
+    { name: "X", socialUrl: "https://twitter.com/reymon359", isExternal: true },
     { name: "Resume", socialUrl: "/resume", isExternal: false },
 ]
 
@@ -92,7 +92,7 @@ const Navigation: React.FC = () => {
             </div>
 
             {/* Bottom Navigation */}
-            <div className={`fixed bottom-0 w-full print:hidden min-h-12 z-[99999999] pointer-events-none ${ open ? '' : 'h-[0px]'} `}>
+            <div className={`fixed bottom-0 w-full print:hidden min-h-12 z-[99999999] pointer-events-none ${open ? '' : 'h-[0px]'} `}>
                 <div
                     className={`overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.45,0,0.1,1)] flex flex-col relative
                     ${open ? 'max-h-[800px] pt-24 px-6 xl:px-12 py-6' : 'max-h-[56px] px-6 xl:px-12 py-0 pt-0'}
@@ -140,7 +140,7 @@ const Navigation: React.FC = () => {
                         </div>
                     )}
                     {/* Menu content, only visible when open or on desktop */}
-                    <div className={`gap-4 justify-center flex flex-col transition-opacity duration-300 relative -mx-6 px-6 -mb-6 pb-6 ${pathname === '/' ? "" :"bg-stone-950"} ${open ? 'opacity-100' : 'opacity-0 pointer-events-none'} xl:opacity-100 xl:pointer-events-auto relative z-[99999999]`}
+                    <div className={`gap-4 justify-center flex flex-col transition-opacity duration-300 relative -mx-6 px-6 -mb-6 pb-6 ${pathname === '/' ? "" : "bg-stone-950"} ${open ? 'opacity-100' : 'opacity-0 pointer-events-none'} xl:opacity-100 xl:pointer-events-auto relative z-[99999999]`}
                     >
                         {/* Two-column Menu: Social links and Navigation links */}
                         <nav className="flex justify-between pt-6">
