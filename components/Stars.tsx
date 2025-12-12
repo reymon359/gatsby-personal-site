@@ -113,31 +113,30 @@ const Stars: React.FC<StarsProps> = (StarsConfig: StarsProps) => {
     pointer.current = { x: userPositionX, y: userPositionY };
   };
 
-  // Resize canvas
-  const resizeCanvas = (canvas: HTMLCanvasElement | null) => {
-    if (!canvas) return;
-    scale.current = window.devicePixelRatio || 1;
-    windowWidth.current = window.innerWidth * scale.current;
-    windowHeight.current = window.innerHeight * scale.current;
-    canvas.width = windowWidth.current;
-    canvas.height = windowHeight.current;
-    placeStars();
-  };
-
-  // Accelerate (warp-drive)
-  const maxVelocity = 0.05;
-  const accelerate = (acceleration: boolean) => {
-    pointer.current = { x: null, y: null };
-    pointerActive.current = !acceleration;
-    velocity.current.z = acceleration ? maxVelocity : normalVelocity;
-    if (!acceleration) {
-      setTimeout(() => {
-        velocity.current.z = normalVelocity;
-      }, 400);
-    }
-  };
-
   useEffect(() => {
+    // Resize canvas
+    const resizeCanvas = (canvas: HTMLCanvasElement | null) => {
+      if (!canvas) return;
+      scale.current = window.devicePixelRatio || 1;
+      windowWidth.current = window.innerWidth * scale.current;
+      windowHeight.current = window.innerHeight * scale.current;
+      canvas.width = windowWidth.current;
+      canvas.height = windowHeight.current;
+      placeStars();
+    };
+
+    // Accelerate (warp-drive)
+    const maxVelocity = 0.05;
+    const accelerate = (acceleration: boolean) => {
+      pointer.current = { x: null, y: null };
+      pointerActive.current = !acceleration;
+      velocity.current.z = acceleration ? maxVelocity : normalVelocity;
+      if (!acceleration) {
+        setTimeout(() => {
+          velocity.current.z = normalVelocity;
+        }, 400);
+      }
+    };
     // When background changes, reset all starfield state
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -307,4 +306,3 @@ const Stars: React.FC<StarsProps> = (StarsConfig: StarsProps) => {
 };
 
 export default Stars;
-
