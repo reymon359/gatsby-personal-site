@@ -13,12 +13,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = await getPostBySlug(slug);
   const siteUrl = process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://ramonmorcillo.com';
   const imageUrl = `${siteUrl}${post?.image}`;
+  const postUrl = `${siteUrl}/${slug}`;
   console.log(imageUrl)
   return {
     title: post?.meta.title,
     description: post?.meta.description,
     openGraph: {
-      URL, // og:url
+      url: postUrl, // og:url
       type: 'article', // og:type
       images: [
         {
@@ -40,9 +41,6 @@ export async function generateStaticParams() {
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
-  // #region agent log
-  fetch('http://127.0.0.1:7242/ingest/524e853e-bd89-4ed7-a1ad-5c1027180cdf', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ location: 'app/[slug]/page.tsx:49', message: 'Blog post page loaded', data: { slug, hasPost: !!post, postImage: post?.image, hasImage: !!post?.image }, timestamp: Date.now(), sessionId: 'debug-session', runId: 'post-fix', hypothesisId: 'A' }) }).catch(() => { });
-  // #endregion
   if (!post) return notFound();
 
   // Dummy previous/next logic: replace with your own logic to fetch previous/next posts

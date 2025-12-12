@@ -93,13 +93,9 @@ export function ContentList({ content, type = false, areExternalLinks = false }:
                   {/* Date on top for mobile only */}
                   <div className="block md:hidden text-white text-lg mb-1 font-light">{item.date.match(/\d{4}/)?.[0]}</div>
                   <div className=" flex-1 md:max-w-full flex flex-col">
-                    <Link
-                      href={workLink}
-                      {...linkProps}
-                      className="text-xl font-medium text-white border-b-0 hover:underline "
-                    >
+                    <span className="text-xl font-medium text-white border-b-0 hover:underline ">
                       {item.title}
-                    </Link>
+                    </span>
                     {item.description && (
                       <div className="text-gray-400 text-lg font-normal border-b-0 block py-2">
                         {item.description}
@@ -119,6 +115,7 @@ export function ContentList({ content, type = false, areExternalLinks = false }:
                             href={`/tags/${slugify(tag, { lower: true, strict: true })}`}
                             key={tag}
                             className="px-2 py-1 rounded-full text-xs bg-white/20 text-white hover:bg-white hover:text-black transition-colors font-semibold"
+                            onClick={(e) => e.stopPropagation()}
                           >
                             {tag}
                           </Link>

@@ -38,8 +38,8 @@ function getWorksBySlugTag(slugTag: string) {
     }));
 }
 
-export async function  generateStaticParams() {
-const tags = await getAllTags();
+export async function generateStaticParams() {
+  const tags = await getAllTags();
   return tags.map(tag => ({ tag: slugify(tag, { lower: true, strict: true }) }));
 }
 
@@ -60,7 +60,7 @@ export default async function TagPage({ params }: { params: Promise<{ tag: strin
         <p className="text-gray-400 font-light text-lg">All posts and projects with this tag</p>
       </header>
       <section>
-        <ContentList content={works} type={true} />
+        <ContentList content={works} type={true} areExternalLinks={true} />
       </section>
     </main>
   );
