@@ -12,7 +12,7 @@ const About: React.FC = () => {
                 <p>
                     I do many things while trying to enjoy the passage of time.
                 </p>
-                
+
                 <p>
                     Feel free to reach out at&nbsp;
                     <a href="mailto:hey@ramonmorcillo.com?subject=Hi%20there!" rel="noopener" className="cursor-pointer no-underline transition-colors ease-in duration-200 font-bold text-white border-b border-dashed border-white hover:border-solid">hey@ramonmorcillo.com</a>.
