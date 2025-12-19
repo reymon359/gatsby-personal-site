@@ -190,8 +190,7 @@ const Navigation: React.FC = () => {
                         </nav>
                         {/* Mobile footer, only visible when menu is open */}
                         <div className={`flex xl:hidden flex-col gap-1 text-center justify-between w-full px-4 pb-2 text-white text-xs font-primary tracking-wider transition-opacity duration-300 ${!open ? 'opacity-0 pointer-events-none' : 'opacity-100'} z-[99999999] pointer-events-auto`}>
-                            <span>Ramón Morcillo - {new Date().getFullYear()}</span>
-                            <span>Made with 💚 & ⏳</span>
+                            <span>{new Date().getFullYear()}</span>
                         </div>
                     </div>
                 </div>
@@ -204,14 +203,7 @@ const Navigation: React.FC = () => {
                         className="absolute left-0 top-1/2 -translate-y-1/2 origin-left -rotate-90 text-white text-xs font-primary tracking-wider pointer-events-none"
                         style={{ transformOrigin: 'left center' }}
                     >
-                        Ramón Morcillo - {new Date().getFullYear()}
-                    </div>
-                    {/* Right item */}
-                    <div
-                        className="absolute right-0 top-1/2 -translate-y-1/2 origin-right rotate-90 text-white text-xs font-primary tracking-wider pointer-events-none pt-0 -mr-3"
-                        style={{ transformOrigin: 'right center' }}
-                    >
-                        Made with 💚 & ⏳
+                        {new Date().getFullYear()}
                     </div>
                 </div>
             </footer>
