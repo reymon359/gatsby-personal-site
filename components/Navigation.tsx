@@ -188,25 +188,9 @@ const Navigation: React.FC = () => {
                                 ))}
                             </ul>
                         </nav>
-                        {/* Mobile footer, only visible when menu is open */}
-                        <div className={`flex xl:hidden flex-col gap-1 text-center justify-between w-full px-4 pb-2 text-white text-xs font-primary tracking-wider transition-opacity duration-300 ${!open ? 'opacity-0 pointer-events-none' : 'opacity-100'} z-[99999999] pointer-events-auto`}>
-                            <span>{new Date().getFullYear()}</span>
-                        </div>
                     </div>
                 </div>
             </div>
-            {/* Dual rotated footer items, fixed vertical center, left/right (improved for consistent layout) */}
-            <footer className="fixed hidden xl:block z-10 w-screen top-1/2 left-0 -translate-y-1/2 pointer-events-none px-16">
-                <div className="relative w-full h-40 pointer-events-none">
-                    {/* Left item */}
-                    <div
-                        className="absolute left-0 top-1/2 -translate-y-1/2 origin-left -rotate-90 text-white text-xs font-primary tracking-wider pointer-events-none"
-                        style={{ transformOrigin: 'left center' }}
-                    >
-                        {new Date().getFullYear()}
-                    </div>
-                </div>
-            </footer>
         </>
     )
 }
