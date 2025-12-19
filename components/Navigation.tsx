@@ -16,15 +16,11 @@ interface MenuLinkProps {
 const socialLinks = [
     { name: "LinkedIn", socialUrl: "https://www.linkedin.com/in/ramon-morcillo/", isExternal: true },
     { name: "GitHub", socialUrl: "https://github.com/reymon359", isExternal: true },
-    { name: "X", socialUrl: "https://twitter.com/reymon359", isExternal: true },
-    { name: "Resume", socialUrl: "/resume", isExternal: false },
 ]
 
 const pages = [
-    { name: "Index", href: "/", ariaCurrent: true },
     { name: "Blog", href: "/blog" },
-    { name: "about", href: "/about" },
-    { name: "Contact", href: "mailto:hey@ramonmorcillo.com?subject=Hi%20there!", external: true },
+    { name: "About", href: "/about" },
 ]
 
 
@@ -161,29 +157,14 @@ const Navigation: React.FC = () => {
                             <ul className={`flex flex-col gap-2 xl:items-end xl:w-fit z-[99999999] text-right ${open ? '' : 'fixed bottom-12 right-12'} `}>
                                 {pages.map((page) => (
                                     <li key={page.name}>
-                                        {page.external ? (
-                                            <a
-                                                href={page.href}
-                                                className="menu-link text-[#ddd] font-normal pointer-events-auto transition-colors duration-100 leading-[1em] border-b-0 hover:underline z-[99999999]"
-                                                rel="noopener"
-                                                onClick={() => setOpen(false)}
-                                            >
-                                                {page.name}
-                                            </a>
-                                        ) : (
-                                            <MenuLink
-                                                href={page.href}
-                                                onClick={() => {
-                                                    if (page.name === "Index") {
-                                                        console.log('Index link clicked');
-                                                        setRandomStarColor();
-                                                    }
-                                                    setOpen(false);
-                                                }}
-                                            >
-                                                {page.name}
-                                            </MenuLink>
-                                        )}
+                                        <MenuLink
+                                            href={page.href}
+                                            onClick={() => {
+                                                setOpen(false);
+                                            }}
+                                        >
+                                            {page.name}
+                                        </MenuLink>
                                     </li>
                                 ))}
                             </ul>
