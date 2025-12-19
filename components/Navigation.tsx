@@ -22,7 +22,7 @@ const socialLinks = [
 
 const pages = [
     { name: "Index", href: "/", ariaCurrent: true },
-    { name: "works", href: "/works" },
+    { name: "Blog", href: "/blog" },
     { name: "about", href: "/about" },
     { name: "Contact", href: "mailto:hey@ramonmorcillo.com?subject=Hi%20there!", external: true },
 ]
